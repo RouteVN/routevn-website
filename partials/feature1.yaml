@@ -1,0 +1,25 @@
+- rtgl-view h=64:
+- rtgl-view  xl-w=100vw xl-ph=xl w="1200" mh=xl pb="lg" ah=c g=md:
+    - rtgl-text s=h2 mb=md ta=c: ${title}
+    - rtgl-text mb=lg ta=c: ${message}
+    - rtgl-view md-hide d=h g=lg mt=xl:
+        - $if v != "2":
+            - rtgl-view flex="2" bc="o" bw="xs" br="s":
+                - rtgl-image src="${feature.imgSrc}" w="f":
+        - rtgl-view g="lg" flex=1 av=c h=f:
+            - $for feature in features:
+                - rtgl-view  p="lg" bgc="su" br="lg" g=md:
+                    - rtgl-text s=h4 mb=sm: "${feature.title}"
+                    - rtgl-text mb="sm": "${feature.message}"
+        - $if v == "2":
+            - rtgl-view flex="2" bc="o" bw="xs" br="s":
+                - rtgl-image src="${feature.imgSrc}" w="f":
+    - rtgl-view md-show hide g=lg mt=xl:
+        - rtgl-view flex="2" bc="o" bw="xs" br="s":
+            - rtgl-image src="${feature.imgSrc}" w="f":
+        - rtgl-view g="lg" flex=1 av=c h=f w=f:
+            - $for feature in features:
+                - rtgl-view  p="lg" bgc="su" br="lg" g=md w=f ah=c:
+                    - rtgl-text s=h4 mb=sm ta=c: "${feature.title}"
+                    - rtgl-text mb="sm" ta=c: "${feature.message}"
+- rtgl-view h=64:

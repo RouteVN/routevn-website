@@ -1,0 +1,146 @@
+title: RouteVN – The Dedicated Platform for Visual Novels
+baseUrl: https://routevn.com
+
+navbar:
+  title:
+    imgSrc: "/public/images/logo1.png"
+    href: "/"
+  # cta:
+  #   label: Register
+
+footer:
+  logo:
+    src: /public/images/logo1.png
+    alt: RouteVN
+    width: 110
+    height: 20
+  social:
+    - svg: discord
+      href: https://tally.so/r/w4LKab
+    - svg: bluesky
+      href: https://bsky.app/profile/routevn.bsky.social
+    - svg: x
+      href: https://x.com/routevn
+  columns:
+    - links:
+        # - text: About
+        #   href: /about/
+        - text: Blog
+          href: /blog/
+        - text: Hiring
+          href: /hiring/
+    - links:
+        - text: Privacy Policy
+          href: /agreement/privacy-policy/1-0-0/
+        - text: Terms of Service
+          href: /agreement/terms-of-service/1-0-0/
+        - text: Contact
+          href: https://tally.so/r/wzZ7rM
+          newTab: true
+
+landing:
+  mission:
+    title: A dedicated platform for Visual Novels
+    text: To fulfill the full potential of Visual Novels
+    href: /blog/2025/01-to-fulfill-the-whole-potential-of-visual-novels/
+  sections:
+    # - title: For Readers
+    #   cards:
+    #     - title: RouteVN Store
+    #       text: Discover and read Visual Novels
+    #       href: /store/
+    - title: For Creators
+      cards:
+        - title: RouteVN Creator
+          text: An easier way to create Visual Novels
+          href: /creator/about/
+        # - title: RouteVN Publisher
+        #   text: A publishing and distribution platform dedicated to Visual Novels
+        #   href: /publisher/about/
+    # - title: For Developers
+    #   cards:
+    #     - title: Route Engine
+    #       text: Open Source Visual Novel Engine
+    #       href: /creator/about/
+
+creator:
+  about:
+    hero:
+      title: An easier way to create Visual Novels
+      subtitle: Focus on your story and creativity while the tech is taken care of
+      videoSrc: https://cdn1.yuusoft.com/routevn-assets/landing.mp4
+    features:
+      - title: Optimized for ease of use
+        imgSrc: /public/landing/editor-1.png
+        v: "2"
+        features:
+          - title: Browser-based
+            message: Create Visual Novels directly in your browser, no downloads required.
+      - title: Resources manager
+        imgSrc: /public/landing/resources_background.png
+        features:
+          - title: Asset organization
+            message: Organize all your visual novel assets in one place.
+      - title: Scenes Graph
+        imgSrc: /public/landing/scene_graph_1.png
+        v: "2"
+        features:
+          - title: Visual storyline
+            message: See your entire visual novel structure at a glance.
+      - title: Scene editor with live preview
+        imgSrc: /public/landing/editor-2.png
+        features:
+          - title: No coding required
+            message: Our intuitive editor lets you create scenes without any programming knowledge.
+    cta:
+      title: Experience a new way to create Visual Novels
+      subtitle: Join the waitlist to be notified of any updates
+      cta:
+        label: Join the waitlist
+        href: https://tally.so/r/waAEDB
+        hrefTarget: _blank
+
+publisher:
+  about:
+    hero:
+      title: RouteVN Publisher
+      subtitle: A publishing and distribution platform dedicated to Visual Novels
+      message: Publish your Visual Novel
+    features:
+      - title: Dedicated to Visual Novels
+        message: RouteVN Store is only for Visual Novels. We love Visual Novels and want to make them accessible to everyone.
+        features:
+          - title: Engaged audience
+            message: Our audience are people who understand and are passionate about Visual Novels.
+          - title: Content policy
+            message: We welcome all types of Visual Novels, but as an all-ages platform, we do not cater adult content.
+      - title: Available from any device
+        message: Published Visual Novels will work seamlessly across all platform and devices.
+        features:
+          - title: Porting your Visual Novel
+            message: We will do the work to port your Visual Novel to our custom engine for you.
+          - title: Available on all devices
+            message: Check out our app on Web, Google Play and App Store.
+      - title: Enhanced reading experience
+        message: We are committed to provide the best possible reading experience for Visual Novels.
+        features:
+          - title: Works offline and online
+            message: Readers can read offline, and sync data online across all devices
+          - title: Powered by a custom engine
+            message: We have have built a Visual Novel engine from scratch to provide the best reading experience.
+      - title: Empowering publishers
+        message: We handle all admin and compliance globally so you can focus on the work you enjoy most. We provide tools to help you manage your published Visual Novel.
+        features:
+          - title: Analytics
+            message: We provide analytics so you can understand your audience better.
+          - title: Payments and VAT
+            message: We handle payments and VAT for you.
+          - title: Content and other compliance
+            message: We handle content and other compliance with each country
+    cta:
+      title: Publish your Visual Novel
+      subtitle: Be among the first to publish on RouteVN and get early access to the platform.
+      cta:
+        label: Publish your Visual Novel
+        href: https://tally.so/r/wvJLO0
+        hrefTarget: _blank

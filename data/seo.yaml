@@ -1,0 +1,26 @@
+# Default SEO values that will be used if not specified in pages
+
+# Basic SEO
+title: RouteVN – The Dedicated Platform for Visual Novels
+description: RouteVN is the dedicated platform exclusively for Visual Novels. Creators can create, publish, and distribute their work while readers can discover and read.
+keywords: visual novels, VN, visual novel platform, visual novel creator, visual novel publisher, interactive fiction, narrative games, RouteVN, visual novel engine, visual novel store
+author: RouteVN Team
+robots: index, follow
+
+# Open Graph defaults
+ogType: website
+ogSiteName: RouteVN
+ogImage: /public/images/routevn_og.png
+ogImageWidth: 1200
+ogImageHeight: 630
+ogImageAlt: RouteVN – The Dedicated Platform for Visual Novels
+ogImageType: image/png
+
+# Twitter Card defaults
+twitterCard: summary_large_image
+twitterCreator: "@routevn"
+
+# Schema.org defaults
+schemaType: WebSite
+schemaAuthor: RouteVN
+schemaAuthorType: Organization

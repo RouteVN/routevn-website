@@ -1,0 +1,13 @@
+- rtgl-view ah="c" w="f" ph=lg:
+    - rtgl-view h=128:
+    - $if title:
+        - rtgl-text s=h1 ta=c: "${title}"
+        - rtgl-view h=24:
+    - $if subtitle:
+        - rtgl-text s=lg ta=c: "${subtitle}"
+    - $if videoSrc:
+        - rtgl-view h=64:
+        - 'rtgl-view  md-h="calc((100vw - 32px) / 1.777)"  md-w="calc(100vw - 32px)" xl-h="calc((100vw - 64px) / 1.777)" xl-w="calc(100vw - 64px)" h="calc(1200px / 1.777)" w="1200" bc="ov" bw="xs" br="xs" shadow="s"':
+            - video playsinline="" loop="" controls="" height="100%" width="100%" aria-label="Video content" draggable="true":
+                - source src="${videoSrc}" type="video/mp4":
+        - rtgl-view h=64:

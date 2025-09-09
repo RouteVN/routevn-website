@@ -1,0 +1,14 @@
+---
+template: base
+title: RouteVN Support
+seo:
+  title: RouteVN Support - Get Help & Contact Us
+  description: Need help with RouteVN? Contact our support team for assistance with creating, publishing, or reading visual novels. We're here to help you.
+  keywords: RouteVN support, visual novel help, RouteVN contact, technical support, customer service, VN platform help
+---
+- rtgl-view h="24":
+- rtgl-view g=xl md-w="100vw" lg-w="768" w="1024" ph=lg:
+    - rtgl-text s="h1" mb="md": RouteVN Support
+    - rtgl-text s="lg" mb="md": "Need help? We're here to assist you."
+    - 'rtgl-button href="https://tally.so/r/wzZ7rM" target="_blank"': Contact us
+- rtgl-view h="100":

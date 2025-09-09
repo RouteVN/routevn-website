@@ -1,0 +1,35 @@
+---
+template: base
+title: RouteVN Store
+seo:
+  title: RouteVN Store - Discover & Read Visual Novels
+  description: Discover and read visual novels on RouteVN Store. Available on Web, iOS, and Android with cloud saves, cross-platform support, and curated VN collection.
+  keywords: visual novel store, VN store, read visual novels, visual novel app, RouteVN Store, iOS visual novels, Android visual novels
+---
+- rtgl-view h="24":
+- rtgl-view ah="c":
+    - rtgl-text s="h1" mb="md": RouteVN Store
+    - rtgl-text s="lg" c="on-suv" mb="xl": Discover and read Visual Novels
+    - rtgl-view g="lg" mt="xl":
+        - rtgl-view p="lg" bgc="su" br="lg":
+            - rtgl-text s="lg" fw="bold" mb="md": Coming Soon
+            - rtgl-text s="md" c="on-suv": The RouteVN Store is currently in development. We're building a dedicated platform exclusively for Visual Novels, designed to provide the best experience for both readers and creators.
+        - rtgl-view p="lg" bgc="su" br="lg":
+            - rtgl-text s="lg" fw="bold" mb="md": Features in Development
+            - ul:
+                - li: Curated Visual Novel collection
+                - li: Cross-platform support (Web, iOS, Android)
+                - li: Cloud save synchronization
+                - li: Community features and reviews
+                - li: Creator-friendly revenue sharing
+        - rtgl-view p="lg" bgc="su" br="lg":
+            - rtgl-text s="lg" fw="bold" mb="md": Early Access
+            - rtgl-text s="md" c="on-suv" mb="md": "You can try our early version now:"
+            - rtgl-view g="md":
+                - 'a href="https://apps.apple.com/sg/app/routevn/id6743696163" target="_blank" style="text-decoration: none;"':
+                    - 'rtgl-view p="md" bgc="pr" br="md" h-bgc="prv" h-cur="p" d="inline-block"':
+                        - rtgl-text s="md" fw="bold" c="on-pr": Download on iOS
+                - 'a href="https://play.google.com/store/apps/details?id=com.yuusoft.routevnapp" target="_blank" style="text-decoration: none;"':
+                    - 'rtgl-view p="md" bgc="pr" br="md" h-bgc="prv" h-cur="p" d="inline-block"':
+                        - rtgl-text s="md" fw="bold" c="on-pr": Download on Android
+- rtgl-view h="100":

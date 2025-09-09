@@ -1,0 +1,12 @@
+- rtgl-view bwb=xs w=f ah=c pos=fix bgc=bg:
+    - rtgl-view md-w="100vw" lg-w="768" w="1024" d=h av=c h=64 ph=lg:
+        - a href=${title.href}:
+            - rtgl-view d=h av=c g=md:
+                - $if title.imgSrc:
+                    - rtgl-image h=24 src="${title.imgSrc}":
+                - $if title.label:
+                    - rtgl-text: ${title.label}
+        - rtgl-view flex=1:
+        - rtgl-view d=h av=c:
+            - $if cta.label:
+                - rtgl-button: ${cta.label}

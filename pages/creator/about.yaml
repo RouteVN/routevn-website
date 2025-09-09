@@ -1,0 +1,29 @@
+---
+template: base
+title: An easier way to create Visual Novels
+seo:
+  title: RouteVN Creator - Browser-Based Visual Novel Creation Tool
+  description: Create visual novels easily with RouteVN Creator. No coding required, browser-based editor with live preview, asset management, and scene graph visualization.
+  keywords: visual novel creator, VN creation tool, browser-based visual novel editor, no-code visual novel, visual novel maker, RouteVN Creator
+  ogImage: https://cdn1.yuusoft.com/routevn-assets/landing.mp4
+  ogImageType: video/mp4
+---
+- $partial: hero1
+  title: ${site.creator.about.hero.title}
+  subtitle: ${site.creator.about.hero.subtitle}
+  message: ${site.creator.about.hero.message}
+  videoSrc: ${site.creator.about.hero.videoSrc}
+
+- rtgl-view mt="xl":
+    - $for feature in site.creator.about.features:
+        - $partial: feature1
+          title: ${feature.title}
+          message: ${feature.message}
+          features: ${feature.features}
+          v: ${feature.v}
+
+- rtgl-view h="100":
+- $partial: cta1
+  title: ${site.creator.about.cta.title}
+  subtitle: ${site.creator.about.cta.subtitle}
+  cta: ${site.creator.about.cta.cta}
