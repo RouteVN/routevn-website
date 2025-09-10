@@ -16,7 +16,7 @@ Platforms like Steam and itch.io have become essential in distributing Visual No
 
 That's why we're building RouteVN.
 
-We envision a Visual Novel platform and community to create, discover, read, and truly engage. We've launched an initial version of RouteVN store on [Web](https://routevn.com/store/), [iOS](https://apps.apple.com/sg/app/routevn/id6743696163), and [Android](https://play.google.com/store/apps/details?id=com.yuusoft.routevnapp). Now, we're inviting forward-thinking VN creators to join us as early partners in shaping this platform's future.
+We envision a Visual Novel platform and community to create, discover, read, and truly engage. We've launched an initial version of RouteVN store on Web, iOS, and Android. Now, we're inviting forward-thinking VN creators to join us as early partners in shaping this platform's future.
 
 ## Partnering to Publish on RouteVN
 
