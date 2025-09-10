@@ -1,5 +1,12 @@
 
 export default {
+  screenshots: {
+    ignore: [
+      "blog/**",
+      "agreement/**",
+      "hiring/**"
+    ]
+  },
   functions: {
     sortDate: (list) => {
       const res = [...list].sort((a, b) => {
