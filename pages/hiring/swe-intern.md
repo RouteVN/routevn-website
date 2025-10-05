@@ -14,7 +14,7 @@ seo:
 - Yuusoft Pte. Ltd. is a company incorporated in Singapore
 - Yuusoft Pte. Ltd. is the company that builds ands operates RouteVN
 - RouteVN is a dedicated platform for Visual Novels
-  - Our [mission](/blog/2025/01-to-fulfill-the-full-potential-of-visual-novels/) is to fulfill the full potential of Visual Novels
+  - Our [mission](/blog/2025/01-to-fulfill-the-full-potential-of-visual-novels/) is to fulfil the full potential of Visual Novels
   - We build tools and technology to create, distribute and read Visual Novels
 
 ## Internship
@@ -34,10 +34,10 @@ seo:
 
 ## What an ideal candidate looks like
 - You have passion for Visual Novels and you share the RouteVN vision
-- You genuively enjoy coding all day
+- You genuinely enjoy coding all day
 - You have a taste and high admiration for well crafted products
 - You are curious, fast learner and enjoy being exposed to new technologies
-- You are able to work independently take your own initiatives and resposibilities
+- You are able to work independently take your own initiatives and responsibilities
 
 ## Tech stack
 - We write almost all our code in Javascript and a little bit of Python
