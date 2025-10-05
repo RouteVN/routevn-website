@@ -15,7 +15,7 @@ seo:
 - Yuusoft Pte. Ltd. is the company that builds ands operates RouteVN
 - RouteVN is a dedicated platform for Visual Novels
   - Our [mission](/blog/2025/01-to-fulfill-the-full-potential-of-visual-novels/) is to fulfill the full potential of Visual Novels
-  - We create tools and technology to create, distribute and read Visual Novels
+  - We build tools and technology to create, distribute and read Visual Novels
 
 ## Internship
 - Compensation
