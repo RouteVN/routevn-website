@@ -57,11 +57,15 @@ landing:
         # - title: RouteVN Publisher
         #   text: A publishing and distribution platform dedicated to Visual Novels
         #   href: /publisher/about/
-    # - title: For Developers
-    #   cards:
-    #     - title: Route Engine
-    #       text: Open Source Visual Novel Engine
-    #       href: /creator/about/
+    - title: For Developers
+      cards:
+        # - title: Route Engine
+        #   text: Open Source Visual Novel Engine
+        #   href: /creator/about/
+        - title: Route Graphics
+          text: Declarative UI system for interactive 2D graphics and audio
+          href: https://github.com/RouteVN/route-graphics
+          hrefTarget: _blank
 
 creator:
   about:
