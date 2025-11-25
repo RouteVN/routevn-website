@@ -1,6 +1,6 @@
 ---
 title: Add developers section to the root page
-status: todo
+status: done
 priority: low
 ---
 

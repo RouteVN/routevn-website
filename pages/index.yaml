@@ -14,7 +14,7 @@ title: RouteVN
             - rtgl-view g="lg" w=f:
                 - $for card in section.cards:
                     - rtgl-view w=f:
-                        - 'a href="${card.href}" style="display: contents; text-decoration: none; color: inherit;"':
+                        - 'a href="${card.href}" target="${card.hrefTarget}" style="display: contents; text-decoration: none; color: inherit;"':
                             - 'rtgl-view w=f bw=xs p="lg" bgc="su" br="lg" h-bgc="suv" h-cur="p"':
                                 - 'rtgl-text s="h4"': ${card.title}
                                 - 'rtgl-text mt="sm"': ${card.text}
