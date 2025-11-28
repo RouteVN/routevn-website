@@ -1,0 +1,14 @@
+header:
+  label: Creator Docs
+  href: /creator/about
+items:
+  - title: "Getting Started"
+    type: groupLabel
+    items:
+      - id: introduction
+        title: "Introduction"
+        href: "/creator/docs/introduction"
+      - id: getting-started
+        title: "Getting Started"
+        href: "/creator/docs/getting-started"
+

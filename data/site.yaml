@@ -25,6 +25,8 @@ footer:
     - links:
         # - text: About
         #   href: /about/
+        - text: Creator Docs
+          href: /creator/docs/introduction/
         - text: Blog
           href: /blog/
         - text: Hiring
