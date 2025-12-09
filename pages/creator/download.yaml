@@ -6,10 +6,13 @@ seo:
   description: Download RouteVN Creator for Windows. Create visual novels easily with our intuitive editor.
 ---
 - rtgl-view h="100":
-- rtgl-view ah="c" ph="lg" md-w="100vw" lg-w="768" w="1024":
+- rtgl-view ah="c" ph="lg" g=lg md-w="100vw" lg-w="768" w="1024":
     - rtgl-text s="h1" mb="sm" ta="c": ${site.creator.download.title}
     - rtgl-text s="lg" c="mu-fg" mb="md" ta="c": ${site.creator.download.subtitle}
-    - rtgl-text s="lg" mb="xl" ta="c": Version ${site.creator.download.version}
+    - rtgl-view d=h g=lg av=c mb="xl" ah=c:
+        - rtgl-text s="lg": Version ${site.creator.download.version}
+        - rtgl-text c="mu-fg": "-"
+        - rtgl-text href="/creator/changelog/" s="lg" c="pr" h-cur=p: View changelog
     - rtgl-view g="lg" w="f":
         - $for platform in site.creator.download.platforms:
             - rtgl-view w="f" p="lg" bw="xs" br="lg" bgc="su" ah="c":
