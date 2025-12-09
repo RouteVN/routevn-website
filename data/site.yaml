@@ -25,6 +25,8 @@ footer:
         #   href: /about/
         - text: Creator Docs
           href: /creator/docs/introduction/
+        - text: Changelog
+          href: /creator/changelog/
         - text: Blog
           href: /blog/
         - text: Hiring
@@ -76,7 +78,7 @@ landing:
 
 creator:
   download:
-    version: "0.251209.0"
+    version: "0.4.0"
     title: Download RouteVN Creator
     subtitle: Get started creating your Visual Novel
     platforms:
@@ -84,7 +86,7 @@ creator:
         svg: windows
         cta:
           label: Download for Windows
-          href: https://static-1.routevn.com/routevn-creator-client/RouteVN%20Creator_0.251209.0_x64-setup.exe
+          href: https://static-1.routevn.com/routevn-creator-client/RouteVN%20Creator_0.4.0_x64-setup.exe
       - name: macOS
         svg: apple
         comingSoon: true

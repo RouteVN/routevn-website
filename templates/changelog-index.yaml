@@ -1,0 +1,32 @@
+- html lang="en":
+    - head:
+        - $partial: seo1
+          page: ${page}
+          seo: ${seo}
+        - link rel="stylesheet" href="/public/theme.css":
+        - script src="https://cdn.jsdelivr.net/npm/construct-style-sheets-polyfill@3.1.0/dist/adoptedStyleSheets.min.js":
+        - script src="https://cdn.jsdelivr.net/npm/@rettangoli/ui@0.1.2-rc32/dist/rettangoli-iife-ui.min.js":
+        - script src="/public/rtgl-icons.js":
+    - body.dark:
+        - rtgl-view h="96":
+        - rtgl-view w="f" ah="c":
+            - rtgl-view md-w="100vw" lg-w="768" w="900" ph=lg pb="xl":
+                - rtgl-view d=h md-d=v g=xl w=f mb="xl":
+                    - rtgl-view md-w=f w="140" mt="sm":
+                    - rtgl-view flex=1 mb=xl:
+                        - rtgl-text s="h1" mb="sm": ${changelog.title}
+                - rtgl-view g="xl" w=f:
+                    - $for item in sortVersion(collections.changelog):
+                        - rtgl-view d=h md-d=v g=xl w=f mb=xl:
+                            - rtgl-view md-w=f w="140" mt=lg:
+                                - rtgl-text c="mu-fg" s="sm": ${item.data.date}
+                            - rtgl-view flex=1:
+                                - 'a href="${item.url}" style="text-decoration: none; color: inherit;"':
+                                    - rtgl-text s="h1" fw="bold" h-cur=p mb="md": ${item.data.version}
+                                - "${md(item.content)}"
+            - rtgl-view d="h" h="30vh":
+            - $partial: footer1
+        - rtgl-view pos="abs" cor="top" ah="c" bgc="bg":
+            - $partial: navbar1
+              title: ${site.navbar.title}
+              cta: ${site.navbar.cta}

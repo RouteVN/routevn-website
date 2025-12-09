@@ -1,6 +1,7 @@
 
 import { createMarkdownItAsync } from "./markdownItAsync.js";
 import { codeToHtml } from "shiki";
+import MarkdownIt from "markdown-it";
 
 // Custom slug generation function
 function slugify(text) {
@@ -73,6 +74,12 @@ export const configureMarkdown = () => {
   return md;
 };
 
+// Simple sync markdown renderer (no Shiki, for use in template functions)
+const mdSync = new MarkdownIt({
+  html: true,
+  linkify: true,
+  typographer: false,
+});
 
 export default {
   screenshots: {
@@ -80,7 +87,8 @@ export default {
       "blog/**",
       "agreement/**",
       "hiring/**",
-      "creator/docs/**"
+      "creator/docs/**",
+      "creator/changelog/**"
     ]
   },
   mdRender: configureMarkdown(),
@@ -93,8 +101,25 @@ export default {
       });
       return res;
     },
+    sortVersion: (list) => {
+      const res = [...list].sort((a, b) => {
+        const versionA = (a.data.version || '0.0.0').split('.').map(Number);
+        const versionB = (b.data.version || '0.0.0').split('.').map(Number);
+        for (let i = 0; i < Math.max(versionA.length, versionB.length); i++) {
+          const numA = versionA[i] || 0;
+          const numB = versionB[i] || 0;
+          if (numB !== numA) return numB - numA;
+        }
+        return 0;
+      });
+      return res;
+    },
     escapeJson: (data) => {
       return encodeURIComponent(JSON.stringify(data))
+    },
+    md: (content) => {
+      if (!content) return { __html: '' };
+      return { __html: mdSync.render(content) };
     }
   }
 }
