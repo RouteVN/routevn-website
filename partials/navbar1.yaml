@@ -9,4 +9,4 @@
         - rtgl-view flex=1:
         - rtgl-view d=h av=c:
             - $if cta.label:
-                - rtgl-button: ${cta.label}
+                - rtgl-button href="${cta.href}": ${cta.label}

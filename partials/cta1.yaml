@@ -1,4 +1,7 @@
-- rtgl-view ah="c" p="xl" br="md" bw=sm:
-    - rtgl-text s="h2" mb="md" c="on-pr" ta=c: ${title}
-    - rtgl-text s="lg" c="on-pr" mb="lg" ta=c: ${subtitle}
-    - rtgl-button href="${cta.href}": ${cta.label}
+- rtgl-view ah="c" ph="lg" md-w="100vw" lg-w="768" w="1024":
+    - rtgl-view ah="c" p="xl" br="md" bw="sm" w="f":
+        - $if svg:
+            - rtgl-svg svg="${svg}" wh="48" f="on-pr" mb="md":
+        - rtgl-text s="h2" mb="md" c="on-pr" ta="c": ${title}
+        - rtgl-text s="lg" c="on-pr" mb="lg" ta="c": ${subtitle}
+        - rtgl-button href="${cta.href}": ${cta.label}
