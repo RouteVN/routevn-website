@@ -1,5 +1,5 @@
 ---
-template: base
+template: creator
 title: An easier way to create Visual Novels
 seo:
   title: RouteVN Creator - Browser-Based Visual Novel Creation Tool
@@ -13,6 +13,7 @@ seo:
   subtitle: ${site.creator.about.hero.subtitle}
   message: ${site.creator.about.hero.message}
   videoSrc: ${site.creator.about.hero.videoSrc}
+  posterSrc: ${site.creator.about.hero.posterSrc}
 
 - rtgl-view mt="xl":
     - $for feature in site.creator.about.features:

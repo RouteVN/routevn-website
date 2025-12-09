@@ -5,8 +5,6 @@ navbar:
   title:
     imgSrc: "/public/images/logo1.png"
     href: "/"
-  # cta:
-  #   label: Register
 
 footer:
   logo:
@@ -41,6 +39,13 @@ footer:
           newTab: true
 
 landing:
+  discord:
+    svg: discord
+    title: Join our Discord community
+    subtitle: See how RouteVN is built. Join the discussion, share feedback, and follow the latest updates
+    cta:
+      label: Join Discord
+      href: https://tally.so/r/w4LKab
   mission:
     title: A dedicated platform for Visual Novels
     text: To fulfill the full potential of Visual Novels
@@ -70,11 +75,28 @@ landing:
           hrefTarget: _blank
 
 creator:
+  download:
+    version: "0.251209.0"
+    title: Download RouteVN Creator
+    subtitle: Get started creating your Visual Novel
+    platforms:
+      - name: Windows
+        svg: windows
+        cta:
+          label: Download for Windows
+          href: https://static-1.routevn.com/routevn-creator-client/RouteVN%20Creator_0.251209.0_x64-setup.exe
+      - name: macOS
+        svg: apple
+        comingSoon: true
+      - name: Linux
+        svg: linux
+        comingSoon: true
   about:
     hero:
       title: An easier way to create Visual Novels
       subtitle: Focus on your story and creativity while the tech is taken care of
       videoSrc: https://cdn1.yuusoft.com/routevn-assets/landing.mp4
+      posterSrc: /public/landing/editor-1.png
     features:
       - title: Optimized for ease of use
         imgSrc: /public/landing/editor-1.png
@@ -100,11 +122,10 @@ creator:
             message: Our intuitive editor lets you create scenes without any programming knowledge.
     cta:
       title: Experience a new way to create Visual Novels
-      subtitle: Join the waitlist to be notified of any updates
+      subtitle: Download RouteVN Creator and start building your Visual Novel today
       cta:
-        label: Join the waitlist
-        href: https://tally.so/r/waAEDB
-        hrefTarget: _blank
+        label: Download
+        href: /creator/download/
 
 publisher:
   about:

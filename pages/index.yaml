@@ -18,3 +18,11 @@ title: RouteVN
                             - 'rtgl-view w=f bw=xs p="lg" bgc="su" br="lg" h-bgc="suv" h-cur="p"':
                                 - 'rtgl-text s="h4"': ${card.title}
                                 - 'rtgl-text mt="sm"': ${card.text}
+- rtgl-view h="20vh":
+- $partial: cta1
+  svg: ${site.landing.discord.svg}
+  title: ${site.landing.discord.title}
+  subtitle: ${site.landing.discord.subtitle}
+  cta:
+    label: ${site.landing.discord.cta.label}
+    href: ${site.landing.discord.cta.href}
