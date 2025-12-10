@@ -1,7 +1,8 @@
 ---
 title: Make website work well on Safari
 status: todo
-priority: low
+priority: high
+assignee: han4wluc
 ---
 
 # Description

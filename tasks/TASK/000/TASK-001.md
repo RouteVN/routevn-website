@@ -1,7 +1,7 @@
 ---
 title: Create changelog page
-status: todo
-assignee: nghia
+status: done
+assignee: han4wluc
 priority: medium
 ---
 
