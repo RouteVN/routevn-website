@@ -23,6 +23,4 @@ title: RouteVN
   svg: ${site.landing.discord.svg}
   title: ${site.landing.discord.title}
   subtitle: ${site.landing.discord.subtitle}
-  cta:
-    label: ${site.landing.discord.cta.label}
-    href: ${site.landing.discord.cta.href}
+  cta: ${site.landing.discord.cta}

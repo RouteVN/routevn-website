@@ -4,4 +4,7 @@
             - rtgl-svg svg="${svg}" wh="48" f="on-pr" mb="md":
         - rtgl-text s="h2" mb="md" c="on-pr" ta="c": ${title}
         - rtgl-text s="lg" c="on-pr" mb="lg" ta="c": ${subtitle}
-        - rtgl-button href="${cta.href}": ${cta.label}
+        - $if cta.newTab:
+            - rtgl-button href="${cta.href}" target="_blank": ${cta.label}
+          $else:
+            - rtgl-button href="${cta.href}": ${cta.label}
