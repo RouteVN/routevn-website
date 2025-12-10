@@ -14,7 +14,7 @@ footer:
     height: 20
   social:
     - svg: discord
-      href: https://tally.so/r/w4LKab
+      href: https://discord.gg/8J9dyZSu9C
     - svg: bluesky
       href: https://bsky.app/profile/routevn.bsky.social
     - svg: x
@@ -47,7 +47,8 @@ landing:
     subtitle: See how RouteVN is built. Join the discussion, share feedback, and follow the latest updates
     cta:
       label: Join Discord
-      href: https://tally.so/r/w4LKab
+      href: https://discord.gg/8J9dyZSu9C
+      newTab: true
   mission:
     title: A dedicated platform for Visual Novels
     text: To fulfill the full potential of Visual Novels
