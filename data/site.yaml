@@ -4,6 +4,8 @@ baseUrl: https://routevn.com
 navbar:
   title:
     imgSrc: "/public/images/logo1.png"
+    imgWidth: 132
+    imgHeight: 24
     href: "/"
 
 footer:
