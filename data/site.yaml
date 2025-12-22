@@ -64,20 +64,29 @@ landing:
     - title: For Creators
       cards:
         - title: RouteVN Creator
-          text: An easier way to create Visual Novels
+          text: Enabling users to create Visual Novels without coding or technical barriers
           href: /creator/about/
+          btnLabel: Learn More
         # - title: RouteVN Publisher
         #   text: A publishing and distribution platform dedicated to Visual Novels
         #   href: /publisher/about/
     - title: For Developers
       cards:
-        # - title: Route Engine
-        #   text: Open Source Visual Novel Engine
-        #   href: /creator/about/
         - title: Route Graphics
           text: Declarative UI system for interactive 2D graphics and audio
           href: https://github.com/RouteVN/route-graphics
           hrefTarget: _blank
+          btnLabel: GitHub
+        - title: Route Engine
+          text: The lightweight Visual Novel engine powering RouteVN
+          href: https://github.com/RouteVN/route-engine
+          hrefTarget: _blank
+          btnLabel: GitHub
+        - title: RouteVN Creator Client
+          text: The codebase for RouteVN Creator Client application
+          href: https://github.com/RouteVN/routevn-creator-client
+          hrefTarget: _blank
+          btnLabel: GitHub
 
 creator:
   download:
