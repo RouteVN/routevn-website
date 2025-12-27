@@ -120,6 +120,11 @@ export default {
     md: (content) => {
       if (!content) return { __html: '' };
       return { __html: mdSync.render(content) };
+    },
+    formatAuthor: (author) => {
+      if (!author) return '';
+      if (Array.isArray(author)) return author.join(', ');
+      return author;
     }
   }
 }
