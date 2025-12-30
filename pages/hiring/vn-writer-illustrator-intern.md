@@ -50,5 +50,5 @@ seo:
 
 For any questions, you can [ask via this form](https://tally.so/r/wzZ7rM)
 
-[**Apply here**](https://tally.so/r/wooRVe)
+[**Apply here**](https://tally.so/r/A7Ko9N)
 
