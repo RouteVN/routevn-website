@@ -1,106 +1,90 @@
 ---
 template: post
 author: han4wluc
-title: RouteVN Devlog 2
+title: RouteVN Devlog 2 - 2025 Recap
 tags: [blogPost]
-date: '2025-10-08'
+date: '2026-01-01'
 seo:
-  title: RouteVN Devlog 2
-  description: ....
+  title: RouteVN Devlog 2 - 2025 Recap
+  description: A look back at RouteVN's achievements in 2025 and our plans for 2026, including the public release of RouteVN Creator, open sourcing our code, and upcoming features.
   ogType: article
 ---
 
-## RouteVN Devlog
+## RouteVN Devlog 2
 
-This is the second Dev Log following up the one in [from devlog y1-5](https://routevn.com/blog/2025/04-devlog-y1-5/), and will also be a recap for plans in 2026.
+This is the second devlog, following up on the [Year 1.5 devlog](https://routevn.com/blog/2025/04-devlog-y1-5/). It's also a recap of 2025 and our plans for 2026.
 
-Main achievements:
+### Main Achievements
 
-in December we have made RouteVN Creator Client available for public download. This is actually the first time it is available for public download since almost 2 years of development.
+In December, we made RouteVN Creator Client available for [public download](https://routevn.com/creator/download/). This is actually the first time it's been publicly available after almost 2 years of development.
 
-The app is not that stable, but it is basic usable, in terms of creating a full Visual Novel from scratch and exporting it in a format runnable in the web.
+The app isn't really stable yet, but it's usable for the basics: creating a full Visual Novel from scratch and exporting it to a web-runnable format.
 
-We have opened up our Discord server, and are slowly inviting people to it. 
+We've also opened our [Discord server](https://discord.gg/8J9dyZSu9C) and are slowly inviting more people to join.
 
-Open source
+### Open Source
 
-we have open sourced all our code under MIT license, is 3 repos, plus this website itself 4 repos.
+We've open-sourced all our code under the MIT license across 3 repositories.
 
-Team
+- route-graphics
+- route-engine
+- routevn-creator-client
 
-There have been some intern hires in the past few months, which is very lucky and unusual, leading problem of having to manage too many people.
+This website itself is also open-sourced.
 
-These people have been working on the things below:
+### Team & Development
 
-- rewrote route-graphics to be peoprly written and solid foundation. it is still not perfect, but it is being able to approach many features. some highlights:
+We've had some intern hires in the past few months, which has been both lucky and unusual. It's also led to the interesting challenge of managing more people.
 
-- rewrote the engine itself. the code is now almost a miracle. the full codebase is less than 3000 lines of code. because we removed everthing unecessary that is not neede. it will grow once we add features, but I won't expect it to grow by a lot.
+Here's what the team has been working on:
 
-Particles courtesy of JeffY
+- **Rewrote route-graphics** to have a properly written and solid foundation. It's still not perfect, but it's now able to support many more features. Some highlights:
 
-particles we need to balance the interface, how to make it easy to be used by users, yet keep it customizable so they don't always look the same.
+- **Rewrote the engine itself.** The code has now reached its simplest form — the full codebase is less than 3,000 lines of code. We achieved this by removing everything not directly related to VN functionality and creating the right abstractions. It will grow as we add features, but I don't expect it to grow by much.
 
-Sprite sheets courtesy of nghia
+- **Particles** (courtesy of JeffY): We need to balance the interface — making it easy for users while keeping it customizable so particle effects don't all look the same.
 
+- **Sprite sheets** (courtesy of Nghia): Implementing them in the graphics library (which mostly uses PixiJS) is only the first step. It will take longer for this to make its way up to the client.
 
-implementing them in the graphics library which is mostly just using pixijs anyways is only the 1st step, it will take longer for it to make it up to the client
+We've also conducted internal research comparing our engine with many VNs out there to see which features we can currently support and which we can't. We may or may not share more about this — it will take time to organize things properly.
 
-and there is much more.
+We have classified all these features by priority so we can focus on which ones to work on first. I have to say, we still have a lot of work to do!
 
-Plans for 2026
+### Plans for 2026
 
-Below are the first priorities:
+Below are our top priorities:
 
-- make the application stable and usable. this remains the top priority and we have very easilyt detoured from it many times. without this, everything else won't be able to follow.
-- make it even easier to use. there are some difficult pages in terms of UX. we will need to figure out how to improve them. we also want to implment project templates, where you can select an exisitng project with erady UI. i'm actually very excited about this because will able to involve creators as well.
-- features completeness and advanced features. we have put a lot of effort designign and creating a strong foudnation for this application, althout it start with only creating simple features, it was never intended to do only that. add advanced features while always being careful in not making it too complex to use. things like variable management. 
-- help with publishing, which will be support more export formats other than web. we also want to have some tools to better support self publishing.
+- **Make the application stable and usable.** This remains the top priority, and we've easily gotten detoured from it many times. Without this, everything else can't follow.
 
-Marketing
+- **Make it even easier to use.** Some pages are difficult in terms of UX, and we'll need to figure out how to improve them. We also want to implement project templates, where you can start from an existing project with ready-made UI. I'm actually very excited about this because it will allow us to involve creators as well.
 
-We are still waiting for the app to be more stable on promotion and marketing. We started introducing team members. I think in 2026 we will keep a good pace of blog posts and sharing smaller regular contents. This is expected to be gradually more active in this space.
+- **Feature completeness and advanced features.** We've put a lot of effort into designing and creating a strong foundation for this application. Although it started with only simple features, it was never intended to stay that way. We'll add advanced features while being careful not to make things too complex. Things like variable management.
 
-We will be reaching out more for VN related communities
+- **Better publishing experience.** This means supporting more export formats beyond web. We also want to build tools to better support self-publishing.
 
-Visual Novel Creation
+### Marketing
 
-2026 will be the year the 1st complete VN will be created.
+We're still waiting for the app to be more stable before focusing on promotion and marketing. We've started introducing team members, and I think in 2026 we'll maintain a good pace of blog posts and share smaller, regular content. We expect to be gradually more active in this space.
 
-We are all technical software engineer team, and soon this won't be the bottle neck anymore, we will actually need real Visual Novels being created through different ways. We're pushing for 3 ways to produce content.
+We'll also be reaching out more to VN-related communities.
 
-- we are talking with a couple of indie VN developers to sponsor a short VN. it is expensive for us but might make sense to kickstart things, and also learn more about creating VN as we'll work closely, but most of all we supporting real pepople creating VNs
-- we are officially hiring a paid intern for Visual Novel writer & illustration, it is a rare role for someone who can do both. 
-- VN created in the wild. we still not there yet right now, but I think in 2026 and can't imagine how many will be created.
+### Visual Novel Creation
 
+2026 will be the year the first complete VN is created with RouteVN.
 
+We're an all-technical software engineering team, and soon technical capability won't be the bottleneck anymore. We'll actually need real Visual Novels being created. We're pushing for 3 ways to produce content:
 
+- **Sponsoring indie developers.** We're talking with a couple of indie VN developers about sponsoring a short VN. It's expensive for us, but it might make sense to kickstart things. We'll also learn more about creating VNs by working closely with them — and most of all, we'll be supporting real people creating VNs.
 
+- **Hiring a writer/illustrator intern.** We're officially hiring a paid intern for Visual Novel writing and illustration to create Visual Novels internally. It's a rare role for someone who can do both.
 
+- **VNs created in the wild.** We're not quite there yet, but I think by 2026's end, I can't wait to see how many will be created.
 
+## Conclusion
 
+If you're interested in creating a VN with RouteVN, please reach out to us on [Discord](https://discord.gg/8J9dyZSu9C) or any other channel — we'd love to talk to you.
 
+To stay updated, follow us on social media.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+Thank you!
 
