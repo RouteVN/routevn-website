@@ -90,7 +90,7 @@ landing:
 
 creator:
   download:
-    version: "0.6.0"
+    version: "0.7.0"
     title: Download RouteVN Creator
     subtitle: Get started creating your Visual Novel
     platforms:
