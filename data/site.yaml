@@ -98,7 +98,7 @@ creator:
         svg: windows
         cta:
           label: Download for Windows
-          href: https://static-1.routevn.com/routevn-creator-client/RouteVN%20Creator_0.6.0_x64-setup.exe
+          href: https://static-1.routevn.com/routevn-creator-client/RouteVN%20Creator_0.7.0_x64-setup.exe
       - name: macOS
         svg: apple
         comingSoon: true
