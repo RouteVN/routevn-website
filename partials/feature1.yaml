@@ -8,8 +8,10 @@
                 - $if imgSrc:
                     - rtgl-image src="${imgSrc}" w="f":
                 - $if videoSrc:
-                    - video src="${videoSrc}" style="width:100%;height:auto;display:block" autoplay loop muted playsinline:
-
+                    - $if build.isScreenshotMode:
+                        - video src="${videoSrc}" style="width:100%;height:auto;display:block" loop muted playsinline:
+                      $else:
+                        - video src="${videoSrc}" style="width:100%;height:auto;display:block" autoplay loop muted playsinline:
         - rtgl-view g="lg" flex=1 av=c h=f:
             - $for feature in features:
                 - rtgl-view  p="lg" bgc="su" br="lg" g=md:
@@ -20,13 +22,19 @@
                 - $if imgSrc:
                     - rtgl-image src="${imgSrc}" w="f":
                 - $if videoSrc:
-                    - video src="${videoSrc}" style="width:100%;height:auto;display:block" autoplay loop muted playsinline:
+                    - $if build.isScreenshotMode:
+                        - video src="${videoSrc}" style="width:100%;height:auto;display:block" loop muted playsinline:
+                      $else:
+                        - video src="${videoSrc}" style="width:100%;height:auto;display:block" autoplay loop muted playsinline:
     - rtgl-view md-show hide g=lg mt=xl:
         - rtgl-view flex="2" bc="o" bw="xs" br="s":
             - $if imgSrc:
                 - rtgl-image src="${imgSrc}" w="f":
             - $if videoSrc:
-                - video src="${videoSrc}" style="width:100%;height:auto;display:block" autoplay loop muted playsinline:
+                - $if build.isScreenshotMode:
+                    - video src="${videoSrc}" style="width:100%;height:auto;display:block" loop muted playsinline:
+                  $else:
+                    - video src="${videoSrc}" style="width:100%;height:auto;display:block" autoplay loop muted playsinline:
         - rtgl-view g="lg" flex=1 av=c h=f w=f:
             - $for feature in features:
                 - rtgl-view  p="lg" bgc="su" br="lg" g=md w=f ah=c:
