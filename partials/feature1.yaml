@@ -17,7 +17,7 @@
                 - rtgl-view  p="lg" bgc="su" br="lg" g=md:
                     - rtgl-text s=h4 mb=sm: "${feature.title}"
                     - rtgl-text mb="sm":
-                      __html: "${feature.message}"
+                        - __html: "${feature.message}"
         - $if v == "2":
             - rtgl-view flex="2" bc="o" bw="xs" br="s":
                 - $if imgSrc:
@@ -41,5 +41,5 @@
                 - rtgl-view  p="lg" bgc="su" br="lg" g=md w=f ah=c:
                     - rtgl-text s=h4 mb=sm ta=c: "${feature.title}"
                     - rtgl-text mb="sm" ta=c:
-                      __html: "${feature.message}"
+                        - __html: "${feature.message}"
 - rtgl-view h=64:
