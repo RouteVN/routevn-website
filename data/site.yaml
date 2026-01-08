@@ -110,10 +110,10 @@ creator:
       title: An easier way to create Visual Novels
       subtitle: Focus on your story and creativity while the tech is taken care of
       videoSrc: /public/creator/routevn-demo-250108.mp4
-      posterSrc: /public/creator/ss-1.png
+      posterSrc: /public/creator/routevn-demo-250108-thumb.png
     features:
       - title: Live Preview
-        imgSrc: /public/creator/ss-2.png
+        videoSrc: /public/creator/animated-1.mp4
         v: "2"
         features:
           - title: As you type
@@ -124,7 +124,7 @@ creator:
             message: Previews a accurate and same as the end product
 
       - title: Powerful Layout Editor
-        imgSrc: /public/creator/ss-2.png
+        imgSrc: /public/creator/ss-5.png
         features:
           - title: Fully customize the UI
             message: Customize your VN's UI from the layout editor
@@ -133,19 +133,19 @@ creator:
             message: Manage your colors, fonts, text styles in a structured and scalable way
 
       - title: Assets manager
-        imgSrc: /public/creator/ss-3.png
+        videoSrc: /public/creator/animated-2.mp4
         features:
           - title: Easy to import
             message: Just upload or drag and drop all your files
 
-          - title: Images, Sounds, Characters, Videos
+          - title: Images, Sounds, Characters
             message: Organize all your assets as it suits your needs
 
           - title: Transforms and Tween animations
             message: Support transforms for positioning and tween animations for transition effects
 
       - title: Scenes Map
-        imgSrc: /public/creator/ss-4.png
+        imgSrc: /public/creator/ss-7.png
         v: "2"
         features:
           - title: Visual storyline
@@ -155,7 +155,7 @@ creator:
             message: Plan for branching choices and scene transitions
 
       - title: Free, Open Source, Privacy First
-        imgSrc: /public/creator/ss-4.png
+        imgSrc: /public/creator/ss-8.png
         v: "2"
         features:
           - title: Free

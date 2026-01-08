@@ -22,6 +22,8 @@ seo:
           message: ${feature.message}
           features: ${feature.features}
           v: ${feature.v}
+          imgSrc: ${feature.imgSrc}
+          videoSrc: ${feature.videoSrc}
 
 - rtgl-view h="100":
 - $partial: cta1
