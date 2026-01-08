@@ -107,12 +107,13 @@ creator:
         comingSoon: true
   about:
     hero:
-      title: An easier way to create Visual Novels
-      subtitle: Focus on your story and creativity while the tech is taken care of
+      title: Bring your Visual Novel to life
+      subtitle: RouteVN Creator is a free open-source software for creating Visual Novels without any coding
       videoSrc: /public/creator/routevn-demo-250108.mp4
       posterSrc: /public/creator/routevn-demo-250108-thumb.png
     features:
       - title: Live Preview
+        message: Preview your edits in real time
         videoSrc: /public/creator/animated-1.mp4
         v: "2"
         features:
@@ -121,28 +122,38 @@ creator:
           - title: As you navigate
             message: See changes immediately as you navigate to different lines
           - title: Accurate
-            message: Previews a accurate and same as the end product
+            message: Previews are accurate and same as the end product
 
-      - title: Powerful Layout Editor
-        imgSrc: /public/creator/ss-5.png
+      - title: Fast, intuitive and reliable
+        message: We built the engine from ground up to pursue the best user experience that creators deserve
+        imgSrc: /public/creator/ss-2.png
         features:
-          - title: Fully customize the UI
-            message: Customize your VN's UI from the layout editor
+          - title: Fast
+            message: No loading indicators, every action is instant
+          - title: Intuitive
+            message: Learn the basics in minutes, things should work as you expect
+          - title: Reliable
+            message: Ok, the truth is that this software is still under active development. We are releasing bug fixes every week
 
-          - title: Structured
-            message: Manage your colors, fonts, text styles in a structured and scalable way
+      - title: Layout Editor
+        message: Fully customize your Visual Novel's UI
+        imgSrc: /public/creator/ss-5.png
+        v: "2"
+        features:
+          - title: Design grade tool
+            message: UI design adapated for Visual Novels
+          - title: Best practices baked in
+            message: Your colors, fonts, and styles stay organized as your project grows
 
       - title: Assets manager
-        videoSrc: /public/creator/animated-2.mp4
+        imgSrc: /public/creator/ss-1.png
         features:
           - title: Easy to import
-            message: Just upload or drag and drop all your files
-
-          - title: Images, Sounds, Characters
+            message: Upload or drag and drop all your files
+          - title: Images, sounds, characters and more
             message: Organize all your assets as it suits your needs
-
-          - title: Transforms and Tween animations
-            message: Support transforms for positioning and tween animations for transition effects
+          - title: Transforms and tween animations
+            message: Enabling engaging visual effects
 
       - title: Scenes Map
         imgSrc: /public/creator/ss-7.png
@@ -150,26 +161,20 @@ creator:
         features:
           - title: Visual storyline
             message: See your entire visual novel structure at a glance.
-
           - title: Branches and scene transition
-            message: Plan for branching choices and scene transitions
+            message: Stay organized as your story branches and grows
 
-      - title: Free, Open Source, Privacy First
+      - title: Free and Open Source
         imgSrc: /public/creator/ss-8.png
-        v: "2"
         features:
           - title: Free
-            message: No ads
-
+            message: No ads, no intrusive upsells
           - title: Open Source
-            message: MIT license. Check out the source code on Github
-
-          - title: Works fully offline
-            message: Privacy first, you fully own your creation
+            message: MIT license. Check out the source code on <a target="_blank" href="https://github.com/routevn/routevn-creator-client">Github</a>
 
     cta:
-      title: Experience a new way to create Visual Novels
-      subtitle: Download RouteVN Creator and start building your Visual Novel today
+      title: Bring your Visual Novel to life
+      subtitle: Download RouteVN Creator to start creating
       cta:
         label: Download
         href: /creator/download/
