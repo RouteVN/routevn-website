@@ -109,31 +109,64 @@ creator:
     hero:
       title: An easier way to create Visual Novels
       subtitle: Focus on your story and creativity while the tech is taken care of
-      videoSrc: https://cdn1.yuusoft.com/routevn-assets/landing.mp4
-      posterSrc: /public/landing/editor-1.png
+      videoSrc: /public/creator/routevn-demo-250108.mp4
+      posterSrc: /public/creator/routevn-demo-250108-thumb.png
     features:
-      - title: Optimized for ease of use
-        imgSrc: /public/landing/editor-1.png
+      - title: Live Preview
+        videoSrc: /public/creator/animated-1.mp4
         v: "2"
         features:
-          - title: Browser-based
-            message: Create Visual Novels directly in your browser, no downloads required.
-      - title: Resources manager
-        imgSrc: /public/landing/resources_background.png
+          - title: As you type
+            message: See changes immediately as you type
+          - title: As you navigate
+            message: See changes immediately as you navigate to different lines
+          - title: Accurate
+            message: Previews a accurate and same as the end product
+
+      - title: Powerful Layout Editor
+        imgSrc: /public/creator/ss-5.png
         features:
-          - title: Asset organization
-            message: Organize all your visual novel assets in one place.
-      - title: Scenes Graph
-        imgSrc: /public/landing/scene_graph_1.png
+          - title: Fully customize the UI
+            message: Customize your VN's UI from the layout editor
+
+          - title: Structured
+            message: Manage your colors, fonts, text styles in a structured and scalable way
+
+      - title: Assets manager
+        videoSrc: /public/creator/animated-2.mp4
+        features:
+          - title: Easy to import
+            message: Just upload or drag and drop all your files
+
+          - title: Images, Sounds, Characters
+            message: Organize all your assets as it suits your needs
+
+          - title: Transforms and Tween animations
+            message: Support transforms for positioning and tween animations for transition effects
+
+      - title: Scenes Map
+        imgSrc: /public/creator/ss-7.png
         v: "2"
         features:
           - title: Visual storyline
             message: See your entire visual novel structure at a glance.
-      - title: Scene editor with live preview
-        imgSrc: /public/landing/editor-2.png
+
+          - title: Branches and scene transition
+            message: Plan for branching choices and scene transitions
+
+      - title: Free, Open Source, Privacy First
+        imgSrc: /public/creator/ss-8.png
+        v: "2"
         features:
-          - title: No coding required
-            message: Our intuitive editor lets you create scenes without any programming knowledge.
+          - title: Free
+            message: No ads
+
+          - title: Open Source
+            message: MIT license. Check out the source code on Github
+
+          - title: Works fully offline
+            message: Privacy first, you fully own your creation
+
     cta:
       title: Experience a new way to create Visual Novels
       subtitle: Download RouteVN Creator and start building your Visual Novel today
