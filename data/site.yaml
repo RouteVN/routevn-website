@@ -21,12 +21,20 @@ footer:
       href: https://bsky.app/profile/routevn.bsky.social
     - svg: x
       href: https://x.com/routevn
+    - svg: reddit
+      href: https://www.reddit.com/r/routevn/
+    - svg: github
+      href: https://github.com/RouteVN
+    # - svg: youtube
+    #   href: https://www.youtube.com/@routevn
+    - svg: linkedin
+      href: https://www.linkedin.com/showcase/110652448
   columns:
     - links:
         # - text: About
         #   href: /about/
-        - text: Creator Docs
-          href: /creator/docs/introduction/
+        # - text: Creator Docs
+        #   href: /creator/docs/introduction/
         - text: Changelog
           href: /creator/changelog/
         - text: Blog
@@ -64,7 +72,7 @@ landing:
     - title: For Creators
       cards:
         - title: RouteVN Creator
-          text: Enabling users to create Visual Novels without coding or technical barriers
+          text: Create Visual Novels without any coding
           href: /creator/about/
           btnLabel: Learn More
         # - title: RouteVN Publisher
@@ -92,7 +100,7 @@ creator:
   download:
     version: "0.7.0"
     title: Download RouteVN Creator
-    subtitle: Get started creating your Visual Novel
+    # subtitle: Get started creating your Visual Novel
     platforms:
       - name: Windows
         svg: windows
@@ -107,15 +115,13 @@ creator:
         comingSoon: true
   about:
     hero:
-      title: Bring your Visual Novel to life
-      subtitle: RouteVN Creator is a free open-source software for creating Visual Novels without any coding
+      title: Create Visual Novels without any coding
       videoSrc: /public/creator/routevn-demo-250108.mp4
       posterSrc: /public/creator/routevn-demo-250108-thumb.png
     features:
       - title: Live Preview
         message: Preview your edits in real time
         videoSrc: /public/creator/animated-1.mp4
-        v: "2"
         features:
           - title: As you type
             message: See changes immediately as you type
@@ -123,6 +129,15 @@ creator:
             message: See changes immediately as you navigate to different lines
           - title: Accurate
             message: Previews are accurate and same as the end product
+
+      - title: Free and Open Source
+        imgSrc: /public/creator/ss-8.png
+        v: "2"
+        features:
+          - title: Free
+            message: No ads, no intrusive upsells
+          - title: Open Source
+            message: MIT license. Check out the source code on <a target="_blank" href="https://github.com/routevn/routevn-creator-client">Github</a>
 
       - title: Fast, intuitive and reliable
         message: We built the engine from ground up to pursue the best user experience that creators deserve
@@ -163,14 +178,6 @@ creator:
             message: See your entire visual novel structure at a glance.
           - title: Branches and scene transition
             message: Stay organized as your story branches and grows
-
-      - title: Free and Open Source
-        imgSrc: /public/creator/ss-8.png
-        features:
-          - title: Free
-            message: No ads, no intrusive upsells
-          - title: Open Source
-            message: MIT license. Check out the source code on <a target="_blank" href="https://github.com/routevn/routevn-creator-client">Github</a>
 
     cta:
       title: Bring your Visual Novel to life

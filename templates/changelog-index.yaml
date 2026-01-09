@@ -24,6 +24,9 @@
                                 - 'a href="${item.url}" style="text-decoration: none; color: inherit;"':
                                     - rtgl-text s="h1" fw="bold" h-cur=p mb="md": ${item.data.version}
                                 - "${md(item.content)}"
+                                - $if item.data.isLatest:
+                                    - 'a href="/creator/download/" style="text-decoration: none;"':
+                                        - rtgl-button mt="md": Download
             - rtgl-view d="h" h="30vh":
             - $partial: footer1
         - rtgl-view pos="abs" cor="top" ah="c" bgc="bg":

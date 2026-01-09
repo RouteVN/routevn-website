@@ -22,6 +22,9 @@
                     - rtgl-view md-w=f w="140":
                     - rtgl-view flex=1:
                         - "${content}"
+                        - $if isLatest:
+                            - 'a href="/creator/download/" style="text-decoration: none;"':
+                                - rtgl-button mt="lg": Download
             - rtgl-view d="h" h="30vh":
             - $partial: footer1
         - rtgl-view pos="abs" cor="top" ah="c" bgc="bg":
