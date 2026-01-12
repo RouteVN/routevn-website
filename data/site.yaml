@@ -179,54 +179,22 @@ creator:
           - title: Branches and scene transition
             message: Stay organized as your story branches and grows
 
+    faq:
+      title: Frequently Asked Questions
+      items:
+        - title: What makes RouteVN Creator different from other Visual Novel engines?
+          content: No coding, no technical background required. We built RouteVN Creator so anyone, including writers, artists, and hobbyists, can create their own Visual Novel. Easy to start, and stays organized as your project grows.
+        - title: Will RouteVN Creator always stay free?
+          content: Yes, the free version will always be free and open source. We may add paid features in the future, but they will be optional and won't limit the free version.
+        - title: How do I export my Visual Novel?
+          content: Currently, you can export your project as a web version (HTML and JS files). We plan to support all major platforms soon, including Windows, macOS, Linux, Android, and iOS.
+        - title: Are there any content restrictions?
+          content: RouteVN Creator is just a tool. You can create whatever you want. The app works offline, so we have no way of knowing what you make.
+        - title: What are the limitations of RouteVN Creator?
+          content: RouteVN Creator is best for relatively simple Visual Novels without complex gameplay. It may not be suitable if you need custom game mechanics or advanced features uncommon in Visual Novels.
     cta:
       title: Bring your Visual Novel to life
       subtitle: Download RouteVN Creator to start creating
       cta:
         label: Download
         href: /creator/download/
-
-publisher:
-  about:
-    hero:
-      title: RouteVN Publisher
-      subtitle: A publishing and distribution platform dedicated to Visual Novels
-      message: Publish your Visual Novel
-    features:
-      - title: Dedicated to Visual Novels
-        message: RouteVN Store is only for Visual Novels. We love Visual Novels and want to make them accessible to everyone.
-        features:
-          - title: Engaged audience
-            message: Our audience are people who understand and are passionate about Visual Novels.
-          - title: Content policy
-            message: We welcome all types of Visual Novels, but as an all-ages platform, we do not cater adult content.
-      - title: Available from any device
-        message: Published Visual Novels will work seamlessly across all platform and devices.
-        features:
-          - title: Porting your Visual Novel
-            message: We will do the work to port your Visual Novel to our custom engine for you.
-          - title: Available on all devices
-            message: Check out our app on Web, Google Play and App Store.
-      - title: Enhanced reading experience
-        message: We are committed to provide the best possible reading experience for Visual Novels.
-        features:
-          - title: Works offline and online
-            message: Readers can read offline, and sync data online across all devices
-          - title: Powered by a custom engine
-            message: We have have built a Visual Novel engine from scratch to provide the best reading experience.
-      - title: Empowering publishers
-        message: We handle all admin and compliance globally so you can focus on the work you enjoy most. We provide tools to help you manage your published Visual Novel.
-        features:
-          - title: Analytics
-            message: We provide analytics so you can understand your audience better.
-          - title: Payments and VAT
-            message: We handle payments and VAT for you.
-          - title: Content and other compliance
-            message: We handle content and other compliance with each country
-    cta:
-      title: Publish your Visual Novel
-      subtitle: Be among the first to publish on RouteVN and get early access to the platform.
-      cta:
-        label: Publish your Visual Novel
-        href: https://tally.so/r/wvJLO0
-        hrefTarget: _blank
