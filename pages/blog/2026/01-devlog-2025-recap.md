@@ -1,90 +1,112 @@
 ---
 template: post
 author: han4wluc
-title: RouteVN Devlog 2 - 2025 Recap
+title: RouteVN Devlog 2
 tags: [blogPost]
-date: '2026-01-01'
+date: '2026-01-13'
 seo:
-  title: RouteVN Devlog 2 - 2025 Recap
-  description: A look back at RouteVN's achievements in 2025 and our plans for 2026, including the public release of RouteVN Creator, open sourcing our code, and upcoming features.
+  title: RouteVN Devlog 2
+  description: A look back at RouteVN's achievements in late 2025 and our plans for 2026, including the public release of RouteVN Creator, open sourcing our code, and upcoming features.
   ogType: article
 ---
 
-## RouteVN Devlog 2
+# RouteVN Devlog 2
 
-This is the second devlog, following up on the [Year 1.5 devlog](https://routevn.com/blog/2025/04-devlog-y1-5/). It's also a recap of 2025 and our plans for 2026.
+This is the second devlog, following up on the [Year 1.5 devlog](https://routevn.com/blog/2025/04-devlog-y1-5/). It's also a recap of late 2025 and our plans for 2026.
 
-### Main Achievements
+## Public release
 
-In December, we made RouteVN Creator Client available for [public download](https://routevn.com/creator/download/). This is actually the first time it's been publicly available after almost 2 years of development.
+In December, we made RouteVN Creator Client available for [public download](https://routevn.com/creator/download/). 
+This is actually the first time it's been publicly available after almost 2 years of development.
 
-The app isn't really stable yet, but it's usable for the basics: creating a full Visual Novel from scratch and exporting it to a web-runnable format.
+The app isn't perfect, but it's slowly becoming more stable.
 
-We've also opened our [Discord server](https://discord.gg/8J9dyZSu9C) and are slowly inviting more people to join.
+It's usable for the basics: creating a full Visual Novel from scratch and exporting it to a web-runnable format.
 
-### Open Source
+We also revamped the website with a new demo.
 
-We've open-sourced all our code under the MIT license across 3 repositories.
+With this we hope that more people will be able to try the software and let us know what they think.
 
-- route-graphics
-- route-engine
-- routevn-creator-client
+## Open Source
 
-This website itself is also open-sourced.
+The project has been planned to be open source from the beginning, but we never actually open sourced it because a lot of the code was exploratory and rewritten frequently.
 
-### Team & Development
+We have finally stabilized the code and open-sourced all our code under the MIT license.
 
-We've had some intern hires in the past few months, which has been both lucky and unusual. It's also led to the interesting challenge of managing more people.
+- [route-graphics](https://github.com/RouteVN/route-graphics): A declarative graphics library powered by PixiJS
+- [route-engine](https://github.com/RouteVN/route-engine): A lightweight Visual Novel engine written in JavaScript.
+- [routevn-creator-client](https://github.com/RouteVN/routevn-creator-client): The desktop application for creating Visual Novels
+- [routevn-website](https://github.com/RouteVN/routevn-website): This website itself is open sourced
 
-Here's what the team has been working on:
+We plan to write a technical blog post in a couple of weeks to better explain the whole architecture of how the engine works.
 
-- **Rewrote route-graphics** to have a properly written and solid foundation. It's still not perfect, but it's now able to support many more features. Some highlights:
+## Team & Development
 
-- **Rewrote the engine itself.** The code has now reached its simplest form — the full codebase is less than 3,000 lines of code. We achieved this by removing everything not directly related to VN functionality and creating the right abstractions. It will grow as we add features, but I don't expect it to grow by much.
+We've had some intern hires in the past few months. They have all been working on various parts of the codebases. Here's what the team has been working on:
 
-- **Particles** (courtesy of JeffY): We need to balance the interface — making it easy for users while keeping it customizable so particle effects don't all look the same.
+- **Rewrote route-graphics** Nghia has re-written the codebase with a parse and render and plugin system. It's now able to support more features, it is better tested leading to less bugs and more maintainable code:
 
-- **Sprite sheets** (courtesy of Nghia): Implementing them in the graphics library (which mostly uses PixiJS) is only the first step. It will take longer for this to make its way up to the client.
+Here's some of the early work of cool features we're developing on it:
 
-We've also conducted internal research comparing our engine with many VNs out there to see which features we can currently support and which we can't. We may or may not share more about this — it will take time to organize things properly.
+  - **Particles**: This is a feature that will be used to support effects such as snow, rain, fire, etc... we've been trying to design an interface that is easy to use yet customizable to the user's needs.
 
-We have classified all these features by priority so we can focus on which ones to work on first. I have to say, we still have a lot of work to do!
+  <video src="/public/blog/2026/01/devlog-2-1.mp4" autoplay loop muted playsinline></video>
 
-### Plans for 2026
+  - **Sprite sheets**: The library now supports spritesheets, which can be used to create animated spritesheets.
 
-Below are our top priorities:
+  <video src="/public/blog/2026/01/devlog-2-2.mp4" autoplay loop muted playsinline></video>
 
-- **Make the application stable and usable.** This remains the top priority, and we've easily gotten detoured from it many times. Without this, everything else can't follow.
+- **Rewrote route-engine itself.** Over the 2 years, we have explored and rewritten this engine many times, maybe 4 times, we lost count. The current version has reached its simplest form. This is the Visual Novel runtime that will power both the editor and actual executable. With the latest re-write the codebase itself is less than 3000 lines of code.
 
-- **Make it even easier to use.** Some pages are difficult in terms of UX, and we'll need to figure out how to improve them. We also want to implement project templates, where you can start from an existing project with ready-made UI. I'm actually very excited about this because it will allow us to involve creators as well.
+
+## Internal VN Features Research
+
+We've also conducted internal research comparing our engine with many VNs out there to see which features we can currently support and which we can't.
+
+We have classified all these features by priority so we can focus on which ones to work on first.
+
+I have to say, we still have a lot of work to do! We will be very busy for the whole of 2026.
+
+We're trying to see how we can make our roadmap more public, so users have better visibility on what we're working on.
+
+## Plans for 2026
+
+Below are our top priorities for the year. This is just an initial plan, it will adapt as we learn more
+
+### Improve the product
+
+- **Make the application stable and usable.** This remains the top priority. Without this, everything else can't follow.
+
+- **Make it even easier to use.**
+  - Some pages are difficult in terms of UX and are still confusing, we will need to figure out how to improve them.
+  - Implement project templates, where you can start from an existing project with ready-made UI. I'm actually very excited about this because it will allow us to involve creators as well.
+  - Build out documentation, which is currently non-existent.
 
 - **Feature completeness and advanced features.** We've put a lot of effort into designing and creating a strong foundation for this application. Although it started with only simple features, it was never intended to stay that way. We'll add advanced features while being careful not to make things too complex. Things like variable management.
 
 - **Better publishing experience.** This means supporting more export formats beyond web. We also want to build tools to better support self-publishing.
 
-### Marketing
+### Marketing & Outreach
 
-We're still waiting for the app to be more stable before focusing on promotion and marketing. We've started introducing team members, and I think in 2026 we'll maintain a good pace of blog posts and share smaller, regular content. We expect to be gradually more active in this space.
+Last year, we spent most of our time building, but that alone won't make an engine successful.
 
-We'll also be reaching out more to VN-related communities.
+This year, we're putting a lot more effort on marketing, community building, and engaging users for feedback.
 
-### Visual Novel Creation
+Basic plan is:
 
-2026 will be the year the first complete VN is created with RouteVN.
+- Blog posts every week. They will cover various topics. Some will be technical, some more about introducing features that is available. There's a lot of interesting stuff we want to share.
+- Social Media & user engagement. We will be doing this more accross all channles including:
+  - [X](https://x.com/routevn)
+  - [Bluesky](https://bsky.app/profile/routevn.bsky.social)
+  - [Discord](https://discord.gg/8J9dyZSu9C)
+- Sponsor Visual Novel related events and Jams. We are exploring what upcoming events are out there that we should sponsor.
 
-We're an all-technical software engineering team, and soon technical capability won't be the bottleneck anymore. We'll actually need real Visual Novels being created. We're pushing for 3 ways to produce content:
-
-- **Sponsoring indie developers.** We're talking with a couple of indie VN developers about sponsoring a short VN. It's expensive for us, but it might make sense to kickstart things. We'll also learn more about creating VNs by working closely with them — and most of all, we'll be supporting real people creating VNs.
-
-- **Hiring a writer/illustrator intern.** We're officially hiring a paid intern for Visual Novel writing and illustration to create Visual Novels internally. It's a rare role for someone who can do both.
-
-- **VNs created in the wild.** We're not quite there yet, but I think by 2026's end, I can't wait to see how many will be created.
+To be honest, it will be a lot of learning and experimentation on the marketing side for us. We're open to learning more about how to better engage the community.
 
 ## Conclusion
 
-If you're interested in creating a VN with RouteVN, please reach out to us on [Discord](https://discord.gg/8J9dyZSu9C) or any other channel — we'd love to talk to you.
+There is a lot of work to do for us in 2026, but it is also an exciting time because we are going from a phase of just building the Visual Novel engine into putting it in the hands of people and having them use it to create real Visual Novels.
 
-To stay updated, follow us on social media.
+If everything plays out well, we hope that by the end of the year, RouteVN Creator will become a compelling engine that people will seriously consider when choosing which engine to use to for a new Visual Novel.
 
-Thank you!
 
