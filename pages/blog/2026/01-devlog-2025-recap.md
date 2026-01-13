@@ -44,20 +44,18 @@ We plan to write a technical blog post in a couple of weeks to better explain th
 
 We've had some intern hires in the past few months. They have all been working on various parts of the codebases. Here's what the team has been working on:
 
-- **Rewrote route-graphics** Nghia has re-written the codebase with a parse and render and plugin system. It's now able to support more features, it is better tested leading to less bugs and more maintainable code:
-
-Here's some of the early work of cool features we're developing on it:
-
+- **Rewrote route-graphics** Nghia has re-written the codebase with a parse and render and plugin system. It's now able to support more features, it is better tested leading to less bugs and more maintainable code. Here's some of the early work of cool features we're developing on it:
   - **Particles**: This is a feature that will be used to support effects such as snow, rain, fire, etc... we've been trying to design an interface that is easy to use yet customizable to the user's needs.
 
-  <video src="/public/blog/2026/01/devlog-2-1.mp4" autoplay loop muted playsinline></video>
+  <video src="/public/blog/2026/01/devlog-2-1.mp4" autoplay loop muted playsinline style="width: 100%; max-width: 100%;"></video>
 
   - **Sprite sheets**: The library now supports spritesheets, which can be used to create animated spritesheets.
 
-  <video src="/public/blog/2026/01/devlog-2-2.mp4" autoplay loop muted playsinline></video>
+  <video src="/public/blog/2026/01/devlog-2-2.mp4" autoplay loop muted playsinline style="width: 100%; max-width: 100%;"></video>
 
 - **Rewrote route-engine itself.** Over the 2 years, we have explored and rewritten this engine many times, maybe 4 times, we lost count. The current version has reached its simplest form. This is the Visual Novel runtime that will power both the editor and actual executable. With the latest re-write the codebase itself is less than 3000 lines of code.
 
+- **RouteVN Creator Client**: We've implemented a fully functional editor to create Visual Novels. The latest addition was support for choices. Over the last couple of weeks, we've been focused on finding and fixing bugs.
 
 ## Internal VN Features Research
 
@@ -92,14 +90,23 @@ Last year, we spent most of our time building, but that alone won't make an engi
 
 This year, we're putting a lot more effort on marketing, community building, and engaging users for feedback.
 
-Basic plan is:
+#### Blog posts
 
-- Blog posts every week. They will cover various topics. Some will be technical, some more about introducing features that is available. There's a lot of interesting stuff we want to share.
-- Social Media & user engagement. We will be doing this more accross all channles including:
-  - [X](https://x.com/routevn)
-  - [Bluesky](https://bsky.app/profile/routevn.bsky.social)
-  - [Discord](https://discord.gg/8J9dyZSu9C)
-- Sponsor Visual Novel related events and Jams. We are exploring what upcoming events are out there that we should sponsor.
+Blog posts every week. They will cover various topics. Some will be technical, some more about introducing features that is available. There's a lot of interesting stuff we want to share.
+
+#### Social Media & user engagement
+
+We plan to be more active on social media — sharing development progress, behind-the-scenes content, and engaging with the VN community. We primarily operate on Discord, but will post updates across all our channels:
+
+- [Discord](https://discord.gg/8J9dyZSu9C)
+- [X](https://x.com/routevn)
+- [Bluesky](https://bsky.app/profile/routevn.bsky.social)
+- [Reddit](https://www.reddit.com/r/routevn/)
+- [LinkedIn](https://www.linkedin.com/showcase/110652448)
+
+#### Sponsor Visual Novel related events and Jams
+
+We are exploring what upcoming events are out there that we should sponsor.
 
 To be honest, it will be a lot of learning and experimentation on the marketing side for us. We're open to learning more about how to better engage the community.
 
@@ -107,6 +114,7 @@ To be honest, it will be a lot of learning and experimentation on the marketing 
 
 There is a lot of work to do for us in 2026, but it is also an exciting time because we are going from a phase of just building the Visual Novel engine into putting it in the hands of people and having them use it to create real Visual Novels.
 
-If everything plays out well, we hope that by the end of the year, RouteVN Creator will become a compelling engine that people will seriously consider when choosing which engine to use to for a new Visual Novel.
+If everything plays out well, we hope that by the end of the year, RouteVN Creator will become a compelling engine that people will seriously consider when choosing which engine to use for a new Visual Novel.
 
+Thanks for reading! Feel free to reach out if you have any questions or feedback.
 
