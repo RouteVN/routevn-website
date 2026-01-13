@@ -23,9 +23,9 @@ The app isn't perfect, but it's slowly becoming more stable.
 
 It's usable for the basics: creating a full Visual Novel from scratch and exporting it to a web-runnable format.
 
-We also revamped the website with a new demo.
+We also revamped the [website with a new demo](https://routevn.com/creator/about/).
 
-With this we hope that more people will be able to try the software and let us know what they think.
+We hope that more people will be able to try the software and let us know what they think.
 
 ## Open Source
 
@@ -35,7 +35,7 @@ We have finally stabilized the code and open-sourced all our code under the MIT 
 
 - [route-graphics](https://github.com/RouteVN/route-graphics): A declarative graphics library powered by PixiJS
 - [route-engine](https://github.com/RouteVN/route-engine): A lightweight Visual Novel engine written in JavaScript.
-- [routevn-creator-client](https://github.com/RouteVN/routevn-creator-client): The desktop application for creating Visual Novels
+- [routevn-creator-client](https://github.com/RouteVN/routevn-creator-client): A desktop application to create Visual Novels without coding
 - [routevn-website](https://github.com/RouteVN/routevn-website): This website itself is open sourced
 
 We plan to write a technical blog post in a couple of weeks to better explain the whole architecture of how the engine works.
@@ -44,12 +44,12 @@ We plan to write a technical blog post in a couple of weeks to better explain th
 
 We've had some intern hires in the past few months. They have all been working on various parts of the codebases. Here's what the team has been working on:
 
-- **Rewrote route-graphics** Nghia has re-written the codebase with a parse and render and plugin system. It's now able to support more features, it is better tested leading to less bugs and more maintainable code. Here's some of the early work of cool features we're developing on it:
+- **Rewrote route-graphics.** We have re-written the codebase with a parse and render and plugin system. It's now able to support more features, it is better tested leading to less bugs and more maintainable code. Here's some of the early work of cool features we're developing on it:
   - **Particles**: This is a feature that will be used to support effects such as snow, rain, fire, etc... we've been trying to design an interface that is easy to use yet customizable to the user's needs.
 
   <video src="/public/blog/2026/01/devlog-2-1.mp4" autoplay loop muted playsinline style="width: 100%; max-width: 100%;"></video>
 
-  - **Sprite sheets**: The library now supports spritesheets, which can be used to create animated spritesheets.
+  - **Sprite sheets**: The library now supports spritesheets, which can be used to display animations.
 
   <video src="/public/blog/2026/01/devlog-2-2.mp4" autoplay loop muted playsinline style="width: 100%; max-width: 100%;"></video>
 
@@ -69,7 +69,7 @@ We're trying to see how we can make our roadmap more public, so users have bette
 
 ## Plans for 2026
 
-Below are our top priorities for the year. This is just an initial plan, it will adapt as we learn more
+Below are our top priorities for the year. This is just an initial plan, it will adapt as we learn more.
 
 ### Improve the product
 
@@ -92,7 +92,7 @@ This year, we're putting a lot more effort on marketing, community building, and
 
 #### Blog posts
 
-Blog posts every week. They will cover various topics. Some will be technical, some more about introducing features that is available. There's a lot of interesting stuff we want to share.
+Blog posts every week. They will cover various topics. Some will be technical, some more about introducing features that are available. There's a lot of interesting stuff we want to share.
 
 #### Social Media & user engagement
 
