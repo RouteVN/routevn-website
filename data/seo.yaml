@@ -10,7 +10,7 @@ robots: index, follow
 # Open Graph defaults
 ogType: website
 ogSiteName: RouteVN
-ogImage: /public/images/routevn_og.png
+ogImage: https://routevn.com/public/images/routevn_og.png
 ogImageWidth: 1200
 ogImageHeight: 630
 ogImageAlt: RouteVN – The Dedicated Platform for Visual Novels

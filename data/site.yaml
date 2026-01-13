@@ -81,17 +81,17 @@ landing:
     - title: For Developers
       cards:
         - title: Route Graphics
-          text: Declarative UI system for interactive 2D graphics and audio
+          text: A declarative graphics library powered by PixiJS
           href: https://github.com/RouteVN/route-graphics
           hrefTarget: _blank
           btnLabel: GitHub
         - title: Route Engine
-          text: The lightweight Visual Novel engine powering RouteVN
+          text: A lightweight Visual Novel engine written in JavaScript
           href: https://github.com/RouteVN/route-engine
           hrefTarget: _blank
           btnLabel: GitHub
         - title: RouteVN Creator Client
-          text: The codebase for RouteVN Creator Client application
+          text: A desktop application to create Visual Novels without coding
           href: https://github.com/RouteVN/routevn-creator-client
           hrefTarget: _blank
           btnLabel: GitHub
