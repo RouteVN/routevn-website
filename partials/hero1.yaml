@@ -7,7 +7,7 @@
         - rtgl-text s=lg ta=c: "${subtitle}"
     - $if videoSrc:
         - rtgl-view h=64:
-        - 'rtgl-view  md-h="calc((100vw - 32px) / 1.777)"  md-w="calc(100vw - 32px)" xl-h="calc((100vw - 64px) / 1.777)" xl-w="calc(100vw - 64px)" h="calc(1200px / 1.777)" w="1200" bc="ov" bw="xs" br="xs" shadow="s"':
+        - 'rtgl-view cur=p md-h="calc((100vw - 32px) / 1.777)"  md-w="calc(100vw - 32px)" xl-h="calc((100vw - 64px) / 1.777)" xl-w="calc(100vw - 64px)" h="calc(1200px / 1.777)" w="1200" bc="ov" bw="xs" br="xs" shadow="s"':
             - $if build.isScreenshotMode:
                 - video loop="" poster="${posterSrc}" height="100%" width="100%" aria-label="Video content" draggable="true":
                     - source src="${videoSrc}" type="video/mp4":

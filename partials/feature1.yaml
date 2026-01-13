@@ -5,21 +5,41 @@
     - rtgl-view md-hide d=h g=lg mt=xl:
         - $if v != "2":
             - rtgl-view flex="2" bc="o" bw="xs" br="s":
-                - rtgl-image src="${feature.imgSrc}" w="f":
+                - $if imgSrc:
+                    - rtgl-image src="${imgSrc}" w="f":
+                - $if videoSrc:
+                    - $if build.isScreenshotMode:
+                        - video src="${videoSrc}" style="width:100%;height:auto;display:block" loop muted playsinline:
+                      $else:
+                        - video src="${videoSrc}" style="width:100%;height:auto;display:block" autoplay loop muted playsinline:
         - rtgl-view g="lg" flex=1 av=c h=f:
             - $for feature in features:
                 - rtgl-view  p="lg" bgc="su" br="lg" g=md:
                     - rtgl-text s=h4 mb=sm: "${feature.title}"
-                    - rtgl-text mb="sm": "${feature.message}"
+                    - rtgl-text mb="sm":
+                        - __html: "${feature.message}"
         - $if v == "2":
             - rtgl-view flex="2" bc="o" bw="xs" br="s":
-                - rtgl-image src="${feature.imgSrc}" w="f":
+                - $if imgSrc:
+                    - rtgl-image src="${imgSrc}" w="f":
+                - $if videoSrc:
+                    - $if build.isScreenshotMode:
+                        - video src="${videoSrc}" style="width:100%;height:auto;display:block" loop muted playsinline:
+                      $else:
+                        - video src="${videoSrc}" style="width:100%;height:auto;display:block" autoplay loop muted playsinline:
     - rtgl-view md-show hide g=lg mt=xl:
         - rtgl-view flex="2" bc="o" bw="xs" br="s":
-            - rtgl-image src="${feature.imgSrc}" w="f":
+            - $if imgSrc:
+                - rtgl-image src="${imgSrc}" w="f":
+            - $if videoSrc:
+                - $if build.isScreenshotMode:
+                    - video src="${videoSrc}" style="width:100%;height:auto;display:block" loop muted playsinline:
+                  $else:
+                    - video src="${videoSrc}" style="width:100%;height:auto;display:block" autoplay loop muted playsinline:
         - rtgl-view g="lg" flex=1 av=c h=f w=f:
             - $for feature in features:
                 - rtgl-view  p="lg" bgc="su" br="lg" g=md w=f ah=c:
                     - rtgl-text s=h4 mb=sm ta=c: "${feature.title}"
-                    - rtgl-text mb="sm" ta=c: "${feature.message}"
+                    - rtgl-text mb="sm" ta=c:
+                        - __html: "${feature.message}"
 - rtgl-view h=64:

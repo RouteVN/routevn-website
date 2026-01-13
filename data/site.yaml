@@ -21,12 +21,20 @@ footer:
       href: https://bsky.app/profile/routevn.bsky.social
     - svg: x
       href: https://x.com/routevn
+    - svg: reddit
+      href: https://www.reddit.com/r/routevn/
+    - svg: github
+      href: https://github.com/RouteVN
+    # - svg: youtube
+    #   href: https://www.youtube.com/@routevn
+    - svg: linkedin
+      href: https://www.linkedin.com/showcase/110652448
   columns:
     - links:
         # - text: About
         #   href: /about/
-        - text: Creator Docs
-          href: /creator/docs/introduction/
+        # - text: Creator Docs
+        #   href: /creator/docs/introduction/
         - text: Changelog
           href: /creator/changelog/
         - text: Blog
@@ -64,7 +72,7 @@ landing:
     - title: For Creators
       cards:
         - title: RouteVN Creator
-          text: Enabling users to create Visual Novels without coding or technical barriers
+          text: Create Visual Novels without any coding
           href: /creator/about/
           btnLabel: Learn More
         # - title: RouteVN Publisher
@@ -90,15 +98,15 @@ landing:
 
 creator:
   download:
-    version: "0.6.0"
+    version: "0.10.0"
     title: Download RouteVN Creator
-    subtitle: Get started creating your Visual Novel
+    # subtitle: Get started creating your Visual Novel
     platforms:
       - name: Windows
         svg: windows
         cta:
           label: Download for Windows
-          href: https://static-1.routevn.com/routevn-creator-client/RouteVN%20Creator_0.6.0_x64-setup.exe
+          href: https://static-1.routevn.com/routevn-creator-client/RouteVN%20Creator_0.10.0_x64-setup.exe
       - name: macOS
         svg: apple
         comingSoon: true
@@ -107,81 +115,86 @@ creator:
         comingSoon: true
   about:
     hero:
-      title: An easier way to create Visual Novels
-      subtitle: Focus on your story and creativity while the tech is taken care of
-      videoSrc: https://cdn1.yuusoft.com/routevn-assets/landing.mp4
-      posterSrc: /public/landing/editor-1.png
+      title: Create Visual Novels without any coding
+      videoSrc: /public/creator/routevn-demo-250108.mp4
+      posterSrc: /public/creator/routevn-demo-250108-thumb.png
     features:
-      - title: Optimized for ease of use
-        imgSrc: /public/landing/editor-1.png
+      - title: Live Preview
+        message: Preview your edits in real time
+        videoSrc: /public/creator/animated-1.mp4
+        features:
+          - title: As you type
+            message: See changes immediately as you type
+          - title: As you navigate
+            message: See changes immediately as you navigate to different lines
+          - title: Accurate
+            message: Previews are accurate and same as the end product
+
+      - title: Free and Open Source
+        imgSrc: /public/creator/ss-8.png
         v: "2"
         features:
-          - title: Browser-based
-            message: Create Visual Novels directly in your browser, no downloads required.
-      - title: Resources manager
-        imgSrc: /public/landing/resources_background.png
+          - title: Free
+            message: No ads, no intrusive upsells
+          - title: Open Source
+            message: MIT license. Check out the source code on <a target="_blank" href="https://github.com/routevn/routevn-creator-client">Github</a>
+
+      - title: Fast, intuitive and reliable
+        message: We built the engine from ground up to pursue the best user experience that creators deserve
+        imgSrc: /public/creator/ss-2.png
         features:
-          - title: Asset organization
-            message: Organize all your visual novel assets in one place.
-      - title: Scenes Graph
-        imgSrc: /public/landing/scene_graph_1.png
+          - title: Fast
+            message: No loading indicators, every action is instant
+          - title: Intuitive
+            message: Learn the basics in minutes, things should work as you expect
+          - title: Reliable
+            message: Ok, the truth is that this software is still under active development. We are releasing bug fixes every week
+
+      - title: Layout Editor
+        message: Fully customize your Visual Novel's UI
+        imgSrc: /public/creator/ss-5.png
+        v: "2"
+        features:
+          - title: Design grade tool
+            message: UI design adapated for Visual Novels
+          - title: Best practices baked in
+            message: Your colors, fonts, and styles stay organized as your project grows
+
+      - title: Assets manager
+        imgSrc: /public/creator/ss-1.png
+        features:
+          - title: Easy to import
+            message: Upload or drag and drop all your files
+          - title: Images, sounds, characters and more
+            message: Organize all your assets as it suits your needs
+          - title: Transforms and tween animations
+            message: Enabling engaging visual effects
+
+      - title: Scenes Map
+        imgSrc: /public/creator/ss-7.png
         v: "2"
         features:
           - title: Visual storyline
             message: See your entire visual novel structure at a glance.
-      - title: Scene editor with live preview
-        imgSrc: /public/landing/editor-2.png
-        features:
-          - title: No coding required
-            message: Our intuitive editor lets you create scenes without any programming knowledge.
+          - title: Branches and scene transition
+            message: Stay organized as your story branches and grows
+
+    faq:
+      title: Frequently Asked Questions
+      items:
+        - title: What makes RouteVN Creator different from other Visual Novel engines?
+          content: No coding, no technical background required. We built RouteVN Creator so anyone, including writers, artists, and hobbyists, can create their own Visual Novel. Easy to start, and stays organized as your project grows.
+        - title: Will RouteVN Creator always stay free?
+          content: Yes, the free version will always be free and open source. We may add paid features in the future, but they will be optional and won't limit the free version.
+        - title: How do I export my Visual Novel?
+          content: Currently, you can export your project as a web version (HTML and JS files). We plan to support all major platforms soon, including Windows, macOS, Linux, Android, and iOS.
+        - title: Are there any content restrictions?
+          content: RouteVN Creator is just a tool. You can create whatever you want. The app works offline, so we have no way of knowing what you make.
+        - title: What are the limitations of RouteVN Creator?
+          content: RouteVN Creator is best for relatively simple Visual Novels without complex gameplay. It may not be suitable if you need custom game mechanics or advanced features uncommon in Visual Novels.
     cta:
-      title: Experience a new way to create Visual Novels
-      subtitle: Download RouteVN Creator and start building your Visual Novel today
+      title: Bring your Visual Novel to life
+      subtitle: Download RouteVN Creator to start creating
       cta:
         label: Download
         href: /creator/download/
-
-publisher:
-  about:
-    hero:
-      title: RouteVN Publisher
-      subtitle: A publishing and distribution platform dedicated to Visual Novels
-      message: Publish your Visual Novel
-    features:
-      - title: Dedicated to Visual Novels
-        message: RouteVN Store is only for Visual Novels. We love Visual Novels and want to make them accessible to everyone.
-        features:
-          - title: Engaged audience
-            message: Our audience are people who understand and are passionate about Visual Novels.
-          - title: Content policy
-            message: We welcome all types of Visual Novels, but as an all-ages platform, we do not cater adult content.
-      - title: Available from any device
-        message: Published Visual Novels will work seamlessly across all platform and devices.
-        features:
-          - title: Porting your Visual Novel
-            message: We will do the work to port your Visual Novel to our custom engine for you.
-          - title: Available on all devices
-            message: Check out our app on Web, Google Play and App Store.
-      - title: Enhanced reading experience
-        message: We are committed to provide the best possible reading experience for Visual Novels.
-        features:
-          - title: Works offline and online
-            message: Readers can read offline, and sync data online across all devices
-          - title: Powered by a custom engine
-            message: We have have built a Visual Novel engine from scratch to provide the best reading experience.
-      - title: Empowering publishers
-        message: We handle all admin and compliance globally so you can focus on the work you enjoy most. We provide tools to help you manage your published Visual Novel.
-        features:
-          - title: Analytics
-            message: We provide analytics so you can understand your audience better.
-          - title: Payments and VAT
-            message: We handle payments and VAT for you.
-          - title: Content and other compliance
-            message: We handle content and other compliance with each country
-    cta:
-      title: Publish your Visual Novel
-      subtitle: Be among the first to publish on RouteVN and get early access to the platform.
-      cta:
-        label: Publish your Visual Novel
-        href: https://tally.so/r/wvJLO0
-        hrefTarget: _blank
