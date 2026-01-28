@@ -27,9 +27,6 @@ jobs:
       - name: Build site
         run: bunx rtgl sites build
 
-      - name: Build kanbatte tasks
-        run: bunx kanbatte task build
-
       - name: Publish to Cloudflare Pages
         uses: cloudflare/wrangler-action@v3
         with:
