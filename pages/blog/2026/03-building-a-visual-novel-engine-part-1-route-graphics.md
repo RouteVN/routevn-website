@@ -3,10 +3,10 @@ template: post
 author: han4wluc
 title: Building a Visual Novel Engine Part 1 - Route Graphics
 tags: [blogPost]
-date: '2026-01-27'
+date: '2026-01-28'
 seo:
   title: Building a Visual Novel Engine Part 1 - Route Graphics
-  description: This is a technical post explaining how to build a Visual Novel engine
+  description: Route Graphics is a declarative graphics and audio library built on PixiJS and WebAudio API. This is part 1 of a 3-part series on building a visual novel engine. Learn about the design decisions, implementation challenges, and the story behind the library. 
   ogType: article
 ---
 
@@ -15,10 +15,10 @@ seo:
 This series will explain the whole architecture and design of RouteVN Creator.
 By the end of the series, you should have a good understanding of how RouteVN Creator works, and essentially how to build a Visual Novel engine from scratch.
 
-This is part 1 of a 3-part series:
+This is part 1 of a 3 part series:
 
 - Part 1 - Route Graphics: a declarative graphics and sound library
-- Part 2 - Route Engine: a Visual Novel engine built on route-graphics with less than 3000 lines of code.
+- Part 2 - Route Engine: a Visual Novel engine built on Route Graphics
 - Part 3 - RouteVN Creator: a Desktop application to create Visual Novels without any coding
 
 ## Route Graphics
@@ -31,7 +31,7 @@ It provides all necessary graphic primitives to build a visual novel, but the li
 
 Route Graphics is a declarative library built based on PixiJS.
 
-Below is an example of a typical Visual Novel screen 
+Below is an example of a typical Visual Novel screen:
 
 <img src="/public/blog/2026/03/graphics-1.png" style="width: 100%; margin-bottom: 24px;"> </img>
 
@@ -46,8 +46,6 @@ elements:
     height: 1080
   - type: container # Character
     id: character-container
-    anchorX: 0.5
-    anchorY: 1
     x: 300
     y: 1080
     anchorX: 0.5
@@ -72,7 +70,7 @@ elements:
         width: 1850
         height: 350
         src: dialogue-box-1
-      - id: dialogue-content # Dialoge text content
+      - id: dialogue-content # Dialogue text content
         type: text
         x: 40
         y: 110
@@ -82,7 +80,6 @@ elements:
 ```
 
 The power of Route Graphics's declarative interface is that you can create any visuals on the screen just by updating a JSON/YAML object.
- 
 ## Declarative vs Imperative
 
 Route Graphics is built on top of [PixiJS](https://pixijs.com/).
@@ -93,7 +90,9 @@ PixiJS has an imperative interface. We built Route Graphics to have a declarativ
 
 **Imperative**: You write surgical, step-by-step instructions to reach the desired state.
 
-While designing the declarative interface, we took the freedom to adapt the interface to better fit our use cases, meaning we do not map the API one-to-one with the PixiJS API; it is a whole new interface.
+We wanted a declarative interface because it is much easier to work with, easier to reason about and more predictable. You simply need to make sure the end state is correct, and the library handles everything else.
+
+While designing the declarative interface, we took the freedom to adapt the interface to better fit our use cases, meaning we do not map the API one-to-one with the PixiJS API. It is a whole new interface.
 
 ## PixiJS
 
@@ -125,20 +124,20 @@ For adding new functionality, we need to create a new custom plugin without worr
 
 The current supported plugins are:
 
-Elements:
+**Elements:**
 - Container
 - Sprite
 - Rect
 - Slider
 - Text
-- TextRevealing
+- Text Revealing
 - Particles
 - Animated Sprite (Spritesheet)
 
-Animations
+**Animations:**
 - Tween
 
-Audio
+**Audio:**
 - Sound
 
 Some of the plugins are straightforward and similar to what PixiJS has; below we will go through some of the more interesting ones.
@@ -247,7 +246,7 @@ animations:
             relative: true
 ```
 
-The primitives—`keyframes` with `duration`, `value`, and `easing`—are surprisingly powerful and sufficient to realize a rich variety of interesting animations.
+The primitives `keyframes` with `duration`, `value`, and `easing` are surprisingly powerful and sufficient to realize a rich variety of interesting animations.
 
 ### Particles
 
@@ -434,13 +433,13 @@ Route Graphics powers the live preview in the scene editor.
 
   <video src="/public/blog/2026/03/graphics-6.mp4" autoplay loop muted playsinline style="width: 100%; max-width: 100%;"></video>
 
-And that is also why in the live preview we can have an accurate and consistent preview of the exported Visual Novel.
+And that is also why in the live preview we can have an accurate and consistent with the end product.
 
 The live preview is fast because PixiJS is fast, and Route Graphics's diff algorithm makes sure that only what changed gets actually updated.
 
 We also use Route Graphics for the Tween Animations and Transform page previews.
 
-And of course, all exported Visual Novels made with RouteVN Creator will have Route Graphics bundled to render the Visual Novel graphics and audio.
+All Visual Novels exported from RouteVN Creator include Route Graphics to handle graphics and audio rendering.
 
 ## Contributors
 
@@ -453,7 +452,9 @@ A shoutout to the library contributors:
 
 ## Closing
 
-Route Graphics is open source under the MIT License. If you liked this article, consider giving it a star on [GitHub](https://github.com/RouteVN/route-graphics).
+Route Graphics is open source under the MIT License.
+
+If you liked this article, consider giving it a star on [GitHub](https://github.com/RouteVN/route-graphics).
 
 You can see more examples from the [Route Graphics Playground](https://route-graphics.routevn.com/playground/).
 
