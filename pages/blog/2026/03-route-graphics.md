@@ -1,16 +1,16 @@
 ---
 template: post
 author: han4wluc
-title: Building a Visual Novel engine from scratch part 1 - Route Graphics
+title: Building a Visual Novel Engine Part 1 - Route Graphics
 tags: [blogPost]
 date: '2026-01-27'
 seo:
-  title: RouteVN Technical Architecture
+  title: Building a Visual Novel Engine Part 1 - Route Graphics
   description: This is a technical post explaining how to build a Visual Novel engine
   ogType: article
 ---
 
-# RouteVN Technical Architecture
+# Building a Visual Novel Engine Part 1 - Route Graphics
 
 This series will explain the whole architecture and design of RouteVN Creator.
 By the end of the series, you should have a good understanding of how RouteVN Creator works, and essentially how to build a Visual Novel engine from scratch.
@@ -20,8 +20,6 @@ This is part 1 of a 3-part series:
 - Part 1 - Route Graphics: a declarative graphics and sound library
 - Part 2 - Route Engine: a Visual Novel engine built on route-graphics with less than 3000 lines of code.
 - Part 3 - RouteVN Creator: a Desktop application to create Visual Novels without any coding
-
-All these project use JavaScript.
 
 ## Route Graphics
 
@@ -33,17 +31,11 @@ It provides all necessary graphic primitives to build a visual novel, but the li
 
 Route Graphics is a declerative library built based on PixiJS.
 
-Below is an example of the declarative JSON/YAML interface
+Below is an example of a typical Visual Novel screen 
 
-```yaml
-```
-
-Route Graphics will take care of rendering this onto the screen
-
-<!-- TODO: Add image -->
 <img src="/public/blog/2026/03/graphics-1.png" style="width: 100%; margin-bottom: 24px;"> </img>
 
-Any updates we want to make, we just update the JSON/YAML
+The above image screen was created by using Route Graphics's declerative interface:
 
 ```yaml
 elements:
@@ -87,6 +79,8 @@ elements:
         content: I go through the door and look up
 ```
 
+The power of Route Graphics' declarative interface is that you can create any visuals in the screen just by updating a JSON/YAML object.
+ 
 ## Declarative vs Imperative
 
 Route Graphics is built on top of [PixiJS](https://pixijs.com/).
@@ -99,34 +93,31 @@ PixiJS has an imperative interface. We built Route Graphics to have a declerativ
 
 While designing the declerative interface, we took the freedom to adapt the interface to better fit our use cases, meaning we do not map the API one to one with PixiJS API, it is a whole new interface.
 
-By building this decleartive interface, we simplify the interface that Route Engine and RouteVN Creator have to deal for their graphics and audio needs.
-
 ## PixiJS
 
 PixiJS was choosen because
 - It works on the web, which is one of the most accessible platforms out there
 - It is performant and it supports 3 types of renderers: WebGPU, WebGL, and canvas
-- The interface is easy enough to use with good documentation
+- The interface is easy to use with good documentation
 - Mature: has been around for many years, and used by successful game engines
 
-We are so far been very satisfied with the performance and stability of PixiJS
+So far PixiJS has met out expectations for its stability and performance.
 
 ## Audio
 
 We wanted a unified library for both graphics and audio.
 
-We could not find a better name for the library, so we ended up sticking with Route Graphics, but it also handles audio.
+We could not think of a better name for the library, so we ended up sticking with Route Graphics, but it also handles audio.
 
 PixiJS itself does not support audio, so we implemented sounds using the [WebAudio API](https://developer.mozilla.org/en-US/docs/Web/API/Web_Audio_API).
 
 Similarly to how we wrapped PixiJS with a declarative interface, we also wrapped the WebAudio API with a declarative interface.
 
-
 ## Plugin System
 
 Route Graphics is designed with a plugin system, where functionality is added by implementing new plugins.
 
-Plugins are for the most part independent of each other meaning you can add and remove the plugins based on what you need.
+Plugins are independent of each other meaning you can add and remove the plugins based on what you need.
 
 For adding new functionality, we need to create a new custom plugin without worrying about impacting existing ones.
 
@@ -148,7 +139,7 @@ Animations
 Audio
 - Sound
 
-Many of the plugnis are straighfroward and similar to what PixiJS has, below we will go through some of the more interesting ones.
+Some of the plugnis are straighfroward and similar to what PixiJS has, below we will go through some of the more interesting ones.
 
 ### Tween Animations
 
@@ -156,120 +147,313 @@ Animations, or more precisely tween animations are implemented using PixiJS Tick
 
 Tween animatins are essentially changes in a property value over time.
 
-Below is an example to make an image have a fade in effect.
+Below is an example to make an image have a fade in and fade out effects very common for background transitions
+
+  <video src="/public/blog/2026/03/graphics-2.mp4" autoplay loop muted playsinline style="width: 100%; max-width: 100%;"></video>
+
 
 ```yaml
+elements:
+  - id: "bg"
+    type: "sprite"
+    x: 0
+    y: 0
+    src: cg-door
+    width: 1280
+    height: 720
+animations:
+  - id: "bg-cg-animation-in"
+    type: "tween"
+    targetId: "bg"
+    properties:
+      alpha:
+        initialValue: 0
+        keyframes:
+          - duration: 1500
+            value: 1
+            easing: "linear"
+            relative: false
+          - duration: 1000
+            value: 1
+            easing: "linear"
+            relative: false
+          - duration: 1500
+            value: 0
+            easing: "linear"
+            relative: false
 
 ```
 
 Below is an example of moving a character:
 
-<!-- TODO: Add tween example -->
+  <video src="/public/blog/2026/03/graphics-3.mp4" autoplay loop muted playsinline style="width: 100%; max-width: 100%;"></video>
 
+```yaml
+elements:
+  - id: "bg"
+    type: "sprite"
+    x: 0
+    y: 0
+    src: cg-door
+    width: 1280
+    height: 720
+  - id: "char"
+    type: "sprite"
+    x: 300
+    y: 720
+    anchorX: 0.5
+    anchorY: 1
+    src: makkuro-sprite
+    width: 368
+    height: 546
+animations:
+  - id: "bg-cg-animation-in"
+    type: "tween"
+    targetId: "char"
+    properties:
+      x:
+        keyframes:
+          - duration: 1500
+            value: 500
+            easing: "linear"
+            relative: true
+          - duration: 1000
+            value: -300
+            easing: "linear"
+            relative: true
+      y:
+        keyframes:
+          - duration: 2500
+            value: 0
+            easing: "linear"
+            relative: true
+          - duration: 300
+            value: 100
+            easing: "linear"
+            relative: true
+          - duration: 300
+            value: -200
+            easing: "linear"
+            relative: true
+          - duration: 300
+            value: 200
+            easing: "linear"
+            relative: true
+          - duration: 300
+            value: -100
+            easing: "linear"
+            relative: true
+```
 
-The primitives: `keyframes` with `duration`, `value`, `easing` are surprisingly powerful and enough to realize all kinds of interesting animations.
+The primitives: `keyframes` with `duration`, `value`, `easing` are surprisingly powerful and enough to realize a rich variety of interesting animations.
 
 ### Particles
 
-PixiJS itself provies a particles primitive, but does not provide high level implemetation to get intereting effects.
+PixiJS itself provdies a particle primitive, but does not provide high level implemetation to get interesting effects.
 
-We looked into this library, and was able to take most of it
+Luckly there was a library called [PixiJS Particle Emitter](https://github.com/pixijs-userland/particle-emitter) which actually implemented many of the common particle effects.
 
-Snow effect
+We took this library, and made a plugin out of it. Below is an example of snow effect
 
   <video src="/public/blog/2026/03/graphics-4.mp4" autoplay loop muted playsinline style="width: 100%; max-width: 100%;"></video>
 
+```yaml
+elements:
+  - id: "snow-effect"
+    type: "particles"
+    width: 1280
+    height: 720
+    alpha: 0.5
+    texture: "snowflake"
+    behaviors:
+      - type: "spawnShape"
+        config:
+          type: "rect"
+          data:
+            x: 0
+            y: -20
+            w: 1280
+            h: 10
+      - type: "movePoint"
+        config:
+          speed:
+            min: 50
+            max: 150
+          direction: 90
+      - type: "scaleStatic"
+        config:
+          min: 0.3
+          max: 1.0
+      - type: "alpha"
+        config:
+          list:
+            - value: 0
+              time: 0
+            - value: 0.8
+              time: 0.1
+            - value: 0.8
+              time: 0.8
+            - value: 0
+              time: 1
+      - type: "rotation"
+        config:
+          minStart: 0
+          maxStart: 360
+          minSpeed: -45
+          maxSpeed: 45
+    emitter:
+      lifetime:
+        min: 4
+        max: 8
+      frequency: 0.05
+      particlesPerWave: 2
+      maxParticles: 200
+      emitterLifetime: -1
+      spawnBounds:
+        x: -50
+        y: -50
+        width: 1380
+        height: 820
+      recycleOnBounds: true
+      seed: 12345
+```
 
 
 ### Text Revealing
 
-Challenging to implment.
+Text Reveling is a plugin that implements a very common features seen in Visual Novels. It also support more advanced features such as rich text and furigana.
 
-Need to calculate the width and height of text. 
+The challenge to implement this one was to calculate the position and dimensions of the text so it can be positioned correctly. Those calculations are done using `CanvasTextMetrics.measureText` provided by PixiJS.
 
-We use PixiJS Ticker to 
+  <video src="/public/blog/2026/03/graphics-5.mp4" autoplay loop muted playsinline style="width: 100%; max-width: 100%;"></video>
 
-
-It is designed in a way that support more advanced features such as rich text and furigana.
-
+```yaml
+elements:
+  - id: "showcase-text"
+    type: "text-revealing"
+    content:
+      - text: "Hello"
+        textStyle:
+          fontSize: 32
+          fill: "#ffffff"
+          fontFamily: "Arial"
+          fontWeight: "bold"
+      - text: "World"
+        textStyle:
+          fontSize: 36
+          fill: "#3498db"
+          fontFamily: "Arial"
+        furigana:
+          text: "世界"
+          textStyle:
+            fontSize: 14
+            fill: "#ffffff"
+            fontFamily: "Arial"
+      - text: "!"
+        textStyle:
+          fontSize: 28
+          fill: "#ffffff"
+          fontFamily: "Arial"
+          fontStyle: "italic"
+      - text: " This is a demonstration of the text-revealing element with clean white text on a black background, with just a subtle accent color for visual interest."
+        textStyle:
+          fontSize: 20
+          fill: "#ffffff"
+          fontFamily: "Georgia"
+          lineHeight: 1.4
+    revealEffect: typewriter
+    x: 200
+    y: 200
+    width: 600
+    alpha: 1
+```
 
 ## Event system
 
 In Visual Novels, we have click and drag events. We implmeented an even system with declarative code as well.
 
 ```yaml
-
-
+elements:
+  - id: 'rect-right-click-1'
+    type: "rect"
+    x: 200
+    y: 100
+    width: 300
+    height: 100
+    fill: "#3498db"
+    rightClick:
+      actionPayload:
+        message: "Rect 1 right-clicked"
 ```
 
-The client will receive this event, and will be able to do whatever it needs to do. You can also pass a payload to it.
+The client will receive the event with a payload. The client will be responsible of actually handling this event.
 
-When you click a button or the background to move to next line, what is happening is that we define the event, and Route Graphics will emit this event to be processed by Route Engine.
+This is exaclty how Route Engine is able to define click events, so when a user click on the screen Route Engine will proceed to the next line.
 
-## Implementation
+## Implementation Details
 
-Below we discuss more on some of the challenged and details of of implementing such library.
+Below we discuss more on some of the challenged and details of implementing the library.
 
-### Diff
+### Diff Algorithm
 
-One key aspect of building a declarative library is the diffing algorithm.
+One key aspect of building a declarative library is the diff algorithm.
 
-When the Route Graphics `render` function is called, we 
-
-Each node is split into add, update, delete operations. Each node has a unique ID.
+Each time the `render` function is called, we compare the previous and the next state. The output of this comparison is a list of all nodes that needs to be either added, updated or deleted. Each node has an id, and we check for whether the properties of the node has changed.
 
 Add and delete are more straightforward. Update is more involved, as you need to make sure to update only the things that have changed.
 
-The diffing algorithm basically walks through and compares the previous state and next state, and will do the add, update, delete operations accordingly.
+This is important to ensure that each render function is idepotent and only the neessary updates are being performed.
 
-### Computed
+### Computed state
 
-Our first implementation of route-graphics was more naive. We ran into issues and complicated code because we were doing calculations and execution at the same time.
+Our first implementation of Route Graphics was more naive. We ran into issues and complicated code because we were doing calculations and execution at the same time.
 
-Calculations are things like the final X and Y position of the element. It also includes calculating the width and height of text elements.
+Calculations are things like calculatin the final X and Y position of the element. It also includes calculating the width and height of text elements.
 
 Execution is actually calling the PixiJS functions to apply the graphics.
 
-We concluded that we could process all the original state into a computed state first. And during execution, it would be much simpler.
+Our learning was that we could transform all the original state into a computed state first and then have it go through the execution.
 
-The JSON gets first converted into computed format. We do this transformation preprocessing before doing any execution. This helps us with calculating the positions, for example fonts, etc., so during execution it will just execute without doing any other calculations. This has been very useful for keeping the code clean and maintainable. Calculations are fully unit tested.
+The execution becomes much simpler as it only has to take the existing properties and execute the respective PixiJS functions.
 
 ### Aborts and async code
 
-Unlike normal `render` functions where it executse immediatley. Things like animations and revealing text, continue execute even after `render`.
+Unlike normal `render` functions where it executeds and ends immediatley. Things like animations and revealing text, continue to execute even after `render`.
 
-One issue is what happens if state is updated before the previous animations have concluded.
+One issue is what happens if state is updated before the previous animations have concluded. Think of clicking the screen while a background transition is still ongoing.
 
-At first we had implmented this with Promise and signal abort. However working with the async await when is abortable was difficult, especially when there were muttiple ones going on at the same time.
+At first we had implmented this with JavaScript Promise and [Abort Controller](https://developer.mozilla.org/en-US/docs/Web/API/AbortController/abort). However working with many `async` and `await` became difficult, especially when there were muttiple `async` operations going on at the same time and the outcome became difficult to predict.
 
-We updated the implemenation in favour of a centralized bus that will coordinate and better manage all asyncronous events.
+We solved this with a centralized event bus that coordinates and better manage all asyncronous events.
 
 ## Where Route Graphics is Used
 
-All exported Visual Novels will have Route Graphics bundled and run it
-
 Route Graphics powers the live preview in the scene editor.
 
-And that is also why the live preview is fully accurate and same as the exported Visual Novel.
+  <video src="/public/blog/2026/03/graphics-6.mp4" autoplay loop muted playsinline style="width: 100%; max-width: 100%;"></video>
+
+And that is also why in the live preview we can have an accurate and consistent preview of the exported Visual Novel.
 
 The live preview is fast because PixiJS is fast, and Route Graphics's diff algorithm makes sure that only what changed gets actually updated.
 
-We also use Route Graphics to preview for the Tween, and Transform pages.
+We also use Route Graphics to preview for the Tween Animations, and Transform pages.
+
+And of course, all exported Visual Novels made with RouteVN Creator will have Route Graphics bundled to render the Visual Novel graphics and audio.
 
 ## Contributors
 
 A shoutout to the libray contributors
 
-- han4wluc: main author
-- nghia: Rewriting the library using computed
-- JeffY: designing and implmementing Particles plugin. and other improvemtns
-- 738NGX, Nellow: various bug fixes and testing
+- [han4wluc](https://github.com/han4wluc): Main author
+- [Nghia](https://github.com/NghiaTT200000): Rewriting the library to have the computed state
+- [JeffY](https://github.com/Jeff-Y-work): Designing and implmementing Particles plugin, and other improvemtns
+- [738NGX](https://github.com/738NGX), [Nellow](https://github.com/Prabesh002): Various bug fixes and testing
 
 ## Closing
 
-Route Graphics is open source under MIT License. If you liked this article, consider starring it on [GitHub](https://github.com/RouteVN/route-graphics).
+Route Graphics is open source under MIT License. If you liked this article, consider giving it a start on [GitHub](https://github.com/RouteVN/route-graphics).
 
-You can see more examples from the playground.
+You can see more examples from the [Route Graphics Playground](https://route-graphics.routevn.com/playground/).
 
 In the next post, we will be talking about Route Engine. How we designed a system that implements a full Visual Novel engine with less than 3000 lines of code.
 

@@ -261,3 +261,31 @@ blockquote > p {
 h1[id], h2[id], h3[id], h4[id], h5[id], h6[id] {
   scroll-margin-top: 80px;
 }
+
+
+
+
+pre {
+  margin: 0;
+  margin-bottom: var(--spacing-lg);
+  white-space: pre; /* or pre-wrap/pre-line if you want line wrapping */
+  padding: var(--spacing-lg);
+  flex: 1;
+  /*For html segments without codepreview, so they can extend to see the full code*/
+  min-height: fit-content;
+  max-width: var(--width-stretch);
+  width: 100%;
+  overflow-x: auto;
+  box-sizing: border-box;
+  /* TODO fix sometimes there needs to be margin-bottom */
+  /* margin-bottom: var(--spacing-g); */
+}
+
+code:not(pre code) {
+  font-family: 'Menlo', 'Monaco', 'Courier New', monospace;
+  font-size: 0.9em;
+  background-color: var(--muted);
+  padding: var(--spacing-xs) var(--spacing-md);
+  border-radius: var(--border-radius-sm);
+  display: inline-block;
+}
