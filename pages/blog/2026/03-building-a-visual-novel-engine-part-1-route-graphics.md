@@ -27,15 +27,15 @@ Route Graphics is responsible for handling any visual and audio changes on the s
 
 If we want to change any pixels or audio, it will be done through route-graphics.
 
-It provides all necessary graphic primitives to build a visual novel, but the library itself does not mention or have any knowledge about Visual Novels, is designed to be a general graphics library that can be used for any other use cases.
+It provides all necessary graphic primitives to build a visual novel, but the library itself does not mention or have any knowledge about Visual Novels. It is designed to be a general graphics library that can be used for any other use cases.
 
-Route Graphics is a declerative library built based on PixiJS.
+Route Graphics is a declarative library built based on PixiJS.
 
 Below is an example of a typical Visual Novel screen 
 
 <img src="/public/blog/2026/03/graphics-1.png" style="width: 100%; margin-bottom: 24px;"> </img>
 
-The above image screen was created by using Route Graphics's declerative interface:
+The above screen was created using Route Graphics's declarative interface:
 
 ```yaml
 elements:
@@ -46,6 +46,8 @@ elements:
     height: 1080
   - type: container # Character
     id: character-container
+    anchorX: 0.5
+    anchorY: 1
     x: 300
     y: 1080
     anchorX: 0.5
@@ -79,29 +81,29 @@ elements:
         content: I go through the door and look up
 ```
 
-The power of Route Graphics' declarative interface is that you can create any visuals in the screen just by updating a JSON/YAML object.
+The power of Route Graphics's declarative interface is that you can create any visuals on the screen just by updating a JSON/YAML object.
  
 ## Declarative vs Imperative
 
 Route Graphics is built on top of [PixiJS](https://pixijs.com/).
 
-PixiJS has an imperative interface. We built Route Graphics to have a declerative interface.
+PixiJS has an imperative interface. We built Route Graphics to have a declarative interface.
 
 **Declarative**: You define the end state, and the library figures out how to get there.
 
 **Imperative**: You write surgical, step-by-step instructions to reach the desired state.
 
-While designing the declerative interface, we took the freedom to adapt the interface to better fit our use cases, meaning we do not map the API one to one with PixiJS API, it is a whole new interface.
+While designing the declarative interface, we took the freedom to adapt the interface to better fit our use cases, meaning we do not map the API one-to-one with the PixiJS API; it is a whole new interface.
 
 ## PixiJS
 
-PixiJS was choosen because
+PixiJS was chosen because
 - It works on the web, which is one of the most accessible platforms out there
 - It is performant and it supports 3 types of renderers: WebGPU, WebGL, and canvas
 - The interface is easy to use with good documentation
 - Mature: has been around for many years, and used by successful game engines
 
-So far PixiJS has met out expectations for its stability and performance.
+So far PixiJS has met our expectations for its stability and performance.
 
 ## Audio
 
@@ -139,15 +141,15 @@ Animations
 Audio
 - Sound
 
-Some of the plugnis are straighfroward and similar to what PixiJS has, below we will go through some of the more interesting ones.
+Some of the plugins are straightforward and similar to what PixiJS has; below we will go through some of the more interesting ones.
 
 ### Tween Animations
 
 Animations, or more precisely tween animations are implemented using PixiJS Ticker.
 
-Tween animatins are essentially changes in a property value over time.
+Tween animations are essentially changes in a property value over time.
 
-Below is an example to make an image have a fade in and fade out effects very common for background transitions
+Below is an example showing fade-in and fade-out effects, which are very common for background transitions:
 
   <video src="/public/blog/2026/03/graphics-2.mp4" autoplay loop muted playsinline style="width: 100%; max-width: 100%;"></video>
 
@@ -245,15 +247,15 @@ animations:
             relative: true
 ```
 
-The primitives: `keyframes` with `duration`, `value`, `easing` are surprisingly powerful and enough to realize a rich variety of interesting animations.
+The primitives—`keyframes` with `duration`, `value`, and `easing`—are surprisingly powerful and sufficient to realize a rich variety of interesting animations.
 
 ### Particles
 
-PixiJS itself provdies a particle primitive, but does not provide high level implemetation to get interesting effects.
+PixiJS itself provides a particle primitive, but does not provide a high-level implementation to get interesting effects.
 
-Luckly there was a library called [PixiJS Particle Emitter](https://github.com/pixijs-userland/particle-emitter) which actually implemented many of the common particle effects.
+Luckily, there was a library called [PixiJS Particle Emitter](https://github.com/pixijs-userland/particle-emitter) which actually implemented many of the common particle effects.
 
-We took this library, and made a plugin out of it. Below is an example of snow effect
+We took this library and made a plugin out of it. Below is an example of a snow effect:
 
   <video src="/public/blog/2026/03/graphics-4.mp4" autoplay loop muted playsinline style="width: 100%; max-width: 100%;"></video>
 
@@ -321,9 +323,9 @@ elements:
 
 ### Text Revealing
 
-Text Reveling is a plugin that implements a very common features seen in Visual Novels. It also support more advanced features such as rich text and furigana.
+Text Revealing is a plugin that implements a very common feature seen in Visual Novels. It also supports more advanced features such as rich text and furigana.
 
-The challenge to implement this one was to calculate the position and dimensions of the text so it can be positioned correctly. Those calculations are done using `CanvasTextMetrics.measureText` provided by PixiJS.
+The challenge of implementing this was to calculate the position and dimensions of the text so it can be positioned correctly. Those calculations are done using `CanvasTextMetrics.measureText` provided by PixiJS.
 
   <video src="/public/blog/2026/03/graphics-5.mp4" autoplay loop muted playsinline style="width: 100%; max-width: 100%;"></video>
 
@@ -370,7 +372,7 @@ elements:
 
 ## Event system
 
-In Visual Novels, we have click and drag events. We implmeented an even system with declarative code as well.
+In Visual Novels, we have click and drag events. We implemented an event system with declarative code as well.
 
 ```yaml
 elements:
@@ -386,29 +388,29 @@ elements:
         message: "Rect 1 right-clicked"
 ```
 
-The client will receive the event with a payload. The client will be responsible of actually handling this event.
+The client will receive the event with a payload. The client will be responsible for actually handling this event.
 
-This is exaclty how Route Engine is able to define click events, so when a user click on the screen Route Engine will proceed to the next line.
+This is exactly how Route Engine is able to define click events, so when a user clicks on the screen Route Engine will proceed to the next line.
 
 ## Implementation Details
 
-Below we discuss more on some of the challenged and details of implementing the library.
+Below we discuss more on some of the challenges and details of implementing the library.
 
 ### Diff Algorithm
 
 One key aspect of building a declarative library is the diff algorithm.
 
-Each time the `render` function is called, we compare the previous and the next state. The output of this comparison is a list of all nodes that needs to be either added, updated or deleted. Each node has an id, and we check for whether the properties of the node has changed.
+Each time the `render` function is called, we compare the previous and the next state. The output of this comparison is a list of all nodes that need to be either added, updated, or deleted. Each node has an id, and we check for whether the properties of the node have changed.
 
 Add and delete are more straightforward. Update is more involved, as you need to make sure to update only the things that have changed.
 
-This is important to ensure that each render function is idepotent and only the neessary updates are being performed.
+This is important to ensure that each render function is idempotent and only the necessary updates are being performed.
 
 ### Computed state
 
 Our first implementation of Route Graphics was more naive. We ran into issues and complicated code because we were doing calculations and execution at the same time.
 
-Calculations are things like calculatin the final X and Y position of the element. It also includes calculating the width and height of text elements.
+Calculations are things like calculating the final X and Y position of the element. It also includes calculating the width and height of text elements.
 
 Execution is actually calling the PixiJS functions to apply the graphics.
 
@@ -418,13 +420,13 @@ The execution becomes much simpler as it only has to take the existing propertie
 
 ### Aborts and async code
 
-Unlike normal `render` functions where it executeds and ends immediatley. Things like animations and revealing text, continue to execute even after `render`.
+Unlike normal `render` functions where it executes and ends immediately, things like animations and revealing text continue to execute even after `render`.
 
 One issue is what happens if state is updated before the previous animations have concluded. Think of clicking the screen while a background transition is still ongoing.
 
-At first we had implmented this with JavaScript Promise and [Abort Controller](https://developer.mozilla.org/en-US/docs/Web/API/AbortController/abort). However working with many `async` and `await` became difficult, especially when there were muttiple `async` operations going on at the same time and the outcome became difficult to predict.
+At first we had implemented this with JavaScript Promises and [Abort Controller](https://developer.mozilla.org/en-US/docs/Web/API/AbortController/abort). However, working with many `async` and `await` became difficult, especially when there were multiple `async` operations going on at the same time and the outcome became difficult to predict.
 
-We solved this with a centralized event bus that coordinates and better manage all asyncronous events.
+We solved this with a centralized event bus that coordinates and better manages all asynchronous events.
 
 ## Where Route Graphics is Used
 
@@ -436,24 +438,24 @@ And that is also why in the live preview we can have an accurate and consistent 
 
 The live preview is fast because PixiJS is fast, and Route Graphics's diff algorithm makes sure that only what changed gets actually updated.
 
-We also use Route Graphics to preview for the Tween Animations, and Transform pages.
+We also use Route Graphics for the Tween Animations and Transform page previews.
 
 And of course, all exported Visual Novels made with RouteVN Creator will have Route Graphics bundled to render the Visual Novel graphics and audio.
 
 ## Contributors
 
-A shoutout to the libray contributors
+A shoutout to the library contributors:
 
 - [han4wluc](https://github.com/han4wluc): Main author
 - [Nghia](https://github.com/NghiaTT200000): Rewriting the library to have the computed state
-- [JeffY](https://github.com/Jeff-Y-work): Designing and implmementing Particles plugin, and other improvemtns
+- [JeffY](https://github.com/Jeff-Y-work): Designing and implementing Particles plugin, and other improvements
 - [738NGX](https://github.com/738NGX), [Nellow](https://github.com/Prabesh002): Various bug fixes and testing
 
 ## Closing
 
-Route Graphics is open source under MIT License. If you liked this article, consider giving it a start on [GitHub](https://github.com/RouteVN/route-graphics).
+Route Graphics is open source under the MIT License. If you liked this article, consider giving it a star on [GitHub](https://github.com/RouteVN/route-graphics).
 
 You can see more examples from the [Route Graphics Playground](https://route-graphics.routevn.com/playground/).
 
-In the next post, we will be talking about Route Engine. How we designed a system that implements a full Visual Novel engine with less than 3000 lines of code.
+In the next post, we will be talking about Route Engine and how we designed a system that implements a full Visual Novel engine with less than 3000 lines of code.
 
