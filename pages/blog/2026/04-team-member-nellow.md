@@ -20,7 +20,7 @@ Nellow is a high school student from Nepal. He is a teenager who loves exploring
 
 He has also participated in several game jams, gaining experience in game development:
 
-- **VHS** - Kathmandu University Computer Club Game Jam, July 2024. Worked on concept, design, and implementation. The game won first position, demonstrating creativity and technical execution under strict time pressure. [Play on Itch.io](https://nellow-protfolio.netlify.app/projects/vhs)
+- **VHS** - Kathmandu University Computer Club Game Jam, July 2024. Worked on concept, design, and implementation. The game won first position, demonstrating creativity and technical execution under strict time pressure. [Play](https://nellow-protfolio.netlify.app/projects/vhs)
 
 - **Canno Shot** - Dark Matter Game Jam, 2024. Designed and implemented physics-based projectile mechanics. Created the core gameplay loop around cannon shooting and handling complex collision physics. One of the best overall game submissions. [Play](https://nellow-protfolio.netlify.app/projects/canno-shot)
 
@@ -34,7 +34,7 @@ He once collaborated with a creator on making a personal visual novel using Unit
 
 ### Contributions at RouteVN
 
-Nellow contributed to RouteVN's mission during his internship, bringing his passion for game development and fresh perspective as someone genuily interested in creating a visual novel.
+Nellow contributed to RouteVN's mission during his internship, bringing his passion for game development and fresh perspective as someone genuinely interested in creating a visual novel.
 
 He has contributed several feature enhancements and bug fixes to Route Engine.
 
@@ -43,5 +43,5 @@ His biggest contributions were on RouteVN Creator. During January, RouteVN Creat
 ### Connect
 
 - GitHub: [Prabesh002](https://github.com/Prabesh002)
-- Portfolio Website: [nellow-protfolio.netlify.app](https://nellow-protfolio.netlify.app/)
+- Portfolio Website: [nellow-protfolio](https://nellow-protfolio.netlify.app/)
 
