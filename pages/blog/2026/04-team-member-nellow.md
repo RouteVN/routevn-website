@@ -3,10 +3,10 @@ template: post
 author: [han4wluc, nellow]
 title: "Team Member Introduction: Nellow"
 tags: [blogPost]
-date: '2026-01-21'
+date: '2026-01-30'
 seo:
   title: "Team Member Introduction: Nellow"
-  description: Introducing Nellow, a developer at RouteVN. High School student from Nepal passionate about game development.
+  description: Introducing Nellow, a developer at RouteVN. high school student from Nepal passionate about game development.
   ogType: article
 ---
 
@@ -30,11 +30,15 @@ He has also participated in several game jams, gaining experience in game develo
 
 Nellow's journey with visual novels began with his love for visual novels and light novels. He wanted to create his own VN but never had the chance until joining RouteVN, which he saw as an opportunity to fulfill his hobby as a game developer and improve his experience.
 
+Some of the Visual Novels he played:
+- Finding Cinderella
+- Fate/stay Night
+
 He once collaborated with a creator on making a personal visual novel using Unity, though the project was put on hold for various reasons.
 
 ### Contributions at RouteVN
 
-Nellow contributed to RouteVN's mission during his internship, bringing his passion for game development and fresh perspective as someone genuinely interested in creating a visual novel.
+Nellow brought his passion for game development and fresh perspective as someone genuinely interested in creating a visual novel.
 
 He has contributed several feature enhancements and bug fixes to Route Engine.
 
