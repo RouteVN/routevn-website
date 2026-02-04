@@ -462,27 +462,29 @@ This works for asynchronous operations too. When an async operation completes, i
 
 Below is a full example of how an interaction flows through the entire system:
 
-```mermaid
-sequenceDiagram
-    participant User
-    participant RG as Route Graphics
-    participant RE as Route Engine
-    participant State as System State
-    participant SE as Side Effects Handler
+<img src="/public/blog/2026/05/route-engine-01.png" style="width: 100%; margin-bottom: 24px;">
 
-    User->>RG: Click
-    RG->>RE: Emit event with actionPayload
-    RE->>State: Run nextLine action
-    State->>State: Update current line pointer
-    State->>State: Push render to pendingEffects
-    State-->>RE: Return updated state
-    RE->>SE: Process pending effects
-    SE->>State: Compute presentationState
-    SE->>State: Compute renderState
-    SE->>RG: Call render with renderState
-    RG->>User: Update screen
-    SE->>State: Clear pending effect
-```
+<!-- ```mermaid -->
+<!-- sequenceDiagram -->
+<!--     participant User -->
+<!--     participant RG as Route Graphics -->
+<!--     participant RE as Route Engine -->
+<!--     participant State as System State -->
+<!--     participant SE as Side Effects Handler -->
+<!---->
+<!--     User->>RG: Click -->
+<!--     RG->>RE: Emit event with actionPayload -->
+<!--     RE->>State: Run nextLine action -->
+<!--     State->>State: Update current line pointer -->
+<!--     State->>State: Push render to pendingEffects -->
+<!--     State >RE: Return updated state -->
+<!--     RE->>SE: Process pending effects -->
+<!--     SE->>State: Compute presentationState -->
+<!--     SE->>State: Compute renderState -->
+<!--     SE->>RG: Call render with renderState -->
+<!--     RG->>User: Update screen -->
+<!--     SE->>State: Clear pending effect -->
+<!-- ``` -->
 
 **Flow breakdown:**
 
@@ -523,9 +525,4 @@ Route Engine is open source under the MIT License.
 If you liked this article, consider giving it a star on [GitHub](https://github.com/RouteVN/route-engine).
 
 In the next post, we'll talk about RouteVN Creator, the actual editor, and how it's built on top of Route Engine. We've spent much more time on RouteVN Creator than any other codebase.
-
----
-
-**Previous**: [Part 1 - Route Graphics](/blog/2026/03-building-a-visual-novel-engine-part-1-route-graphics) | **Next**: Part 3 - RouteVN Creator (coming soon)
-
 

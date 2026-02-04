@@ -463,5 +463,5 @@ In the next post, we will be talking about Route Engine and how we designed a sy
 
 ---
 
-**Next**: [Part 2 - Route Engine](/blog/2026/05-building-a-visual-novel-engine-route-engine) | **Part 3**: RouteVN Creator (coming soon)
+**Next**: [Part 2 - Route Engine](/blog/2026/05-building-a-visual-novel-engine-route-engine)
 
