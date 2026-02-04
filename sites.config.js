@@ -125,6 +125,15 @@ export default {
       if (!author) return '';
       if (Array.isArray(author)) return author.join(', ');
       return author;
+    },
+    formatDate: (dateStr) => {
+      if (!dateStr) return '';
+      const date = new Date(dateStr);
+      return date.toLocaleDateString('en-US', {
+        year: 'numeric',
+        month: 'long',
+        day: 'numeric'
+      });
     }
   }
 }

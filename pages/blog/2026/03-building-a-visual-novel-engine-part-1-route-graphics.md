@@ -4,9 +4,10 @@ author: han4wluc
 title: Building a Visual Novel Engine Part 1 - Route Graphics
 tags: [blogPost]
 date: '2026-01-28'
+updatedAt: '2026-02-04'
 seo:
   title: Building a Visual Novel Engine Part 1 - Route Graphics
-  description: Route Graphics is a declarative graphics and audio library built on PixiJS and WebAudio API. This is part 1 of a 3-part series on building a visual novel engine. Learn about the design decisions, implementation challenges, and the story behind the library. 
+  description: Route Graphics is a declarative graphics and audio library built on PixiJS and WebAudio API. This is part 1 of a 3-part series on building a visual novel engine. Learn about the design decisions, implementation challenges, and the story behind the library.
   ogType: article
 ---
 
@@ -18,7 +19,7 @@ By the end of the series, you should have a good understanding of how RouteVN Cr
 This is part 1 of a 3 part series:
 
 - Part 1 - Route Graphics: a declarative graphics and sound library
-- Part 2 - Route Engine: a Visual Novel engine built on Route Graphics
+- [Part 2 - Route Engine: a Visual Novel engine built on Route Graphics](/blog/2026/05-building-a-visual-novel-engine-route-engine)
 - Part 3 - RouteVN Creator: a Desktop application to create Visual Novels without any coding
 
 ## Route Graphics
@@ -459,4 +460,8 @@ If you liked this article, consider giving it a star on [GitHub](https://github.
 You can see more examples from the [Route Graphics Playground](https://route-graphics.routevn.com/playground/).
 
 In the next post, we will be talking about Route Engine and how we designed a system that implements a full Visual Novel engine with less than 3000 lines of code.
+
+---
+
+**Next**: [Part 2 - Route Engine](/blog/2026/05-building-a-visual-novel-engine-route-engine) | **Part 3**: RouteVN Creator (coming soon)
 

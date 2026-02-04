@@ -3,7 +3,7 @@ template: post
 author: han4wluc
 title: Building a Visual Novel Engine Part 2 - Route Engine
 tags: [blogPost]
-date: '2026-02-03'
+date: '2026-02-04'
 seo:
   title: Building a Visual Novel Engine Part 2 - Route Engine
   description: Route Engine is a lightweight Visual Novel engine, built with less than 5000 lines of JavaScript code. Learn how we designed a system that runs entire Visual Novels from a single JSON file.
@@ -16,7 +16,7 @@ This series will explain the whole architecture and design of RouteVN Creator. B
 
 This is part 2 of a 3 part series:
 
-- Part 1 - Route Graphics: a declarative graphics and sound library
+- [Part 1 - Route Graphics: a declarative graphics and sound library](/blog/2026/03-building-a-visual-novel-engine-part-1-route-graphics)
 - Part 2 - Route Engine: a Visual Novel engine built on Route Graphics
 - Part 3 - RouteVN Creator: a Desktop application to create Visual Novels without any coding
 
@@ -30,11 +30,11 @@ There were a few goals, or rather constraints, that shaped the outcome of this l
 - All content lives in a single JSON object
 - The engine runtime executes that content into a fully playable Visual Novel
 
-In this article will:
-- give a backround of what circumstances shaped this library
-- explain the JSON
-- explian the implemtnatino
-- future plans and conclusions
+In this article, we'll:
+- Explore the background and circumstances that shaped this library
+- Explain the JSON structure for Visual Novel content
+- Dive into the runtime implementation
+- Discuss future plans and conclusions
 
 ## Background
 
@@ -42,15 +42,15 @@ Visual Novels engines have been built for decades, there have been hundreds buil
 
 Building a Visual Novel engine is deceptively simple, but it is hard in reality.
 
-On the surface, it seems like just putting images and text on screen at specific coordinates. That's easy, and it's something that can be built quickly. This is why there are more than a dozen new VN engines every year. You need to create a wrappers around a graphics layer, and add Visual Novel specific logic.
+On the surface, it seems like just putting images and text on screen at specific coordinates. That's easy, and it's something that can be built quickly. This is why there are more than a dozen new VN engines every year. You need to create wrappers around a graphics layer and add Visual Novel-specific logic.
 
-On the other hand, building a Visual Novel engine is basically building an entire game engine. That's huge and hard. You have to manage game state, record progression for save/load/rollback, interactive UI, and asset loading, manage variables. A Visual Novel's graphics are simpler than other games, but you still have to implement everything. You can also think of it as a mini operating system.
+On the other hand, building a Visual Novel engine is basically building an entire game engine. That's a huge engineering project. You have to manage game state, record progression for save/load/rollback, interactive UI, and asset loading, manage variables. A Visual Novel's graphics are simpler than other games, but you still have to implement everything. You can also think of it as a mini operating system.
 
-If you're building a custom runtime for just one VN, it's relatively straightforward. You can hardcode everything. A Visual Novel engine, however, has two sets of users: the end consumer who reads the Visual Novel, and the artists and developers who use the engine to create content. The second group is much harder. You can't control what they want to make, and many issues are about usability rather than technical capability.
+If you're building a custom runtime for just one Visual Novel, it's relatively straightforward. You can hardcode everything. A Visual Novel engine, however, has two sets of users: the end consumer who reads the Visual Novel, and the artists and developers who use the engine to create content. The second group is much harder. You can't control what they want to make, and many issues are about usability rather than technical capability.
 
 When you have to do both, handle complexity and serve creators, it becomes a non-trivial engineering project. One that takes many iterations and intentional design and planning.
 
-We try optimize for three things:
+We try optimize the engine for three things:
 
 - Easy to use
 - Able to scale to complex features
@@ -62,7 +62,7 @@ Route Engine has gone through many iterations and rewrites. Probably four or fiv
 
 ## Content vs. Runtime
 
-The content is what the user creates. It's a JSON object. We like to write it in YAML when doing it by hand, but is is the same thing.
+The content is what the user creates. It's a JSON object. We like to write it in YAML when doing it by hand, but it is the same thing.
 
 The runtime is the engine code. It's JavaScript, and the user cannot change it. This is where we need to implement all the functionality that is being exposed to the JSON object.
 
@@ -89,10 +89,9 @@ We're not talking about just graphics and UI like Route Graphics. We're talking 
 - Dialogs and confirm boxes
 - Auto mode, skip mode
 - NVL mode, history mode
-- Managing all variables
+- Implementing variables and conditionals
 - Scene transitions and animations
-- Everything you see in Visual Novels
-- Variables and conditionals
+- Everything else you see in Visual Novels
 
 What's not included:
 - Mini games
@@ -108,7 +107,7 @@ Next, we'll go through this JSON structure and show how we represent a full Visu
 
 ### Resources
 
-We predefine all resources upfront.
+We predefine all resources upfront. All the Visual Novels assets are defined there.
 
 Images can be used for backgrounds, CGs, and UI. These are the building blocks of the Visual Novel. We define everything with its respective properties, each with an ID for identification.
 
@@ -172,7 +171,7 @@ resources:
 ```
 
 Resources are pretty straightforward. But there are few things to note:
-- We're careful about resource types we support. Layouts use the direct Route Graphics structure, so they're the most flexible
+- We're careful about resource types we support. Layouts use the direct Route Graphics interface, so they're the most versatile
 - We don't want to add too many types to prevent bloat. Keeping it simple is intentional, we only add a resource type when it is really necessary.
 
 ### Story Hierarchy
@@ -182,9 +181,9 @@ This is a carefully designed data structure after many iterations to solve the b
 We split the structure of a Visual Novel into:
 
 - **Scene**: More like folders. They don't have much logic, but are useful for grouping sections
-- **Section**: Is a chunk of content. A section has multiple lines. We can jump from section to section
-- **Line**: Line reprsents a unit of content. Typically, one mouse click advances to the next line. A line is made up of multiple actions.
-- **Action**: The smallest unit of change, does one thing such as update background image, or move character, all visible changes on the screen happen because of some action.
+- **Section**: A chunk of content. A section has multiple lines. We can jump from section to section
+- **Line**: A unit of content. Typically, one mouse click advances to the next line. A line is made up of multiple actions.
+- **Action**: The smallest unit of change—does one thing such as update background image or move character. All visible changes on the screen happen because of some action.
 
 A section is composed of multiple lines. Jumps between sections can be fully invisible to the user (feeling continuous) or have significant transitions to feel like full scene changes.
 
@@ -246,22 +245,21 @@ Note how all resource identifiers are references with the ID, this removed dupli
 
 In this particular scene, the Visual Novel starts a scene with a background a dialogue box with text content. When user clicks, it will show the next line with the updated text at line2.
 
-When the user clicks again, the `sectionTransition` action is triggered, and wil move to section2's 1st line.
+When the user clicks again, the `sectionTransition` action is triggered, and will move to section2's 1st line.
 
 This data structure represents well the Visual Novel mechanics:
-- Within a section, content flows **sequentally**, you click and expec to move to the next line
+- Within a section, content flows **sequentially**, you click and expect to move to the next line
 - Between section to section, content flows in a **branching** fashion, you can jump to any section.
-
 
 ### Rendering Dynamic Data
 
 The above structure works well for static data, but actual Visual Novels are more dynamic.
 
-By dynamic I mean that the UI may change depending on some conditions, such as a button should be shown only when a certaing flag is active.
+By dynamic I mean that the UI may change depending on some conditions, such as a button should be shown only when a certain flag is active.
 
 Another common example of dynamic data is the save/load screen. On this screen you can click at one of the save slots and it's content will update.
 
-Our solution of enabling dynamic content is via a library called Jempl which is a like a templating engine but for JSON.
+Our solution of enabling dynamic content is via a library called [Jempl](https://github.com/yuusoft-org/jempl) which is like a templating engine but for JSON.
 
 Below are some examples:
 
@@ -304,7 +302,7 @@ elements:
           content: ${item.id}
 ```
 
-The above covers the primitives to render dynamic content. These simple primitives can cover a lot of more complicated cases.
+The above covers the primitives to render dynamic content. These simple primitives can cover many more complicated cases.
 
 The power comes from the fact that we were able to do this while keeping a JSON only structure and without needing the user to switch to a different language.
 
@@ -348,93 +346,82 @@ When the button is clicked, the `clickCount` variable increments and the display
 
 ### Challenges
 
-Above, we've demonstrated how resources, story hierarchy (scenes, sections, lines, actions), and Jempl create dynamic and interactive experiences.
+Above, we've demonstrated how resources, story hierarchy (scenes, sections, lines, actions), and integration with Jempl and Route Graphics can create dynamic and interactive experiences.
 
-But it's a big challenge. We're very constrained by JSON, and we need to be careful about the functionalities we introduce. We try to balance:
+But it's a big challenge. We're very constrained by the JSON structure, and we need to be careful about the functionalities we introduce. We try to balance:
 
 - Making it too specific and hardcoded (not flexible, can't meet all use cases)
 - Making it too general (hard to use, users create repetitive work, different users build their own abstractions)
 
-Finding a good balance that correctly represents the Visual Novel domain is a difficul. We are very careful about any new functionality in this JSON.
+Finding a good balance that correctly represents the Visual Novel domain takes many iterative steps. We are very careful about any new functionality in this JSON.
 
 Any decision that we make on the structure of this JSON is carefully considered as it will have to be maintained for a long time, potentially forever.
 
-**Backward compatibility** is another consideration. Any breaking change would require users to mostly start over their VN or migrate projects. We're willing to do this only when we find structural, worthy improvements that justify the breaking change.
+**Backward compatibility** is another consideration. Any breaking change would require users to mostly start over their Visual Novel or migrate projects. We're willing to do this only when we find structural, worthy improvements that justify the breaking change.
 
-That is all for the intorduction of the JSON. Next, we will talk more about how this JSON's functionality is actually implemented in the JavasSript runtime.
+That is all for the introduction of the JSON. Next, we will talk more about how this JSON's functionality is actually implemented in the JavaScript runtime.
 
 ## Runtime
 
 Designing and implementing the runtime happened iteratively together with the JSON data, they co-evolved.
 
-No that we have described the full JSON object, lets talk about how it is atually implemented in the JavaScript code.
+Now that we have described the full JSON object, let's talk about how it is actually implemented in the JavaScript code.
 
 ### Single State Architecture
 
-This store comprise all core logic, around 80% of the codebase.
+This store comprises of around 80%+ of the entire codebase.
 
-There is a single big JavaScript object that contains the full state of the Visul Novel runtime. It is called systems state.
+There is a single big JavaScript object that contains the full state of the Visual Novel runtime. It is called system store.
 
-The store is comprosmised of 3 things:
+If you are a frontend developer this would sound very familiar state management terminology, because I come from a frontend dev background.
+
+The store is comprised of 3 things:
 
 - state
 - selectors
 - actions
 
-<!-- We use a single store comprising state, selectors, and mutations. It has 2 sub-stores for `renderState` and `presentationState` due to their complexity. -->
-
 **State**:
 
-<!-- - `systemState`: the state of the full system. There's ONLY ONE state for the whole VN. This state fully explains everything needed to render the current position -->
-- `projectData`: the content JSON, a big object
+This single state contains all the information needed to build the full Visual Novel and which point in the story the player is at. This state fully explains everything needed to render the current position.
+
+This state has several properties:
+
+- `projectData`: the static JSON object we have been talking about
 - pointer object that records current sectionId and lineId
-- history informatino about the lines and section user has viewed
+- history information about the lines and sections the user has viewed
 - variables and their values
 - info regarding whether auto mode or skip mode is currently enabled
 - and much more
 
-
 **Selectors**
 
-are computed based on the raw system state, making it easier to work with.
+Selectors are derived values computed from the raw state. Just straightforward transformations. All selectors are pure functions.
 
-- `presentationState`: the final state after computing actions for all lines. it tells you which background image, which characters, etc... need to be shown on the screen.
+Below are the 2 most complicated selectors, they span multiple hundred lines of code.
+
+- `presentationState`: the final presentation state after computing actions from 1st line of the section to the current line. It tells you which background image, which characters, etc... need to be shown on the screen.
 - `renderState`: computed from `presentationState` and `systemState`. This is sent directly to Route Graphics for updating the screen
-
-
-All selectors are pure functions
 
 **Actions**
 
-anything interactive or any change to the state is done through actions.
-some of the most used actions are:
+Anything interactive or any change to the state is done through actions. All actions are pure functions.
 
-- nextLine: will move to the next line. usually called during user click
-- sectionTransition: jump to another section. used for branching, scene changes, or menu navigation
-- updateVariable: modify variable values. used for counters, flags, tracking game state
-- toggleAutoMode / toggleSkipMode: toggle auto-play or skip mode
-- saveVnData / loadVnData: save or load game state
-- addLayeredView / clearLastLayeredView: show or hide layered views like menus, options, or history
-- prevLine: go to previous line. used for rollback/history feature 
+Some of the common actions are:
 
-If you are a frontend devleoper this would sound very familiar state managemetn terminology, because I come from a frontend dev background as well.
-
-
-All actions are pure functions.
-
-To emphasize again so 80% is just a single store for state managent. And everything is just simple pure functions.
-
-This is what I meant when I said that I desigend this library to be able to handle complex functonlaties, but remain maintanble and not have too many bugs.
+- `nextLine`: will move to the next line. usually called during user click
+- `prevLine`: go to previous line. used for rollback/history feature 
+- `sectionTransition`: jump to another section. used for branching, scene changes, or menu navigation
+- `updateVariable`: modify variable values. used for counters, flags, tracking game state
+- `toggleAutoMode` / `toggleSkipMode`: toggle auto-play or skip mode
+- `saveVnData` / `loadVnData`: save or load game state
+- `addLayeredView` / `clearLastLayeredView`: show or hide layered views like menus, options, or history
 
 ### Side Effects
 
-Anything that has a dependency or causes a change in the external environment is a side effect.
+Since actions must be pure functions, they can't directly cause side effects like rendering to the screen or starting timers. Instead, actions queue side effects to be processed later.
 
-All actions and selectors are pure functions. All actions do is update state. That's it.
-
-The only other thing is handling side effects.
-
-Inside the action, instead of calling the side effect directly, we just append a side effect to the system state itself:
+Inside the action, we append effects to the system state's `pendingEffects` array:
 
 ```javascript
 // Stop auto mode - queues timer cleanup and render effects
@@ -450,12 +437,13 @@ export const stopAutoMode = ({ state }) => {
 };
 ```
 
-Then we have a sideEffectsHandler that needs the take the effect, and do the accordingl thing.
-for `render` it will call Route Graphics's render function.
+A separate `sideEffectsHandler` processes these queued effects. For example, the `render` effect calls Route Graphics's render function.
 
-This can handle asyncornous side effects as well, we don't pass any callbacks, instead when the async operation is done, it will call another action.
+This approach keeps actions pure while handling complexity elsewhere. The complicated stuff—timers, async operations, rendering calls—lives in the sideEffectsHandler, keeping the core state management clean and predictable.
 
-### Full Example 1: Click to Next Line
+This works for asynchronous operations too. When an async operation completes, it triggers another action to update the state.
+
+### Full Example: Click to Next Line
 
 The screen has a base with click actions for `nextLine`:
 
@@ -471,11 +459,11 @@ sequenceDiagram
     RG->>RE: Emit event with actionPayload
     RE->>State: Run nextLine action
     State->>State: Update current line pointer
-    State->>State: Compute presentationState
-    State->>State: Compute renderState
     State->>State: Push render to pendingEffects
     State-->>RE: Return updated state
     RE->>SE: Process pending effects
+    SE->>State: Compute presentationState
+    SE->>State: Compute renderState
     SE->>RG: Call render with renderState
     RG->>User: Update screen
     SE->>State: Clear pending effect
@@ -486,15 +474,15 @@ sequenceDiagram
 1. User clicks → Route Graphics emits event
 2. Event handler calls Route Engine to run `nextLine` action
 3. Action calculates and updates the current line in state
-4. Selectors compute `presentationState` & `renderState` from latest state
-5. Action pushes `render` side effect to `pendingEffects` array
-6. Side Effects Handler processes effects and calls Route Graphics render
-7. Screen updates with new content
-8. Pending effect is removed from queue
+4. Action pushes `render` side effect to `pendingEffects` array
+5. Side Effects Handler processes pending effects
+6. Selector computes `presentationState` from latest state
+7. Selector computes `renderState` from `presentationState`
+8. Route Graphics render is called with `renderState`
+9. Screen updates with new content
+10. Pending effect is removed from queue
 
-This keeps all actions pure without any direct side effects, just state mutations and queued effects.
-
-### Runtime Challenges
+### Implementation Challenges
 
 All actions are pure functions. Anything needing side effects must use the side effect system.
 
@@ -506,34 +494,35 @@ This is currently a challenge. We might need to further optimize the state desig
 
 This creates a different way of doing things. We can't just imperatively call side effects. But the tradeoff is that a pure function state machine is so much easier to maintain and work with.
 
-### Our testing
+### Internal Experiments
 
 Internally, we use Route Engine to re-implement some existing short Visual Novels by hand. This tests how much we can do with the engine, what features we support, and what gaps remain.
 
 The current state: it can do a lot of things, but there are still glitches here and there. I'd say we're able to get to around 80% reproduction of existing VNs.
 
-the goal is to reach over 95 reproductio for simple Visual Novels, and then do the same for more advanced ones.
+The goal is to reach over 95% reproduction for simple Visual Novels, and then do the same for more advanced ones.
 
-once we have been able to make such production it will be a matter of exposing these functionalities to RouteVN Creator.
+Once we have been able to achieve such productions, it will be a matter of exposing these functionalities to RouteVN Creator.
 
 ## Conclusion
 
-There's still work to do. We're adding support for all the most common Visual Novel functionality we encounter, while trying to tame the codebase so it doesn't grow too complicated, stays bug-free, and remains stable.
+Route Engine is an intentionally designed compact library which has gone through several iterations with the purpose of implementing all features needed in a Visual Novel.
 
-- see what changes for JSON
-- optimize the state structure
-- better support for localization
+In this article, we've covered:
 
+- **The JSON structure**: How resources, story hierarchy (scenes, sections, lines, actions), and Jempl templating enable a full Visual Novel to be expressed as a single JSON file
+- **The runtime architecture**: A single state store with pure functions—selectors for derived state, actions for state transitions, and a queued effect system for handling side effects without compromising purity
 
-Route Engine is an intentionally designed compact library which has gone therough several iterations with the purpose of implementing all features needed in a Visual Novels.
+This design prioritizes maintainability and predictability. By keeping the core as pure functions and pushing complexity to the edges, we can handle advanced features like save/load, rollback, auto/skip modes, and dynamic UI without the codebase becoming unmanageable.
 
-This layer is not targeted to be used directly by end users, but we expect another abstraction that makes a good user interface, in our case RouteVN Creator.
+Route Engine is open source under the MIT License.
 
-Route Graphics is open source under the MIT License.
+If you liked this article, consider giving it a star on [GitHub](https://github.com/RouteVN/route-engine).
 
-If you liked this article, consider giving it a star on [GitHub](https://github.com/RouteVN/route-graphics).
+In the next post, we'll talk about RouteVN Creator, the actual editor, and how it's built on top of Route Engine. We've spent much more time on RouteVN Creator than any other codebase.
 
-In the next post, we'll talk about RouteVN Creator, the actual editor, and how it's built on top of Route Engine. We've spent much more time on RouteVN Creator than any other library.
+---
 
+**Previous**: [Part 1 - Route Graphics](/blog/2026/03-building-a-visual-novel-engine-part-1-route-graphics) | **Next**: Part 3 - RouteVN Creator (coming soon)
 
 
