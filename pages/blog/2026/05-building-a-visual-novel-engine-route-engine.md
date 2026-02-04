@@ -6,7 +6,7 @@ tags: [blogPost]
 date: '2026-02-04'
 seo:
   title: Building a Visual Novel Engine Part 2 - Route Engine
-  description: Route Engine is a lightweight Visual Novel engine, built with less than 5000 lines of JavaScript code. Learn how we designed a system that runs entire Visual Novels from a single JSON file.
+  description: Route Engine is a compact Visual Novel engine, built with less than 5000 lines of JavaScript code. Learn how we designed a system that runs entire Visual Novels from a single JSON file.
   ogType: article
 ---
 

@@ -459,7 +459,7 @@ If you liked this article, consider giving it a star on [GitHub](https://github.
 
 You can see more examples from the [Route Graphics Playground](https://route-graphics.routevn.com/playground/).
 
-In the next post, we will be talking about Route Engine and how we designed a system that implements a full Visual Novel engine with less than 3000 lines of code.
+In the next post, we will be talking about Route Engine and how we designed a system that implements a full Visual Novel engine with less than 5000 lines of code.
 
 ---
 
