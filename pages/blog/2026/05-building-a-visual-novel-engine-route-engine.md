@@ -31,10 +31,10 @@ There were a few goals, or rather constraints, that shaped the outcome of this l
 - The engine runtime executes that content into a fully playable Visual Novel
 
 In this article, we'll:
-- Explore the background and circumstances that shaped this library
+- Cover the background and challenges
 - Explain the JSON structure for Visual Novel content
 - Dive into the runtime implementation
-- Discuss future plans and conclusions
+- Share our conclusions
 
 ## Background
 
@@ -72,7 +72,9 @@ The reason for this is our primary use case: Route Engine has been built to be u
 
 Having said that, it's very possible to build a scripting language on top of Route Engine. The engine implements all the features. A higher-level scripting language could wrap it to make it easier to use.
 
-## Can an Entire Visual Novel Be Just a JSON File?
+## JSON Structure
+
+### Can an Entire Visual Novel Be Just a JSON object?
 
 Possible? Yes, for sure. The problem is more about making it practical.
 
@@ -107,7 +109,7 @@ Next, we'll go through this JSON structure and show how we represent a full Visu
 
 ### Resources
 
-We predefine all resources upfront. All the Visual Novels assets are defined there.
+We predefine all resources upfront. All Visual Novel assets are defined there.
 
 Images can be used for backgrounds, CGs, and UI. These are the building blocks of the Visual Novel. We define everything with its respective properties, each with an ID for identification.
 
@@ -183,7 +185,7 @@ We split the structure of a Visual Novel into:
 - **Scene**: More like folders. They don't have much logic, but are useful for grouping sections
 - **Section**: A chunk of content. A section has multiple lines. We can jump from section to section
 - **Line**: A unit of content. Typically, one mouse click advances to the next line. A line is made up of multiple actions.
-- **Action**: The smallest unit of change—does one thing such as update background image or move character. All visible changes on the screen happen because of some action.
+- **Action**: The smallest unit of change. It does one thing such as update background image or move character. All visible changes on the screen happen because of some action.
 
 A section is composed of multiple lines. Jumps between sections can be fully invisible to the user (feeling continuous) or have significant transitions to feel like full scene changes.
 
@@ -243,9 +245,9 @@ story:
 
 Note how all resource identifiers are references with the ID, this removed duplication and forces consistency.
 
-In this particular scene, the Visual Novel starts a scene with a background a dialogue box with text content. When user clicks, it will show the next line with the updated text at line2.
+In this particular scene, the Visual Novel starts with a background and a dialogue box with text content. When the user clicks, it will show the next line with the updated text at `line2`.
 
-When the user clicks again, the `sectionTransition` action is triggered, and will move to section2's 1st line.
+When the user clicks again, the `sectionTransition` action is triggered, and will move to `section2`'s 1st line.
 
 This data structure represents well the Visual Novel mechanics:
 - Within a section, content flows **sequentially**, you click and expect to move to the next line
@@ -363,17 +365,28 @@ That is all for the introduction of the JSON. Next, we will talk more about how 
 
 ## Runtime
 
-Designing and implementing the runtime happened iteratively together with the JSON data, they co-evolved.
+So far we've talked about the **content**. The JSON file that defines your Visual Novel. But who actually **runs** that content? That's the **runtime**.
 
-Now that we have described the full JSON object, let's talk about how it is actually implemented in the JavaScript code.
+Think of it like this:
+- The JSON is like a **script**—it tells the story, defines characters, sets up scenes
+- The runtime is the **program** that runs it—like a video player for your Visual Novel
+
+The runtime:
+- Reads your JSON file
+- Executes each action in order
+- Manages game state (where you are in the story, what variables are set)
+- Renders graphics and plays audio through Route Graphics
+- Handles user input (clicks, choices, menu navigation)
+
+Designing and implementing the runtime happened iteratively together with the JSON structure: they co-evolved. Now that we've described the full JSON object, let's talk about how it's actually implemented in the JavaScript code.
 
 ### Single State Architecture
 
-This store comprises of around 80%+ of the entire codebase.
+This store comprises around 80% of the entire Route Engine codebase.
 
-There is a single big JavaScript object that contains the full state of the Visual Novel runtime. It is called system store.
+There is a single big JavaScript object that contains the full state of the Visual Novel runtime. It's called the system store—a single source of truth that's centralized and authoritative. This is very simple and works very reliably.
 
-If you are a frontend developer this would sound very familiar state management terminology, because I come from a frontend dev background.
+If you're a frontend developer, this will sound familiar. It's similar to state management libraries, which inspired this design.
 
 The store is comprised of 3 things:
 
@@ -419,7 +432,9 @@ Some of the common actions are:
 
 ### Side Effects
 
-Since actions must be pure functions, they can't directly cause side effects like rendering to the screen or starting timers. Instead, actions queue side effects to be processed later.
+A side effect is anything that interacts with the outside world such as rendering to the screen, starting timers, saving data to storage.
+
+Since actions must be pure functions, they can't directly cause side effects. Instead, actions queue side effects to be processed later.
 
 Inside the action, we append effects to the system state's `pendingEffects` array:
 
@@ -445,7 +460,7 @@ This works for asynchronous operations too. When an async operation completes, i
 
 ### Full Example: Click to Next Line
 
-The screen has a base with click actions for `nextLine`:
+Below is a full example of how an interaction flows through the entire system:
 
 ```mermaid
 sequenceDiagram
@@ -482,18 +497,6 @@ sequenceDiagram
 9. Screen updates with new content
 10. Pending effect is removed from queue
 
-### Implementation Challenges
-
-All actions are pure functions. Anything needing side effects must use the side effect system.
-
-When adding new features, we need to ensure they follow these restrictions. One tricky example was taking screenshots for save data. The screenshot part is asynchronous, so we had to do some tricks to make it work well with side effects.
-
-Some state actions are complicated (20+ lines of code with various conditionals and loops). It becomes hard to see what's correct. Even unit tests become hard to verify. If the unit test passes 100%, it's still hard to grasp if the specification itself is correct.
-
-This is currently a challenge. We might need to further optimize the state design to make it more tractable, similar to how we did with `renderState` and `presentationState`, or add abstractions to handle intricate stuff.
-
-This creates a different way of doing things. We can't just imperatively call side effects. But the tradeoff is that a pure function state machine is so much easier to maintain and work with.
-
 ### Internal Experiments
 
 Internally, we use Route Engine to re-implement some existing short Visual Novels by hand. This tests how much we can do with the engine, what features we support, and what gaps remain.
@@ -502,7 +505,7 @@ The current state: it can do a lot of things, but there are still glitches here 
 
 The goal is to reach over 95% reproduction for simple Visual Novels, and then do the same for more advanced ones.
 
-Once we have been able to achieve such productions, it will be a matter of exposing these functionalities to RouteVN Creator.
+In parallel, we're slowly exposing more of these functionalities to RouteVN Creator so users can benefit from them. This process requires careful handling to ensure features work well across the entire system.
 
 ## Conclusion
 
