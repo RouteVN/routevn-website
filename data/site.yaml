@@ -98,7 +98,7 @@ landing:
 
 creator:
   download:
-    version: "0.14.0"
+    version: "0.15.0"
     title: Download RouteVN Creator
     # subtitle: Get started creating your Visual Novel
     platforms:
@@ -106,7 +106,7 @@ creator:
         svg: windows
         cta:
           label: Download for Windows
-          href: https://static-1.routevn.com/routevn-creator-client/RouteVN%20Creator_0.14.0_x64-setup.exe
+          href: https://static-1.routevn.com/routevn-creator-client/RouteVN%20Creator_0.15.0_x64-setup.exe
       - name: macOS
         svg: apple
         comingSoon: true
