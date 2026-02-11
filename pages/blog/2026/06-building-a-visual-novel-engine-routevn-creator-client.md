@@ -3,10 +3,10 @@ template: post
 author: han4wluc
 title: Building a Visual Novel Engine Part 3 - RouteVN Creator
 tags: [blogPost]
-date: '2026-02-11'
+date: '2026-02-12'
 seo:
   title: Building a Visual Novel Engine Part 3 - RouteVN Creator
-  description: RouteVN Creator is the desktop-first editor that turns Route Engine into a no-code workflow. This post explains the client architecture, offline data model, scene editor runtime loop, and export pipeline.
+  description: RouteVN Creator is the desktop-first editor that turns Route Engine into a no-code workflow. This post explains the product architecture, offline-first data model, scene editor design, and export pipeline.
   ogType: article
 ---
 
@@ -20,193 +20,178 @@ This is part 3 of a 3 part series:
 - [Part 2 - Route Engine: a Visual Novel engine built on Route Graphics](/blog/2026/05-building-a-visual-novel-engine-route-engine)
 - Part 3 - RouteVN Creator: a Desktop application to create Visual Novels without any coding
 
-## RouteVN Creator
+## Product Vision and Design Intent
 
-RouteVN Creator is the creator-facing product in this architecture.
+We saw two common patterns in existing tools for creating Visual Novels.
 
-Route Graphics is responsible for rendering.
-Route Engine is responsible for Visual Novel runtime logic.
-RouteVN Creator is responsible for authoring experience.
+Script/code-based engines are very powerful allowing full customizations, but they require technical knowledge and a meaningful learning curve.
 
-In short: this is the no-code layer.
+UI-based editors offer the other side of the tradeoff:
 
-The main constraints were:
+- Easy at first, but advanced use cases eventually push users back into scripting or technical workflows
+- Some of them are more powerful, but with hard to use UI/UX
 
-- No coding required from creators
-- Fast local editing and preview
-- Works in both desktop and web environments
-- Can eventually support collaborative sync without rewriting the data model
+From the beginning, our product direction had two goals:
 
-In this article, we'll:
+1. Make Visual Novel creation more accessible.
+This means no coding requirement, intuitive UI/UX, and a beginner-friendly flow where creators can start quickly.
 
-- Walk through the codebase structure
-- Explain the UI architecture pattern
-- Explain the event-sourced offline data model
-- Break down the Scene Editor runtime loop
-- Explain the versioning and distribution pipeline
+2. Build better tools for serious Visual Novels.
+This means supporting advanced features and richer workflows, while still hiding technical complexity behind clear interfaces. Advanced features include collaborative editor.
 
-## Codebase Structure
+We took an ambitious approach and tried to aim for both:
 
-The client repository is currently organized like this:
+- Build first for easyness of use
+- Then expand to support more powerful features
 
-```text
-routevn-creator-client/
-  src/
-    pages/              # route-level features (projects, scenes, scene-editor, resources, versions)
-    components/         # reusable building blocks (lines-editor, whiteboard, system-actions, etc.)
-    deps/
-      services/         # appService, projectService, graphicsService, audioService
-      infra/            # web + tauri adapters (db, file picker, updater, repository adapters)
-    utils/              # projectData construction, bundle creation, file processing helpers
-    setup.web.js        # web composition root
-    setup.tauri.js      # desktop composition root
-  src-tauri/            # Rust shell + Tauri plugins/capabilities
-  static/templates/     # starter repository data and template files
-  scripts/              # build and runtime bundle scripts
-```
+These two goals create a constant product tension: keep things simple for new users, while still expanding power for advanced use cases.
 
-At the time of writing, the `src` tree has around:
+Below we will explore how we built the application while trying to achieve our design goals.
 
-- 24 page modules
-- 33 component modules
-- 171 `view/store/handlers` files
+## Architecture
 
-## UI Layer Pattern
+This project grew into a big engineering project, and we needed a strong foundation to support our vision.
+That is why we built Route Graphics, Route Engine, and even a frontend framework, [Rettangoli](https://github.com/yuusoft-org/rettangoli).
 
-RouteVN Creator uses a consistent module pattern:
+Most of that technology is invisible to normal users, but is what we develops work with on a daily basis.
 
-- `*.view.yaml` for declarative UI
-- `*.store.js` for local state/selectors
-- `*.handlers.js` for events and side effects
+RouteVN Creator is the actual product people interface with. It is the user facing frontend, and it is also the part that took us the most time and care.
 
-This keeps features isolated and predictable.
+### Offline and Collaboration Data Structure
 
-For example, app routing is handled declaratively in `src/pages/app/app.view.yaml`:
+Offline applications are the ones that work fully offline, and provide a great user expeirence because it does not need to wait for a server to response, every user action is instantly updated.
 
-```yaml
-$elif currentRoutePattern == "/project/scenes":
-  - rvn-scenes: []
-$elif currentRoutePattern == "/project/scene-editor":
-  - rvn-scene-editor: []
-```
+Collaborative applicatinos are ones where multiple users can work on the project at the same time, and get the updates of what others are working on.
 
-This pattern scales well because every page/component follows the same shape.
+The technology that is used to build modern collaboratie applications is called CRDT, and OT (Operational Transofrms), and they are both collaborative and offline first.  
 
-## Shared Services and Platform Adapters
+The way it works in principle is that the system records all actions performed rather than the end state, so, and all actions get synched with all users.
 
-The web and desktop apps share almost all domain code.
+We did exacty this approach, but modified the CRDT/OT main protocl a bit to suit some our needs such as strong validaton. We came up with our own library: [insieme](https://github.com/yuusoft-org/insieme)
 
-Both entry points compose the same core services:
+One realization is that offline applications are easier to build than client/server appliations because we do not need to wait for server response. in fact we do not even need loading indicators because data is direclty saved locally which is instant.
 
-- `appService`
-- `projectService`
-- `graphicsService`
-- `audioService`
-- `pendingQueueService`
+Building a collaboration library however, is much more involved to make sure that the data is synced and merged properly
 
-The difference is infrastructure adapters:
+### Desktop Application with Tauri
 
-- Web: IndexedDB + browser file APIs (`src/deps/infra/web`)
-- Desktop: SQLite + native dialogs/filesystem via Tauri (`src/deps/infra/tauri`)
+At first I was thiknnig of building a web based appliicatin, becase that is where my experience came from and web you can do al most anything.
 
-This split keeps business logic stable while allowing platform-specific optimizations.
+Browser can actually support offline applications with Indexed DB. Browser data can be unintentinally  lost during some clean up operations.
 
-## Repository and Offline-First State
+The biggest limitation of web based appilcations was the storage persisatence.
 
-The central design decision is event sourcing with `insieme`.
+Users are not used to have a big project data stored in the browser. The solution to that is a desktop application where project data is stored idrecly on the user machine' file sytem. this follows what other game engines do.
 
-`projectService` creates a repository per project and writes events (`set`, `treePush`, `treeUpdate`, `treeDelete`, etc.) instead of mutating random objects directly.
+To build cross platform Desktop applications with web technologies, we basicaly choose Tauri to do it. I am not a fan of Rust, but lucky most things get done with minimal Rust intentervention.
 
-State is organized as hierarchical `tree + items` collections for resources and scenes. This is why file explorers, grouped resources, and scene hierarchies stay consistent across the app.
+The desktop app is packaged with Tauri, we wanted to support all major operating systems.
 
-```js
-const repository = createRepository({
-  originStore: store,
-  snapshotInterval: 500,
-});
-await repository.init({ initialState: initialProjectData });
-```
+The main decision was between Electron and Tauri.
 
-Why this matters:
+We chose Tauri primarily because of its low-memory positioning.
 
-- Offline writes are instant
-- Full state can be rebuilt from events
-- Versions can point to an event index
-- Collaboration support can be added later by syncing event streams
+It is less table, there are a few things like the installer, updater, file pemissons where we have to work with the limitaitons.
 
-## Scene Editor Runtime Loop
+## Page by Page
 
-The Scene Editor is the most interesting part of the client:
+Below is the creator workflow page by page, and the most important parts in each one.
 
-This is also the one users are like to spend the most time on, because you do the actual writing here.
+### Projects and Project
 
-The key element is the text editor. 
+We have a global level sqlite file that stores user configuration and also the list of projects.
 
-It is a block based line editor, meaning each line is selectable. When the user moves to different lines, the preview will update directly.
+For each project, the data lives inside a folder. There is basically 1 sqlite file and the assets data as binary files. the sqlite file stores all project data inculding all the event logs.
 
-This interaction, was not so eash ty do with a full textarea, and so we added special dealings, especially in the underlying data structure.
+### Resources (Assets and UI)
 
+Resources are split into two groups:
 
+- **Assets**: images, sounds, videos, characters, and content resources
+- **UI**: colors, fonts, typography, layouts, and interface resources
 
-We implemented with using <div contenteditable>
+There are few things to note here what made it possible to maintain such large amount of pages and data structuer:
 
+- consistent design. we follow a consitehnt shell, with folders and items grouped into folders. and a edit panel in the right. a dialog for create and edit. we reuse the same code for this shell. this has 2 advantages:
+  - consistent for the user, when user learns things in 1 page, he/she can expect to be able to have learnd many other pages as well.
+  - we are able to reuse the same code for all pages, so it is much easier to maintain. and keep design consistent.
+  - we do allow customization for each item, because each item has very specific needs and is very unique.
 
-## Asset Processing Pipeline
+- we use same data foundtions to all resource types. espeically the folder and file organizaation. we use a tree structure for appedn only to minimize confclits during collaboration scenarios.
 
-`projectService.uploadFiles()` does type-aware processing:
+The ui pages: colors, font, typography were designed to be very structured. they are a bit of a hassle to work with in the beginnign, but it come from experience and something that scales much better as the project grows.
 
-- Images: dimensions extraction
-- Audio: waveform extraction + compressed metadata storage
-- Video: thumbnail extraction
-- Fonts: validation + dynamic loading
+Assets are more straighfoward you upload all assets. we decided a couple of things:
+- structure by item data type rather than use case.
 
-Storage differs by platform, but interface stays the same:
+we have a flexible folder system so users can organize as they want.
 
-- Web stores blobs in IndexedDB
-- Tauri stores files in `<project>/files` and serves via `convertFileSrc`
+### Layout Editor
 
-That lets all UI components use a single `getFileContent(fileId)` API.
+One of the most advanced parts here is the Layout Editor.
 
-## Scene Graph UX
+We wanted to give users full UI customization.
 
-The Scenes page uses a whiteboard model with:
+In order to do that, and give a good UX, we ended up builing a full design tool.
 
-- Drag-and-drop scene nodes
-- Pan/zoom with fixed zoom steps
-- Transition arrows generated from section transitions and choices
-- Minimap for navigation
+It is even more advanced features such as supporing hover, click events, and variables.
 
-Viewport state (zoom/pan) is persisted in user config, so editors reopen with familiar context.
 
-## Versioning and Distribution
+### Scene Map
 
-Versions are lightweight pointers to event history:
+Scene Map gives a high-level structure of story flow between scenes.
+This is where users organize macro story structure before or during detailed writing.
+it is implmented using html. it does not use canvas or anyting fancy. we found this to be most easy to work with, and for our use case, is not performance bound.
 
-- Saving a version stores `{ id, name, actionIndex, createdAt }`
-- Exporting a version reconstructs state at that `actionIndex`
-- The app bundles project data + assets into a binary package
-- Distribution zip adds runtime files (`index.html`, `main.js`, `package.bin`)
+### Scene Editor
 
-Bundle format (from `bundleUtils.js`):
+The Scene Editor is where users spend most of their time, so it became one of the hardest parts of the whole product.
 
-```text
-[version(1)] [indexLength(4)] [reserved(11)] [index(JSON)] [assets...] [instructions(JSON)]
-```
+The live preview is supposed to be the magical feature.
+As users write and edit content, the preview updates in real time.
+The goal is immediate and accurate feedback, so creators can see exactly what they are building without context switching.
 
-This allows deterministic builds from historical project states.
+At first glance, using an existing rich text editor seems like the obvious choice. We tried that direction, but it did not map well to the behavior we needed for Visual Novel writing.
+So we implemented the editor on top of `<div contenteditable>`.
 
-## Why This Architecture Works
+The difficult part was not showing text. The difficult part was interaction:
 
-This architecture gives us three important properties:
+- A line-based editing model, not just a generic document
+- Reliable keyboard flow across lines (split/merge, up/down navigation, left/right edge behavior)
+- Stable cursor behavior while the preview updates in real time
+- Tight synchronization between selected line and runtime preview state
 
-- Clear separation: UI authoring, runtime simulation, and persistence are independent layers
-- Cross-platform parity: same feature code works in web and desktop with adapter swaps
-- Long-term flexibility: event log model supports versioning now and collaboration later
+This took many iterations and a lot of bug fixing around cursor, focus, and line operations. and it is still tricky. for example we don't have a rich text support.
 
-## Conclusion
+### Versions and Export
 
-RouteVN Creator is where the engine architecture becomes a creator product.
+Versions are lightweight pointers to event history. because the original data we store is sppend only log. it is easy to allow an user to export the version of the appicaton at any point the time.
 
-Part 1 and Part 2 were about rendering and runtime execution. Part 3 is about turning those capabilities into a usable workflow: edit, preview, iterate, version, and export.
+Final distribution is only 3 files:
 
-This is still evolving, but the current structure has proven robust enough to keep adding features without losing control over complexity.
+- `index.html`
+- `main.js`
+- `package.bin`
+
+`package.bin` concatenates all assets and instructions into one payload, with an index that records byte ranges for each item (content-range style lookup).
+At runtime, the player resolves content using those ranges, so it can locate exactly what it needs from one package instead of handling many separate files.
+
+by bunding the application, we want to make it easy to move and deploy.
+unforutny due to browser local file permission limitations, we cannot run directl from local broweser, and needs a web service. we plan to provide a lightweight tool to do this more convenientely.
+
+## Ending: Current State and Future Plan
+
+As of this writing 0.15.0, is more of a proof that the idea works. We need to do antother signifcant iteration to make the whole thing more robust and user friendly.
+
+A big part of how we improved RouteVN Creator was running usability tests continuously, usually a few sessions every month.
+
+In earlier tests, many users got blocked by bugs before we could even properly evaluate UX.
+So a lot of effort went into stability and bug fixing first.
+This improved significantly over time, and the current product is much better than earlier versions.
+
+At the same time, we are still not where we want to be.
+Some parts are still not fully self-intuitive, and there is still a lot of work ahead to make the whole experience feel truly effortless.
+
+At this stage, RouteVN Creator is still closer to a working prototype than a production product.
+Our goal in the coming months is to push this into a production-ready product.
+The encouraging part is that this prototype has already proven many hard problems can be solved.
