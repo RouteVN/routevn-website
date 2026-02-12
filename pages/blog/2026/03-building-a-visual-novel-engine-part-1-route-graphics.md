@@ -20,7 +20,7 @@ This is part 1 of a 3 part series:
 
 - Part 1 - Route Graphics: a declarative graphics and sound library
 - [Part 2 - Route Engine: a Visual Novel engine built on Route Graphics](/blog/2026/05-building-a-visual-novel-engine-route-engine)
-- Part 3 - RouteVN Creator: a Desktop application to create Visual Novels without any coding
+- [Part 3 - RouteVN Creator: a Desktop application to create Visual Novels without any coding](/blog/2026/06-building-a-visual-novel-engine-routevn-creator-client)
 
 ## Route Graphics
 
