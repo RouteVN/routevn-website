@@ -10,5 +10,5 @@ seo:
 - rtgl-view g=xl md-w="100vw" lg-w="768" w="1024" ph=lg:
     - rtgl-text s="h1" mb="md": RouteVN Support
     - rtgl-text s="lg" mb="md": "Need help? We're here to assist you."
-    - 'rtgl-button href="https://tally.so/r/wzZ7rM" target="_blank"': Contact us
+    - 'rtgl-button href="https://tally.so/r/wzZ7rM" new-tab': Contact us
 - rtgl-view h="100":

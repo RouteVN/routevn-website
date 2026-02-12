@@ -30,7 +30,7 @@ seo:
     - rtgl-text s="h4" ta="c" mb="lg": ${site.creator.about.faq.title}
     - rtgl-view g="lg" d="v" w="f":
         - $for item in site.creator.about.faq.items:
-            - rtgl-accordion-item w=f title="${item.title}" content="${item.content}":
+            - rtgl-accordion-item w=f label="${item.title}" content="${item.content}":
 
 - rtgl-view h="100":
 - $partial: cta1

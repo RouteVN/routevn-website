@@ -10,13 +10,13 @@ title: RouteVN
 - rtgl-view g=xl md-w="100vw" lg-w="768" w="1024" ph=lg:
     - $for section in site.landing.sections:
         - rtgl-view w=f:
-            - 'rtgl-text s="lg" mb="lg" c=mu-fg': ${section.title}
+            - 'rtgl-text s="lg" mb="lg" c=mu': ${section.title}
             - rtgl-view g="lg" w=f:
                 - $for card in section.cards:
                     - rtgl-view w=f:
                         - 'a href="${card.href}" target="${card.hrefTarget}" style="display: contents; text-decoration: none; color: inherit;"':
-                            - 'rtgl-view w=f bw=xs p="lg" bgc="su" br="lg" h-bgc="suv" h-cur="p" d="h" av="c"':
-                                - rtgl-view flex="1":
+                            - 'rtgl-view w=f bw=xs p="lg" bgc="se" br="lg" cur="p" d="h" av="c"':
+                                - rtgl-view w="1fg":
                                     - 'rtgl-text s="h4"': ${card.title}
                                     - 'rtgl-text mt="sm"': ${card.text}
                                 - 'rtgl-button v="se"': ${card.btnLabel}

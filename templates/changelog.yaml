@@ -4,8 +4,7 @@
           page: ${page}
           seo: ${seo}
         - link rel="stylesheet" href="/public/theme.css":
-        - script src="https://cdn.jsdelivr.net/npm/construct-style-sheets-polyfill@3.1.0/dist/adoptedStyleSheets.min.js":
-        - script src="https://cdn.jsdelivr.net/npm/@rettangoli/ui@0.1.31/dist/rettangoli-iife-ui.min.js":
+        - script src="https://cdn.jsdelivr.net/npm/@rettangoli/ui@1.0.0-rc7/dist/rettangoli-iife-ui.min.js":
         - script src="/public/rtgl-icons.js":
     - body.dark:
         - rtgl-view h="96":
@@ -14,20 +13,20 @@
                 - rtgl-view d=h md-d=v g=xl w=f:
                     - rtgl-view md-w=f w="140" mt="sm":
                         - 'a href="/creator/changelog" style="display: contents"':
-                            - rtgl-text s="lg" h-cur=p: Back
-                    - rtgl-view flex=1:
+                            - rtgl-text s="lg" cur=p: Back
+                    - rtgl-view w="1fg":
                         - rtgl-text s="h1" mb="sm": ${version}
-                        - rtgl-text c="mu-fg" s="sm" mb="lg": ${date}
+                        - rtgl-text c="mu" s="sm" mb="lg": ${date}
                 - rtgl-view d=h md-d=v g=xl av=s:
                     - rtgl-view md-w=f w="140":
-                    - rtgl-view flex=1:
+                    - rtgl-view w="1fg":
                         - "${content}"
                         - $if isLatest:
                             - 'a href="/creator/download/" style="text-decoration: none;"':
                                 - rtgl-button mt="lg": Download
             - rtgl-view d="h" h="30vh":
             - $partial: footer1
-        - rtgl-view pos="abs" cor="top" ah="c" bgc="bg":
+        - rtgl-view pos="abs" edge="t" ah="c" bgc="bg":
             - $partial: navbar1
               title: ${site.navbar.title}
               cta: ${site.navbar.cta}

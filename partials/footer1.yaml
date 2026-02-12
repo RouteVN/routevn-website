@@ -2,19 +2,19 @@
 - rtgl-view g="lg" md-w="100vw" lg-w="768" w="1024" ph=lg:
     - rtgl-view h=48:
     - rtgl-view d=h w=f:
-        - rtgl-view g="xl" flex="1" ah="sm":
+        - rtgl-view g="xl" w="1fg" ah="s":
             - 'a href="/" style="display: contents"':
                 - 'rtgl-image h="${site.footer.logo.height}" w="${site.footer.logo.width}" src="${site.footer.logo.src}" alt="${site.footer.logo.alt}"':
             - rtgl-view d="h" g="lg" av="c":
                 - $for social in site.footer.social:
                     - 'a href="${social.href}" target="_blank" rel="noreferrer" aria-label="Visit our ${social.name} page" style="display: contents"':
-                        - 'rtgl-svg h-cur="p" f="on-su" svg="${social.svg}" wh="20"':
-        - rtgl-view d="h" flex="2":
+                        - 'rtgl-svg cur="p" f="se-fg" svg="${social.svg}" wh="20"':
+        - rtgl-view d="h" w="2fg":
             - $for column in site.footer.columns:
-                - rtgl-view d="h" flex="1" ah="c":
+                - rtgl-view d="h" w="1fg" ah="c":
                     - rtgl-view g="lg":
                         - $for link in column.links:
-                            - rtgl-text s="sm" c="on-suv":
+                            - rtgl-text s="sm" c="ac-fg":
                                 - 'a href="${link.href}"':
                                     - "${link.text}"
     - rtgl-view h=48:

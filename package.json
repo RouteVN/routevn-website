@@ -1,7 +1,11 @@
 {
   "type": "module",
-  "dependencies": {
-    "markdown-it": "^14.1.0",
-    "shiki": "^3.17.0"
+  "scripts": {
+    "build": "rtgl sites build",
+    "watch": "rtgl sites watch",
+    "screenshots": "rtgl sites screenshots"
+  },
+  "devDependencies": {
+    "rtgl": "1.0.0-rc15"
   }
 }
