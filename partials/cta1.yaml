@@ -1,10 +1,10 @@
 - rtgl-view ah="c" ph="lg" md-w="100vw" lg-w="768" w="1024":
     - rtgl-view ah="c" p="xl" br="md" bw="sm" w="f":
         - $if svg:
-            - rtgl-svg svg="${svg}" wh="48" f="on-pr" mb="md":
-        - rtgl-text s="h2" mb="md" c="on-pr" ta="c": ${title}
-        - rtgl-text s="lg" c="on-pr" mb="lg" ta="c": ${subtitle}
+            - rtgl-svg svg="${svg}" wh="48" f="pr" mb="md":
+        - rtgl-text s="h2" mb="md" c="pr" ta="c": ${title}
+        - rtgl-text s="lg" c="pr" mb="lg" ta="c": ${subtitle}
         - $if cta.newTab:
-            - rtgl-button href="${cta.href}" target="_blank": ${cta.label}
+            - rtgl-button href="${cta.href}" new-tab: ${cta.label}
           $else:
             - rtgl-button href="${cta.href}": ${cta.label}

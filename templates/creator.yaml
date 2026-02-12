@@ -4,8 +4,7 @@
           page: ${page}
           seo: ${seo}
         - link rel="stylesheet" href="/public/theme.css":
-        - script src="https://cdn.jsdelivr.net/npm/construct-style-sheets-polyfill@3.1.0/dist/adoptedStyleSheets.min.js":
-        - script src="https://cdn.jsdelivr.net/npm/@rettangoli/ui@0.1.31/dist/rettangoli-iife-ui.min.js":
+        - script src="https://cdn.jsdelivr.net/npm/@rettangoli/ui@1.0.0-rc7/dist/rettangoli-iife-ui.min.js":
         - script src="/public/rtgl-icons.js":
 
     - body.dark:
@@ -16,7 +15,7 @@
                     - "${content}"
                 - rtgl-view d="h" h="30vh":
                 - $partial: footer1
-            - rtgl-view pos="abs" cor="top" ah="c" bgc="bg":
+            - rtgl-view pos="abs" edge="t" ah="c" bgc="bg":
                 - $partial: navbar1
                   title: ${site.navbar.title}
                   cta:

@@ -8,20 +8,20 @@ seo:
 - rtgl-view h="100":
 - rtgl-view ah="c" ph="lg" g=lg md-w="100vw" lg-w="768" w="1024":
     - rtgl-text s="h1" mb="sm" ta="c": ${site.creator.download.title}
-    - rtgl-text s="lg" c="mu-fg" mb="md" ta="c": ${site.creator.download.subtitle}
+    - rtgl-text s="lg" c="mu" mb="md" ta="c": ${site.creator.download.subtitle}
     - rtgl-view d=h g=lg av=c mb="xl" ah=c:
         - rtgl-text s="lg": Version ${site.creator.download.version}
-        - rtgl-text c="mu-fg": "-"
-        - rtgl-text href="/creator/changelog/" s="lg" c="pr" h-cur=p: View changelog
+        - rtgl-text c="mu": "-"
+        - rtgl-text href="/creator/changelog/" s="lg" c="pr" cur=p: View changelog
     - rtgl-view g="lg" w="f":
         - $for platform in site.creator.download.platforms:
-            - rtgl-view w="f" p="lg" bw="xs" br="lg" bgc="su" ah="c":
-                - rtgl-svg svg="${platform.svg}" wh="32" f="on-pr" mb="md":
+            - rtgl-view w="f" p="lg" bw="xs" br="lg" bgc="se" ah="c":
+                - rtgl-svg svg="${platform.svg}" wh="32" f="pr-fg" mb="md":
                 - rtgl-text s="h3" mb="md": ${platform.name}
                 - $if platform.comingSoon:
-                    - rtgl-text c="mu-fg": Coming soon
+                    - rtgl-text c="mu": Coming soon
                 - $if platform.cta:
-                    - 'a href="${platform.cta.href}" target="_blank" style="text-decoration: none;"':
+                    - 'a href="${platform.cta.href}" style="text-decoration: none;"':
                         - rtgl-button: ${platform.cta.label}
 - rtgl-view h="20vh":
 - $partial: cta1

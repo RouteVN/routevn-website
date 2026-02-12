@@ -6,7 +6,7 @@
                     - rtgl-image h="${title.imgHeight}" w="${title.imgWidth}" src="${title.imgSrc}":
                 - $if title.label:
                     - rtgl-text: ${title.label}
-        - rtgl-view flex=1:
+        - rtgl-view w="1fg":
         - rtgl-view d=h av=c:
             - $if cta.label:
                 - rtgl-button href="${cta.href}": ${cta.label}

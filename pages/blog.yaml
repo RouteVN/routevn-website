@@ -11,13 +11,13 @@ seo:
     - rtgl-text s="h1" mb="md": Blog
     - rtgl-view h=32:
     - rtgl-view g="lg" w=f:
-        - $for item in sortDate(collections.blogPost):
+        - $for item in sort(collections.blogPost, "data.date", "desc"):
             - 'a href="${item.url}" style="display: contents"':
-                - 'rtgl-view d=h av=c g=lg pv="md" w=f bgc="su" br="lg" h-bgc="suv" h-cur="p"':
+                - 'rtgl-view d=h av=c g=lg pv="md" w=f br="lg" cur="p"':
                     - rtgl-view d=h av=c:
                         - rtgl-text s="lg": ${item.data.title}
                         - rtgl-text mh=md: "-"
-                        - rtgl-text: ${formatAuthor(item.data.author)}
-                    - rtgl-view h=1 bgc=bo flex=1:
-                    - rtgl-text s="sm" c="on-suv" mt="sm": ${item.data.date}
+                        - rtgl-text: ${item.data.author}
+                    - rtgl-view h=1 bgc=bo w="1fg":
+                    - rtgl-text s="sm" c="ac-fg" mt="sm": ${item.data.date}
 - rtgl-view h="100":

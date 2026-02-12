@@ -14,7 +14,7 @@ seo:
     - rtgl-view g="lg" w=f:
         - $for item in collections.hiring:
             - 'a href="${item.url}" style="text-decoration: none; color: inherit;"':
-                - 'rtgl-view d=h av=c g=lg pv="md" w=f bgc="su" br="lg" h-bgc="suv" h-cur="p"':
+                - 'rtgl-view d=h av=c g=lg pv="md" w=f br="lg" cur="p"':
                     - rtgl-view d=h av=c:
                         - rtgl-text s="lg": ${item.data.title} - Remote
 - rtgl-view h="100":
