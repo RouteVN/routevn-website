@@ -6,7 +6,7 @@
           seo.publishedTime: ${data.date}
           seo.modifiedTime: ${data.updatedAt}
         - link rel="stylesheet" href="/public/theme.css":
-        - script src="https://cdn.jsdelivr.net/npm/@rettangoli/ui@1.0.0-rc7/dist/rettangoli-iife-ui.min.js":
+        - script src="https://cdn.jsdelivr.net/npm/@rettangoli/ui@1.0.0-rc12/dist/rettangoli-iife-ui.min.js":
         - script src="/public/rtgl-icons.js":
     - body.dark:
         - rtgl-view h="64":
