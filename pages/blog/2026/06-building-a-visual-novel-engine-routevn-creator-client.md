@@ -6,7 +6,7 @@ tags: [blogPost]
 date: '2026-02-12'
 seo:
   title: Building a Visual Novel Engine Part 3 - RouteVN Creator
-  description: RouteVN Creator is the desktop-first editor that turns Route Engine into a no-code workflow. This post explains the product architecture, offline-first data model, scene editor design, and export pipeline.
+  description: This post walks through how we built RouteVN Creator, a no-code desktop application for creating Visual Novels, covering the architecture and design decisions page by page.
   ogType: article
 ---
 
@@ -24,7 +24,7 @@ This is part 3 of a 3 part series:
 
 We saw two common patterns in existing tools for creating Visual Novels.
 
-Script/code-based engines are very powerful allowing full customizations, but they require technical knowledge and a meaningful learning curve.
+Script/code-based engines are very powerful, allowing full customizations, but they require technical knowledge and a meaningful learning curve.
 
 UI-based editors offer the other side of the tradeoff:
 
@@ -37,71 +37,73 @@ From the beginning, our product direction had two goals:
 This means no coding requirement, intuitive UI/UX, and a beginner-friendly flow where creators can start quickly.
 
 2. Build better tools for serious Visual Novels.
-This means supporting advanced features and richer workflows, while still hiding technical complexity behind clear interfaces. Advanced features include collaborative editor.
+This means supporting advanced features and richer workflows, while still hiding technical complexity behind clear interfaces. Advanced features include collaboration features for teams.
 
 We took an ambitious approach and tried to aim for both:
 
-- Build first for easyness of use
+- Build first for ease of use
 - Then expand to support more powerful features
 
 These two goals create a constant product tension: keep things simple for new users, while still expanding power for advanced use cases.
 
 Below we will explore how we built the application while trying to achieve our design goals.
 
-## Architecture
+## Technical Foundation
 
-This project grew into a big engineering project, and we needed a strong foundation to support our vision.
+This effort grew into a large engineering project, and we needed a strong foundation to support our vision.
 That is why we built Route Graphics, Route Engine, and even a frontend framework, [Rettangoli](https://github.com/yuusoft-org/rettangoli).
 
-Most of that technology is invisible to normal users, but is what we develops work with on a daily basis.
+Most of that technology is invisible to end users, but it is what we work with every day.
 
-RouteVN Creator is the actual product people interface with. It is the user facing frontend, and it is also the part that took us the most time and care.
+RouteVN Creator is the product people actually interact with. It is the user-facing frontend, and it is also the part that took us the most time and care.
 
 ### Offline and Collaboration Data Structure
 
-Offline applications are the ones that work fully offline, and provide a great user expeirence because it does not need to wait for a server to response, every user action is instantly updated.
+Offline applications run without depending on constant server round trips, so user actions can update instantly.
 
-Collaborative applicatinos are ones where multiple users can work on the project at the same time, and get the updates of what others are working on.
+Collaborative applications allow multiple users to work on the same project at the same time and receive updates from each other.
 
-The technology that is used to build modern collaboratie applications is called CRDT, and OT (Operational Transofrms), and they are both collaborative and offline first.  
+The technologies used to build modern collaborative applications are CRDT and OT (Operational Transformations), and both support collaborative, offline-first workflows.
 
-The way it works in principle is that the system records all actions performed rather than the end state, so, and all actions get synched with all users.
+In principle, the system records actions rather than only the final state, and those actions are synced across users.
 
-We did exacty this approach, but modified the CRDT/OT main protocl a bit to suit some our needs such as strong validaton. We came up with our own library: [insieme](https://github.com/yuusoft-org/insieme)
+We followed this approach, but we did not use standard CRDT/OT implementations directly. We modified the model to fit our needs, especially stronger validation, and built our own library: [insieme](https://github.com/yuusoft-org/insieme).
 
-One realization is that offline applications are easier to build than client/server appliations because we do not need to wait for server response. in fact we do not even need loading indicators because data is direclty saved locally which is instant.
+Offline-first behavior simplified many UX flows for us, and in many interactions we did not need loading indicators because data is written locally first.
 
-Building a collaboration library however, is much more involved to make sure that the data is synced and merged properly
+Building a collaboration library, however, is much more involved because ordering, syncing, and merges must stay correct across clients.
 
 ### Desktop Application with Tauri
 
-At first I was thiknnig of building a web based appliicatin, becase that is where my experience came from and web you can do al most anything.
+At first we considered building a web-based application, because that is where my experience came from and the web can do almost anything.
 
-Browser can actually support offline applications with Indexed DB. Browser data can be unintentinally  lost during some clean up operations.
+Browsers can support offline applications with IndexedDB, but browser data can still be unintentionally lost during cleanup operations.
 
-The biggest limitation of web based appilcations was the storage persisatence.
+For us, the biggest limitation of a web app was storage persistence.
 
-Users are not used to have a big project data stored in the browser. The solution to that is a desktop application where project data is stored idrecly on the user machine' file sytem. this follows what other game engines do.
+Users are also not used to keeping large project data inside the browser.
 
-To build cross platform Desktop applications with web technologies, we basicaly choose Tauri to do it. I am not a fan of Rust, but lucky most things get done with minimal Rust intentervention.
+So we switched to a desktop application, where project data is stored directly on the user's file system. This follows what other game engines do.
 
-The desktop app is packaged with Tauri, we wanted to support all major operating systems.
+To build a cross-platform desktop application with web technologies, we compared Electron and Tauri, and chose Tauri primarily for its lower memory footprint.
 
-The main decision was between Electron and Tauri.
-
-We chose Tauri primarily because of its low-memory positioning.
-
-It is less table, there are a few things like the installer, updater, file pemissons where we have to work with the limitaitons.
+It is less mature in some areas, and we had to work around limitations in areas such as installer behavior, updater flow, and file permissions.
 
 ## Page by Page
 
 Below is the creator workflow page by page, and the most important parts in each one.
 
-### Projects and Project
+### Projects and Data Storage
 
-We have a global level sqlite file that stores user configuration and also the list of projects.
+RouteVN Creator is a desktop application that needs to be installed.
 
-For each project, the data lives inside a folder. There is basically 1 sqlite file and the assets data as binary files. the sqlite file stores all project data inculding all the event logs.
+We store data at two levels: global and project.
+
+At the global level, we keep one SQLite file for user configuration and the list of projects.
+
+Each project lives in its own folder, with one SQLite file plus the binary assets uploaded by the user. The project SQLite file stores project data, including event logs.
+
+We also use a key-value table so we can extend functionality over time without creating a new schema migration for every small addition.
 
 ### Resources (Assets and UI)
 
@@ -110,88 +112,86 @@ Resources are split into two groups:
 - **Assets**: images, sounds, videos, characters, and content resources
 - **UI**: colors, fonts, typography, layouts, and interface resources
 
-There are few things to note here what made it possible to maintain such large amount of pages and data structuer:
+To keep this large surface area maintainable, we made a few core design decisions:
 
-- consistent design. we follow a consitehnt shell, with folders and items grouped into folders. and a edit panel in the right. a dialog for create and edit. we reuse the same code for this shell. this has 2 advantages:
-  - consistent for the user, when user learns things in 1 page, he/she can expect to be able to have learnd many other pages as well.
-  - we are able to reuse the same code for all pages, so it is much easier to maintain. and keep design consistent.
-  - we do allow customization for each item, because each item has very specific needs and is very unique.
+- We use a consistent page shell across resources: folder navigation, item list, right-side editor panel, and shared create/edit dialogs. This keeps the experience predictable for users and lets us reuse code across many pages.
+- We use the same data foundation for all resource types, especially for folder and file organization. The tree model is append-only where possible, which helps reduce conflicts in collaborative workflows.
+- We still allow resource-specific customization, because each resource type has different behavior and constraints.
 
-- we use same data foundtions to all resource types. espeically the folder and file organizaation. we use a tree structure for appedn only to minimize confclits during collaboration scenarios.
+The UI resource pages (colors, fonts, typography) are intentionally structured. They may feel stricter at first, but they scale better as projects grow.
 
-The ui pages: colors, font, typography were designed to be very structured. they are a bit of a hassle to work with in the beginnign, but it come from experience and something that scales much better as the project grows.
-
-Assets are more straighfoward you upload all assets. we decided a couple of things:
-- structure by item data type rather than use case.
-
-we have a flexible folder system so users can organize as they want.
+Asset workflows are more straightforward: users upload files, resources are organized by data type rather than use case, and a flexible folder system allows teams to organize content in their own way.
 
 ### Layout Editor
 
-One of the most advanced parts here is the Layout Editor.
+The Layout Editor was a completely different level of complexity.
 
-We wanted to give users full UI customization.
+We wanted the UI to be fully customizable.
 
-In order to do that, and give a good UX, we ended up builing a full design tool.
+That is not a trivial problem, so we essentially had to build a full-fledged design tool into this page.
 
-It is even more advanced features such as supporing hover, click events, and variables.
+Furthermore, it supports advanced behaviors such as hover states, click events, and variables that traditional design tools usually do not provide.
 
+Under the hood, both the layout model and the implementation are complex. Keeping the codebase clean and keeping the UX layout clean are two separate challenges, and we had to solve both. 
 
 ### Scene Map
 
 Scene Map gives a high-level structure of story flow between scenes.
-This is where users organize macro story structure before or during detailed writing.
-it is implmented using html. it does not use canvas or anyting fancy. we found this to be most easy to work with, and for our use case, is not performance bound.
+
+This is where users organize macro story structure before and during detailed writing.
+
+We implemented it with HTML instead of canvas or other more performant approaches. For our use case, this was easier to build and maintain, and performance was not a bottleneck.
 
 ### Scene Editor
 
-The Scene Editor is where users spend most of their time, so it became one of the hardest parts of the whole product.
+The Scene Editor is where users spend most of their time, so we put a lot of attention and effort into making it good. It is one of the most critical and difficult parts of the whole product.
 
-The live preview is supposed to be the magical feature.
-As users write and edit content, the preview updates in real time.
-The goal is immediate and accurate feedback, so creators can see exactly what they are building without context switching.
+The live preview is the magical feature: as users write and edit content, the preview updates in real time.
+The goal is immediate, accurate feedback, so creators can see exactly what they are building without context switching. We were able to do this because we built Route Graphics and Route Engine to support this.
 
-At first glance, using an existing rich text editor seems like the obvious choice. We tried that direction, but it did not map well to the behavior we needed for Visual Novel writing.
-So we implemented the editor on top of `<div contenteditable>`.
+Regarding the text editor itself, at first glance, using an existing rich text editor seems like the obvious choice. We tried that direction, but it did not provide the flexibility we wanted to have.
 
-The difficult part was not showing text. The difficult part was interaction:
+So we implemented the editor from scratch on top of `<div contenteditable>`. This is difficult because browser text input has many tricky edge cases. We had to implement a lot of tricky things from scratch:
 
 - A line-based editing model, not just a generic document
 - Reliable keyboard flow across lines (split/merge, up/down navigation, left/right edge behavior)
 - Stable cursor behavior while the preview updates in real time
 - Tight synchronization between selected line and runtime preview state
 
-This took many iterations and a lot of bug fixing around cursor, focus, and line operations. and it is still tricky. for example we don't have a rich text support.
+It took many iterations and a lot of bug fixing around cursor, focus, and line operations. It is still a tricky area, and some features, such as rich text support, are not implemented yet.
+
+Implementing from scratch gave us a lot of control, but we had to handle difficult low-level behavior ourselves, which was very time-consuming.
+
+The upside is that we can keep extending the functionality and improve the editor over time.
 
 ### Versions and Export
 
-Versions are lightweight pointers to event history. because the original data we store is sppend only log. it is easy to allow an user to export the version of the appicaton at any point the time.
+Because our core data model is append-only event logs, versioning comes naturally. Versions are lightweight pointers into that history, so users can go back to any previous state and export the project from that point.
 
-Final distribution is only 3 files:
+For the export format, we wanted distribution to be as simple as possible. The exported output consists of three files:
 
 - `index.html`
 - `main.js`
 - `package.bin`
 
 `package.bin` concatenates all assets and instructions into one payload, with an index that records byte ranges for each item (content-range style lookup).
-At runtime, the player resolves content using those ranges, so it can locate exactly what it needs from one package instead of handling many separate files.
+At runtime, the player resolves content using those ranges, so it can locate exactly what it needs from a single file instead of handling many separate ones.
 
-by bunding the application, we want to make it easy to move and deploy.
-unforutny due to browser local file permission limitations, we cannot run directl from local broweser, and needs a web service. we plan to provide a lightweight tool to do this more convenientely.
+This keeps distribution simple and portable.
 
-## Ending: Current State and Future Plan
+However, due to browser local file permission limitations, the exported project cannot run directly from the local file system and still requires a static file server. We plan to provide a lightweight tool to make local hosting more convenient.
 
-As of this writing 0.15.0, is more of a proof that the idea works. We need to do antother signifcant iteration to make the whole thing more robust and user friendly.
+In the future, we also plan to support desktop distribution.
+
+## Current State and What is Next
+
+As of this writing, version 0.15.0 is closer to a working prototype than a production product. It proves the idea works, but it needs another significant iteration to become robust and user friendly.
 
 A big part of how we improved RouteVN Creator was running usability tests continuously, usually a few sessions every month.
 
-In earlier tests, many users got blocked by bugs before we could even properly evaluate UX.
-So a lot of effort went into stability and bug fixing first.
-This improved significantly over time, and the current product is much better than earlier versions.
+In earlier tests, many users got blocked by bugs before we could even properly evaluate UX, so a lot of effort went into stability first.
 
-At the same time, we are still not where we want to be.
-Some parts are still not fully self-intuitive, and there is still a lot of work ahead to make the whole experience feel truly effortless.
+The current product is much better than those earlier versions, but there is still a gap between where we are and our vision of a truly effortless experience.
 
-At this stage, RouteVN Creator is still closer to a working prototype than a production product.
-Our goal in the coming months is to push this into a production-ready product.
-The encouraging part is that this prototype has already proven many hard problems can be solved.
+Our goal in the coming months is to close that gap and push this into a production-ready product. The foundation is there, and the critical paths have been validated. Now we need to refine.
+

@@ -18,7 +18,7 @@ This is part 2 of a 3 part series:
 
 - [Part 1 - Route Graphics: a declarative graphics and sound library](/blog/2026/03-building-a-visual-novel-engine-part-1-route-graphics)
 - Part 2 - Route Engine: a Visual Novel engine built on Route Graphics
-- Part 3 - RouteVN Creator: a Desktop application to create Visual Novels without any coding
+- [Part 3 - RouteVN Creator: a Desktop application to create Visual Novels without any coding](/blog/2026/06-building-a-visual-novel-engine-routevn-creator-client)
 
 ## Route Engine
 
@@ -525,4 +525,8 @@ Route Engine is open source under the MIT License.
 If you liked this article, consider giving it a star on [GitHub](https://github.com/RouteVN/route-engine).
 
 In the next post, we'll talk about RouteVN Creator, the actual editor, and how it's built on top of Route Engine. We've spent much more time on RouteVN Creator than any other codebase.
+
+---
+
+**Next**: [Part 3 - RouteVN Creator](/blog/2026/06-building-a-visual-novel-engine-routevn-creator-client)
 
