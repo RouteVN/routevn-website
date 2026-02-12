@@ -124,6 +124,9 @@ Asset workflows are more straightforward: users upload files, resources are orga
 
 ### Layout Editor
 
+<img src="/public/blog/2026/06/layout-editor.png" style="width: 100%; margin-bottom: 24px;">
+
+
 The Layout Editor was a completely different level of complexity.
 
 We wanted the UI to be fully customizable.
@@ -143,6 +146,8 @@ This is where users organize macro story structure before and during detailed wr
 We implemented it with HTML instead of canvas or other more performant approaches. For our use case, this was easier to build and maintain, and performance was not a bottleneck.
 
 ### Scene Editor
+
+<video src="/public/blog/2026/06/scene-editor.mp4" autoplay loop muted playsinline style="width: 100%; max-width: 100%;"></video>
 
 The Scene Editor is where users spend most of their time, so we put a lot of attention and effort into making it good. It is one of the most critical and difficult parts of the whole product.
 
