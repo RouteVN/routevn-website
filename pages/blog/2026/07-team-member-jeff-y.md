@@ -35,7 +35,7 @@ Some of the visual novels he has played:
 
 ### Contributions at RouteVN
 
-Jeff has contributed across RouteVN's core projects:
+JeffY has contributed across RouteVN's core projects:
 
 - **Route Graphics**: Particle system.
 - **Route Engine**: Many critical features, including menu page, history mode, NVL mode, save/load functionality, and variables.
