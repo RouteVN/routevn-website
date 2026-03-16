@@ -2,13 +2,78 @@ header:
   label: Creator Docs
   href: /creator/about
 items:
-  - title: "Getting Started"
+  - title: "General"
     type: groupLabel
     items:
-      - id: introduction
+      - id: intro
         title: "Introduction"
-        href: "/creator/docs/introduction"
-      - id: getting-started
-        title: "Getting Started"
-        href: "/creator/docs/getting-started"
-
+        href: "/creator/docs/intro"
+      - id: quickstart
+        title: "Quickstart"
+        href: "/creator/docs/quickstart"
+      - id: features-limitations
+        title: "Features & Limitations"
+        href: "/creator/docs/features-and-limitations"
+      - id: keyboard-shortcuts
+        title: "Keyboard Shortcuts"
+        href: "/creator/docs/keyboard-shortcuts"
+  - title: "Project"
+    type: groupLabel
+    items:
+      - id: project
+        title: "Project"
+        href: "/creator/docs/project"
+      - id: images
+        title: "Images"
+        href: "/creator/docs/project/images"
+      - id: sounds
+        title: "Sounds"
+        href: "/creator/docs/project/sounds"
+      - id: videos
+        title: "Videos"
+        href: "/creator/docs/project/videos"
+      - id: transforms
+        title: "Transforms"
+        href: "/creator/docs/project/transforms"
+      - id: animations
+        title: "Animations"
+        href: "/creator/docs/project/animations"
+      - id: colors
+        title: "Colors"
+        href: "/creator/docs/project/colors"
+      - id: fonts
+        title: "Fonts"
+        href: "/creator/docs/project/fonts"
+      - id: text-styles
+        title: "Text Styles"
+        href: "/creator/docs/project/text-styles"
+      - id: layouts
+        title: "Layouts"
+        href: "/creator/docs/project/layouts"
+  - title: "Scene"
+    type: groupLabel
+    items:
+      - id: scene-map
+        title: "Scene Map"
+        href: "/creator/docs/scene/scene-map"
+      - id: scene-editor
+        title: "Scene Editor"
+        href: "/creator/docs/scene/scene-editor"
+  - title: "Line Actions"
+    type: groupLabel
+    items:
+      - id: dialogue
+        title: "Dialogue"
+        href: "/creator/docs/line-actions/dialogue"
+      - id: next-line-config
+        title: "Next Line Config"
+        href: "/creator/docs/line-actions/next-line-config"
+  - title: "Release"
+    type: groupLabel
+    items:
+      - id: versions
+        title: "Versions"
+        href: "/creator/docs/release/versions"
+      - id: upload
+        title: "Upload"
+        href: "/creator/docs/release/upload"
