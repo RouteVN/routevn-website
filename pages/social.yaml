@@ -16,6 +16,10 @@ seo:
                         - 'rtgl-svg svg="${link.svg}" wh="22"':
                     - 'rtgl-view w="1fg" style="min-width: 0;"':
                         - rtgl-text s="h4": ${link.name}
-                    - rtgl-view d="h" av="c" ah="e" g="sm":
+                        - rtgl-view md-show hide:
+                            - rtgl-text s="sm" c="mu": ${link.handle}
+                    - rtgl-view md-hide d="h" av="c" ah="e" g="sm":
                         - rtgl-text s="sm" c="mu": ${link.handle}
+                        - 'rtgl-svg svg="arrow-top-right" wh="18"':
+                    - rtgl-view md-show hide ah="e":
                         - 'rtgl-svg svg="arrow-top-right" wh="18"':
