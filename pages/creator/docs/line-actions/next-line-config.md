@@ -1,13 +1,13 @@
 ---
 template: documentation
-title: Next Line Config
+title: Set Next Line Config
 sidebarId: next-line-config
 ---
 
-Use next line config to control how the editor advances through your script lines.
+Use this command to set defaults for how the editor advances after a line.
 
-- Define automatic delay and skip behaviors where needed.
-- Ensure transitions match user-facing pacing.
-- Verify continuation behavior in branching paths.
-
-Consistent next-line settings help reduce unexpected jumps in complex scenes.
+- This is part of the system action set.
+- Use it when you want consistent automatic continuation.
+- Keep it aligned with your skip and auto mode strategy.
+- Check how it impacts scene transitions and branching.
+- This page is about line-level progression settings.

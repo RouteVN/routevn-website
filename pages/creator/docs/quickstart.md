@@ -34,7 +34,9 @@ Alternatively, you can press **Check for Updates** on the About page.
 
 ## After installation
 
-After installation, you should see this page: [screenshot](/public/creator/project-list.png).
+After installation, you should see this page:
+
+<img src="/public/creator/docs/reference/projects-01.webp" style="width: 100%; margin-bottom: 20px;" alt="RouteVN Creator project list page">
 
 From the Project List page, go to the [Project](/creator/docs/project) section to create your first project.
 

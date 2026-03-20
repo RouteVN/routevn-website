@@ -6,9 +6,11 @@ sidebarId: layouts
 
 Use layouts to define how scenes and UI blocks are arranged.
 
-- Keep a clear hierarchy for dialogue, overlays, and controls.
-- Ensure elements stay usable at different resolutions.
-- Store one canonical layout per screen state and duplicate only when needed.
+- Open a layout and edit dialogue, choice, and other block groups in the layout editor.
+- Keep a clear hierarchy for dialogue boxes, overlays, and controls.
+- Ensure key controls remain usable across viewports.
+- Store a canonical layout per scene state and duplicate only when needed.
+
+<img src="/public/creator/docs/reference/scene-workspace.webp" style="width: 100%; margin-bottom: 20px;" alt="Layout editor and scene workspace">
 
 Small layout adjustments early reduce expensive rework when adding new scenes.
-

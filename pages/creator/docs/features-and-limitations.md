@@ -42,10 +42,19 @@ This table is specifically for export targets of published Visual Novels from Ro
 | Shader effects | ⏳ |  |  |
 | Parallax effect | ❌ |  |  |
 
+## Character
+
+| Feature | Status | Expected release date | Link |
+|---|---|---|---|
+| Transformation | ✅ |  |  |
+| Tween animation | ⏳ |  |  |
+| Mask transition | ⏳ |  |  |
+
 ## Dialogue
 
 | Feature | Status | Expected release date | Link |
 |---|---|---|---|
+| Background | ⏳ |  |  |
 | Customize dialogue box | ✅ |  |  |
 | Customize name box | ✅ |  |  |
 | Customize box based on character | ⏳ |  |  |
@@ -87,6 +96,9 @@ This table is specifically for export targets of published Visual Novels from Ro
 
 | Feature | Status | Expected release date | Link |
 |---|---|---|---|
+| Gallery page | ⏳ |  |  |
+| Scene replay | ⏳ |  |  |
+| Music room | ⏳ |  |  |
 | Save | ⏳ |  |  |
 | Load | ⏳ |  |  |
 
@@ -103,3 +115,16 @@ This table is specifically for export targets of published Visual Novels from Ro
 | Boolean | ⏳ |  |  |
 | String | ⏳ |  |  |
 | Number | ⏳ |  |  |
+
+## Scene map
+
+| Feature | Status | Expected release date | Link |
+|---|---|---|---|
+| Scene map | ❌ |  |  |
+
+## Mini games
+
+| Feature | Status | Expected release date | Link |
+|---|---|---|---|
+| Mini games | ❌ |  |  |
+| Point and click | ⏳ |  |  |

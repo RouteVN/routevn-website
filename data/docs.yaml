@@ -17,6 +17,9 @@ items:
       - id: keyboard-shortcuts
         title: "Keyboard Shortcuts"
         href: "/creator/docs/keyboard-shortcuts"
+      - id: versions
+        title: "Versions"
+        href: "/creator/docs/release/versions"
   - title: "Project"
     type: groupLabel
     items:
@@ -32,6 +35,9 @@ items:
       - id: videos
         title: "Videos"
         href: "/creator/docs/project/videos"
+      - id: characters
+        title: "Characters"
+        href: "/creator/docs/project/characters"
       - id: transforms
         title: "Transforms"
         href: "/creator/docs/project/transforms"
@@ -65,15 +71,54 @@ items:
       - id: dialogue
         title: "Dialogue"
         href: "/creator/docs/line-actions/dialogue"
+      - id: choices
+        title: "Choices"
+        href: "/creator/docs/line-actions/choices"
+      - id: background
+        title: "Background"
+        href: "/creator/docs/line-actions/background"
+      - id: bgm
+        title: "BGM"
+        href: "/creator/docs/line-actions/bgm"
+      - id: sound-effects
+        title: "Sound Effects"
+        href: "/creator/docs/line-actions/sound-effects"
+      - id: line-actions-characters
+        title: "Characters"
+        href: "/creator/docs/line-actions/characters"
+      - id: section-transition
+        title: "Section Transition"
+        href: "/creator/docs/line-actions/section-transition"
+      - id: base-layout
+        title: "Base Layout"
+        href: "/creator/docs/line-actions/base"
+      - id: visual
+        title: "Visual"
+        href: "/creator/docs/line-actions/visual"
+      - id: next-line
+        title: "Next Line"
+        href: "/creator/docs/line-actions/next-line"
+      - id: toggle-auto-mode
+        title: "Toggle Auto Mode"
+        href: "/creator/docs/line-actions/toggle-auto-mode"
+      - id: toggle-skip-mode
+        title: "Toggle Skip Mode"
+        href: "/creator/docs/line-actions/toggle-skip-mode"
+      - id: push-layered-view
+        title: "Push Layered View"
+        href: "/creator/docs/line-actions/push-layered-view"
+      - id: pop-layered-view
+        title: "Pop Layered View"
+        href: "/creator/docs/line-actions/pop-layered-view"
+      - id: update-variable
+        title: "Update Variable"
+        href: "/creator/docs/line-actions/update-variable"
+      - id: controls
+        title: "Controls"
+        href: "/creator/docs/line-actions/controls"
+      - id: conditional
+        title: "Conditional"
+        href: "/creator/docs/line-actions/conditional"
       - id: next-line-config
-        title: "Next Line Config"
+        title: "Set Next Line Config"
         href: "/creator/docs/line-actions/next-line-config"
-  - title: "Release"
-    type: groupLabel
-    items:
-      - id: versions
-        title: "Versions"
-        href: "/creator/docs/release/versions"
-      - id: upload
-        title: "Upload"
-        href: "/creator/docs/release/upload"

@@ -4,7 +4,7 @@ title: Introduction
 sidebarId: intro
 ---
 
-Welcome to the RouteVN Creator docs. This section covers the essentials for building and shipping a visual novel quickly.
+Welcome to the RouteVN Creator docs. This documentation will cover everything you need to create a Visual Novel.
 
 ## What is RouteVN Creator
 
@@ -27,4 +27,4 @@ If you need additional support, you can find our staff or community here:
 - [Bluesky](https://bsky.app/profile/routevn.bsky.social)
 - [Contact form](/support/)
 
-Use the sidebar to jump into Quickstart, then return here to review core concepts and workflows.
+Use the sidebar to jump into any page
