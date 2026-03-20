@@ -63,7 +63,7 @@ socialPage:
       handle: "@routevn.bsky.social"
       href: https://bsky.app/profile/routevn.bsky.social
       svg: bluesky
-    - name: X
+    - name: X/Twitter
       handle: "@routevn"
       href: https://x.com/routevn
       svg: x
