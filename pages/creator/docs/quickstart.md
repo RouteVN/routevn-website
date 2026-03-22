@@ -4,40 +4,56 @@ title: Quickstart
 sidebarId: quickstart
 ---
 
-This is a practical first run for RouteVN Creator.
-
 ## Install
 
-Download the latest RouteVN Creator package from the [Creator download page](/creator/download/).
-
-The application is small (less than 10MB) and is built with Tauri to help keep memory usage low.
+Download the latest version of RouteVN Creator from the [download page](/creator/download/).
 
 ### Windows
 
-- After downloading, execute the installer to install RouteVN Creator.
-- Windows SmartScreen may show a warning that the installer is not certified. This can happen for a while while RouteVN Creator is still gaining downloads and trust.
-- You can manually inspect the certificate; the file is signed by **Yuusoft Pte. Ltd.** (see screenshot of certification).
+- After downloading the `.exe` file, execute it and follow the instructions
+- Windows SmartScreen may show a warning that it is an unrecognized app. This can happen when RouteVN Creator does not have many downloads. The warning is supposed to disappear once enough users download and install it.
+- You can manually inspect the certificate by:
+  - Right click the installer icon
+  - Properties
+  - Certificates
+  - It should show that it is signed by **Yuusoft Pte. Ltd.** with Certum
 
-### macOS
+### MacOS
 
-- Coming soon.
+- After downloading the `.dmg` file, double click it
+- Drag the RouteVN Creator icon into the Applications folder
+- You should now appear in your searches or can be run directly from the Applications folder
 
 ### Linux
 
 - Coming soon.
 
-## Updating the application
-
-RouteVN Creator is updated frequently (we aim for about once per week). You will automatically get a notification of a new version and can update directly.
-
-Alternatively, you can press **Check for Updates** on the About page.
 
 ## After installation
 
-After installation, you should see this page:
+After successful install, you should be able to run the application and should be able to see this:
 
 <img src="/public/creator/docs/reference/projects-01.webp" style="width: 100%; margin-bottom: 20px;" alt="RouteVN Creator project list page">
 
-From the Project List page, go to the [Project](/creator/docs/project) section to create your first project.
+The first time you should see an empty list of projects, but it means the application is runninig successfully.
 
-When you're ready, continue with more detailed guides for character setup, scene organization, and production workflows.
+Proceed to the [project guide](/creator/docs/project) to create your first project
+
+## Updating the application
+
+RouteVN Creator is under active development and you should expect to see updates every week.
+
+You can check the [Changelog](/creator/docs/changelog) for the full list of updates
+
+Below is how you can get the latest version:
+
+- RouteVN Creator regularly checks for updates automatically. If a new version is available, it will notify you to install the latest version. This check works only if you are conneced to the internet.
+
+- If you wish to check for updates manually, or to make sure you are on the latest version, you can go to:
+  - Go to a project
+  - Click settings tab
+  - Click 'Check for updates'
+  - If there is a new version avaialble, it will ask you to update, otherwise it will just tell you that you're already on the latest version
+
+
+

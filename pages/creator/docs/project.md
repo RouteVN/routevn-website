@@ -4,35 +4,48 @@ title: Project
 sidebarId: project
 ---
 
-On the home page of RouteVN Creator, you will see a list of projects and a button to create a new project.
+## Project List
 
-Project name and description are required.
+On the main page of RouteVN Creator, you will see a list of projects
 
-Project folder path is required. Data related to that specific project will be stored in this specific folder.
+## Create a Project
 
-**Important**: you need to create an empty folder yourself first and then select that empty folder.
-RouteVN Creator only has access to folders that you have selected.
+Click the plus button to create a project
 
-Create a new project with the built-in dialog:
+The following fields are required:
 
-<img src="/public/creator/docs/reference/create-project-dialog.webp" style="width: 100%; margin-bottom: 20px;" alt="Create project dialog">
+- Project name
+- Project description
+- Resolution: Screen resolution
+- Icon: A square image
+- Folder: Create first and empty folder and select the empty folder
 
-After project has been created, you will see it in the project list.
+## Resolution
 
-You can then simply click at it to open the project page.
+Screen resolution is a very consequential decision because it will dictate the size of all images that you will be using.
 
-You can also right click in order to remove the project.
+Changing resolution later is hard because it means you will need to change all your images as well.
 
-**Important** Removing the project will only remove it from the list. If you want to delete the files as well, you have to delete the whole folder manaully from the file system
+Common resolutions for desktop screen are:
+
+- FHD: 1920 x 1080
+- QHD: 2560 x 1440
+- UHD(2k): 4096 x 2160
+
+We do allow customization with any arbitrary resolution values. This should be able to satisfy any other use cases including mobile phone screen sizes.
+
+## Removing a project
+
+From the project list, you can right click a project, and then select `Remove`
+
+**Important** Removing the project will only remove it from the list. If you want to delete the files as well, you have to delete the whole folder manually from the file system
 
 
-<img src="/public/creator/docs/reference/create-project.webp" style="width: 100%; margin-bottom: 20px;" alt="Single project page details and controls">
+## Project page
 
+In the project page you click at the title or other fiels to edit
 
-Each area keeps the same three-panel pattern:
+## Project Layout
 
-- Left: file explorer for project folders
-- Center: primary workspace (scene graph, editor, or resource browser)
-- Right: selected item detail and quick actions
+Read more about the whole page navigation layout
 
-Use this section to set a clean foundation before adding content-heavy resources.

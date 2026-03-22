@@ -4,22 +4,28 @@ title: Introduction
 sidebarId: intro
 ---
 
-Welcome to the RouteVN Creator docs. This documentation will cover everything you need to create a Visual Novel.
+Welcome to the RouteVN Creator docs. This documentation will cover everything you need to know about RouteVN Creator and how to use it to create a Visual Novel.
+
+## Terminology
+
+- RouteVN is a brand and encompasses a full suite of software for Visual Novels
+- RouteVN Creator is a desktop application for writers and artists or anyone who wants to make a Visual novel.
 
 ## What is RouteVN Creator
 
-- RouteVN Creator is an application specializing in creating Visual Novels without code.
-- It strives to keep an intuitive interface while exposing powerful capabilities.
+- RouteVN Creator is an application specializing in creating Visual Novels without code
+- It strives to keep an intuitive interface while exposing powerful capabilities
+- It is open source under MIT license, you can find the source code on [Github](https://github.com/RouteVN/routevn-creator-client)
+- It is free to use
 
 ## How to use this documentation
 
-- The user interface is designed to be simple and intuitive, so you can explore and discover functionalities on your own. Some features may feel hidden, which is why this documentation exists.
-- This documentation is meant to be comprehensive and will document all features so they are not missed.
-- There will be a `?` icon at the bottom right of the application; click it to open this documentation.
+- The user interface is designed to be simple and intuitive, so you can explore and discover functionalities on your own. This documentation attemps to cover all features including those that would be otherwise harder to discover.
+- There will be a `?` icon at the bottom right of the application; click it will jump to the exact documentation page
 
 ## Support
 
-If you need additional support, you can find our staff or community here:
+If you need additional support, you can find our staff or community:
 
 - [Discord](https://discord.gg/8J9dyZSu9C)
 - [Reddit](https://www.reddit.com/r/routevn/)
@@ -27,4 +33,5 @@ If you need additional support, you can find our staff or community here:
 - [Bluesky](https://bsky.app/profile/routevn.bsky.social)
 - [Contact form](/support/)
 
-Use the sidebar to jump into any page
+Next, proceed to [quickstart](/creator/docs/quickstart/)
+

@@ -11,6 +11,12 @@ items:
       - id: quickstart
         title: "Quickstart"
         href: "/creator/docs/quickstart"
+      - id: application-layout
+        title: "Application Layout"
+        href: "/creator/docs/application-layout"
+      - id: file-explorer
+        title: "File Explorer"
+        href: "/creator/docs/file-explorer"
       - id: features-limitations
         title: "Features & Limitations"
         href: "/creator/docs/features-and-limitations"
