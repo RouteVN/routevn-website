@@ -22,7 +22,7 @@ Download the latest version of RouteVN Creator from the [download page](/creator
 
 - After downloading the `.dmg` file, double click it
 - Drag the RouteVN Creator icon into the Applications folder
-- You should now appear in your searches or can be run directly from the Applications folder
+- You can now run it directly from the Applications folder
 
 ### Linux
 
@@ -31,7 +31,7 @@ Download the latest version of RouteVN Creator from the [download page](/creator
 
 ## After installation
 
-After successful install, you should be able to run the application and should be able to see this:
+After successful installion you will see this:
 
 <img src="/public/creator/docs/reference/projects-01.webp" style="width: 100%; margin-bottom: 20px;" alt="RouteVN Creator project list page">
 

@@ -9,13 +9,12 @@ sidebarId: application-layout
 This page describes the RouteVN Creator docs sidebar and lists all available documentation pages.
 
 - Project: Basic project information
-- General
-  - File Explorer
 - Assets
   - Images
   - Sounds
   - Videos
   - Characters
+    - Character Sprites
   - Transforms
   - Animations
 - UI
@@ -23,12 +22,23 @@ This page describes the RouteVN Creator docs sidebar and lists all available doc
   - Fronts
   - Text Styles
   - Layouts
+  - Layout Editor
 - System
   - Controls
   - Variables
+- Scenes
+  - Scene Map
+  - Scene Editor
 - Release
   - Versions
 - Settings
   - About
+
+## Keyboard navigation
+
+- `gp`: Project
+- `gi`: Images
+- ...
+
 
 

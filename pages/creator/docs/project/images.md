@@ -4,13 +4,11 @@ title: Images
 sidebarId: images
 ---
 
-Use this page for image asset setup and scene visuals.
+On this page you can upload all images. 
+Common category of images include Backgrounds (BG), CG, UI etc..., you can organize folders freely as you need.
+Do not put character sprites here, character sprites belong to specific characters.
 
-- Import files through the resource uploader.
-- Organize images under sensible folders (characters, backgrounds, UI).
-- Select an asset to see its detail panel and edit metadata.
-- Use the preview action for a fullscreen image check before assigning it to scenes.
-- Add images to your scenes and adjust transform values to keep positioning stable.
+<img src="/public/creator/docs/reference/images.webp" style="width: 100%; margin-bottom: 20px;" alt="Image resource interactions">
 
 ## Supported image formats
 
@@ -20,6 +18,24 @@ Use this page for image asset setup and scene visuals.
 | JPG / JPEG | Backgrounds and photos | Smaller file size than PNG, no alpha |
 | WEBP | Optimized texture delivery | Lightweight and fast loading |
 
-<img src="/public/creator/docs/reference/images.webp" style="width: 100%; margin-bottom: 20px;" alt="Image resource interactions">
+## Upload images
 
-Keep transparent PNGs for layered assets and pre-size large textures to reduce preview lag.
+You can upload single or multiple imagaes at once
+
+- Click the upload button, and select single on multiple images
+- Drag and drop images directly to to the folder
+
+## Previewing an image
+
+- When hovering your mouse on a image, actions will appear on the top right corner. You can click the zoom icon to preview it.
+
+## Usage
+
+Images need to be uploaded here before they can be used.
+
+Places that they will be used are in:
+
+- Layout Editor
+- Scene editor when selecting background, visual
+
+
