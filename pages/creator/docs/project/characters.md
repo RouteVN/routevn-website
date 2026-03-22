@@ -4,19 +4,29 @@ title: Characters
 sidebarId: characters
 ---
 
+<img src="/public/creator/docs/reference/scene-workspace.webp" style="width: 100%; margin-bottom: 20px;" alt="Character panel and sprite controls">
+
+On this page you can create characters.
+
 ## Create a character
 
-- Name: required
-- Description: optional
-- Avatar: a square less than 512x512
-- Shortcut: useful for scene editor shortcuts
+When creating a character you will fill those fields:
+
+- Name
+- Description
+- Avatar: A square size image, it must be below 512x512 in size.
+- Shortcut: A shorctut key, that will be useful for commands
 
 ## Character sprites
 
-- Click the Sprites button to manage the character's sprites.
-- The Character Sprites page is the same as the images page. You can add sprites and manage them.
+- Afer creating a character, you need to press the 'Sprites' button to manage the sprites
+- The sprites page works the same as the images page, but all the image sprites will be attached to the character
 
-## Layered images
+## Usage
 
-- Currently not supported.
-- Planned for a future release.
+Characters are used in:
+
+- Scene editor
+  - Dialogue: to select the character speaking in the dialogue
+  - Character: 
+

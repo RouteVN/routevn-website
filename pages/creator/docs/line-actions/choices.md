@@ -4,10 +4,15 @@ title: Choices
 sidebarId: choices
 ---
 
-Use this action to define branching options in a scene.
+## Choice fields
 
-- `choice.resourceId` selects a choice layout if configured in resources.
-- `choice.items` stores each choice option.
-- Choices can be routed to different flows or line targets.
-- Use this page when a scene requires player decision points.
-- It stays in the same line and keeps branching logic visible in one place.
+- Choice layout: Select from layouts with type 'Choice'
+- Choice Items: Add content of choices one by one
+
+## Choice items
+
+- Content: the text that is displayed 
+- Actions
+  - Continue: Will just normally continue to next line
+  - Transition: Will transtition to another section
+

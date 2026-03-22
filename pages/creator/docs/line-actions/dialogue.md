@@ -4,10 +4,23 @@ title: Dialogue
 sidebarId: dialogue
 ---
 
-Use dialogue actions to define character lines and control how text appears in each scene.
+Dialouge have 2 modes: ADV and NVL
 
-- Set speaker names and text content.
-- Apply text style presets for consistency.
-- Sequence lines for clear pacing and readability.
+## ADV
 
-Keep dialogues concise and aligned with your flow logic.
+In ADV mode, the dialogue has one piece content at time. The content is made up of the main content and character name.
+
+- Dialogue Layout: select from the layouts with 'Dialogue ADV' type
+- Dialogue Character
+
+## NVL
+
+NVL mode can have mulitple lines on the screen.
+Unlike ADV, it does not automatically remove the lines from prevoiusy line.
+
+- Dialogue Layout: select from the layouts with 'Dialogue ADV' type
+- Dialogue Character
+
+- Clear previous line: clear content from previous line
+
+

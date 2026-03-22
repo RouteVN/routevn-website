@@ -4,11 +4,12 @@ title: Images
 sidebarId: images
 ---
 
+<img src="/public/creator/docs/reference/images.webp" style="width: 100%; margin-bottom: 20px;" alt="Image resource interactions">
+
 On this page you can upload all images. 
 Common category of images include Backgrounds (BG), CG, UI etc..., you can organize folders freely as you need.
 Do not put character sprites here, character sprites belong to specific characters.
-
-<img src="/public/creator/docs/reference/images.webp" style="width: 100%; margin-bottom: 20px;" alt="Image resource interactions">
+Only static images are supported. If you need animated images go to the animated sprites page.
 
 ## Supported image formats
 
@@ -16,7 +17,7 @@ Do not put character sprites here, character sprites belong to specific characte
 |---|---|---|
 | PNG | Recommended for character sprites and UI | Supports transparency |
 | JPG / JPEG | Backgrounds and photos | Smaller file size than PNG, no alpha |
-| WEBP | Optimized texture delivery | Lightweight and fast loading |
+| WEBP | Optimized texture delivery | Smaller file size than PNG |
 
 ## Upload images
 
@@ -37,5 +38,4 @@ Places that they will be used are in:
 
 - Layout Editor
 - Scene editor when selecting background, visual
-
 

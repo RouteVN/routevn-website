@@ -4,14 +4,45 @@ title: Scene Map
 sidebarId: scene-map
 ---
 
-Use Scene Map to visualize and organize your entire narrative flow.
+The scene map is where you can manage and visualize all your scenes
 
-- Navigate scenes as nodes in a whiteboard-style map.
-- Add scenes, connect transitions, and review branch flow before exporting.
-- Group branches with clear naming and keep transition labels readable.
-- Inspect for unreachable or dead-end scenes from the map warnings.
-- Open a scene from the map or trigger preview directly for quick checks.
+## Navigating the Scene Map
 
-<img src="/public/creator/docs/reference/scene-workspace.webp" style="width: 100%; margin-bottom: 20px;" alt="Scene map with nodes and branches">
+The map is an infinite canvas where you can organize scenes in a visual way
 
-A clear scene map helps catch story flow issues before assets are fully polished.
+### Navigation
+
+Navigate the scene by pressing `space` and keep it pressed. When the cursor is changed to the hand icon, you can drag the canvas around. Alternatively, you can click the hand icon in the bottom left to go into panning mode and drag the canvs to move around.
+
+Bottom left section you can see a minimap.
+
+### Zoom
+
+You can scroll up and down to zoom in and out. Alternatively if you have a touch interface you can also pinch in and out to zoom.
+
+### Move scenes around
+
+You can drag scene nodes around to move them
+
+### Scene node
+
+There is always exactly one scene that needs to be the start scene. This is identified by a circle with 'Start' on the left of that scene.
+
+You cannot directly create arrows connecting scenes. Arrows will automatically be created when there is a connection between a scene and another. A connection comes from:
+
+- Choices
+- Section transitions
+
+## Creating a scene
+
+Right click on the canvas to create a scene. The position where you right click will indicate the place where the scene node will be added.
+
+## Actions
+
+Once a scene is selected, your can see details and take actios in the right panel
+
+- Open: Go to the scene editor
+- Preview: Starts previewing from the current selected scene
+- List of scene sections. This can be expanded or hidde, can click at the section to directly go to the section inside scene editor
+
+

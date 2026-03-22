@@ -4,13 +4,57 @@ title: Animations
 sidebarId: animations
 ---
 
-Use animations to add motion and transitions that make scenes feel alive.
-
-- Open a tween animation and add keyframes for targeted properties.
-- Add timeline edits from the property panel for character and scene objects.
-- Keep animation loops short while the pacing is being tuned.
-- Align keyframe timing with preview playback to keep motion and audio synchronized.
-
 <img src="/public/creator/docs/reference/scene-workspace.webp" style="width: 100%; margin-bottom: 20px;" alt="Scene workspace with timeline and animation preview">
 
-When a scene grows, simplify effects first; polish details can come after structure is stable.
+Use animations to add motion to images and and other visual elements.
+
+## Live and Replace
+
+There are split into live and replace.
+
+Live animations animate a single element, such as noving a character sprite.
+
+Replace animation is used when there is an element transitioning out and a new element transitioning in. An example is a background transition
+
+## Animation effects
+
+There are 3 types of animaton effects: tween, mask, shader
+
+### Tween
+
+Tween animations use keyframes to change properties over time.
+
+Keyframes have:
+
+- Duration
+- Properties
+
+The properties that can be changed are:
+
+- Position
+- Dimension
+- Alpha
+
+Each property can have an initial value
+Properties values can be aboslute or relative
+
+Each property also has an 'easing' value
+
+TODO: add UI
+
+### Mask
+
+TODO
+
+### Shader
+
+TODO
+
+## Usage
+
+Animations are used in:
+
+- Scene editor
+  - Background transition
+  - Character sprite movements
+

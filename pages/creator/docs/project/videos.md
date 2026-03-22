@@ -4,23 +4,36 @@ title: Videos
 sidebarId: videos
 ---
 
-Use this page to set up video assets and playback behavior.
+<img src="/public/creator/docs/reference/project-flow.webp" style="width: 100%; margin-bottom: 20px;" alt="Video asset settings and playback">
 
-- Add supported video files to the resource library.
-- Confirm resolution and format to match your target output path.
-- Preview assets before placing them in scenes.
-- Configure playback control points where cinematic timing matters.
+On this page you can upload all video files for your project.
+Common categories include intros, cutscenes.
+Only video files are supported.
 
 ## Supported video formats
 
 | Format | Typical use | Notes |
 |---|---|---|
 | MP4 | General playback | Broad support for export and preview |
-| WEBM | Optimized web playback | Good for smaller files |
-| MOV | External production exports | Works when sourced from common edit pipelines |
+| WEBM | Web delivery | Good for smaller files |
+| MOV | Cutscene exports | Common from editing pipelines |
 
-<img src="/public/creator/docs/reference/project-flow.webp" style="width: 100%; margin-bottom: 20px;" alt="Video and flow-related resource context">
+## Upload videos
 
-> ⚠️ Uploading very large original videos is not optimal. Reduce resolution and bitrate before upload whenever possible to keep editor responsiveness and preview performance stable.
+You can upload single or multiple videos at once.
 
-When videos are used heavily, prefer shorter loops and lower resolutions for smoother preview performance.
+- Click the upload button, and select single on multiple videos
+- Drag and drop videos directly into the folder
+
+## Previewing a video
+
+- Hover your mouse over a video to reveal controls in the top right corner.
+- Use the play icon to preview quickly.
+
+## Usage
+
+Videos can be used in:
+
+- Layout editor
+- Timed flow sequences
+
