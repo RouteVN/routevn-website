@@ -4,10 +4,24 @@ title: Set Next Line Config
 sidebarId: next-line-config
 ---
 
-Use this command to set defaults for how the editor advances after a line.
+Next Line Config is used to control how the user can advance to the next line.
 
-- This is part of the system action set.
-- Use it when you want consistent automatic continuation.
-- Keep it aligned with your skip and auto mode strategy.
-- Check how it impacts scene transitions and branching.
-- This page is about line-level progression settings.
+Some common usages:
+
+- Prevent user to click to go to next line during some cut scenes or videos 
+- Automatically move to next line to get a more cinematic effect
+
+## Options
+
+### Manual
+
+- Whether to allow or disable user from manual click to move to next line
+
+### Automatic
+
+- Wheter to allow or disable automatic move to next line
+- Trigger: Controls how to autoamtically move to next line
+  - From complete: Delay starts counting when line content and all animatations have completed
+  - From beginnign: Delay starts counting when line first is shown
+- Delay interval: Amount of time to wait to move to nextline
+

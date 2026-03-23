@@ -4,10 +4,20 @@ title: Push Layered View
 sidebarId: push-layered-view
 ---
 
-Use this action to add a layered view on top of the current scene.
+A layered view is a layout that is put on top of current layout. One common use case is to add dialogue boxes. It is calso be used to manage 'pages', for example moving from title layout to the menu layout.
 
-- `pushLayeredView.resourceId` is the overlay resource.
-- The layered view is added as a new UI/visual layer.
-- Useful for effects, modal visuals, or temporary overlays.
-- Pair with pop layered view when the overlay should close.
-- Keep overlays lightweight so they remain predictable on lower-end devices.
+The convenient thing is that using layered view does not change the lineId.
+
+## Push layered view options
+
+- Layout: The layout to add
+- Animation: The animation effect during the transition
+
+
+## Related actions
+
+- Replace layered view
+- Pop layered view
+- Clear layered view
+
+

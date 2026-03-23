@@ -4,10 +4,12 @@ title: Section Transition
 sidebarId: section-transition
 ---
 
-Use this action to move the flow to another section.
+Section transition enables jumping to another section
 
-- `sectionTransition.sceneId` selects the destination scene.
-- `sectionTransition.sectionId` selects the destination section.
-- `sectionTransition.animation` applies the transition animation.
-- `currentSceneId` is used for context inside the editor.
-- This is a key command for moving between chapters or large scene blocks.
+## Options
+
+- Scene: First choose a scene. Can be current scene or any other scene
+- Section: Choose the section within the scene
+
+Note: Section transition can only transition to the beginning of the section, it is not possible to transition in the middle of the section. If you need to do that, it is reocmmended to split the section into multiple sections. If you need to do that, it is reocmmended to split the section into multiple sections. If you need to do that, it is reocmmended to split the section into multiple sections. If you need to do that, it is reocmmended to split the section into multiple sections
+

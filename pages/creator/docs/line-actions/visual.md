@@ -4,10 +4,22 @@ title: Visual
 sidebarId: visual
 ---
 
-Use this action to manage visual object entries in the line.
+Visual are similar to background, but you can add multiple layers, and can control the z index
 
-- `visual.items` defines the selected visual objects.
-- `presentationState` tracks per-line visual presentation data.
-- Helpful for layered sprites, props, and visual-only updates.
-- Keep this separate from background changes when you need finer control.
-- Use consistent timing with adjacent dialogue and SFX commands.
+## Visual sources
+
+We treat background and CG the same so use this action for both background and CG.
+
+Background can come from 3 different assets:
+
+- Images
+- Layouts
+- Videos
+
+## Transition
+
+You can select a visual transtition with animations. There are 2 types:
+
+- Live: Used when we want to add a movement or effect on a single visual
+- Replace: Used when we want to have a transition effect from one image to another
+

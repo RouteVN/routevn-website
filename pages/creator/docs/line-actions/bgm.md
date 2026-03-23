@@ -4,10 +4,15 @@ title: BGM
 sidebarId: bgm
 ---
 
-Use this action to control background music state for the current scene.
+Use this action to control background music
+Once a background music is added, it will keep playing for the next lines until it is removed
 
-- `bgm.resourceId` is the selected music asset.
-- Replace or clear BGM as the scene transitions.
-- Combine this with background and sound effects for atmosphere.
-- Keep a clear naming pattern for quick scene-level audio control.
-- This command line keeps music management close to scene scripting.
+## BGM source
+
+You can use any sounds you have previously uploaded for BGM
+
+## BGM options
+
+- Loop: Whether the BGM playaback should loop or only be one time. Defaults to loop
+- Volume: Volume of the BGM
+

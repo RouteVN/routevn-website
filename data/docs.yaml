@@ -56,6 +56,9 @@ items:
       - id: fonts
         title: "Fonts"
         href: "/creator/docs/project/fonts"
+      - id: project-controls
+        title: "Controls"
+        href: "/creator/docs/project/controls"
       - id: text-styles
         title: "Text Styles"
         href: "/creator/docs/project/text-styles"
@@ -126,5 +129,5 @@ items:
         title: "Conditional"
         href: "/creator/docs/line-actions/conditional"
       - id: next-line-config
-        title: "Set Next Line Config"
+        title: "Next Line Config"
         href: "/creator/docs/line-actions/next-line-config"

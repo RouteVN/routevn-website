@@ -4,10 +4,18 @@ title: Sound Effects
 sidebarId: sound-effects
 ---
 
-Use this action to add one-shot or grouped sound effects.
+Use this action to trigger sound effects
+It is possible to have many sound effects at once
 
-- `sfx.items` is a list of selected effect entries.
-- Each effect item references a `resourceId`.
-- Use short, focused sounds to avoid audio clutter.
-- Place SFX actions near the line where the event happens.
-- Multiple entries can be added in one command line action.
+## SFX source
+
+You can use any sounds you have previously uploaded for sound effects.
+
+## SFX options
+
+- Loop: Whether the BGM playaback should loop or only be one time. Defaults to loop
+- Volume: Volume of the BGM
+<!-- - Persist: Whether the sound effect should stop at the next lines, or be kept -->
+
+
+

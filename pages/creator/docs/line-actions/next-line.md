@@ -4,10 +4,7 @@ title: Next Line
 sidebarId: next-line
 ---
 
-Use this action when you need to explicitly control line progression.
+Next line action will simply move to next line
 
-- It creates a direct cue for flow advancement.
-- Keep timing predictable in branching sections.
-- This action is useful when automatic flow feels too loose.
-- Combine with skip/auto and delay settings where appropriate.
-- Use it as a clear control point in complex scripts.
+The most common usage is to use this in the controls, for left click and enter key. When user click or presses enter, it will move to next line
+
