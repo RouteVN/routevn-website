@@ -1,6 +1,7 @@
 ---
 template: post
-author: han4wluc
+author: [han4wluc]
+authorDisplay: han4wluc
 title: Building a Visual Novel Engine Part 1 - Route Graphics
 tags: [blogPost]
 date: '2026-01-28'
@@ -464,4 +465,3 @@ In the next post, we will be talking about Route Engine and how we designed a sy
 ---
 
 **Next**: [Part 2 - Route Engine](/blog/2026/05-building-a-visual-novel-engine-route-engine)
-
