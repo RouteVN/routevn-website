@@ -1,24 +1,26 @@
 ---
 template: post
 author: han4wluc
-title: RouteVN Creator v1.0.1
+title: RouteVN Creator v1.0.3
 tags: [blogPost]
 date: '2026-04-17'
 seo:
-  title: RouteVN Creator v1.0.1
-  description: RouteVN Creator v1.0.1 brings a more polished experience, better stability, and improvements across the board.
+  title: RouteVN Creator v1.0.3
+  description: RouteVN Creator v1.0.3 brings a more polished experience, better stability, and improvements across the board.
   ogType: article
 ---
 
-# RouteVN Creator v1.0.1
+# RouteVN Creator v1.0.3
 
-We have just released RouteVN Creator v1.0.1.
+We have just released RouteVN Creator v1.0.3.
 
 This is our biggest update yet and a big step up in terms of product maturity, with new features and improvements across the board.
 
-## Major version and breaking change
+<img src="/public/blog/2026/08/screenshot-3.png" style="width: 100%; margin-bottom: 24px; border: 1px solid var(--border); box-sizing: border-box;">
 
-v1.0.1 is a major version and includes a breaking change for older projects.
+## Breaking change for older projects
+
+v1.0.3 includes a breaking change for older projects.
 
 Projects created with v0.17.0 and below will not work with this new version and need to be migrated.
 
@@ -30,7 +32,7 @@ Sorry for the inconvenience. We know this is not ideal, but this change is neces
 
 Across the app, we refined interactions, cleaned up layouts, improved visual consistency, and smoothed out rough edges.
 
-With v1.0.1, RouteVN Creator has a more consistent design, feels more intentional, and is more comfortable to use.
+With v1.0.3, RouteVN Creator has a more consistent design, feels more intentional, and is more comfortable to use.
 
 ## More stability
 
@@ -50,9 +52,13 @@ This is not a claim that everything is perfect, but we now have a much more soli
 
 The Layout Editor is the biggest step up in terms of features in this release.
 
+<img src="/public/blog/2026/08/screenshot-1.png" style="width: 100%; margin-bottom: 24px; border: 1px solid var(--border); box-sizing: border-box;">
+
 New projects now come with a fully functioning default UI, including Dialogue ADV, Dialogue NVL, title page, menu page, save/load pages, and options page.
 
 Users can keep the template and simply replace it with their own UI assets, or, for more adventurous users, use the Layout Editor to customize it further.
+
+<img src="/public/blog/2026/08/screenshot-2.png" style="width: 100%; margin-bottom: 24px; border: 1px solid var(--border); box-sizing: border-box;">
 
 Building this has been very challenging technically, but we believe it is one of the features that makes RouteVN Creator unique: the ability to fully customize UI layouts and events without any coding.
 
@@ -77,7 +83,7 @@ We want to get back to at least one release per week, and many of these features
 
 ## Moving forward
 
-Version 1.0.1 is another important step forward for RouteVN Creator.
+Version 1.0.3 is another important step forward for RouteVN Creator.
 
 The product is becoming more mature and more refined. We will keep pushing on usability, reliability, and the overall quality of the experience.
 
@@ -87,4 +93,4 @@ If you have been following the project, thank you. If you are trying RouteVN Cre
 
 We would really like to hear your opinion, so let us know about your experience using RouteVN Creator and share your feedback with us.
 
-You can [download RouteVN Creator](/creator/download/) and follow future updates on the [changelog](/creator/changelog/).
+You can download RouteVN Creator [here](/creator/download/).
