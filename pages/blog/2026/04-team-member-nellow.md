@@ -1,6 +1,7 @@
 ---
 template: post
 author: [han4wluc, nellow]
+authorDisplay: han4wluc, nellow
 title: "Team Member Introduction: Nellow"
 tags: [blogPost]
 date: '2026-01-30'
@@ -48,4 +49,3 @@ His biggest contributions were on RouteVN Creator. During January, RouteVN Creat
 
 - GitHub: [Prabesh002](https://github.com/Prabesh002)
 - Portfolio Website: [nellow-protfolio](https://nellow-protfolio.netlify.app/)
-

@@ -1,6 +1,7 @@
 ---
 template: post
-author: han4wluc
+author: [han4wluc]
+authorDisplay: han4wluc
 title: Building a Visual Novel Engine Part 3 - RouteVN Creator
 tags: [blogPost]
 date: '2026-02-12'
@@ -199,4 +200,3 @@ In earlier tests, many users got blocked by bugs before we could even properly e
 The current product is much better than those earlier versions, but there is still a gap between where we are and our vision of a truly effortless experience.
 
 Our goal in the coming months is to close that gap and push this into a production-ready product. The foundation is there, and the critical paths have been validated. Now we need to refine.
-

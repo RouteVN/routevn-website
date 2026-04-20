@@ -1,6 +1,7 @@
 ---
 template: post
-author: han4wluc
+author: [han4wluc]
+authorDisplay: han4wluc
 title: RouteVN Devlog 2
 tags: [blogPost]
 date: '2026-01-13'
@@ -117,4 +118,3 @@ There is a lot of work to do for us in 2026, but it is also an exciting time bec
 If everything plays out well, we hope that by the end of the year, RouteVN Creator will become a compelling engine that people will seriously consider when choosing which engine to use for a new Visual Novel.
 
 Thanks for reading! Feel free to reach out if you have any questions or feedback.
-

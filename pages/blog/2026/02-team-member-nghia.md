@@ -1,6 +1,7 @@
 ---
 template: post
 author: [han4wluc, nghia]
+authorDisplay: han4wluc, nghia
 title: "Team Member Introduction: Nghia"
 tags: [blogPost]
 date: '2026-01-19'
@@ -45,5 +46,4 @@ The team is grateful for all of Nghia's contributions during his time at RouteVN
 
 - GitHub: [NghiaTT200000](https://github.com/NghiaTT200000)
 - Limbus ID Creator: [Live Site](https://limbus-company-id-creator.netlify.app/) | [Source Code](https://github.com/NghiaTT200000/limbus-id-creator)
-
 

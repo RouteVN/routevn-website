@@ -14,14 +14,14 @@
             - rtgl-view d=h g=xl pb="lg" md-w="100vw" lg-w="768" w="1024" ph=lg:
                 - rtgl-view id="content-container" lg-w="100%" w="624":
                     - rtgl-text mb="xl" c="mu" s="sm":
-                        - $if data.author:
-                            - "By ${data.author}"
+                        - $if data.authorDisplay:
+                            - "By ${data.authorDisplay}"
                         - $if data.date:
-                            - $if data.author:
+                            - $if data.authorDisplay:
                                 - " · "
                             - "Published ${formatDate(data.date, 'YYYY-MM-DD')}"
                         - $if data.updatedAt:
-                            - $if data.author or data.date:
+                            - $if data.authorDisplay or data.date:
                                 - " · "
                             - "Updated ${formatDate(data.updatedAt, 'YYYY-MM-DD')}"
                     - "${content}"

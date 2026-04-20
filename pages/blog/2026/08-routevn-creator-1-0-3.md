@@ -1,6 +1,7 @@
 ---
 template: post
-author: han4wluc
+author: [han4wluc]
+authorDisplay: han4wluc
 title: RouteVN Creator v1.0.3
 tags: [blogPost]
 date: '2026-04-17'
