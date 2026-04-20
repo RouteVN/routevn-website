@@ -1,6 +1,7 @@
 ---
 template: post
 author: [han4wluc, 738NGX]
+authorDisplay: han4wluc, 738NGX
 title: "Team Member Introduction: 738NGX"
 tags: [blogPost]
 date: '2025-12-29'

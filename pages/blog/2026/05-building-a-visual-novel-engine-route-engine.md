@@ -1,6 +1,7 @@
 ---
 template: post
-author: han4wluc
+author: [han4wluc]
+authorDisplay: han4wluc
 title: Building a Visual Novel Engine Part 2 - Route Engine
 tags: [blogPost]
 date: '2026-02-04'
@@ -529,4 +530,3 @@ In the next post, we'll talk about RouteVN Creator, the actual editor, and how i
 ---
 
 **Next**: [Part 3 - RouteVN Creator](/blog/2026/06-building-a-visual-novel-engine-routevn-creator-client)
-

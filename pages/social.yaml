@@ -1,0 +1,25 @@
+---
+template: social
+title: Follow RouteVN
+seo:
+  title: Follow RouteVN
+  description: Scan and tap to follow RouteVN on Instagram, Discord, X, Bluesky, Reddit, LinkedIn, and GitHub.
+---
+- 'rtgl-view w="f" g="xl" p="xl" br="xl" bw="xs" bgc="se"':
+    - rtgl-view w="f" ah="c":
+        - rtgl-text: Follow on social media
+    - rtgl-view g="lg" w="f":
+        - $for link in site.socialPage.links:
+            - 'a href="${link.href}" rel="noreferrer" aria-label="Open ${link.name}" style="display: contents; text-decoration: none; color: inherit;"':
+                - 'rtgl-view d="h" av="c" g="lg" w="f" p="lg" br="lg" bw="xs" bgc="bg" cur="p"':
+                    - rtgl-view h="52" w="52" br="f" bgc="se" ah="c" av="c":
+                        - 'rtgl-svg svg="${link.svg}" wh="22"':
+                    - 'rtgl-view w="1fg" style="min-width: 0;"':
+                        - rtgl-text s="h4": ${link.name}
+                        - rtgl-view md-show hide:
+                            - rtgl-text s="sm" c="mu": ${link.handle}
+                    - rtgl-view md-hide d="h" av="c" ah="e" g="sm":
+                        - rtgl-text s="sm" c="mu": ${link.handle}
+                        - 'rtgl-svg svg="arrow-top-right" wh="18"':
+                    - rtgl-view md-show hide ah="e":
+                        - 'rtgl-svg svg="arrow-top-right" wh="18"':

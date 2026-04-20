@@ -1,6 +1,7 @@
 ---
 template: post
-author: han4wluc
+author: [han4wluc]
+authorDisplay: han4wluc
 title: RouteVN Devlog first 1.5 year
 tags: [blogPost]
 date: '2025-10-08'
@@ -231,4 +232,3 @@ The last mile before a release always feels so close, but each time you get clos
 It is painful to know there are all those imperfections and bugs, but I also have to accept that it's not possible to get everything perfect immediately.
 
 I do feel a bit of fatigue to having worked for such a long time, but it is also exciting to see the full product taking shape and putting it in the hands of users.
-

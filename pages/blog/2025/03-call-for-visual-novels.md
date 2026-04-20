@@ -1,6 +1,7 @@
 ---
 template: post
-author: han4wluc
+author: [han4wluc]
+authorDisplay: han4wluc
 title: Call for Visual Novel Creators
 tags: [blogPost]
 date: '2025-04-04'

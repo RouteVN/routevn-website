@@ -1,6 +1,7 @@
 ---
 template: post
-author: han4wluc
+author: [han4wluc]
+authorDisplay: han4wluc
 title: Building a Visual Novel Store
 tags: [blogPost]
 date: '2025-03-14'

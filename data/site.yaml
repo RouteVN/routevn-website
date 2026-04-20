@@ -21,10 +21,12 @@ footer:
       href: https://bsky.app/profile/routevn.bsky.social
     - svg: x
       href: https://x.com/routevn
-    - svg: reddit
-      href: https://www.reddit.com/r/routevn/
     - svg: github
       href: https://github.com/RouteVN
+    - svg: instagram
+      href: https://www.instagram.com/routevn
+    - svg: reddit
+      href: https://www.reddit.com/r/routevn/
     # - svg: youtube
     #   href: https://www.youtube.com/@routevn
     - svg: linkedin
@@ -49,6 +51,38 @@ footer:
         - text: Contact
           href: https://tally.so/r/wzZ7rM
           newTab: true
+
+socialPage:
+  title: Follow RouteVN
+  links:
+    - name: Discord
+      handle: "RouteVN"
+      href: https://discord.gg/8J9dyZSu9C
+      svg: discord
+    - name: Bluesky
+      handle: "@routevn.bsky.social"
+      href: https://bsky.app/profile/routevn.bsky.social
+      svg: bluesky
+    - name: X/Twitter
+      handle: "@routevn"
+      href: https://x.com/routevn
+      svg: x
+    - name: GitHub
+      handle: "RouteVN"
+      href: https://github.com/RouteVN
+      svg: github
+    - name: Instagram
+      handle: "@routevn"
+      href: https://www.instagram.com/routevn
+      svg: instagram
+    - name: Reddit
+      handle: "r/routevn"
+      href: https://www.reddit.com/r/routevn/
+      svg: reddit
+    - name: LinkedIn
+      handle: "RouteVN"
+      href: https://www.linkedin.com/showcase/110652448
+      svg: linkedin
 
 landing:
   discord:
@@ -98,7 +132,7 @@ landing:
 
 creator:
   download:
-    version: "0.17.0"
+    version: "1.0.3"
     title: Download RouteVN Creator
     # subtitle: Get started creating your Visual Novel
     platforms:
@@ -106,7 +140,7 @@ creator:
         svg: windows
         cta:
           label: Download for Windows
-          href: https://static-1.routevn.com/routevn-creator-client/RouteVN%20Creator_0.17.0_x64-setup.exe
+          href: https://static-1.routevn.com/routevn-creator-client/RouteVN%20Creator_1.0.3_x64-setup.exe
       - name: macOS
         svg: apple
         comingSoon: true

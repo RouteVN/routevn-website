@@ -17,7 +17,7 @@ seo:
                     - rtgl-view d=h av=c:
                         - rtgl-text s="lg": ${item.data.title}
                         - rtgl-text mh=md: "-"
-                        - rtgl-text: ${item.data.author}
+                        - rtgl-text: ${item.data.authorDisplay}
                     - rtgl-view h=1 bgc=bo w="1fg":
                     - rtgl-text s="sm" c="ac-fg" mt="sm": ${item.data.date}
 - rtgl-view h="100":
