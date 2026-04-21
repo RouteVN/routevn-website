@@ -4,12 +4,13 @@ title: Scene Editor
 sidebarId: scene-editor
 ---
 
-<img src="/public/creator/docs/reference/scene-workspace.webp" style="width: 100%; margin-bottom: 20px;" alt="Scene editor and preview workflow">
+[screenshot of scene editor]
 
 The scene editor is likely the page where largest amount of time is spent.
-All previous pages was to prepare the assets and structure to be used in the scene editor, here we finally arrange and put everything togeter to create the final visual novel experience.
+This is where you write the actual content for the visual novel.
+All previous pages was to prepare the assets and structure to be used in the scene editor.
 
-## Data structuer: Scene, Sections, and Lines
+## Data structure: Scene, Sections, and Lines
 
 In RouteVN, a scene follows this structure:
 
@@ -30,6 +31,8 @@ In RouteVN, a scene follows this structure:
 
 ## Page Layout
 
+[Screenshot with tags on each section]
+
 - Left area:
   - Top: list of sections.
       - Main: text editor, similar to the normal text editor.
@@ -45,9 +48,9 @@ Click the plus icon to create a new section
 Required fields for creating a section:
 
 - Name
-<!-- - Copy current selection state: If selected, it will copy current state into the new section: -->
+- Inherit or not inherit: If this is selected, the new section's line will inherit all the state from current selected line. It is useful so you don't have to add all actions again from scratch
 
-Once the number of sections grow, they will not be able to fit all in one line, you can scroll horizontally to see other sections. In such cases, is better to click at the 3 dots icon which will show a full list of secitons.
+The horiztonal list can only fit a limited number of sections. Once it grows too big, it is recommended you click the 3 dots icon which will display a list of sections.
 
 This list will show a 'warning' icon for the sections that are dead ends which means they do not transition to any other section.
 
@@ -69,21 +72,21 @@ The text editor has 2 modes
 
 The icons on the right side shows the 'changes' in the presenation state, it is useful to get a quick overview of what changes are happening in each line.
 
-### Block Mode
-
-- Press `Esc` to enter block mode.
-- Press `Enter` to go back to edit mode.
-- Use block mode for faster block-level operations when needed.
-- Keyboard navigation is heavily inspired by Vim.
-- `j` or `ArrowDown` to go to one line below.
-- `k` or `ArrowUp` to go to line above.
-- `dd` to delete the current line.
-- `o` to insert a new line below.
-- `O` to insert a new line above.
-- `J` or `ArrowDown` to swap current line with the line below.
-- `K` or `ArrowUp` to swap current line with the line above.
-- `c` `<character-shortcut>`: 
-- `c0` remove dialogue character
+<!-- ### Block Mode -->
+<!---->
+<!-- - Press `Esc` to enter block mode. -->
+<!-- - Press `Enter` to go back to edit mode. -->
+<!-- - Use block mode for faster block-level operations when needed. -->
+<!-- - Keyboard navigation is heavily inspired by Vim. -->
+<!-- - `j` or `ArrowDown` to go to one line below. -->
+<!-- - `k` or `ArrowUp` to go to line above. -->
+<!-- - `dd` to delete the current line. -->
+<!-- - `o` to insert a new line below. -->
+<!-- - `O` to insert a new line above. -->
+<!-- - `J` or `ArrowDown` to swap current line with the line below. -->
+<!-- - `K` or `ArrowUp` to swap current line with the line above. -->
+<!-- - `c` `<character-shortcut>`:  -->
+<!-- - `c0` remove dialogue character -->
 
 ## Preview
 

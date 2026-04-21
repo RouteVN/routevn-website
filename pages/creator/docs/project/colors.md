@@ -4,7 +4,7 @@ title: Colors
 sidebarId: colors
 ---
 
-<img src="/public/creator/docs/reference/resource-details.webp" style="width: 100%; margin-bottom: 20px;" alt="Color palette and theme settings">
+[screenshot of colors page]
 
 All UI colors used in the visual novel need to be defined here.
 This allows more consistency and makes it easier to change colors while maintaing the consistency
@@ -20,6 +20,4 @@ Required fields are:
 
 Colors are used in:
 
-- Test Styles
-- Layout Editor
-
+- [Text Styles](/creator/docs/project/text-styles/)

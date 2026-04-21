@@ -4,7 +4,7 @@ title: Text Styles
 sidebarId: text-styles
 ---
 
-<img src="/public/creator/docs/reference/resource-details.webp" style="width: 100%; margin-bottom: 20px;" alt="Typography and text style resources">
+[Screenshot of text styles page]
 
 Text styles is to manage the typography
 
@@ -12,20 +12,19 @@ Common text styles to create are:
 
 - Character name
 - Dialogue content
+- Menu text
 
 ## Create a text style
 
 - Name
 - Description
-- Font
+- Font file
 - Font size
 - Font weight
 - Line height
 - Preview text: defaults to name
-
-TODO:
-- Text border width
-- Text border color
+- Storke color
+- Stroke width
 
 ## Usage
 

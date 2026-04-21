@@ -4,44 +4,50 @@ title: Layouts
 sidebarId: layouts
 ---
 
-<img src="/public/creator/docs/reference/scene-workspace.webp" style="width: 100%; margin-bottom: 20px;" alt="Layout editor and scene workspace">
+[Screenshot of layouts page]
 
+Layouts are flexible to create any kind of UI.
+We can combine all different assets into a layout to create rich and interactive expereinces including: images, videos, sounds, animated sprites, particles, text etc...
 
-There are a few types of layouts:
+## Types of layouts
 
-- UI: Standard normal layout
-- Dialogue ADV: Can have character and dialogue content 
-- Dialogue NVL: Can have multiple lines of character and dialogue content
-- Choice: Can have multiple choices and choice content
+- General: This is a normal layout without any special rules
+- Dialogue ADV
+- Dialogue NVL
+- Choices
+- Save/Load
+<!-- - History -->
+- Confirm Dialogue
+
+## Fragment
+
+A fragment means that this layout can be used as an element in other layouts
+
+It is kind of a component, but you cannot pass custom variables to a fragment.
+
 
 ## Layout Editor
 
-Layout editor enables you to fully customize the UI
+[Screenshot of layout editor]
 
+TODO
 
-The following elements are available:
+<!-- Layout editor enables you to fully customize the UI -->
+<!---->
+<!-- It looks similar to design software, but it has its own particularities. -->
+<!---->
+<!-- This parge is a little bit more adavnced and complicated, so we will go through everything in detail. -->
+<!---->
+<!-- The following elements are available: -->
+<!---->
+<!-- - Container -->
+<!-- - Image -->
+<!-- - Text -->
+<!-- - Slider Vertical -->
+<!-- - Slider Horizontal -->
 
-- Container
-- Image
-- Text
-- Slider Vertical
-- Slider Horizontal
-
-Below are layout type specific elements:
-
-- Dialogue ADV
-  - Character name content
-  - Dialogue content
-- Dialogue NVL
-  - A list of character name and dialogue content
-- Choice
-  - A list of choices
 
 ## Usage
 
-Layouts are used in:
-
-- Scene editor 
-  - Background
-  - Visual
+Layouts can be used in the Scene Editor as Backgrond or Visual
 

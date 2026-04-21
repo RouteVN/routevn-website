@@ -4,48 +4,74 @@ title: Project
 sidebarId: project
 ---
 
-## Project List
+# Project List
 
-On the main page of RouteVN Creator, you will see a list of projects
+On the main page of RouteVN Creator, you will see a list of all projects
+You can either create a new project or import an existing project
+
+[Screenshot projects list]
 
 ## Create a Project
 
-Click the plus button to create a project
+Click the create a project
 
 The following fields are required:
 
-- Project name
+- Project name (required)
 - Project description
 - Resolution: Screen resolution
 - Icon: A square image
-- Folder: Create first and empty folder and select the empty folder
+- Folder path (required): Create first and empty folder and select the empty folder
 
-## Resolution
+[Screenshot create project form]
 
-Screen resolution is a very consequential decision because it will dictate the size of all images that you will be using.
+### Resolution
 
-Changing resolution later is hard because it means you will need to change all your images as well.
+Screen resolution is a very consequential decision because it will dictate the size of all images that you will be using
 
-Common resolutions for desktop screen are:
+Changing resolution later is tricky because it means you will need to change all your images as well
 
-- FHD: 1920 x 1080
-- QHD: 2560 x 1440
-- UHD(2k): 4096 x 2160
+Currently the only supported resolution is 1920 x 1080 (FHD)
 
-We do allow customization with any arbitrary resolution values. This should be able to satisfy any other use cases including mobile phone screen sizes.
+We will be adding more cusotmizable resolutions in the near future
+
+<!-- Common resolutions for desktop screen are: -->
+<!---->
+<!-- - 1920 x 1080 (FHD) -->
+<!-- - 2560 x 1440 (QHD) -->
+<!-- - 4096 x 2160 (UHD 2k) -->
+
+
+<!-- We do allow customization with any arbitrary resolution values. This should be able to satisfy any other use cases including mobile phone screen sizes. -->
+<!---->
+<!-- Technically you can also insert phone size dimensions. It will work, but some layouts may be weird, it has not been optimized for now. -->
+
+### Folder path
+
+The folder path must be empty. We assume that you manually create this folder first.
+All data for the project will be saved under this folder.
+
 
 ## Removing a project
 
 From the project list, you can right click a project, and then select `Remove`
 
-**Important** Removing the project will only remove it from the list. If you want to delete the files as well, you have to delete the whole folder manually from the file system
+**Important** Removing the project will only remove it from the list. If you want to delete the files, you have to delete the whole folder manually if you want them deleted
 
+## Importing a project
 
-## Project page
+You can click the import button, and select a a folder path.
+After successful improt, the project will appear in the projects list.
 
-In the project page you click at the title or other fiels to edit
+# Project page
 
-## Project Layout
+In the project page you click at the title or other fields to edit.
+
+[Screenshot project page]
+
+# Project Layout
 
 Read more about the whole page navigation layout
+
+
 

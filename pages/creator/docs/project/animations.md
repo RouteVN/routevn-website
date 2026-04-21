@@ -4,57 +4,104 @@ title: Animations
 sidebarId: animations
 ---
 
-<img src="/public/creator/docs/reference/scene-workspace.webp" style="width: 100%; margin-bottom: 20px;" alt="Scene workspace with timeline and animation preview">
+[screenshot of animations page]
 
-Use animations to add motion to images and and other visual elements.
+Animations are used on images and other visual elements to make transitions and motion feel smoother.
+In practice, you will usually define a small set of reusable animations and use them across backgrounds, characters, and other visuals.
 
-## Live and Replace
+There are 2 main animation modes:
 
-There are split into live and replace.
+- Update animations: animate a visual that is already on screen
+- Transition animations: animate the change from one visual to another
 
-Live animations animate a single element, such as noving a character sprite.
+## Update animations
 
-Replace animation is used when there is an element transitioning out and a new element transitioning in. An example is a background transition
+Update animations are applied to a single visual.
+They assume the visual is already on screen and will remain on screen after the animation finishes.
+
+This is useful for effects such as:
+
+- Moving a character slightly
+- Fading an element in or out
+- Scaling or repositioning a visual during a scene
+
+Update animations use [tween](#tween) effects.
+
+## Transition animations
+
+Transition animations are used when one visual is replaced by another.
+They can animate the outgoing visual, the incoming visual, or both.
+
+This is useful for effects such as:
+
+- Changing from one background to another
+- Replacing a character pose
+- Revealing a new image with a mask effect
+
+Transition animations can use:
+
+- [Tween](#tween)
+- [Mask](#mask)
 
 ## Animation effects
 
-There are 3 types of animaton effects: tween, mask, shader
-
 ### Tween
 
-Tween animations use keyframes to change properties over time.
+Tween effects change properties over time using keyframes.
+They can be used in both update animations and transition animations.
 
-Keyframes have:
+Each tween is made up of one or more animated properties.
+Each property can have:
 
-- Duration
-- Properties
+- An optional initial value
+- One or more keyframes
 
-The properties that can be changed are:
+If no initial value is provided, the current value of the element is used.
+This makes it easier to create reusable animations.
+
+Each keyframe has:
+
+- A value
+- A duration
+- An easing
+
+Values can be absolute or relative.
+
+The main properties you can animate are:
 
 - Position
 - Dimension
 - Alpha
 
-Each property can have an initial value
-Properties values can be aboslute or relative
-
-Each property also has an 'easing' value
-
-TODO: add UI
-
 ### Mask
 
-TODO
+Mask effects are used in transition animations.
+They reveal or hide an image based on a mask image instead of only moving or fading it.
 
-### Shader
+The most important input is the mask image itself.
+You can also control values such as duration and smoothness.
 
-TODO
 
-## Usage
+<!-- ### Shader -->
+<!---->
+<!-- TODO -->
 
-Animations are used in:
+## Animation editor page
 
-- Scene editor
-  - Background transition
-  - Character sprite movements
+[screenshot of animation editor page]
+
+[screenshot of mask editor page]
+
+The animation editor is where you define and preview animation behavior.
+
+You can:
+
+- Edit tween properties and keyframes
+- Configure mask-based transitions
+- Click preview to test the result
+- Hover the timeline to inspect how the animation looks at a specific point in time
+
+
+
+
 

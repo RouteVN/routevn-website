@@ -4,19 +4,14 @@ title: Videos
 sidebarId: videos
 ---
 
-<img src="/public/creator/docs/reference/project-flow.webp" style="width: 100%; margin-bottom: 20px;" alt="Video asset settings and playback">
+[screenshot of video page]
 
 On this page you can upload all video files for your project.
-Common categories include intros, cutscenes.
-Only video files are supported.
+Common categories include intro video, cutscenes. Video can also act as a background.
 
-## Supported video formats
+## Supported formats
 
-| Format | Typical use | Notes |
-|---|---|---|
-| MP4 | General playback | Broad support for export and preview |
-| WEBM | Web delivery | Good for smaller files |
-| MOV | Cutscene exports | Common from editing pipelines |
+- `mp4`
 
 ## Upload videos
 
@@ -27,13 +22,8 @@ You can upload single or multiple videos at once.
 
 ## Previewing a video
 
-- Hover your mouse over a video to reveal controls in the top right corner.
-- Use the play icon to preview quickly.
+- Double click on an item to play the video
 
-## Usage
+## Keyboard shortcuts
 
-Videos can be used in:
-
-- Layout editor
-- Timed flow sequences
 

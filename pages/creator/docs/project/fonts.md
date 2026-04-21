@@ -4,16 +4,14 @@ title: Fonts
 sidebarId: fonts
 ---
 
-<img src="/public/creator/docs/reference/resource-details.webp" style="width: 100%; margin-bottom: 20px;" alt="Font resource details and preview">
+[screenshot of fonts page]
 
 ## Supported font formats
 
-| Format | Notes |
-|---|---|---|
-| `.ttf` |  |
-| `.otf` |  |
-| `.woff` |  |
-| `.woff2` |  |
+- `ttf`
+- `otf`
+- `woff`
+- `woff2`
 
 ## Upload fonts
 
@@ -24,8 +22,7 @@ You can upload single or multiple fonts for your project.
 
 ## Previewing a font
 
-- Open font settings and apply a preview how fonts will look like
-- At the moment, it previews only latin characters.
+Double click font item to preview the font glyphs
 
 ## Usage
 

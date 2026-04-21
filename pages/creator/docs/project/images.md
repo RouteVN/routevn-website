@@ -4,38 +4,74 @@ title: Images
 sidebarId: images
 ---
 
-<img src="/public/creator/docs/reference/images.webp" style="width: 100%; margin-bottom: 20px;" alt="Image resource interactions">
+[screenshot images page]
 
-On this page you can upload all images. 
-Common category of images include Backgrounds (BG), CG, UI etc..., you can organize folders freely as you need.
-Do not put character sprites here, character sprites belong to specific characters.
-Only static images are supported. If you need animated images go to the animated sprites page.
+The images page is a flexible page to manage all visual assets including Background, Event CG, Visual Effects, UI assets.
+
+Character sprites should not be added here, there is a dedicated page for character sprites.
 
 ## Supported image formats
 
-| Format | Typical use | Notes |
-|---|---|---|
-| PNG | Recommended for character sprites and UI | Supports transparency |
-| JPG / JPEG | Backgrounds and photos | Smaller file size than PNG, no alpha |
-| WEBP | Optimized texture delivery | Smaller file size than PNG |
+The following file formats are supported:
+- `png`
+- `jpg` / `jpeg`
+- `webp`
 
 ## Upload images
 
 You can upload single or multiple imagaes at once
 
 - Click the upload button, and select single on multiple images
-- Drag and drop images directly to to the folder
+- Drag and drop images directly to are below the folder
+
+## Updating an image
+
+If you want to update an image
+
+[Animaetd WebP of updating an image]
 
 ## Previewing an image
 
-- When hovering your mouse on a image, actions will appear on the top right corner. You can click the zoom icon to preview it.
+- Double click an image to preview it in a larger dimension
+- Click anywhere when the image is in preview to hide it
 
-## Usage
+[Animated WebP of previwing an image]
 
-Images need to be uploaded here before they can be used.
+## File explorer
 
-Places that they will be used are in:
+See File Exploer.
 
-- Layout Editor
-- Scene editor when selecting background, visual
+## Organizing your images assets
+
+The folder system is pretty flexible, it supports subfolders. A good way to start is to split into such folders:
+
+- Background
+- CG
+- UI
+- VFX
+
+Once a project gets large, you can consider splitting into chapters. For example:
+
+- Background
+  - Chapter 1
+  - Chapter 2
+- CG
+  - Chapter 1
+  - Chapter 2
+
+or even
+
+- Chapter 1
+- Chapter 2
+
+Organize it freely and adapt to what works best for you and your project
+
+
+## Keyboard shortcuts
+
+Inherits file exploer ones
+
+Preview
+
+Exit
 

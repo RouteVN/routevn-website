@@ -12,7 +12,7 @@ items:
         title: "Quickstart"
         href: "/creator/docs/quickstart"
       - id: application-layout
-        title: "Application Layout"
+        title: "Page Index"
         href: "/creator/docs/application-layout"
       - id: file-explorer
         title: "File Explorer"
