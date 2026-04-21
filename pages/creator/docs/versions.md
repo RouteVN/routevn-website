@@ -20,7 +20,7 @@ After you create a version, there will be a button to export it as a Zip file fo
 
 This zip file is ready to be used and publish into platforms that support web games.
 
-For publishing guidance, see [Publish](/creator/docs/release/publish/)
+For publishing guidance, see [Publish](/creator/docs/publish/)
 
 ### Windows
 
@@ -41,4 +41,3 @@ Coming Soon
 ### Linux
 
 Coming Soon
-

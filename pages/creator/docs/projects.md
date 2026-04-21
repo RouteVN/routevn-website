@@ -1,10 +1,10 @@
 ---
 template: documentation
-title: Project
-sidebarId: project
+title: Projects
+sidebarId: projects
 ---
 
-# Project List
+## Projects List
 
 On the main page of RouteVN Creator, you will see a list of all projects
 You can either create a new project or import an existing project
@@ -67,7 +67,7 @@ From the project list, you can right click a project, and then select `Remove`
 You can click the import button, and select a a folder path.
 After successful improt, the project will appear in the projects list.
 
-# Project page
+## Project Details
 
 In the project page you click at the title or other fields to edit.
 

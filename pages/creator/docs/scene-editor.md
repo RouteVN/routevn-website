@@ -35,8 +35,6 @@ In RouteVN, a scene follows this structure:
 
 ## Page Layout
 
-[Screenshot with tags on each section]
-
 - Left area:
   - Top: list of sections.
       - Main: text editor, similar to the normal text editor.
@@ -114,7 +112,7 @@ Below is a list of all actions:
 - [Section Transition](/creator/docs/line-actions/section-transition/) — move to another section in the same scene or another scene.
 - [Background](/creator/docs/line-actions/background/) — set or replace the scene background.
 - [Visual](/creator/docs/line-actions/visual/) — edit visual object entries in the current line.
-- [Base Layout](/creator/docs/line-actions/base/) — set a base UI/layout template for a line.
+- Base Layout — set a base UI/layout template for a line.
 - [Characters](/creator/docs/line-actions/characters/) — add, replace, or remove character entries.
 - [BGM](/creator/docs/line-actions/bgm/) — control background music state.
 - [Sound Effects](/creator/docs/line-actions/sfx/) — play one-shot or grouped effects.

@@ -5,15 +5,15 @@ items:
   - title: "General"
     type: groupLabel
     items:
-      - id: intro
+      - id: introduction
         title: "Introduction"
-        href: "/creator/docs/intro"
+        href: "/creator/docs/introduction"
       - id: quickstart
         title: "Quickstart"
         href: "/creator/docs/quickstart"
-      - id: application-layout
+      - id: page-index
         title: "Page Index"
-        href: "/creator/docs/application-layout"
+        href: "/creator/docs/page-index"
       - id: file-explorer
         title: "File Explorer"
         href: "/creator/docs/file-explorer"
@@ -23,51 +23,51 @@ items:
   - title: "Project"
     type: groupLabel
     items:
-      - id: project
-        title: "Project"
-        href: "/creator/docs/project"
+      - id: projects
+        title: "Projects"
+        href: "/creator/docs/projects"
       - id: images
         title: "Images"
-        href: "/creator/docs/project/images"
+        href: "/creator/docs/images"
       - id: sounds
         title: "Sounds"
-        href: "/creator/docs/project/sounds"
+        href: "/creator/docs/sounds"
       - id: videos
         title: "Videos"
-        href: "/creator/docs/project/videos"
+        href: "/creator/docs/videos"
       - id: characters
         title: "Characters"
-        href: "/creator/docs/project/characters"
+        href: "/creator/docs/characters"
       - id: transforms
         title: "Transforms"
-        href: "/creator/docs/project/transforms"
+        href: "/creator/docs/transforms"
       - id: animations
         title: "Animations"
-        href: "/creator/docs/project/animations"
+        href: "/creator/docs/animations"
       - id: colors
         title: "Colors"
-        href: "/creator/docs/project/colors"
+        href: "/creator/docs/colors"
       - id: fonts
         title: "Fonts"
-        href: "/creator/docs/project/fonts"
+        href: "/creator/docs/fonts"
       - id: project-controls
         title: "Controls"
-        href: "/creator/docs/project/controls"
+        href: "/creator/docs/controls"
       - id: text-styles
         title: "Text Styles"
-        href: "/creator/docs/project/text-styles"
+        href: "/creator/docs/text-styles"
       - id: layouts
         title: "Layouts"
-        href: "/creator/docs/project/layouts"
+        href: "/creator/docs/layouts"
   - title: "Scene"
     type: groupLabel
     items:
       - id: scene-map
         title: "Scene Map"
-        href: "/creator/docs/scene/scene-map"
+        href: "/creator/docs/scene-map"
       - id: scene-editor
         title: "Scene Editor"
-        href: "/creator/docs/scene/scene-editor"
+        href: "/creator/docs/scene-editor"
   - title: "Line Actions"
     type: groupLabel
     items:
@@ -115,7 +115,7 @@ items:
     items:
       - id: versions
         title: "Versions"
-        href: "/creator/docs/release/versions"
+        href: "/creator/docs/versions"
       - id: publish
         title: "Publish"
-        href: "/creator/docs/release/publish"
+        href: "/creator/docs/publish"

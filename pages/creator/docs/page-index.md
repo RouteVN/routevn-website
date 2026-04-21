@@ -1,7 +1,7 @@
 ---
 template: documentation
 title: Page Index
-sidebarId: application-layout
+sidebarId: page-index
 ---
 
 This page gives an overview of the main pages inside RouteVN Creator.
@@ -11,25 +11,25 @@ Use it as a quick index when you want to understand where a feature lives before
 
 The Project area contains the main resources used by your visual novel.
 
-- [Project](/creator/docs/project/): basic project information
-- [Images](/creator/docs/project/images/): background images, CGs, and other image assets
-- [Sounds](/creator/docs/project/sounds/): audio assets such as BGM and sound effects
-- [Videos](/creator/docs/project/videos/): video assets used in scenes
-- [Characters](/creator/docs/project/characters/): character definitions and related resources
-- [Transforms](/creator/docs/project/transforms/): reusable transform definitions
-- [Animations](/creator/docs/project/animations/): reusable update and transition animations
-- [Colors](/creator/docs/project/colors/): color definitions used across the UI
-- [Fonts](/creator/docs/project/fonts/): font resources
-- [Controls](/creator/docs/project/controls/): project-level control definitions
-- [Text Styles](/creator/docs/project/text-styles/): reusable text styling presets
-- [Layouts](/creator/docs/project/layouts/): UI layouts and page structures
+- [Projects](/creator/docs/projects/): project list and basic project information
+- [Images](/creator/docs/images/): background images, CGs, and other image assets
+- [Sounds](/creator/docs/sounds/): audio assets such as BGM and sound effects
+- [Videos](/creator/docs/videos/): video assets used in scenes
+- [Characters](/creator/docs/characters/): character definitions and related resources
+- [Transforms](/creator/docs/transforms/): reusable transform definitions
+- [Animations](/creator/docs/animations/): reusable update and transition animations
+- [Colors](/creator/docs/colors/): color definitions used across the UI
+- [Fonts](/creator/docs/fonts/): font resources
+- [Controls](/creator/docs/controls/): project-level control definitions
+- [Text Styles](/creator/docs/text-styles/): reusable text styling presets
+- [Layouts](/creator/docs/layouts/): UI layouts and page structures
 
 ## Scene
 
 The Scene area is where story content is organized and edited.
 
-- [Scene Map](/creator/docs/scene/scene-map/): high-level scene flow and structure
-- [Scene Editor](/creator/docs/scene/scene-editor/): detailed editing of scene lines and actions
+- [Scene Map](/creator/docs/scene-map/): high-level scene flow and structure
+- [Scene Editor](/creator/docs/scene-editor/): detailed editing of scene lines and actions
 
 ## Line Actions
 
@@ -52,8 +52,8 @@ This includes dialogue, choices, visuals, background changes, audio, controls, v
 
 ## Release
 
-- [Versions](/creator/docs/release/versions/): release-related information and export/version workflow
-- [Publish](/creator/docs/release/publish/): publishing guidance for released builds
+- [Versions](/creator/docs/versions/): release-related information and export/version workflow
+- [Publish](/creator/docs/publish/): publishing guidance for released builds
 
 ## Settings
 

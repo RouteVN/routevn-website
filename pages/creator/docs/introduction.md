@@ -1,7 +1,7 @@
 ---
 template: documentation
 title: Introduction
-sidebarId: intro
+sidebarId: introduction
 ---
 
 Welcome to the RouteVN Creator docs. This documentation will cover everything you need to know about RouteVN Creator and how to use it to create a Visual Novel.
@@ -31,7 +31,7 @@ Welcome to the RouteVN Creator docs. This documentation will cover everything yo
 
 ## Support
 
-If you need additional support, please reach out to staff or community:
+If you need support, please reach out to staff or community:
 
 - [Discord](https://discord.gg/8J9dyZSu9C)
 - [Reddit](https://www.reddit.com/r/routevn/)
@@ -40,4 +40,3 @@ If you need additional support, please reach out to staff or community:
 - [Contact form](/support/)
 
 Next, proceed to [quickstart](/creator/docs/quickstart/)
-

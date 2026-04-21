@@ -4,8 +4,6 @@ title: Scene Map
 sidebarId: scene-map
 ---
 
-[Screenshot of Scene Map]
-
 The scene map is where you can manage and visualize all your scenes
 
 ## Navigating the Scene Map
@@ -49,5 +47,4 @@ Once a scene is selected, your can see details and take actios in the right pane
 - Double click: Will go to the scene editor
 - Preview: Find the preview button on the right. This will start previewing this scene.
 - List of sections. This can be expanded or hidde, can click at the section to directly go to the section inside scene editor
-
 

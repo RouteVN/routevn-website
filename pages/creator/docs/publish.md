@@ -6,7 +6,7 @@ sidebarId: publish
 
 Use this section when you are ready to upload and release your exported build.
 
-Before publishing, make sure you have created and exported a build from the [Versions](/creator/docs/release/versions/) page.
+Before publishing, make sure you have created and exported a build from the [Versions](/creator/docs/versions/) page.
 
 ## itch.io
 
@@ -29,4 +29,3 @@ Here is a quick guide to upload a web version:
   alt="Project page"
   style="width: 100%; height: auto; display: block; border: 1px solid var(--border); box-sizing: border-box;"
 />
-

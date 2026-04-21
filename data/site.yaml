@@ -44,7 +44,7 @@ footer:
         # - text: About
         #   href: /about/
         - text: Creator Docs
-          href: /creator/docs/intro/
+          href: /creator/docs/introduction/
         - text: Creator Changelog
           href: /creator/changelog/
         - text: Blog
@@ -244,7 +244,7 @@ creator:
       subtitle: Download RouteVN Creator to start creating
       cta:
         label: Documentation
-        href: /creator/docs/intro/
+        href: /creator/docs/introduction/
         variant: se
       secondaryCta:
         label: Download

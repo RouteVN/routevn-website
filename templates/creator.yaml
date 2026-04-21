@@ -20,7 +20,7 @@
                   title: ${site.navbar.title}
                   secondaryCta:
                     label: Documentation
-                    href: /creator/docs/intro/
+                    href: /creator/docs/introduction/
                   cta:
                     label: Download
                     href: /creator/download/
