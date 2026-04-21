@@ -4,7 +4,11 @@ title: Layouts
 sidebarId: layouts
 ---
 
-[Screenshot of layouts page]
+<img
+  src="/public/creator/docs/reference/layouts-1.png"
+  alt="Layouts page"
+  style="width: 100%; height: auto; display: block; border: 1px solid var(--border); box-sizing: border-box;"
+/>
 
 Layouts are flexible to create any kind of UI.
 We can combine all different assets into a layout to create rich and interactive expereinces including: images, videos, sounds, animated sprites, particles, text etc...
@@ -16,8 +20,8 @@ We can combine all different assets into a layout to create rich and interactive
 - Dialogue NVL
 - Choices
 - Save/Load
-<!-- - History -->
 - Confirm Dialogue
+<!-- - History -->
 
 ## Fragment
 
@@ -28,7 +32,11 @@ It is kind of a component, but you cannot pass custom variables to a fragment.
 
 ## Layout Editor
 
-[Screenshot of layout editor]
+<img
+  src="/public/creator/docs/reference/layout-editor-1.png"
+  alt="Layout editor"
+  style="width: 100%; height: auto; display: block; border: 1px solid var(--border); box-sizing: border-box;"
+/>
 
 TODO
 
@@ -50,4 +58,3 @@ TODO
 ## Usage
 
 Layouts can be used in the Scene Editor as Backgrond or Visual
-

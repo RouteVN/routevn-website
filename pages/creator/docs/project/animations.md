@@ -4,7 +4,11 @@ title: Animations
 sidebarId: animations
 ---
 
-[screenshot of animations page]
+<img
+  src="/public/creator/docs/reference/animations-1.png"
+  alt="Animations page"
+  style="width: 100%; height: auto; display: block; border: 1px solid var(--border); box-sizing: border-box;"
+/>
 
 Animations are used on images and other visual elements to make transitions and motion feel smoother.
 In practice, you will usually define a small set of reusable animations and use them across backgrounds, characters, and other visuals.
@@ -88,10 +92,6 @@ You can also control values such as duration and smoothness.
 
 ## Animation editor page
 
-[screenshot of animation editor page]
-
-[screenshot of mask editor page]
-
 The animation editor is where you define and preview animation behavior.
 
 You can:
@@ -100,7 +100,6 @@ You can:
 - Configure mask-based transitions
 - Click preview to test the result
 - Hover the timeline to inspect how the animation looks at a specific point in time
-
 
 
 

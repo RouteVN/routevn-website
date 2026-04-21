@@ -4,7 +4,7 @@ title: Videos
 sidebarId: videos
 ---
 
-[screenshot of video page]
+<!-- [screenshot of video page] -->
 
 On this page you can upload all video files for your project.
 Common categories include intro video, cutscenes. Video can also act as a background.
@@ -24,6 +24,6 @@ You can upload single or multiple videos at once.
 
 - Double click on an item to play the video
 
-## Keyboard shortcuts
+<!-- ## Keyboard shortcuts -->
 
 

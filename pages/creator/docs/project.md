@@ -9,7 +9,7 @@ sidebarId: project
 On the main page of RouteVN Creator, you will see a list of all projects
 You can either create a new project or import an existing project
 
-[Screenshot projects list]
+
 
 ## Create a Project
 
@@ -23,7 +23,11 @@ The following fields are required:
 - Icon: A square image
 - Folder path (required): Create first and empty folder and select the empty folder
 
-[Screenshot create project form]
+<img
+  src="/public/creator/docs/reference/project-1.png"
+  alt="Create project form"
+  style="width: 100%; height: auto; display: block; border: 1px solid var(--border); box-sizing: border-box;"
+/>
 
 ### Resolution
 
@@ -67,11 +71,8 @@ After successful improt, the project will appear in the projects list.
 
 In the project page you click at the title or other fields to edit.
 
-[Screenshot project page]
-
-# Project Layout
-
-Read more about the whole page navigation layout
-
-
-
+<img
+  src="/public/creator/docs/reference/project-2.png"
+  alt="Project page"
+  style="width: 100%; height: auto; display: block; border: 1px solid var(--border); box-sizing: border-box;"
+/>

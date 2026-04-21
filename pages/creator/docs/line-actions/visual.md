@@ -4,22 +4,29 @@ title: Visual
 sidebarId: visual
 ---
 
-Visual are similar to background, but you can add multiple layers, and can control the z index
+[Screenshot to visual page]
+
+Visual are similar to [Background](/creator/docs/line-actions/background/), but you can add multiple visuals.
 
 ## Visual sources
 
-We treat background and CG the same so use this action for both background and CG.
-
-Background can come from 3 different assets:
+Visuals can come from
 
 - Images
 - Layouts
 - Videos
 
+## Transform
+
+You can add a transform to visuals
+
 ## Transition
 
-You can select a visual transtition with animations. There are 2 types:
+You can add an animation effect to visuals
 
-- Live: Used when we want to add a movement or effect on a single visual
-- Replace: Used when we want to have a transition effect from one image to another
+## Z Index
+
+[TODO]
+
+
 

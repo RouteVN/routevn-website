@@ -20,12 +20,6 @@ items:
       - id: features-limitations
         title: "Features & Limitations"
         href: "/creator/docs/features-and-limitations"
-      - id: keyboard-shortcuts
-        title: "Keyboard Shortcuts"
-        href: "/creator/docs/keyboard-shortcuts"
-      - id: versions
-        title: "Versions"
-        href: "/creator/docs/release/versions"
   - title: "Project"
     type: groupLabel
     items:
@@ -91,16 +85,13 @@ items:
         href: "/creator/docs/line-actions/bgm"
       - id: sound-effects
         title: "Sound Effects"
-        href: "/creator/docs/line-actions/sound-effects"
+        href: "/creator/docs/line-actions/sfx"
       - id: line-actions-characters
         title: "Characters"
         href: "/creator/docs/line-actions/characters"
       - id: section-transition
         title: "Section Transition"
         href: "/creator/docs/line-actions/section-transition"
-      - id: base-layout
-        title: "Base Layout"
-        href: "/creator/docs/line-actions/base"
       - id: visual
         title: "Visual"
         href: "/creator/docs/line-actions/visual"
@@ -113,21 +104,18 @@ items:
       - id: toggle-skip-mode
         title: "Toggle Skip Mode"
         href: "/creator/docs/line-actions/toggle-skip-mode"
-      - id: push-layered-view
-        title: "Push Layered View"
-        href: "/creator/docs/line-actions/push-layered-view"
-      - id: pop-layered-view
-        title: "Pop Layered View"
-        href: "/creator/docs/line-actions/pop-layered-view"
-      - id: update-variable
-        title: "Update Variable"
-        href: "/creator/docs/line-actions/update-variable"
       - id: controls
         title: "Controls"
         href: "/creator/docs/line-actions/controls"
-      - id: conditional
-        title: "Conditional"
-        href: "/creator/docs/line-actions/conditional"
       - id: next-line-config
         title: "Next Line Config"
         href: "/creator/docs/line-actions/next-line-config"
+  - title: "Release"
+    type: groupLabel
+    items:
+      - id: versions
+        title: "Versions"
+        href: "/creator/docs/release/versions"
+      - id: publish
+        title: "Publish"
+        href: "/creator/docs/release/publish"

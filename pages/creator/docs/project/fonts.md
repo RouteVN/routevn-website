@@ -4,7 +4,11 @@ title: Fonts
 sidebarId: fonts
 ---
 
-[screenshot of fonts page]
+<img
+  src="/public/creator/docs/reference/fonts-1.png"
+  alt="Fonts page"
+  style="width: 100%; height: auto; display: block; border: 1px solid var(--border); box-sizing: border-box;"
+/>
 
 ## Supported font formats
 
@@ -24,9 +28,14 @@ You can upload single or multiple fonts for your project.
 
 Double click font item to preview the font glyphs
 
+<img
+  src="/public/creator/docs/reference/fonts-2.png"
+  alt="Font preview"
+  style="width: 100%; height: auto; display: block; border: 1px solid var(--border); box-sizing: border-box;"
+/>
+
 ## Usage
 
 Fonts are used in:
 
-- Text styles
-
+- [Text Styles](/creator/docs/project/text-styles/)

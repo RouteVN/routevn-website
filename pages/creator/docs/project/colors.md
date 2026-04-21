@@ -4,7 +4,11 @@ title: Colors
 sidebarId: colors
 ---
 
-[screenshot of colors page]
+<img
+  src="/public/creator/docs/reference/colors-1.png"
+  alt="Colors page"
+  style="width: 100%; height: auto; display: block; border: 1px solid var(--border); box-sizing: border-box;"
+/>
 
 All UI colors used in the visual novel need to be defined here.
 This allows more consistency and makes it easier to change colors while maintaing the consistency

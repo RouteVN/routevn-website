@@ -4,23 +4,41 @@ title: Versions
 sidebarId: versions
 ---
 
-Use this section to track RouteVN Creator release versions and keep your projects aligned.
+You need to create a specific version of the project before you can export it for distribution.
 
-- Review version numbers and notes before updating.
-- Confirm compatibility with your current project format.
-- Keep backups when updating major versions.
-- After a version is created, you can:
-  - Download the ZIP build for web release.
-  - Windows, macOS, and Linux release builds are coming soon.
+## Creating a new version
 
-## Uploading to itch.io
+Specify a version name and notes.
 
-itch.io is a popular destination for releasing indie visual novels.  
+- Version name can be anything, but is recommended you use an incremental numbering system
 
-Here is a quick guide:
+## Export
 
-- Go to itch.io.
-- We assume you have already created an account.
-- Click **Upload game**.
-- Select **Web Game**.
-- Upload the ZIP file.
+### Web
+
+After you create a version, there will be a button to export it as a Zip file for web distrubution.
+
+This zip file is ready to be used and publish into platforms that support web games.
+
+For publishing guidance, see [Publish](/creator/docs/release/publish/)
+
+### Windows
+
+Coming Soon
+
+### MacOS
+
+Coming Soon
+
+### Android Apk
+
+Coming Soon
+
+### iOS
+
+Coming Soon
+
+### Linux
+
+Coming Soon
+

@@ -4,7 +4,9 @@ title: Characters
 sidebarId: line-actions-characters
 ---
 
-Characters is used to add sprites on the screen
+[screenshot of character sprites]
+
+This is used to add character sprites on the screen
 
 There can be zero, one, or multiple characters at a time.
 
@@ -13,7 +15,8 @@ There can be zero, one, or multiple characters at a time.
 - Click the add button
 - Choose the character
 - Choose the sprite
-- Adjust the transform to position the character in the right location
+- Adjust the transform and animation
+
 
 ## Updating a character sprite
 
@@ -22,4 +25,8 @@ Click at the character to change sprite
 ## Removing character
 
 Right click at the character to show a dropdown menu and click remove
+
+## Notes
+
+- The same character can be added multiple times
 

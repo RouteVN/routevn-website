@@ -4,7 +4,11 @@ title: Sounds
 sidebarId: sounds
 ---
 
-[Screenshot of sounds page]
+<img
+  src="/public/creator/docs/reference/sounds-1.png"
+  alt="Project page"
+  style="width: 100%; height: auto; display: block; border: 1px solid var(--border); box-sizing: border-box;"
+/>
 
 On this page you can upload all sound files for your project.
 Common categories include BGM (Background music), and SFX (Sound effects).
@@ -27,8 +31,6 @@ You can upload single or multiple sounds at once.
 ## Previewing a sound
 
 - Double click on a sound item and it will start playing
-
-[Video of playing sound]
 
 <!-- ## Keyboard Shortcuts -->
 

@@ -15,42 +15,51 @@ footer:
     width: 110
     height: 20
   social:
-    - svg: discord
+    - name: Discord
+      svg: discord
       href: https://discord.gg/8J9dyZSu9C
-    - svg: bluesky
+    - name: Bluesky
+      svg: bluesky
       href: https://bsky.app/profile/routevn.bsky.social
-    - svg: x
+    - name: X
+      svg: x
       href: https://x.com/routevn
-    - svg: github
+    - name: GitHub
+      svg: github
       href: https://github.com/RouteVN
-    - svg: instagram
+    - name: Instagram
+      svg: instagram
       href: https://www.instagram.com/routevn
-    - svg: reddit
+    - name: Reddit
+      svg: reddit
       href: https://www.reddit.com/r/routevn/
-    # - svg: youtube
-    #   href: https://www.youtube.com/@routevn
-    - svg: linkedin
+    - name: YouTube
+      svg: youtube
+      href: https://www.youtube.com/@routevn
+    - name: LinkedIn
+      svg: linkedin
       href: https://www.linkedin.com/showcase/110652448
   columns:
     - links:
         # - text: About
         #   href: /about/
-        # - text: Creator Docs
-        #   href: /creator/docs/introduction/
+        - text: Creator Docs
+          href: /creator/docs/intro/
         - text: Changelog
           href: /creator/changelog/
         - text: Blog
           href: /blog/
+    - links:
         - text: Hiring
           href: /hiring/
+        - text: Contact
+          href: https://tally.so/r/wzZ7rM
+          newTab: true
     - links:
         - text: Privacy Policy
           href: /agreement/privacy-policy/1-0-0/
         - text: Terms of Service
           href: /agreement/terms-of-service/1-0-0/
-        - text: Contact
-          href: https://tally.so/r/wzZ7rM
-          newTab: true
 
 socialPage:
   title: Follow RouteVN
@@ -75,6 +84,10 @@ socialPage:
       handle: "@routevn"
       href: https://www.instagram.com/routevn
       svg: instagram
+    - name: YouTube
+      handle: "@routevn"
+      href: https://www.youtube.com/@routevn
+      svg: youtube
     - name: Reddit
       handle: "r/routevn"
       href: https://www.reddit.com/r/routevn/

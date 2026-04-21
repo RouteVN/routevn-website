@@ -40,7 +40,7 @@ This includes dialogue, choices, visuals, background changes, audio, controls, v
 - [Choices](/creator/docs/line-actions/choices/)
 - [Background](/creator/docs/line-actions/background/)
 - [BGM](/creator/docs/line-actions/bgm/)
-- [Sound Effects](/creator/docs/line-actions/sound-effects/)
+- [Sound Effects](/creator/docs/line-actions/sfx/)
 - [Characters](/creator/docs/line-actions/characters/)
 - [Section Transition](/creator/docs/line-actions/section-transition/)
 - [Visual](/creator/docs/line-actions/visual/)
@@ -48,27 +48,13 @@ This includes dialogue, choices, visuals, background changes, audio, controls, v
 - [Next Line Config](/creator/docs/line-actions/next-line-config/)
 - [Toggle Auto Mode](/creator/docs/line-actions/toggle-auto-mode/)
 - [Toggle Skip Mode](/creator/docs/line-actions/toggle-skip-mode/)
-- [Push Layered View](/creator/docs/line-actions/push-layered-view/)
-- [Pop Layered View](/creator/docs/line-actions/pop-layered-view/)
-- [Update Variable](/creator/docs/line-actions/update-variable/)
 - [Controls](/creator/docs/line-actions/controls/)
-- [Conditional](/creator/docs/line-actions/conditional/)
 
 ## Release
 
 - [Versions](/creator/docs/release/versions/): release-related information and export/version workflow
+- [Publish](/creator/docs/release/publish/): publishing guidance for released builds
 
 ## Settings
 
 The About page is available in the app settings, but it does not currently have a dedicated documentation page.
-
-## Keyboard navigation
-
-You can use keyboard shortcuts to jump to common pages quickly.
-For the full list, see [Keyboard Shortcuts](/creator/docs/keyboard-shortcuts/).
-
-Examples:
-
-- `gp`: Project
-- `gi`: Images
-- `gs`: Sounds

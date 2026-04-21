@@ -4,7 +4,11 @@ title: Images
 sidebarId: images
 ---
 
-[screenshot images page]
+<img
+  src="/public/creator/docs/reference/images-2.png"
+  alt="Images page"
+  style="width: 100%; height: auto; display: block; border: 1px solid var(--border); box-sizing: border-box;"
+/>
 
 The images page is a flexible page to manage all visual assets including Background, Event CG, Visual Effects, UI assets.
 
@@ -74,4 +78,3 @@ Inherits file exploer ones
 Preview
 
 Exit
-

@@ -4,7 +4,11 @@ title: Scene Editor
 sidebarId: scene-editor
 ---
 
-[screenshot of scene editor]
+<img
+  src="/public/creator/docs/reference/scene-editor-1.png"
+  alt="Scene editor"
+  style="width: 100%; height: auto; display: block; border: 1px solid var(--border); box-sizing: border-box;"
+/>
 
 The scene editor is likely the page where largest amount of time is spent.
 This is where you write the actual content for the visual novel.
@@ -111,15 +115,11 @@ Below is a list of all actions:
 - [Background](/creator/docs/line-actions/background/) — set or replace the scene background.
 - [Visual](/creator/docs/line-actions/visual/) — edit visual object entries in the current line.
 - [Base Layout](/creator/docs/line-actions/base/) — set a base UI/layout template for a line.
-- [Push Layered View](/creator/docs/line-actions/push-layered-view/) — open a temporary overlay.
-- [Pop Layered View](/creator/docs/line-actions/pop-layered-view/) — close the latest layered overlay.
 - [Characters](/creator/docs/line-actions/characters/) — add, replace, or remove character entries.
 - [BGM](/creator/docs/line-actions/bgm/) — control background music state.
-- [Sound Effects](/creator/docs/line-actions/sound-effects/) — play one-shot or grouped effects.
+- [Sound Effects](/creator/docs/line-actions/sfx/) — play one-shot or grouped effects.
 - [Next Line](/creator/docs/line-actions/next-line/) — force direct line progression.
 - [Set Next Line Config](/creator/docs/line-actions/next-line-config/) — set default advancement behavior.
 - [Controls](/creator/docs/line-actions/controls/) — tune interaction behavior (click, autoplay settings).
 - [Toggle Auto Mode](/creator/docs/line-actions/toggle-auto-mode/) — enable or disable auto progression.
 - [Toggle Skip Mode](/creator/docs/line-actions/toggle-skip-mode/) — enable or disable skip behavior.
-- [Update Variable](/creator/docs/line-actions/update-variable/) — update flags, counters, or branching state.
-
