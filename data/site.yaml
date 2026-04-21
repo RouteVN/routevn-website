@@ -45,7 +45,7 @@ footer:
         #   href: /about/
         - text: Creator Docs
           href: /creator/docs/intro/
-        - text: Changelog
+        - text: Creator Changelog
           href: /creator/changelog/
         - text: Blog
           href: /blog/
@@ -243,5 +243,10 @@ creator:
       title: Bring your Visual Novel to life
       subtitle: Download RouteVN Creator to start creating
       cta:
+        label: Documentation
+        href: /creator/docs/intro/
+        variant: se
+      secondaryCta:
         label: Download
         href: /creator/download/
+        variant: pr
