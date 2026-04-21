@@ -38,4 +38,4 @@ Double click font item to preview the font glyphs
 
 Fonts are used in:
 
-- [Text Styles](/creator/docs/project/text-styles/)
+- [Text Styles](/creator/docs/text-styles/)

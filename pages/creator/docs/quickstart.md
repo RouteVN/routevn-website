@@ -60,13 +60,13 @@ After successful installation and open the application, you will be on the proje
 
 The first time you should see an empty list of projects, but it means the application is runninig successfully.
 
-Proceed to the [project guide](/creator/docs/project) to create your first project
+Proceed to the [Projects guide](/creator/docs/projects) to create your first project
 
 ## Updating the application
 
 RouteVN Creator is under active development and you should expect to see updates every week.
 
-You can check the [Changelog](/creator/docs/changelog) for the full list of updates
+You can check the [Changelog](/creator/changelog/) for the full list of updates
 
 Below is how you can get the latest version:
 
@@ -79,5 +79,4 @@ Below is how you can get the latest version:
   - If there is a new version avaialble, it will ask you to update, otherwise it will just tell you that you're already on the latest version
 
 
-Once you are done with the quickstart, continue to the [Page Index](/creator/docs/application-layout/) to explore the rest of the documentation.
-
+Once you are done with the quickstart, continue to the [Page Index](/creator/docs/page-index/) to explore the rest of the documentation.
