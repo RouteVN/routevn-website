@@ -37,3 +37,4 @@ seo:
   title: ${site.creator.about.cta.title}
   subtitle: ${site.creator.about.cta.subtitle}
   cta: ${site.creator.about.cta.cta}
+  secondaryCta: ${site.creator.about.cta.secondaryCta}

@@ -5,11 +5,11 @@
         - rtgl-view g="xl" md-w=f w="1fg" ah="s":
             - 'a href="/" style="display: contents"':
                 - 'rtgl-image h="${site.footer.logo.height}" w="${site.footer.logo.width}" src="${site.footer.logo.src}" alt="${site.footer.logo.alt}"':
-            - rtgl-view d="h" g="lg" av="c":
+            - 'rtgl-view style="display: grid; grid-template-columns: repeat(4, 20px); gap: 16px; align-items: center;"':
                 - $for social in site.footer.social:
                     - 'a href="${social.href}" target="_blank" rel="noreferrer" aria-label="Visit our ${social.name} page" style="display: contents"':
                         - 'rtgl-svg cur="p" f="se-fg" svg="${social.svg}" wh="20"':
-        - rtgl-view md-d=v d="h" md-w=f w="2fg" md-g=lg:
+        - rtgl-view md-d=v d="h" md-w=f w="2fg" md-g=lg g="xl":
             - $for column in site.footer.columns:
                 - rtgl-view d="h" md-w=f w="1fg" md-ah=s ah="c":
                     - rtgl-view g="lg":

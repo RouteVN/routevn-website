@@ -3,7 +3,7 @@ template: social
 title: Follow RouteVN
 seo:
   title: Follow RouteVN
-  description: Scan and tap to follow RouteVN on Instagram, Discord, X, Bluesky, Reddit, LinkedIn, and GitHub.
+  description: Scan and tap to follow RouteVN on Instagram, YouTube, Discord, X, Bluesky, Reddit, LinkedIn, and GitHub.
 ---
 - 'rtgl-view w="f" g="xl" p="xl" br="xl" bw="xs" bgc="se"':
     - rtgl-view w="f" ah="c":

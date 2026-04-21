@@ -13,8 +13,8 @@
                 - rtgl-sidebar selectedItemId=${sidebarId} header="${encodeURIComponent(jsonStringify(docs.header))}" items="${encodeURIComponent(jsonStringify(docs.items))}":
             - rtgl-view md-hide xl-show hide w=272:
             - rtgl-view w="1fg" ah=c:
-                - rtgl-view pv="lg" lg-w="100vw" w="720" ph="xl" sv id="content-container":
-                    - rtgl-text s="h1" mb="md": ${title}
+                - rtgl-view pt="xl" pb="lg" lg-w="100vw" w="720" ph="xl" sv id="content-container":
+                    - rtgl-text s="h1" mb="xl": ${title}
                     - "${content}"
                     - rtgl-view h=200:
             - 'rtgl-view xl-hide style="position: fixed; right: 0"':

@@ -18,6 +18,9 @@
             - rtgl-view pos="abs" edge="t" ah="c" bgc="bg":
                 - $partial: navbar1
                   title: ${site.navbar.title}
+                  secondaryCta:
+                    label: Documentation
+                    href: /creator/docs/intro/
                   cta:
                     label: Download
                     href: /creator/download/

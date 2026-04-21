@@ -2,13 +2,120 @@ header:
   label: Creator Docs
   href: /creator/about
 items:
-  - title: "Getting Started"
+  - title: "General"
     type: groupLabel
     items:
-      - id: introduction
+      - id: intro
         title: "Introduction"
-        href: "/creator/docs/introduction"
-      - id: getting-started
-        title: "Getting Started"
-        href: "/creator/docs/getting-started"
-
+        href: "/creator/docs/intro"
+      - id: quickstart
+        title: "Quickstart"
+        href: "/creator/docs/quickstart"
+      - id: application-layout
+        title: "Page Index"
+        href: "/creator/docs/application-layout"
+      - id: file-explorer
+        title: "File Explorer"
+        href: "/creator/docs/file-explorer"
+      - id: features-limitations
+        title: "Features & Limitations"
+        href: "/creator/docs/features-and-limitations"
+  - title: "Project"
+    type: groupLabel
+    items:
+      - id: project
+        title: "Project"
+        href: "/creator/docs/project"
+      - id: images
+        title: "Images"
+        href: "/creator/docs/project/images"
+      - id: sounds
+        title: "Sounds"
+        href: "/creator/docs/project/sounds"
+      - id: videos
+        title: "Videos"
+        href: "/creator/docs/project/videos"
+      - id: characters
+        title: "Characters"
+        href: "/creator/docs/project/characters"
+      - id: transforms
+        title: "Transforms"
+        href: "/creator/docs/project/transforms"
+      - id: animations
+        title: "Animations"
+        href: "/creator/docs/project/animations"
+      - id: colors
+        title: "Colors"
+        href: "/creator/docs/project/colors"
+      - id: fonts
+        title: "Fonts"
+        href: "/creator/docs/project/fonts"
+      - id: project-controls
+        title: "Controls"
+        href: "/creator/docs/project/controls"
+      - id: text-styles
+        title: "Text Styles"
+        href: "/creator/docs/project/text-styles"
+      - id: layouts
+        title: "Layouts"
+        href: "/creator/docs/project/layouts"
+  - title: "Scene"
+    type: groupLabel
+    items:
+      - id: scene-map
+        title: "Scene Map"
+        href: "/creator/docs/scene/scene-map"
+      - id: scene-editor
+        title: "Scene Editor"
+        href: "/creator/docs/scene/scene-editor"
+  - title: "Line Actions"
+    type: groupLabel
+    items:
+      - id: dialogue
+        title: "Dialogue"
+        href: "/creator/docs/line-actions/dialogue"
+      - id: choices
+        title: "Choices"
+        href: "/creator/docs/line-actions/choices"
+      - id: background
+        title: "Background"
+        href: "/creator/docs/line-actions/background"
+      - id: bgm
+        title: "BGM"
+        href: "/creator/docs/line-actions/bgm"
+      - id: sound-effects
+        title: "Sound Effects"
+        href: "/creator/docs/line-actions/sfx"
+      - id: line-actions-characters
+        title: "Characters"
+        href: "/creator/docs/line-actions/characters"
+      - id: section-transition
+        title: "Section Transition"
+        href: "/creator/docs/line-actions/section-transition"
+      - id: visual
+        title: "Visual"
+        href: "/creator/docs/line-actions/visual"
+      - id: next-line
+        title: "Next Line"
+        href: "/creator/docs/line-actions/next-line"
+      - id: toggle-auto-mode
+        title: "Toggle Auto Mode"
+        href: "/creator/docs/line-actions/toggle-auto-mode"
+      - id: toggle-skip-mode
+        title: "Toggle Skip Mode"
+        href: "/creator/docs/line-actions/toggle-skip-mode"
+      - id: controls
+        title: "Controls"
+        href: "/creator/docs/line-actions/controls"
+      - id: next-line-config
+        title: "Next Line Config"
+        href: "/creator/docs/line-actions/next-line-config"
+  - title: "Release"
+    type: groupLabel
+    items:
+      - id: versions
+        title: "Versions"
+        href: "/creator/docs/release/versions"
+      - id: publish
+        title: "Publish"
+        href: "/creator/docs/release/publish"
