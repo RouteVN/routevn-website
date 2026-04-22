@@ -6,6 +6,6 @@
     "screenshots": "rtgl sites screenshots"
   },
   "devDependencies": {
-    "rtgl": "1.1.3"
+    "rtgl": "1.1.4"
   }
 }
