@@ -1,3 +1,15 @@
+imports:
+  templates:
+    documentation: https://cdn.jsdelivr.net/npm/@rettangoli/sitekit@1.0.7/sitekit/templates/docs.yaml
+  partials:
+    seo: https://cdn.jsdelivr.net/npm/@rettangoli/sitekit@1.0.7/sitekit/partials/seo.yaml
+    mobile-nav: https://cdn.jsdelivr.net/npm/@rettangoli/sitekit@1.0.7/sitekit/partials/mobile-nav.yaml
+    docs-sidebar: https://cdn.jsdelivr.net/npm/@rettangoli/sitekit@1.0.7/sitekit/partials/docs-sidebar.yaml
+
+data:
+  themeCssHref: /public/theme.css
+  themeBodyClass: dark
+
 markdownit:
   html: true
   linkify: true

@@ -10,6 +10,39 @@
   var overlay = document.getElementById('mobile-nav-overlay');
   var icon = document.getElementById('mobile-menu-icon');
   var sidebar = document.querySelector('#mobile-nav-overlay rtgl-sidebar');
+  var forwardedBodyScrollFrame = null;
+
+  function getScrollRoot() {
+    return document.scrollingElement || document.body || document.documentElement;
+  }
+
+  function getPageScrollY() {
+    var scrollRoot = getScrollRoot();
+    return Math.max(
+      window.scrollY || window.pageYOffset || 0,
+      (scrollRoot && scrollRoot.scrollTop) || 0,
+      (document.body && document.body.scrollTop) || 0,
+      (document.documentElement && document.documentElement.scrollTop) || 0
+    );
+  }
+
+  function bridgeBodyScrollToWindow() {
+    var scrollRoot = getScrollRoot();
+    if (!scrollRoot || scrollRoot === document.documentElement || scrollRoot === window) {
+      return;
+    }
+
+    scrollRoot.addEventListener('scroll', function () {
+      if (forwardedBodyScrollFrame !== null) {
+        return;
+      }
+
+      forwardedBodyScrollFrame = window.requestAnimationFrame(function () {
+        forwardedBodyScrollFrame = null;
+        window.dispatchEvent(new Event('scroll'));
+      });
+    }, { passive: true });
+  }
 
   function isMobileViewport() {
     return window.matchMedia(MOBILE_MEDIA_QUERY).matches;
@@ -31,10 +64,12 @@
     setNavHidden(false);
   }
 
+  bridgeBodyScrollToWindow();
+
   var refreshAutoHide = function () {};
 
   if (navElements.length > 0) {
-    var lastY = Math.max(window.scrollY || window.pageYOffset || 0, 0);
+    var lastY = getPageScrollY();
     var ticking = false;
 
     for (var n = 0; n < navElements.length; n += 1) {
@@ -43,7 +78,7 @@
     }
 
     refreshAutoHide = function () {
-      var currentY = Math.max(window.scrollY || window.pageYOffset || 0, 0);
+      var currentY = getPageScrollY();
 
       if (!isMobileViewport()) {
         showNavbar();
@@ -76,28 +111,20 @@
       lastY = currentY;
     };
 
-    window.addEventListener(
-      'scroll',
-      function () {
-        if (ticking) {
-          return;
-        }
-        ticking = true;
-        window.requestAnimationFrame(function () {
-          refreshAutoHide();
-          ticking = false;
-        });
-      },
-      { passive: true }
-    );
-
-    window.addEventListener(
-      'resize',
-      function () {
+    window.addEventListener('scroll', function () {
+      if (ticking) {
+        return;
+      }
+      ticking = true;
+      window.requestAnimationFrame(function () {
         refreshAutoHide();
-      },
-      { passive: true }
-    );
+        ticking = false;
+      });
+    }, { passive: true });
+
+    window.addEventListener('resize', function () {
+      refreshAutoHide();
+    }, { passive: true });
 
     refreshAutoHide();
   }
@@ -114,7 +141,9 @@
     }
 
     btn.setAttribute('aria-expanded', open ? 'true' : 'false');
-    btn.setAttribute('aria-label', open ? 'Close docs navigation' : 'Open docs navigation');
+    var openLabel = btn.getAttribute('data-open-label') || 'Open navigation menu';
+    var closeLabel = btn.getAttribute('data-close-label') || 'Close navigation menu';
+    btn.setAttribute('aria-label', open ? closeLabel : openLabel);
     if (icon) {
       icon.setAttribute('svg', open ? 'close' : 'menu');
     }
@@ -133,20 +162,23 @@
       });
     }
 
+    overlay.addEventListener('click', function (event) {
+      var closeElm = event.target && event.target.closest && event.target.closest('[data-mobile-nav-close="true"]');
+      if (closeElm) {
+        setOpen(false);
+      }
+    });
+
     document.addEventListener('keydown', function (event) {
       if (event.key === 'Escape') {
         setOpen(false);
       }
     });
 
-    window.addEventListener(
-      'resize',
-      function () {
-        if (window.matchMedia('(min-width: 769px)').matches) {
-          setOpen(false);
-        }
-      },
-      { passive: true }
-    );
+    window.addEventListener('resize', function () {
+      if (window.matchMedia('(min-width: 769px)').matches) {
+        setOpen(false);
+      }
+    }, { passive: true });
   }
 })();
