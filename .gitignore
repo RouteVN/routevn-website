@@ -3,6 +3,7 @@
 
 # Build output
 /_site
+/.rettangoli
 
 # Local settings
 /.claude
