@@ -12,7 +12,15 @@ sidebarId: images
 
 The images page is a flexible page to manage all visual assets including Background, Event CG, Visual Effects, UI assets.
 
-Character sprites should not be added here, there is a dedicated page for character sprites.
+Character sprites should not be added here. Use the [character sprites](/creator/docs/characters/#character-sprites) section instead.
+
+## Image resolution
+
+- Image dimensions should match or be relative to the project [resolution](/creator/docs/projects/#resolution).
+- If your project resolution is 1920 x 1080, you should usually upload background and CG images with the same dimensions.
+- You may sometimes want to upload a larger image when you intend to zoom into it. This is fine, but it is a more advanced use case.
+- Raw images can be much larger than size-optimized images, even with the same dimensions.
+- The visual difference is usually small. For large projects with many images, size-optimized images help reduce disk space, memory usage, and download bandwidth.
 
 ## Supported image formats
 
@@ -23,38 +31,50 @@ The following file formats are supported:
 
 ## Upload images
 
-You can upload single or multiple imagaes at once
+You can upload single or multiple images at once.
 
-- Click the upload button, and select single on multiple images
-- Drag and drop images directly to are below the folder
+There are 2 ways to upload:
+
+- Click the upload button and select one or more images.
+- Drag and drop images directly into the area below the folder.
+
+When you upload multiple images, RouteVN Creator uploads them one by one. This is usually fast, but it can take time for large batches. Stay on this page and keep the application open until the upload finishes.
 
 ## Updating an image
 
-If you want to update an image
+There is a significant difference between updating an existing image and uploading a new one.
 
-[Animaetd WebP of updating an image]
+If an image is already used in places such as layouts or section lines, replacing the image updates those references automatically.
 
-## Previewing an image
+If you upload a new image instead, you need to manually update the image reference in each layout or section line that uses it.
+
+To update an image:
+
+1. Select an image.
+2. In the top right, click the image name or edit icon.
+3. Click the image to upload a new one.
+
+## Navigating the page
+
+### File explorer
+
+Read the [File Explorer](/creator/docs/file-explorer/) docs for general navigation.
+
+### Previewing an image
 
 - Double click an image to preview it in a larger dimension
 - Click anywhere when the image is in preview to hide it
 
-[Animated WebP of previwing an image]
-
-## File explorer
-
-See File Exploer.
-
 ## Organizing your images assets
 
-The folder system is pretty flexible, it supports subfolders. A good way to start is to split into such folders:
+The folder system is flexible and supports subfolders. A simple starting structure is:
 
 - Background
 - CG
 - UI
 - VFX
 
-Once a project gets large, you can consider splitting into chapters. For example:
+As the project grows, you can split assets by chapter:
 
 - Background
   - Chapter 1
@@ -63,18 +83,31 @@ Once a project gets large, you can consider splitting into chapters. For example
   - Chapter 1
   - Chapter 2
 
-or even
+You can also use chapters as the top-level folders:
 
 - Chapter 1
 - Chapter 2
 
-Organize it freely and adapt to what works best for you and your project
+Use the structure that works best for your project.
+
+## Usages
+
+Images are used in the following places:
+
+- [Layouts](/creator/docs/layouts/)
+- [Line action: Background](/creator/docs/line-actions/background/)
+- [Line action: Visuals](/creator/docs/line-actions/visual/)
+- [Animation editor: Mask](/creator/docs/animations/#animation-editor-page)
 
 
 ## Keyboard shortcuts
 
-Inherits file exploer ones
+The Images page inherits the general [File Explorer keyboard shortcuts](/creator/docs/file-explorer/#keyboard-shortcuts).
 
-Preview
+- `Enter`: Opens the preview for the selected image.
 
-Exit
+When previewing an image:
+
+- `Esc`: Closes the image preview.
+- `↑` or `←`: Shows the previous image.
+- `↓` or `→`: Shows the next image.

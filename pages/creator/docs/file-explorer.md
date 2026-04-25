@@ -4,7 +4,7 @@ title: File Explorer
 sidebarId: file-explorer
 ---
 
-The file explorler is the panel that you see in the left side, it is used is used a in many places and behaves the same way.
+The file explorer is the panel that you see on the left side. It is used in many places and behaves the same way.
 
 ## Empty data
 
@@ -12,8 +12,20 @@ Empty data, just click to add a folder or item.
 
 ## Folder vs Items
 
-Folders can have children
-Non folder items cannot have children
+Folders can have children.
+Non-folder items cannot have children.
+
+## Creating a folder
+
+To create a new folder at the root level:
+
+1. Right click the empty space below the items.
+2. Click `Create folder` in the dropdown menu.
+
+To create a subfolder:
+
+1. Right click a folder.
+2. Click `Create folder` in the dropdown menu.
 
 ## Shrink and expand
 
@@ -39,10 +51,16 @@ File explorer is used to move and organize items
 
 - Items can be double clicked, it will usually bring a edit form to edit the item
 
+## Keyboard shortcuts
 
+- `Enter`: Opens or edits the selected item.
+- `↑`: Moves to the previous item.
+- `↓`: Moves to the next item.
 
+When a folder is selected:
 
-
+- `←`: Shrinks the folder.
+- `→`: Expands the folder.
 
 
 

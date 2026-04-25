@@ -1,0 +1,75 @@
+# RouteVN Creator documentation
+
+RouteVN Creator is a desktop application for creating Visual Novels without coding.
+These docs explain the app concepts, where features are located, and how to use each part of the editor.
+
+Use this file as a quick index for the RouteVN Creator documentation.
+All documentation pages live under `/creator/docs/`.
+
+## Start here
+
+- Introduction: /creator/docs/introduction/
+- Quickstart: /creator/docs/quickstart/
+- Page Index: /creator/docs/page-index/
+- Features & Limitations: /creator/docs/features-and-limitations/
+
+## Project basics
+
+- Projects: /creator/docs/projects/
+- File Explorer: /creator/docs/file-explorer/
+- Tags: /creator/docs/tags/
+
+## Project resources
+
+- Images: /creator/docs/images/
+- Sounds: /creator/docs/sounds/
+- Videos: /creator/docs/videos/
+- Characters: /creator/docs/characters/
+- Colors: /creator/docs/colors/
+- Fonts: /creator/docs/fonts/
+- Text Styles: /creator/docs/text-styles/
+- Controls: /creator/docs/controls/
+- Variables: /creator/docs/variables/
+- Layouts: /creator/docs/layouts/
+- Transforms: /creator/docs/transforms/
+- Animations: /creator/docs/animations/
+- Particles: /creator/docs/particles/
+- Spritesheets: /creator/docs/spritesheets/
+
+## Scene editing
+
+- Scene Map: /creator/docs/scene-map/
+- Scene Editor: /creator/docs/scene-editor/
+
+## Line actions
+
+Line actions define what happens on each line in the Scene Editor.
+
+- Dialogue: /creator/docs/line-actions/dialogue/
+- Choices: /creator/docs/line-actions/choices/
+- Background: /creator/docs/line-actions/background/
+- BGM: /creator/docs/line-actions/bgm/
+- Sound Effects: /creator/docs/line-actions/sfx/
+- Characters: /creator/docs/line-actions/characters/
+- Visual: /creator/docs/line-actions/visual/
+- Controls: /creator/docs/line-actions/controls/
+- Conditional: /creator/docs/line-actions/conditional/
+- Update Variable: /creator/docs/line-actions/update-variable/
+- Section Transition: /creator/docs/line-actions/section-transition/
+- Next Line: /creator/docs/line-actions/next-line/
+- Set Next Line Config: /creator/docs/line-actions/next-line-config/
+- Toggle Auto Mode: /creator/docs/line-actions/toggle-auto-mode/
+- Toggle Skip Mode: /creator/docs/line-actions/toggle-skip-mode/
+- Push Layered View: /creator/docs/line-actions/push-layered-view/
+- Pop Layered View: /creator/docs/line-actions/pop-layered-view/
+
+## Release
+
+- Versions: /creator/docs/versions/
+- Web Server: /creator/docs/web-server/
+- Publish: /creator/docs/publish/
+
+## Support
+
+For support links, see the Support section in the Introduction:
+/creator/docs/introduction/#support

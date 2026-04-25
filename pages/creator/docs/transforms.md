@@ -44,3 +44,11 @@ Anchor indicates where the image should be positioned relative to the position. 
   alt="Project page"
   style="width: 100%; height: auto; display: block; border: 1px solid var(--border); box-sizing: border-box;"
 />
+
+## Usages
+
+Transforms are used in the following places:
+
+- [Line action: Background](/creator/docs/line-actions/background/)
+- [Line action: Characters](/creator/docs/line-actions/characters/)
+- [Line action: Visuals](/creator/docs/line-actions/visual/)

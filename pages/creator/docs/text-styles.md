@@ -42,5 +42,4 @@ Following are properties you can edit for text styles
 
 Text styles are used in:
 
-- Layout editor
-
+- [Layout editor](/creator/docs/layouts/#layout-editor)
