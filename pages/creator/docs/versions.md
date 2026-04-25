@@ -20,6 +20,8 @@ After you create a version, there will be a button to export it as a Zip file fo
 
 This zip file is ready to be used and publish into platforms that support web games.
 
+To test the exported web build locally, see [Web Server](/creator/docs/web-server/).
+
 For publishing guidance, see [Publish](/creator/docs/publish/)
 
 ### Windows

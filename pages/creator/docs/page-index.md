@@ -18,9 +18,12 @@ The Project area contains the main resources used by your visual novel.
 - [Characters](/creator/docs/characters/): character definitions and related resources
 - [Transforms](/creator/docs/transforms/): reusable transform definitions
 - [Animations](/creator/docs/animations/): reusable update and transition animations
+- [Particles](/creator/docs/particles/): reusable particle effects
+- [Spritesheets](/creator/docs/spritesheets/): spritesheet animation resources
 - [Colors](/creator/docs/colors/): color definitions used across the UI
 - [Fonts](/creator/docs/fonts/): font resources
 - [Controls](/creator/docs/controls/): project-level control definitions
+- [Variables](/creator/docs/variables/): project variables used by actions and conditions
 - [Text Styles](/creator/docs/text-styles/): reusable text styling presets
 - [Layouts](/creator/docs/layouts/): UI layouts and page structures
 
@@ -49,10 +52,12 @@ This includes dialogue, choices, visuals, background changes, audio, controls, v
 - [Toggle Auto Mode](/creator/docs/line-actions/toggle-auto-mode/)
 - [Toggle Skip Mode](/creator/docs/line-actions/toggle-skip-mode/)
 - [Controls](/creator/docs/line-actions/controls/)
+- [Update Variable](/creator/docs/line-actions/update-variable/)
 
 ## Release
 
 - [Versions](/creator/docs/versions/): release-related information and export/version workflow
+- [Web Server](/creator/docs/web-server/): local web server for testing exported web builds
 - [Publish](/creator/docs/publish/): publishing guidance for released builds
 
 ## Settings

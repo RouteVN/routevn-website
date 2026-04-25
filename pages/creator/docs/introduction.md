@@ -23,11 +23,20 @@ Welcome to the RouteVN Creator docs. This documentation will cover everything yo
 
 ## How to use this documentation
 
-- The user interface is designed to be simple and intuitive, so you can explore and discover functionalities on your own.
-- Because we lean towards a simple and clean interface, a lot of functionalities are a bit hidden and not immediately discoverable. This documentation will cover all features including those that would be otherwise harder to discover.
+- RouteVN Creator prioritizes simplicity, so the interface stays clean and focused.
+- Because of that simple interface, some features may be hard to find at first. Once you know where they are, they are easy to use. This documentation covers all features, including those that would otherwise be harder to discover.
 - It is recommended to skim through this documentation the first time, but you do not need to read it cover to cover. A lot of the information will only matter when you are working on a specific page or feature.
 - Think of this documentation primarily as a reference that you can return to whenever you need it.
+- We only maintain one live version of this documentation, and assume you are using the latest version of RouteVN Creator.
 <!-- - There will be a `?` icon at the bottom right of the application; click it will jump to the exact documentation page -->
+
+## AI Documentation
+
+If you wish to access this documentation via an AI chatbot, you can use this prompt in your favourite AI chatbot:
+
+```text
+Read https://routevn.com/creator/docs/llms.txt I have some questions about it, help me answer.
+```
 
 ## Support
 
