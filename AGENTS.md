@@ -27,6 +27,18 @@ All documentation pages must live in:
 - Be concise: same information with fewer words is better.
 - Present user flows as step by step instructions whenever you describe actions.
 
+## Punctuation and list style
+
+- End complete sentences in paragraphs with a period.
+- Do not end headings with periods.
+- End full-sentence bullets with a period.
+- End instruction bullets with a period.
+- Do not end short label bullets with a period.
+- Do not end link or index bullets with a period when they are only labels or short fragments.
+- Keep each list parallel. If one item needs sentence punctuation and another does not, rewrite the list so all items use the same structure.
+- Use numbered lists only when order matters or when the user should follow a sequence.
+- Use unnumbered bullets for unordered notes, options, references, or troubleshooting checks.
+
 ## Content quality checks
 
 - Prefer real app terms over generic placeholders.
@@ -34,4 +46,4 @@ All documentation pages must live in:
 - If a feature is advanced or hidden, explain where to find it.
 - If behavior depends on something in the app, mention it directly and clearly.
 - Keep links practical and relevant.
-- Keep instructions ordered and numbered so users can follow without guessing.
+- When instructions must be followed in order, keep them ordered and numbered so users can follow without guessing.
