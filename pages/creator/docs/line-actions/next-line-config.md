@@ -4,24 +4,46 @@ title: Set Next Line Config
 sidebarId: next-line-config
 ---
 
-Next Line Config is used to control how the user can advance to the next line.
+Set Next Line Config controls how the player advances to the next line.
 
-Some common usages:
+Use it to disable click-to-advance for cutscenes, or to make a line advance automatically after a delay.
 
-- Prevent user to click to go to next line during some cut scenes or videos 
-- Automatically move to next line to get a more cinematic effect
+## Apply Mode
 
-## Options
+Apply Mode controls how long this config is used.
 
-### Manual
+Use `Single Line` when the config should apply only to the next line.
 
-- Whether to allow or disable user from manual click to move to next line
+Use `Persistent` when the config should stay active until another Set Next Line Config action changes it.
 
-### Automatic
+## Manual
 
-- Wheter to allow or disable automatic move to next line
-- Trigger: Controls how to autoamtically move to next line
-  - From complete: Delay starts counting when line content and all animatations have completed
-  - From beginnign: Delay starts counting when line first is shown
-- Delay interval: Amount of time to wait to move to nextline
+Manual controls whether the player can click to move to the next line.
 
+In the app, this is the `Click to Advance` field.
+
+Use `Yes` for normal dialogue flow.
+
+Use `No` when the line should not advance from a general click, such as during a timed sequence or video.
+
+## Auto Advance
+
+Auto Advance controls whether the line moves forward automatically.
+
+## Trigger
+
+Trigger controls when the auto-advance timer starts.
+
+Trigger appears when Auto Advance is enabled.
+
+Use `Text Complete` when the delay should start after the line content and animations complete.
+
+Use `Line Start` when the delay should start as soon as the line begins.
+
+## Delay interval
+
+Delay interval controls how long to wait before moving to the next line.
+
+Delay interval appears when Auto Advance is enabled.
+
+Enter the delay in milliseconds. For example, `1000` means 1 second.

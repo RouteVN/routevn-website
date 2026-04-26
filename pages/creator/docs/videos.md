@@ -64,7 +64,7 @@ Videos are used in the following places:
 
 - [Layouts](/creator/docs/layouts/)
 - [Line action: Background](/creator/docs/line-actions/background/)
-- [Line action: Visuals](/creator/docs/line-actions/visual/)
+- [Line action: Visuals](/creator/docs/line-actions/visuals/)
 
 ## Keyboard shortcuts
 
