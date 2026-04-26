@@ -30,13 +30,14 @@ Welcome to the RouteVN Creator docs. This documentation will cover everything yo
 - We only maintain one live version of this documentation, and assume you are using the latest version of RouteVN Creator.
 <!-- - There will be a `?` icon at the bottom right of the application; click it will jump to the exact documentation page -->
 
-## AI Documentation
+<!-- ## AI Documentation
 
 If you wish to access this documentation via an AI chatbot, you can use this prompt in your favourite AI chatbot:
 
 > Read this link. I have some questions about it, do your best to answer while referring to the documentations.
 >
 > https://routevn.com/creator/docs/llms.md
+-->
 
 ## Support
 
