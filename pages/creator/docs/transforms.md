@@ -51,4 +51,4 @@ Transforms are used in the following places:
 
 - [Line action: Background](/creator/docs/line-actions/background/)
 - [Line action: Characters](/creator/docs/line-actions/characters/)
-- [Line action: Visuals](/creator/docs/line-actions/visual/)
+- [Line action: Visuals](/creator/docs/line-actions/visuals/)

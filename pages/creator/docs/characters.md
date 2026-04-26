@@ -39,7 +39,7 @@ You can use any image that is not too small. RouteVN Creator will crop it into a
 
 The shortcut is a short key that helps you use the character in dialogue commands.
 
-Read more in [Shortcut to add dialogue character](/creator/docs/line-actions/dialogue/#shortcut-to-add-dialogue-character).
+Read more in [Add dialogue speaker](/creator/docs/line-actions/dialogue/#add-dialogue-speaker).
 
 ## Usages
 

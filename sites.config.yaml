@@ -25,4 +25,4 @@ markdownit:
     slugMode: ascii
     wrap: true
 build:
-  keepMarkdownFiles: false
+  keepMarkdownFiles: true

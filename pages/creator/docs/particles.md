@@ -162,4 +162,4 @@ Read the [File Explorer](/creator/docs/file-explorer/) docs for general navigati
 Particles are used in the following places:
 
 - [Layout editor](/creator/docs/layouts/#layout-editor)
-- [Line action: Visuals](/creator/docs/line-actions/visual/)
+- [Line action: Visuals](/creator/docs/line-actions/visuals/)

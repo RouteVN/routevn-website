@@ -101,9 +101,12 @@ items:
       - id: section-transition
         title: "Section Transition"
         href: "/creator/docs/line-actions/section-transition"
-      - id: visual
-        title: "Visual"
-        href: "/creator/docs/line-actions/visual"
+      - id: reset-story-at-section
+        title: "Reset Story At Section"
+        href: "/creator/docs/line-actions/reset-story-at-section"
+      - id: visuals
+        title: "Visuals"
+        href: "/creator/docs/line-actions/visuals"
       - id: next-line
         title: "Next Line"
         href: "/creator/docs/line-actions/next-line"

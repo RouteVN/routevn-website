@@ -34,9 +34,9 @@ Welcome to the RouteVN Creator docs. This documentation will cover everything yo
 
 If you wish to access this documentation via an AI chatbot, you can use this prompt in your favourite AI chatbot:
 
-```text
-Read https://routevn.com/creator/docs/llms.txt I have some questions about it, help me answer.
-```
+> Read this link. I have some questions about it, do your best to answer while referring to the documentations.
+>
+> https://routevn.com/creator/docs/llms.md
 
 ## Support
 

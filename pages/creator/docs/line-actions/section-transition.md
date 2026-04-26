@@ -4,21 +4,29 @@ title: Section Transition
 sidebarId: section-transition
 ---
 
-[section transition]
+Section Transition moves the story to another section.
 
-Section transition enables jumping to another section.
-- The transition is instant, meaning that there will not be any interruption or transition effect. Those need to be added separatedly.
+Use it when a line should end the current path and continue from a specific section. The target can be in the current scene or another scene.
 
-## Options
+## Target
 
-- Scene: First choose a scene. Can be current scene or any other scene
-- Section: Choose the section within the scene
+Section Transition has 2 required fields:
 
-Note: Section transition can only transition to the beginning of the section, it is not possible to transition in the middle of the section. If you need to do that, it is reocmmended to split the section into multiple sections.
+- `Scene`: the scene that contains the target section
+- `Section`: the section to move to
 
-## Note
+## How it runs
 
-- You can transition to the same currnt scene and section. It could lead to an infinitite repetition or not if you have things like choices or conditionals
+When the player reaches the line, it immediately jumps to the target section.
 
+If this line also has dialogue content, the dialogue will not be shown.
 
+Section Transition always starts at the first line of the target section.
 
+## Notes
+
+### Loop
+
+You can transition to the same section you are already in.
+
+This can be useful for menu or hub flows, but it can also create an infinite loop if there is no choice, condition, or later transition that lets the player leave.

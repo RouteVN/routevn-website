@@ -433,7 +433,7 @@ Layouts are used in different places depending on their type.
 General:
 
 - [Line action: Background](/creator/docs/line-actions/background/)
-- [Line action: Visuals](/creator/docs/line-actions/visual/)
+- [Line action: Visuals](/creator/docs/line-actions/visuals/)
 - [Line action: Push Layered View](/creator/docs/line-actions/push-layered-view/)
 
 Dialogue ADV and Dialogue NVL:

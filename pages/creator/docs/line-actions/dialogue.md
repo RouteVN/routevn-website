@@ -4,71 +4,53 @@ title: Dialogue
 sidebarId: dialogue
 ---
 
-[screenshot of dialogue]
+Dialogue lets you manage the dialogue box. It is sometimes called `Message Box` in some other engines.
 
-Dialouge have 2 modes: ADV and NVL
+Dialogue has 2 modes: ADV and NVL.
 
 ## Dialogue mode
 
 ### ADV
 
-In ADV mode, the dialogue has one piece content at time. The content is made up of the main content and character name.
-
-- Dialogue Layout: select from the layouts with 'Dialogue ADV' type
-- Dialogue Character
-
-Example of ADV
-
-[screenshot]
+In ADV mode, the dialogue shows one line of content at a time. The content is made up of the dialogue text and the speaker name.
 
 ### NVL
 
-NVL mode can have mulitple lines on the screen.
-Unlike ADV, it does not automatically remove the lines from prevoiusy line.
+In NVL mode, the dialogue can show multiple lines on the screen.
 
-- Dialogue Layout: select from the layouts with 'Dialogue ADV' type
-- Dialogue Character
-
-- Clear previous line: clear content from previous line
-
-Example of NVL
-
-[screenshot]
+Unlike ADV, NVL does not automatically remove the previous dialogue lines.
 
 ## Dialogue layout
 
-Just pick the layout you need
+Pick the [dialogue layout](/creator/docs/layouts/) you want this line to use. Only layouts with the `Dialogue ADV` or `Dialogue NVL` type are shown here.
 
+## Dialogue speaker
 
-## Dialogue character
+Pick the speaker for this line from the [Characters](/creator/docs/characters/) list. The speaker name fills automatically.
 
-Pick the character.
-The name of the character will automatically fill
+### Custom Speaker Name
 
+The dialogue speaker name uses the name defined on the [Characters](/creator/docs/characters/) page by default.
 
-### Shortcut to add dialogue character
+Use Custom Speaker Name when you want this line to show a different name.
 
-Opening the dialogue form everytime to change the speaker is inefficient.
+### Persist Speaker
 
-If character speaker is the only thing you want to change there are keyboard shortcuts to do it much faster:
+By default, the selected speaker applies to the current line only. On the next line, the dialogue speaker is blank.
 
-[TODO]
+Enable Persist Speaker when the same speaker talks for multiple lines. RouteVN Creator will use this speaker for following lines until the speaker is removed or changed.
 
-### Customizing dialogue layout based on character
+## Clear Page
 
-Sometimes, we want to change the text style or the character name background for different characters.
+Clear Page is only available in NVL mode. If enabled, it clears all previous messages from the NVL page.
 
-[TODO]
+## Keyboard shortcuts
 
+### Add dialogue speaker
 
-## Clear Page (NVL only)
+Opening the dialogue form every time you change the speaker can slow down scene editing.
 
-If enabled, it will clear all all the previous messages from the NVL.
+If the speaker is the only thing you want to change, use the shortcut defined on the [Characters](/creator/docs/characters/#shortcut) page:
 
-
-
-
-
-
-
-
+- Type `c` followed by the shortcut to set the dialogue speaker.
+- Type `c0` to remove the dialogue speaker.
