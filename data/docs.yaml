@@ -59,6 +59,9 @@ items:
       - id: project-controls
         title: "Controls"
         href: "/creator/docs/controls"
+      - id: variables
+        title: "Variables"
+        href: "/creator/docs/variables"
       - id: text-styles
         title: "Text Styles"
         href: "/creator/docs/text-styles"
