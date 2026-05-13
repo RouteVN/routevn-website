@@ -47,3 +47,18 @@ All documentation pages must live in:
 - If behavior depends on something in the app, mention it directly and clearly.
 - Keep links practical and relevant.
 - When instructions must be followed in order, keep them ordered and numbered so users can follow without guessing.
+
+## Release and changelog updates
+
+When adding a new RouteVN Creator version, check each release-facing place that may need a version update:
+
+- Add a changelog page in `pages/creator/changelog` using the existing release page format.
+- Set the new changelog page `isLatest: true`.
+- Set the previous latest changelog page `isLatest: false`.
+- Update `creator.download.version` in `data/site.yaml` when the download page should show the new version.
+- Update platform download URLs in `data/site.yaml` when new artifacts are available.
+- Use the same static download base URL as the existing platform links unless the user gives a different base URL.
+- URL-encode spaces in artifact URLs.
+- Update `pages/creator/download.yaml` SEO text if platform availability changes.
+- Run `bun run build`.
+- Check the generated download page or build output for stale version text, missing buttons, or old placeholder text.
