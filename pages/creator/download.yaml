@@ -3,7 +3,7 @@ template: base
 title: Download RouteVN Creator
 seo:
   title: Download RouteVN Creator - Visual Novel Creation Tool
-  description: Download RouteVN Creator for Windows. Create visual novels easily with our intuitive editor.
+  description: Download RouteVN Creator for Windows and macOS. Create visual novels easily with our intuitive editor.
 ---
 - rtgl-view h="100":
 - rtgl-view ah="c" ph="lg" g=lg md-w="100vw" lg-w="768" w="1024":

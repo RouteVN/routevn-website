@@ -156,7 +156,9 @@ creator:
           href: https://static-1.routevn.com/routevn-creator-client/RouteVN%20Creator_1.2.2_x64-setup.exe
       - name: macOS
         svg: apple
-        comingSoon: true
+        cta:
+          label: Download for macOS
+          href: https://static-1.routevn.com/routevn-creator-client/RouteVN%20Creator_1.3.4_universal.dmg
       - name: Linux
         svg: linux
         comingSoon: true
