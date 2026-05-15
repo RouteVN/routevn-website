@@ -28,7 +28,7 @@ For publishing guidance, see [Publish](/creator/docs/publish/)
 
 Coming Soon
 
-### MacOS
+### macOS
 
 Coming Soon
 

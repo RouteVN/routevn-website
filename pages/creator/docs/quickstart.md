@@ -19,7 +19,7 @@ Download the latest version of RouteVN Creator from the [download page](/creator
   - Certificates
   - It should show that it is signed by **Yuusoft Pte. Ltd.** with Certum
 
-### MacOS
+### macOS
 
 - After downloading the `.dmg` file, double click it
 - Drag the RouteVN Creator icon into the Applications folder
@@ -27,7 +27,28 @@ Download the latest version of RouteVN Creator from the [download page](/creator
 
 ### Linux
 
-- Coming soon.
+RouteVN Creator for Linux is distributed as an AppImage. An AppImage can run without a system-wide installation.
+
+1. Download the `.AppImage` file from the [download page](/creator/download/).
+2. Optional: download the `.sha256` checksum file into the same folder as the AppImage, then verify it.
+
+   ```sh
+   sha256sum -c "RouteVN Creator_{version number}_amd64.AppImage.sha256"
+   ```
+
+   The command checks the AppImage listed in the checksum file. If it says `FAILED`, delete the downloaded files and download them again.
+
+3. Make the AppImage executable.
+
+   ```sh
+   chmod +x "RouteVN Creator_{version number}_amd64.AppImage"
+   ```
+
+4. Run the AppImage.
+
+   ```sh
+   ./"RouteVN Creator_{version number}_amd64.AppImage"
+   ```
 
 ## Data storage
 
@@ -40,9 +61,10 @@ Storaged data is split into `Application data` and `Project data`:
 This is global configuration managed by the RouteVN Creator application. It is stored in the following locations:
 
 - Windows: `C:\Users\<your-user>\AppData\Roaming\com.routevn.creator`
-- MacOS: `~/Library/Application Support/com.routevn.creator`
+- macOS: `~/Library/Application Support/com.routevn.creator`
+- Linux: `~/.config/com.routevn.creator`
 
-This is the deafult locations, you could have changed this during installation.
+These are the default locations. You may have changed this during installation.
 
 ### Project data
 
