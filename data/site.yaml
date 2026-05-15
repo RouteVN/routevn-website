@@ -158,7 +158,7 @@ creator:
         svg: apple
         cta:
           label: Download for macOS
-          href: https://static-1.routevn.com/routevn-creator-client/RouteVN%20Creator_1.3.4_universal.dmg
+          href: https://static-1.routevn.com/routevn-creator-client/RouteVN%20Creator_1.3.7_universal.dmg
       - name: Linux
         svg: linux
         comingSoon: true
