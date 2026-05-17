@@ -1,0 +1,30 @@
+---
+template: post
+author: [han4wluc]
+authorDisplay: han4wluc
+title: RouteVN Creator is now available on macOS
+tags: [blogPost]
+date: '2026-05-17'
+seo:
+  title: RouteVN Creator is now available on macOS
+  description: RouteVN Creator now has a macOS release with the same feature support as Windows.
+  ogType: article
+---
+
+# RouteVN Creator is now available on macOS
+
+This is an important step for multiplatform support. Until now, RouteVN Creator was mainly available on Windows. With this release, Mac users can start creating Visual Novels with the desktop app directly.
+
+## Download
+
+You can download the macOS release from the [RouteVN Creator download page](/creator/download/).
+
+The current macOS download is distributed as a universal `.dmg` file. It is intended for both Apple Silicon and Intel Mac devices.
+
+## Platform support
+
+All features are supported and work the same as on Windows.
+
+The exception is `.ogg` audio files, which currently do not work on macOS due to a known WebKit issue. We are working on a solution.
+
+We will also work on releasing the Linux version in the near future.
