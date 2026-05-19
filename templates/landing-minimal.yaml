@@ -1,0 +1,147 @@
+- html lang="en":
+    - head:
+        - $partial: seo1
+          page: ${page}
+          seo: ${seo}
+        - style: |
+            html,
+            body {
+              margin: 0;
+              min-height: 100%;
+              background: #000;
+              -webkit-tap-highlight-color: transparent;
+              -webkit-touch-callout: none;
+              user-select: none;
+            }
+            ::selection {
+              background: transparent;
+            }
+            body {
+              min-height: 100vh;
+              overflow: hidden;
+            }
+            .landing-shell {
+              box-sizing: border-box;
+              display: grid;
+              min-height: 100vh;
+              padding: 24px;
+              place-items: center;
+            }
+            .landing-link {
+              display: block;
+              line-height: 0;
+              -webkit-touch-callout: none;
+              width: min(90vw, 720px, calc(90vh * 3065 / 3260));
+            }
+            .landing-stage {
+              aspect-ratio: 3065 / 3260;
+              position: relative;
+              width: 100%;
+            }
+            .landing-layer {
+              display: block;
+              inset: 0;
+              height: auto;
+              position: absolute;
+              -webkit-touch-callout: none;
+              -webkit-user-drag: none;
+              transform: translate3d(0, 0, 0);
+              user-drag: none;
+              width: 100%;
+              will-change: transform;
+            }
+            .landing-layer-back {
+              z-index: 1;
+            }
+            .landing-layer-character {
+              z-index: 2;
+            }
+            .landing-layer-front {
+              z-index: 3;
+            }
+            @media (prefers-reduced-motion: reduce) {
+              .landing-layer {
+                transform: none;
+                transition: none;
+                will-change: auto;
+              }
+            }
+    - body:
+        - "${content}"
+        - script: |
+            (() => {
+              document.addEventListener("contextmenu", (event) => {
+                if (event.target.closest(".landing-stage")) {
+                  event.preventDefault();
+                }
+              });
+              document.addEventListener("dragstart", (event) => {
+                if (event.target.closest(".landing-stage")) {
+                  event.preventDefault();
+                }
+              });
+
+              const elements = Array.from(document.querySelectorAll("[data-depth]"));
+              const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
+
+              if (!elements.length || reduceMotion.matches) {
+                return;
+              }
+
+              const maxShift = 28;
+              const idleShift = 18;
+              const layers = elements.map((element) => ({
+                element,
+                depth: Number(element.dataset.depth) || 1,
+                idle: Number(element.dataset.idle) || 1,
+                phase: Number(element.dataset.phase) || 0,
+                currentX: 0,
+                currentY: 0,
+              }));
+              let pointerX = 0;
+              let pointerY = 0;
+              let frame = 0;
+
+              const update = (time) => {
+                const idleX = Math.sin(time * 0.00055) * idleShift + Math.sin(time * 0.00031) * 7;
+                const idleY = Math.cos(time * 0.00042) * idleShift + Math.sin(time * 0.00028) * 7;
+
+                layers.forEach((layer) => {
+                  const layerIdleX = idleX * layer.idle + Math.sin(time * 0.00038 + layer.phase) * 5;
+                  const layerIdleY = idleY * layer.idle + Math.cos(time * 0.00034 + layer.phase) * 5;
+                  const targetX = pointerX * layer.depth + layerIdleX;
+                  const targetY = pointerY * layer.depth + layerIdleY;
+
+                  layer.currentX += (targetX - layer.currentX) * 0.08;
+                  layer.currentY += (targetY - layer.currentY) * 0.08;
+
+                  layer.element.style.transform = "translate3d(" + layer.currentX.toFixed(2) + "px, " + layer.currentY.toFixed(2) + "px, 0)";
+                });
+
+                frame = requestAnimationFrame(update);
+              };
+
+              const setTargetFromPointer = (event) => {
+                const x = (event.clientX / window.innerWidth - 0.5) * 2;
+                const y = (event.clientY / window.innerHeight - 0.5) * 2;
+
+                pointerX = x * maxShift;
+                pointerY = y * maxShift;
+              };
+
+              window.addEventListener("pointermove", setTargetFromPointer, { passive: true });
+              window.addEventListener("mousemove", setTargetFromPointer, { passive: true });
+              window.addEventListener("pointerleave", () => {
+                pointerX = 0;
+                pointerY = 0;
+              });
+
+              frame = requestAnimationFrame(update);
+
+              reduceMotion.addEventListener("change", () => {
+                cancelAnimationFrame(frame);
+                layers.forEach((layer) => {
+                  layer.element.style.removeProperty("transform");
+                });
+              }, { once: true });
+            })();

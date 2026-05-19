@@ -1,28 +1,11 @@
 ---
-template: base
+template: landing-minimal
 title: RouteVN
 ---
-- rtgl-view:
-    - $partial: hero1
-      title: ${site.landing.mission.title}
-      subtitle: ${site.landing.mission.text}
-- rtgl-view h="100":
-- rtgl-view g=xl md-w="100vw" lg-w="768" w="1024" ph=lg:
-    - $for section in site.landing.sections:
-        - rtgl-view w=f:
-            - 'rtgl-text s="lg" mb="lg" c=mu': ${section.title}
-            - rtgl-view g="lg" w=f:
-                - $for card in section.cards:
-                    - rtgl-view w=f:
-                        - 'a href="${card.href}" target="${card.hrefTarget}" style="display: contents; text-decoration: none; color: inherit;"':
-                            - 'rtgl-view w=f bw=xs p="lg" bgc="se" br="lg" cur="p" d="h" av="c"':
-                                - rtgl-view w="1fg":
-                                    - 'rtgl-text s="h4"': ${card.title}
-                                    - 'rtgl-text mt="sm"': ${card.text}
-                                - 'rtgl-button v="se"': ${card.btnLabel}
-- rtgl-view h="20vh":
-- $partial: cta1
-  svg: ${site.landing.discord.svg}
-  title: ${site.landing.discord.title}
-  subtitle: ${site.landing.discord.subtitle}
-  cta: ${site.landing.discord.cta}
+- main class="landing-shell":
+    - a href="/creator/about/" aria-label="Open RouteVN Creator" class="landing-link":
+        - div class="landing-stage":
+            - 'img class="landing-layer landing-layer-back" data-depth="0.74" data-idle="1.10" data-phase="1.7" src="/public/landing/drawing_tablet_with_cable_layer_below_character.png" alt="" aria-hidden="true" draggable="false"':
+            - 'img class="landing-layer landing-layer-back" data-depth="0.84" data-idle="0.95" data-phase="3.3" src="/public/landing/remaining_objects_layer_below_character.png" alt="" aria-hidden="true" draggable="false"':
+            - 'img class="landing-layer landing-layer-character" data-depth="1" data-idle="1" data-phase="0" src="/public/landing/cover_illustration_makkuro.png" alt="Makkuro" draggable="false"':
+            - 'img class="landing-layer landing-layer-front" data-depth="1.18" data-idle="1.20" data-phase="5.1" src="/public/landing/notebook_with_pen_and_papers_layer_above_character.png" alt="" aria-hidden="true" draggable="false"':
