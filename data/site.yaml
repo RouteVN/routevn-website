@@ -3,17 +3,19 @@ baseUrl: https://routevn.com
 
 navbar:
   title:
-    imgSrc: "/public/images/logo1.png"
-    imgWidth: 132
-    imgHeight: 24
+    imgSrc: "/public/images/routevn-icon.png"
+    imgWidth: 32
+    imgHeight: 32
+    label: RouteVN
     href: "/"
 
 footer:
   logo:
-    src: /public/images/logo1.png
+    src: /public/images/routevn-icon.png
     alt: RouteVN
-    width: 110
-    height: 20
+    width: 32
+    height: 32
+    label: RouteVN
   social:
     - name: Discord
       svg: discord
@@ -145,7 +147,7 @@ landing:
 
 creator:
   download:
-    version: "1.3.4"
+    version: "1.4.2"
     title: Download RouteVN Creator
     # subtitle: Get started creating your Visual Novel
     platforms:
@@ -153,15 +155,17 @@ creator:
         svg: windows
         cta:
           label: Download for Windows
-          href: https://static-1.routevn.com/routevn-creator-client/RouteVN%20Creator_1.3.4_x64-setup.exe
+          href: https://static-1.routevn.com/routevn-creator-client/RouteVN%20Creator_1.4.2_x64-setup.exe
       - name: macOS
         svg: apple
         cta:
           label: Download for macOS
-          href: https://static-1.routevn.com/routevn-creator-client/RouteVN%20Creator_1.3.7_universal.dmg
+          href: https://static-1.routevn.com/routevn-creator-client/RouteVN%20Creator_1.4.2_universal.dmg
       - name: Linux (x86_64)
         svg: linux
-        comingSoon: true
+        cta:
+          label: Download for Linux
+          href: https://static-1.routevn.com/routevn-creator-client/RouteVN%20Creator_1.4.2_amd64.AppImage
   about:
     hero:
       title: Create Visual Novels without any coding
