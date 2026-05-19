@@ -163,9 +163,7 @@ creator:
           href: https://static-1.routevn.com/routevn-creator-client/RouteVN%20Creator_1.4.2_universal.dmg
       - name: Linux (x86_64)
         svg: linux
-        cta:
-          label: Download for Linux
-          href: https://static-1.routevn.com/routevn-creator-client/RouteVN%20Creator_1.4.2_amd64.AppImage
+        comingSoon: true
   about:
     hero:
       title: Create Visual Novels without any coding
