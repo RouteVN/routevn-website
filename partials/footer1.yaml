@@ -4,7 +4,10 @@
     - rtgl-view md-d=v d=h w=f md-g=xl:
         - rtgl-view g="xl" md-w=f w="1fg" ah="s":
             - 'a href="/" style="display: contents"':
-                - 'rtgl-image h="${site.footer.logo.height}" w="${site.footer.logo.width}" src="${site.footer.logo.src}" alt="${site.footer.logo.alt}"':
+                - rtgl-view d=h av=c g=md:
+                    - 'rtgl-image h="${site.footer.logo.height}" w="${site.footer.logo.width}" src="${site.footer.logo.src}" alt="${site.footer.logo.alt}"':
+                    - $if site.footer.logo.label:
+                        - rtgl-text s="lg": ${site.footer.logo.label}
             - 'rtgl-view style="display: grid; grid-template-columns: repeat(4, 20px); gap: 16px; align-items: center;"':
                 - $for social in site.footer.social:
                     - 'a href="${social.href}" target="_blank" rel="noreferrer" aria-label="Visit our ${social.name} page" style="display: contents"':
