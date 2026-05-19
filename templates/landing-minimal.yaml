@@ -31,10 +31,10 @@
               display: block;
               line-height: 0;
               -webkit-touch-callout: none;
-              width: min(90vw, 720px, calc(90vh * 3065 / 3260));
+              width: min(90vw, 720px, calc(90vh * 1440 / 1532));
             }
             .landing-stage {
-              aspect-ratio: 3065 / 3260;
+              aspect-ratio: 1440 / 1532;
               position: relative;
               width: 100%;
             }
