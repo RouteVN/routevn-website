@@ -63,12 +63,12 @@
               color: #fff;
               display: grid;
               gap: 10px;
-              left: clamp(18px, 4vw, 42px);
+              left: clamp(30px, 5vw, 64px);
               line-height: 1.2;
               pointer-events: none;
               position: absolute;
               text-shadow: 0 2px 16px rgba(0, 0, 0, 0.45);
-              top: clamp(18px, 4vw, 42px);
+              top: clamp(30px, 5vw, 64px);
               z-index: 4;
             }
             .landing-brand {
