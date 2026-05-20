@@ -28,15 +28,21 @@
               place-items: center;
             }
             .landing-link {
-              display: block;
-              line-height: 0;
+              align-items: flex-start;
+              color: inherit;
+              display: flex;
+              gap: clamp(16px, 4vw, 56px);
+              justify-content: center;
+              line-height: normal;
+              text-decoration: none;
               -webkit-touch-callout: none;
-              width: min(90vw, 720px, calc(90vh * 1440 / 1532));
+              width: min(94vw, 1040px);
             }
             .landing-stage {
               aspect-ratio: 1440 / 1532;
+              flex: 0 1 min(64vw, 720px, calc(90vh * 1440 / 1532));
               position: relative;
-              width: 100%;
+              width: min(64vw, 720px, calc(90vh * 1440 / 1532));
             }
             .landing-layer {
               display: block;
@@ -62,14 +68,14 @@
             .landing-copy {
               color: #fff;
               display: grid;
+              flex: 0 1 220px;
               gap: 10px;
-              left: clamp(30px, 5vw, 64px);
               line-height: 1.2;
+              margin-top: clamp(30px, 6vh, 72px);
+              max-width: 220px;
+              min-width: 112px;
               pointer-events: none;
-              position: absolute;
               text-shadow: 0 2px 16px rgba(0, 0, 0, 0.45);
-              top: clamp(30px, 5vw, 64px);
-              z-index: 4;
             }
             .landing-brand {
               align-items: center;

@@ -4,13 +4,13 @@ title: RouteVN
 ---
 - main class="landing-shell":
     - a href="/creator/about/" aria-label="Open RouteVN Creator" class="landing-link":
+        - div class="landing-copy":
+            - div class="landing-brand":
+                - 'img class="landing-brand-icon" src="/public/images/routevn-icon.png" alt="" aria-hidden="true" draggable="false"':
+                - span class="landing-brand-name": RouteVN
+            - p class="landing-tagline": Bring your Visual Novel to Life
         - div class="landing-stage":
             - 'img class="landing-layer landing-layer-back" data-depth="0.74" data-idle="1.10" data-phase="1.7" src="/public/landing/drawing_tablet_with_cable_layer_below_character.png" alt="" aria-hidden="true" draggable="false"':
             - 'img class="landing-layer landing-layer-back" data-depth="0.84" data-idle="0.95" data-phase="3.3" src="/public/landing/remaining_objects_layer_below_character.png" alt="" aria-hidden="true" draggable="false"':
             - 'img class="landing-layer landing-layer-character" data-depth="1" data-idle="1" data-phase="0" src="/public/landing/cover_illustration_makkuro.png" alt="Makkuro" draggable="false"':
             - 'img class="landing-layer landing-layer-front" data-depth="1.18" data-idle="1.20" data-phase="5.1" src="/public/landing/notebook_with_pen_and_papers_layer_above_character.png" alt="" aria-hidden="true" draggable="false"':
-            - div class="landing-copy":
-                - div class="landing-brand":
-                    - 'img class="landing-brand-icon" src="/public/images/routevn-icon.png" alt="" aria-hidden="true" draggable="false"':
-                    - span class="landing-brand-name": RouteVN
-                - p class="landing-tagline": Bring your Visual Novel to Life
