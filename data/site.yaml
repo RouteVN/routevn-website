@@ -173,7 +173,7 @@ creator:
     showcaseFeature:
       title: Powerful Live Editor
       message: Preview your edits in real time
-      backgroundColor: mu
+      backgroundColor: "#141414"
       foregroundColor: var(--foreground)
       themeClass: dark
       sideImageSrc: /public/landing/remaining_objects_layer_below_character.png
@@ -188,16 +188,31 @@ creator:
     stagingFeature:
       title: Expressive Staging
       message: Don't ship static images. Create memorable experiences that will stay with the readers.
-      backgroundColor: bg
-      foregroundColor: inherit
-      themeClass: ""
+      backgroundColor: "#141414"
+      foregroundColor: var(--foreground)
+      themeClass: dark
       sideImageSrc: /public/landing/remaining_objects_layer_below_character.png
       videoSrc: /public/creator/animated-2.mp4
       learnMoreHref: /creator/docs/animations/
       learnMoreLabel: Learn More
+    videoTutorialsFeature:
+      title: Video tutorials from the creator of RouteVN
+      message: ""
+      backgroundColor: "#141414"
+      foregroundColor: var(--foreground)
+      themeClass: dark
+      imgSrc: /public/creator/routevn-demo-250108-thumb.png
+      learnMoreHref: /creator/docs/video-tutorials/
+      features:
+        - title: Over 20 video tutorials
+          message: Step-by-step lessons for building visual novels in RouteVN Creator.
+        - title: Beginner to advanced
+          message: Covers the basics, production workflows, and more advanced Creator features.
+        - title: Available in 2 languages
+          message: Follow along in the language that works best for you.
     functionalityGrid:
       title: RouteVN Creator Just Works
-      message: More tools are available when your story needs them. These cards are placeholders for deeper feature pages.
+      message: Powerful out of the box. And it keeps getting better with every new RouteVN Creator release.
       sideImageSrc: /public/landing/remaining_objects_layer_below_character.png
       items:
         - title: Layout Editor
@@ -220,6 +235,11 @@ creator:
           message: Export your project and prepare it for sharing on the web.
           imgSrc: /public/creator/docs/reference/publish-itchio-1.png
           href: /creator/docs/publish/
+    blogPosts:
+      title: Latest RouteVN Blog Posts
+      message: Follow product updates, release notes, and behind-the-scenes posts about building RouteVN.
+      ctaLabel: Show All Posts
+      ctaHref: /blog/
 
     madeWith:
       title: Made with RouteVN Creator
@@ -270,6 +290,7 @@ creator:
     cta:
       title: Bring your Visual Novel to life
       subtitle: Download RouteVN Creator to start creating
+      svg: youtube
       cta:
         label: Docs
         href: /creator/docs/introduction/

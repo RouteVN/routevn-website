@@ -11,6 +11,9 @@ items:
       - id: quickstart
         title: "Quickstart"
         href: "/creator/docs/quickstart"
+      - id: video-tutorials
+        title: "Video Tutorials"
+        href: "/creator/docs/video-tutorials"
       - id: page-index
         title: "Page Index"
         href: "/creator/docs/page-index"

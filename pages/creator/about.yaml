@@ -54,6 +54,22 @@ seo:
   sideImageSrc: ${site.creator.about.functionalityGrid.sideImageSrc}
   items: ${site.creator.about.functionalityGrid.items}
 
+- $partial: feature1
+  title: ${site.creator.about.videoTutorialsFeature.title}
+  message: ${site.creator.about.videoTutorialsFeature.message}
+  backgroundColor: ${site.creator.about.videoTutorialsFeature.backgroundColor}
+  foregroundColor: ${site.creator.about.videoTutorialsFeature.foregroundColor}
+  themeClass: ${site.creator.about.videoTutorialsFeature.themeClass}
+  imgSrc: ${site.creator.about.videoTutorialsFeature.imgSrc}
+  features: ${site.creator.about.videoTutorialsFeature.features}
+  learnMoreHref: ${site.creator.about.videoTutorialsFeature.learnMoreHref}
+
+- $partial: blog-posts-grid
+  title: ${site.creator.about.blogPosts.title}
+  message: ${site.creator.about.blogPosts.message}
+  ctaLabel: ${site.creator.about.blogPosts.ctaLabel}
+  ctaHref: ${site.creator.about.blogPosts.ctaHref}
+
 - rtgl-view h="100":
 - rtgl-view ah="c" ph="lg" md-w="100vw" lg-w="768" w="1024":
     - rtgl-text s="h4" ta="c" mb="lg": ${site.creator.about.faq.title}
@@ -65,6 +81,7 @@ seo:
 - $partial: cta1
   title: ${site.creator.about.cta.title}
   subtitle: ${site.creator.about.cta.subtitle}
+  svg: ${site.creator.about.cta.svg}
   cta: ${site.creator.about.cta.cta}
   secondaryCta: ${site.creator.about.cta.secondaryCta}
 

@@ -1,45 +1,101 @@
-- rtgl-view h=64:
-- rtgl-view  xl-w=100vw xl-ph=xl w="1200" mh=xl pb="lg" ah=c g=md:
-    - rtgl-text s=h2 mb=md ta=c: ${title}
-    - rtgl-text mb=lg ta=c: ${message}
-    - rtgl-view md-hide d=h g=lg mt=xl:
-        - $if v != "2":
-            - 'rtgl-view w="2fg" bc="bo" bw="xs" br="sm" style="min-width: 0; border-color: rgba(170, 170, 170, 0.42)"':
-                - $if imgSrc:
-                    - rtgl-image src="${imgSrc}" w="f":
-                - $if videoSrc:
-                    - $if build.isScreenshotMode:
-                        - video src="${videoSrc}" style="width:100%;height:auto;display:block" loop muted playsinline:
+- style: |
+    .rvn-feature1-media {
+      aspect-ratio: 16 / 9;
+      border-color: rgba(170, 170, 170, 0.42);
+      box-sizing: border-box;
+      display: block;
+      min-width: 0;
+      overflow: hidden;
+    }
+    .rvn-feature1-media a {
+      color: inherit;
+      display: block;
+      height: 100%;
+      text-decoration: none;
+      width: 100%;
+    }
+    .rvn-feature1-media img,
+    .rvn-feature1-media video {
+      display: block;
+      height: 100%;
+      object-fit: cover;
+      width: 100%;
+    }
+- 'rtgl-view class="${themeClass}" w="f" ah="c" bgc="${backgroundColor}" style="background: ${backgroundColor}; box-sizing: border-box; color: ${foregroundColor}; margin-left: calc(50% - 50vw); margin-right: calc(50% - 50vw); width: 100vw;"':
+    - rtgl-view h=96:
+    - 'rtgl-view md-w="calc(100vw - 32px)" xl-w="calc(100vw - 64px)" w="1200" mh="xl" pb="xl" ah="c" g="md"':
+        - rtgl-text s=h1 mb=md ta=c: ${title}
+        - $if message:
+            - rtgl-text mb=lg ta=c: ${message}
+        - rtgl-view h=80:
+        - rtgl-view md-hide d=h w=f g=lg:
+            - $if v != "2":
+                - 'rtgl-view class="rvn-feature1-media" w="2fg" bc="bo" bw="xs" br="sm"':
+                    - $if learnMoreHref:
+                        - 'a href="${learnMoreHref}"':
+                            - $if imgSrc:
+                                - img src="${imgSrc}" alt="${title} preview":
+                            - $if videoSrc:
+                                - $if build.isScreenshotMode:
+                                    - video src="${videoSrc}" loop muted playsinline:
+                                  $else:
+                                    - video src="${videoSrc}" autoplay loop muted playsinline:
                       $else:
-                        - video src="${videoSrc}" style="width:100%;height:auto;display:block" autoplay loop muted playsinline:
-        - rtgl-view g="lg" w="1fg" av=c h=f:
-            - $for feature in features:
-                - rtgl-view  p="lg" br="lg" g=md:
-                    - rtgl-text s=h4 mb=sm: "${feature.title}"
-                    - rtgl-text mb="sm":
-                        - __html: "${feature.message}"
-        - $if v == "2":
-            - 'rtgl-view w="2fg" bc="bo" bw="xs" br="sm" style="min-width: 0; border-color: rgba(170, 170, 170, 0.42)"':
-                - $if imgSrc:
-                    - rtgl-image src="${imgSrc}" w="f":
-                - $if videoSrc:
-                    - $if build.isScreenshotMode:
-                        - video src="${videoSrc}" style="width:100%;height:auto;display:block" loop muted playsinline:
+                        - $if imgSrc:
+                            - img src="${imgSrc}" alt="${title} preview":
+                        - $if videoSrc:
+                            - $if build.isScreenshotMode:
+                                - video src="${videoSrc}" loop muted playsinline:
+                              $else:
+                                - video src="${videoSrc}" autoplay loop muted playsinline:
+            - rtgl-view g="lg" w="1fg" av=c h=f:
+                - $for feature in features:
+                    - rtgl-view  p="lg" br="lg" g=md:
+                        - rtgl-text s=h4 mb=sm: "${feature.title}"
+                        - rtgl-text mb="sm":
+                            - __html: "${feature.message}"
+            - $if v == "2":
+                - 'rtgl-view class="rvn-feature1-media" w="2fg" bc="bo" bw="xs" br="sm"':
+                    - $if learnMoreHref:
+                        - 'a href="${learnMoreHref}"':
+                            - $if imgSrc:
+                                - img src="${imgSrc}" alt="${title} preview":
+                            - $if videoSrc:
+                                - $if build.isScreenshotMode:
+                                    - video src="${videoSrc}" loop muted playsinline:
+                                  $else:
+                                    - video src="${videoSrc}" autoplay loop muted playsinline:
                       $else:
-                        - video src="${videoSrc}" style="width:100%;height:auto;display:block" autoplay loop muted playsinline:
-    - rtgl-view md-show hide g=lg mt=xl:
-        - 'rtgl-view w="2fg" bc="bo" bw="xs" br="sm" style="border-color: rgba(170, 170, 170, 0.42)"':
-            - $if imgSrc:
-                - rtgl-image src="${imgSrc}" w="f":
-            - $if videoSrc:
-                - $if build.isScreenshotMode:
-                    - video src="${videoSrc}" style="width:100%;height:auto;display:block" loop muted playsinline:
+                        - $if imgSrc:
+                            - img src="${imgSrc}" alt="${title} preview":
+                        - $if videoSrc:
+                            - $if build.isScreenshotMode:
+                                - video src="${videoSrc}" loop muted playsinline:
+                              $else:
+                                - video src="${videoSrc}" autoplay loop muted playsinline:
+        - rtgl-view md-show hide w=f g=lg:
+            - 'rtgl-view class="rvn-feature1-media" w="f" h="calc((100vw - 32px) / 1.777)" bc="bo" bw="xs" br="sm" style="max-width: 100%;"':
+                - $if learnMoreHref:
+                    - 'a href="${learnMoreHref}"':
+                        - $if imgSrc:
+                            - img src="${imgSrc}" alt="${title} preview":
+                        - $if videoSrc:
+                            - $if build.isScreenshotMode:
+                                - video src="${videoSrc}" loop muted playsinline:
+                              $else:
+                                - video src="${videoSrc}" autoplay loop muted playsinline:
                   $else:
-                    - video src="${videoSrc}" style="width:100%;height:auto;display:block" autoplay loop muted playsinline:
-        - rtgl-view g="lg" w="1fg" av=c h=f w=f:
-            - $for feature in features:
-                - rtgl-view  p="lg" br="lg" g=md w=f ah=c:
-                    - rtgl-text s=h4 mb=sm ta=c: "${feature.title}"
-                    - rtgl-text mb="sm" ta=c:
-                        - __html: "${feature.message}"
-- rtgl-view h=64:
+                    - $if imgSrc:
+                        - img src="${imgSrc}" alt="${title} preview":
+                    - $if videoSrc:
+                        - $if build.isScreenshotMode:
+                            - video src="${videoSrc}" loop muted playsinline:
+                          $else:
+                            - video src="${videoSrc}" autoplay loop muted playsinline:
+            - rtgl-view g="lg" w=f av=c h=f:
+                - $for feature in features:
+                    - rtgl-view  p="lg" br="lg" g=md w=f ah=c:
+                        - rtgl-text s=h4 mb=sm ta=c: "${feature.title}"
+                        - rtgl-text mb="sm" ta=c:
+                            - __html: "${feature.message}"
+    - rtgl-view h=96:

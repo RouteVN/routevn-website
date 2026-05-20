@@ -22,7 +22,6 @@
       max-width: 680px;
     }
     .rvn-made-with-preview {
-      margin-bottom: 20px;
       opacity: 1;
       transform: translateY(0);
       transition: opacity 160ms ease, transform 160ms ease;
@@ -116,10 +115,16 @@
       align-items: stretch;
       display: flex;
       gap: 12px;
+      margin-bottom: 20px;
       overflow-x: auto;
       overflow-y: hidden;
       padding: 4px 2px 8px;
+      -ms-overflow-style: none;
       scroll-snap-type: x proximity;
+      scrollbar-width: none;
+    }
+    .rvn-made-with-track::-webkit-scrollbar {
+      display: none;
     }
     .rvn-made-with-card {
       appearance: none;
@@ -205,6 +210,18 @@
             - rtgl-text s="h1" mb="sm": ${title}
             - $if message:
                 - p: ${message}
+        - 'div class="rvn-made-with-track" aria-label="Made with RouteVN Creator projects"':
+            - $for item in items:
+                - $if item.active:
+                    - 'button class="rvn-made-with-card is-active" type="button" data-rvn-made-with-card="${item.id}" aria-pressed="true"':
+                        - 'span class="rvn-made-with-card-image"':
+                            - img src="${item.imgSrc}" alt="":
+                        - 'span class="rvn-made-with-card-title"': ${item.title}
+                  $else:
+                    - 'button class="rvn-made-with-card" type="button" data-rvn-made-with-card="${item.id}" aria-pressed="false"':
+                        - 'span class="rvn-made-with-card-image"':
+                            - img src="${item.imgSrc}" alt="":
+                        - 'span class="rvn-made-with-card-title"': ${item.title}
         - 'div class="rvn-made-with-preview" data-rvn-made-with-preview aria-live="polite"':
             - $for item in items:
                 - $if item.active:
@@ -275,18 +292,6 @@
                                     - 'a class="rvn-made-with-link" href="${item.href}" target="_blank" rel="noreferrer"': itch.io
                                 - $if item.vndbHref:
                                     - 'a class="rvn-made-with-link" href="${item.vndbHref}" target="_blank" rel="noreferrer"': VNDB
-        - 'div class="rvn-made-with-track" aria-label="Made with RouteVN Creator projects"':
-            - $for item in items:
-                - $if item.active:
-                    - 'button class="rvn-made-with-card is-active" type="button" data-rvn-made-with-card="${item.id}" aria-pressed="true"':
-                        - 'span class="rvn-made-with-card-image"':
-                            - img src="${item.imgSrc}" alt="":
-                        - 'span class="rvn-made-with-card-title"': ${item.title}
-                  $else:
-                    - 'button class="rvn-made-with-card" type="button" data-rvn-made-with-card="${item.id}" aria-pressed="false"':
-                        - 'span class="rvn-made-with-card-image"':
-                            - img src="${item.imgSrc}" alt="":
-                        - 'span class="rvn-made-with-card-title"': ${item.title}
 - script: |
     (() => {
       document.querySelectorAll(".rvn-made-with").forEach((section) => {
