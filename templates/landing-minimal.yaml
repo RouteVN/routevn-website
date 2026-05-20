@@ -30,20 +30,19 @@
             .landing-link {
               align-items: flex-start;
               color: inherit;
-              display: flex;
-              gap: clamp(16px, 4vw, 56px);
-              justify-content: center;
+              --landing-stage-width: min(64vw, 720px, calc(90vh * 1440 / 1532));
+              display: grid;
+              grid-template-columns: minmax(0, 1fr) var(--landing-stage-width) minmax(0, 1fr);
               line-height: normal;
-              max-width: 94vw;
               text-decoration: none;
               -webkit-touch-callout: none;
-              width: max-content;
+              width: 100%;
             }
             .landing-stage {
               aspect-ratio: 1440 / 1532;
-              flex: 0 0 min(64vw, 720px, calc(90vh * 1440 / 1532));
+              grid-column: 2;
               position: relative;
-              width: min(64vw, 720px, calc(90vh * 1440 / 1532));
+              width: var(--landing-stage-width);
             }
             .landing-layer {
               display: block;
@@ -69,10 +68,12 @@
             .landing-copy {
               color: #fff;
               display: grid;
-              flex: 0 0 auto;
               gap: 10px;
+              grid-column: 1;
+              justify-self: end;
               line-height: 1.2;
               margin-top: clamp(30px, 6vh, 72px);
+              margin-right: clamp(16px, 4vw, 56px);
               pointer-events: none;
               text-shadow: 0 2px 16px rgba(0, 0, 0, 0.45);
               width: max-content;
@@ -100,9 +101,10 @@
               margin: 0;
               white-space: nowrap;
             }
-            @media (max-width: 1240px) {
+            @media (max-width: 1560px) {
               .landing-link {
                 align-items: center;
+                display: flex;
                 flex-direction: column;
                 gap: 18px;
                 width: min(92vw, 720px);
@@ -113,6 +115,7 @@
               }
               .landing-copy {
                 margin-top: 0;
+                margin-right: 0;
                 text-align: center;
               }
               .landing-brand {
