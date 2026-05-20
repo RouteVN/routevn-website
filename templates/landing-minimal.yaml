@@ -36,13 +36,14 @@
               line-height: normal;
               text-decoration: none;
               -webkit-touch-callout: none;
-              width: min(94vw, 1040px);
+              width: min(94vw, 1120px);
             }
             .landing-stage {
               aspect-ratio: 1440 / 1532;
-              flex: 0 1 min(64vw, 720px, calc(90vh * 1440 / 1532));
+              flex: 1 1 min(56vw, 680px, calc(90vh * 1440 / 1532));
+              min-width: 0;
               position: relative;
-              width: min(64vw, 720px, calc(90vh * 1440 / 1532));
+              width: min(56vw, 680px, calc(90vh * 1440 / 1532));
             }
             .landing-layer {
               display: block;
@@ -68,14 +69,13 @@
             .landing-copy {
               color: #fff;
               display: grid;
-              flex: 0 1 220px;
+              flex: 0 0 auto;
               gap: 10px;
               line-height: 1.2;
               margin-top: clamp(30px, 6vh, 72px);
-              max-width: 220px;
-              min-width: 112px;
               pointer-events: none;
               text-shadow: 0 2px 16px rgba(0, 0, 0, 0.45);
+              width: max-content;
             }
             .landing-brand {
               align-items: center;
@@ -95,9 +95,32 @@
             }
             .landing-tagline {
               font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-              font-size: clamp(14px, 2.2vw, 18px);
-              font-weight: 500;
+              font-size: clamp(24px, 3vw, 36px);
+              font-weight: 700;
               margin: 0;
+              white-space: nowrap;
+            }
+            @media (max-width: 760px) {
+              .landing-link {
+                align-items: center;
+                flex-direction: column;
+                gap: 18px;
+                width: min(92vw, 560px);
+              }
+              .landing-stage {
+                flex-basis: auto;
+                width: min(92vw, 520px, calc(76vh * 1440 / 1532));
+              }
+              .landing-copy {
+                margin-top: 0;
+                text-align: center;
+              }
+              .landing-brand {
+                justify-content: center;
+              }
+              .landing-tagline {
+                font-size: clamp(20px, 6vw, 30px);
+              }
             }
             @media (prefers-reduced-motion: reduce) {
               .landing-layer {
