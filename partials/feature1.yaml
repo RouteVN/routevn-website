@@ -4,7 +4,7 @@
     - rtgl-text mb=lg ta=c: ${message}
     - rtgl-view md-hide d=h g=lg mt=xl:
         - $if v != "2":
-            - 'rtgl-view w="2fg" bc="bo" bw="xs" br="sm" style="min-width: 0"':
+            - 'rtgl-view w="2fg" bc="bo" bw="xs" br="sm" style="min-width: 0; border-color: rgba(170, 170, 170, 0.42)"':
                 - $if imgSrc:
                     - rtgl-image src="${imgSrc}" w="f":
                 - $if videoSrc:
@@ -19,7 +19,7 @@
                     - rtgl-text mb="sm":
                         - __html: "${feature.message}"
         - $if v == "2":
-            - 'rtgl-view w="2fg" bc="bo" bw="xs" br="sm" style="min-width: 0"':
+            - 'rtgl-view w="2fg" bc="bo" bw="xs" br="sm" style="min-width: 0; border-color: rgba(170, 170, 170, 0.42)"':
                 - $if imgSrc:
                     - rtgl-image src="${imgSrc}" w="f":
                 - $if videoSrc:
@@ -28,7 +28,7 @@
                       $else:
                         - video src="${videoSrc}" style="width:100%;height:auto;display:block" autoplay loop muted playsinline:
     - rtgl-view md-show hide g=lg mt=xl:
-        - rtgl-view w="2fg" bc="bo" bw="xs" br="sm":
+        - 'rtgl-view w="2fg" bc="bo" bw="xs" br="sm" style="border-color: rgba(170, 170, 170, 0.42)"':
             - $if imgSrc:
                 - rtgl-image src="${imgSrc}" w="f":
             - $if videoSrc:

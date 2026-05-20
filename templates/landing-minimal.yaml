@@ -98,12 +98,20 @@
             .landing-brand {
               align-items: center;
               display: flex;
-              gap: 10px;
+              gap: 12px;
             }
             .landing-brand-icon {
+              background: #f2f2f2;
+              border-color: rgba(128, 128, 128, 0.65);
+              border-style: solid;
+              border-width: 1px;
+              border-radius: 12px;
+              box-sizing: border-box;
               display: block;
-              height: 28px;
-              width: 28px;
+              height: clamp(40px, 3.8vw, 48px);
+              object-fit: contain;
+              padding: 0;
+              width: clamp(40px, 3.8vw, 48px);
             }
             .landing-brand-name {
               font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
@@ -113,7 +121,7 @@
             }
             .landing-tagline {
               font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-              font-size: clamp(24px, 2.6vw, 32px);
+              font-size: clamp(20px, 2.1vw, 26px);
               font-weight: 400;
               margin: 0;
               white-space: nowrap;
@@ -146,7 +154,7 @@
                 justify-content: flex-start;
               }
               .landing-tagline {
-                font-size: clamp(20px, 6vw, 30px);
+                font-size: clamp(18px, 5vw, 24px);
               }
             }
             @media (orientation: portrait) {
@@ -154,59 +162,7 @@
                 font-size: clamp(16px, 3.8vw, 20px);
               }
               .landing-tagline {
-                font-size: clamp(18px, 4.8vw, 24px);
-              }
-            }
-            .landing-particle-layer {
-              inset: 0;
-              overflow: hidden;
-              pointer-events: none;
-              position: fixed;
-              z-index: 2;
-            }
-            .landing-particle {
-              --dx: 0px;
-              --dy: -16px;
-              --rotation: 0deg;
-              --size: 3px;
-              --x: 0px;
-              --y: 0px;
-              animation: landing-particle-sparkle 1s cubic-bezier(0.16, 1, 0.3, 1) forwards;
-              background: rgba(255, 255, 255, 0.98);
-              box-shadow: 0 0 7px rgba(255, 255, 255, 0.68);
-              clip-path: polygon(50% 0, 58% 42%, 100% 50%, 58% 58%, 50% 100%, 42% 58%, 0 50%, 42% 42%);
-              height: var(--size);
-              left: 0;
-              opacity: 0;
-              position: absolute;
-              top: 0;
-              transform: translate3d(var(--x), var(--y), 0) scale(0.2) rotate(var(--rotation));
-              width: var(--size);
-            }
-            .landing-particle[data-shape="dot"] {
-              border-radius: 9999px;
-              box-shadow: 0 0 3px rgba(255, 255, 255, 0.46);
-              clip-path: none;
-            }
-            .landing-particle[data-shape="star"] {
-              clip-path: polygon(50% 0, 58% 34%, 85% 15%, 66% 42%, 100% 50%, 66% 58%, 85% 85%, 58% 66%, 50% 100%, 42% 66%, 15% 85%, 34% 58%, 0 50%, 34% 42%, 15% 15%, 42% 34%);
-            }
-            .landing-particle[data-tone="dark"] {
-              background: rgba(0, 0, 0, 0.92);
-              box-shadow: 0 0 7px rgba(0, 0, 0, 0.36);
-            }
-            @keyframes landing-particle-sparkle {
-              16% {
-                opacity: 1;
-                transform: translate3d(var(--x), var(--y), 0) scale(1.24) rotate(calc(var(--rotation) + 18deg));
-              }
-              52% {
-                opacity: 0.9;
-                transform: translate3d(calc(var(--x) + var(--dx) * 0.45), calc(var(--y) + var(--dy) * 0.45), 0) scale(0.78) rotate(calc(var(--rotation) + 42deg));
-              }
-              100% {
-                opacity: 0;
-                transform: translate3d(calc(var(--x) + var(--dx)), calc(var(--y) + var(--dy)), 0) scale(0.18) rotate(calc(var(--rotation) + 76deg));
+                font-size: clamp(16px, 4vw, 20px);
               }
             }
             @media (prefers-reduced-motion: reduce) {
@@ -215,13 +171,11 @@
                 transition: none;
                 will-change: auto;
               }
-              .landing-particle {
-                animation: none;
-                display: none;
-              }
             }
     - body:
         - "${content}"
+        - $partial: cursor-sparkles
+          darkArea: landing-wedge
         - script: |
             (() => {
               document.addEventListener("contextmenu", (event) => {
@@ -255,38 +209,6 @@
               let pointerX = 0;
               let pointerY = 0;
               let frame = 0;
-              let lastParticleAt = 0;
-              let lastPointerClientX = null;
-              let lastPointerClientY = null;
-              let pointerInsideWindow = false;
-              const particleLayer = document.createElement("div");
-              particleLayer.className = "landing-particle-layer";
-              document.body.appendChild(particleLayer);
-
-              const isInWhiteWedge = (clientX, clientY) => {
-                const shell = document.querySelector(".landing-shell");
-
-                if (!shell) {
-                  return false;
-                }
-
-                const wedgeStyle = window.getComputedStyle(shell, "::before");
-                const wedgeWidth = Number.parseFloat(wedgeStyle.width);
-                const wedgeHeight = Number.parseFloat(wedgeStyle.height);
-
-                if (!Number.isFinite(wedgeWidth) || !Number.isFinite(wedgeHeight) || wedgeWidth <= 0 || wedgeHeight <= 0) {
-                  return false;
-                }
-
-                const localX = clientX - (window.innerWidth - wedgeWidth);
-                const localY = clientY - (window.innerHeight - wedgeHeight);
-
-                if (localX < 0 || localX > wedgeWidth || localY < 0 || localY > wedgeHeight) {
-                  return false;
-                }
-
-                return localX / wedgeWidth + localY / wedgeHeight >= 1;
-              };
 
               const update = (time) => {
                 const idleX = Math.sin(time * 0.00055) * idleShift + Math.sin(time * 0.00031) * 7;
@@ -307,93 +229,25 @@
                 frame = requestAnimationFrame(update);
               };
 
-              const emitParticle = (clientX, clientY, isIdle = false) => {
-                const particle = document.createElement("span");
-                const shapeRoll = Math.random();
-                const isDot = shapeRoll < 0.06;
-                const size = isDot ? 1.3 + Math.random() * 1.2 : (isIdle ? 2.25 : 2.5) + Math.random() * (isIdle ? 2.8 : 3.2);
-                const spawnX = clientX + (isIdle ? (Math.random() - 0.5) * 46 : 0);
-                const spawnY = clientY + (isIdle ? (Math.random() - 0.5) * 38 : 0);
-                const driftX = (Math.random() - 0.5) * (isIdle ? 44 : 22);
-                const driftY = (Math.random() - 0.5) * (isIdle ? 34 : 18);
-                const rotation = Math.random() * 180;
-
-                particle.className = "landing-particle";
-                particle.style.setProperty("--size", size.toFixed(2) + "px");
-                particle.style.setProperty("--x", (spawnX - size / 2).toFixed(2) + "px");
-                particle.style.setProperty("--y", (spawnY - size / 2).toFixed(2) + "px");
-                particle.style.setProperty("--dx", driftX.toFixed(2) + "px");
-                particle.style.setProperty("--dy", driftY.toFixed(2) + "px");
-                particle.style.setProperty("--rotation", rotation.toFixed(2) + "deg");
-
-                if (isDot) {
-                  particle.dataset.shape = "dot";
-                } else if (shapeRoll < 0.82) {
-                  particle.dataset.shape = "star";
-                }
-                if (isInWhiteWedge(spawnX, spawnY)) {
-                  particle.dataset.tone = "dark";
-                }
-
-                if (particleLayer.childElementCount > 78) {
-                  particleLayer.firstElementChild.remove();
-                }
-
-                particleLayer.appendChild(particle);
-                window.setTimeout(() => {
-                  particle.remove();
-                }, 1040);
-              };
-
               const setTargetFromPointer = (event) => {
                 const x = (event.clientX / window.innerWidth - 0.5) * 2;
                 const y = (event.clientY / window.innerHeight - 0.5) * 2;
 
                 pointerX = x * maxShift;
                 pointerY = y * maxShift;
-                lastPointerClientX = event.clientX;
-                lastPointerClientY = event.clientY;
-                pointerInsideWindow = true;
-
-                if (event.pointerType && event.pointerType !== "mouse") {
-                  return;
-                }
-
-                const now = performance.now();
-                if (now - lastParticleAt < 24) {
-                  return;
-                }
-
-                lastParticleAt = now;
-                emitParticle(event.clientX, event.clientY);
-                emitParticle(event.clientX, event.clientY);
               };
 
               window.addEventListener("pointermove", setTargetFromPointer, { passive: true });
               window.addEventListener("mousemove", setTargetFromPointer, { passive: true });
-              const resetPointer = () => {
+              window.addEventListener("pointerleave", () => {
                 pointerX = 0;
                 pointerY = 0;
-                pointerInsideWindow = false;
-              };
-              window.addEventListener("pointerleave", resetPointer);
-              document.addEventListener("mouseleave", resetPointer);
-
-              const idleParticleTimer = window.setInterval(() => {
-                if (!pointerInsideWindow || document.hidden || lastPointerClientX === null || lastPointerClientY === null) {
-                  return;
-                }
-
-                emitParticle(lastPointerClientX, lastPointerClientY, true);
-                emitParticle(lastPointerClientX, lastPointerClientY, true);
-              }, 100);
+              });
 
               frame = requestAnimationFrame(update);
 
               reduceMotion.addEventListener("change", () => {
                 cancelAnimationFrame(frame);
-                window.clearInterval(idleParticleTimer);
-                particleLayer.remove();
                 layers.forEach((layer) => {
                   layer.element.style.removeProperty("transform");
                 });

@@ -1,0 +1,180 @@
+- style: |
+    .rvn-functionality-grid {
+      background: var(--background);
+      color: var(--foreground);
+      width: 100%;
+    }
+    .rvn-functionality-grid-shell {
+      box-sizing: border-box;
+      margin: 0 auto;
+      max-width: 1200px;
+      padding: 64px 0;
+      width: calc(100vw - 64px);
+    }
+    .rvn-functionality-grid-header {
+      align-items: center;
+      display: flex;
+      gap: 24px;
+      justify-content: space-between;
+      margin-bottom: 28px;
+    }
+    .rvn-functionality-grid-heading {
+      min-width: 0;
+    }
+    .rvn-functionality-grid-title {
+      font-size: 2.5rem;
+      font-weight: 600;
+      line-height: 1.05;
+      margin: 0 0 12px;
+    }
+    .rvn-functionality-grid-message {
+      color: var(--foreground);
+      font-size: var(--lg-font-size);
+      line-height: var(--lg-line-height);
+      margin: 0;
+      max-width: 680px;
+    }
+    .rvn-functionality-grid-illustration {
+      aspect-ratio: 1;
+      flex: 0 0 180px;
+      height: 180px;
+      overflow: hidden;
+      width: 180px;
+    }
+    .rvn-functionality-grid-illustration img {
+      display: block;
+      height: 100%;
+      object-fit: contain;
+      width: 100%;
+    }
+    .rvn-functionality-grid-list {
+      display: grid;
+      gap: 16px;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+    .rvn-functionality-card {
+      background: var(--muted);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      box-sizing: border-box;
+      color: inherit;
+      display: grid;
+      gap: 16px;
+      grid-template-rows: auto 1fr auto;
+      min-height: 100%;
+      padding: 10px;
+      position: relative;
+      text-decoration: none;
+      transition: background 160ms ease, border-color 160ms ease, transform 160ms ease;
+    }
+    .rvn-functionality-card:hover,
+    .rvn-functionality-card:focus-visible {
+      background: var(--accent);
+      border-color: var(--foreground);
+      outline: none;
+      transform: translateY(-2px);
+    }
+    .rvn-functionality-card-media {
+      aspect-ratio: 16 / 9;
+      background: var(--background);
+      border: 1px solid rgba(170, 170, 170, 0.42);
+      border-radius: 6px;
+      overflow: hidden;
+      width: 100%;
+    }
+    .rvn-functionality-card-media img {
+      display: block;
+      height: 100%;
+      object-fit: cover;
+      width: 100%;
+    }
+    .rvn-functionality-card-arrow {
+      align-self: end;
+      color: var(--muted-foreground);
+      font-size: var(--sm-font-size);
+      line-height: 1;
+      padding: 0 12px 12px;
+      transition: color 160ms ease, transform 160ms ease;
+    }
+    .rvn-functionality-card:hover .rvn-functionality-card-arrow,
+    .rvn-functionality-card:focus-visible .rvn-functionality-card-arrow {
+      color: var(--foreground);
+      transform: translateX(2px);
+    }
+    .rvn-functionality-card-body {
+      align-self: end;
+      min-width: 0;
+      padding: 0 12px;
+    }
+    .rvn-functionality-card-title {
+      font-size: 1.35rem;
+      font-weight: 600;
+      line-height: 1.15;
+      margin: 0 0 10px;
+    }
+    .rvn-functionality-card-message {
+      color: var(--muted-foreground);
+      font-size: var(--md-font-size);
+      line-height: var(--md-line-height);
+      margin: 0;
+    }
+    .rvn-functionality-card:hover .rvn-functionality-card-message,
+    .rvn-functionality-card:focus-visible .rvn-functionality-card-message {
+      color: var(--foreground);
+    }
+    @media (max-width: 1100px) {
+      .rvn-functionality-grid-list {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+    }
+    @media (max-width: 760px) {
+      .rvn-functionality-grid-shell {
+        padding: 48px 0;
+        width: calc(100vw - 32px);
+      }
+      .rvn-functionality-grid-header {
+        align-items: start;
+      }
+      .rvn-functionality-grid-title {
+        font-size: 2rem;
+      }
+      .rvn-functionality-grid-illustration {
+        display: none;
+      }
+      .rvn-functionality-grid-list {
+        grid-template-columns: 1fr;
+      }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      .rvn-functionality-card,
+      .rvn-functionality-card-arrow {
+        transition: none;
+      }
+      .rvn-functionality-card:hover,
+      .rvn-functionality-card:focus-visible {
+        transform: none;
+      }
+      .rvn-functionality-card:hover .rvn-functionality-card-arrow,
+      .rvn-functionality-card:focus-visible .rvn-functionality-card-arrow {
+        transform: none;
+      }
+    }
+- 'section class="rvn-functionality-grid"':
+    - 'div class="rvn-functionality-grid-shell"':
+        - 'div class="rvn-functionality-grid-header"':
+            - 'div class="rvn-functionality-grid-heading"':
+                - 'h2 class="rvn-functionality-grid-title"': ${title}
+                - $if message:
+                    - 'p class="rvn-functionality-grid-message"': ${message}
+            - $if sideImageSrc:
+                - 'div class="rvn-functionality-grid-illustration" aria-hidden="true"':
+                    - img src="${sideImageSrc}" alt="":
+        - 'div class="rvn-functionality-grid-list"':
+            - $for item in items:
+                - 'a class="rvn-functionality-card" href="${item.href}"':
+                    - 'div class="rvn-functionality-card-media"':
+                        - img src="${item.imgSrc}" alt="${item.title} screenshot":
+                    - 'div class="rvn-functionality-card-body"':
+                        - 'h3 class="rvn-functionality-card-title"': ${item.title}
+                        - 'p class="rvn-functionality-card-message"': ${item.message}
+                    - 'span class="rvn-functionality-card-arrow" aria-hidden="true"': Learn More ->
