@@ -72,10 +72,11 @@
               grid-column: 1;
               justify-self: end;
               line-height: 1.2;
-              margin-top: clamp(0px, 2vh, 24px);
+              margin-top: 0;
               margin-right: clamp(16px, 4vw, 56px);
               pointer-events: none;
               text-shadow: 0 2px 16px rgba(0, 0, 0, 0.45);
+              transform: translateY(clamp(-64px, -5vh, -36px));
               width: max-content;
             }
             .landing-brand {
@@ -117,7 +118,7 @@
                 margin-top: 0;
                 margin-right: 0;
                 text-align: center;
-                transform: translateY(-24px);
+                transform: translateY(-44px);
               }
               .landing-brand {
                 justify-content: center;
