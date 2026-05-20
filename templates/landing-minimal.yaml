@@ -34,16 +34,16 @@
               gap: clamp(16px, 4vw, 56px);
               justify-content: center;
               line-height: normal;
+              max-width: 94vw;
               text-decoration: none;
               -webkit-touch-callout: none;
-              width: min(94vw, 1120px);
+              width: max-content;
             }
             .landing-stage {
               aspect-ratio: 1440 / 1532;
-              flex: 1 1 min(56vw, 680px, calc(90vh * 1440 / 1532));
-              min-width: 0;
+              flex: 0 0 min(64vw, 720px, calc(90vh * 1440 / 1532));
               position: relative;
-              width: min(56vw, 680px, calc(90vh * 1440 / 1532));
+              width: min(64vw, 720px, calc(90vh * 1440 / 1532));
             }
             .landing-layer {
               display: block;
@@ -95,21 +95,21 @@
             }
             .landing-tagline {
               font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-              font-size: clamp(24px, 3vw, 36px);
-              font-weight: 700;
+              font-size: clamp(24px, 2.6vw, 32px);
+              font-weight: 400;
               margin: 0;
               white-space: nowrap;
             }
-            @media (max-width: 760px) {
+            @media (max-width: 1240px) {
               .landing-link {
                 align-items: center;
                 flex-direction: column;
                 gap: 18px;
-                width: min(92vw, 560px);
+                width: min(92vw, 720px);
               }
               .landing-stage {
                 flex-basis: auto;
-                width: min(92vw, 520px, calc(76vh * 1440 / 1532));
+                width: min(92vw, 720px, calc(76vh * 1440 / 1532));
               }
               .landing-copy {
                 margin-top: 0;
