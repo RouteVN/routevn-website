@@ -13,7 +13,7 @@
                                 - rtgl-text:
                                     - __html: "<strong>${feature.title}</strong>: ${feature.message}"
             - $if sideImageSrc:
-                - 'rtgl-view md-hide w="180" h="180" br="sm" aria-hidden="true" style="flex: 0 0 180px; overflow: hidden; background-image: url(${sideImageSrc}); background-repeat: no-repeat; background-size: 300% auto; background-position: 12% 30%;"':
+                - 'rtgl-view md-hide w="180" h="180" br="sm" aria-hidden="true" style="flex: 0 0 180px; overflow: hidden; background-image: url(${sideImageSrc}); background-repeat: no-repeat; background-size: contain; background-position: center;"':
         - $if imgSrc:
             - 'rtgl-view w="f" bc="bo" bw="xs" br="sm" style="border-color: rgba(170, 170, 170, 0.42); overflow: hidden"':
                 - rtgl-image src="${imgSrc}" w="f":

@@ -34,6 +34,16 @@
       margin: 0;
       max-width: 680px;
     }
+    .rvn-blog-posts-grid-illustration {
+      aspect-ratio: 1;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+      flex: 0 0 180px;
+      height: 180px;
+      overflow: hidden;
+      width: 180px;
+    }
     .rvn-blog-posts-grid-list {
       display: grid;
       gap: 16px;
@@ -150,6 +160,9 @@
       .rvn-blog-posts-grid-title {
         font-size: 2rem;
       }
+      .rvn-blog-posts-grid-illustration {
+        display: none;
+      }
       .rvn-blog-posts-grid-list {
         grid-template-columns: 1fr;
       }
@@ -171,6 +184,8 @@
                 - 'h2 class="rvn-blog-posts-grid-title"': ${title}
                 - $if message:
                     - 'p class="rvn-blog-posts-grid-message"': ${message}
+            - $if sideImageSrc:
+                - 'div class="rvn-blog-posts-grid-illustration" aria-hidden="true" style="background-image: url(${sideImageSrc});"':
         - 'div class="rvn-blog-posts-grid-list"':
             - $for item, i in sort(collections.blogPost, "data.date", "desc"):
                 - $if i < 3:

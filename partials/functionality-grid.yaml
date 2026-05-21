@@ -36,16 +36,14 @@
     }
     .rvn-functionality-grid-illustration {
       aspect-ratio: 1;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+      border-radius: 6px;
       flex: 0 0 180px;
       height: 180px;
       overflow: hidden;
       width: 180px;
-    }
-    .rvn-functionality-grid-illustration img {
-      display: block;
-      height: 100%;
-      object-fit: contain;
-      width: 100%;
     }
     .rvn-functionality-grid-list {
       border-left: 1px solid var(--border);
@@ -169,8 +167,7 @@
                 - $if message:
                     - 'p class="rvn-functionality-grid-message"': ${message}
             - $if sideImageSrc:
-                - 'div class="rvn-functionality-grid-illustration" aria-hidden="true"':
-                    - img src="${sideImageSrc}" alt="":
+                - 'div class="rvn-functionality-grid-illustration" aria-hidden="true" style="background-image: url(${sideImageSrc});"':
         - 'div class="rvn-functionality-grid-list"':
             - $for item in items:
                 - 'a class="rvn-functionality-card" href="${item.href}"':

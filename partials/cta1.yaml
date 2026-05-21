@@ -1,7 +1,10 @@
 - rtgl-view ah="c" ph="lg" md-w="100vw" lg-w="768" w="1024":
     - rtgl-view ah="c" p="xl" br="md" bw="sm" w="f":
-        - $if svg:
-            - rtgl-svg svg="${svg}" wh="48" f="pr" mb="md":
+        - $if imgSrc:
+            - 'rtgl-image h="56" w="56" src="${imgSrc}" alt="" mb="md"':
+          $else:
+            - $if svg:
+                - rtgl-svg svg="${svg}" wh="48" f="pr" mb="md":
         - rtgl-text s="h2" mb="md" c="pr" ta="c": ${title}
         - rtgl-text s="lg" c="pr" mb="lg" ta="c": ${subtitle}
         - rtgl-view d="h" g="md" ah="c":

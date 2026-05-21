@@ -168,6 +168,7 @@ creator:
     hero:
       title: Bring your Visual Novel to Life
       subtitle: RouteVN Creator is a free and open source application for making Visual Novels without any coding
+      subtitleHtml: 'RouteVN Creator is a free and <a href="https://github.com/RouteVN/routevn-creator-client" target="_blank" rel="noreferrer">open source</a> application for making Visual Novels without any coding'
       videoSrc: /public/creator/routevn-demo-250108.mp4
       posterSrc: /public/creator/routevn-demo-250108-thumb.png
     showcaseFeature:
@@ -176,7 +177,7 @@ creator:
       backgroundColor: "#141414"
       foregroundColor: var(--foreground)
       themeClass: dark
-      sideImageSrc: /public/landing/remaining_objects_layer_below_character.png
+      sideImageSrc: /public/landing/object-2.png
       videoSrc: /public/creator/animated-1.mp4
       learnMoreHref: /creator/docs/scene-editor/
       learnMoreLabel: Learn More
@@ -191,7 +192,7 @@ creator:
       backgroundColor: "#141414"
       foregroundColor: var(--foreground)
       themeClass: dark
-      sideImageSrc: /public/landing/remaining_objects_layer_below_character.png
+      sideImageSrc: /public/landing/object-5.png
       videoSrc: /public/creator/animated-2.mp4
       learnMoreHref: /creator/docs/animations/
       learnMoreLabel: Learn More
@@ -211,9 +212,9 @@ creator:
         - title: Available in 2 languages
           message: Follow along in the language that works best for you.
     functionalityGrid:
-      title: RouteVN Creator Just Works
-      message: Powerful out of the box. And it keeps getting better with every new RouteVN Creator release.
-      sideImageSrc: /public/landing/remaining_objects_layer_below_character.png
+      title: Everything you need for your Visual Novel
+      message: We look at all features that Visual Novels have, and implement it in a way that you can just use it.
+      sideImageSrc: /public/landing/object-4.png
       items:
         - title: Layout Editor
           message: Fully customize your Visual Novel's UI.
@@ -229,15 +230,16 @@ creator:
           href: /creator/docs/scene-map/
         - title: Choices and Branching
           message: Add player choices and connect them to the next part of your story.
-          imgSrc: /public/creator/routevn-demo-250108-thumb.png
+          imgSrc: /public/images/routevn_og.png
           href: /creator/docs/line-actions/choices/
         - title: Publishing
           message: Export your project and prepare it for sharing on the web.
-          imgSrc: /public/creator/docs/reference/publish-itchio-1.png
+          imgSrc: /public/images/routevn_og.png
           href: /creator/docs/publish/
     blogPosts:
       title: Latest RouteVN Blog Posts
       message: Follow product updates, release notes, and behind-the-scenes posts about building RouteVN.
+      sideImageSrc: /public/landing/object-1.png
       ctaLabel: Show All Posts
       ctaHref: /blog/
 
@@ -276,6 +278,7 @@ creator:
 
     faq:
       title: Frequently Asked Questions
+      sideImageSrc: /public/landing/object-3.png
       items:
         - title: What makes RouteVN Creator different from other Visual Novel engines?
           content: No coding, no technical background required. We built RouteVN Creator so anyone, including writers, artists, and hobbyists, can create their own Visual Novel. Easy to start, and stays organized as your project grows.
@@ -290,7 +293,7 @@ creator:
     cta:
       title: Bring your Visual Novel to life
       subtitle: Download RouteVN Creator to start creating
-      svg: youtube
+      imgSrc: /public/images/routevn-icon.png
       cta:
         label: Docs
         href: /creator/docs/introduction/
