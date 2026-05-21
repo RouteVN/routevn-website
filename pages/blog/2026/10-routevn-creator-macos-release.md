@@ -5,10 +5,16 @@ authorDisplay: han4wluc
 title: RouteVN Creator is now available on macOS
 tags: [blogPost]
 date: '2026-05-17'
+thumbnail: /public/images/routevn_og.png
 seo:
   title: RouteVN Creator is now available on macOS
   description: RouteVN Creator now has a macOS release with the same feature support as Windows.
   ogType: article
+  ogImage: https://routevn.com/public/images/routevn_og.png
+  ogImageWidth: 1200
+  ogImageHeight: 630
+  ogImageAlt: RouteVN Creator macOS release social preview
+  ogImageType: image/png
 ---
 
 # RouteVN Creator is now available on macOS

@@ -5,6 +5,7 @@ authorDisplay: han4wluc
 title: RouteVN Devlog 3
 tags: [blogPost]
 date: '2026-05-03'
+thumbnail: /public/blog/2026/09/dev-and-draft.webp
 seo:
   title: RouteVN Devlog 3
   description: RouteVN Devlog 3 covers early 2026 progress, RouteVN Creator v1.0.3, new documentation, events, collaborations, and what is next.

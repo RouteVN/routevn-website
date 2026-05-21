@@ -1,0 +1,178 @@
+- style: |
+    .rvn-functionality-grid {
+      background: var(--background);
+      color: var(--foreground);
+      width: 100%;
+    }
+    .rvn-functionality-grid-shell {
+      box-sizing: border-box;
+      margin: 0 auto;
+      max-width: 1200px;
+      padding: 64px 0;
+      width: min(1200px, calc(100% - 64px));
+    }
+    .rvn-functionality-grid-header {
+      align-items: center;
+      display: flex;
+      gap: 24px;
+      justify-content: space-between;
+      margin-bottom: 36px;
+    }
+    .rvn-functionality-grid-heading {
+      min-width: 0;
+    }
+    .rvn-functionality-grid-title {
+      font-size: 2.5rem;
+      font-weight: 600;
+      line-height: 1.05;
+      margin: 0 0 12px;
+    }
+    .rvn-functionality-grid-message {
+      color: var(--foreground);
+      font-size: var(--lg-font-size);
+      line-height: var(--lg-line-height);
+      margin: 0;
+      max-width: 680px;
+    }
+    .rvn-functionality-grid-illustration {
+      aspect-ratio: 1;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+      border-radius: 6px;
+      flex: 0 0 180px;
+      height: 180px;
+      overflow: hidden;
+      width: 180px;
+    }
+    .rvn-functionality-grid-list {
+      border-left: 1px solid var(--border);
+      border-radius: 8px;
+      border-top: 1px solid var(--border);
+      display: grid;
+      grid-template-columns: repeat(6, minmax(0, 1fr));
+      overflow: hidden;
+    }
+    .rvn-functionality-card {
+      background: var(--background);
+      border-bottom: 1px solid var(--border);
+      border-right: 1px solid var(--border);
+      box-sizing: border-box;
+      color: inherit;
+      display: grid;
+      gap: 22px;
+      grid-column: span 2;
+      grid-template-rows: 1fr auto;
+      min-height: 330px;
+      padding: 24px;
+      position: relative;
+      text-decoration: none;
+      transition: background 160ms ease, transform 160ms ease;
+    }
+    .rvn-functionality-card:nth-child(-n + 2) {
+      grid-column: span 3;
+      min-height: 420px;
+    }
+    .rvn-functionality-card:hover,
+    .rvn-functionality-card:focus-visible {
+      background: var(--muted);
+      outline: none;
+      transform: translateY(-1px);
+      z-index: 1;
+    }
+    .rvn-functionality-card-body {
+      align-self: start;
+      min-width: 0;
+    }
+    .rvn-functionality-card-title {
+      font-size: 1.5rem;
+      font-weight: 600;
+      line-height: 1.15;
+      margin: 0 0 10px;
+    }
+    .rvn-functionality-card-message {
+      color: var(--muted-foreground);
+      font-size: var(--md-font-size);
+      line-height: var(--md-line-height);
+      margin: 0;
+      max-width: 560px;
+    }
+    .rvn-functionality-card:hover .rvn-functionality-card-message,
+    .rvn-functionality-card:focus-visible .rvn-functionality-card-message {
+      color: var(--foreground);
+    }
+    .rvn-functionality-card-media {
+      align-self: end;
+      aspect-ratio: 16 / 9;
+      background: var(--muted);
+      border: 1px solid rgba(170, 170, 170, 0.42);
+      border-radius: 6px;
+      box-sizing: border-box;
+      overflow: hidden;
+      width: 100%;
+    }
+    .rvn-functionality-card-media img {
+      display: block;
+      height: 100%;
+      object-fit: cover;
+      width: 100%;
+    }
+    @media (max-width: 1100px) {
+      .rvn-functionality-grid-list {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+      .rvn-functionality-card,
+      .rvn-functionality-card:nth-child(-n + 2) {
+        grid-column: auto;
+        min-height: 340px;
+      }
+    }
+    @media (max-width: 760px) {
+      .rvn-functionality-grid-shell {
+        padding: 48px 0;
+        width: min(1200px, calc(100% - 16px));
+      }
+      .rvn-functionality-grid-header {
+        align-items: start;
+      }
+      .rvn-functionality-grid-title {
+        font-size: 2rem;
+      }
+      .rvn-functionality-grid-illustration {
+        display: none;
+      }
+      .rvn-functionality-grid-list {
+        grid-template-columns: 1fr;
+      }
+      .rvn-functionality-card,
+      .rvn-functionality-card:nth-child(-n + 2) {
+        min-height: 0;
+        padding: 20px;
+      }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      .rvn-functionality-card {
+        transition: none;
+      }
+      .rvn-functionality-card:hover,
+      .rvn-functionality-card:focus-visible {
+        transform: none;
+      }
+    }
+- 'section class="rvn-functionality-grid"':
+    - 'div class="rvn-functionality-grid-shell"':
+        - 'div class="rvn-functionality-grid-header"':
+            - 'div class="rvn-functionality-grid-heading"':
+                - 'h2 class="rvn-functionality-grid-title"': ${title}
+                - $if message:
+                    - 'p class="rvn-functionality-grid-message"': ${message}
+            - $if sideImageSrc:
+                - 'div class="rvn-functionality-grid-illustration" aria-hidden="true" style="background-image: url(${sideImageSrc});"':
+        - 'div class="rvn-functionality-grid-list"':
+            - $for item in items:
+                - 'a class="rvn-functionality-card" href="${item.href}"':
+                    - 'div class="rvn-functionality-card-body"':
+                        - 'h3 class="rvn-functionality-card-title"': ${item.title}
+                        - 'p class="rvn-functionality-card-message"': ${item.message}
+                    - 'div class="rvn-functionality-card-media"':
+                        - img src="${item.imgSrc}" alt="${item.title} screenshot":

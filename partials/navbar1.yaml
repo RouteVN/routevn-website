@@ -1,5 +1,5 @@
-- rtgl-view bwb=xs w=f ah=c pos=fix bgc=bg:
-    - rtgl-view md-w="100vw" lg-w="768" w="1024" d=h av=c h=64 ph=lg:
+- 'rtgl-view bwb="xs" w="f" ah="c" pos="fix" bgc="bg" data-rvn-autohide-navbar="true" style="transform: translateY(0); transition: transform 180ms ease; will-change: transform; z-index: 50;"':
+    - 'rtgl-view md-w="calc(100vw - 32px)" xl-w="calc(100vw - 64px)" w="1200" d=h av=c h=64':
         - 'a href="${title.href}" style="text-decoration: none; color: inherit;"':
             - rtgl-view d=h av=c g=md:
                 - $if title.imgSrc:
@@ -12,3 +12,98 @@
                 - 'rtgl-button href="${secondaryCta.href}" v="se"': ${secondaryCta.label}
             - $if cta.label:
                 - rtgl-button href="${cta.href}": ${cta.label}
+- script: |
+    (() => {
+      if (window.__rvnNavbarAutohideInitialized) {
+        return;
+      }
+
+      const navbars = Array.from(document.querySelectorAll('[data-rvn-autohide-navbar="true"]'));
+
+      if (navbars.length === 0) {
+        return;
+      }
+
+      window.__rvnNavbarAutohideInitialized = true;
+
+      const hideDelta = 10;
+      const topOffset = 8;
+      let lastY = getScrollY();
+      let ticking = false;
+
+      function getScrollRoot() {
+        return document.scrollingElement || document.documentElement || document.body;
+      }
+
+      function getScrollY() {
+        const scrollRoot = getScrollRoot();
+        return Math.max(
+          window.scrollY || window.pageYOffset || 0,
+          scrollRoot ? scrollRoot.scrollTop || 0 : 0,
+          document.body ? document.body.scrollTop || 0 : 0,
+          document.documentElement ? document.documentElement.scrollTop || 0 : 0
+        );
+      }
+
+      function setHidden(hidden) {
+        navbars.forEach((navbar) => {
+          navbar.style.transform = hidden ? "translateY(calc(-100% - 1px))" : "translateY(0)";
+          navbar.setAttribute("data-rvn-navbar-hidden", hidden ? "true" : "false");
+        });
+      }
+
+      function refreshNavbar() {
+        const currentY = getScrollY();
+
+        if (currentY <= topOffset) {
+          setHidden(false);
+          lastY = currentY;
+          return;
+        }
+
+        const delta = currentY - lastY;
+
+        if (Math.abs(delta) < hideDelta) {
+          return;
+        }
+
+        setHidden(delta > 0);
+        lastY = currentY;
+      }
+
+      function requestRefresh() {
+        if (ticking) {
+          return;
+        }
+
+        ticking = true;
+        window.requestAnimationFrame(() => {
+          refreshNavbar();
+          ticking = false;
+        });
+      }
+
+      [
+        window,
+        document,
+        document.scrollingElement,
+        document.documentElement,
+        document.body,
+        getScrollRoot(),
+      ].forEach((scrollTarget, index, scrollTargets) => {
+        if (!scrollTarget || scrollTargets.indexOf(scrollTarget) !== index) {
+          return;
+        }
+
+        scrollTarget.addEventListener("scroll", requestRefresh, { passive: true });
+      });
+
+      window.addEventListener("resize", () => {
+        lastY = getScrollY();
+        setHidden(false);
+      }, { passive: true });
+
+      navbars.forEach((navbar) => {
+        navbar.addEventListener("focusin", () => setHidden(false));
+      });
+    })();

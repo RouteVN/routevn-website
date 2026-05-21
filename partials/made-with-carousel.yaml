@@ -1,0 +1,340 @@
+- style: |
+    .rvn-made-with {
+      background: var(--background);
+      color: var(--foreground);
+      width: 100%;
+    }
+    .rvn-made-with-shell {
+      box-sizing: border-box;
+      margin: 0 auto;
+      max-width: 1200px;
+      padding: 64px 0;
+      width: calc(100vw - 64px);
+    }
+    .rvn-made-with-title {
+      margin-bottom: 32px;
+    }
+    .rvn-made-with-title p {
+      color: var(--foreground);
+      font-size: var(--lg-font-size);
+      line-height: var(--lg-line-height);
+      margin: 12px 0 0;
+      max-width: 680px;
+    }
+    .rvn-made-with-preview {
+      opacity: 1;
+      transform: translateY(0);
+      transition: opacity 160ms ease, transform 160ms ease;
+    }
+    .rvn-made-with-preview.is-changing {
+      opacity: 0.18;
+      transform: translateY(6px);
+    }
+    .rvn-made-with-panel {
+      display: none;
+      gap: 24px;
+      grid-template-columns: minmax(0, 1.45fr) minmax(280px, 0.75fr);
+    }
+    .rvn-made-with-panel.is-active {
+      display: grid;
+    }
+    .rvn-made-with-media {
+      aspect-ratio: 16 / 9;
+      background: var(--muted);
+      border: 1px solid rgba(170, 170, 170, 0.42);
+      border-radius: 8px;
+      box-sizing: border-box;
+      overflow: hidden;
+      width: 100%;
+    }
+    .rvn-made-with-media-link {
+      color: inherit;
+      display: block;
+      height: 100%;
+      text-decoration: none;
+      width: 100%;
+    }
+    .rvn-made-with-media img,
+    .rvn-made-with-media video {
+      display: block;
+      height: 100%;
+      object-fit: contain;
+      width: 100%;
+    }
+    .rvn-made-with-copy {
+      align-self: start;
+      min-width: 0;
+    }
+    .rvn-made-with-heading {
+      font-size: 2rem;
+      font-weight: 600;
+      line-height: 1.1;
+      margin: 0 0 12px;
+    }
+    .rvn-made-with-author {
+      align-items: center;
+      color: var(--muted-foreground);
+      display: flex;
+      font-size: var(--sm-font-size);
+      gap: 8px;
+      line-height: var(--sm-line-height);
+      margin: 0 0 18px;
+    }
+    .rvn-made-with-author:hover {
+      text-decoration-color: var(--foreground);
+    }
+    .rvn-made-with-author-avatar {
+      border: 1px solid var(--border);
+      border-radius: 50%;
+      display: block;
+      flex: 0 0 32px;
+      height: 32px;
+      object-fit: cover;
+      width: 32px;
+    }
+    .rvn-made-with-description {
+      font-size: var(--md-font-size);
+      line-height: var(--md-line-height);
+      margin: 0 0 18px;
+    }
+    .rvn-made-with-quote {
+      border-left: 2px solid var(--border);
+      color: var(--foreground);
+      margin: 0 0 18px;
+      padding-left: 16px;
+    }
+    .rvn-made-with-link {
+      font-size: var(--sm-font-size);
+    }
+    .rvn-made-with-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+    .rvn-made-with-track {
+      align-items: stretch;
+      display: flex;
+      gap: 12px;
+      margin-bottom: 20px;
+      overflow-x: auto;
+      overflow-y: hidden;
+      padding: 4px 2px 8px;
+      -ms-overflow-style: none;
+      scroll-snap-type: x proximity;
+      scrollbar-width: none;
+    }
+    .rvn-made-with-track::-webkit-scrollbar {
+      display: none;
+    }
+    .rvn-made-with-card {
+      appearance: none;
+      background: var(--background);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      color: inherit;
+      cursor: pointer;
+      flex: 0 0 220px;
+      font: inherit;
+      min-width: 0;
+      padding: 8px;
+      scroll-snap-align: start;
+      text-align: left;
+      transition: border-color 160ms ease, background 160ms ease, transform 160ms ease;
+    }
+    .rvn-made-with-card:hover,
+    .rvn-made-with-card:focus-visible {
+      border-color: var(--foreground);
+      outline: none;
+      transform: translateY(-1px);
+    }
+    .rvn-made-with-card.is-active {
+      background: var(--accent);
+      border-color: var(--foreground);
+    }
+    .rvn-made-with-card-image {
+      aspect-ratio: 16 / 9;
+      background: var(--muted);
+      border-radius: 6px;
+      display: block;
+      margin-bottom: 8px;
+      overflow: hidden;
+      width: 100%;
+    }
+    .rvn-made-with-card-image img {
+      display: block;
+      height: 100%;
+      object-fit: cover;
+      width: 100%;
+    }
+    .rvn-made-with-card-title {
+      display: block;
+      font-size: var(--sm-font-size);
+      font-weight: 600;
+      line-height: 1.2;
+      margin-bottom: 4px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+    @media (max-width: 900px) {
+      .rvn-made-with-shell {
+        padding: 48px 0;
+        width: calc(100vw - 32px);
+      }
+      .rvn-made-with-panel {
+        display: none;
+      }
+      .rvn-made-with-panel.is-active {
+        display: block;
+      }
+      .rvn-made-with-media {
+        margin-bottom: 20px;
+      }
+      .rvn-made-with-card {
+        flex-basis: 188px;
+      }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      .rvn-made-with-preview,
+      .rvn-made-with-card {
+        transition: none;
+      }
+      .rvn-made-with-preview.is-changing {
+        opacity: 1;
+        transform: none;
+      }
+    }
+- 'section class="rvn-made-with"':
+    - 'div class="rvn-made-with-shell"':
+        - 'div class="rvn-made-with-title"':
+            - rtgl-text s="h1" mb="sm": ${title}
+            - $if message:
+                - p: ${message}
+        - 'div class="rvn-made-with-track" aria-label="Made with RouteVN Creator projects"':
+            - $for item in items:
+                - $if item.active:
+                    - 'button class="rvn-made-with-card is-active" type="button" data-rvn-made-with-card="${item.id}" aria-pressed="true"':
+                        - 'span class="rvn-made-with-card-image"':
+                            - img src="${item.imgSrc}" alt="":
+                        - 'span class="rvn-made-with-card-title"': ${item.title}
+                  $else:
+                    - 'button class="rvn-made-with-card" type="button" data-rvn-made-with-card="${item.id}" aria-pressed="false"':
+                        - 'span class="rvn-made-with-card-image"':
+                            - img src="${item.imgSrc}" alt="":
+                        - 'span class="rvn-made-with-card-title"': ${item.title}
+        - 'div class="rvn-made-with-preview" data-rvn-made-with-preview aria-live="polite"':
+            - $for item in items:
+                - $if item.active:
+                    - 'article class="rvn-made-with-panel is-active" data-rvn-made-with-panel="${item.id}" aria-hidden="false"':
+                        - 'div class="rvn-made-with-media"':
+                            - $if item.href:
+                                - 'a class="rvn-made-with-media-link" href="${item.href}" target="_blank" rel="noreferrer"':
+                                    - $if item.videoSrc:
+                                        - video src="${item.videoSrc}" autoplay loop muted playsinline:
+                                      $else:
+                                        - img src="${item.imgSrc}" alt="${item.title} screenshot":
+                              $else:
+                                - $if item.videoSrc:
+                                    - video src="${item.videoSrc}" autoplay loop muted playsinline:
+                                  $else:
+                                    - img src="${item.imgSrc}" alt="${item.title} screenshot":
+                        - 'div class="rvn-made-with-copy"':
+                            - 'h3 class="rvn-made-with-heading"': ${item.title}
+                            - $if item.authorHref:
+                                - 'a class="rvn-made-with-author" href="${item.authorHref}" target="_blank" rel="noreferrer"':
+                                    - $if item.authorAvatarSrc:
+                                        - 'img class="rvn-made-with-author-avatar" src="${item.authorAvatarSrc}" alt=""':
+                                    - span: by ${item.author}
+                              $else:
+                                - 'p class="rvn-made-with-author"':
+                                    - $if item.authorAvatarSrc:
+                                        - 'img class="rvn-made-with-author-avatar" src="${item.authorAvatarSrc}" alt=""':
+                                    - span: by ${item.author}
+                            - 'p class="rvn-made-with-description"': ${item.description}
+                            - 'blockquote class="rvn-made-with-quote"':
+                                - p: ${item.testimonial}
+                            - 'div class="rvn-made-with-links"':
+                                - $if item.href:
+                                    - 'a class="rvn-made-with-link" href="${item.href}" target="_blank" rel="noreferrer"': itch.io
+                                - $if item.vndbHref:
+                                    - 'a class="rvn-made-with-link" href="${item.vndbHref}" target="_blank" rel="noreferrer"': VNDB
+                  $else:
+                    - 'article class="rvn-made-with-panel" data-rvn-made-with-panel="${item.id}" aria-hidden="true"':
+                        - 'div class="rvn-made-with-media"':
+                            - $if item.href:
+                                - 'a class="rvn-made-with-media-link" href="${item.href}" target="_blank" rel="noreferrer"':
+                                    - $if item.videoSrc:
+                                        - video src="${item.videoSrc}" autoplay loop muted playsinline:
+                                      $else:
+                                        - img src="${item.imgSrc}" alt="${item.title} screenshot":
+                              $else:
+                                - $if item.videoSrc:
+                                    - video src="${item.videoSrc}" autoplay loop muted playsinline:
+                                  $else:
+                                    - img src="${item.imgSrc}" alt="${item.title} screenshot":
+                        - 'div class="rvn-made-with-copy"':
+                            - 'h3 class="rvn-made-with-heading"': ${item.title}
+                            - $if item.authorHref:
+                                - 'a class="rvn-made-with-author" href="${item.authorHref}" target="_blank" rel="noreferrer"':
+                                    - $if item.authorAvatarSrc:
+                                        - 'img class="rvn-made-with-author-avatar" src="${item.authorAvatarSrc}" alt=""':
+                                    - span: by ${item.author}
+                              $else:
+                                - 'p class="rvn-made-with-author"':
+                                    - $if item.authorAvatarSrc:
+                                        - 'img class="rvn-made-with-author-avatar" src="${item.authorAvatarSrc}" alt=""':
+                                    - span: by ${item.author}
+                            - 'p class="rvn-made-with-description"': ${item.description}
+                            - 'blockquote class="rvn-made-with-quote"':
+                                - p: ${item.testimonial}
+                            - 'div class="rvn-made-with-links"':
+                                - $if item.href:
+                                    - 'a class="rvn-made-with-link" href="${item.href}" target="_blank" rel="noreferrer"': itch.io
+                                - $if item.vndbHref:
+                                    - 'a class="rvn-made-with-link" href="${item.vndbHref}" target="_blank" rel="noreferrer"': VNDB
+- script: |
+    (() => {
+      document.querySelectorAll(".rvn-made-with").forEach((section) => {
+        const preview = section.querySelector("[data-rvn-made-with-preview]");
+        const cards = Array.from(section.querySelectorAll("[data-rvn-made-with-card]"));
+        const panels = Array.from(section.querySelectorAll("[data-rvn-made-with-panel]"));
+
+        if (!preview || cards.length === 0 || panels.length === 0) {
+          return;
+        }
+
+        const selectItem = (id) => {
+          const activeCard = section.querySelector(".rvn-made-with-card.is-active");
+
+          if (activeCard && activeCard.dataset.rvnMadeWithCard === id) {
+            return;
+          }
+
+          preview.classList.add("is-changing");
+
+          window.setTimeout(() => {
+            cards.forEach((card) => {
+              const isActive = card.dataset.rvnMadeWithCard === id;
+              card.classList.toggle("is-active", isActive);
+              card.setAttribute("aria-pressed", isActive ? "true" : "false");
+            });
+
+            panels.forEach((panel) => {
+              const isActive = panel.dataset.rvnMadeWithPanel === id;
+              panel.classList.toggle("is-active", isActive);
+              panel.setAttribute("aria-hidden", isActive ? "false" : "true");
+            });
+
+            window.requestAnimationFrame(() => {
+              preview.classList.remove("is-changing");
+            });
+          }, 120);
+        };
+
+        cards.forEach((card) => {
+          card.addEventListener("click", () => {
+            selectItem(card.dataset.rvnMadeWithCard);
+          });
+        });
+      });
+    })();

@@ -5,6 +5,7 @@ authorDisplay: han4wluc
 title: RouteVN Creator v1.0.3
 tags: [blogPost]
 date: '2026-04-17'
+thumbnail: /public/blog/2026/08/screenshot-3.png
 seo:
   title: RouteVN Creator v1.0.3
   description: RouteVN Creator v1.0.3 brings a more polished experience, better stability, and improvements across the board.

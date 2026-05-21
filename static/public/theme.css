@@ -1,18 +1,18 @@
 html {
   margin: 0;
-  -ms-overflow-style: none; /* IE and Edge */
-  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: auto; /* IE and Edge */
+  overflow-x: hidden;
+  scrollbar-width: auto; /* Firefox */
   width: 100%;
 }
 
 
-/* Hide scrollbar for Chrome, Safari */
 html::-webkit-scrollbar {
-  display: none;
+  display: initial;
 }
 
 body::-webkit-scrollbar {
-  display: none;
+  display: initial;
 }
 
 /* Firefox */
@@ -21,8 +21,8 @@ body::-webkit-scrollbar {
 }
 
 body {
-  -ms-overflow-style: none;
-  scrollbar-width: none;
+  -ms-overflow-style: auto;
+  scrollbar-width: auto;
   height: 100%;
   width: 100%;
   margin: 0;
@@ -32,7 +32,8 @@ body {
   background-color: var(--background);
   color: var(--foreground);
   overscroll-behavior: none;
-  overflow: auto;
+  overflow-x: hidden;
+  overflow-y: auto;
   /* position: fixed; */
   -webkit-overflow-scrolling: touch;
 }
@@ -281,6 +282,15 @@ pre {
   box-sizing: border-box;
   /* TODO fix sometimes there needs to be margin-bottom */
   /* margin-bottom: var(--spacing-g); */
+}
+
+pre {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+pre::-webkit-scrollbar {
+  display: none;
 }
 
 code:not(pre code) {

@@ -1,0 +1,30 @@
+- 'rtgl-view class="${themeClass}" w="f" ah="c" bgc="${backgroundColor}" style="background: ${backgroundColor}; box-sizing: border-box; color: ${foregroundColor}; margin-left: calc(50% - 50vw); margin-right: calc(50% - 50vw); width: 100vw;"':
+    - rtgl-view h=64:
+    - 'rtgl-view md-w="calc(100vw - 32px)" xl-w="calc(100vw - 64px)" w="1200" mh="xl" pb="lg" g="lg"':
+        - rtgl-view d="h" md-d="v" w="f" av="c" g="lg":
+            - rtgl-view g="md" w="1fg" ah="s":
+                - rtgl-text s=h1 mb="sm": ${title}
+                - $if message:
+                    - rtgl-text s=lg: ${message}
+                - $if features:
+                    - 'ul style="margin: 12px 0 0; padding-left: 20px; max-width: 760px;"':
+                        - $for feature in features:
+                            - li:
+                                - rtgl-text:
+                                    - __html: "<strong>${feature.title}</strong>: ${feature.message}"
+            - $if sideImageSrc:
+                - 'rtgl-view md-hide w="180" h="180" br="sm" aria-hidden="true" style="flex: 0 0 180px; overflow: hidden; background-image: url(${sideImageSrc}); background-repeat: no-repeat; background-size: contain; background-position: center;"':
+        - $if imgSrc:
+            - 'rtgl-view w="f" bc="bo" bw="xs" br="sm" style="border-color: rgba(170, 170, 170, 0.42); overflow: hidden"':
+                - rtgl-image src="${imgSrc}" w="f":
+        - $if videoSrc:
+            - 'rtgl-view w="f" bc="bo" bw="xs" br="sm" style="border-color: rgba(170, 170, 170, 0.42); overflow: hidden"':
+                - $if build.isScreenshotMode:
+                    - video src="${videoSrc}" style="width:100%;height:auto;display:block" loop muted playsinline:
+                  $else:
+                    - video src="${videoSrc}" style="width:100%;height:auto;display:block" autoplay loop muted playsinline:
+        - $if learnMoreHref:
+            - rtgl-view w="f" ah="c" mt="md":
+                - rtgl-text s="sm":
+                    - 'a href="${learnMoreHref}"': ${learnMoreLabel}
+    - rtgl-view h=64:

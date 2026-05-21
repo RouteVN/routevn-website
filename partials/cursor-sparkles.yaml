@@ -1,0 +1,196 @@
+- style: |
+    .rvn-cursor-sparkles-layer {
+      inset: 0;
+      overflow: hidden;
+      pointer-events: none;
+      position: fixed;
+      z-index: 20;
+    }
+    .rvn-cursor-sparkle {
+      --dx: 0px;
+      --dy: -16px;
+      --rotation: 0deg;
+      --size: 3px;
+      --x: 0px;
+      --y: 0px;
+      animation: rvn-cursor-sparkle 1.3s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+      background: rgba(255, 255, 255, 0.98);
+      box-shadow: 0 0 7px rgba(255, 255, 255, 0.68);
+      clip-path: polygon(50% 0, 58% 42%, 100% 50%, 58% 58%, 50% 100%, 42% 58%, 0 50%, 42% 42%);
+      height: var(--size);
+      left: 0;
+      opacity: 0;
+      position: absolute;
+      top: 0;
+      transform: translate3d(var(--x), var(--y), 0) scale(0.2) rotate(var(--rotation));
+      width: var(--size);
+    }
+    .rvn-cursor-sparkle[data-shape="dot"] {
+      border-radius: 9999px;
+      box-shadow: 0 0 3px rgba(255, 255, 255, 0.46);
+      clip-path: none;
+    }
+    .rvn-cursor-sparkle[data-shape="star"] {
+      clip-path: polygon(50% 0, 58% 34%, 85% 15%, 66% 42%, 100% 50%, 66% 58%, 85% 85%, 58% 66%, 50% 100%, 42% 66%, 15% 85%, 34% 58%, 0 50%, 34% 42%, 15% 15%, 42% 34%);
+    }
+    .rvn-cursor-sparkle[data-tone="dark"] {
+      background: rgba(0, 0, 0, 0.92);
+      box-shadow: 0 0 7px rgba(0, 0, 0, 0.36);
+    }
+    @keyframes rvn-cursor-sparkle {
+      16% {
+        opacity: 1;
+        transform: translate3d(var(--x), var(--y), 0) scale(1.24) rotate(calc(var(--rotation) + 18deg));
+      }
+      52% {
+        opacity: 0.9;
+        transform: translate3d(calc(var(--x) + var(--dx) * 0.45), calc(var(--y) + var(--dy) * 0.45), 0) scale(0.78) rotate(calc(var(--rotation) + 42deg));
+      }
+      100% {
+        opacity: 0;
+        transform: translate3d(calc(var(--x) + var(--dx)), calc(var(--y) + var(--dy)), 0) scale(0.18) rotate(calc(var(--rotation) + 76deg));
+      }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      .rvn-cursor-sparkle {
+        animation: none;
+        display: none;
+      }
+    }
+- $if darkArea == "landing-wedge":
+    - script: |
+        window.RouteVNCursorSparklesDarkArea = (clientX, clientY) => {
+          const shell = document.querySelector(".landing-shell");
+
+          if (!shell) {
+            return false;
+          }
+
+          const wedgeStyle = window.getComputedStyle(shell, "::before");
+          const wedgeWidth = Number.parseFloat(wedgeStyle.width);
+          const wedgeHeight = Number.parseFloat(wedgeStyle.height);
+
+          if (!Number.isFinite(wedgeWidth) || !Number.isFinite(wedgeHeight) || wedgeWidth <= 0 || wedgeHeight <= 0) {
+            return false;
+          }
+
+          const localX = clientX - (window.innerWidth - wedgeWidth);
+          const localY = clientY - (window.innerHeight - wedgeHeight);
+
+          if (localX < 0 || localX > wedgeWidth || localY < 0 || localY > wedgeHeight) {
+            return false;
+          }
+
+          return localX / wedgeWidth + localY / wedgeHeight >= 1;
+        };
+- script: |
+    (() => {
+      if (window.RouteVNCursorSparklesStarted) {
+        return;
+      }
+
+      const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
+
+      if (reduceMotion.matches) {
+        return;
+      }
+
+      window.RouteVNCursorSparklesStarted = true;
+
+      let lastParticleAt = 0;
+      let lastPointerClientX = null;
+      let lastPointerClientY = null;
+      let pointerInsideWindow = false;
+      const particleLayer = document.createElement("div");
+      particleLayer.className = "rvn-cursor-sparkles-layer";
+      document.body.appendChild(particleLayer);
+
+      const shouldUseDarkParticle = (clientX, clientY) => {
+        const darkArea = window.RouteVNCursorSparklesDarkArea;
+        return typeof darkArea === "function" && darkArea(clientX, clientY);
+      };
+
+      const emitParticle = (clientX, clientY, isIdle = false) => {
+        const particle = document.createElement("span");
+        const shapeRoll = Math.random();
+        const isDot = shapeRoll < 0.06;
+        const size = isDot ? 1.3 + Math.random() * 1.2 : (isIdle ? 2.25 : 2.5) + Math.random() * (isIdle ? 2.8 : 3.2);
+        const spawnX = clientX + (isIdle ? (Math.random() - 0.5) * 46 : 0);
+        const spawnY = clientY + (isIdle ? (Math.random() - 0.5) * 38 : 0);
+        const driftX = (Math.random() - 0.5) * (isIdle ? 44 : 22);
+        const driftY = (Math.random() - 0.5) * (isIdle ? 34 : 18);
+        const rotation = Math.random() * 180;
+
+        particle.className = "rvn-cursor-sparkle";
+        particle.style.setProperty("--size", size.toFixed(2) + "px");
+        particle.style.setProperty("--x", (spawnX - size / 2).toFixed(2) + "px");
+        particle.style.setProperty("--y", (spawnY - size / 2).toFixed(2) + "px");
+        particle.style.setProperty("--dx", driftX.toFixed(2) + "px");
+        particle.style.setProperty("--dy", driftY.toFixed(2) + "px");
+        particle.style.setProperty("--rotation", rotation.toFixed(2) + "deg");
+
+        if (isDot) {
+          particle.dataset.shape = "dot";
+        } else if (shapeRoll < 0.82) {
+          particle.dataset.shape = "star";
+        }
+        if (shouldUseDarkParticle(spawnX, spawnY)) {
+          particle.dataset.tone = "dark";
+        }
+
+        if (particleLayer.childElementCount > 78) {
+          particleLayer.firstElementChild.remove();
+        }
+
+        particleLayer.appendChild(particle);
+        window.setTimeout(() => {
+          particle.remove();
+        }, 1340);
+      };
+
+      const setTargetFromPointer = (event) => {
+        if (event.pointerType && event.pointerType !== "mouse") {
+          return;
+        }
+
+        lastPointerClientX = event.clientX;
+        lastPointerClientY = event.clientY;
+        pointerInsideWindow = true;
+
+        const now = performance.now();
+        if (now - lastParticleAt < 24) {
+          return;
+        }
+
+        lastParticleAt = now;
+        emitParticle(event.clientX, event.clientY);
+        emitParticle(event.clientX, event.clientY);
+      };
+
+      const resetPointer = () => {
+        pointerInsideWindow = false;
+      };
+
+      window.addEventListener("pointermove", setTargetFromPointer, { passive: true });
+      window.addEventListener("mousemove", setTargetFromPointer, { passive: true });
+      window.addEventListener("pointerleave", resetPointer);
+      document.addEventListener("mouseleave", resetPointer);
+
+      const idleParticleTimer = window.setInterval(() => {
+        if (!pointerInsideWindow || document.hidden || lastPointerClientX === null || lastPointerClientY === null) {
+          return;
+        }
+
+        emitParticle(lastPointerClientX, lastPointerClientY, true);
+        emitParticle(lastPointerClientX, lastPointerClientY, true);
+      }, 100);
+
+      reduceMotion.addEventListener("change", () => {
+        window.clearInterval(idleParticleTimer);
+        particleLayer.remove();
+        window.removeEventListener("pointermove", setTargetFromPointer);
+        window.removeEventListener("mousemove", setTargetFromPointer);
+        window.removeEventListener("pointerleave", resetPointer);
+        document.removeEventListener("mouseleave", resetPointer);
+      }, { once: true });
+    })();

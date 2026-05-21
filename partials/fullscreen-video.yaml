@@ -1,0 +1,70 @@
+- style: |
+    .rvn-fullscreen-video-section {
+      aspect-ratio: 16 / 9;
+      background: #000;
+      border: 1px solid rgba(170, 170, 170, 0.42);
+      box-sizing: border-box;
+      margin-left: calc(50% - 50vw);
+      margin-right: calc(50% - 50vw);
+      margin-top: 160px;
+      overflow: hidden;
+      position: relative;
+      width: 100vw;
+    }
+    .rvn-fullscreen-video {
+      background: #000;
+      display: block;
+      height: 100%;
+      object-fit: contain;
+      width: 100%;
+    }
+    @media (min-aspect-ratio: 16 / 9) {
+      .rvn-fullscreen-video-section {
+        aspect-ratio: auto;
+        height: 100vh;
+      }
+      @supports (height: 100svh) {
+        .rvn-fullscreen-video-section {
+          height: 100svh;
+        }
+      }
+    }
+- 'section class="rvn-fullscreen-video-section" aria-label="${label}"':
+    - $if build.isScreenshotMode:
+        - 'video class="rvn-fullscreen-video" src="${videoSrc}" poster="${posterSrc}" controls playsinline preload="metadata" data-rvn-autoplay-video':
+      $else:
+        - 'video class="rvn-fullscreen-video" src="${videoSrc}" poster="${posterSrc}" autoplay loop controls playsinline preload="auto" data-rvn-autoplay-video':
+- script: |
+    (() => {
+      const startVideo = (video) => {
+        if (video.dataset.rvnAutoplayStarted === "true") {
+          return;
+        }
+
+        video.dataset.rvnAutoplayStarted = "true";
+        video.muted = false;
+        video.volume = 1;
+
+        const playAttempt = video.play();
+
+        if (!playAttempt || typeof playAttempt.catch !== "function") {
+          return;
+        }
+
+        playAttempt.catch(() => {
+          video.muted = true;
+          video.play().catch(() => {
+            video.dataset.rvnAutoplayStarted = "false";
+          });
+        });
+      };
+
+      document.querySelectorAll("[data-rvn-autoplay-video]").forEach((video) => {
+        if (video.readyState >= 2) {
+          startVideo(video);
+          return;
+        }
+
+        video.addEventListener("loadeddata", () => startVideo(video), { once: true });
+      });
+    })();
