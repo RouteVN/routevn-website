@@ -8,6 +8,23 @@ Spritesheets are animated image resources made from a single PNG image and a JSO
 
 The PNG contains the frames. The atlas JSON describes where each frame is located and how frames are grouped into animation clips.
 
+## Creating simple spritesheets
+
+If you have separate PNG frames, use the [Spritesheet Tool](/creator/tools/spritesheet/) to make a simple spritesheet package in the browser.
+
+The tool exports a `.zip` file with one PNG atlas and one PixiJS-style JSON atlas file.
+
+Basic flow:
+
+1. Set the frame width and frame height.
+2. Upload PNG images.
+3. Set `Duration frames` when an image should stay on screen for more than one frame.
+4. Move images up or down until the list matches the playback order.
+5. Use the preview controls to check the animation.
+6. Download the zip file.
+
+Use this tool for simple animations. It does not trim transparent pixels, rotate frames, or create multiple animation clips.
+
 ## Supported files
 
 Spritesheet import requires:
