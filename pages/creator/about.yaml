@@ -19,6 +19,8 @@ seo:
   subtitle: ${site.creator.about.hero.subtitle}
   subtitleHtml: ${site.creator.about.hero.subtitleHtml}
   message: ${site.creator.about.hero.message}
+  backgroundImageSrc: /public/creator/chibi-hi.png
+  backgroundImageAlt: Chibi character in a hi pose.
   videoSrc: ${site.creator.about.hero.videoSrc}
   posterSrc: ${site.creator.about.hero.posterSrc}
 
@@ -71,6 +73,25 @@ seo:
 #   features: ${site.creator.about.videoTutorialsFeature.features}
 #   learnMoreHref: ${site.creator.about.videoTutorialsFeature.learnMoreHref}
 
+- style: |
+    .rvn-about-faq-shell {
+      box-sizing: border-box;
+      width: min(1200px, 100%);
+    }
+
+    @media (max-width: 1280px) {
+      .rvn-about-faq-shell {
+        max-width: none;
+        width: calc(100% - 32px);
+      }
+    }
+
+    @media (max-width: 760px) {
+      .rvn-about-faq-shell {
+        width: calc(100% - 16px);
+      }
+    }
+
 - $partial: blog-posts-grid
   title: ${site.creator.about.blogPosts.title}
   message: ${site.creator.about.blogPosts.message}
@@ -79,7 +100,7 @@ seo:
   ctaHref: ${site.creator.about.blogPosts.ctaHref}
 
 - rtgl-view h="100":
-- rtgl-view ah="c" ph="lg" md-w="100vw" lg-w="768" w="1024":
+- 'rtgl-view class="rvn-about-faq-shell" ah="c"':
     - rtgl-view d="h" md-d="v" w="f" av="c" g="lg" mb="lg":
         - rtgl-view w="1fg" md-w="f":
             - rtgl-text s="h4": ${site.creator.about.faq.title}
@@ -97,6 +118,9 @@ seo:
   imgSrc: ${site.creator.about.cta.imgSrc}
   cta: ${site.creator.about.cta.cta}
   secondaryCta: ${site.creator.about.cta.secondaryCta}
+
+- 'rtgl-view ah="c" w="f" style="margin-top: 20vh;"':
+    - 'img src="/public/creator/chibi-thank-you.png" alt="Chibi character in a thank you pose." style="display: block; height: auto; max-width: min(320px, calc(100vw - 32px)); width: 100%;"':
 
 # Temporarily hidden. Restore this block to show the bottom preview video.
 # - $partial: fullscreen-video

@@ -1,4 +1,23 @@
-- rtgl-view ah="c" ph="lg" md-w="100vw" lg-w="768" w="1024":
+- style: |
+    .rvn-cta-shell {
+      box-sizing: border-box;
+      width: min(1200px, 100%);
+    }
+
+    @media (max-width: 1280px) {
+      .rvn-cta-shell {
+        max-width: none;
+        width: calc(100% - 32px);
+      }
+    }
+
+    @media (max-width: 760px) {
+      .rvn-cta-shell {
+        width: calc(100% - 16px);
+      }
+    }
+
+- 'rtgl-view class="rvn-cta-shell" ah="c"':
     - rtgl-view ah="c" p="xl" br="md" bw="sm" w="f":
         - $if imgSrc:
             - 'rtgl-image h="56" w="56" src="${imgSrc}" alt="" mb="md"':
