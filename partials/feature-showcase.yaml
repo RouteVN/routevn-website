@@ -1,6 +1,6 @@
 - 'rtgl-view class="${themeClass}" w="f" ah="c" bgc="${backgroundColor}" style="background: ${backgroundColor}; box-sizing: border-box; color: ${foregroundColor}; margin-left: calc(50% - 50vw); margin-right: calc(50% - 50vw); width: 100vw;"':
     - rtgl-view h=64:
-    - 'rtgl-view md-w="calc(100vw - 32px)" xl-w="calc(100vw - 64px)" w="1200" mh="xl" pb="lg" g="lg"':
+    - 'rtgl-view md-w="calc(100vw - 48px)" xl-w="calc(100vw - 64px)" w="1200" mh="xl" pb="lg" g="lg"':
         - rtgl-view d="h" md-d="v" w="f" av="c" g="lg":
             - rtgl-view g="md" w="1fg" ah="s":
                 - rtgl-text s=h1 mb="sm": ${title}

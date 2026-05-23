@@ -9,7 +9,7 @@
       margin: 0 auto;
       max-width: 1200px;
       padding: 64px 0;
-      width: min(1200px, calc(100% - 64px));
+      width: min(1200px, 100%);
     }
     .rvn-functionality-grid-header {
       align-items: center;
@@ -127,10 +127,16 @@
         min-height: 340px;
       }
     }
+    @media (max-width: 1280px) {
+      .rvn-functionality-grid-shell {
+        max-width: none;
+        width: calc(100% - 32px);
+      }
+    }
     @media (max-width: 760px) {
       .rvn-functionality-grid-shell {
         padding: 48px 0;
-        width: min(1200px, calc(100% - 16px));
+        width: calc(100% - 16px);
       }
       .rvn-functionality-grid-header {
         align-items: start;
