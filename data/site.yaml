@@ -46,22 +46,22 @@ footer:
         # - text: About
         #   href: /about/
         - text: Creator Docs
-          href: /creator/docs/introduction/
+          href: /en/creator/docs/introduction/
         - text: Creator Changelog
-          href: /creator/changelog/
+          href: /en/creator/changelog/
         - text: Blog
-          href: /blog/
+          href: /en/blog/
     - links:
         - text: Hiring
-          href: /hiring/
+          href: /en/hiring/
         - text: Contact
           href: https://tally.so/r/wzZ7rM
           newTab: true
     - links:
         - text: Privacy Policy
-          href: /agreement/privacy-policy/1-0-0/
+          href: /en/agreement/privacy-policy/1-0-0/
         - text: Terms of Service
-          href: /agreement/terms-of-service/1-0-0/
+          href: /en/agreement/terms-of-service/1-0-0/
 
 socialPage:
   title: Follow RouteVN
@@ -111,7 +111,7 @@ landing:
   mission:
     title: A dedicated platform for Visual Novels
     text: To fulfill the full potential of Visual Novels
-    href: /blog/2025/01-to-fulfill-the-whole-potential-of-visual-novels/
+    href: /en/blog/2025/01-to-fulfill-the-full-potential-of-visual-novels/
   sections:
     # - title: For Readers
     #   cards:
@@ -122,7 +122,7 @@ landing:
       cards:
         - title: RouteVN Creator
           text: Create Visual Novels without any coding
-          href: /creator/about/
+          href: /en/creator/about/
           btnLabel: Learn More
         # - title: RouteVN Publisher
         #   text: A publishing and distribution platform dedicated to Visual Novels
@@ -179,7 +179,7 @@ creator:
       themeClass: dark
       sideImageSrc: /public/landing/object-2.png
       videoSrc: /public/creator/animated-1.mp4
-      learnMoreHref: /creator/docs/scene-editor/
+      learnMoreHref: /en/creator/docs/scene-editor/
       learnMoreLabel: Learn More
       features:
         - title: Real-time preview
@@ -194,7 +194,7 @@ creator:
       themeClass: dark
       sideImageSrc: /public/landing/object-5.png
       videoSrc: /public/creator/animated-2.mp4
-      learnMoreHref: /creator/docs/animations/
+      learnMoreHref: /en/creator/docs/animations/
       learnMoreLabel: Learn More
     videoTutorialsFeature:
       title: Video tutorials from the creator of RouteVN
@@ -203,7 +203,7 @@ creator:
       foregroundColor: var(--foreground)
       themeClass: dark
       imgSrc: /public/creator/routevn-demo-250108-thumb.png
-      learnMoreHref: /creator/docs/video-tutorials/
+      learnMoreHref: /en/creator/docs/video-tutorials/
       features:
         - title: Over 20 video tutorials
           message: Step-by-step lessons for building visual novels in RouteVN Creator.
@@ -219,29 +219,29 @@ creator:
         - title: Layout Editor
           message: Fully customize your Visual Novel's UI.
           imgSrc: /public/creator/ss-5.png
-          href: /creator/docs/layouts/
+          href: /en/creator/docs/layouts/
         - title: Asset Manager
           message: Keep images, audio, characters, and project files organized in one workspace.
           imgSrc: /public/creator/ss-1.png
-          href: /creator/docs/images/
+          href: /en/creator/docs/images/
         - title: Scene Map
           message: See the shape of your visual novel and keep branching scenes easy to follow.
           imgSrc: /public/creator/ss-7.png
-          href: /creator/docs/scene-map/
+          href: /en/creator/docs/scene-map/
         - title: Choices and Branching
           message: Add player choices and connect them to the next part of your story.
           imgSrc: /public/images/routevn_og.png
-          href: /creator/docs/line-actions/choices/
+          href: /en/creator/docs/line-actions/choices/
         - title: Publishing
           message: Export your project and prepare it for sharing on the web.
           imgSrc: /public/images/routevn_og.png
-          href: /creator/docs/publish/
+          href: /en/creator/docs/publish/
     blogPosts:
       title: Latest RouteVN Blog Posts
       message: Follow product updates, release notes, and behind-the-scenes posts about building RouteVN.
       sideImageSrc: /public/landing/object-1.png
       ctaLabel: Show All Posts
-      ctaHref: /blog/
+      ctaHref: /en/blog/
 
     madeWith:
       title: Made with RouteVN Creator
@@ -296,11 +296,11 @@ creator:
       imgSrc: /public/images/routevn-icon.png
       cta:
         label: Docs
-        href: /creator/docs/introduction/
+        href: /en/creator/docs/introduction/
         variant: se
       secondaryCta:
         label: Download
-        href: /creator/download/
+        href: /en/creator/download/
         variant: pr
     bottomVideo:
       label: RouteVN Creator preview video

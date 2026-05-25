@@ -1,0 +1,1222 @@
+---
+template: base
+title: RouteVN Spritesheet Tool
+seo:
+  title: RouteVN Spritesheet Tool - PNG to PixiJS Atlas
+  description: Create a PixiJS spritesheet PNG and atlas JSON from uploaded PNG images in the browser.
+---
+- style: |
+    .rvn-spritesheet-tool {
+      --rvn-tool-panel: #1e1e1e;
+      --rvn-tool-panel-soft: #242424;
+      --rvn-tool-border: rgba(255, 255, 255, 0.12);
+      --rvn-tool-muted: rgba(255, 255, 255, 0.68);
+      --rvn-tool-focus: rgba(255, 255, 255, 0.14);
+      box-sizing: border-box;
+      display: grid;
+      gap: 24px;
+      margin: 56px auto 0;
+      max-width: 1180px;
+      width: min(100%, calc(100vw - 32px));
+    }
+
+    .rvn-spritesheet-tool *,
+    .rvn-spritesheet-tool *::before,
+    .rvn-spritesheet-tool *::after {
+      box-sizing: border-box;
+    }
+
+    .rvn-tool-header {
+      align-items: end;
+      display: flex;
+      gap: 16px;
+      justify-content: space-between;
+    }
+
+    .rvn-tool-title {
+      margin: 0;
+    }
+
+
+    .rvn-tool-actions {
+      align-items: center;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      justify-content: flex-end;
+    }
+
+    .rvn-tool-grid {
+      align-items: start;
+      display: grid;
+      gap: 16px;
+      grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+      width: 100%;
+    }
+
+    .rvn-tool-panel,
+    .rvn-preview-panel,
+    .rvn-sources-panel {
+      background: var(--rvn-tool-panel);
+      border: 1px solid var(--rvn-tool-border);
+      border-radius: 8px;
+    }
+
+    .rvn-tool-panel,
+    .rvn-preview-panel {
+      padding: 16px;
+    }
+
+    .rvn-tool-panel {
+      display: grid;
+      gap: 16px;
+      grid-template-columns: minmax(0, 1fr);
+      min-width: 0;
+      width: 100%;
+    }
+
+    .rvn-fieldset {
+      border: 0;
+      display: grid;
+      gap: 12px;
+      margin: 0;
+      min-inline-size: 0;
+      padding: 0;
+      width: 100%;
+    }
+
+    .rvn-fieldset legend,
+    .rvn-panel-title {
+      color: var(--foreground);
+      font-size: 1rem;
+      font-weight: 600;
+      letter-spacing: 0;
+      line-height: 1.3;
+      margin: 0;
+      padding: 0;
+    }
+
+    .rvn-field-row {
+      display: grid;
+      gap: 8px;
+      width: 100%;
+    }
+
+    .rvn-two-col {
+      display: grid;
+      gap: 10px;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      width: 100%;
+    }
+
+    .rvn-field-label {
+      color: var(--rvn-tool-muted);
+      font-size: 0.8rem;
+      line-height: 1.2;
+    }
+
+    .rvn-input,
+    .rvn-select {
+      appearance: none;
+      background: #111;
+      border: 1px solid var(--rvn-tool-border);
+      border-radius: 6px;
+      color: var(--foreground);
+      font: inherit;
+      min-height: 40px;
+      outline: none;
+      padding: 8px 10px;
+      width: 100%;
+    }
+
+    .rvn-input:focus,
+    .rvn-select:focus {
+      border-color: var(--foreground);
+      box-shadow: 0 0 0 3px var(--rvn-tool-focus);
+    }
+
+    .rvn-tool-button,
+    .rvn-secondary-button {
+      align-items: center;
+      border: 1px solid var(--rvn-tool-border);
+      border-radius: 6px;
+      cursor: pointer;
+      display: inline-flex;
+      font: inherit;
+      font-size: 0.92rem;
+      font-weight: 600;
+      justify-content: center;
+      min-height: 40px;
+      padding: 8px 12px;
+      text-decoration: none;
+      transition: border-color 120ms ease, background 120ms ease, color 120ms ease;
+      width: auto;
+    }
+
+    .rvn-tool-button {
+      background: var(--primary);
+      color: var(--primary-foreground);
+    }
+
+    .rvn-secondary-button {
+      background: #151515;
+      color: var(--foreground);
+    }
+
+    .rvn-tool-button:hover,
+    .rvn-secondary-button:hover {
+      border-color: rgba(255, 255, 255, 0.28);
+    }
+
+    .rvn-tool-button:disabled,
+    .rvn-secondary-button:disabled {
+      cursor: not-allowed;
+      filter: grayscale(1);
+      opacity: 0.48;
+    }
+
+    .rvn-button-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      width: 100%;
+    }
+
+    .rvn-button-row .rvn-secondary-button,
+    .rvn-tool-panel > .rvn-tool-button {
+      width: 100%;
+    }
+
+    .rvn-dropzone {
+      align-items: center;
+      background: #151515;
+      border: 1px dashed rgba(255, 255, 255, 0.24);
+      border-radius: 8px;
+      cursor: pointer;
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+      justify-content: center;
+      margin-top: 8px;
+      min-height: 128px;
+      padding: 18px;
+      text-align: center;
+      width: 100%;
+    }
+
+    .rvn-dropzone:focus,
+    .rvn-dropzone.is-dragging {
+      border-color: var(--foreground);
+      box-shadow: 0 0 0 3px var(--rvn-tool-focus);
+      outline: none;
+    }
+
+    .rvn-dropzone-title {
+      display: block;
+      font-weight: 600;
+      text-align: center;
+      width: 100%;
+    }
+
+    .rvn-dropzone-hint {
+      color: var(--rvn-tool-muted);
+      display: block;
+      text-align: center;
+      width: 100%;
+    }
+
+    .rvn-file-input {
+      height: 1px;
+      opacity: 0;
+      pointer-events: none;
+      position: absolute;
+      width: 1px;
+    }
+
+    .rvn-preview-panel {
+      display: grid;
+      gap: 12px;
+    }
+
+    .rvn-preview-head {
+      align-items: center;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      justify-content: space-between;
+    }
+
+    .rvn-preview-toolbar {
+      align-items: center;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      justify-content: flex-end;
+    }
+
+    .rvn-preview-fps-field {
+      align-items: center;
+      display: flex;
+      gap: 8px;
+    }
+
+    .rvn-preview-fps-field .rvn-input {
+      height: 40px;
+      min-height: 40px;
+      width: 76px;
+    }
+
+    .rvn-preview-meta {
+      color: var(--rvn-tool-muted);
+      font-size: 0.85rem;
+      line-height: 1.3;
+      margin: 0;
+      text-align: right;
+    }
+
+    .rvn-preview-canvas-wrap {
+      background-color: #111;
+      border: 1px solid var(--rvn-tool-border);
+      border-radius: 8px;
+      height: 420px;
+      overflow: hidden;
+      position: relative;
+      width: 100%;
+    }
+
+    .rvn-preview-canvas {
+      display: block;
+      height: 100%;
+      width: 100%;
+    }
+
+    .rvn-sources-panel {
+      overflow: hidden;
+    }
+
+    .rvn-sources-header {
+      align-items: center;
+      border-bottom: 1px solid var(--rvn-tool-border);
+      display: flex;
+      gap: 12px;
+      justify-content: space-between;
+      padding: 14px 16px;
+    }
+
+    .rvn-source-list {
+      display: grid;
+      gap: 0;
+      grid-template-columns: minmax(0, 1fr);
+      width: 100%;
+    }
+
+    .rvn-source-empty {
+      color: var(--rvn-tool-muted);
+      padding: 18px 16px;
+    }
+
+    .rvn-source-item {
+      box-sizing: border-box;
+      display: grid;
+      gap: 14px;
+      grid-template-columns: 168px minmax(0, 1fr) 160px 112px auto;
+      padding: 16px;
+      width: 100%;
+    }
+
+    .rvn-source-item + .rvn-source-item {
+      border-top: 1px solid var(--rvn-tool-border);
+    }
+
+    .rvn-source-preview {
+      align-items: center;
+      background: #111;
+      border: 1px solid var(--rvn-tool-border);
+      border-radius: 8px;
+      display: grid;
+      min-height: 116px;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .rvn-source-preview img {
+      display: block;
+      max-height: 132px;
+      max-width: 100%;
+      object-fit: contain;
+      width: 100%;
+    }
+
+    .rvn-source-main {
+      min-width: 0;
+    }
+
+    .rvn-source-name {
+      font-weight: 600;
+      overflow-wrap: anywhere;
+    }
+
+    .rvn-source-details {
+      color: var(--rvn-tool-muted);
+      font-size: 0.84rem;
+      line-height: 1.35;
+      margin-top: 6px;
+    }
+
+    .rvn-source-controls {
+      align-content: start;
+      display: grid;
+      gap: 8px;
+    }
+
+    .rvn-source-controls .rvn-input {
+      height: 40px;
+    }
+
+    .rvn-source-order {
+      align-content: center;
+      display: grid;
+      gap: 8px;
+    }
+
+    .rvn-source-order .rvn-secondary-button {
+      width: 100%;
+    }
+
+    .rvn-source-remove {
+      align-self: center;
+    }
+
+    @media (max-width: 900px) {
+      .rvn-tool-header {
+        align-items: start;
+        flex-direction: column;
+      }
+
+      .rvn-tool-actions {
+        justify-content: flex-start;
+      }
+
+      .rvn-tool-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .rvn-source-item {
+        grid-template-columns: 132px minmax(0, 1fr);
+      }
+
+      .rvn-source-controls,
+      .rvn-source-order,
+      .rvn-source-remove {
+        grid-column: 2;
+      }
+    }
+
+    @media (max-width: 620px) {
+      .rvn-spritesheet-tool {
+        margin-top: 40px;
+        width: min(100%, calc(100vw - 20px));
+      }
+
+      .rvn-two-col {
+        grid-template-columns: 1fr;
+      }
+
+      .rvn-preview-canvas-wrap {
+        height: 300px;
+      }
+
+      .rvn-source-item {
+        grid-template-columns: 1fr;
+      }
+
+      .rvn-source-controls,
+      .rvn-source-order,
+      .rvn-source-remove {
+        grid-column: auto;
+      }
+    }
+- 'rtgl-view class="rvn-spritesheet-tool" data-rvn-spritesheet-tool="true" g="xl"':
+    - 'rtgl-view class="rvn-tool-header" d="h" md-d="v" w="f" av="e" md-av="s" g="lg"':
+        - rtgl-view:
+            - 'rtgl-text class="rvn-tool-title" id="rvn-tool-title" style="font-size: 2rem; font-weight: 600; line-height: 1.1; letter-spacing: 0;"': Spritesheet Tool
+        - rtgl-view class="rvn-tool-header-spacer" w="1fg" md-hide:
+        - 'rtgl-view class="rvn-tool-actions" d="h" av="c" g="md" wrap aria-label="Spritesheet tool links"':
+            - rtgl-button href="/en/creator/docs/spritesheets/" v="se": Spritesheet docs
+    - rtgl-view class="rvn-tool-grid" w="f":
+        - 'rtgl-view class="rvn-tool-panel" role="region" aria-labelledby="rvn-settings-title" g="lg" p="lg" w="f"':
+            - rtgl-text id="rvn-settings-title" class="rvn-panel-title" s="h4": Settings
+            - fieldset class="rvn-fieldset":
+                - legend: Output
+                - rtgl-view class="rvn-field-row" g="md":
+                    - label class="rvn-field-label" for="rvn-output-name": File name
+                    - 'input id="rvn-output-name" class="rvn-input" type="text" value="spritesheet" autocomplete="off" spellcheck="false"':
+                - rtgl-view class="rvn-two-col":
+                    - rtgl-view class="rvn-field-row" g="md":
+                        - label class="rvn-field-label" for="rvn-frame-width": Frame width
+                        - 'input id="rvn-frame-width" class="rvn-input" type="number" min="1" max="4096" step="1" value="256" inputmode="numeric"':
+                    - rtgl-view class="rvn-field-row" g="md":
+                        - label class="rvn-field-label" for="rvn-frame-height": Frame height
+                        - 'input id="rvn-frame-height" class="rvn-input" type="number" min="1" max="4096" step="1" value="256" inputmode="numeric"':
+                - rtgl-view class="rvn-button-row" d="h" g="md" wrap:
+                    - button class="rvn-secondary-button" id="rvn-match-size" type="button": Match first image
+            - fieldset class="rvn-fieldset":
+                - legend: PNG files
+                - 'rtgl-view class="rvn-dropzone" id="rvn-dropzone" role="button" tabindex="0" av="c" ah="c" g="sm" p="lg"':
+                    - rtgl-text class="rvn-dropzone-title" s="md": Choose PNG files
+                    - rtgl-text class="rvn-dropzone-hint" s="sm" c="mu": Drop PNG images here
+                - 'input id="rvn-file-input" class="rvn-file-input" type="file" accept="image/png,.png" multiple':
+            - button class="rvn-tool-button" id="rvn-download" type="button" disabled: Download zip
+        - 'rtgl-view class="rvn-preview-panel" role="region" aria-labelledby="rvn-preview-title" g="md" p="lg"':
+            - rtgl-view class="rvn-preview-head" d="h" av="c" g="lg" wrap:
+                - rtgl-text id="rvn-preview-title" class="rvn-panel-title" s="h4": Preview
+                - rtgl-view class="rvn-preview-spacer" w="1fg" md-hide:
+                - rtgl-view class="rvn-preview-toolbar" d="h" av="c" g="md" wrap:
+                    - button class="rvn-secondary-button" id="rvn-preview-toggle" type="button" aria-pressed="true" disabled: Stop preview
+                    - rtgl-view class="rvn-preview-fps-field" d="h" av="c" g="md":
+                        - label class="rvn-field-label" for="rvn-preview-fps": Preview FPS
+                        - 'input id="rvn-preview-fps" class="rvn-input" type="number" min="1" max="60" step="1" value="12" inputmode="numeric"':
+            - rtgl-view class="rvn-preview-canvas-wrap" overflow="hidden":
+                - canvas id="rvn-preview-canvas" class="rvn-preview-canvas" width="640" height="420":
+    - 'rtgl-view class="rvn-sources-panel" role="region" aria-labelledby="rvn-sources-title" overflow="hidden"':
+        - rtgl-view class="rvn-sources-header" d="h" av="c" g="lg":
+            - rtgl-text id="rvn-sources-title" class="rvn-panel-title" s="h4": Images
+            - rtgl-view class="rvn-sources-spacer" w="1fg":
+            - rtgl-text id="rvn-source-count" class="rvn-preview-meta" s="sm" c="mu": 0 files
+        - rtgl-view id="rvn-source-list" class="rvn-source-list" w="f":
+            - rtgl-view class="rvn-source-empty": No images selected.
+- script: |
+    (() => {
+      const root = document.querySelector("[data-rvn-spritesheet-tool='true']");
+
+      if (!root || root.dataset.rvnInitialized === "true") {
+        return;
+      }
+
+      root.dataset.rvnInitialized = "true";
+
+      const MAX_CANVAS_SIDE = 8192;
+      const MAX_CANVAS_PIXELS = 67108864;
+      const MAX_FRAMES = 2048;
+      const textEncoder = new TextEncoder();
+
+      const els = {
+        outputName: document.getElementById("rvn-output-name"),
+        frameWidth: document.getElementById("rvn-frame-width"),
+        frameHeight: document.getElementById("rvn-frame-height"),
+        previewFps: document.getElementById("rvn-preview-fps"),
+        fileInput: document.getElementById("rvn-file-input"),
+        dropzone: document.getElementById("rvn-dropzone"),
+        matchSize: document.getElementById("rvn-match-size"),
+        download: document.getElementById("rvn-download"),
+        previewCanvas: document.getElementById("rvn-preview-canvas"),
+        previewToggle: document.getElementById("rvn-preview-toggle"),
+        sourceCount: document.getElementById("rvn-source-count"),
+        sourceList: document.getElementById("rvn-source-list"),
+      };
+
+      const state = {
+        atlasCanvas: document.createElement("canvas"),
+        atlasJson: null,
+        atlasWidth: 0,
+        atlasHeight: 0,
+        frameHeight: 256,
+        frameWidth: 256,
+        frames: [],
+        lastTime: 0,
+        previewIndex: 0,
+        previewPlaying: true,
+        sources: [],
+      };
+
+      let nextSourceId = 1;
+
+      function positiveInt(value, fallback) {
+        const number = Number(value);
+
+        if (!Number.isFinite(number) || number < 1) {
+          return fallback;
+        }
+
+        return Math.floor(number);
+      }
+
+      function clampFrameCount(value) {
+        return Math.max(1, Math.min(999, positiveInt(value, 1)));
+      }
+
+      function sanitizeBaseName(value, fallback) {
+        const clean = String(value || "")
+          .replace(/\.[^.]+$/, "")
+          .replace(/[^a-zA-Z0-9_-]+/g, "-")
+          .replace(/^-+|-+$/g, "");
+
+        return clean || fallback || "spritesheet";
+      }
+
+      function getOutputBaseName() {
+        return sanitizeBaseName(
+          els.outputName.value.replace(/\.(zip|png|json)$/i, ""),
+          "spritesheet"
+        );
+      }
+
+      function loadImageFile(file) {
+        return new Promise((resolve, reject) => {
+          const objectUrl = URL.createObjectURL(file);
+          const image = new Image();
+
+          image.onload = () => {
+            resolve({
+              file,
+              frameCount: 1,
+              height: image.naturalHeight,
+              id: nextSourceId++,
+              image,
+              name: file.name,
+              objectUrl,
+              width: image.naturalWidth,
+            });
+          };
+
+          image.onerror = () => {
+            URL.revokeObjectURL(objectUrl);
+            reject(new Error("Could not load " + file.name + "."));
+          };
+
+          image.src = objectUrl;
+        });
+      }
+
+      async function addFiles(fileList) {
+        const files = Array.from(fileList || []);
+        const pngFiles = files.filter((file) => file.type === "image/png" || /\.png$/i.test(file.name));
+        const ignoredCount = files.length - pngFiles.length;
+
+        if (pngFiles.length === 0) {
+          return;
+        }
+
+        const results = await Promise.allSettled(pngFiles.map(loadImageFile));
+        const loaded = [];
+        const failed = [];
+
+        results.forEach((result) => {
+          if (result.status === "fulfilled") {
+            loaded.push(result.value);
+          } else {
+            failed.push(result.reason.message);
+          }
+        });
+
+        state.sources.push.apply(state.sources, loaded);
+
+        if (state.sources.length === loaded.length && loaded.length > 0) {
+          const first = loaded[0];
+          els.frameWidth.value = String(Math.max(1, first.width));
+          els.frameHeight.value = String(Math.max(1, first.height));
+        }
+
+        renderSources();
+        rebuild();
+
+        void ignoredCount;
+        void failed;
+
+        els.fileInput.value = "";
+      }
+
+      function removeSource(id) {
+        const index = state.sources.findIndex((source) => source.id === id);
+
+        if (index === -1) {
+          return;
+        }
+
+        URL.revokeObjectURL(state.sources[index].objectUrl);
+        state.sources.splice(index, 1);
+        state.previewIndex = 0;
+        renderSources();
+        rebuild();
+      }
+
+      function moveSource(id, direction) {
+        const index = state.sources.findIndex((source) => source.id === id);
+        const nextIndex = index + direction;
+
+        if (index === -1 || nextIndex < 0 || nextIndex >= state.sources.length) {
+          return;
+        }
+
+        const source = state.sources[index];
+        state.sources[index] = state.sources[nextIndex];
+        state.sources[nextIndex] = source;
+        state.previewIndex = 0;
+        renderSources();
+        rebuild();
+      }
+
+      function matchFirstImageSize() {
+        const first = state.sources[0];
+
+        if (!first) {
+          return;
+        }
+
+        els.frameWidth.value = String(Math.max(1, first.width));
+        els.frameHeight.value = String(Math.max(1, first.height));
+        rebuild();
+        renderSources();
+      }
+
+      function renderSources() {
+        els.sourceList.innerHTML = "";
+        els.sourceCount.textContent = state.sources.length + " file" + (state.sources.length === 1 ? "" : "s");
+
+        if (state.sources.length === 0) {
+          const empty = document.createElement("div");
+          empty.className = "rvn-source-empty";
+          empty.textContent = "No images selected.";
+          els.sourceList.appendChild(empty);
+          return;
+        }
+
+        state.sources.forEach((source, index) => {
+          const item = document.createElement("article");
+          item.className = "rvn-source-item";
+
+          const preview = document.createElement("div");
+          preview.className = "rvn-source-preview";
+
+          const image = document.createElement("img");
+          image.alt = "";
+          image.draggable = false;
+          image.src = source.objectUrl;
+          preview.appendChild(image);
+
+          const count = clampFrameCount(source.frameCount);
+
+          const main = document.createElement("div");
+          main.className = "rvn-source-main";
+
+          const name = document.createElement("div");
+          name.className = "rvn-source-name";
+          name.textContent = String(index + 1) + ". " + source.name;
+
+          const details = document.createElement("div");
+          details.className = "rvn-source-details";
+
+          main.appendChild(name);
+          main.appendChild(details);
+
+          const controls = document.createElement("div");
+          controls.className = "rvn-source-controls";
+
+          const label = document.createElement("label");
+          label.className = "rvn-field-label";
+          label.htmlFor = "rvn-source-frames-" + source.id;
+          label.textContent = "Duration frames";
+
+          const input = document.createElement("input");
+          input.className = "rvn-input";
+          input.id = "rvn-source-frames-" + source.id;
+          input.inputMode = "numeric";
+          input.max = "999";
+          input.min = "1";
+          input.step = "1";
+          input.type = "number";
+          input.value = String(count);
+          input.addEventListener("input", () => {
+            source.frameCount = clampFrameCount(input.value);
+            refreshSourceInfo();
+            rebuild();
+          });
+          input.addEventListener("change", () => {
+            source.frameCount = clampFrameCount(input.value);
+            input.value = String(source.frameCount);
+            refreshSourceInfo();
+            rebuild();
+          });
+
+          controls.appendChild(label);
+          controls.appendChild(input);
+
+          const orderControls = document.createElement("div");
+          orderControls.className = "rvn-source-order";
+
+          const moveUpButton = document.createElement("button");
+          moveUpButton.className = "rvn-secondary-button";
+          moveUpButton.disabled = index === 0;
+          moveUpButton.type = "button";
+          moveUpButton.textContent = "Move up";
+          moveUpButton.addEventListener("click", () => moveSource(source.id, -1));
+
+          const moveDownButton = document.createElement("button");
+          moveDownButton.className = "rvn-secondary-button";
+          moveDownButton.disabled = index === state.sources.length - 1;
+          moveDownButton.type = "button";
+          moveDownButton.textContent = "Move down";
+          moveDownButton.addEventListener("click", () => moveSource(source.id, 1));
+
+          orderControls.appendChild(moveUpButton);
+          orderControls.appendChild(moveDownButton);
+
+          const removeButton = document.createElement("button");
+          removeButton.className = "rvn-secondary-button rvn-source-remove";
+          removeButton.type = "button";
+          removeButton.textContent = "Remove";
+          removeButton.addEventListener("click", () => removeSource(source.id));
+
+          item.appendChild(preview);
+          item.appendChild(main);
+          item.appendChild(controls);
+          item.appendChild(orderControls);
+          item.appendChild(removeButton);
+          els.sourceList.appendChild(item);
+
+          function refreshSourceInfo() {
+            details.textContent = source.width + " x " + source.height + " source.";
+          }
+
+          refreshSourceInfo();
+        });
+      }
+
+      function collectFrames() {
+        const atlasFrames = [];
+        const playbackFrames = [];
+        const usedNames = new Set();
+
+        state.sources.forEach((source) => {
+          const count = clampFrameCount(source.frameCount);
+          const baseName = sanitizeBaseName(source.name, "frame");
+          let frameName = baseName + ".png";
+          let suffix = 2;
+
+          while (usedNames.has(frameName)) {
+            frameName = baseName + "_" + suffix + ".png";
+            suffix += 1;
+          }
+
+          usedNames.add(frameName);
+
+          const frame = {
+            frameName,
+            source,
+            sourceH: source.height,
+            sourceW: source.width,
+            sourceX: 0,
+            sourceY: 0,
+          };
+
+          atlasFrames.push(frame);
+
+          for (let index = 0; index < count; index += 1) {
+            playbackFrames.push(frame);
+          }
+        });
+
+        return { atlasFrames, playbackFrames };
+      }
+
+      function chooseColumns(totalFrames, frameWidth, frameHeight) {
+        if (totalFrames <= 1) {
+          return 1;
+        }
+
+        return Math.max(1, Math.ceil(Math.sqrt(totalFrames * frameHeight / frameWidth)));
+      }
+
+      function rebuild() {
+        const frameWidth = positiveInt(els.frameWidth.value, 0);
+        const frameHeight = positiveInt(els.frameHeight.value, 0);
+        const frameData = collectFrames();
+        const frames = frameData.atlasFrames;
+        const playbackFrames = frameData.playbackFrames;
+        const errors = [];
+        const totalFrames = playbackFrames.length;
+
+        state.frameWidth = frameWidth;
+        state.frameHeight = frameHeight;
+        state.frames = [];
+        state.atlasJson = null;
+        state.atlasWidth = 0;
+        state.atlasHeight = 0;
+
+        if (state.sources.length === 0) {
+          els.download.disabled = true;
+          updatePreviewToggle();
+          drawPreview();
+          return;
+        }
+
+        if (frameWidth < 1 || frameHeight < 1) {
+          errors.push("Frame width and frame height must be at least 1.");
+        }
+
+        if (totalFrames > MAX_FRAMES) {
+          errors.push("The tool supports up to " + MAX_FRAMES + " frames per export.");
+        }
+
+        const columns = chooseColumns(Math.max(frames.length, 1), Math.max(frameWidth, 1), Math.max(frameHeight, 1));
+        const rows = Math.max(1, Math.ceil(frames.length / columns));
+        const atlasWidth = columns * frameWidth;
+        const atlasHeight = rows * frameHeight;
+
+        if (atlasWidth > MAX_CANVAS_SIDE || atlasHeight > MAX_CANVAS_SIDE) {
+          errors.push("Atlas is too large. Keep the generated PNG at or below " + MAX_CANVAS_SIDE + " x " + MAX_CANVAS_SIDE + ".");
+        }
+
+        if (atlasWidth * atlasHeight > MAX_CANVAS_PIXELS) {
+          errors.push("Atlas has too many pixels for this browser tool.");
+        }
+
+        if (errors.length > 0) {
+          els.download.disabled = true;
+          updatePreviewToggle();
+          drawPreview();
+          return;
+        }
+
+        state.atlasCanvas.width = atlasWidth;
+        state.atlasCanvas.height = atlasHeight;
+        state.atlasWidth = atlasWidth;
+        state.atlasHeight = atlasHeight;
+
+        const context = state.atlasCanvas.getContext("2d");
+        context.clearRect(0, 0, atlasWidth, atlasHeight);
+
+        const atlasFrames = {};
+
+        frames.forEach((frame, index) => {
+          const column = index % columns;
+          const row = Math.floor(index / columns);
+          const x = column * frameWidth;
+          const y = row * frameHeight;
+
+          context.drawImage(
+            frame.source.image,
+            frame.sourceX,
+            frame.sourceY,
+            frame.sourceW,
+            frame.sourceH,
+            x,
+            y,
+            frameWidth,
+            frameHeight
+          );
+
+          frame.x = x;
+          frame.y = y;
+          frame.w = frameWidth;
+          frame.h = frameHeight;
+          atlasFrames[frame.frameName] = {
+            frame: { x, y, w: frameWidth, h: frameHeight },
+            rotated: false,
+            trimmed: false,
+            spriteSourceSize: { x: 0, y: 0, w: frameWidth, h: frameHeight },
+            sourceSize: { w: frameWidth, h: frameHeight },
+          };
+        });
+
+        state.frames = playbackFrames;
+        state.atlasJson = {
+          frames: atlasFrames,
+          animations: {
+            animation: playbackFrames.map((frame) => frame.frameName),
+          },
+          meta: {
+            image: getOutputBaseName() + ".png",
+            size: { w: atlasWidth, h: atlasHeight },
+            scale: "1",
+          },
+        };
+
+        els.download.disabled = false;
+        updatePreviewToggle();
+        drawPreview();
+      }
+
+      function resizePreviewCanvas() {
+        const canvas = els.previewCanvas;
+        const rect = canvas.getBoundingClientRect();
+        const pixelRatio = Math.max(1, Math.min(2, window.devicePixelRatio || 1));
+        const width = Math.max(1, Math.floor(rect.width * pixelRatio));
+        const height = Math.max(1, Math.floor(rect.height * pixelRatio));
+
+        if (canvas.width !== width || canvas.height !== height) {
+          canvas.width = width;
+          canvas.height = height;
+        }
+
+        return { height, pixelRatio, width };
+      }
+
+      function drawPreview() {
+        const canvas = els.previewCanvas;
+        const size = resizePreviewCanvas();
+        const context = canvas.getContext("2d");
+
+        context.clearRect(0, 0, size.width, size.height);
+
+        if (!state.frames.length || !state.atlasJson) {
+          context.save();
+          context.fillStyle = "rgba(255, 255, 255, 0.55)";
+          context.font = Math.round(14 * size.pixelRatio) + "px sans-serif";
+          context.textAlign = "center";
+          context.textBaseline = "middle";
+          context.fillText("No preview", size.width / 2, size.height / 2);
+          context.restore();
+          return;
+        }
+
+        state.previewIndex %= state.frames.length;
+
+        const frame = state.frames[state.previewIndex];
+        const padding = 24 * size.pixelRatio;
+        const availableWidth = Math.max(1, size.width - padding * 2);
+        const availableHeight = Math.max(1, size.height - padding * 2);
+        const scale = Math.min(availableWidth / frame.w, availableHeight / frame.h);
+        const drawWidth = frame.w * scale;
+        const drawHeight = frame.h * scale;
+        const x = (size.width - drawWidth) / 2;
+        const y = (size.height - drawHeight) / 2;
+
+        context.drawImage(
+          state.atlasCanvas,
+          frame.x,
+          frame.y,
+          frame.w,
+          frame.h,
+          x,
+          y,
+          drawWidth,
+          drawHeight
+        );
+      }
+
+      function togglePreviewPlayback() {
+        state.previewPlaying = !state.previewPlaying;
+        state.lastTime = 0;
+        updatePreviewToggle();
+        drawPreview();
+      }
+
+      function updatePreviewToggle() {
+        const hasPreview = state.frames.length > 0 && Boolean(state.atlasJson);
+
+        els.previewToggle.disabled = !hasPreview;
+        els.previewToggle.textContent = state.previewPlaying ? "Stop preview" : "Start preview";
+        els.previewToggle.setAttribute("aria-pressed", state.previewPlaying ? "true" : "false");
+      }
+
+      function tick(time) {
+        const fps = Math.max(1, Math.min(60, positiveInt(els.previewFps.value, 12)));
+        const delay = 1000 / fps;
+
+        if (state.previewPlaying && time - state.lastTime >= delay) {
+          state.lastTime = time;
+
+          if (state.frames.length > 0) {
+            state.previewIndex = (state.previewIndex + 1) % state.frames.length;
+          }
+
+          drawPreview();
+        }
+
+        window.requestAnimationFrame(tick);
+      }
+
+      function canvasToBlob(canvas) {
+        return new Promise((resolve, reject) => {
+          canvas.toBlob((blob) => {
+            if (blob) {
+              resolve(blob);
+            } else {
+              reject(new Error("Could not create PNG output."));
+            }
+          }, "image/png");
+        });
+      }
+
+      async function downloadZip() {
+        rebuild();
+
+        if (!state.atlasJson || !state.frames.length) {
+          return;
+        }
+
+        const baseName = getOutputBaseName();
+        const pngBlob = await canvasToBlob(state.atlasCanvas);
+        const pngBytes = new Uint8Array(await pngBlob.arrayBuffer());
+        const jsonText = JSON.stringify({
+          frames: state.atlasJson.frames,
+          animations: state.atlasJson.animations,
+          meta: {
+            image: baseName + ".png",
+            size: state.atlasJson.meta.size,
+            scale: state.atlasJson.meta.scale,
+          },
+        }, null, 2);
+        const zipBlob = createZip([
+          { name: baseName + ".png", data: pngBytes },
+          { name: baseName + ".json", data: textEncoder.encode(jsonText) },
+        ]);
+        const url = URL.createObjectURL(zipBlob);
+        const anchor = document.createElement("a");
+
+        anchor.href = url;
+        anchor.download = baseName + ".zip";
+        document.body.appendChild(anchor);
+        anchor.click();
+        anchor.remove();
+
+        window.setTimeout(() => URL.revokeObjectURL(url), 1000);
+      }
+
+      function makeCrcTable() {
+        const table = new Uint32Array(256);
+
+        for (let index = 0; index < 256; index += 1) {
+          let crc = index;
+
+          for (let bit = 0; bit < 8; bit += 1) {
+            crc = crc & 1 ? 0xedb88320 ^ (crc >>> 1) : crc >>> 1;
+          }
+
+          table[index] = crc >>> 0;
+        }
+
+        return table;
+      }
+
+      const crcTable = makeCrcTable();
+
+      function crc32(bytes) {
+        let crc = 0xffffffff;
+
+        for (let index = 0; index < bytes.length; index += 1) {
+          crc = crcTable[(crc ^ bytes[index]) & 0xff] ^ (crc >>> 8);
+        }
+
+        return (crc ^ 0xffffffff) >>> 0;
+      }
+
+      function dosDateTime(date) {
+        const year = Math.max(1980, date.getFullYear());
+        const dosTime = (date.getHours() << 11) | (date.getMinutes() << 5) | Math.floor(date.getSeconds() / 2);
+        const dosDate = ((year - 1980) << 9) | ((date.getMonth() + 1) << 5) | date.getDate();
+
+        return { dosDate, dosTime };
+      }
+
+      function createZip(files) {
+        const localParts = [];
+        const centralParts = [];
+        const dateParts = dosDateTime(new Date());
+        let offset = 0;
+
+        files.forEach((file) => {
+          const nameBytes = textEncoder.encode(file.name);
+          const data = file.data;
+          const checksum = crc32(data);
+          const localHeader = new Uint8Array(30 + nameBytes.length);
+          const localView = new DataView(localHeader.buffer);
+
+          localView.setUint32(0, 0x04034b50, true);
+          localView.setUint16(4, 20, true);
+          localView.setUint16(6, 0, true);
+          localView.setUint16(8, 0, true);
+          localView.setUint16(10, dateParts.dosTime, true);
+          localView.setUint16(12, dateParts.dosDate, true);
+          localView.setUint32(14, checksum, true);
+          localView.setUint32(18, data.length, true);
+          localView.setUint32(22, data.length, true);
+          localView.setUint16(26, nameBytes.length, true);
+          localView.setUint16(28, 0, true);
+          localHeader.set(nameBytes, 30);
+
+          localParts.push(localHeader, data);
+
+          const centralHeader = new Uint8Array(46 + nameBytes.length);
+          const centralView = new DataView(centralHeader.buffer);
+
+          centralView.setUint32(0, 0x02014b50, true);
+          centralView.setUint16(4, 20, true);
+          centralView.setUint16(6, 20, true);
+          centralView.setUint16(8, 0, true);
+          centralView.setUint16(10, 0, true);
+          centralView.setUint16(12, dateParts.dosTime, true);
+          centralView.setUint16(14, dateParts.dosDate, true);
+          centralView.setUint32(16, checksum, true);
+          centralView.setUint32(20, data.length, true);
+          centralView.setUint32(24, data.length, true);
+          centralView.setUint16(28, nameBytes.length, true);
+          centralView.setUint16(30, 0, true);
+          centralView.setUint16(32, 0, true);
+          centralView.setUint16(34, 0, true);
+          centralView.setUint16(36, 0, true);
+          centralView.setUint32(38, 0, true);
+          centralView.setUint32(42, offset, true);
+          centralHeader.set(nameBytes, 46);
+
+          centralParts.push(centralHeader);
+          offset += localHeader.length + data.length;
+        });
+
+        const centralOffset = offset;
+        const centralSize = centralParts.reduce((sum, part) => sum + part.length, 0);
+        const endHeader = new Uint8Array(22);
+        const endView = new DataView(endHeader.buffer);
+
+        endView.setUint32(0, 0x06054b50, true);
+        endView.setUint16(4, 0, true);
+        endView.setUint16(6, 0, true);
+        endView.setUint16(8, files.length, true);
+        endView.setUint16(10, files.length, true);
+        endView.setUint32(12, centralSize, true);
+        endView.setUint32(16, centralOffset, true);
+        endView.setUint16(20, 0, true);
+
+        return new Blob(localParts.concat(centralParts, endHeader), { type: "application/zip" });
+      }
+
+      els.fileInput.addEventListener("change", (event) => addFiles(event.target.files));
+      els.dropzone.addEventListener("click", () => els.fileInput.click());
+      els.dropzone.addEventListener("keydown", (event) => {
+        if (event.key === "Enter" || event.key === " ") {
+          event.preventDefault();
+          els.fileInput.click();
+        }
+      });
+      els.dropzone.addEventListener("dragover", (event) => {
+        event.preventDefault();
+        els.dropzone.classList.add("is-dragging");
+      });
+      els.dropzone.addEventListener("dragleave", () => {
+        els.dropzone.classList.remove("is-dragging");
+      });
+      els.dropzone.addEventListener("drop", (event) => {
+        event.preventDefault();
+        els.dropzone.classList.remove("is-dragging");
+        addFiles(event.dataTransfer.files);
+      });
+      els.frameWidth.addEventListener("input", () => {
+        renderSources();
+        rebuild();
+      });
+      els.frameHeight.addEventListener("input", () => {
+        renderSources();
+        rebuild();
+      });
+      els.previewFps.addEventListener("input", rebuild);
+      els.outputName.addEventListener("input", rebuild);
+      els.matchSize.addEventListener("click", matchFirstImageSize);
+      els.download.addEventListener("click", downloadZip);
+      els.previewToggle.addEventListener("click", togglePreviewPlayback);
+      window.addEventListener("resize", drawPreview, { passive: true });
+
+      renderSources();
+      rebuild();
+      window.requestAnimationFrame(tick);
+    })();

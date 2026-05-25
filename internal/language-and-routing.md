@@ -1,9 +1,3 @@
----
-template: documentation
-title: Language and Routing Policy
-sidebarId: language-routing
----
-
 # Language and Routing Policy
 
 This site currently ships English content only.
@@ -13,76 +7,62 @@ Use `en` as the default locale.
 ## Supported locales
 
 - `en`: English (default).
-- Chinese Simplified: `zh-hans`.
-- Chinese Traditional: `zh-hant`.
+- Chinese Simplified: `zh-hans` for URL slugs and `zh-Hans` for BCP 47 tags.
+- Chinese Traditional: `zh-hant` for URL slugs and `zh-Hant` for BCP 47 tags.
 
 ## Routing behavior
 
-- Language URL prefixes follow the locale folder pattern.
-- Current locale implementation uses the default `en` path only.
 - `/` is a language-neutral home page.
-- All public pages must live under `/en/...`.
-- Non-locale page paths are redirects only. They must not render duplicate pages.
-- Sitemaps, canonical URLs, internal links, and navigation must use `/en/...`.
+- Canonical English content pages live under `/en/...`.
+- Non-locale content paths are redirects only. They must not render duplicate pages.
+- Sitemaps, canonical URLs, internal links, and navigation should use `/en/...` for content pages.
+- Home links may use `/` because the homepage is intentionally language-neutral.
 
 ## Route examples
 
-- Landing:
-  - `/` is the language-neutral home page.
-
-- Core sections:
-  - `/creator/about/` → `/en/creator/about/`.
-  - `/creator/download/` → `/en/creator/download/`.
-  - `/support/` → `/en/support/`.
-  - `/creator/changelog/` → `/en/creator/changelog/`.
-
-- Docs:
-  - `/creator/docs/introduction/` → `/en/creator/docs/introduction/`.
-  - `/creator/docs/page-index/` → `/en/creator/docs/page-index/`.
-
-- Tools:
-  - `/creator/tools/spritesheet/` → `/en/creator/tools/spritesheet/`.
-
-- Hiring:
-  - `/hiring/` → `/en/hiring/`.
-  - `/hiring/swe-intern/` → `/en/hiring/swe-intern/`.
-
-- Blog:
-  - `/blog/` → `/en/blog/`.
-  - `/blog/2026/10-routevn-creator-macos-release/` → `/en/blog/2026/10-routevn-creator-macos-release/`.
-
-- Agreements:
-  - `/agreement/privacy-policy/1-0-0/` → `/en/agreement/privacy-policy/1-0-0/`.
-  - `/agreement/terms-of-service/1-0-0/` → `/en/agreement/terms-of-service/1-0-0/`.
+- Landing: `/`.
+- Creator about: `/en/creator/about/`.
+- Creator download: `/en/creator/download/`.
+- Support: `/en/support/`.
+- Creator changelog: `/en/creator/changelog/`.
+- Creator docs introduction: `/en/creator/docs/introduction/`.
+- Creator docs page index: `/en/creator/docs/page-index/`.
+- Spritesheet tool: `/en/creator/tools/spritesheet/`.
+- Hiring index: `/en/hiring/`.
+- Hiring post: `/en/hiring/swe-intern/`.
+- Blog index: `/en/blog/`.
+- Blog post: `/en/blog/2026/10-routevn-creator-macos-release/`.
+- Privacy policy: `/en/agreement/privacy-policy/1-0-0/`.
+- Terms of service: `/en/agreement/terms-of-service/1-0-0/`.
 
 ## Partial language coverage
 
 Some sections may only be available in one language while the site supports more.
 
 - For pages we do not translate, create only the `en` version.
-- Do not create placeholder/empty files for unsupported locales.
+- Do not create placeholder or empty files for unsupported locales.
 - Redirect missing-locale requests to the English version.
 - Do not list missing-locale routes in sitemaps or `hreflang` metadata.
 - Use explicit fallback links in these pages to avoid dead ends.
 - Document every intentionally partial section so this behavior is visible to future contributors.
 
-Examples:
+Example:
 
-- Hiring is English-only:
-  - `/en/hiring/` and `/en/hiring/swe-intern/` exist.
-  - `/vi/hiring/` and `/zh-hans/hiring/` redirect to `/en/hiring/`.
-  - `/en/hiring/swe-intern/` is the canonical route for that job post.
+- Hiring is English-only.
+- `/en/hiring/` and `/en/hiring/swe-intern/` exist.
+- `/vi/hiring/` and `/zh-hans/hiring/` redirect to `/en/hiring/`.
+- `/en/hiring/swe-intern/` is the canonical route for that job post.
 
 ## Migration from existing routes
 
-The existing website uses non-locale routes such as `/creator/about/` and `/blog/`.
+The existing website used non-locale routes such as `/creator/about/` and `/blog/`.
 During migration, these routes become legacy redirects.
 
 - Add redirects from every existing non-locale public route to its `/en/...` route.
 - Keep `/` as a language-neutral home page.
-- Update all internal links to point directly to `/en/...`.
-- Update canonical URLs to point to `/en/...`.
-- Update sitemap entries to include only `/en/...` canonical pages.
+- Update all internal content links to point directly to `/en/...`.
+- Update canonical URLs to point to `/en/...` for content pages.
+- Update sitemap entries to include only `/en/...` canonical content pages and `/`.
 - Keep redirects in place long-term for public links, search results, and bookmarks.
 
 Examples:

@@ -1,0 +1,129 @@
+---
+template: creator
+title: RouteVN Creator - Create Visual Novels without any coding
+disableFooterSpacer: true
+seo:
+  title: RouteVN Creator - Create Visual Novels without any coding
+  description: Free and Open Source tool to create Visual Novels without any coding. Live preview, asset manager, layout editor. Fast, intuitive, reliable. Join our Discord server to stay updated.
+  keywords: visual novel creator, VN creation tool, browser-based visual novel editor, no-code visual novel, visual novel maker, RouteVN Creator
+  ogImage: https://routevn.com/public/images/routevn-illustration-og.png
+  ogImageWidth: 1200
+  ogImageHeight: 630
+  ogImageAlt: RouteVN Creator social preview with Makkuro and creative tools
+  ogImageType: image/png
+---
+- $partial: cursor-sparkles
+
+- $partial: hero1
+  title: ${site.creator.about.hero.title}
+  subtitle: ${site.creator.about.hero.subtitle}
+  subtitleHtml: ${site.creator.about.hero.subtitleHtml}
+  message: ${site.creator.about.hero.message}
+  backgroundImageSrc: /public/creator/chibi-hi.png
+  backgroundImageAlt: Chibi character in a hi pose.
+  videoSrc: ${site.creator.about.hero.videoSrc}
+  posterSrc: ${site.creator.about.hero.posterSrc}
+
+- $partial: feature-showcase
+  title: ${site.creator.about.showcaseFeature.title}
+  message: ${site.creator.about.showcaseFeature.message}
+  backgroundColor: ${site.creator.about.showcaseFeature.backgroundColor}
+  foregroundColor: ${site.creator.about.showcaseFeature.foregroundColor}
+  themeClass: ${site.creator.about.showcaseFeature.themeClass}
+  features: ${site.creator.about.showcaseFeature.features}
+  sideImageSrc: ${site.creator.about.showcaseFeature.sideImageSrc}
+  imgSrc: ${site.creator.about.showcaseFeature.imgSrc}
+  videoSrc: ${site.creator.about.showcaseFeature.videoSrc}
+  learnMoreHref: ${site.creator.about.showcaseFeature.learnMoreHref}
+  learnMoreLabel: ${site.creator.about.showcaseFeature.learnMoreLabel}
+
+# Temporarily hidden. Restore this block to show "Made with RouteVN Creator".
+# - $partial: made-with-carousel
+#   title: ${site.creator.about.madeWith.title}
+#   message: ${site.creator.about.madeWith.message}
+#   items: ${site.creator.about.madeWith.items}
+
+# Temporarily hidden. Restore this block to show "Expressive Staging".
+# - $partial: feature-showcase
+#   title: ${site.creator.about.stagingFeature.title}
+#   message: ${site.creator.about.stagingFeature.message}
+#   backgroundColor: ${site.creator.about.stagingFeature.backgroundColor}
+#   foregroundColor: ${site.creator.about.stagingFeature.foregroundColor}
+#   themeClass: ${site.creator.about.stagingFeature.themeClass}
+#   sideImageSrc: ${site.creator.about.stagingFeature.sideImageSrc}
+#   imgSrc: ${site.creator.about.stagingFeature.imgSrc}
+#   videoSrc: ${site.creator.about.stagingFeature.videoSrc}
+#   learnMoreHref: ${site.creator.about.stagingFeature.learnMoreHref}
+#   learnMoreLabel: ${site.creator.about.stagingFeature.learnMoreLabel}
+
+- $partial: functionality-grid
+  title: ${site.creator.about.functionalityGrid.title}
+  message: ${site.creator.about.functionalityGrid.message}
+  sideImageSrc: ${site.creator.about.functionalityGrid.sideImageSrc}
+  items: ${site.creator.about.functionalityGrid.items}
+
+# Temporarily hidden. Restore this block to show "Video tutorials from the creator of RouteVN".
+# - $partial: feature1
+#   title: ${site.creator.about.videoTutorialsFeature.title}
+#   message: ${site.creator.about.videoTutorialsFeature.message}
+#   backgroundColor: ${site.creator.about.videoTutorialsFeature.backgroundColor}
+#   foregroundColor: ${site.creator.about.videoTutorialsFeature.foregroundColor}
+#   themeClass: ${site.creator.about.videoTutorialsFeature.themeClass}
+#   imgSrc: ${site.creator.about.videoTutorialsFeature.imgSrc}
+#   features: ${site.creator.about.videoTutorialsFeature.features}
+#   learnMoreHref: ${site.creator.about.videoTutorialsFeature.learnMoreHref}
+
+- style: |
+    .rvn-about-faq-shell {
+      box-sizing: border-box;
+      width: min(1200px, 100%);
+    }
+
+    @media (max-width: 1280px) {
+      .rvn-about-faq-shell {
+        max-width: none;
+        width: calc(100% - 32px);
+      }
+    }
+
+    @media (max-width: 760px) {
+      .rvn-about-faq-shell {
+        width: calc(100% - 16px);
+      }
+    }
+
+- $partial: blog-posts-grid
+  title: ${site.creator.about.blogPosts.title}
+  message: ${site.creator.about.blogPosts.message}
+  sideImageSrc: ${site.creator.about.blogPosts.sideImageSrc}
+  ctaLabel: ${site.creator.about.blogPosts.ctaLabel}
+  ctaHref: ${site.creator.about.blogPosts.ctaHref}
+
+- rtgl-view h="100":
+- 'rtgl-view class="rvn-about-faq-shell" ah="c"':
+    - rtgl-view d="h" md-d="v" w="f" av="c" g="lg" mb="lg":
+        - rtgl-view w="1fg" md-w="f":
+            - rtgl-text s="h4": ${site.creator.about.faq.title}
+        - $if site.creator.about.faq.sideImageSrc:
+            - 'rtgl-view md-hide w="140" h="140" aria-hidden="true" style="flex: 0 0 140px;"':
+                - 'img src="${site.creator.about.faq.sideImageSrc}" alt="" style="display: block; height: 100%; object-fit: contain; width: 100%;"':
+    - rtgl-view g="lg" d="v" w="f":
+        - $for item in site.creator.about.faq.items:
+            - rtgl-accordion-item w=f label="${item.title}" content="${item.content}":
+
+- rtgl-view h="100":
+- $partial: cta1
+  title: ${site.creator.about.cta.title}
+  subtitle: ${site.creator.about.cta.subtitle}
+  imgSrc: ${site.creator.about.cta.imgSrc}
+  cta: ${site.creator.about.cta.cta}
+  secondaryCta: ${site.creator.about.cta.secondaryCta}
+
+- 'rtgl-view ah="c" w="f" style="margin-top: 20vh;"':
+    - 'img src="/public/creator/chibi-thank-you.png" alt="Chibi character in a thank you pose." style="display: block; height: auto; max-width: min(320px, calc(100vw - 32px)); width: 100%;"':
+
+# Temporarily hidden. Restore this block to show the bottom preview video.
+# - $partial: fullscreen-video
+#   label: ${site.creator.about.bottomVideo.label}
+#   videoSrc: ${site.creator.about.bottomVideo.videoSrc}
+#   posterSrc: ${site.creator.about.bottomVideo.posterSrc}

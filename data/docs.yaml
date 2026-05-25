@@ -1,140 +1,140 @@
 header:
   label: Creator Docs
-  href: /creator/about
+  href: /en/creator/about
 items:
   - title: "General"
     type: groupLabel
     items:
       - id: introduction
         title: "Introduction"
-        href: "/creator/docs/introduction"
+        href: "/en/creator/docs/introduction"
       - id: quickstart
         title: "Quickstart"
-        href: "/creator/docs/quickstart"
+        href: "/en/creator/docs/quickstart"
       # Temporarily hidden. Restore this block to show "Video Tutorials" in the docs sidebar.
       # - id: video-tutorials
       #   title: "Video Tutorials"
-      #   href: "/creator/docs/video-tutorials"
+      #   href: "/en/creator/docs/video-tutorials"
       - id: page-index
         title: "Page Index"
-        href: "/creator/docs/page-index"
+        href: "/en/creator/docs/page-index"
       - id: file-explorer
         title: "File Explorer"
-        href: "/creator/docs/file-explorer"
+        href: "/en/creator/docs/file-explorer"
       - id: tags
         title: "Tags"
-        href: "/creator/docs/tags"
+        href: "/en/creator/docs/tags"
   - title: "Project"
     type: groupLabel
     items:
       - id: projects
         title: "Projects"
-        href: "/creator/docs/projects"
+        href: "/en/creator/docs/projects"
       - id: images
         title: "Images"
-        href: "/creator/docs/images"
+        href: "/en/creator/docs/images"
       - id: sounds
         title: "Sounds"
-        href: "/creator/docs/sounds"
+        href: "/en/creator/docs/sounds"
       - id: videos
         title: "Videos"
-        href: "/creator/docs/videos"
+        href: "/en/creator/docs/videos"
       - id: characters
         title: "Characters"
-        href: "/creator/docs/characters"
+        href: "/en/creator/docs/characters"
       - id: transforms
         title: "Transforms"
-        href: "/creator/docs/transforms"
+        href: "/en/creator/docs/transforms"
       - id: animations
         title: "Animations"
-        href: "/creator/docs/animations"
+        href: "/en/creator/docs/animations"
       - id: particles
         title: "Particles"
-        href: "/creator/docs/particles"
+        href: "/en/creator/docs/particles"
       - id: spritesheets
         title: "Spritesheets"
-        href: "/creator/docs/spritesheets"
+        href: "/en/creator/docs/spritesheets"
       - id: colors
         title: "Colors"
-        href: "/creator/docs/colors"
+        href: "/en/creator/docs/colors"
       - id: fonts
         title: "Fonts"
-        href: "/creator/docs/fonts"
+        href: "/en/creator/docs/fonts"
       - id: project-controls
         title: "Controls"
-        href: "/creator/docs/controls"
+        href: "/en/creator/docs/controls"
       - id: variables
         title: "Variables"
-        href: "/creator/docs/variables"
+        href: "/en/creator/docs/variables"
       - id: text-styles
         title: "Text Styles"
-        href: "/creator/docs/text-styles"
+        href: "/en/creator/docs/text-styles"
       - id: layouts
         title: "Layouts"
-        href: "/creator/docs/layouts"
+        href: "/en/creator/docs/layouts"
   - title: "Scene"
     type: groupLabel
     items:
       - id: scene-map
         title: "Scene Map"
-        href: "/creator/docs/scene-map"
+        href: "/en/creator/docs/scene-map"
       - id: scene-editor
         title: "Scene Editor"
-        href: "/creator/docs/scene-editor"
+        href: "/en/creator/docs/scene-editor"
   - title: "Line Actions"
     type: groupLabel
     items:
       - id: dialogue
         title: "Dialogue"
-        href: "/creator/docs/line-actions/dialogue"
+        href: "/en/creator/docs/line-actions/dialogue"
       - id: choices
         title: "Choices"
-        href: "/creator/docs/line-actions/choices"
+        href: "/en/creator/docs/line-actions/choices"
       - id: background
         title: "Background"
-        href: "/creator/docs/line-actions/background"
+        href: "/en/creator/docs/line-actions/background"
       - id: bgm
         title: "BGM"
-        href: "/creator/docs/line-actions/bgm"
+        href: "/en/creator/docs/line-actions/bgm"
       - id: sound-effects
         title: "Sound Effects"
-        href: "/creator/docs/line-actions/sfx"
+        href: "/en/creator/docs/line-actions/sfx"
       - id: line-actions-characters
         title: "Characters"
-        href: "/creator/docs/line-actions/characters"
+        href: "/en/creator/docs/line-actions/characters"
       - id: section-transition
         title: "Section Transition"
-        href: "/creator/docs/line-actions/section-transition"
+        href: "/en/creator/docs/line-actions/section-transition"
       - id: reset-story-at-section
         title: "Reset Story At Section"
-        href: "/creator/docs/line-actions/reset-story-at-section"
+        href: "/en/creator/docs/line-actions/reset-story-at-section"
       - id: visuals
         title: "Visuals"
-        href: "/creator/docs/line-actions/visuals"
+        href: "/en/creator/docs/line-actions/visuals"
       - id: next-line
         title: "Next Line"
-        href: "/creator/docs/line-actions/next-line"
+        href: "/en/creator/docs/line-actions/next-line"
       - id: toggle-auto-mode
         title: "Toggle Auto Mode"
-        href: "/creator/docs/line-actions/toggle-auto-mode"
+        href: "/en/creator/docs/line-actions/toggle-auto-mode"
       - id: toggle-skip-mode
         title: "Toggle Skip Mode"
-        href: "/creator/docs/line-actions/toggle-skip-mode"
+        href: "/en/creator/docs/line-actions/toggle-skip-mode"
       - id: controls
         title: "Controls"
-        href: "/creator/docs/line-actions/controls"
+        href: "/en/creator/docs/line-actions/controls"
       - id: next-line-config
         title: "Next Line Config"
-        href: "/creator/docs/line-actions/next-line-config"
+        href: "/en/creator/docs/line-actions/next-line-config"
   - title: "Release"
     type: groupLabel
     items:
       - id: versions
         title: "Versions"
-        href: "/creator/docs/versions"
+        href: "/en/creator/docs/versions"
       - id: web-server
         title: "Web Server"
-        href: "/creator/docs/web-server"
+        href: "/en/creator/docs/web-server"
       - id: publish
         title: "Publish"
-        href: "/creator/docs/publish"
+        href: "/en/creator/docs/publish"
