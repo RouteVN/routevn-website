@@ -24,12 +24,46 @@ seo:
   videoSrc: ${site.creator.about.hero.videoSrc}
   posterSrc: ${site.creator.about.hero.posterSrc}
 
+- style: |
+    rtgl-view.rvn-creator-hero[w="f"] {
+      box-sizing: border-box;
+      flex-basis: 1200px !important;
+      max-width: 1200px !important;
+      padding-left: 0 !important;
+      padding-right: 0 !important;
+      width: 1200px !important;
+    }
+
+    .rvn-about-live-editor-section > rtgl-view[w="1200"] {
+      box-sizing: border-box;
+      max-width: 1200px;
+      width: 1200px !important;
+    }
+
+    @media (max-width: 1280px) {
+      rtgl-view.rvn-creator-hero[w="f"],
+      .rvn-about-live-editor-section > rtgl-view[w="1200"] {
+        flex-basis: calc(100vw - 64px) !important;
+        max-width: calc(100vw - 64px) !important;
+        width: calc(100vw - 64px) !important;
+      }
+    }
+
+    @media (max-width: 760px) {
+      rtgl-view.rvn-creator-hero[w="f"],
+      .rvn-about-live-editor-section > rtgl-view[w="1200"] {
+        flex-basis: calc(100vw - 48px) !important;
+        max-width: calc(100vw - 48px) !important;
+        width: calc(100vw - 48px) !important;
+      }
+    }
+
 - $partial: feature-showcase
   title: ${site.creator.about.showcaseFeature.title}
   message: ${site.creator.about.showcaseFeature.message}
   backgroundColor: ${site.creator.about.showcaseFeature.backgroundColor}
   foregroundColor: ${site.creator.about.showcaseFeature.foregroundColor}
-  themeClass: ${site.creator.about.showcaseFeature.themeClass}
+  themeClass: dark rvn-about-live-editor-section
   features: ${site.creator.about.showcaseFeature.features}
   sideImageSrc: ${site.creator.about.showcaseFeature.sideImageSrc}
   imgSrc: ${site.creator.about.showcaseFeature.imgSrc}
