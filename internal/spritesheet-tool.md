@@ -1,6 +1,6 @@
 # Spritesheet Tool Internal Spec
 
-This file defines the expected behavior for the browser spritesheet tool at `/creator/tools/spritesheet/`.
+This file defines the expected behavior for the browser spritesheet tool at `/en/creator/tools/spritesheet/`.
 It is an internal implementation/specification note, not user-facing Creator documentation.
 
 ## Purpose
@@ -10,8 +10,8 @@ It is intended for small and medium animations where a simple browser workflow i
 
 ## Route
 
-- Public route: `/creator/tools/spritesheet/`.
-- The page is a single HTML/JavaScript tool page generated from `pages/creator/tools/spritesheet.yaml`.
+- Public route: `/en/creator/tools/spritesheet/`.
+- The page is a single HTML/JavaScript tool page generated from `pages/en/creator/tools/spritesheet.yaml`.
 - Use RTGL UI primitives for the static view structure where they fit.
 - Do not use Rettangoli FE for this tool. Keep the behavior in plain page JavaScript.
 - Keep native inputs and buttons where the JavaScript depends on native DOM APIs such as `.value`, `.disabled`, and file uploads.

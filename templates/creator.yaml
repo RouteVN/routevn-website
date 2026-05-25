@@ -15,14 +15,14 @@
                     - "${content}"
                 - $if page.disableFooterSpacer:
                   $else:
-                    - rtgl-view d="h" h="30vh":
+                    - rtgl-view d="h" h="20vh":
                 - $partial: footer1
             - rtgl-view pos="abs" edge="t" ah="c" bgc="bg":
                 - $partial: navbar1
                   title: ${site.navbar.title}
                   secondaryCta:
                     label: Docs
-                    href: /creator/docs/introduction/
+                    href: /en/creator/docs/introduction/
                   cta:
                     label: Download
-                    href: /creator/download/
+                    href: /en/creator/download/
