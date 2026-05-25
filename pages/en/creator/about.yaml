@@ -119,7 +119,7 @@ seo:
   cta: ${site.creator.about.cta.cta}
   secondaryCta: ${site.creator.about.cta.secondaryCta}
 
-- 'rtgl-view ah="c" w="f" style="margin-top: 20vh;"':
+- 'rtgl-view ah="c" w="f" style="margin-top: 10vh;"':
     - 'img src="/public/creator/chibi-thank-you.png" alt="Chibi character in a thank you pose." style="display: block; height: auto; max-width: min(320px, calc(100vw - 32px)); width: 100%;"':
 
 # Temporarily hidden. Restore this block to show the bottom preview video.

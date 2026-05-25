@@ -15,7 +15,7 @@
                     - "${content}"
                 - $if page.disableFooterSpacer:
                   $else:
-                    - rtgl-view d="h" h="30vh":
+                    - rtgl-view d="h" h="20vh":
                 - $partial: footer1
             - rtgl-view pos="abs" edge="t" ah="c" bgc="bg":
                 - $partial: navbar1
