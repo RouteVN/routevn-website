@@ -3,6 +3,7 @@ template: post
 author: [han4wluc]
 authorDisplay: han4wluc
 title: RouteVN Devlog 3
+url: /en/blog/devlog-3/
 tags: [blogPost]
 date: '2026-05-03'
 thumbnail: /public/blog/2026/09/dev-and-draft.webp
@@ -21,7 +22,7 @@ We made steady progress during this period and reached several significant miles
 
 The product continued to improve. We shipped weekly releases until version 0.17.0 on 14 February.
 
-After that, we paused weekly updates to work on a bigger major update. It took much longer than expected, but version 1.0.3 was finally released on 17 April. It was a big release, and you can read more in the [RouteVN Creator v1.0.3 announcement](/en/blog/2026/08-routevn-creator-1-0-3/).
+After that, we paused weekly updates to work on a bigger major update. It took much longer than expected, but version 1.0.3 was finally released on 17 April. It was a big release, and you can read more in the [RouteVN Creator v1.0.3 announcement](/en/blog/routevn-creator-1-0-3/).
 
 We were a little anxious about migrating older projects to the new version. A few users reached out for help with project migration. There were some technical issues, but overall it worked, so we are relieved about that.
 

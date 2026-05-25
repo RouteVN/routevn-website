@@ -3,6 +3,7 @@ template: post
 author: [han4wluc]
 authorDisplay: han4wluc
 title: Call for Visual Novel Creators
+url: /en/blog/call-for-visual-novels/
 tags: [blogPost]
 date: '2025-04-04'
 seo:
@@ -13,7 +14,7 @@ seo:
 
 ## Call for Visual Novel Creators
 
-Platforms like Steam and itch.io have become essential in distributing Visual Novels, but they primarily serve the broader gaming market, often leaving VNs as an underserved niche. We believe there is a significant opportunity for a store and community designed *specifically* for, and adapted to the unique nature of Visual Novels. (We delve deeper into this in our [previous article](/en/blog/2025/02-building-a-visual-novel-store/)).
+Platforms like Steam and itch.io have become essential in distributing Visual Novels, but they primarily serve the broader gaming market, often leaving VNs as an underserved niche. We believe there is a significant opportunity for a store and community designed *specifically* for, and adapted to the unique nature of Visual Novels. (We delve deeper into this in our [previous article](/en/blog/building-a-visual-novel-store/)).
 
 That's why we're building RouteVN.
 

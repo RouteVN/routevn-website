@@ -3,6 +3,7 @@ template: post
 author: [han4wluc]
 authorDisplay: han4wluc
 title: RouteVN Devlog 2
+url: /en/blog/devlog-2/
 tags: [blogPost]
 date: '2026-01-13'
 seo:
@@ -13,7 +14,7 @@ seo:
 
 # RouteVN Devlog 2
 
-This is the second devlog, following up on the [Year 1.5 devlog](https://routevn.com/en/blog/2025/04-devlog-y1-5/). It's also a recap of late 2025 and our plans for 2026.
+This is the second devlog, following up on the [Year 1.5 devlog](https://routevn.com/en/blog/devlog-y1-5/). It's also a recap of late 2025 and our plans for 2026.
 
 ## Public release
 

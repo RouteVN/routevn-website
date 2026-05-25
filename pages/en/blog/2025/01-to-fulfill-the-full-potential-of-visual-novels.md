@@ -3,6 +3,7 @@ template: post
 author: [han4wluc]
 authorDisplay: han4wluc
 title: To fulfill the full potential of Visual Novels
+url: /en/blog/to-fulfill-the-full-potential-of-visual-novels/
 seo:
   title: To fulfill the full potential of Visual Novels - RouteVN Blog
   description: In this article, I share my journey from building a simple engine to envisioning a comprehensive platform that addresses creation challenges, distribution limitations, and reading experiences to unlock the true potential of Visual Novels.

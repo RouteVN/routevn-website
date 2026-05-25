@@ -3,6 +3,7 @@ template: post
 author: [han4wluc]
 authorDisplay: han4wluc
 title: Building a Visual Novel Store
+url: /en/blog/building-a-visual-novel-store/
 tags: [blogPost]
 date: '2025-03-14'
 seo:
@@ -13,7 +14,7 @@ seo:
 
 ## Building a Visual Novel Store
 
-In [this previous article](/en/blog/2025/01-to-fulfill-the-full-potential-of-visual-novels/) I have shared how and why I got started building a platform dedicated to Visual Novels.
+In [this previous article](/en/blog/to-fulfill-the-full-potential-of-visual-novels/) I have shared how and why I got started building a platform dedicated to Visual Novels.
 In this article, I will go thoroughly into more detail about my research and thoughts about building a Visual Novel specific digital store.
 
 This article will cover:

@@ -3,6 +3,7 @@ template: post
 author: [han4wluc]
 authorDisplay: han4wluc
 title: RouteVN Creator is now available on macOS
+url: /en/blog/routevn-creator-macos-release/
 tags: [blogPost]
 date: '2026-05-17'
 thumbnail: /public/images/routevn_og.png

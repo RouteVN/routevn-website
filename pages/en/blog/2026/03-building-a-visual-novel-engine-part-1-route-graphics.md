@@ -3,6 +3,7 @@ template: post
 author: [han4wluc]
 authorDisplay: han4wluc
 title: Building a Visual Novel Engine Part 1 - Route Graphics
+url: /en/blog/building-a-visual-novel-engine-route-graphics/
 tags: [blogPost]
 date: '2026-01-28'
 updatedAt: '2026-02-04'
@@ -20,8 +21,8 @@ By the end of the series, you should have a good understanding of how RouteVN Cr
 This is part 1 of a 3 part series:
 
 - Part 1 - Route Graphics: a declarative graphics and sound library
-- [Part 2 - Route Engine: a Visual Novel engine built on Route Graphics](/en/blog/2026/05-building-a-visual-novel-engine-route-engine)
-- [Part 3 - RouteVN Creator: a Desktop application to create Visual Novels without any coding](/en/blog/2026/06-building-a-visual-novel-engine-routevn-creator-client)
+- [Part 2 - Route Engine: a Visual Novel engine built on Route Graphics](/en/blog/building-a-visual-novel-engine-route-engine)
+- [Part 3 - RouteVN Creator: a Desktop application to create Visual Novels without any coding](/en/blog/building-a-visual-novel-engine-routevn-creator-client)
 
 ## Route Graphics
 
@@ -464,4 +465,4 @@ In the next post, we will be talking about Route Engine and how we designed a sy
 
 ---
 
-**Next**: [Part 2 - Route Engine](/en/blog/2026/05-building-a-visual-novel-engine-route-engine)
+**Next**: [Part 2 - Route Engine](/en/blog/building-a-visual-novel-engine-route-engine)

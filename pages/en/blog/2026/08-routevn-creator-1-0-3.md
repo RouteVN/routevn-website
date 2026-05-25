@@ -3,6 +3,7 @@ template: post
 author: [han4wluc]
 authorDisplay: han4wluc
 title: RouteVN Creator v1.0.3
+url: /en/blog/routevn-creator-1-0-3/
 tags: [blogPost]
 date: '2026-04-17'
 thumbnail: /public/blog/2026/08/screenshot-3.png

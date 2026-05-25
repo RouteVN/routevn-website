@@ -3,6 +3,7 @@ template: post
 author: [han4wluc, 738NGX]
 authorDisplay: han4wluc, 738NGX
 title: "Team Member Introduction: 738NGX"
+url: /en/blog/team-member-738ngx/
 tags: [blogPost]
 date: '2025-12-29'
 seo:

@@ -3,6 +3,7 @@ template: post
 author: [han4wluc, nghia]
 authorDisplay: han4wluc, nghia
 title: "Team Member Introduction: Nghia"
+url: /en/blog/team-member-nghia/
 tags: [blogPost]
 date: '2026-01-19'
 seo:

@@ -3,6 +3,7 @@ template: post
 author: [han4wluc]
 authorDisplay: han4wluc
 title: RouteVN Devlog first 1.5 year
+url: /en/blog/devlog-y1-5/
 tags: [blogPost]
 date: '2025-10-08'
 seo:

@@ -31,9 +31,85 @@ Use `en` as the default locale.
 - Hiring index: `/en/hiring/`.
 - Hiring post: `/en/hiring/swe-intern/`.
 - Blog index: `/en/blog/`.
-- Blog post: `/en/blog/2026/10-routevn-creator-macos-release/`.
+- Blog post: `/en/blog/routevn-creator-macos-release/`.
 - Privacy policy: `/en/agreement/privacy-policy/1-0-0/`.
 - Terms of service: `/en/agreement/terms-of-service/1-0-0/`.
+
+## Blog URL policy
+
+Canonical blog post URLs should use this shape:
+
+```text
+/en/blog/title-name/
+```
+
+Example:
+
+```text
+/en/blog/routevn-creator-macos-release/
+```
+
+Rationale:
+
+- Use simple, descriptive, readable, and logically organized URLs.
+- Keep the publish date in frontmatter, not in the URL.
+- Avoid making evergreen or updated posts look stale because of dated URLs.
+- Keep the `/blog/` segment to avoid collisions with docs, legal pages, hiring pages, product pages, and future routes.
+- Keep the same pattern for future locales, such as `/zh-hans/blog/title-name/` and `/zh-hant/blog/title-name/`.
+
+References:
+
+- Google URL structure best practices: https://developers.google.com/search/docs/crawling-indexing/url-structure
+- Google SEO Starter Guide: https://developers.google.com/search/docs/fundamentals/seo-starter-guide
+
+Avoid:
+
+```text
+/en/title-name/
+```
+
+This is too flat and loses the blog context.
+
+Avoid:
+
+```text
+/en/post/date-title-name/
+```
+
+`post` is less user-facing than `blog`, and dates in slugs add noise.
+
+Acceptable, but not preferred:
+
+```text
+/en/blog/2026/title-name/
+```
+
+Use year-based public URLs only if year archive navigation becomes important.
+
+For RouteVN, prefer:
+
+```text
+/en/blog/routevn-creator-macos-release/
+/en/blog/building-a-visual-novel-engine-route-graphics/
+/en/blog/devlog-3/
+/en/blog/team-member-jeff-y/
+```
+
+Content files may still be organized by year and prefixed with ordering numbers:
+
+```text
+pages/en/blog/2026/01-devlog-2.md
+pages/en/blog/2026/10-routevn-creator-macos-release.md
+```
+
+Use the Rettangoli Sites explicit page URL override to set the canonical public route:
+
+```yaml
+url: /en/blog/routevn-creator-macos-release/
+```
+
+Keep `date` in frontmatter and show it on the page/card.
+When migrating existing dated URLs, add redirects from the old URLs to the new canonical URLs.
 
 ## Partial language coverage
 
@@ -71,7 +147,7 @@ Examples:
 - `/creator/download/` redirects to `/en/creator/download/`.
 - `/creator/docs/introduction/` redirects to `/en/creator/docs/introduction/`.
 - `/blog/` redirects to `/en/blog/`.
-- `/blog/2026/10-routevn-creator-macos-release/` redirects to `/en/blog/2026/10-routevn-creator-macos-release/`.
+- `/blog/2026/10-routevn-creator-macos-release/` redirects to `/en/blog/routevn-creator-macos-release/`.
 - `/hiring/` redirects to `/en/hiring/`.
 - `/support/` redirects to `/en/support/`.
 - `/agreement/privacy-policy/1-0-0/` redirects to `/en/agreement/privacy-policy/1-0-0/`.

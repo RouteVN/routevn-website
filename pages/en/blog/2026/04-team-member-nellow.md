@@ -3,6 +3,7 @@ template: post
 author: [han4wluc, nellow]
 authorDisplay: han4wluc, nellow
 title: "Team Member Introduction: Nellow"
+url: /en/blog/team-member-nellow/
 tags: [blogPost]
 date: '2026-01-30'
 seo:
