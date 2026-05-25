@@ -2,17 +2,17 @@
 template: post
 author: [han4wluc, JeffY]
 authorDisplay: han4wluc, JeffY
-title: "Team Member Introduction: JeffY"
-url: /en/blog/team-member-jeff-y/
+title: "Contributor Introduction: JeffY"
+url: /en/blog/contributor-intro-jeff-y/
 tags: [blogPost]
 date: '2026-03-04'
 seo:
-  title: "Team Member Introduction: JeffY"
+  title: "Contributor Introduction: JeffY"
   description: Introducing JeffY, a computer science student at UNSW with JavaScript experience and strong interest in visual novels.
   ogType: article
 ---
 
-## Team Member Introduction: JeffY
+## Contributor Introduction: JeffY
 
 JeffY is a second-year Computer Science student at University of New South Wales, Australia. He has experience building JavaScript systems and is interested in visual novels and visual novel tooling.
 He joined RouteVN as an intern from December 2025 to March 2026.

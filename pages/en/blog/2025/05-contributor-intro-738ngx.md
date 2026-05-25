@@ -2,18 +2,18 @@
 template: post
 author: [han4wluc, 738NGX]
 authorDisplay: han4wluc, 738NGX
-title: "Team Member Introduction: 738NGX"
-url: /en/blog/team-member-738ngx/
+title: "Contributor Introduction: 738NGX"
+url: /en/blog/contributor-intro-738ngx/
 tags: [blogPost]
 date: '2025-12-29'
 seo:
-  title: "Team Member Introduction: 738NGX"
+  title: "Contributor Introduction: 738NGX"
   description: Introducing 738NGX, a developer at RouteVN. Computer Science student from Shanghai, who has made significant contributions to RouteVN.
   ogType: article
   ogImage: https://routevn.com/public/blog/2025/05/738ngx-avatar.png
 ---
 
-## Team Member Introduction: 738NGX
+## Contributor Introduction: 738NGX
 
 <img src="/public/blog/2025/05/738ngx-avatar.png" style="width: 200px; border-radius: 50%; margin-bottom: 24px;">
 

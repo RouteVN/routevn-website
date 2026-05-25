@@ -2,17 +2,17 @@
 template: post
 author: [han4wluc, nellow]
 authorDisplay: han4wluc, nellow
-title: "Team Member Introduction: Nellow"
-url: /en/blog/team-member-nellow/
+title: "Contributor Introduction: Nellow"
+url: /en/blog/contributor-intro-nellow/
 tags: [blogPost]
 date: '2026-01-30'
 seo:
-  title: "Team Member Introduction: Nellow"
+  title: "Contributor Introduction: Nellow"
   description: Introducing Nellow, a developer at RouteVN. high school student from Nepal passionate about game development.
   ogType: article
 ---
 
-## Team Member Introduction: Nellow
+## Contributor Introduction: Nellow
 
 Nellow joined RouteVN as an intern from late 2025 until the end of January 2026. During his time here, he made valuable contributions to RouteVN.
 
