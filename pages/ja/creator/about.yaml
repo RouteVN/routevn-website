@@ -1,14 +1,14 @@
 ---
 template: creator
 lang: ja
-title: RouteVN Creator - コードを書かずにノベルゲームを制作
+title: RouteVN Creator - プログラミングなしでノベルゲームを制作
 locale: ja
 canonical: https://routevn.com/ja/creator/about/
 disableFooterSpacer: true
 seo:
-  title: RouteVN Creator - コードを書かずにノベルゲームを制作
-  description: コードを書かずにノベルゲームを制作できる無料のオープンソースツールです。ライブプレビュー、アセット管理、レイアウト編集に対応。高速で直感的に使えます。
-  keywords: ノベルゲーム制作, VN制作ツール, ノーコードノベルゲーム, ノベルゲームエディター, RouteVN Creator
+  title: RouteVN Creator - プログラミングなしでノベルゲームを制作
+  description: プログラミング不要でノベルゲームを制作できる無料・オープンソースの制作ツールです。リアルタイムプレビュー、素材管理、レイアウト編集まで、制作に必要な作業をひとつにまとめています。
+  keywords: ノベルゲーム制作, ノベルゲーム制作ツール, プログラミング不要, ノーコード, ゲーム制作, RouteVN Creator
   ogImage: https://routevn.com/public/images/routevn-illustration-og.png
   ogImageWidth: 1200
   ogImageHeight: 630
@@ -19,8 +19,8 @@ seo:
 
 - $partial: hero1
   title: あなたの物語をノベルゲームに
-  subtitle: RouteVN Creatorは、コードを書かずにノベルゲームを制作できる無料のオープンソースアプリです
-  subtitleHtml: 'RouteVN Creatorは、コードを書かずにノベルゲームを制作できる無料の<a href="https://github.com/RouteVN/routevn-creator-client" target="_blank" rel="noreferrer">オープンソース</a>アプリです'
+  subtitle: RouteVN Creatorは、プログラミング不要でノベルゲームを制作できる無料・オープンソースの制作ツールです
+  subtitleHtml: 'RouteVN Creatorは、プログラミング不要でノベルゲームを制作できる無料・<a href="https://github.com/RouteVN/routevn-creator-client" target="_blank" rel="noreferrer">オープンソース</a>の制作ツールです'
   backgroundImageSrc: /public/creator/chibi-hi.png
   backgroundImageAlt: 手を振っているちびキャラクター。
   videoSrc: /public/creator/routevn-demo-250108.mp4
@@ -64,32 +64,32 @@ seo:
     }
 
 - $partial: feature-showcase
-  title: 直感的なライブエディター
-  message: 編集した内容をすぐに画面で確認できます
+  title: リアルタイムプレビュー
+  message: 編集内容をすぐに確認できます
   backgroundColor: "#141414"
   foregroundColor: var(--foreground)
   themeClass: dark rvn-about-live-editor-section
   features:
     - title: リアルタイムプレビュー
-      message: テキストや演出を変更すると、プレビューにすぐ反映されます。実際の見え方を確認しながら制作できます。
-    - title: 制作に集中できる操作感
-      message: プログラミングを覚える前に、まず物語・絵・演出づくりを始められます。
+      message: シナリオや演出を変更すると、プレビュー画面にすぐ反映されます。実際の表示を確認しながら制作できます。
+    - title: 直感的な操作
+      message: 特別な知識がなくても、シナリオやイラストを使ってすぐにゲーム制作を始められます。
   sideImageSrc: /public/landing/object-2.png
   videoSrc: /public/creator/animated-1.mp4
   learnMoreHref: /en/creator/docs/scene-editor/
   learnMoreLabel: 詳しく見る
 
 - $partial: functionality-grid
-  title: ノベルゲーム制作に必要なものをすべて
-  message: シナリオ、素材、画面レイアウト、分岐、公開まで。ノベルゲーム制作でよく使う機能を、迷わず扱える形にまとめています。
+  title: ノベルゲーム制作に必要な機能をひとつに
+  message: シナリオ、素材管理、画面レイアウト、分岐、公開まで。ノベルゲーム制作で必要になりやすい機能を、ひとつの制作ツールにまとめています。
   sideImageSrc: /public/landing/object-4.png
   items:
-    - title: レイアウトエディター
+    - title: 画面レイアウト編集
       message: タイトル画面や会話画面など、作品に合わせたUIを作れます。
       imgSrc: /public/creator/ss-5.png
       href: /en/creator/docs/layouts/
-    - title: アセットマネージャー
-      message: 立ち絵、背景、音声などの素材をプロジェクト内で管理できます。
+    - title: 素材管理
+      message: 立ち絵、背景、音声などの素材をプロジェクト内で整理できます。
       imgSrc: /public/creator/ss-1.png
       href: /en/creator/docs/images/
     - title: シーンマップ
@@ -101,7 +101,7 @@ seo:
       imgSrc: /public/images/routevn_og.png
       href: /en/creator/docs/line-actions/choices/
     - title: 公開
-      message: 完成した作品をWeb向けに書き出して公開できます。
+      message: 完成したゲームをWeb向けに出力して公開できます。
       imgSrc: /public/images/routevn_og.png
       href: /en/creator/docs/publish/
 
@@ -139,10 +139,10 @@ seo:
         - 'rtgl-view md-hide w="140" h="140" aria-hidden="true" style="flex: 0 0 140px;"':
             - 'img src="/public/landing/object-3.png" alt="" style="display: block; height: 100%; object-fit: contain; width: 100%;"':
     - rtgl-view g="lg" d="v" w="f":
-        - rtgl-accordion-item w=f label="RouteVN Creatorは他のノベルゲーム制作ツールと何が違いますか？" content="コードを書かずに制作できることを前提にしています。シナリオを書く人、絵を描く人、個人制作の人が、まず作品づくりを始めやすいように設計しています。素材やシーンが増えても整理しやすい構成です。":
+        - rtgl-accordion-item w=f label="RouteVN Creatorは他のノベルゲーム制作ツールと何が違いますか？" content="プログラミング不要で制作できることを前提にしています。シナリオを書く人、イラストを描く人、個人制作の人が、まずゲーム制作を始めやすいように設計しています。素材やシーンが増えても整理しやすい構成です。":
         - rtgl-accordion-item w=f label="無料で使えますか？" content="はい。無料版は今後も無料・オープンソースとして提供します。将来的に有料機能を追加する可能性はありますが、無料版の利用を妨げるものにはしません。":
-        - rtgl-accordion-item w=f label="作品はどうやって書き出しますか？" content="現在はWeb版として書き出せます。HTMLとJavaScriptのファイルとして出力し、Web上で公開できます。将来的にはWindows、macOS、Linux、Android、iOSなどにも対応していく予定です。":
-        - rtgl-accordion-item w=f label="作れる内容に制限はありますか？" content="RouteVN Creatorは制作ツールです。何を作るかは制作者自身が決められます。アプリはオフラインでも動作するため、私たちが制作内容を確認することはありません。":
+        - rtgl-accordion-item w=f label="作品はどうやって公開できますか？" content="現在はWeb版として出力できます。HTMLとJavaScriptのファイルとして出力し、Web上で公開できます。将来的にはWindows、macOS、Linux、Android、iOSなどにも対応していく予定です。":
+        - rtgl-accordion-item w=f label="作れる内容に制限はありますか？" content="RouteVN Creatorは制作ツールです。どのような作品を作るかは制作者自身が決められます。アプリはオフラインでも動作するため、私たちが制作内容を確認することはありません。":
         - rtgl-accordion-item w=f label="どんな作品に向いていますか？" content="RouteVN Creatorは、シナリオ、演出、選択肢を中心にしたノベルゲームに向いています。複雑なゲームシステムや独自のバトル、特殊なミニゲームなどを作りたい場合は、別のゲームエンジンのほうが合うことがあります。":
 
 - rtgl-view h="100":
