@@ -2,17 +2,17 @@
 template: post
 author: [han4wluc, nghia]
 authorDisplay: han4wluc, nghia
-title: "Team Member Introduction: Nghia"
-url: /en/blog/team-member-nghia/
+title: "Contributor Introduction: Nghia"
+url: /en/blog/contributor-intro-nghia/
 tags: [blogPost]
 date: '2026-01-19'
 seo:
-  title: "Team Member Introduction: Nghia"
+  title: "Contributor Introduction: Nghia"
   description: Introducing Nghia, a developer at RouteVN. Software engineering student from Vietnam, core contributor of route-graphics.
   ogType: article
 ---
 
-## Team Member Introduction: Nghia
+## Contributor Introduction: Nghia
 
 Nghia joined RouteVN as an intern from late 2025 until January 2026. During his time here, he has made significant contributions to RouteVN.
 

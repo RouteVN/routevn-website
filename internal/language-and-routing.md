@@ -92,7 +92,7 @@ For RouteVN, prefer:
 /en/blog/routevn-creator-macos-release/
 /en/blog/building-a-visual-novel-engine-route-graphics/
 /en/blog/devlog-3/
-/en/blog/team-member-jeff-y/
+/en/blog/contributor-intro-jeff-y/
 ```
 
 Content files may still be organized by year and prefixed with ordering numbers:
