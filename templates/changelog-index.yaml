@@ -23,6 +23,13 @@
                                 - 'a href="${item.url}" style="text-decoration: none; color: inherit;"':
                                     - rtgl-text s="h1" cur=p mb="md": ${item.data.version}
                                 - "${md(item.content)}"
+                                - $if item.data.videoSrc:
+                                    - 'video src="${item.data.videoSrc}" controls playsinline preload="metadata" style="width: 100%; max-width: 100%; display: block; border: 1px solid var(--border); box-sizing: border-box; margin-bottom: 24px;"':
+                                - $if item.data.videos:
+                                    - $for video in item.data.videos:
+                                        - $if video.title:
+                                            - rtgl-text s="lg" mb="sm": ${video.title}
+                                        - 'video src="${video.src}" controls playsinline preload="metadata" style="width: 100%; max-width: 100%; display: block; border: 1px solid var(--border); box-sizing: border-box; margin-bottom: 24px;"':
                                 - $if item.data.isLatest:
                                     - 'a href="/en/creator/download/" style="text-decoration: none;"':
                                         - rtgl-button mt="md": Download

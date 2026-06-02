@@ -21,6 +21,13 @@
                     - rtgl-view md-w=f w="140":
                     - rtgl-view w="1fg":
                         - "${content}"
+                        - $if videoSrc:
+                            - 'video src="${videoSrc}" controls playsinline preload="metadata" style="width: 100%; max-width: 100%; display: block; border: 1px solid var(--border); box-sizing: border-box; margin-bottom: 24px;"':
+                        - $if videos:
+                            - $for video in videos:
+                                - $if video.title:
+                                    - rtgl-text s="lg" mb="sm": ${video.title}
+                                - 'video src="${video.src}" controls playsinline preload="metadata" style="width: 100%; max-width: 100%; display: block; border: 1px solid var(--border); box-sizing: border-box; margin-bottom: 24px;"':
                         - $if isLatest:
                             - 'a href="/en/creator/download/" style="text-decoration: none;"':
                                 - rtgl-button mt="lg": Download
