@@ -13,7 +13,7 @@ sidebarId: layouts
 Layouts define reusable UI and presentation structures.
 
 You can combine resources such as images, videos, sounds, character sprites, text, and text styles inside a layout.
-Layouts are used for dialogue boxes, choice menus, save/load screens, backgrounds, overlays, and other visual structures.
+Layouts are used for dialogue boxes, choice menus, input forms, save/load screens, backgrounds, overlays, and other visual structures.
 
 ## Creating a layout
 
@@ -38,8 +38,9 @@ The layout type is selected when you create the layout. Choose the type based on
 - Save / Load: Layout for save-slot based save and load screens.
 - Confirm Dialog: Layout for compact confirmation prompts.
 - History: Layout for dialogue history overlays.
+- Input: Layout for player input forms used by the Input line action.
 
-Some features only show layouts with the matching type. For example, the Dialogue line action uses dialogue layouts, and the Choices line action uses choice layouts.
+Some features only show layouts with the matching type. For example, the Dialogue line action uses dialogue layouts, the Choices line action uses choice layouts, and the Input line action uses input layouts.
 
 ## Fragments
 
@@ -342,6 +343,47 @@ Text (Choice Item Content) uses the choice item content.
 
 Choice content comes from the current repeated choice item.
 
+#### Input
+
+Input layouts can include fields and submit areas for the [Input line action](/en/creator/docs/line-actions/input/).
+
+Use this layout type when a scene line needs the player to type text, such as a name or short answer. The Input action can only select layouts with the `Input` type.
+
+Input-specific elements are available only when the layout type is `Input`.
+
+##### Create an input layout
+
+To create the layout used by Input:
+
+1. Open Layouts.
+2. Create a layout.
+3. Set Layout type to `Input`.
+4. Open the layout in the Layout Editor.
+5. Right click the canvas and add an `Input` element for each field the player should fill.
+6. Select each Input element and set `Field` to a short stable field id, such as `playerName`.
+7. Add an `Input Submit Container` where the player should click to submit.
+8. Add text, images, and styling around the fields as needed.
+
+`Field` is the layout field id. It is not the variable. You map each field id to a variable in the Input action.
+
+##### Input
+
+Input is a field where the player can type text.
+
+###### Field
+
+Field is the layout field id used by the Input action. Use a short stable value, such as `playerName`.
+
+The field id is mapped to a string variable in the Input action.
+
+Use a different field id for each value the form should save.
+
+##### Input Submit Container
+
+Input Submit Container is a container that submits the input form when the player clicks it.
+
+Use it for the visible submit button or submit area in the layout.
+
 #### Save / Load
 
 Save / Load layouts can include special elements for save slots.
@@ -443,6 +485,10 @@ Dialogue ADV and Dialogue NVL:
 Choice:
 
 - [Line action: Choices](/en/creator/docs/line-actions/choices/)
+
+Input:
+
+- [Line action: Input](/en/creator/docs/line-actions/input/)
 
 Confirm Dialog:
 

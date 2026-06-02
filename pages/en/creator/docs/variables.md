@@ -64,5 +64,6 @@ If you leave the default empty, RouteVN Creator uses a default value based on th
 Variables are used in the following places:
 
 - [Line action: Update Variable](/en/creator/docs/line-actions/update-variable/)
+- [Line action: Input](/en/creator/docs/line-actions/input/)
 - [Controls](/en/creator/docs/controls/)
 - [Layouts](/en/creator/docs/layouts/)

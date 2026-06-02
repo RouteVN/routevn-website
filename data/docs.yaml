@@ -90,6 +90,9 @@ items:
       - id: choices
         title: "Choices"
         href: "/en/creator/docs/line-actions/choices"
+      - id: input
+        title: "Input"
+        href: "/en/creator/docs/line-actions/input"
       - id: background
         title: "Background"
         href: "/en/creator/docs/line-actions/background"
