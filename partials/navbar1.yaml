@@ -3,7 +3,7 @@
         - 'a href="${title.href}" style="text-decoration: none; color: inherit;"':
             - rtgl-view d=h av=c g=md:
                 - $if title.imgSrc:
-                    - rtgl-image h="${title.imgHeight}" w="${title.imgWidth}" src="${title.imgSrc}":
+                    - rtgl-image h="${title.imgHeight}" w="${title.imgWidth}" src="${title.imgSrc}" alt="${title.alt}":
                 - $if title.label:
                     - rtgl-text: ${title.label}
         - rtgl-view w="1fg":

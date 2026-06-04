@@ -90,38 +90,24 @@
               line-height: 1.2;
               margin-top: 0;
               margin-right: clamp(16px, 4vw, 56px);
-              pointer-events: none;
               text-shadow: 0 2px 16px rgba(0, 0, 0, 0.45);
-              transform: translateY(clamp(-64px, -5vh, -36px));
+              transform: translateY(clamp(-44px, -3vh, -24px));
               width: max-content;
             }
             .landing-brand {
               align-items: center;
               display: flex;
-              gap: 12px;
             }
-            .landing-brand-icon {
-              background: #f2f2f2;
-              border-color: rgba(128, 128, 128, 0.65);
-              border-style: solid;
-              border-width: 1px;
-              border-radius: 12px;
-              box-sizing: border-box;
+            .landing-brand-logo {
               display: block;
-              height: clamp(40px, 3.8vw, 48px);
+              height: auto;
+              max-width: calc(100vw - 48px);
               object-fit: contain;
-              padding: 0;
-              width: clamp(40px, 3.8vw, 48px);
-            }
-            .landing-brand-name {
-              font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-              font-size: clamp(18px, 3vw, 24px);
-              font-weight: 700;
-              letter-spacing: 0;
+              width: clamp(160px, 18vw, 220px);
             }
             .landing-tagline {
               font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-              font-size: clamp(20px, 2.1vw, 26px);
+              font-size: clamp(15px, 1.45vw, 19px);
               font-weight: 400;
               margin: 0;
               white-space: nowrap;
@@ -148,21 +134,21 @@
                 margin-top: 0;
                 margin-right: 0;
                 text-align: left;
-                transform: translateY(-44px);
+                transform: translateY(-28px);
               }
               .landing-brand {
                 justify-content: flex-start;
               }
               .landing-tagline {
-                font-size: clamp(18px, 5vw, 24px);
+                font-size: clamp(14px, 3.6vw, 18px);
               }
             }
             @media (orientation: portrait) {
-              .landing-brand-name {
-                font-size: clamp(16px, 3.8vw, 20px);
+              .landing-brand-logo {
+                width: clamp(150px, 46vw, 200px);
               }
               .landing-tagline {
-                font-size: clamp(16px, 4vw, 20px);
+                font-size: clamp(13px, 3.2vw, 16px);
               }
             }
             @media (prefers-reduced-motion: reduce) {

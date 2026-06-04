@@ -65,5 +65,6 @@ Variables are used in the following places:
 
 - [Line action: Update Variable](/en/creator/docs/line-actions/update-variable/)
 - [Line action: Input](/en/creator/docs/line-actions/input/)
+- [Line action: Conditional](/en/creator/docs/line-actions/conditional/)
 - [Controls](/en/creator/docs/controls/)
 - [Layouts](/en/creator/docs/layouts/)
