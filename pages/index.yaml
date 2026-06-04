@@ -12,8 +12,7 @@ seo:
     - a href="/en/creator/about/" aria-label="Open RouteVN Creator" class="landing-link":
         - div class="landing-copy":
             - div class="landing-brand":
-                - 'img class="landing-brand-icon" src="/public/images/routevn-icon.png" alt="" aria-hidden="true" draggable="false"':
-                - span class="landing-brand-name": RouteVN
+                - 'img class="landing-brand-logo" src="/public/images/logo_100.png?v=20260604" alt="RouteVN" width="426" height="91" draggable="false"':
             - p class="landing-tagline": Bring your Visual Novel to Life
         - div class="landing-stage":
             - 'img class="landing-layer landing-layer-back" data-depth="0.74" data-idle="1.10" data-phase="1.7" src="/public/landing/drawing_tablet_with_cable_layer_below_character.png" alt="" aria-hidden="true" draggable="false"':

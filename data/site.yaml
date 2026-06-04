@@ -3,19 +3,18 @@ baseUrl: https://routevn.com
 
 navbar:
   title:
-    imgSrc: "/public/images/routevn-icon.png"
-    imgWidth: 32
+    imgSrc: "/public/images/logo_100.png?v=20260604"
+    imgWidth: 150
     imgHeight: 32
-    label: RouteVN
+    alt: RouteVN
     href: "/"
 
 footer:
   logo:
-    src: /public/images/routevn-icon.png
+    src: /public/images/logo_100.png?v=20260604
     alt: RouteVN
-    width: 32
+    width: 150
     height: 32
-    label: RouteVN
   social:
     - name: Discord
       svg: discord

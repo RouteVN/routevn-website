@@ -109,6 +109,7 @@ Below is a list of all actions:
 
 - [Dialogue](/en/creator/docs/line-actions/dialogue/) — define character lines and text output.
 - [Choices](/en/creator/docs/line-actions/choices/) — show player decision options and branch flow.
+- [Conditional](/en/creator/docs/line-actions/conditional/) — run actions from the first branch whose condition matches.
 - [Section Transition](/en/creator/docs/line-actions/section-transition/) — move to another section in the same scene or another scene.
 - [Reset Story At Section](/en/creator/docs/line-actions/reset-story-at-section/) — move to a section with a reset story context.
 - [Background](/en/creator/docs/line-actions/background/) — set or replace the scene background.
