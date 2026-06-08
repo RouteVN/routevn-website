@@ -1,0 +1,328 @@
+---
+template: creator
+title: Rainy City Street - RouteVN Creator Asset Store
+disableFooterSpacer: true
+seo:
+  title: Rainy City Street - RouteVN Creator Asset Store
+  description: Preview a placeholder RouteVN Creator background asset with gallery, description, tags, and author details.
+---
+- style: |
+    .rvn-asset-detail {
+      --rvn-detail-panel: #1f1f1f;
+      --rvn-detail-panel-soft: #252525;
+      --rvn-detail-border: rgba(255, 255, 255, 0.12);
+      --rvn-detail-muted: rgba(255, 255, 255, 0.68);
+      box-sizing: border-box;
+      display: grid;
+      gap: 24px;
+      grid-template-columns: minmax(0, 1fr);
+      margin: 56px auto 0;
+      max-width: 1200px;
+      width: 1200px !important;
+    }
+
+    .rvn-asset-detail *,
+    .rvn-asset-detail *::before,
+    .rvn-asset-detail *::after {
+      box-sizing: border-box;
+    }
+
+    .rvn-detail-back {
+      color: var(--rvn-detail-muted);
+      font-size: 0.92rem;
+      text-decoration: none;
+      width: fit-content;
+    }
+
+    .rvn-detail-back:hover {
+      color: var(--foreground);
+      text-decoration: underline;
+      text-underline-offset: 4px;
+    }
+
+    .rvn-detail-header {
+      align-items: end;
+      display: flex;
+      gap: 16px;
+      justify-content: space-between;
+      min-width: 0;
+      width: 100% !important;
+    }
+
+    .rvn-detail-title {
+      font-size: 2rem;
+      font-weight: 600;
+      letter-spacing: 0;
+      line-height: 1.1;
+      margin: 0;
+    }
+
+    .rvn-detail-subtitle,
+    .rvn-detail-muted {
+      color: var(--rvn-detail-muted);
+    }
+
+    .rvn-detail-layout {
+      align-items: start;
+      display: grid;
+      gap: 18px;
+      grid-template-columns: minmax(0, 1fr) 280px;
+      min-width: 0;
+      width: 100%;
+    }
+
+    .rvn-detail-main,
+    .rvn-detail-aside,
+    .rvn-detail-description {
+      background: var(--rvn-detail-panel);
+      border: 1px solid var(--rvn-detail-border);
+      border-radius: 8px;
+    }
+
+    .rvn-detail-main {
+      display: grid;
+      gap: 16px;
+      grid-template-columns: minmax(0, 1fr);
+      min-width: 0;
+      padding: 16px;
+    }
+
+    .rvn-detail-preview {
+      aspect-ratio: 16 / 9;
+      background: #111;
+      border: 1px solid var(--rvn-detail-border);
+      border-radius: 8px;
+      overflow: hidden;
+      width: 100%;
+    }
+
+    .rvn-detail-preview-video,
+    .rvn-detail-thumb-video {
+      display: block;
+      height: 100%;
+      object-fit: cover;
+      width: 100%;
+    }
+
+    .rvn-detail-preview-video {
+      filter: saturate(0.95);
+      transform: scale(1.01);
+    }
+
+    .rvn-detail-gallery {
+      display: grid;
+      gap: 10px;
+      min-width: 0;
+    }
+
+    .rvn-detail-gallery-strip {
+      display: grid;
+      gap: 10px;
+      grid-auto-columns: minmax(180px, 220px);
+      grid-auto-flow: column;
+      min-width: 0;
+      overflow-x: auto;
+      padding-bottom: 4px;
+      scrollbar-width: thin;
+      width: 100%;
+    }
+
+    .rvn-detail-thumb {
+      aspect-ratio: 16 / 10;
+      background: #111;
+      border: 1px solid var(--rvn-detail-border);
+      border-radius: 6px;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .rvn-detail-thumb.is-active {
+      border-color: rgba(255, 255, 255, 0.54);
+    }
+
+    .rvn-detail-thumb-video {
+      filter: saturate(0.95) var(--thumb-filter, none);
+      transform: scale(1.01);
+    }
+
+    .rvn-detail-description {
+      display: grid;
+      gap: 12px;
+      padding: 16px;
+    }
+
+    .rvn-detail-section-title {
+      color: var(--foreground);
+      font-size: 1rem;
+      font-weight: 600;
+      letter-spacing: 0;
+      line-height: 1.3;
+      margin: 0;
+    }
+
+    .rvn-detail-paragraph {
+      color: var(--rvn-detail-muted);
+      line-height: 1.55;
+      margin: 0;
+    }
+
+    .rvn-detail-aside {
+      display: grid;
+      gap: 16px;
+      padding: 16px;
+      position: sticky;
+      top: 88px;
+    }
+
+    .rvn-detail-meta-list {
+      display: grid;
+      gap: 12px;
+    }
+
+    .rvn-detail-meta-row {
+      border-top: 1px solid var(--rvn-detail-border);
+      display: grid;
+      gap: 4px;
+      padding-top: 12px;
+    }
+
+    .rvn-detail-meta-row:first-child {
+      border-top: 0;
+      padding-top: 0;
+    }
+
+    .rvn-detail-meta-label {
+      color: var(--rvn-detail-muted);
+      font-size: 0.78rem;
+      line-height: 1.2;
+    }
+
+    .rvn-detail-meta-value {
+      color: var(--foreground);
+      font-size: 0.94rem;
+      line-height: 1.3;
+    }
+
+    .rvn-detail-chip-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .rvn-detail-chip {
+      background: var(--rvn-detail-panel-soft);
+      border: 1px solid var(--rvn-detail-border);
+      border-radius: 999px;
+      color: var(--rvn-detail-muted);
+      font-size: 0.82rem;
+      line-height: 1;
+      padding: 8px 10px;
+      white-space: nowrap;
+    }
+
+    .rvn-detail-actions {
+      display: grid;
+      gap: 8px;
+    }
+
+    @media (max-width: 1280px) {
+      .rvn-asset-detail {
+        max-width: calc(100vw - 64px);
+        width: calc(100vw - 64px) !important;
+      }
+    }
+
+    @media (max-width: 980px) {
+      .rvn-detail-layout {
+        grid-template-columns: 1fr;
+      }
+
+      .rvn-detail-aside {
+        position: static;
+      }
+    }
+
+    @media (max-width: 760px) {
+      .rvn-asset-detail {
+        max-width: calc(100vw - 48px);
+        width: calc(100vw - 48px) !important;
+      }
+    }
+
+    @media (max-width: 620px) {
+      .rvn-asset-detail {
+        margin-top: 40px;
+      }
+
+      .rvn-detail-header {
+        align-items: start;
+        flex-direction: column;
+      }
+
+      .rvn-detail-main,
+      .rvn-detail-description,
+      .rvn-detail-aside {
+        padding: 12px;
+      }
+    }
+
+- 'rtgl-view class="rvn-asset-detail" g="xl"':
+    - 'a class="rvn-detail-back" href="/en/creator/asset-store/"': Back to Asset Store
+    - 'rtgl-view class="rvn-detail-header" d="h" md-d="v" w="f" av="e" md-av="s" g="lg"':
+        - rtgl-view g="md":
+            - rtgl-text class="rvn-detail-title" s="h1": Rainy City Street
+            - rtgl-text class="rvn-detail-subtitle" s="md": Background pack placeholder for RouteVN Creator.
+        - rtgl-view w="1fg" md-hide:
+        - rtgl-button v="se" disabled: Add to project
+    - rtgl-view class="rvn-detail-layout" w="f":
+        - rtgl-view g="lg" w="f":
+            - 'rtgl-view class="rvn-detail-main" role="region" aria-label="Asset gallery"':
+                - rtgl-view class="rvn-detail-preview":
+                    - 'video class="rvn-detail-preview-video" src="/public/creator/asset-store/placeholder-thumbnail.webm" autoplay muted loop playsinline preload="metadata"':
+                - rtgl-view class="rvn-detail-gallery":
+                    - rtgl-text class="rvn-detail-section-title" s="h4": Gallery
+                    - rtgl-view class="rvn-detail-gallery-strip" role="list" aria-label="Asset gallery thumbnails":
+                        - 'rtgl-view class="rvn-detail-thumb is-active" role="listitem" style="--thumb-filter: none;"':
+                            - 'video class="rvn-detail-thumb-video" src="/public/creator/asset-store/placeholder-thumbnail.webm" autoplay muted loop playsinline preload="metadata"':
+                        - 'rtgl-view class="rvn-detail-thumb" role="listitem" style="--thumb-filter: hue-rotate(78deg);"':
+                            - 'video class="rvn-detail-thumb-video" src="/public/creator/asset-store/placeholder-thumbnail.webm" autoplay muted loop playsinline preload="metadata"':
+                        - 'rtgl-view class="rvn-detail-thumb" role="listitem" style="--thumb-filter: hue-rotate(168deg) saturate(0.8);"':
+                            - 'video class="rvn-detail-thumb-video" src="/public/creator/asset-store/placeholder-thumbnail.webm" autoplay muted loop playsinline preload="metadata"':
+                        - 'rtgl-view class="rvn-detail-thumb" role="listitem" style="--thumb-filter: hue-rotate(262deg) saturate(0.85);"':
+                            - 'video class="rvn-detail-thumb-video" src="/public/creator/asset-store/placeholder-thumbnail.webm" autoplay muted loop playsinline preload="metadata"':
+                        - 'rtgl-view class="rvn-detail-thumb" role="listitem" style="--thumb-filter: hue-rotate(24deg) saturate(1.1);"':
+                            - 'video class="rvn-detail-thumb-video" src="/public/creator/asset-store/placeholder-thumbnail.webm" autoplay muted loop playsinline preload="metadata"':
+                        - 'rtgl-view class="rvn-detail-thumb" role="listitem" style="--thumb-filter: hue-rotate(138deg) saturate(0.85);"':
+                            - 'video class="rvn-detail-thumb-video" src="/public/creator/asset-store/placeholder-thumbnail.webm" autoplay muted loop playsinline preload="metadata"':
+            - rtgl-view class="rvn-detail-description":
+                - rtgl-text class="rvn-detail-section-title" s="h4": Description
+                - p class="rvn-detail-paragraph": This is placeholder copy for an asset detail page. It shows how users can inspect a larger preview, scan alternate gallery items, and read practical notes before adding an asset to a RouteVN Creator project.
+                - p class="rvn-detail-paragraph": The final page can replace these mock entries with real screenshots, licensing terms, author notes, package contents, and version compatibility details.
+        - 'rtgl-view class="rvn-detail-aside" role="complementary" aria-label="Asset information"':
+            - rtgl-text class="rvn-detail-section-title" s="h4": Asset info
+            - rtgl-view class="rvn-detail-meta-list":
+                - rtgl-view class="rvn-detail-meta-row":
+                    - rtgl-text class="rvn-detail-meta-label": Author
+                    - rtgl-text class="rvn-detail-meta-value": RouteVN Placeholder Team
+                - rtgl-view class="rvn-detail-meta-row":
+                    - rtgl-text class="rvn-detail-meta-label": Type
+                    - rtgl-text class="rvn-detail-meta-value": Background pack
+                - rtgl-view class="rvn-detail-meta-row":
+                    - rtgl-text class="rvn-detail-meta-label": License
+                    - rtgl-text class="rvn-detail-meta-value": Free for personal projects
+                - rtgl-view class="rvn-detail-meta-row":
+                    - rtgl-text class="rvn-detail-meta-label": Includes
+                    - rtgl-text class="rvn-detail-meta-value": 6 images, 1 preview video
+                - rtgl-view class="rvn-detail-meta-row":
+                    - rtgl-text class="rvn-detail-meta-label": Compatible with
+                    - rtgl-text class="rvn-detail-meta-value": RouteVN Creator 1.5+
+            - rtgl-view g="md":
+                - rtgl-text class="rvn-detail-section-title" s="h4": Tags
+                - rtgl-view class="rvn-detail-chip-row":
+                    - span class="rvn-detail-chip": Background
+                    - span class="rvn-detail-chip": City
+                    - span class="rvn-detail-chip": Night
+                    - span class="rvn-detail-chip": Placeholder
+            - rtgl-view class="rvn-detail-actions":
+                - rtgl-button disabled: Download
+                - rtgl-button v="se" disabled: Add to project
