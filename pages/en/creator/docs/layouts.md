@@ -140,6 +140,7 @@ Supported override fields include text styles, image variants, opacity, anchor, 
 
 - [Container](#container)
 - [Text](#text)
+- [Text revealing elements](#text-revealing-elements)
 - [Image](#image)
 - [Slider](#slider)
 - [Fragment](#fragment)
@@ -177,13 +178,28 @@ Use Absolute direction when children should use their own positions. Use Horizon
 
 ### Text
 
-Use text for labels, dialogue text, menu text, and other written content.
+Use Text for labels, menu text, button text, and other written content that should appear immediately.
 
 Text can use project text styles so typography stays consistent across layouts.
 
 #### Text content
 
 Text content is editable text for plain text elements.
+
+Text content can include [variables](/en/creator/docs/variables/). When the layout renders, each variable reference shows the current variable value.
+
+<video src="/public/creator/changelog/1-6-4-text-variables.mp4" controls playsinline preload="metadata" style="width: 100%; height: auto; display: block; border: 1px solid var(--border); box-sizing: border-box;"></video>
+
+To add a variable to text content:
+
+1. Create the variable on the [Variables](/en/creator/docs/variables/) page.
+2. Select a Text element in the Layout Editor.
+3. Click the Content field in the inspector.
+4. Type `/` in the text editor.
+5. Select the variable.
+6. Save the text content.
+
+The variable appears as a chip in the editor.
 
 #### Text style
 
@@ -193,17 +209,29 @@ Text style controls default, hover, and click text style variants.
 
 Text alignment controls alignment for this text element.
 
+#### Sound
+
+Sound is an optional audio cue played on hover or click.
+
+Some layout-specific text elements get their content from runtime data instead of the Content field.
+
+### Text revealing elements
+
+Text revealing elements animate text as it appears.
+
+They are different from plain Text elements. Plain Text is best for fixed labels, menu text, and static UI copy. Text revealing elements are used for dialogue content, such as Text (Dialogue Content) in Dialogue ADV layouts and Text (Line Content) in Dialogue NVL layouts.
+
 #### Reveal effect
 
 Reveal effect controls text revealing behavior.
 
 Supported effects are Typewriter, Soft Wipe, and None.
 
-#### Sound
+#### Click-to-continue indicators
 
-Sound is an optional audio cue played on hover or click.
+Click-to-continue indicators are configured on dialogue text revealing elements.
 
-Some layout-specific text elements get their content from runtime data instead of the Content field.
+Read [Dialogue: Click-to-continue indicator](/en/creator/docs/line-actions/dialogue/#click-to-continue-indicator) for the video and setup steps.
 
 ### Image
 
