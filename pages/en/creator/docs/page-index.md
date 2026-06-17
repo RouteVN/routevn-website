@@ -45,6 +45,7 @@ This includes dialogue, choices, visuals, background changes, audio, controls, v
 - [Conditional](/en/creator/docs/line-actions/conditional/)
 - [Background](/en/creator/docs/line-actions/background/)
 - [BGM](/en/creator/docs/line-actions/bgm/)
+- [Voice](/en/creator/docs/line-actions/voice/)
 - [Sound Effects](/en/creator/docs/line-actions/sfx/)
 - [Characters](/en/creator/docs/line-actions/characters/)
 - [Section Transition](/en/creator/docs/line-actions/section-transition/)

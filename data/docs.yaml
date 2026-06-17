@@ -102,6 +102,9 @@ items:
       - id: bgm
         title: "BGM"
         href: "/en/creator/docs/line-actions/bgm"
+      - id: voice
+        title: "Voice"
+        href: "/en/creator/docs/line-actions/voice"
       - id: sound-effects
         title: "Sound Effects"
         href: "/en/creator/docs/line-actions/sfx"
