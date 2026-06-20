@@ -21,8 +21,7 @@ seo:
   message: ${site.creator.about.hero.message}
   backgroundImageSrc: /public/creator/chibi-hi.png
   backgroundImageAlt: Chibi character in a hi pose.
-  videoSrc: ${site.creator.about.hero.videoSrc}
-  posterSrc: ${site.creator.about.hero.posterSrc}
+  videoSrc: /public/creator/0621_merged.mp4
 
 - style: |
     rtgl-view.rvn-creator-hero[w="f"] {

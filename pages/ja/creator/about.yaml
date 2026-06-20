@@ -23,8 +23,7 @@ seo:
   subtitleHtml: 'RouteVN Creatorは、プログラミング不要でノベルゲームを制作できる無料・<a href="https://github.com/RouteVN/routevn-creator-client" target="_blank" rel="noreferrer">オープンソース</a>の制作ツールです'
   backgroundImageSrc: /public/creator/chibi-hi.png
   backgroundImageAlt: 手を振っているちびキャラクター。
-  videoSrc: /public/creator/routevn-demo-250108.mp4
-  posterSrc: /public/creator/routevn-demo-250108-thumb.png
+  videoSrc: /public/creator/0621_merged.mp4
 
 - style: |
     rtgl-view.rvn-creator-hero[w="f"] {
