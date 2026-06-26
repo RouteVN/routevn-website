@@ -5,7 +5,7 @@ sidebarId: scene-editor
 ---
 
 <img
-  src="/public/creator/docs/reference/scene-editor-1.png"
+  src="/public/creator/docs/reference/scene-editor-2.png"
   alt="Scene editor"
   style="width: 100%; height: auto; display: block; border: 1px solid var(--border); box-sizing: border-box;"
 />

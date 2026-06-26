@@ -4,6 +4,12 @@ title: Choices
 sidebarId: choices
 ---
 
+<img
+  src="/public/creator/docs/reference/choices-1.png"
+  alt="Choices editor and preview"
+  style="width: 100%; height: auto; display: block; border: 1px solid var(--border); box-sizing: border-box;"
+/>
+
 Choices show a list of options for the player to select.
 
 Each choice item has text and a click action. When the player selects a choice, RouteVN Creator runs that item's action.
