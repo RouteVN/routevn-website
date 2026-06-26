@@ -73,11 +73,10 @@ seo:
   learnMoreHref: ${site.creator.about.showcaseFeature.learnMoreHref}
   learnMoreLabel: ${site.creator.about.showcaseFeature.learnMoreLabel}
 
-# Temporarily hidden. Restore this block to show "Made with RouteVN Creator".
-# - $partial: made-with-carousel
-#   title: ${site.creator.about.madeWith.title}
-#   message: ${site.creator.about.madeWith.message}
-#   items: ${site.creator.about.madeWith.items}
+- $partial: made-with-carousel
+  title: ${site.creator.about.madeWith.title}
+  message: ${site.creator.about.madeWith.message}
+  items: ${site.creator.about.madeWith.items}
 
 # Temporarily hidden. Restore this block to show "Expressive Staging".
 # - $partial: feature-showcase
