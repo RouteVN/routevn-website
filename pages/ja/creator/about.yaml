@@ -4,7 +4,7 @@ lang: ja
 title: RouteVN Creator - プログラミングなしでノベルゲームを制作
 locale: ja
 canonical: https://routevn.com/ja/creator/about/
-disableFooterSpacer: true
+footerSpacerHeight: 18vh
 seo:
   title: RouteVN Creator - プログラミングなしでノベルゲームを制作
   description: プログラミング不要でノベルゲームを制作できる無料・オープンソースの制作ツールです。リアルタイムプレビュー、素材管理、レイアウト編集まで、制作に必要な作業をひとつにまとめています。
@@ -85,7 +85,7 @@ seo:
   items:
     - title: 画面レイアウト編集
       message: タイトル画面や会話画面など、作品に合わせたUIを作れます。
-      imgSrc: /public/creator/ss-5.png
+      imgSrc: /public/creator/docs/reference/layout-editor-2.png
       href: /en/creator/docs/layouts/
     - title: 素材管理
       message: 立ち絵、背景、音声などの素材をプロジェクト内で整理できます。
@@ -97,7 +97,7 @@ seo:
       href: /en/creator/docs/scene-map/
     - title: 選択肢と分岐
       message: 選択肢を作り、分岐先のシーンへつなげられます。
-      imgSrc: /public/images/routevn_og.png
+      imgSrc: /public/creator/docs/reference/choices-1.png
       href: /en/creator/docs/line-actions/choices/
     - title: 公開
       message: 完成したゲームをWeb向けに出力して公開できます。
@@ -158,5 +158,5 @@ seo:
     href: /en/creator/download/
     variant: pr
 
-- 'rtgl-view ah="c" w="f" style="margin-top: 10vh;"':
-    - 'img src="/public/creator/chibi-thank-you.png" alt="お辞儀しているちびキャラクター。" style="display: block; height: auto; max-width: min(320px, calc(100vw - 32px)); width: 100%;"':
+- 'rtgl-view ah="c" w="f" style="margin-top: 12vh;"':
+    - 'img src="/public/creator/chibi-thank-you.png" alt="お辞儀しているちびキャラクター。" style="display: block; height: auto; max-width: min(256px, calc(100vw - 32px)); width: 100%;"':

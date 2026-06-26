@@ -37,9 +37,9 @@ footer:
     - name: YouTube
       svg: youtube
       href: https://www.youtube.com/@routevn
-    - name: LinkedIn
-      svg: linkedin
-      href: https://www.linkedin.com/showcase/110652448
+    - name: TikTok
+      svg: tiktok
+      href: https://www.tiktok.com/@routevn
   columns:
     - links:
         # - text: About
@@ -185,7 +185,7 @@ creator:
       foregroundColor: var(--foreground)
       themeClass: dark
       sideImageSrc: /public/landing/object-2.png
-      videoSrc: /public/creator/animated-1.mp4
+      videoSrc: /public/creator/about-live-editor.mp4
       learnMoreHref: /en/creator/docs/scene-editor/
       learnMoreLabel: Learn More
       features:
@@ -225,11 +225,11 @@ creator:
       items:
         - title: Layout Editor
           message: Fully customize your Visual Novel's UI.
-          imgSrc: /public/creator/ss-5.png
+          imgSrc: /public/creator/docs/reference/layout-editor-2.png
           href: /en/creator/docs/layouts/
         - title: Asset Manager
           message: Keep images, audio, characters, and project files organized in one workspace.
-          imgSrc: /public/creator/ss-1.png
+          imgSrc: /public/creator/docs/reference/images-2.png
           href: /en/creator/docs/images/
         - title: Scene Map
           message: See the shape of your visual novel and keep branching scenes easy to follow.
@@ -237,7 +237,7 @@ creator:
           href: /en/creator/docs/scene-map/
         - title: Choices and Branching
           message: Add player choices and connect them to the next part of your story.
-          imgSrc: /public/images/routevn_og.png
+          imgSrc: /public/creator/docs/reference/choices-1.png
           href: /en/creator/docs/line-actions/choices/
         - title: Publishing
           message: Export your project and prepare it for sharing on the web.
