@@ -85,6 +85,14 @@ socialPage:
       handle: "@routevn"
       href: https://www.instagram.com/routevn
       svg: instagram
+    - name: TikTok
+      handle: "@routevn"
+      href: https://www.tiktok.com/@routevn
+      svg: tiktok
+    - name: Tumblr
+      handle: "routevn"
+      href: https://www.tumblr.com/routevn
+      svg: tumblr
     - name: YouTube
       handle: "@routevn"
       href: https://www.youtube.com/@routevn
@@ -243,37 +251,30 @@ creator:
       ctaHref: /en/blog/
 
     madeWith:
-      title: Made with RouteVN Creator
-      message: Placeholder text for projects made with RouteVN Creator.
+      title: Made with RouteVN
       items:
         - id: dialune
           active: true
           title: DiaLune
           author: sqewree
           authorAvatarSrc: https://img.itch.zone/aW1nLzI1OTU0Njk4LnBuZw==/80x80%23/19kS2C.png
-          authorHref: https://itch.io/profile/sqewree
+          authorHref: https://sqewree.carrd.co/
           imgSrc: /public/blog/2026/09/dialune.png
           href: https://sqewree.itch.io/dialune-demo
-          vndbHref: https://vndb.org/
-          description: A story-focused fantasy romance demo about meeting Lune, a strange girl found outside your home, and becoming bound to her as you cross worlds through death.
-          testimonial: Creator testimonial coming soon. Creator testimonial coming soon. Creator testimonial coming soon.
+          description: "On what was supposed to be an unremarkable day, you find a girl -- Lune, laying in the grass just downstairs from your house. It turns out to be more than a strange encounter and you would since become entangled with her, traversing worlds together through the medium of death."
         - id: two-straws
           title: Two Straws
-          author: pararinn
-          authorAvatarSrc: https://img.itch.zone/aW1nLzE1NzU1MjI0LnBuZw==/80x80%23/LnKlnR.png
-          authorHref: https://itch.io/profile/pararinn
-          imgSrc: /public/blog/2026/09/two-straws.png
+          author: BunniBambii
+          authorAvatarSrc: https://pbs.twimg.com/profile_images/2050152862320349185/IDdbzNA-_400x400.jpg
+          authorHref: https://x.com/bunnibambii
+          imgSrc: https://img.itch.zone/aW1nLzI4MDg1MjUxLnBuZw==/original/JiUsWy.png
           href: https://pararinn.itch.io/twostrawscruisinforaconnection
-          vndbHref: https://vndb.org/
-          description: A lunch break goes wrong, sending you into a retro diner with an indoor rollerblading rink where a simple meal somehow turns into romance.
-          testimonial: Creator testimonial coming soon. Creator testimonial coming soon. Creator testimonial coming soon.
-        - id: makkuro-demo
-          title: Makkuro Demo
-          author: RouteVN
-          imgSrc: /public/creator/routevn-demo-250108-thumb.png
-          vndbHref: https://vndb.org/
-          description: A RouteVN demo project used to showcase Creator workflows.
-          testimonial: Creator testimonial coming soon. Creator testimonial coming soon. Creator testimonial coming soon.
+          description: This was supposed to be just lunch (Seriously). Fine. Guess I'll eat out for once... THE DINER in big neon red signage, this must be the place Dave mentioned. AND HOW DID MY LUNCH BREAK TURN INTO ROMANCE!?
+          testimonial: |
+            IF U GUYS WANNA MAKE VNs BUT THE CODING PART IS DIFFICULT FOR U
+
+            TRY OUT ROUTEVN YALL!!!
+          testimonialHref: https://x.com/bunnibambii/status/2050891935146250283
 
     faq:
       title: Frequently Asked Questions
