@@ -7,7 +7,7 @@ url: /hiring/swe/
 seo:
   title: RouteVN - Software Engineer
   description: Join RouteVN as a Software Engineer
-  keywords: software engineer, software engineer internship, junior software engineer, remote software engineering job, visual novel development
+  keywords: software engineer, software engineer internship, junior software engineer, remote software engineering job, visual novel engine development
   ogType: article
 ---
 
