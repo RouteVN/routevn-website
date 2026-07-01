@@ -1,4 +1,4 @@
-- html lang="en":
+- html lang="${default(lang, 'en')}":
     - head:
         - $partial: seo1
           page: ${page}
