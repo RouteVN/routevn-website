@@ -7,7 +7,7 @@ canonical: https://routevn.com/zh-hans/creator/about/
 footerSpacerHeight: 18vh
 seo:
   title: RouteVN Creator - 无需编程，制作视觉小说
-  description: RouteVN Creator 是一款免费、开源的视觉小说制作工具。无需编程，也可以编写剧本、管理素材、编辑画面布局、设置剧情分支，并实时预览作品效果。
+  description: RouteVN Creator 是一款免费、开源的视觉小说制作工具，无需编程即可使用。实时预览、素材管理、布局编辑，快速、直观、可靠。加入 Discord 获取最新消息。
   keywords: 视觉小说制作, 视觉小说制作工具, 视觉小说引擎, Galgame 引擎, Galgame 制作, 无需编程, 不用写代码, 游戏制作, RouteVN Creator
   ogImage: https://routevn.com/public/images/routevn-illustration-og.png
   ogImageWidth: 1200
@@ -70,39 +70,72 @@ seo:
   themeClass: dark rvn-about-live-editor-section
   features:
     - title: 实时预览
-      message: 修改剧本或演出后，可以在预览画面中立即查看效果。你可以一边创作，一边确认玩家实际看到的画面。
-    - title: 直观操作
-      message: 不需要特殊技术背景，也可以用剧本、立绘和背景图快速开始视觉小说制作。
+      message: 输入文字和切换台词时，可以立即看到准确的画面变化。
+    - title: 为作者和画师设计
+      message: 不需要技术背景，也可以直接开始制作。
   sideImageSrc: /public/landing/object-2.png
-  videoSrc: /public/creator/animated-1.mp4
+  videoSrc: /public/creator/about-live-editor.mp4
   learnMoreHref: /en/creator/docs/scene-editor/
   learnMoreLabel: 了解更多
 
+- $partial: made-with-carousel
+  title: 用 RouteVN 制作的作品
+  items: ${site.creator.about.madeWith.items}
+
+# Temporarily hidden. Restore this block to show "Expressive Staging".
+# - $partial: feature-showcase
+#   title: 富有表现力的演出
+#   message: 不只是展示静态图片，而是制作能让读者留下印象的体验。
+#   backgroundColor: "#141414"
+#   foregroundColor: var(--foreground)
+#   themeClass: dark
+#   sideImageSrc: /public/landing/object-5.png
+#   videoSrc: /public/creator/animated-2.mp4
+#   learnMoreHref: /en/creator/docs/animations/
+#   learnMoreLabel: 了解更多
+
 - $partial: functionality-grid
-  title: 视觉小说制作需要的功能，集中在一个工具里
-  message: 从剧本、素材管理、画面布局、剧情分支到导出发布。RouteVN Creator 把视觉小说制作中常用的工作集中在一个制作工具里。
+  title: 视觉小说需要的功能，都在这里
+  message: 我们会研究视觉小说常见的功能，并用你可以直接使用的方式实现它们。
   sideImageSrc: /public/landing/object-4.png
   items:
     - title: 画面布局编辑
-      message: 可以为标题画面、对话画面等制作适合作品风格的 UI。
+      message: 可以完全自定义视觉小说的 UI。
       imgSrc: /public/creator/docs/reference/layout-editor-2.png
       href: /en/creator/docs/layouts/
     - title: 素材管理
-      message: 可以在项目中整理立绘、背景图、音频等素材。
-      imgSrc: /public/creator/ss-1.png
+      message: 在一个工作区中整理图像、音频、角色和项目文件。
+      imgSrc: /public/creator/docs/reference/images-2.png
       href: /en/creator/docs/images/
     - title: 场景流程
-      message: 可以查看场景之间的连接和分支，整理整个故事的结构。
+      message: 查看视觉小说的整体结构，让分支场景更容易梳理。
       imgSrc: /public/creator/ss-7.png
       href: /en/creator/docs/scene-map/
     - title: 选项与剧情分支
-      message: 可以创建选项，并把不同选项连接到对应的后续场景。
+      message: 添加玩家选项，并连接到故事的下一段。
       imgSrc: /public/creator/docs/reference/choices-1.png
       href: /en/creator/docs/line-actions/choices/
     - title: 发布
-      message: 完成后可以导出 Web 版，并发布到网上。
+      message: 导出项目，并准备在 Web 上分享。
       imgSrc: /public/images/routevn_og.png
       href: /en/creator/docs/publish/
+
+# Temporarily hidden. Restore this block to show "Video tutorials from the creator of RouteVN".
+# - $partial: feature1
+#   title: RouteVN 作者制作的视频教程
+#   message: ""
+#   backgroundColor: "#141414"
+#   foregroundColor: var(--foreground)
+#   themeClass: dark
+#   imgSrc: /public/creator/routevn-demo-250108-thumb.png
+#   features:
+#     - title: 超过 20 个视频教程
+#       message: 用分步课程学习如何在 RouteVN Creator 中制作视觉小说。
+#     - title: 从入门到进阶
+#       message: 覆盖基础功能、制作流程和更多进阶 Creator 功能。
+#     - title: 提供 2 种语言
+#       message: 选择适合自己的语言跟着学习。
+#   learnMoreHref: /en/creator/docs/video-tutorials/
 
 - style: |
     .rvn-about-faq-shell {
