@@ -1,62 +1,32 @@
 ---
 template: post
-title: RouteVN - Software Engineer Internship
+title: RouteVN - Software Engineer
 tags: [hiring]
 date: '2025-03-15'
+url: /hiring/swe/
 seo:
-  title: RouteVN - Software Engineer Internship
-  description: Join RouteVN as a Software Engineer Intern
-  keywords: software engineer internship, remote internship, visual novel development, TypeScript internship, tech internship
+  title: RouteVN - Software Engineer
+  description: Join RouteVN as a Software Engineer
+  keywords: software engineer, software engineer internship, junior software engineer, remote software engineering job, visual novel development
   ogType: article
 ---
 
-## About Yuusoft and RouteVN
-- Yuusoft Pte. Ltd. is a company incorporated in Singapore
-- Yuusoft Pte. Ltd. is the company that builds and operates RouteVN
-- RouteVN is a dedicated platform for Visual Novels
-  - Our [mission](/en/blog/to-fulfill-the-full-potential-of-visual-novels/) is to fulfil the full potential of Visual Novels
-  - We build tools and technology to create, distribute and read Visual Novels
+# RouteVN - Software Engineer
 
-## Internship
-- Compensation
-  - 600 USD / month for the first 3 months *
-  - 900 USD / month from 4th month onwards *
-- Minimum duration of 3 months. Maximum duration of 6 months
-- Must be able to work **full-time** during the duration of the internship
+## About Yuusoft and RouteVN
+- Yuusoft Pte. Ltd. is a company incorporated in Singapore.
+- Yuusoft Pte. Ltd. is the company that builds and operates RouteVN.
+- RouteVN is a dedicated platform for Visual Novels.
+- Our [mission](/en/blog/to-fulfill-the-full-potential-of-visual-novels/) is to fulfil the full potential of Visual Novels.
+- We build tools and technology to create, distribute, and read Visual Novels.
+
+## Open roles
+- Software Engineer Intern: USD $1,000/month.
+- Junior Software Engineer: USD $2,000/month.
 - This is a fully remote position. Applicants are welcome to apply from any timezone.
 
-*Internships from Singapore may have different rates due to local requirements
+## Job description
+Work to contribute to the mission, primarily through, but not limited to, product, design, and engineering.
 
-## Job Description
-- Your mandate is to work to improve the product and building features for RouteVN
-- You will be working closely with [@han4wluc (Luciano)](https://han4wluc.com/) on a daily basis
-- You are expected to spend 70%+ of your time on engineering aspects and the remaining 30% on product aspects.
-
-## What an ideal candidate looks like
-- You have passion for Visual Novels and you share the RouteVN vision
-- You genuinely enjoy coding all day
-- You have a taste and high admiration for well crafted products
-- You are curious, fast learner and enjoy being exposed to new technologies
-- You are able to work independently take your own initiatives and responsibilities
-
-## Tech stack
-- We write almost all our code in Javascript and a little bit of Python
-- We build our own frameworks and libraries from scratch and open source all of it. Including:
-  - [UI Library](https://github.com/yuusoft-org/rettangoli/tree/main/packages/rettangoli-ui)
-  - [Frontend framework](https://github.com/yuusoft-org/rettangoli/tree/main/packages/rettangoli-fe)
-  - [Static site generator](https://github.com/yuusoft-org/rettangoli/tree/main/packages/rettangoli-sites)
-  - Backend framework
-  - [Graphics DSL](https://github.com/yuusoft-org/route-graphics)
-  - Visual Novel Engine
-  - Custom internal tools
-
-## Application and selection process
-- Application form submission
-- Video Interview
-- Take home assignment
-- Paid work trial
-
-For any questions, you can [ask via this form](https://tally.so/r/wzZ7rM)
-
-[**Apply here**](https://tally.so/r/wooRVe)
-
+## Requirements
+We only consider candidates that have made meaningful contributions to our [open source projects](https://github.com/orgs/RouteVN/repositories).
