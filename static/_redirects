@@ -176,8 +176,10 @@
 /creator/download/ /en/creator/download/ 301
 /creator/tools/spritesheet /en/creator/tools/spritesheet/ 301
 /creator/tools/spritesheet/ /en/creator/tools/spritesheet/ 301
-/hiring/swe-intern /en/hiring/swe-intern/ 301
-/hiring/swe-intern/ /en/hiring/swe-intern/ 301
+/hiring/swe-intern /hiring/swe/ 301
+/hiring/swe-intern/ /hiring/swe/ 301
+/en/hiring/swe-intern /hiring/swe/ 301
+/en/hiring/swe-intern/ /hiring/swe/ 301
 /hiring/vn-writer-illustrator-intern /en/hiring/vn-writer-illustrator-intern/ 301
 /hiring/vn-writer-illustrator-intern/ /en/hiring/vn-writer-illustrator-intern/ 301
 /hiring /en/hiring/ 301
