@@ -27,24 +27,41 @@ Use these terms consistently:
 - `脚本`: Use for technical scripts, code-like files, or engine scripting.
 - `角色`: Use for character.
 - `立绘`: Use for character sprites in visual novel context.
+- `图像`: Use for the technical image resource category when matching engine terminology.
+- `图片`: Use in beginner-facing explanatory copy when it sounds more natural than `图像`.
+- `视频`: Use for video in RouteVN UI.
 - `背景图`: Use for background images.
 - `CG`: Use for special event illustrations when the context is visual novel art.
 - `素材`: Use for assets in beginner-facing copy.
 - `素材管理`: Use instead of `资产管理器` when possible.
+- `颜色`: Use for color in app UI labels, form fields, and design controls.
+- `配色`: Use for color scheme/palette wording.
+- `字体`: Use for font.
+- `字号`: Use for font size in compact UI labels when natural. `字体大小` is acceptable when clarity matters more than compactness.
+- `文本样式`: Use for text style.
+- `文字体系`: Use for font metadata meaning writing system/script. Do not use `脚本` for this meaning.
 - `场景`: Use for scenes.
 - `场景图`: Use for scene map only if the app UI uses this concept; otherwise explain as `场景流程`.
 - `对话`: Use for dialogue.
 - `旁白`: Use for narration.
 - `台词`: Use for spoken lines when referring to content written for characters.
+- `对话历史`: Use for dialogue history/backlog. Use `历史记录` only for generic non-dialogue history.
 - `选项`: Use for choices.
 - `分支`: Use for branching.
 - `分支选项`: Use when describing choices that lead to branches.
 - `剧情分支`: Use when emphasizing the story structure.
 - `转场`: Use for transitions.
+- `变换`: Use for transform/visual transform.
+- `样式`: Use for style.
+- `ADV 模式`: Use when describing ADV text display behavior.
+- `NVL 模式`: Use when describing NVL text display behavior.
+- `ADV 样式`: Use for RouteVN layout/style preset labels when the context is a UI layout.
+- `NVL 样式`: Use for RouteVN layout/style preset labels when the context is a UI layout.
 - `实时预览`: Use for live preview.
 - `布局编辑`: Use for layout editing.
 - `画面布局`: Use for screen layout.
 - `导出`: Use for export output when talking about generated files.
+- `发行版`: Use for built distributable packages. Do not use it as a replacement for publishing.
 - `发布`: Use for publishing or making a game available to players.
 - `Web 版`: Use for the web build or web version.
 - `存档`, `读档`, `回滚`: Use for save, load, and rollback when talking about player-facing VN features.
@@ -62,6 +79,10 @@ Avoid these as primary terms:
 - `实时编辑器`: Avoid unless naming an exact UI concept. Prefer `实时预览`.
 - `强大`: Usually sounds like generic marketing. Prefer a concrete benefit.
 - `无编码`: Awkward. Prefer `无需编程` or `不用写代码`.
+- `历史`: Too broad for dialogue backlog/history. Prefer `对话历史`.
+- `ADV 对话` / `NVL 对话`: Avoid for RouteVN layout type names. Prefer `ADV 样式` / `NVL 样式`, or `ADV 模式` / `NVL 模式` when describing text display modes.
+- `文字脚本` or `支持脚本`: Avoid for font writing-system metadata. Prefer `文字体系`.
+- `色`: Too terse for normal UI color labels. Prefer `颜色`.
 
 ## Tone
 
@@ -144,6 +165,26 @@ Examples:
 - In-app feature reference: `Layout Editor` or the localized UI label if the app has one.
 - Marketing/card heading: `素材管理`.
 - In-app feature reference: `Asset Manager` or the app's exact UI label, if the UI is not localized.
+
+## Visual novel engine terminology
+
+Use common Simplified Chinese terminology from visual novel engines and Chinese VN communities when translating RouteVN Creator UI and docs. Ren'Py Chinese documentation is the strongest primary reference for engine terms; Chinese engine/community references such as 吉里吉里, 橙光制作工具, BKEngine, NVL Maker, TyranoBuilder, and Visual Novel Maker are useful for category familiarity.
+
+In app UI:
+
+- Use `角色`, `图像`, `音频`, `视频`, `立绘`, `选项`, `转场`, `变换`, `样式`, `文本样式`, and `颜色` consistently.
+- Use `对话历史` for a dialogue log/backlog feature. Use `历史记录` for generic app history only.
+- Use `ADV 样式` and `NVL 样式` for RouteVN layout presets. Use `ADV 模式` and `NVL 模式` when explaining engine-level display behavior.
+- Use `颜色` for color labels and controls. Use `配色` for palettes or schemes.
+- Use `文字体系` for font metadata meaning Latin, Japanese, Cyrillic, etc. Reserve `脚本` for code/scripts.
+- Use `立绘` for character standing art. Use `精灵` only for a generic engine sprite/rendering concept.
+- Use `音频` as a resource category. Use `音乐和音效` when distinguishing BGM/music from SFX.
+
+For layout explanations:
+
+- ADV mode displays dialogue and narration in a window, usually at the bottom of the interface.
+- NVL mode uses a large or nearly full-screen text area that can show multiple lines/pages of dialogue and narration.
+- Dialogue history/backlog should be described as `对话历史`, not simply `历史`.
 
 ## Visual novel and Galgame wording
 
@@ -228,6 +269,7 @@ These notes are based on common Chinese wording used by visual novel engines, Ch
 - `项目`
 - `角色`
 - `图像`
+- `视频`
 - `立绘`
 - `背景图`
 - `剧本`
@@ -236,19 +278,25 @@ These notes are based on common Chinese wording used by visual novel engines, Ch
 - `旁白`
 - `分支选项`
 - `转场`
+- `变换`
+- `样式`
+- `文本样式`
+- `颜色`
+- `配色`
+- `字体`
+- `字号`
+- `文字体系`
+- `ADV 模式`
+- `NVL 模式`
+- `ADV 样式`
+- `NVL 样式`
+- `对话历史`
 - `音乐和音效`
 - `素材`
+- `发行版`
 - `存档`
 - `读档`
 - `回滚`
 - `发布`
 
 Do not copy wording from other products. Use shared category terminology so RouteVN sounds familiar to Chinese visual novel creators.
-
-Research references:
-
-- Ren'Py Chinese documentation: https://doc.renpy.cn/zh-CN/
-- Ren'Py Chinese quickstart: https://doc.renpy.cn/zh-CN/quickstart.html
-- Visual novel overview in Chinese: https://zh.wikipedia.org/wiki/%E8%A7%86%E8%A7%89%E5%B0%8F%E8%AF%B4
-- Visual novel engine list in Chinese: https://zh.wikipedia.org/wiki/%E8%A7%86%E8%A7%89%E5%B0%8F%E8%AF%B4%E5%BC%95%E6%93%8E%E5%88%97%E8%A1%A8
-- Kirikiri overview in Chinese: https://zh.wikipedia.org/wiki/%E5%90%89%E9%87%8C%E5%90%89%E9%87%8C

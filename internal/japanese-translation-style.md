@@ -21,9 +21,23 @@ Use these terms consistently:
 - `リアルタイムプレビュー`: Use for live preview.
 - `素材`: Use instead of `アセット` in beginner-facing copy.
 - `素材管理`: Use instead of `アセットマネージャー` when possible.
+- `画像`: Use for image.
+- `動画`: Use for video.
+- `音声`: Use for audio as a resource category. Use `音楽と効果音` when explicitly distinguishing music and sound effects.
+- `立ち絵`: Use for character sprites in visual novel context.
+- `色`: Use for color in app UI labels and design controls.
+- `フォント`: Use for font.
+- `文字体系`: Use for font metadata meaning writing system/script. Do not use `スクリプト` for this meaning.
 - `選択肢`: Use for choices.
 - `分岐`: Use for branching.
 - `シーン`: Use for scenes.
+- `バックログ`: Use for the player-facing dialogue log/backlog. Use `会話ログ` when a plain descriptive phrase is clearer.
+- `ADVスタイル`: Use for ADV dialogue layout/style labels.
+- `NVLスタイル`: Use for NVL dialogue layout/style labels. Use `NVLモード` when referring to engine behavior rather than a layout preset.
+- `トランジション`: Use for transitions.
+- `トランスフォーム`: Use for transform/visual transform.
+- `レイアウト`: Use for layout.
+- `テキストスタイル`: Use for text style.
 - `公開`: Use for publishing a game.
 - `出力`: Use for export output when talking about generated files.
 
@@ -34,6 +48,10 @@ Avoid these as primary terms:
 - `強力な`: Usually sounds like a literal translation of "powerful". Prefer a concrete benefit.
 - `アセット`: Too technical for broad landing-page copy. Prefer `素材`.
 - `コーディングなし`: Understandable, but less natural than `プログラミング不要` or `コードを書かずに`.
+- `カラー`: Avoid as the primary app UI term for color. Prefer `色`; use `配色` for color scheme/palette wording when natural.
+- `履歴`: Too broad for dialogue backlog. Prefer `バックログ` or `会話ログ`.
+- `ADV会話` / `NVL会話`: Avoid for layout type names. Prefer `ADVスタイル` / `NVLスタイル`.
+- `対応スクリプト`: Misleading for font metadata because `スクリプト` reads as code. Prefer `対応文字体系`.
 
 ## Tone
 
@@ -110,6 +128,24 @@ Examples:
 - Marketing/card heading: `素材管理`.
 - In-app feature reference: `Asset Manager` or the app's exact UI label, if the UI is not localized.
 
+## Visual novel engine terminology
+
+Use common Japanese visual novel engine terms when translating RouteVN Creator UI and docs. Ren'Py Japanese docs, TyranoScript, and Light.vn Japanese materials are useful references for category language, but do not copy their product wording.
+
+In app UI:
+
+- Use `画像`, `音声`, `動画`, `キャラクター`, `立ち絵`, `選択肢`, `トランジション`, `トランスフォーム`, `レイアウト`, and `テキストスタイル` consistently.
+- Use `バックログ` for a player-facing dialogue log/history feature. Use `履歴` only for generic history outside dialogue/backlog context.
+- Use `ADVスタイル` and `NVLスタイル` when naming RouteVN layout presets. Use `ADVモード` and `NVLモード` when explaining engine-level text display modes.
+- Use `色` for color labels such as resource names, form fields, and design controls. Use `配色` when the concept is a palette or scheme.
+- Use `文字体系` for font metadata meaning Latin, Japanese, Cyrillic, etc. Reserve `スクリプト` for code/scripts.
+
+For layout explanations:
+
+- ADV refers to a dialogue window style, usually near the bottom of the screen.
+- NVL refers to a novel-style full-screen or broad text presentation that can show multiple lines/pages of dialogue and narration.
+- Backlog/dialogue history should be described as `バックログ` or `会話ログ`, not just `履歴`.
+
 ## Export and publishing wording
 
 Use `出力` when referring to generated files.
@@ -171,6 +207,18 @@ These notes are based on common Japanese wording used by related novel game engi
 - `ノベルゲーム制作`
 - `ノベルゲーム開発`
 - `ゲーム制作`
+- `画像`
+- `立ち絵`
+- `音声`
+- `音楽と効果音`
+- `選択肢`
+- `バックログ`
+- `ADVスタイル`
+- `NVLスタイル`
+- `トランジション`
+- `トランスフォーム`
+- `色`
+- `文字体系`
 - `直感的な操作`
 - `リアルタイムプレビュー`
 - `作成・公開`
