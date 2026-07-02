@@ -41,6 +41,7 @@ Use these terms consistently:
 - `文本样式`: Use for text style.
 - `文字体系`: Use for font metadata meaning writing system/script. Do not use `脚本` for this meaning.
 - `场景`: Use for scenes.
+- `段落`: Use for RouteVN sections inside a scene. Do not use `章节` unless the product concept is a chapter-level story unit.
 - `场景图`: Use for scene map only if the app UI uses this concept; otherwise explain as `场景流程`.
 - `对话`: Use for dialogue.
 - `旁白`: Use for narration.
@@ -50,7 +51,8 @@ Use these terms consistently:
 - `分支`: Use for branching.
 - `分支选项`: Use when describing choices that lead to branches.
 - `剧情分支`: Use when emphasizing the story structure.
-- `转场`: Use for transitions.
+- `转场`: Use for visual transitions such as image, layer, screen, or animation transitions.
+- `跳转`: Use for scene or section flow when describing movement from one story node to another. Use `分支` when the transition is specifically a branch choice.
 - `变换`: Use for transform/visual transform.
 - `样式`: Use for style.
 - `ADV 模式`: Use when describing ADV text display behavior.
@@ -58,6 +60,8 @@ Use these terms consistently:
 - `ADV 样式`: Use for RouteVN layout/style preset labels when the context is a UI layout.
 - `NVL 样式`: Use for RouteVN layout/style preset labels when the context is a UI layout.
 - `实时预览`: Use for live preview.
+- `界面`: Use for UI screens, menus, dialogs, and interface surfaces.
+- `画面`: Use for the rendered game screen, preview canvas, or full-screen visual effect area.
 - `布局编辑`: Use for layout editing.
 - `画面布局`: Use for screen layout.
 - `导出`: Use for export output when talking about generated files.
@@ -76,12 +80,15 @@ Avoid these as primary terms:
 - `AVG`: Familiar to some users, but too ambiguous for broad product copy.
 - `资产`: Too literal for asset. Prefer `素材`.
 - `资产管理器`: Too technical for broad product copy. Prefer `素材管理`.
+- `选择项`: Avoid for choices in RouteVN UI. Prefer `选项`.
 - `实时编辑器`: Avoid unless naming an exact UI concept. Prefer `实时预览`.
 - `强大`: Usually sounds like generic marketing. Prefer a concrete benefit.
 - `无编码`: Awkward. Prefer `无需编程` or `不用写代码`.
 - `历史`: Too broad for dialogue backlog/history. Prefer `对话历史`.
 - `ADV 对话` / `NVL 对话`: Avoid for RouteVN layout type names. Prefer `ADV 样式` / `NVL 样式`, or `ADV 模式` / `NVL 模式` when describing text display modes.
 - `文字脚本` or `支持脚本`: Avoid for font writing-system metadata. Prefer `文字体系`.
+- `保存/读取`: Avoid for player-facing save/load features. Prefer `存档/读档`.
+- `回退`: Avoid for rollback. Prefer `回滚`.
 - `色`: Too terse for normal UI color labels. Prefer `颜色`.
 
 ## Tone
@@ -173,12 +180,15 @@ Use common Simplified Chinese terminology from visual novel engines and Chinese 
 In app UI:
 
 - Use `角色`, `图像`, `音频`, `视频`, `立绘`, `选项`, `转场`, `变换`, `样式`, `文本样式`, and `颜色` consistently.
+- Use `转场` only for visual effects. For story graph movement, section links, and scene flow, prefer `跳转`, `切换`, or `分支` depending on the UI action.
 - Use `对话历史` for a dialogue log/backlog feature. Use `历史记录` for generic app history only.
 - Use `ADV 样式` and `NVL 样式` for RouteVN layout presets. Use `ADV 模式` and `NVL 模式` when explaining engine-level display behavior.
 - Use `颜色` for color labels and controls. Use `配色` for palettes or schemes.
 - Use `文字体系` for font metadata meaning Latin, Japanese, Cyrillic, etc. Reserve `脚本` for code/scripts.
 - Use `立绘` for character standing art. Use `精灵` only for a generic engine sprite/rendering concept.
 - Use `音频` as a resource category. Use `音乐和音效` when distinguishing BGM/music from SFX.
+- Use `存档`, `读档`, and `回滚` for player-facing VN system features. Use ordinary `保存` only for editor commands such as saving a form, field, operation, or project data.
+- Use `界面` for UI/menu/dialog screens. Use `画面` for the game render area or visual screen effects.
 
 For layout explanations:
 
@@ -269,20 +279,26 @@ These notes are based on common Chinese wording used by visual novel engines, Ch
 - `项目`
 - `角色`
 - `图像`
+- `音频`
 - `视频`
 - `立绘`
 - `背景图`
 - `剧本`
 - `脚本`
+- `段落`
 - `对话`
 - `旁白`
+- `选项`
 - `分支选项`
 - `转场`
+- `跳转`
 - `变换`
 - `样式`
 - `文本样式`
 - `颜色`
 - `配色`
+- `界面`
+- `画面`
 - `字体`
 - `字号`
 - `文字体系`

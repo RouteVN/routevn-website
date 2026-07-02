@@ -34,7 +34,8 @@ Use these terms consistently:
 - `バックログ`: Use for the player-facing dialogue log/backlog. Use `会話ログ` when a plain descriptive phrase is clearer.
 - `ADVスタイル`: Use for ADV dialogue layout/style labels.
 - `NVLスタイル`: Use for NVL dialogue layout/style labels. Use `NVLモード` when referring to engine behavior rather than a layout preset.
-- `トランジション`: Use for transitions.
+- `トランジション`: Use for visual transitions such as image, layer, screen, or animation transitions.
+- `遷移`: Use for scene or section flow when describing movement from one story node to another. Use `分岐` when the transition is specifically a branch choice.
 - `トランスフォーム`: Use for transform/visual transform.
 - `レイアウト`: Use for layout.
 - `テキストスタイル`: Use for text style.
@@ -135,6 +136,7 @@ Use common Japanese visual novel engine terms when translating RouteVN Creator U
 In app UI:
 
 - Use `画像`, `音声`, `動画`, `キャラクター`, `立ち絵`, `選択肢`, `トランジション`, `トランスフォーム`, `レイアウト`, and `テキストスタイル` consistently.
+- Use `トランジション` only for visual effects. For story graph movement, section links, and scene flow, prefer `遷移`, `移動`, or `分岐` depending on the UI action.
 - Use `バックログ` for a player-facing dialogue log/history feature. Use `履歴` only for generic history outside dialogue/backlog context.
 - Use `ADVスタイル` and `NVLスタイル` when naming RouteVN layout presets. Use `ADVモード` and `NVLモード` when explaining engine-level text display modes.
 - Use `色` for color labels such as resource names, form fields, and design controls. Use `配色` when the concept is a palette or scheme.
@@ -212,6 +214,7 @@ These notes are based on common Japanese wording used by related novel game engi
 - `音声`
 - `音楽と効果音`
 - `選択肢`
+- `遷移`
 - `バックログ`
 - `ADVスタイル`
 - `NVLスタイル`
