@@ -55,13 +55,13 @@ The fifth floor was split between tabletop games and digital games. The digital 
 
 Our booth was very similar to the booth at our previous event, though the table was a little smaller.
 
-Several users tried Two Straws and DiaLune.
+<img src="/public/blog/2026/12/dev-draft-2-og.png" alt="RouteVN booth setup at Dev & Draft 2" style="width: 100%; margin-bottom: 16px; border: 1px solid var(--border); box-sizing: border-box;">
+
+Several people passed by and tried Two Straws and DiaLune. It was so nice to hear the audience laughing out loud during gameplay and saying things like, "That is so cute."
 
 Other game developers and general attendees also tested RouteVN. Several of them were interested in making Visual Novels and said they would try RouteVN. Others said they would tell their friends about it.
 
 The funniest moment happened when a user sat down to play Two Straws. She was shocked when she saw her name appear in the name input. How did the VN know her name? It turns out her name is Dean, the same default name as the main character in Two Straws.
-
-<img src="/public/blog/2026/12/dev-draft-2-og.png" alt="RouteVN booth setup at Dev & Draft 2" style="width: 100%; margin-bottom: 16px; border: 1px solid var(--border); box-sizing: border-box;">
 
 <img src="/public/blog/2026/12/two-straws-shocked-2.png" alt="An attendee reading Two Straws on a phone during Dev & Draft 2" style="width: 100%; margin-bottom: 24px; border: 1px solid var(--border); box-sizing: border-box;">
 
@@ -81,7 +81,7 @@ Some highlights:
 
 <img src="/public/blog/2026/12/pictoria-world.png" alt="Pictoria.world booth display at Dev & Draft 2" style="width: 100%; margin: 16px 0 24px; border: 1px solid var(--border); box-sizing: border-box;">
 
-- Tobi is a student at MAGES Institute and an aspiring game designer. Play his game [All Will Be Goo](https://hongrong.itch.io/all-will-be-goo). It works on both desktop and mobile.
+- Toobi is a student at MAGES Institute and an aspiring game designer. Play his game [All Will Be Goo](https://hongrong.itch.io/all-will-be-goo). It works on both desktop and mobile.
 
 <img src="/public/blog/2026/12/all-will-be-goo.png" alt="All Will Be Goo booth setup at Dev & Draft 2" style="width: 100%; margin: 16px 0 24px; border: 1px solid var(--border); box-sizing: border-box;">
 
