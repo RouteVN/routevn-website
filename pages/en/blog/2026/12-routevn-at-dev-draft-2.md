@@ -57,7 +57,7 @@ Our booth was very similar to the booth at our previous event, though the table 
 
 <img src="/public/blog/2026/12/dev-draft-2-og.png" alt="RouteVN booth setup at Dev & Draft 2" style="width: 100%; margin-bottom: 16px; border: 1px solid var(--border); box-sizing: border-box;">
 
-Several people passed by and tried Two Straws and DiaLune. It was so nice to hear the audience laughing out loud during gameplay and saying things like, "That is so cute."
+Several people passed by and tried [Two Straws](https://pararinn.itch.io/twostrawscruisinforaconnection) and [DiaLune](https://sqewree.itch.io/dialune-demo). It was so nice to hear the audience laughing out loud during gameplay and saying things like, "That is so cute."
 
 Other game developers and general attendees also tested RouteVN. Several of them were interested in making Visual Novels and said they would try RouteVN. Others said they would tell their friends about it.
 
