@@ -171,7 +171,7 @@ creator:
       - name: Linux (x86_64)
         svg: linux
         cta:
-          label: Download for Linux
+          label: Download for Linux (AppImage)
           href: https://static-1.routevn.com/routevn-creator-client/linux-x86_64-1.8.1/RouteVN-Creator.AppImage
         helpLink:
           label: Linux installation guide
