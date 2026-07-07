@@ -23,6 +23,8 @@ seo:
                 - $if platform.cta:
                     - 'a href="${platform.cta.href}" style="text-decoration: none;"':
                         - rtgl-button: ${platform.cta.label}
+                - $if platform.helpLink:
+                    - rtgl-text href="${platform.helpLink.href}" s="sm" c="pr" cur=p mt="sm": ${platform.helpLink.label}
 - rtgl-view h="20vh":
 - $partial: cta1
   svg: ${site.landing.discord.svg}

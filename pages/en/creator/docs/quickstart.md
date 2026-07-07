@@ -30,25 +30,12 @@ Download the latest version of RouteVN Creator from the [download page](/en/crea
 RouteVN Creator for Linux is distributed as an AppImage. An AppImage can run without a system-wide installation.
 
 1. Download the `.AppImage` file from the [download page](/en/creator/download/).
-2. Optional: download the `.sha256` checksum file into the same folder as the AppImage, then verify it.
+2. Make the AppImage executable and run it.
 
-   ```sh
-   sha256sum -c "RouteVN Creator_{version number}_amd64.AppImage.sha256"
-   ```
+   You can follow the AppImage quickstart for either method:
 
-   The command checks the AppImage listed in the checksum file. If it says `FAILED`, delete the downloaded files and download them again.
-
-3. Make the AppImage executable.
-
-   ```sh
-   chmod +x "RouteVN Creator_{version number}_amd64.AppImage"
-   ```
-
-4. Run the AppImage.
-
-   ```sh
-   ./"RouteVN Creator_{version number}_amd64.AppImage"
-   ```
+   - [Run from the GUI](https://docs.appimage.org/introduction/quickstart.html#using-the-gui).
+   - [Run from the terminal](https://docs.appimage.org/introduction/quickstart.html#using-the-terminal).
 
 ## Data storage
 

@@ -173,6 +173,9 @@ creator:
         cta:
           label: Download for Linux
           href: https://static-1.routevn.com/routevn-creator-client/linux-x86_64-1.8.1/RouteVN-Creator.AppImage
+        helpLink:
+          label: Linux installation guide
+          href: /en/creator/docs/quickstart/#linux
   about:
     hero:
       title: Bring your Visual Novel to Life
