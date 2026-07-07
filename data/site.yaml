@@ -176,7 +176,7 @@ creator:
           label: Download for Linux (AppImage)
           href: https://static-1.routevn.com/routevn-creator-client/linux-x86_64-1.8.1/RouteVN-Creator.AppImage
         helpLink:
-          label: Linux installation guide
+          label: Installation Guide
           href: /en/creator/docs/quickstart/#linux
   about:
     hero:
