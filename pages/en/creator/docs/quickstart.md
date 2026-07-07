@@ -42,7 +42,7 @@ RouteVN Creator for Linux is distributed as an AppImage. An AppImage can run wit
    This setup does the following:
 
    - Copies the AppImage to `~/Applications/RouteVN-Creator.AppImage`. Future updates can replace this same file.
-   - Creates the app icon and app launcher entry so RouteVN Creator appears in app launchers.
+   - Creates the app icon and app launcher entry.
 
 ## Data storage
 
