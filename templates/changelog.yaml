@@ -16,7 +16,9 @@
                             - rtgl-text s="lg" cur=p: Back
                     - rtgl-view w="1fg":
                         - rtgl-text s="h1" mb="sm": ${version}
-                        - rtgl-text c="mu" s="sm" mb="lg": ${date}
+                        - rtgl-text c="mu" s="sm" mb="lg":
+                            - $partial: changelog-date
+                              date: ${date}
                 - rtgl-view d=h md-d=v g=xl av=s:
                     - rtgl-view md-w=f w="140":
                     - rtgl-view w="1fg":
@@ -28,6 +30,11 @@
                                 - $if video.title:
                                     - rtgl-text s="lg" mb="sm": ${video.title}
                                 - 'video src="${video.src}" controls playsinline preload="metadata" style="width: 100%; max-width: 100%; display: block; border: 1px solid var(--border); box-sizing: border-box; margin-bottom: 24px;"':
+                        - $if images:
+                            - $if imagesTitle:
+                                - h2: ${imagesTitle}
+                            - $for image in images:
+                                - 'img src="${image.src}" alt="${image.alt}" style="width: 100%; max-width: 100%; height: auto; display: block; border: 1px solid var(--border); box-sizing: border-box; margin-bottom: 16px;"':
                         - $if isLatest:
                             - 'a href="/en/creator/download/" style="text-decoration: none;"':
                                 - rtgl-button mt="lg": Download
