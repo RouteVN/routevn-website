@@ -42,15 +42,17 @@ footer:
       href: https://www.tiktok.com/@routevn
   columns:
     - links:
-        # - text: About
-        #   href: /about/
+        - text: RouteVN Creator
+          href: /en/creator/about/
+        - text: Creator Download
+          href: /en/creator/download/
         - text: Creator Docs
           href: /en/creator/docs/introduction/
         - text: Creator Changelog
           href: /en/creator/changelog/
+    - links:
         - text: Blog
           href: /en/blog/
-    - links:
         - text: Hiring
           href: /en/hiring/
         - text: Contact
