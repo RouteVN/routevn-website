@@ -42,15 +42,17 @@ footer:
       href: https://www.tiktok.com/@routevn
   columns:
     - links:
-        # - text: About
-        #   href: /about/
+        - text: RouteVN Creator
+          href: /en/creator/about/
+        - text: Creator Download
+          href: /en/creator/download/
         - text: Creator Docs
           href: /en/creator/docs/introduction/
         - text: Creator Changelog
           href: /en/creator/changelog/
+    - links:
         - text: Blog
           href: /en/blog/
-    - links:
         - text: Hiring
           href: /en/hiring/
         - text: Contact
@@ -171,8 +173,11 @@ creator:
       - name: Linux (x86_64)
         svg: linux
         cta:
-          label: Download for Linux
+          label: Download for Linux (AppImage)
           href: https://static-1.routevn.com/routevn-creator-client/linux-x86_64-1.8.1/RouteVN-Creator.AppImage
+        helpLink:
+          label: Installation Guide
+          href: /en/creator/docs/quickstart/#linux
   about:
     hero:
       title: Bring your Visual Novel to Life
