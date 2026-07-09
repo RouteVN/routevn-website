@@ -5,7 +5,7 @@ authorDisplay: han4wluc
 title: Designing RouteVN's Brand Identity
 url: /en/blog/designing-routevns-brand-identity/
 tags: [blogPost]
-date: '2026-07-01'
+date: '2026-07-10'
 thumbnail: /public/blog/2026/12/routevn-brand-identity-og.png
 seo:
   title: Designing RouteVN's Brand Identity
