@@ -175,6 +175,21 @@
                 }
               });
 
+              const landingLink = document.querySelector(".landing-link");
+              let touchStartY = 0;
+
+              if (landingLink) {
+                landingLink.addEventListener("touchstart", (event) => {
+                  touchStartY = event.touches[0].clientY;
+                }, { passive: true });
+
+                landingLink.addEventListener("touchmove", (event) => {
+                  if (touchStartY - event.touches[0].clientY > 56) {
+                    landingLink.click();
+                  }
+                }, { passive: true });
+              }
+
               const elements = Array.from(document.querySelectorAll("[data-depth]"));
               const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
 
