@@ -185,7 +185,7 @@
 
                 landingLink.addEventListener("touchmove", (event) => {
                   if (touchStartY - event.touches[0].clientY > 56) {
-                    landingLink.click();
+                    window.location.assign(landingLink.href);
                   }
                 }, { passive: true });
               }
