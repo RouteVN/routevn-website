@@ -34,9 +34,9 @@ Because RouteVN is a tool, we wanted to keep the identity neutral and avoid lean
 
 The black-and-white palette represents this neutrality.
 
-At the same time, RouteVN is not just a generic tool. It is built specifically for visual novels, so it should feel approachable and relevant to visual novel aesthetics.
+At the same time, RouteVN is not just a generic tool. It is built specifically for visual novels, so it should feel relevant to visual novel aesthetics.
 
-It should also feel approachable to beginners, including students and indie developers who are trying to make their first visual novel.
+It should also feel approachable and friendly to beginners, including students and indie developers who are trying to make their first visual novel.
 
 We wanted the brand to feel simple, elegant, polished, and approachable, consistent with how we want the software itself to feel.
 
