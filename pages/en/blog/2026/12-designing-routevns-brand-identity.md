@@ -54,11 +54,11 @@ In addition to the old design, we had an idea for a mascot character named Makku
 
 We started the redesign project by properly working on the character design.
 
-Luckily, we had the opportunity to work with a talented illustrator for this.
+Luckily, we had the opportunity to work with a talented illustrator who helped us through this process.
 
-I wrote down what kind of character Makkuro was and what she represented. It was not fully clear even to me at first, but the process forced me to be more explicit about it.
+We wrote down what kind of character Makkuro was and what she represented. It was not fully clear even to us at first, but the process forced us to be more explicit about it.
 
-The illustrator asked me many questions about the art style, such as whether to use thin or thick lines, and what style of coloring we wanted.
+The illustrator asked many questions about the art style, such as whether to use thin or thick lines, and what style of coloring we wanted.
 
 We then spent a lot of time developing Makkuro's outfit. The illustrator was knowledgeable about fashion and suggested several outfits.
 
