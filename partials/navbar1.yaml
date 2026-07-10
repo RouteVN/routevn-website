@@ -9,10 +9,7 @@
         - rtgl-view w="1fg":
         - rtgl-view d=h av=c g=md:
             - $if secondaryCta.label:
-                - $if secondaryCta.hideOnMobile:
-                    - rtgl-view md-hide d="h" av="c":
-                        - 'rtgl-button href="${secondaryCta.href}" v="se"': ${secondaryCta.label}
-                  $else:
+                - rtgl-view md-hide d="h" av="c":
                     - 'rtgl-button href="${secondaryCta.href}" v="se"': ${secondaryCta.label}
             - $if cta.label:
                 - rtgl-button href="${cta.href}": ${cta.label}
