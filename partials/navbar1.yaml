@@ -11,7 +11,10 @@
             - $if secondaryCta.label:
                 - 'rtgl-button href="${secondaryCta.href}" v="se"': ${secondaryCta.label}
             - $if cta.label:
-                - rtgl-button href="${cta.href}": ${cta.label}
+                - $if cta.hideOnMobile:
+                    - rtgl-button md-hide href="${cta.href}": ${cta.label}
+                  $else:
+                    - rtgl-button href="${cta.href}": ${cta.label}
 - script: |
     (() => {
       if (window.__rvnNavbarAutohideInitialized) {

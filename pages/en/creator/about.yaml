@@ -2,6 +2,7 @@
 template: creator
 title: RouteVN Creator - Create Visual Novels without any coding
 footerSpacerHeight: 18vh
+hideNavbarDownloadOnMobile: true
 seo:
   title: RouteVN Creator - Create Visual Novels without any coding
   description: Free and Open Source tool to create Visual Novels without any coding. Live preview, asset manager, layout editor. Fast, intuitive, reliable. Join our Discord server to stay updated.
