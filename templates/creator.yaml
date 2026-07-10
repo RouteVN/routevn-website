@@ -21,7 +21,7 @@
                   secondaryCta:
                     label: Docs
                     href: /en/creator/docs/introduction/
+                    hideOnMobile: ${hideNavbarDocsOnMobile}
                   cta:
                     label: Download
                     href: /en/creator/download/
-                    hideOnMobile: ${hideNavbarDownloadOnMobile}
