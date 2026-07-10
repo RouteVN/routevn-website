@@ -124,7 +124,7 @@ We considered adding a computer keyboard for writing, but it reads more broadly 
 
 <div style="height: 24px;"></div>
 
-[@aiyuuno](https://x.com/aiyuuno) is the artist who worked on the character design, icon, and cover illustration. I am grateful for the care she brought to the project.
+[@aiyuuno](https://x.com/aiyuuno) is the artist who worked on the character design, icon, and cover illustration. I am grateful for the care that was brought to the project.
 
 ## Text logo
 
@@ -140,7 +140,9 @@ We realized we didn't really have an iconic image other than the character or th
 
 The black-and-white palette required some attention to make the logo read clearly. We solved this by using two outlines. The inner text is white, then there is a black border, and then another white border.
 
-We looked at different fonts and ended up with a font called `SN_Pro`. It is a sans-serif font with rounded edges. We played a lot with the font weight. At one point, we wondered if it was a bit too cute, but we decided to stick with it. The cuteness makes it more approachable, and it fits well with the character icon.
+We looked at different fonts and ended up with a font called `SN_Pro`. It is a sans-serif font with rounded edges. We played a lot with the font weight.
+
+At one point, we wondered if it was a bit too cute, but we decided to stick with it. The cuteness makes it more approachable, and it fits with the character icon.
 
 <div style="height: 24px;"></div>
 
@@ -150,7 +152,7 @@ We looked at different fonts and ended up with a font called `SN_Pro`. It is a s
 
 <div style="height: 24px;"></div>
 
-[@Mikalogo](https://x.com/Mikalogo) is a VTuber logo designer who worked on the RouteVN text logo.
+[@Mikalogo](https://x.com/Mikalogo) is the logo designer who worked on the RouteVN text logo.
 
 ## Stickers
 
@@ -180,7 +182,11 @@ The slogan is "Bring your Visual Novel to Life".
 
 The idea is that RouteVN Creator helps artists, illustrators, writers, and anyone who wants to make a visual novel actually finish it.
 
-During my time collaborating with artists, I met people who had a story or idea in their head for a long time. Some had already made illustrations, developed characters, written story concepts, or built a world around their idea. They became interested in using RouteVN Creator to finally make the story real, and bring it into the world so others could read and see it.
+During my time collaborating with artists, I met people who had a story or idea in their head for a long time.
+
+Some had already made illustrations, developed characters, written story concepts, or built a world around their idea.
+
+They became interested in using RouteVN Creator to finally make the story real, and bring it into the world so others could read and see it.
 
 ## Website redesign
 
@@ -202,4 +208,5 @@ I was especially happy to see many users describe our character as adorable and 
 
 That was a good sign that the identity was doing what we wanted. RouteVN still feels like a software tool, but it now has a face, a feeling, and a stronger connection to the visual novel creators we want to support.
 
-Or rather, I hope you enjoy RouteVN and Makkuro ^_^
+I hope you enjoy the new look of RouteVN and Makkuro ^_^
+
