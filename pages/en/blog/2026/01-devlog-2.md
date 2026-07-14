@@ -12,9 +12,9 @@ seo:
   ogType: article
 ---
 
-# RouteVN Devlog 2
+Previous devlog: [Devlog 1: The first 1.5 years](/en/blog/devlog-y1-5/)
 
-This is the second devlog, following up on the [Year 1.5 devlog](https://routevn.com/en/blog/devlog-y1-5/). It's also a recap of late 2025 and our plans for 2026.
+This is the second devlog. It's also a recap of late 2025 and our plans for 2026.
 
 ## Public release
 

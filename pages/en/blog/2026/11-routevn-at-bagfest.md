@@ -18,8 +18,6 @@ seo:
   ogImageType: image/png
 ---
 
-# RouteVN at BAGFest
-
 <img src="/public/blog/2026/11/bagfest-entrance.png" alt="BAGFest entrance at Singapore Chinese Cultural Centre" style="width: 100%; margin-bottom: 24px; border: 1px solid var(--border); box-sizing: border-box;">
 
 We just wrapped up two days at BAGFest.

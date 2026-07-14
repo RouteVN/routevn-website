@@ -18,8 +18,6 @@ seo:
   ogImageType: image/png
 ---
 
-# RouteVN Creator is now available on macOS
-
 This is an important step for multiplatform support. Until now, RouteVN Creator was mainly available on Windows. With this release, Mac users can start creating Visual Novels with the desktop app directly.
 
 ## Download

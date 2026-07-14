@@ -12,8 +12,6 @@ seo:
   ogType: article
 ---
 
-## Contributor Introduction: Nghia
-
 Nghia joined RouteVN as an intern from late 2025 until January 2026. During his time here, he has made significant contributions to RouteVN.
 
 ### About Nghia
@@ -47,4 +45,3 @@ The team is grateful for all of Nghia's contributions during his time at RouteVN
 
 - GitHub: [NghiaTT200000](https://github.com/NghiaTT200000)
 - Limbus ID Creator: [Live Site](https://limbus-company-id-creator.netlify.app/) | [Source Code](https://github.com/NghiaTT200000/limbus-id-creator)
-

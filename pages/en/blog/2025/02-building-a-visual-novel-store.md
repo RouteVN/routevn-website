@@ -12,8 +12,6 @@ seo:
   ogType: article
 ---
 
-## Building a Visual Novel Store
-
 In [this previous article](/en/blog/to-fulfill-the-full-potential-of-visual-novels/) I have shared how and why I got started building a platform dedicated to Visual Novels.
 In this article, I will go thoroughly into more detail about my research and thoughts about building a Visual Novel specific digital store.
 

@@ -12,8 +12,6 @@ seo:
   ogType: article
 ---
 
-# Building a Visual Novel Engine Part 3 - RouteVN Creator
-
 This series will explain the whole architecture and design of RouteVN Creator. By the end of the series, you should have a good understanding of how RouteVN Creator works, and essentially how to build a Visual Novel engine from scratch.
 
 This is part 3 of a 3 part series:

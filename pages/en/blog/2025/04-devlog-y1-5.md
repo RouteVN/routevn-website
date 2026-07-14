@@ -12,8 +12,6 @@ seo:
   ogType: article
 ---
 
-## RouteVN Devlog first 1.5 year
-
 
 I've been working on RouteVN for over 1.5 years. Time really flew by.
 I wanted to take some space to share about the journey and process itself as it is still in my memory.

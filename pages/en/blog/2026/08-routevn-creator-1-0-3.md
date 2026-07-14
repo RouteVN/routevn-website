@@ -13,8 +13,6 @@ seo:
   ogType: article
 ---
 
-# RouteVN Creator v1.0.3
-
 We have just released RouteVN Creator v1.0.3.
 
 This is our biggest update yet and a big step up in terms of product maturity, with new features and improvements across the board.
