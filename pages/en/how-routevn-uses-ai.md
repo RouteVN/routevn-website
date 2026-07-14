@@ -4,7 +4,7 @@ title: How RouteVN Uses AI
 url: /en/how-routevn-uses-ai/
 seo:
   title: How RouteVN Uses AI - RouteVN
-  description: How RouteVN approaches AI in software development, creative work, user projects, and future product features.
+  description: Learn where RouteVN uses AI, where we do not, and what this means for creators. We use AI thoughtfully while respecting creators' creativity and control.
   ogType: article
 ---
 
