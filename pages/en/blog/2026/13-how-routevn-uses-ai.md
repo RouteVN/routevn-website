@@ -5,7 +5,7 @@ authorDisplay: han4wluc
 title: How RouteVN Uses AI
 url: /en/blog/how-routevn-uses-ai/
 tags: [blogPost]
-date: '2026-07-14'
+date: '2026-07-15'
 thumbnail: /public/images/routevn_og.png
 seo:
   title: How RouteVN Uses AI - RouteVN Blog
