@@ -12,8 +12,6 @@ seo:
   ogType: article
 ---
 
-## Contributor Introduction: JeffY
-
 JeffY is a second-year Computer Science student at University of New South Wales, Australia. He has experience building JavaScript systems and is interested in visual novels and visual novel tooling.
 He joined RouteVN as an intern from December 2025 to March 2026.
 

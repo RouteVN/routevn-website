@@ -18,8 +18,6 @@ seo:
   ogImageType: image/png
 ---
 
-# RouteVN at Dev & Draft 2
-
 ## Youth Day Singapore
 
 Youth Day in Singapore celebrates and recognises young people, their energy, potential, and contributions to society.

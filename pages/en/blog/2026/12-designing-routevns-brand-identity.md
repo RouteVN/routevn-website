@@ -18,8 +18,6 @@ seo:
   ogImageType: image/png
 ---
 
-# Designing RouteVN's Brand Identity
-
 ## Introduction
 
 Over the past couple of months, we redesigned RouteVN's branding assets, including the logo, app icon, mascot artwork, and website.
@@ -209,4 +207,3 @@ I was especially happy to see many users describe our character as adorable and 
 That was a good sign that the identity was doing what we wanted. RouteVN still feels like a software tool, but it now has a face, a feeling, and a stronger connection to the visual novel creators we want to support.
 
 I hope you enjoy the new look of RouteVN and Makkuro ^_^
-
