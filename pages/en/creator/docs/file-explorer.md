@@ -57,11 +57,11 @@ File explorer is used to move and organize items
 - `↑` or `k`: Select the previous item.
 - `→` or `l`: Expand the selected folder.
 - `←` or `h`: Collapse the selected folder.
-- `Ctrl+D`: Move forward by up to 10 items.
-- `Ctrl+U`: Move backward by up to 10 items.
+- `Ctrl+d`: Move forward by up to 10 items.
+- `Ctrl+u`: Move backward by up to 10 items.
 
 If no item is selected, a movement shortcut selects the first available item. Movement stops at the first or last item.
 
 On Images and Character Sprites, press `Enter` to open a preview of the selected item.
 
-These shortcuts do not run while you type in an editable control. `Alt` and `Command` shortcuts are left to the operating system. The only supported `Ctrl` shortcuts are `Ctrl+D` and `Ctrl+U`.
+These shortcuts do not run while you type in an editable control. `Alt` and `Command` shortcuts are left to the operating system. The only supported `Ctrl` shortcuts are `Ctrl+d` and `Ctrl+u`.
