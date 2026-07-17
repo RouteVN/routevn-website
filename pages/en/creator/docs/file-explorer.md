@@ -64,15 +64,4 @@ If no item is selected, a movement shortcut selects the first available item. Mo
 
 On Images and Character Sprites, press `Enter` to open a preview of the selected item.
 
-Read [Keyboard Navigation Shortcuts](/en/creator/docs/keyboard-navigation-shortcuts/) for project page, resource grid, preview, and Scene Editor shortcuts.
-
-
-
-
-
-
-
-
-
-
-
+These shortcuts do not run while you type in an editable control. `Alt` and `Command` shortcuts are left to the operating system. The only supported `Ctrl` shortcuts are `Ctrl+D` and `Ctrl+U`.

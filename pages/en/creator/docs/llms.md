@@ -16,7 +16,6 @@ All documentation pages live under `/en/creator/docs/`.
 ## Project basics
 
 - Projects: /en/creator/docs/projects.md
-- Keyboard Navigation Shortcuts: /en/creator/docs/keyboard-navigation-shortcuts.md
 - File Explorer: /en/creator/docs/file-explorer.md
 - Tags: /en/creator/docs/tags.md
 
