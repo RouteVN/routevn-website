@@ -7,6 +7,11 @@ sidebarId: page-index
 This page gives an overview of the main pages inside RouteVN Creator.
 Use it as a quick index when you want to understand where a feature lives before going into the detailed docs.
 
+## Navigation
+
+- [Keyboard Navigation Shortcuts](/en/creator/docs/keyboard-navigation-shortcuts/): keyboard controls for switching pages and moving through resources
+- [File Explorer](/en/creator/docs/file-explorer/): mouse and keyboard controls for organizing resources
+
 ## Project
 
 The Project area contains the main resources used by your visual novel.

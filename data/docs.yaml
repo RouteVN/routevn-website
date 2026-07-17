@@ -18,6 +18,9 @@ items:
       - id: page-index
         title: "Page Index"
         href: "/en/creator/docs/page-index"
+      - id: keyboard-navigation-shortcuts
+        title: "Keyboard Shortcuts"
+        href: "/en/creator/docs/keyboard-navigation-shortcuts"
       - id: file-explorer
         title: "File Explorer"
         href: "/en/creator/docs/file-explorer"

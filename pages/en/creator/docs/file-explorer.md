@@ -53,15 +53,18 @@ File explorer is used to move and organize items
 
 ## Keyboard shortcuts
 
-- `Enter`: Opens or edits the selected item.
-- `↑`: Moves to the previous item.
-- `↓`: Moves to the next item.
+- `↓` or `j`: Select the next item.
+- `↑` or `k`: Select the previous item.
+- `→` or `l`: Expand the selected folder.
+- `←` or `h`: Collapse the selected folder.
+- `Ctrl+D`: Move forward by up to 10 items.
+- `Ctrl+U`: Move backward by up to 10 items.
 
-When a folder is selected:
+If no item is selected, a movement shortcut selects the first available item. Movement stops at the first or last item.
 
-- `←`: Shrinks the folder.
-- `→`: Expands the folder.
+On Images and Character Sprites, press `Enter` to open a preview of the selected item.
 
+Read [Keyboard Navigation Shortcuts](/en/creator/docs/keyboard-navigation-shortcuts/) for project page, resource grid, preview, and Scene Editor shortcuts.
 
 
 
