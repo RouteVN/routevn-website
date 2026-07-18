@@ -102,12 +102,4 @@ Images are used in the following places:
 
 ## Keyboard shortcuts
 
-The Images page inherits the general [File Explorer keyboard shortcuts](/en/creator/docs/file-explorer/#keyboard-shortcuts).
-
-- `Enter`: Opens the preview for the selected image.
-
-When previewing an image:
-
-- `Esc`: Closes the image preview.
-- `↑` or `←`: Shows the previous image.
-- `↓` or `→`: Shows the next image.
+The Images page supports the general [File Explorer keyboard shortcuts](/en/creator/docs/file-explorer/#keyboard-shortcuts), including [full-screen image preview shortcuts](/en/creator/docs/file-explorer/#image-preview).

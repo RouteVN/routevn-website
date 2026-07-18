@@ -60,8 +60,14 @@ File explorer is used to move and organize items
 - `Ctrl+d`: Move forward by up to 10 items.
 - `Ctrl+u`: Move backward by up to 10 items.
 
-If no item is selected, a movement shortcut selects the first available item. Movement stops at the first or last item.
+### Image preview
 
-On Images and Character Sprites, press `Enter` to open a preview of the selected item.
+On Images and Character Sprites, press `Enter` to open the selected image in full-screen preview.
 
-These shortcuts do not run while you type in an editable control. `Alt` and `Command` shortcuts are left to the operating system. The only supported `Ctrl` shortcuts are `Ctrl+d` and `Ctrl+u`.
+While full-screen preview is open:
+
+- `Esc`: Exit full-screen preview.
+- `↑` or `k`: Show the previous image.
+- `↓` or `j`: Show the next image.
+- `←` or `h`: Show the image at canvas scale.
+- `→` or `l`: Fit the image to the preview.
