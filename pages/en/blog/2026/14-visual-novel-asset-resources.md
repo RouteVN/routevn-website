@@ -84,6 +84,12 @@ BOOTH has an English interface, but many product descriptions and licenses are w
 
 ## Music and sound effects
 
+### 効果音ラボ (Sound Effect Lab)
+
+[効果音ラボ](https://soundeffect-lab.info/) is my favourite place to find sound effects. It has almost everything I need for a visual novel, including button and system sounds, dramatic effects, environmental ambience, everyday sounds, combat, machines, vehicles, nature, and animals.
+
+The website is only available in Japanese, so use a translator to browse its categories and read the terms. Its standard terms allow free commercial use without mandatory credit, but redistribution is not allowed. Read the [usage rules](https://soundeffect-lab.info/agreement/) before downloading.
+
 ### ポケットサウンド (Pocket Sound)
 
 [ポケットサウンド](https://en.pocket-se.info/) provides royalty-free background music and sound effects across categories such as interface sounds, nature, daily life, machines, and ambience.
