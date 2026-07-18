@@ -18,13 +18,27 @@
                     - $for item in sort(collections.changelog, "data.date", "desc"):
                         - rtgl-view d=h md-d=v g=xl w=f mb=xl:
                             - rtgl-view md-w=f w="140" mt=lg:
-                                - rtgl-text c="mu" s="sm": ${item.data.date}
+                                - rtgl-text c="mu" s="sm":
+                                    - $partial: changelog-date
+                                      date: ${item.data.date}
                             - rtgl-view w="1fg":
                                 - 'a href="${item.url}" style="text-decoration: none; color: inherit;"':
                                     - rtgl-text s="h1" cur=p mb="md": ${item.data.version}
                                 - "${md(item.content)}"
+                                - $if item.data.videoSrc:
+                                    - 'video src="${item.data.videoSrc}" controls playsinline preload="metadata" style="width: 100%; max-width: 100%; display: block; border: 1px solid var(--border); box-sizing: border-box; margin-bottom: 24px;"':
+                                - $if item.data.videos:
+                                    - $for video in item.data.videos:
+                                        - $if video.title:
+                                            - rtgl-text s="lg" mb="sm": ${video.title}
+                                        - 'video src="${video.src}" controls playsinline preload="metadata" style="width: 100%; max-width: 100%; display: block; border: 1px solid var(--border); box-sizing: border-box; margin-bottom: 24px;"':
+                                - $if item.data.images:
+                                    - $if item.data.imagesTitle:
+                                        - h2: ${item.data.imagesTitle}
+                                    - $for image in item.data.images:
+                                        - 'img src="${image.src}" alt="${image.alt}" style="width: 100%; max-width: 100%; height: auto; display: block; border: 1px solid var(--border); box-sizing: border-box; margin-bottom: 16px;"':
                                 - $if item.data.isLatest:
-                                    - 'a href="/creator/download/" style="text-decoration: none;"':
+                                    - 'a href="/en/creator/download/" style="text-decoration: none;"':
                                         - rtgl-button mt="md": Download
             - rtgl-view d="h" h="30vh":
             - $partial: footer1

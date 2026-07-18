@@ -1,0 +1,26 @@
+- "${formatDate(date, 'D')}"
+- $if formatDate(date, 'MM') == '01':
+    - " January "
+- $if formatDate(date, 'MM') == '02':
+    - " February "
+- $if formatDate(date, 'MM') == '03':
+    - " March "
+- $if formatDate(date, 'MM') == '04':
+    - " April "
+- $if formatDate(date, 'MM') == '05':
+    - " May "
+- $if formatDate(date, 'MM') == '06':
+    - " June "
+- $if formatDate(date, 'MM') == '07':
+    - " July "
+- $if formatDate(date, 'MM') == '08':
+    - " August "
+- $if formatDate(date, 'MM') == '09':
+    - " September "
+- $if formatDate(date, 'MM') == '10':
+    - " October "
+- $if formatDate(date, 'MM') == '11':
+    - " November "
+- $if formatDate(date, 'MM') == '12':
+    - " December "
+- "${formatDate(date, 'YYYY')}"

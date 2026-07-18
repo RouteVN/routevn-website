@@ -3,17 +3,18 @@ baseUrl: https://routevn.com
 
 navbar:
   title:
-    imgSrc: "/public/images/logo1.png"
-    imgWidth: 132
-    imgHeight: 24
+    imgSrc: "/public/images/logo_100.png?v=20260604"
+    imgWidth: 150
+    imgHeight: 32
+    alt: RouteVN
     href: "/"
 
 footer:
   logo:
-    src: /public/images/logo1.png
+    src: /public/images/logo_100.png?v=20260604
     alt: RouteVN
-    width: 110
-    height: 20
+    width: 150
+    height: 32
   social:
     - name: Discord
       svg: discord
@@ -36,30 +37,34 @@ footer:
     - name: YouTube
       svg: youtube
       href: https://www.youtube.com/@routevn
-    - name: LinkedIn
-      svg: linkedin
-      href: https://www.linkedin.com/showcase/110652448
+    - name: TikTok
+      svg: tiktok
+      href: https://www.tiktok.com/@routevn
   columns:
     - links:
-        # - text: About
-        #   href: /about/
+        - text: RouteVN Creator
+          href: /en/creator/about/
+        - text: Creator Download
+          href: /en/creator/download/
         - text: Creator Docs
-          href: /creator/docs/introduction/
+          href: /en/creator/docs/introduction/
         - text: Creator Changelog
-          href: /creator/changelog/
-        - text: Blog
-          href: /blog/
+          href: /en/creator/changelog/
     - links:
+        - text: Blog
+          href: /en/blog/
         - text: Hiring
-          href: /hiring/
+          href: /en/hiring/
         - text: Contact
           href: https://tally.so/r/wzZ7rM
           newTab: true
     - links:
         - text: Privacy Policy
-          href: /agreement/privacy-policy/1-0-0/
+          href: /en/agreement/privacy-policy/1-0-0/
         - text: Terms of Service
-          href: /agreement/terms-of-service/1-0-0/
+          href: /en/agreement/terms-of-service/1-0-0/
+        - text: Our AI Practices
+          href: /en/how-routevn-uses-ai/
 
 socialPage:
   title: Follow RouteVN
@@ -84,6 +89,14 @@ socialPage:
       handle: "@routevn"
       href: https://www.instagram.com/routevn
       svg: instagram
+    - name: TikTok
+      handle: "@routevn"
+      href: https://www.tiktok.com/@routevn
+      svg: tiktok
+    - name: Tumblr
+      handle: "routevn"
+      href: https://www.tumblr.com/routevn
+      svg: tumblr
     - name: YouTube
       handle: "@routevn"
       href: https://www.youtube.com/@routevn
@@ -109,7 +122,7 @@ landing:
   mission:
     title: A dedicated platform for Visual Novels
     text: To fulfill the full potential of Visual Novels
-    href: /blog/2025/01-to-fulfill-the-whole-potential-of-visual-novels/
+    href: /en/blog/to-fulfill-the-full-potential-of-visual-novels/
   sections:
     # - title: For Readers
     #   cards:
@@ -120,7 +133,7 @@ landing:
       cards:
         - title: RouteVN Creator
           text: Create Visual Novels without any coding
-          href: /creator/about/
+          href: /en/creator/about/
           btnLabel: Learn More
         # - title: RouteVN Publisher
         #   text: A publishing and distribution platform dedicated to Visual Novels
@@ -145,7 +158,7 @@ landing:
 
 creator:
   download:
-    version: "1.0.3"
+    version: "1.9.4"
     title: Download RouteVN Creator
     # subtitle: Get started creating your Visual Novel
     platforms:
@@ -153,81 +166,133 @@ creator:
         svg: windows
         cta:
           label: Download for Windows
-          href: https://static-1.routevn.com/routevn-creator-client/RouteVN%20Creator_1.0.3_x64-setup.exe
+          href: https://static-1.routevn.com/routevn-creator-client/RouteVN%20Creator_1.9.4_x64-setup.exe
       - name: macOS
         svg: apple
-        comingSoon: true
-      - name: Linux
+        cta:
+          label: Download for macOS
+          href: https://static-1.routevn.com/routevn-creator-client/RouteVN%20Creator_1.9.4_universal.dmg
+      - name: Linux (x86_64)
         svg: linux
-        comingSoon: true
+        cta:
+          label: Download for Linux (AppImage)
+          href: https://static-1.routevn.com/routevn-creator-client/linux-x86_64-1.9.4/RouteVN-Creator.AppImage
+        helpLink:
+          label: Installation Guide
+          href: /en/creator/docs/quickstart/#linux
   about:
     hero:
-      title: Create Visual Novels without any coding
+      title: Bring your Visual Novel to Life
+      subtitle: RouteVN Creator is a free and open source application for making Visual Novels without any coding
+      subtitleHtml: 'RouteVN Creator is a free and <a href="https://github.com/RouteVN/routevn-creator-client" target="_blank" rel="noreferrer">open source</a> application for making Visual Novels without any coding'
       videoSrc: /public/creator/routevn-demo-250108.mp4
       posterSrc: /public/creator/routevn-demo-250108-thumb.png
-    features:
-      - title: Live Preview
-        message: Preview your edits in real time
-        videoSrc: /public/creator/animated-1.mp4
-        features:
-          - title: As you type
-            message: See changes immediately as you type
-          - title: As you navigate
-            message: See changes immediately as you navigate to different lines
-          - title: Accurate
-            message: Previews are accurate and same as the end product
+    showcaseFeature:
+      title: Powerful Live Editor
+      message: Preview your edits in real time
+      backgroundColor: "#141414"
+      foregroundColor: var(--foreground)
+      themeClass: dark
+      sideImageSrc: /public/landing/object-2.png
+      videoSrc: /public/creator/about-live-editor.mp4
+      learnMoreHref: /en/creator/docs/scene-editor/
+      learnMoreLabel: Learn More
+      features:
+        - title: Real-time preview
+          message: See accurate changes immediately as you type and navigate between lines
+        - title: Designed for writers and artists
+          message: Start producing immediately, no technical background required
+    stagingFeature:
+      title: Expressive Staging
+      message: Don't ship static images. Create memorable experiences that will stay with the readers.
+      backgroundColor: "#141414"
+      foregroundColor: var(--foreground)
+      themeClass: dark
+      sideImageSrc: /public/landing/object-5.png
+      videoSrc: /public/creator/animated-2.mp4
+      learnMoreHref: /en/creator/docs/animations/
+      learnMoreLabel: Learn More
+    videoTutorialsFeature:
+      title: Video tutorials from the creator of RouteVN
+      message: ""
+      backgroundColor: "#141414"
+      foregroundColor: var(--foreground)
+      themeClass: dark
+      imgSrc: /public/creator/routevn-demo-250108-thumb.png
+      learnMoreHref: /en/creator/docs/video-tutorials/
+      features:
+        - title: Over 20 video tutorials
+          message: Step-by-step lessons for building visual novels in RouteVN Creator.
+        - title: Beginner to advanced
+          message: Covers the basics, production workflows, and more advanced Creator features.
+        - title: Available in 2 languages
+          message: Follow along in the language that works best for you.
+    functionalityGrid:
+      title: Everything you need for your Visual Novel
+      message: We look at all features that Visual Novels have, and implement it in a way that you can just use it.
+      sideImageSrc: /public/landing/object-4.png
+      items:
+        - title: Layout Editor
+          message: Fully customize your Visual Novel's UI.
+          imgSrc: /public/creator/docs/reference/layout-editor-2.png
+          href: /en/creator/docs/layouts/
+        - title: Asset Manager
+          message: Keep images, audio, characters, and project files organized in one workspace.
+          imgSrc: /public/creator/docs/reference/images-2.png
+          href: /en/creator/docs/images/
+        - title: Scene Map
+          message: See the shape of your visual novel and keep branching scenes easy to follow.
+          imgSrc: /public/creator/ss-7.png
+          href: /en/creator/docs/scene-map/
+        - title: Choices and Branching
+          message: Add player choices and connect them to the next part of your story.
+          imgSrc: /public/creator/docs/reference/choices-1.png
+          href: /en/creator/docs/line-actions/choices/
+        - title: Publishing
+          message: Export your project and prepare it for sharing on the web.
+          imgSrc: /public/images/routevn_og.png
+          href: /en/creator/docs/publish/
+    blogPosts:
+      title: Latest RouteVN Blog Posts
+      message: Follow product updates, release notes, and behind-the-scenes posts about building RouteVN.
+      sideImageSrc: /public/landing/object-1.png
+      ctaLabel: Show All Posts
+      ctaHref: /en/blog/
 
-      - title: Free and Open Source
-        imgSrc: /public/creator/ss-8.png
-        v: "2"
-        features:
-          - title: Free
-            message: No ads, no intrusive upsells
-          - title: Open Source
-            message: MIT license. Check out the source code on <a target="_blank" href="https://github.com/routevn/routevn-creator-client">Github</a>
+    madeWith:
+      title: Made with RouteVN
+      items:
+        - id: dialune
+          active: true
+          title: DiaLune
+          author: sqewree
+          authorAvatarSrc: https://img.itch.zone/aW1nLzI1OTU0Njk4LnBuZw==/80x80%23/19kS2C.png
+          authorHref: https://sqewree.carrd.co/
+          imgSrc: /public/blog/2026/09/dialune.png
+          href: https://sqewree.itch.io/dialune-demo
+          vndbHref: https://vndb.org/v66547
+          description: "On what was supposed to be an unremarkable day, you find a girl -- Lune, laying in the grass just downstairs from your house. It turns out to be more than a strange encounter and you would since become entangled with her, traversing worlds together through the medium of death."
+          testimonial: |
+            i loved making my visual novel on @routevn! it was very easy and i was incredibly happy to put out a project i've been passionate about but unable to realize for a long time! do try it out if you're not a coder but you love to write stories :)
+          testimonialHref: https://x.com/sqewree/status/2070518071190770047
+        - id: two-straws
+          title: Two Straws
+          author: BunniBambii
+          authorAvatarSrc: https://pbs.twimg.com/profile_images/2050152862320349185/IDdbzNA-_400x400.jpg
+          authorHref: https://x.com/bunnibambii
+          imgSrc: https://img.itch.zone/aW1nLzI4MDg1MjUxLnBuZw==/original/JiUsWy.png
+          href: https://pararinn.itch.io/twostrawscruisinforaconnection
+          vndbHref: https://vndb.org/v66544
+          description: This was supposed to be just lunch (Seriously). Fine. Guess I'll eat out for once... THE DINER in big neon red signage, this must be the place Dave mentioned. AND HOW DID MY LUNCH BREAK TURN INTO ROMANCE!?
+          testimonial: |
+            IF U GUYS WANNA MAKE VNs BUT THE CODING PART IS DIFFICULT FOR U
 
-      - title: Fast, intuitive and reliable
-        message: We built the engine from ground up to pursue the best user experience that creators deserve
-        imgSrc: /public/creator/ss-2.png
-        features:
-          - title: Fast
-            message: No loading indicators, every action is instant
-          - title: Intuitive
-            message: Learn the basics in minutes, things should work as you expect
-          - title: Reliable
-            message: Ok, the truth is that this software is still under active development. We are releasing bug fixes every week
-
-      - title: Layout Editor
-        message: Fully customize your Visual Novel's UI
-        imgSrc: /public/creator/ss-5.png
-        v: "2"
-        features:
-          - title: Design grade tool
-            message: UI design adapated for Visual Novels
-          - title: Best practices baked in
-            message: Your colors, fonts, and styles stay organized as your project grows
-
-      - title: Assets manager
-        imgSrc: /public/creator/ss-1.png
-        features:
-          - title: Easy to import
-            message: Upload or drag and drop all your files
-          - title: Images, sounds, characters and more
-            message: Organize all your assets as it suits your needs
-          - title: Transforms and tween animations
-            message: Enabling engaging visual effects
-
-      - title: Scenes Map
-        imgSrc: /public/creator/ss-7.png
-        v: "2"
-        features:
-          - title: Visual storyline
-            message: See your entire visual novel structure at a glance.
-          - title: Branches and scene transition
-            message: Stay organized as your story branches and grows
+            TRY OUT ROUTEVN YALL!!!
+          testimonialHref: https://x.com/bunnibambii/status/2050891935146250283
 
     faq:
       title: Frequently Asked Questions
+      sideImageSrc: /public/landing/object-3.png
       items:
         - title: What makes RouteVN Creator different from other Visual Novel engines?
           content: No coding, no technical background required. We built RouteVN Creator so anyone, including writers, artists, and hobbyists, can create their own Visual Novel. Easy to start, and stays organized as your project grows.
@@ -242,11 +307,16 @@ creator:
     cta:
       title: Bring your Visual Novel to life
       subtitle: Download RouteVN Creator to start creating
+      imgSrc: /public/images/routevn-icon.png
       cta:
-        label: Documentation
-        href: /creator/docs/introduction/
+        label: Docs
+        href: /en/creator/docs/introduction/
         variant: se
       secondaryCta:
         label: Download
-        href: /creator/download/
+        href: /en/creator/download/
         variant: pr
+    bottomVideo:
+      label: RouteVN Creator preview video
+      videoSrc: /public/creator/routevn-demo-250108.mp4
+      posterSrc: /public/creator/routevn-demo-250108-thumb.png

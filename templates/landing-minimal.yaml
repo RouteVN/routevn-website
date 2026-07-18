@@ -1,0 +1,256 @@
+- html lang="en":
+    - head:
+        - $partial: seo1
+          page: ${page}
+          seo: ${seo}
+        - style: |
+            html,
+            body {
+              margin: 0;
+              min-height: 100%;
+              background: #000;
+              -webkit-tap-highlight-color: transparent;
+              -webkit-touch-callout: none;
+              user-select: none;
+            }
+            ::selection {
+              background: transparent;
+            }
+            body {
+              min-height: 100vh;
+              overflow: hidden;
+            }
+            .landing-shell {
+              box-sizing: border-box;
+              display: grid;
+              isolation: isolate;
+              min-height: 100vh;
+              padding: 24px;
+              place-items: center;
+              position: relative;
+            }
+            .landing-shell::before {
+              background: #fff;
+              bottom: 0;
+              clip-path: polygon(100% 0, 0 100%, 100% 100%);
+              content: "";
+              height: min(28vh, 300px);
+              pointer-events: none;
+              position: fixed;
+              right: 0;
+              width: min(38vw, 520px);
+              z-index: 0;
+            }
+            .landing-link {
+              align-items: flex-start;
+              color: inherit;
+              --landing-stage-width: min(64vw, 720px, calc(90vh * 1440 / 1532));
+              display: grid;
+              grid-template-columns: minmax(0, 1fr) var(--landing-stage-width) minmax(0, 1fr);
+              line-height: normal;
+              text-decoration: none;
+              -webkit-touch-callout: none;
+              position: relative;
+              width: 100%;
+              z-index: 1;
+            }
+            .landing-stage {
+              aspect-ratio: 1440 / 1532;
+              grid-column: 2;
+              position: relative;
+              width: var(--landing-stage-width);
+            }
+            .landing-layer {
+              display: block;
+              inset: 0;
+              height: auto;
+              position: absolute;
+              -webkit-touch-callout: none;
+              -webkit-user-drag: none;
+              transform: translate3d(0, 0, 0);
+              user-drag: none;
+              width: 100%;
+              will-change: transform;
+            }
+            .landing-layer-back {
+              z-index: 1;
+            }
+            .landing-layer-character {
+              z-index: 2;
+            }
+            .landing-layer-front {
+              z-index: 3;
+            }
+            .landing-copy {
+              color: #fff;
+              display: grid;
+              gap: 10px;
+              grid-column: 1;
+              justify-self: end;
+              line-height: 1.2;
+              margin-top: 0;
+              margin-right: clamp(16px, 4vw, 56px);
+              text-shadow: 0 2px 16px rgba(0, 0, 0, 0.45);
+              transform: translateY(clamp(-44px, -3vh, -24px));
+              width: max-content;
+            }
+            .landing-brand {
+              align-items: center;
+              display: flex;
+            }
+            .landing-brand-logo {
+              display: block;
+              height: auto;
+              max-width: calc(100vw - 48px);
+              object-fit: contain;
+              width: clamp(160px, 18vw, 220px);
+            }
+            .landing-tagline {
+              font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+              font-size: clamp(15px, 1.45vw, 19px);
+              font-weight: 400;
+              margin: 0;
+              white-space: nowrap;
+            }
+            @media (orientation: landscape) {
+              .landing-shell::before {
+                height: min(76vh, 720px);
+                width: min(38vw, 680px);
+              }
+            }
+            @media (max-width: 1800px) {
+              .landing-link {
+                align-items: flex-start;
+                display: flex;
+                flex-direction: column;
+                gap: 18px;
+                width: min(92vw, 720px);
+              }
+              .landing-stage {
+                flex-basis: auto;
+                width: min(92vw, 720px, calc(76vh * 1440 / 1532));
+              }
+              .landing-copy {
+                margin-top: 0;
+                margin-right: 0;
+                text-align: left;
+                transform: translateY(-28px);
+              }
+              .landing-brand {
+                justify-content: flex-start;
+              }
+              .landing-tagline {
+                font-size: clamp(14px, 3.6vw, 18px);
+              }
+            }
+            @media (orientation: portrait) {
+              .landing-brand-logo {
+                width: clamp(150px, 46vw, 200px);
+              }
+              .landing-tagline {
+                font-size: clamp(13px, 3.2vw, 16px);
+              }
+            }
+            @media (prefers-reduced-motion: reduce) {
+              .landing-layer {
+                transform: none;
+                transition: none;
+                will-change: auto;
+              }
+            }
+    - body:
+        - "${content}"
+        - $partial: cursor-sparkles
+          darkArea: landing-wedge
+        - script: |
+            (() => {
+              document.addEventListener("contextmenu", (event) => {
+                if (event.target.closest(".landing-stage")) {
+                  event.preventDefault();
+                }
+              });
+              document.addEventListener("dragstart", (event) => {
+                if (event.target.closest(".landing-stage")) {
+                  event.preventDefault();
+                }
+              });
+
+              const landingLink = document.querySelector(".landing-link");
+              let touchStartY = 0;
+
+              if (landingLink) {
+                landingLink.addEventListener("touchstart", (event) => {
+                  touchStartY = event.touches[0].clientY;
+                }, { passive: true });
+
+                landingLink.addEventListener("touchmove", (event) => {
+                  if (touchStartY - event.touches[0].clientY > 56) {
+                    window.location.assign(landingLink.href);
+                  }
+                }, { passive: true });
+              }
+
+              const elements = Array.from(document.querySelectorAll("[data-depth]"));
+              const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
+
+              if (!elements.length || reduceMotion.matches) {
+                return;
+              }
+
+              const maxShift = 28;
+              const idleShift = 18;
+              const layers = elements.map((element) => ({
+                element,
+                depth: Number(element.dataset.depth) || 1,
+                idle: Number(element.dataset.idle) || 1,
+                phase: Number(element.dataset.phase) || 0,
+                currentX: 0,
+                currentY: 0,
+              }));
+              let pointerX = 0;
+              let pointerY = 0;
+              let frame = 0;
+
+              const update = (time) => {
+                const idleX = Math.sin(time * 0.00055) * idleShift + Math.sin(time * 0.00031) * 7;
+                const idleY = Math.cos(time * 0.00042) * idleShift + Math.sin(time * 0.00028) * 7;
+
+                layers.forEach((layer) => {
+                  const layerIdleX = idleX * layer.idle + Math.sin(time * 0.00038 + layer.phase) * 5;
+                  const layerIdleY = idleY * layer.idle + Math.cos(time * 0.00034 + layer.phase) * 5;
+                  const targetX = pointerX * layer.depth + layerIdleX;
+                  const targetY = pointerY * layer.depth + layerIdleY;
+
+                  layer.currentX += (targetX - layer.currentX) * 0.08;
+                  layer.currentY += (targetY - layer.currentY) * 0.08;
+
+                  layer.element.style.transform = "translate3d(" + layer.currentX.toFixed(2) + "px, " + layer.currentY.toFixed(2) + "px, 0)";
+                });
+
+                frame = requestAnimationFrame(update);
+              };
+
+              const setTargetFromPointer = (event) => {
+                const x = (event.clientX / window.innerWidth - 0.5) * 2;
+                const y = (event.clientY / window.innerHeight - 0.5) * 2;
+
+                pointerX = x * maxShift;
+                pointerY = y * maxShift;
+              };
+
+              window.addEventListener("pointermove", setTargetFromPointer, { passive: true });
+              window.addEventListener("mousemove", setTargetFromPointer, { passive: true });
+              window.addEventListener("pointerleave", () => {
+                pointerX = 0;
+                pointerY = 0;
+              });
+
+              frame = requestAnimationFrame(update);
+
+              reduceMotion.addEventListener("change", () => {
+                cancelAnimationFrame(frame);
+                layers.forEach((layer) => {
+                  layer.element.style.removeProperty("transform");
+                });
+              }, { once: true });
+            })();

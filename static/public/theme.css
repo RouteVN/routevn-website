@@ -1,18 +1,18 @@
 html {
   margin: 0;
-  -ms-overflow-style: none; /* IE and Edge */
-  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: auto; /* IE and Edge */
+  overflow-x: hidden;
+  scrollbar-width: auto; /* Firefox */
   width: 100%;
 }
 
 
-/* Hide scrollbar for Chrome, Safari */
 html::-webkit-scrollbar {
-  display: none;
+  display: initial;
 }
 
 body::-webkit-scrollbar {
-  display: none;
+  display: initial;
 }
 
 /* Firefox */
@@ -21,8 +21,8 @@ body::-webkit-scrollbar {
 }
 
 body {
-  -ms-overflow-style: none;
-  scrollbar-width: none;
+  -ms-overflow-style: auto;
+  scrollbar-width: auto;
   height: 100%;
   width: 100%;
   margin: 0;
@@ -32,7 +32,8 @@ body {
   background-color: var(--background);
   color: var(--foreground);
   overscroll-behavior: none;
-  overflow: auto;
+  overflow-x: hidden;
+  overflow-y: auto;
   /* position: fixed; */
   -webkit-overflow-scrolling: touch;
 }
@@ -231,6 +232,15 @@ p {
   margin-bottom: 16px;
 }
 
+p > img {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  border: 1px solid var(--border);
+  box-sizing: border-box;
+}
+
 ul {
   margin-top: 0;
   margin-bottom: 16px;
@@ -275,12 +285,63 @@ pre {
   flex: 1;
   /*For html segments without codepreview, so they can extend to see the full code*/
   min-height: fit-content;
-  max-width: var(--width-stretch);
+  min-width: 0;
+  max-width: 100%;
   width: 100%;
   overflow-x: auto;
   box-sizing: border-box;
   /* TODO fix sometimes there needs to be margin-bottom */
   /* margin-bottom: var(--spacing-g); */
+}
+
+#content-container {
+  box-sizing: border-box;
+  max-width: 100% !important;
+  min-width: 0 !important;
+}
+
+#content-container > *,
+#content-container li {
+  box-sizing: border-box;
+  max-width: 100%;
+  min-width: 0;
+}
+
+#content-container p,
+#content-container li,
+#content-container code:not(pre code) {
+  overflow-wrap: anywhere;
+}
+
+#content-container code:not(pre code) {
+  max-width: 100%;
+  white-space: normal;
+}
+
+#content-container pre,
+#content-container pre * {
+  overflow-wrap: normal;
+  word-break: normal;
+}
+
+#content-container pre code {
+  display: block;
+  min-width: max-content;
+}
+
+pre {
+  -ms-overflow-style: auto;
+  scrollbar-width: thin;
+}
+
+pre::-webkit-scrollbar {
+  display: block;
+  height: 8px;
+}
+
+pre::-webkit-scrollbar-thumb {
+  background: var(--border);
+  border-radius: var(--border-radius-lg);
 }
 
 code:not(pre code) {

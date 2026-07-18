@@ -1,4 +1,4 @@
-- html lang="en":
+- html lang="${default(lang, 'en')}":
     - head:
         - $partial: seo1
           page: ${page}
@@ -13,14 +13,14 @@
             - rtgl-view w="f" ah="c":
                 - rtgl-view w=f ph="lg" pb="lg" ah=c:
                     - "${content}"
-                - rtgl-view d="h" h="30vh":
+                - rtgl-view d="h" h="${default(footerSpacerHeight, '20vh')}":
                 - $partial: footer1
             - rtgl-view pos="abs" edge="t" ah="c" bgc="bg":
                 - $partial: navbar1
                   title: ${site.navbar.title}
                   secondaryCta:
-                    label: Documentation
-                    href: /creator/docs/introduction/
+                    label: Docs
+                    href: /en/creator/docs/introduction/
                   cta:
                     label: Download
-                    href: /creator/download/
+                    href: /en/creator/download/

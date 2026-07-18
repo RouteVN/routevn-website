@@ -1,17 +1,83 @@
-- rtgl-view ah="c" w="f" ph=lg:
+- style: |
+    .rvn-creator-hero {
+      isolation: isolate;
+      overflow: hidden;
+      position: relative;
+      --rvn-hero-bg-inset: max(24px, calc((100vw - 1200px) / 2));
+    }
+
+    .rvn-creator-hero-chibi {
+      display: block;
+      height: auto;
+      left: var(--rvn-hero-bg-inset);
+      opacity: 0.96;
+      pointer-events: none;
+      position: absolute;
+      top: 42px;
+      width: 260px;
+      z-index: 0;
+    }
+
+    .rvn-creator-hero > :not(.rvn-creator-hero-chibi) {
+      position: relative;
+      z-index: 1;
+    }
+
+    .rvn-creator-hero-copy {
+      text-shadow:
+        -2px -2px 0 var(--background),
+        0 -2px 0 var(--background),
+        2px -2px 0 var(--background),
+        -2px 0 0 var(--background),
+        2px 0 0 var(--background),
+        -2px 2px 0 var(--background),
+        0 2px 0 var(--background),
+        2px 2px 0 var(--background),
+        0 4px 18px rgba(0, 0, 0, 0.22);
+    }
+
+    @media (max-width: 1200px) {
+      .rvn-creator-hero-chibi {
+        bottom: calc(((100vw - 64px) / 1.777) + 64px);
+        top: auto;
+      }
+    }
+
+    @media (max-width: 720px) {
+      .rvn-creator-hero-chibi {
+        bottom: calc(((100vw - 48px) / 1.777) + 64px);
+        width: 215px;
+      }
+    }
+
+- 'rtgl-view class="rvn-creator-hero" ah="c" w="f" ph="lg"':
+    - $if backgroundImageSrc:
+        - 'img class="rvn-creator-hero-chibi" src="${backgroundImageSrc}" alt="${backgroundImageAlt}"':
     - rtgl-view h=128:
     - $if title:
-        - rtgl-text s=h1 ta=c: "${title}"
+        - rtgl-text class="rvn-creator-hero-copy" s=h1 ta=c: "${title}"
         - rtgl-view h=24:
-    - $if subtitle:
-        - rtgl-text s=lg ta=c: "${subtitle}"
+    - $if subtitleHtml:
+        - rtgl-text class="rvn-creator-hero-copy" s=lg ta=c:
+            - __html: "${subtitleHtml}"
+      $else:
+        - $if subtitle:
+            - rtgl-text class="rvn-creator-hero-copy" s=lg ta=c: "${subtitle}"
     - $if videoSrc:
         - rtgl-view h=64:
-        - 'rtgl-view cur=p md-h="calc((100vw - 32px) / 1.777)"  md-w="calc(100vw - 32px)" xl-h="calc((100vw - 64px) / 1.777)" xl-w="calc(100vw - 64px)" h="calc(1200px / 1.777)" w="1200" bc="bo" bw="xs" br="xs" shadow="sm"':
+        - 'rtgl-view cur=p md-h="calc((100vw - 48px) / 1.777)"  md-w="calc(100vw - 48px)" xl-h="calc((100vw - 64px) / 1.777)" xl-w="calc(100vw - 64px)" h="calc(1200px / 1.777)" w="1200" bc="bo" bw="xs" br="xs" shadow="sm" style="border-color: rgba(170, 170, 170, 0.42)"':
             - $if build.isScreenshotMode:
-                - video loop="" poster="${posterSrc}" height="100%" width="100%" aria-label="Video content" draggable="true":
-                    - source src="${videoSrc}" type="video/mp4":
+                - $if posterSrc:
+                    - video loop="" poster="${posterSrc}" height="100%" width="100%" aria-label="Video content" draggable="true":
+                        - source src="${videoSrc}" type="video/mp4":
+                  $else:
+                    - video loop="" height="100%" width="100%" aria-label="Video content" draggable="true":
+                        - source src="${videoSrc}" type="video/mp4":
               $else:
-                - video loop="" controls="" poster="${posterSrc}" height="100%" width="100%" aria-label="Video content" draggable="true":
-                    - source src="${videoSrc}" type="video/mp4":
+                - $if posterSrc:
+                    - video autoplay="" loop="" muted="" playsinline="" controls="" poster="${posterSrc}" height="100%" width="100%" aria-label="Video content" draggable="true":
+                        - source src="${videoSrc}" type="video/mp4":
+                  $else:
+                    - video autoplay="" loop="" muted="" playsinline="" controls="" height="100%" width="100%" aria-label="Video content" draggable="true":
+                        - source src="${videoSrc}" type="video/mp4":
         - rtgl-view h=64:

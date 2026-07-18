@@ -28,10 +28,10 @@
     - meta name="keywords" content="${seo.keywords}":
 - $if seo.robots:
     - meta name="robots" content="${seo.robots}":
-- $if seo.publishedTime:
-    - meta property="article:published_time" content="${seo.publishedTime}":
-- $if seo.modifiedTime:
-    - meta property="article:modified_time" content="${seo.modifiedTime}":
+- $if publishedTime:
+    - meta property="article:published_time" content="${publishedTime}":
+- $if modifiedTime:
+    - meta property="article:modified_time" content="${modifiedTime}":
 - $if seo.twitterSite:
     - meta name="twitter:site" content="${seo.twitterSite}":
 - $if seo.twitterCreator:
