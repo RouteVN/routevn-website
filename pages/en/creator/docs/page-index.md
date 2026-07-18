@@ -7,6 +7,39 @@ sidebarId: page-index
 This page gives an overview of the main pages inside RouteVN Creator.
 Use it as a quick index when you want to understand where a feature lives before going into the detailed docs.
 
+## Keyboard navigation
+
+After you open a project, press `g` followed by a destination code to switch pages. Press the keys in sequence, not at the same time. Press each next key within 1.5 seconds.
+
+| Shortcut | Destination |
+| --- | --- |
+| `g p r` | Project |
+| `g i` | Images |
+| `g s p` | Spritesheets |
+| `g c h` | Characters |
+| `g s o` | Sounds |
+| `g t r` | Transforms |
+| `g a n` | Animations |
+| `g p a` | Particles |
+| `g v i` | Videos |
+| `g c o` | Colors |
+| `g f` | Fonts |
+| `g t s` | Text Styles |
+| `g l` | Layouts |
+| `g c t` | Controls |
+| `g v a` | Variables |
+| `g s c` | Scenes |
+| `g r` | Release Versions |
+| `g w s` | Web Server |
+| `g a b` | About |
+| `g a p` | Appearance |
+
+The keys are case-insensitive. The shortcuts do not run while you type in an editable field or hold `Ctrl`, `Command`, or `Alt`. If you press an unsupported key or wait too long, start again with `g`.
+
+Character Sprites, Scene Editor, Animation Editor, and Layout Editor do not have global shortcuts because you must select a resource before opening them.
+
+For keyboard navigation within resource lists, read the [File Explorer guide](/en/creator/docs/file-explorer/#keyboard-shortcuts).
+
 ## Project
 
 The Project area contains the main resources used by your visual novel.

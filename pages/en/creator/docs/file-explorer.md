@@ -53,23 +53,21 @@ File explorer is used to move and organize items
 
 ## Keyboard shortcuts
 
-- `Enter`: Opens or edits the selected item.
-- `↑`: Moves to the previous item.
-- `↓`: Moves to the next item.
+- `↓` or `j`: Select the next item.
+- `↑` or `k`: Select the previous item.
+- `→` or `l`: Expand the selected folder.
+- `←` or `h`: Collapse the selected folder.
+- `Ctrl+d`: Move forward by up to 10 items.
+- `Ctrl+u`: Move backward by up to 10 items.
 
-When a folder is selected:
+### Image preview
 
-- `←`: Shrinks the folder.
-- `→`: Expands the folder.
+On Images and Character Sprites, press `Enter` to open the selected image in full-screen preview.
 
+While full-screen preview is open:
 
-
-
-
-
-
-
-
-
-
-
+- `Esc`: Exit full-screen preview.
+- `↑` or `k`: Show the previous image.
+- `↓` or `j`: Show the next image.
+- `←` or `h`: Show the image at canvas scale.
+- `→` or `l`: Fit the image to the preview.
