@@ -60,9 +60,9 @@ footer:
           newTab: true
     - links:
         - text: Privacy Policy
-          href: /en/agreement/privacy-policy/1-0-0/
+          href: /en/agreement/privacy-policy/
         - text: Terms of Service
-          href: /en/agreement/terms-of-service/1-0-0/
+          href: /en/agreement/terms-of-service/
         - text: Our AI Practices
           href: /en/how-routevn-uses-ai/
 

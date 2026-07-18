@@ -32,8 +32,8 @@ Use `en` as the default locale.
 - Hiring post: `/en/hiring/swe-intern/`.
 - Blog index: `/en/blog/`.
 - Blog post: `/en/blog/routevn-creator-macos-release/`.
-- Privacy policy: `/en/agreement/privacy-policy/1-0-0/`.
-- Terms of service: `/en/agreement/terms-of-service/1-0-0/`.
+- Privacy policy: `/en/agreement/privacy-policy/`.
+- Terms of service: `/en/agreement/terms-of-service/`.
 
 ## Blog URL policy
 
