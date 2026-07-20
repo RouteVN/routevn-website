@@ -28,11 +28,15 @@ RouteVN partially sponsored DiaLune's development.
 
 #### Congratulations on releasing the DiaLune demo. Could you introduce yourself and your creative work?
 
+<img src="/public/images/creators/sqewree-avatar.jpg" alt="sqewree avatar" style="width: 120px; height: 120px; border-radius: 50%; object-fit: cover; display: block; margin-bottom: 24px;">
+
 I go by sqewree. I primarily create illustrations, and I aspire to become a VTuber designer and bring my stories and concepts to life.
 
 #### For readers who have not played DiaLune yet, how would you describe it?
 
 The basic gist of DiaLune is that it is an isekai manhwa-inspired story. If you have read villainess manhwa, you will know what I am talking about. It is essentially an otome isekai story, but the protagonist is a man.
+
+<img src="/public/blog/2026/14/dialune-bedroom.jpg" alt="Lune standing in a bedroom in DiaLune" style="width: 100%; margin-bottom: 24px; border: 1px solid var(--border); box-sizing: border-box;">
 
 #### Where did the idea for DiaLune come from, and what inspired its mood and story?
 
@@ -50,6 +54,8 @@ DiaLune did not decide my visual direction. My existing visual library and gener
 
 I have always loved macabre, cute horror aesthetics and themes in both stories and art.
 
+<img src="/public/blog/2026/14/dialune-moonlit-scene.jpg" alt="Dia standing beneath a crescent moon in a dark DiaLune scene" style="width: 100%; margin-bottom: 24px; border: 1px solid var(--border); box-sizing: border-box;">
+
 #### How did RouteVN fit into your workflow, and what helped you most?
 
 Using RouteVN was simple. For the first stages of ideation and writing, I worked entirely in Ellipsus. When I was done, I pasted everything into RouteVN Creator. There was not one particular part of the workflow that stood out because every feature was intuitive.
@@ -65,6 +71,8 @@ Now that some time has passed, I feel super relieved. Something I thought up did
 #### What did you learn from making your first visual novel demo?
 
 I learnt a lot about my limitations, the tools I have at my disposal, and what I should and should not have done. I feel more prepared to handle my next project, whether that means reworking DiaLune or making a sequel.
+
+<img src="/public/blog/2026/14/dialune-classroom.jpg" alt="Dia and Deme talking in a classroom in DiaLune" style="width: 100%; margin-bottom: 24px; border: 1px solid var(--border); box-sizing: border-box;">
 
 #### Do you have a message for other writers or artists who want to make their first visual novel?
 
