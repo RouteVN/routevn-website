@@ -1,7 +1,7 @@
 ---
 template: post
-author: [han4wluc, sqewree]
-authorDisplay: RouteVN, sqewree
+author: han4wluc
+authorDisplay: RouteVN
 title: "Creator Interview: Making DiaLune with sqewree"
 url: /en/blog/creator-interview-sqewree-dialune/
 tags: [blogPost]
