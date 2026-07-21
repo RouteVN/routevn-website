@@ -86,6 +86,11 @@
     .rvn-made-with-author a:hover {
       text-decoration-color: var(--foreground);
     }
+    .rvn-made-with-author-avatar-link {
+      display: block;
+      flex: 0 0 32px;
+      line-height: 0;
+    }
     .rvn-made-with-author-avatar {
       border: 1px solid var(--border);
       border-radius: 50%;
@@ -264,7 +269,11 @@
                             - 'h3 class="rvn-made-with-heading"': ${item.title}
                             - 'p class="rvn-made-with-author"':
                                 - $if item.authorAvatarSrc:
-                                    - 'img class="rvn-made-with-author-avatar" src="${item.authorAvatarSrc}" alt=""':
+                                    - $if item.authorHref:
+                                        - 'a class="rvn-made-with-author-avatar-link" href="${item.authorHref}" target="_blank" rel="noreferrer" aria-label="Visit ${item.author} profile"':
+                                            - 'img class="rvn-made-with-author-avatar" src="${item.authorAvatarSrc}" alt=""':
+                                      $else:
+                                        - 'img class="rvn-made-with-author-avatar" src="${item.authorAvatarSrc}" alt=""':
                                 - span:
                                     - span: 'by '
                                     - $if item.authorHref:
@@ -301,7 +310,11 @@
                             - 'h3 class="rvn-made-with-heading"': ${item.title}
                             - 'p class="rvn-made-with-author"':
                                 - $if item.authorAvatarSrc:
-                                    - 'img class="rvn-made-with-author-avatar" src="${item.authorAvatarSrc}" alt=""':
+                                    - $if item.authorHref:
+                                        - 'a class="rvn-made-with-author-avatar-link" href="${item.authorHref}" target="_blank" rel="noreferrer" aria-label="Visit ${item.author} profile"':
+                                            - 'img class="rvn-made-with-author-avatar" src="${item.authorAvatarSrc}" alt=""':
+                                      $else:
+                                        - 'img class="rvn-made-with-author-avatar" src="${item.authorAvatarSrc}" alt=""':
                                 - span:
                                     - span: 'by '
                                     - $if item.authorHref:
