@@ -22,7 +22,7 @@ seo:
 
 We spoke with sqewree about DiaLune's origins, making a first playable demo, and bringing a long-held story out into the world.
 
-RouteVN partially sponsored DiaLune's development.
+RouteVN provided partial sponsorship for DiaLune’s development.
 
 <img src="/public/blog/2026/09/dialune.png" alt="DiaLune key art" style="width: 100%; margin-bottom: 24px; border: 1px solid var(--border); box-sizing: border-box;">
 
