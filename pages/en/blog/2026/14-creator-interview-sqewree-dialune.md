@@ -2,19 +2,19 @@
 template: post
 author: han4wluc
 authorDisplay: RouteVN
-title: "Creator Interview: Making DiaLune with sqewree"
+title: "Creator Interview with sqewree: Making DiaLune"
 url: /en/blog/creator-interview-sqewree-dialune/
 tags: [blogPost]
 date: '2026-07-21'
 thumbnail: /public/blog/2026/09/dialune.png
 seo:
-  title: "Creator Interview: Making DiaLune with sqewree"
+  title: "Creator Interview with sqewree: Making DiaLune"
   description: DiaLune creator sqewree shares the story's inspiration, the experience of making a first visual novel, and how RouteVN Creator supported the process.
   ogType: article
-  ogImage: https://routevn.com/public/blog/2026/09/dialune.png
-  ogImageWidth: 1920
-  ogImageHeight: 1080
-  ogImageAlt: DiaLune key art
+  ogImage: https://routevn.com/public/blog/2026/14/dialune-creator-interview-og.png
+  ogImageWidth: 1200
+  ogImageHeight: 630
+  ogImageAlt: Creator Interview with sqewree for DiaLune
   ogImageType: image/png
 ---
 
