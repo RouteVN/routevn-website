@@ -36,6 +36,8 @@
                                     - $if item.data.imagesTitle:
                                         - h2: ${item.data.imagesTitle}
                                     - $for image in item.data.images:
+                                        - $if image.description:
+                                            - rtgl-text mb="sm": ${image.description}
                                         - 'img src="${image.src}" alt="${image.alt}" style="width: 100%; max-width: 100%; height: auto; display: block; border: 1px solid var(--border); box-sizing: border-box; margin-bottom: 16px;"':
                                 - $if item.data.isLatest:
                                     - 'a href="/en/creator/download/" style="text-decoration: none;"':
