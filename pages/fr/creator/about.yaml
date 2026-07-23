@@ -78,7 +78,7 @@ seo:
   sideImageSrc: /public/landing/object-2.png
   videoSrc: /public/creator/about-live-editor.mp4
   learnMoreHref: /en/creator/docs/scene-editor/
-  learnMoreLabel: En savoir plus
+  learnMoreLabel: En savoir plus (en anglais)
 
 - $partial: made-with-carousel
   title: Créations réalisées avec RouteVN
@@ -120,7 +120,7 @@ seo:
 
 - $partial: functionality-grid
   title: Tout ce qu’il vous faut pour votre visual novel
-  message: Nous étudions les fonctions courantes des visual novels et les intégrons de façon simple à utiliser.
+  message: Nous étudions les fonctions courantes des visual novels et les intégrons de façon simple à utiliser. Les liens de cette section mènent à la documentation en anglais.
   sideImageSrc: /public/landing/object-4.png
   screenshotLabel: — capture d’écran
   items:
@@ -192,7 +192,7 @@ seo:
   subtitle: Téléchargez RouteVN Creator et commencez à créer
   imgSrc: /public/images/routevn-icon.png
   cta:
-    label: Documentation
+    label: Documentation en anglais
     href: /en/creator/docs/introduction/
     variant: se
   secondaryCta:
