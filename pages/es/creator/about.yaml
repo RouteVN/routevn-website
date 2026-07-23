@@ -5,6 +5,10 @@ title: RouteVN Creator - Crea novelas visuales sin programar
 locale: es
 canonical: https://routevn.com/es/creator/about/
 footerSpacerHeight: 18vh
+docsLabel: Documentación
+docsHref: /en/creator/docs/introduction/
+downloadLabel: Descargar
+downloadHref: /es/creator/download/
 seo:
   title: RouteVN Creator - Crea novelas visuales sin programar
   description: Aplicación gratuita y de código abierto para crear novelas visuales sin programar, con vista previa en tiempo real, gestión de recursos y editor de diseño.
@@ -196,7 +200,7 @@ seo:
     variant: se
   secondaryCta:
     label: Descargar
-    href: /en/creator/download/
+    href: /es/creator/download/
     variant: pr
 
 - 'rtgl-view ah="c" w="f" style="margin-top: 12vh;"':

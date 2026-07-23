@@ -1,0 +1,17 @@
+---
+template: base
+lang: es
+locale: es
+title: Contacta con RouteVN
+footerSpacerHeight: 20vh
+seo:
+  title: Contacta con RouteVN
+  description: Contacta con RouteVN para hacer preguntas, enviar comentarios, solicitar asistencia, informar de errores o hablar sobre alianzas y colaboraciones.
+---
+- $partial: contact-page
+  title: Contacta con RouteVN
+  intro: Siempre estamos dispuestos a escucharte.
+  message: Podemos ayudarte con preguntas, comentarios, solicitudes de asistencia e informes de errores, y conversar sobre alianzas y oportunidades de colaboración.
+  buttonLabel: Contáctanos
+  formHref: https://tally.so/r/wzZ7rM
+  imageAlt: Makkuro saluda con la mano.

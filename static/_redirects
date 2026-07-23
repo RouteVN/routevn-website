@@ -186,8 +186,12 @@
 /hiring/ /en/hiring/ 301
 /social /en/social/ 301
 /social/ /en/social/ 301
-/support /en/support/ 301
-/support/ /en/support/ 301
+/contact /en/contact/ 301
+/contact/ /en/contact/ 301
+/support /en/contact/ 301
+/support/ /en/contact/ 301
+/en/support /en/contact/ 301
+/en/support/ /en/contact/ 301
 /en/blog/2025/01-to-fulfill-the-full-potential-of-visual-novels /en/blog/to-fulfill-the-full-potential-of-visual-novels/ 301
 /en/blog/2025/01-to-fulfill-the-full-potential-of-visual-novels/ /en/blog/to-fulfill-the-full-potential-of-visual-novels/ 301
 /en/blog/2025/02-building-a-visual-novel-store /en/blog/building-a-visual-novel-store/ 301

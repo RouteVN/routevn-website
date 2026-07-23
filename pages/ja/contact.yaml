@@ -1,0 +1,17 @@
+---
+template: base
+lang: ja
+locale: ja
+title: RouteVNへのお問い合わせ
+footerSpacerHeight: 20vh
+seo:
+  title: RouteVNへのお問い合わせ
+  description: RouteVNへのご質問、ご意見、サポートのご依頼、バグのご報告、事業提携やコラボレーションのご相談はこちら。
+---
+- $partial: contact-page
+  title: RouteVNへのお問い合わせ
+  intro: いつでもお気軽にお問い合わせください。
+  message: ご質問、ご意見、サポートのご依頼、バグのご報告のほか、事業提携やコラボレーションのご相談も歓迎します。
+  buttonLabel: お問い合わせ
+  formHref: https://tally.so/r/wzZ7rM
+  imageAlt: 手を振って挨拶するMakkuro。

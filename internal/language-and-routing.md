@@ -1,14 +1,27 @@
 # Language and Routing Policy
 
-This site currently ships English content only.
+This site uses English as the source language and publishes selected pages in additional languages.
 
 Use `en` as the default locale.
 
 ## Supported locales
 
 - `en`: English (default).
-- Chinese Simplified: `zh-hans` for URL slugs and `zh-Hans` for BCP 47 tags.
-- Chinese Traditional: `zh-hant` for URL slugs and `zh-Hant` for BCP 47 tags.
+- `ja`: Japanese.
+- `zh-hans` for URL slugs and `zh-Hans` for BCP 47 tags: Simplified Chinese.
+- `it`: Italian.
+- `fr`: French.
+- `es`: Spanish.
+
+## Localized page coverage
+
+The following pages are available in every supported locale:
+
+- RouteVN Creator About.
+- RouteVN Creator Download.
+- Contact.
+
+Documentation, changelogs, blog posts, legal pages, and hiring pages remain English-only unless a localized page exists.
 
 ## Routing behavior
 
@@ -23,7 +36,7 @@ Use `en` as the default locale.
 - Landing: `/`.
 - Creator about: `/en/creator/about/`.
 - Creator download: `/en/creator/download/`.
-- Support: `/en/support/`.
+- Contact: `/en/contact/`.
 - Creator changelog: `/en/creator/changelog/`.
 - Creator docs introduction: `/en/creator/docs/introduction/`.
 - Creator docs page index: `/en/creator/docs/page-index/`.
@@ -149,13 +162,13 @@ Examples:
 - `/blog/` redirects to `/en/blog/`.
 - `/blog/2026/10-routevn-creator-macos-release/` redirects to `/en/blog/routevn-creator-macos-release/`.
 - `/hiring/` redirects to `/en/hiring/`.
-- `/support/` redirects to `/en/support/`.
+- `/support/` redirects to `/en/contact/`.
 - `/agreement/privacy-policy/1-0-0/` redirects to `/en/agreement/privacy-policy/1-0-0/`.
 
 ## Canonical locale tags
 
 - Use BCP 47 language tags.
-- Use canonical BCP 47 casing in `html lang` and `hreflang`, such as `en`, `zh-Hans`, and `zh-Hant`.
-- Use lowercase URL locale slugs, such as `en`, `zh-hans`, and `zh-hant`.
+- Use canonical BCP 47 casing in `html lang` and `hreflang`, such as `en`, `ja`, `zh-Hans`, `it`, `fr`, and `es`.
+- Use lowercase URL locale slugs, such as `en`, `ja`, `zh-hans`, `it`, `fr`, and `es`.
 - Use canonical language content per page.
 - Do not mix languages on the same page.

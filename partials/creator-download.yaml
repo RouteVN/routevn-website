@@ -1,0 +1,35 @@
+- rtgl-view h="100":
+- rtgl-view ah="c" ph="lg" g="lg" md-w="100vw" lg-w="768" w="1024":
+    - rtgl-text s="h1" mb="sm" ta="c": ${title}
+    - $if subtitle:
+        - rtgl-text s="lg" c="mu" mb="md" ta="c": ${subtitle}
+    - rtgl-view d="h" g="lg" av="c" mb="xl" ah="c":
+        - rtgl-text s="lg": ${versionLabel} ${site.creator.download.version}
+        - rtgl-text c="mu": "-"
+        - rtgl-text href="/en/creator/changelog/" s="lg" c="pr" cur="p": ${changelogLabel}
+    - rtgl-view g="lg" w="f":
+        - $for platform in site.creator.download.platforms:
+            - rtgl-view w="f" p="lg" bw="xs" br="lg" bgc="se" ah="c":
+                - rtgl-svg svg="${platform.svg}" wh="32" f="pr-fg" mb="md":
+                - rtgl-text s="h3" mb="md": ${platform.name}
+                - $if platform.comingSoon:
+                    - rtgl-text c="mu": ${comingSoonLabel}
+                - $if platform.cta:
+                    - 'a href="${platform.cta.href}" style="text-decoration: none;"':
+                        - $if platform.svg == "windows":
+                            - rtgl-button: ${windowsDownloadLabel}
+                        - $if platform.svg == "apple":
+                            - rtgl-button: ${macDownloadLabel}
+                        - $if platform.svg == "linux":
+                            - rtgl-button: ${linuxDownloadLabel}
+                - $if platform.helpLink:
+                    - 'rtgl-text href="${platform.helpLink.href}" s="sm" c="pr" cur="p" mt="md" style="text-decoration: underline; text-underline-offset: 2px;"': ${installationGuideLabel}
+- rtgl-view h="20vh":
+- $partial: cta1
+  svg: ${site.landing.discord.svg}
+  title: ${communityTitle}
+  subtitle: ${communitySubtitle}
+  cta:
+    label: ${communityButtonLabel}
+    href: ${site.landing.discord.cta.href}
+    newTab: true
