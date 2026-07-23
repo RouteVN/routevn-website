@@ -127,6 +127,8 @@ Use neutral international Spanish and the locale code `es`. Use a regional code 
 
 Use natural Spanish for marketing copy, but reproduce the app's exact label in instructions. If the app still shows an English label, keep it in English and explain it when needed.
 
+Keep `Bring your Visual Novel to Life` in English as a shared product tagline.
+
 | English source | Spanish label |
 | --- | --- |
 | Live Editor | `Vista previa en tiempo real` |

@@ -128,6 +128,8 @@ Use standard Italian and the locale code `it`. Use a regional code such as `it-I
 
 Use natural Italian for marketing copy, but reproduce the app's exact label in instructions. If the app still shows an English label, keep it in English and explain it when needed.
 
+Keep `Bring your Visual Novel to Life` in English as a shared product tagline.
+
 Preferred marketing labels:
 
 | English source | Italian label |

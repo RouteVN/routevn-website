@@ -128,6 +128,8 @@ Use standard French and the locale code `fr`. Use a regional code such as `fr-FR
 
 Use natural French for marketing copy, but reproduce the app's exact label in instructions. If the app still shows an English label, keep it in English and explain it when needed.
 
+Keep `Bring your Visual Novel to Life` in English as a shared product tagline.
+
 | English source | French label |
 | --- | --- |
 | Live Editor | `Aperçu en temps réel` |

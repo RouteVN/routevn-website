@@ -18,7 +18,7 @@ seo:
 - $partial: cursor-sparkles
 
 - $partial: hero1
-  title: Donnez vie à votre visual novel
+  title: Bring your Visual Novel to Life
   subtitle: RouteVN Creator est une application gratuite et open source qui permet de créer des visual novels sans coder
   subtitleHtml: 'RouteVN Creator est une application gratuite et <a href="https://github.com/RouteVN/routevn-creator-client" target="_blank" rel="noreferrer">open source</a> qui permet de créer des visual novels sans coder'
   backgroundImageSrc: /public/creator/chibi-hi.png
@@ -188,7 +188,7 @@ seo:
 
 - rtgl-view h="100":
 - $partial: cta1
-  title: Donnez vie à votre visual novel
+  title: Bring your Visual Novel to Life
   subtitle: Téléchargez RouteVN Creator et commencez à créer
   imgSrc: /public/images/routevn-icon.png
   cta:
