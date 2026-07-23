@@ -80,10 +80,6 @@ socialPage:
       handle: "@routevn"
       href: https://x.com/routevn
       svg: x
-    - name: GitHub
-      handle: "RouteVN"
-      href: https://github.com/RouteVN
-      svg: github
     - name: Instagram
       handle: "@routevn"
       href: https://www.instagram.com/routevn
@@ -92,10 +88,6 @@ socialPage:
       handle: "@routevn"
       href: https://www.tiktok.com/@routevn
       svg: tiktok
-    - name: Tumblr
-      handle: "routevn"
-      href: https://www.tumblr.com/routevn
-      svg: tumblr
     - name: YouTube
       handle: "@routevn"
       href: https://www.youtube.com/@routevn
@@ -104,6 +96,18 @@ socialPage:
       handle: "r/routevn"
       href: https://www.reddit.com/r/routevn/
       svg: reddit
+    - name: itch.io
+      handle: "routevn.itch.io"
+      href: https://routevn.itch.io/
+      svg: itchio
+    - name: GitHub
+      handle: "RouteVN"
+      href: https://github.com/RouteVN
+      svg: github
+    - name: Tumblr
+      handle: "routevn"
+      href: https://www.tumblr.com/routevn
+      svg: tumblr
     - name: LinkedIn
       handle: "RouteVN"
       href: https://www.linkedin.com/showcase/110652448
