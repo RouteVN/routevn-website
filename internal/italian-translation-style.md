@@ -1,6 +1,6 @@
 # Italian translation style notes
 
-Use this guide for Italian RouteVN website copy, SEO text, UI, and documentation.
+Use this guide for Italian RouteVN website copy, UI, and documentation.
 
 ## Translation source
 
@@ -38,7 +38,7 @@ Use standard Italian and the locale code `it`. Use a regional code such as `it-I
 | Visual novel creation | `creazione di visual novel` | Use `creare una visual novel` for one project. |
 | Creator tool | `strumento per creare visual novel` | Prefer this over `creatore di visual novel`. |
 | Visual novel engine | `motore per visual novel` | Use for RouteVN's technical runtime or architecture. |
-| No coding | `senza programmare` | Use `senza codice` in compact headings or SEO text. |
+| No coding | `senza programmare` | Use `senza codice` in compact headings. |
 | Project | `progetto` | |
 | Story script | `sceneggiatura` | Use for the written story and writing workflow. |
 | Technical script | `script` | Use for code-like files or exact technical concepts. |
@@ -155,24 +155,6 @@ Good product copy:
 - Use `stile ADV` and `stile NVL` for layout presets.
 - Use `modalità ADV` and `modalità NVL` for text-display behavior.
 
-## Links and SEO
-
-When an Italian translation of a target page does not exist, use Italian link labels but point them to the existing English page. Do not create `/it/...` links before the target exists or imply that English documentation is Italian.
-
-Useful SEO phrases:
-
-- `creare visual novel`
-- `programma per creare visual novel`
-- `editor per visual novel`
-- `motore per visual novel`
-- `visual novel senza programmazione`
-- `visual novel senza codice`
-- `software gratuito per visual novel`
-- `storia interattiva`
-- `dialoghi ramificati`
-
-Use `romanzo visivo` only as a secondary discovery phrase.
-
 ## Review checklist
 
 Before publishing, check that:
@@ -185,5 +167,3 @@ Before publishing, check that:
 - Accents, apostrophes, and capitalization are correct.
 - Buttons, cards, and mobile layouts do not clip longer Italian text.
 - Placeholders and technical values are unchanged.
-- Links point to pages that exist.
-- SEO phrases describe features RouteVN actually provides.

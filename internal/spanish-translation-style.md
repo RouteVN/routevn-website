@@ -1,6 +1,6 @@
 # Spanish translation style notes
 
-Use this guide for Spanish RouteVN website copy, SEO text, UI, and documentation.
+Use this guide for Spanish RouteVN website copy, UI, and documentation.
 
 ## Translation source
 
@@ -39,7 +39,7 @@ Use neutral international Spanish and the locale code `es`. Use a regional code 
 | Visual novel creation | `creación de novelas visuales` | Use `crear una novela visual` for one project. |
 | Creator tool | `herramienta para crear novelas visuales` | Prefer this over `creador de novelas visuales`. |
 | Visual novel engine | `motor de novelas visuales` | Use for RouteVN's technical runtime or architecture. |
-| No coding | `sin programar` | Use `sin código` in compact headings or SEO text. |
+| No coding | `sin programar` | Use `sin código` in compact headings. |
 | Project | `proyecto` | |
 | Story script | `guion` | Use for the written story and writing workflow. |
 | Technical script | `script` | Use for code-like files or exact technical concepts. |
@@ -152,22 +152,6 @@ Good product copy:
 - Use `estilo ADV` and `estilo NVL` for layout presets.
 - Use `modo ADV` and `modo NVL` for text-display behavior.
 
-## Links and SEO
-
-When a Spanish translation of a target page does not exist, use Spanish link labels but point them to the existing English page. Do not create `/es/...` links before the target exists or imply that English documentation is Spanish.
-
-Useful SEO phrases:
-
-- `crear novelas visuales`
-- `programa para crear novelas visuales`
-- `editor de novelas visuales`
-- `motor de novelas visuales`
-- `novela visual sin programar`
-- `novela visual sin código`
-- `software gratuito para crear novelas visuales`
-- `historia interactiva`
-- `diálogos ramificados`
-
 ## Review checklist
 
 Before publishing, check that:
@@ -181,4 +165,3 @@ Before publishing, check that:
 - Accents, punctuation, and capitalization are correct.
 - Buttons, cards, and mobile layouts do not clip longer Spanish text.
 - Placeholders and technical values are unchanged.
-- Links point to pages that exist and SEO phrases describe real features.

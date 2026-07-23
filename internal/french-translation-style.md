@@ -1,6 +1,6 @@
 # French translation style notes
 
-Use this guide for French RouteVN website copy, SEO text, UI, and documentation.
+Use this guide for French RouteVN website copy, UI, and documentation.
 
 ## Translation source
 
@@ -39,7 +39,7 @@ Use standard French and the locale code `fr`. Use a regional code such as `fr-FR
 | Visual novel creation | `création de visual novels` | Use `créer un visual novel` for one project. |
 | Creator tool | `outil de création de visual novels` | Prefer this over `créateur de visual novels`. |
 | Visual novel engine | `moteur de visual novel` | Use for RouteVN's technical runtime or architecture. |
-| No coding | `sans coder` | Use `sans code` in compact headings or SEO text. |
+| No coding | `sans coder` | Use `sans code` in compact headings. |
 | Project | `projet` | |
 | Story script | `scénario` | Use for the written story and writing workflow. |
 | Technical script | `script` | Use for code-like files or exact technical concepts. |
@@ -153,24 +153,6 @@ Good product copy:
 - Use `style ADV` and `style NVL` for layout presets.
 - Use `mode ADV` and `mode NVL` for text-display behavior.
 
-## Links and SEO
-
-When a French translation of a target page does not exist, use French link labels but point them to the existing English page. Do not create `/fr/...` links before the target exists or imply that English documentation is French.
-
-Useful SEO phrases:
-
-- `créer un visual novel`
-- `logiciel de création de visual novels`
-- `éditeur de visual novels`
-- `moteur de visual novel`
-- `visual novel sans coder`
-- `visual novel sans code`
-- `outil gratuit pour créer un visual novel`
-- `histoire interactive`
-- `dialogues ramifiés`
-
-Use `roman visuel` only as a secondary discovery phrase.
-
 ## Review checklist
 
 Before publishing, check that:
@@ -184,4 +166,3 @@ Before publishing, check that:
 - Accents, apostrophes, spacing, and capitalization are correct.
 - Buttons, cards, and mobile layouts do not clip longer French text.
 - Placeholders and technical values are unchanged.
-- Links point to pages that exist and SEO phrases describe real features.
