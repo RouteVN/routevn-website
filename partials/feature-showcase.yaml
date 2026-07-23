@@ -11,7 +11,7 @@
                         - $for feature in features:
                             - li:
                                 - rtgl-text:
-                                    - __html: "<strong>${feature.title}</strong>: ${feature.message}"
+                                    - __html: "<strong>${feature.title}</strong>${default(featureSeparator, ': ')}${feature.message}"
             - $if sideImageSrc:
                 - 'rtgl-view md-hide w="180" h="180" br="sm" aria-hidden="true" style="flex: 0 0 180px; overflow: hidden; background-image: url(${sideImageSrc}); background-repeat: no-repeat; background-size: contain; background-position: center;"':
         - $if imgSrc:

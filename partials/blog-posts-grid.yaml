@@ -197,7 +197,7 @@
                 - $if i < 3:
                     - 'a class="rvn-blog-post-card" href="${item.url}"':
                         - 'div class="rvn-blog-post-card-media"':
-                            - 'img src="${default(item.data.thumbnail, ''/public/creator/routevn-demo-250108-thumb.png'')}" alt="${item.data.title} thumbnail"':
+                            - 'img src="${default(item.data.thumbnail, ''/public/creator/routevn-demo-250108-thumb.png'')}" alt="${item.data.title} ${default(thumbnailLabel, ''thumbnail'')}"':
                         - 'div class="rvn-blog-post-card-meta"':
                             - span: ${formatDate(item.data.date, "MMM D, YYYY")}
                             - 'span aria-hidden="true"': /

@@ -237,7 +237,7 @@
             - rtgl-text s="h1" mb="sm": ${title}
             - $if message:
                 - p: ${message}
-        - 'div class="rvn-made-with-track" aria-label="Made with RouteVN Creator projects"':
+        - 'div class="rvn-made-with-track" aria-label="${default(trackLabel, ''Made with RouteVN Creator projects'')}"':
             - $for item in items:
                 - $if item.active:
                     - 'button class="rvn-made-with-card is-active" type="button" data-rvn-made-with-card="${item.id}" aria-pressed="true"':
@@ -259,23 +259,27 @@
                                     - $if item.videoSrc:
                                         - video src="${item.videoSrc}" autoplay loop muted playsinline:
                                       $else:
-                                        - img src="${item.imgSrc}" alt="${item.title} screenshot":
+                                        - 'img src="${item.imgSrc}" alt="${item.title} ${default(screenshotLabel, ''screenshot'')}"':
                               $else:
                                 - $if item.videoSrc:
                                     - video src="${item.videoSrc}" autoplay loop muted playsinline:
                                   $else:
-                                    - img src="${item.imgSrc}" alt="${item.title} screenshot":
+                                    - 'img src="${item.imgSrc}" alt="${item.title} ${default(screenshotLabel, ''screenshot'')}"':
                         - 'div class="rvn-made-with-copy"':
                             - 'h3 class="rvn-made-with-heading"': ${item.title}
                             - 'p class="rvn-made-with-author"':
                                 - $if item.authorAvatarSrc:
                                     - $if item.authorHref:
-                                        - 'a class="rvn-made-with-author-avatar-link" href="${item.authorHref}" target="_blank" rel="noreferrer" aria-label="Visit ${item.author} profile"':
-                                            - 'img class="rvn-made-with-author-avatar" src="${item.authorAvatarSrc}" alt=""':
+                                        - $if item.authorProfileLabel:
+                                            - 'a class="rvn-made-with-author-avatar-link" href="${item.authorHref}" target="_blank" rel="noreferrer" aria-label="${item.authorProfileLabel}"':
+                                                - 'img class="rvn-made-with-author-avatar" src="${item.authorAvatarSrc}" alt=""':
+                                          $else:
+                                            - 'a class="rvn-made-with-author-avatar-link" href="${item.authorHref}" target="_blank" rel="noreferrer" aria-label="Visit ${item.author} profile"':
+                                                - 'img class="rvn-made-with-author-avatar" src="${item.authorAvatarSrc}" alt=""':
                                       $else:
                                         - 'img class="rvn-made-with-author-avatar" src="${item.authorAvatarSrc}" alt=""':
                                 - span:
-                                    - span: 'by '
+                                    - span: '${default(authorLabel, ''by'')} '
                                     - $if item.authorHref:
                                         - 'a href="${item.authorHref}" target="_blank" rel="noreferrer"': ${item.author}
                                       $else:
@@ -291,7 +295,7 @@
                                     - p: ${item.testimonial}
                                     - $if item.testimonialHref:
                                         - 'footer class="rvn-made-with-quote-source"':
-                                            - 'a href="${item.testimonialHref}" target="_blank" rel="noreferrer"': Original post
+                                            - 'a href="${item.testimonialHref}" target="_blank" rel="noreferrer"': ${default(originalPostLabel, "Original post")}
                   $else:
                     - 'article class="rvn-made-with-panel" data-rvn-made-with-panel="${item.id}" aria-hidden="true"':
                         - 'div class="rvn-made-with-media"':
@@ -300,23 +304,27 @@
                                     - $if item.videoSrc:
                                         - video src="${item.videoSrc}" autoplay loop muted playsinline:
                                       $else:
-                                        - img src="${item.imgSrc}" alt="${item.title} screenshot":
+                                        - 'img src="${item.imgSrc}" alt="${item.title} ${default(screenshotLabel, ''screenshot'')}"':
                               $else:
                                 - $if item.videoSrc:
                                     - video src="${item.videoSrc}" autoplay loop muted playsinline:
                                   $else:
-                                    - img src="${item.imgSrc}" alt="${item.title} screenshot":
+                                    - 'img src="${item.imgSrc}" alt="${item.title} ${default(screenshotLabel, ''screenshot'')}"':
                         - 'div class="rvn-made-with-copy"':
                             - 'h3 class="rvn-made-with-heading"': ${item.title}
                             - 'p class="rvn-made-with-author"':
                                 - $if item.authorAvatarSrc:
                                     - $if item.authorHref:
-                                        - 'a class="rvn-made-with-author-avatar-link" href="${item.authorHref}" target="_blank" rel="noreferrer" aria-label="Visit ${item.author} profile"':
-                                            - 'img class="rvn-made-with-author-avatar" src="${item.authorAvatarSrc}" alt=""':
+                                        - $if item.authorProfileLabel:
+                                            - 'a class="rvn-made-with-author-avatar-link" href="${item.authorHref}" target="_blank" rel="noreferrer" aria-label="${item.authorProfileLabel}"':
+                                                - 'img class="rvn-made-with-author-avatar" src="${item.authorAvatarSrc}" alt=""':
+                                          $else:
+                                            - 'a class="rvn-made-with-author-avatar-link" href="${item.authorHref}" target="_blank" rel="noreferrer" aria-label="Visit ${item.author} profile"':
+                                                - 'img class="rvn-made-with-author-avatar" src="${item.authorAvatarSrc}" alt=""':
                                       $else:
                                         - 'img class="rvn-made-with-author-avatar" src="${item.authorAvatarSrc}" alt=""':
                                 - span:
-                                    - span: 'by '
+                                    - span: '${default(authorLabel, ''by'')} '
                                     - $if item.authorHref:
                                         - 'a href="${item.authorHref}" target="_blank" rel="noreferrer"': ${item.author}
                                       $else:
@@ -332,7 +340,7 @@
                                     - p: ${item.testimonial}
                                     - $if item.testimonialHref:
                                         - 'footer class="rvn-made-with-quote-source"':
-                                            - 'a href="${item.testimonialHref}" target="_blank" rel="noreferrer"': Original post
+                                            - 'a href="${item.testimonialHref}" target="_blank" rel="noreferrer"': ${default(originalPostLabel, "Original post")}
 - script: |
     (() => {
       document.querySelectorAll(".rvn-made-with").forEach((section) => {
