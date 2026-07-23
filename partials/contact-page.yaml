@@ -5,4 +5,6 @@
     - 'rtgl-text s="lg" ta="c" style="max-width: 640px;"': ${intro}
     - 'rtgl-text ta="c" style="max-width: 640px;"': ${message}
     - 'rtgl-button href="${formHref}" new-tab': ${buttonLabel}
+    - 'rtgl-text s="sm" c="mu" ta="c" style="max-width: 640px;"':
+        - __html: "${socialMessageHtml}"
 - rtgl-view h="48":
