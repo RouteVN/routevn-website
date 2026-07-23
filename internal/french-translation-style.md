@@ -8,6 +8,7 @@ The current English RouteVN content and actual app behavior are the source of tr
 
 - Translate directly from English.
 - Use other locales only as inspiration, never as the translation source.
+- When researching terminology, check both visual novel tools and narrative design tools in French. Use them only as references.
 - Resolve differences against English and verify app labels or behavior.
 
 ## Goal
@@ -80,7 +81,8 @@ Use standard French and the locale code `fr`. Use a regional code such as `fr-FR
 | General written content | `texte` | Use when dialogue and narration do not need to be distinguished. |
 | Choice | `choix` | |
 | Branching story | `récit à embranchements` | Use `dialogue ramifié` for dialogue. |
-| Branch | `embranchement` | Use for one branch in a graph or story. |
+| Branch | `branche narrative` | Use for one path through the story. |
+| Branch point | `embranchement` | Use for a point where the story splits. |
 | Route | `parcours narratif` | Prefer over the English loan word in general copy. |
 | Ending | `fin` | |
 | Scene Map | `carte des scènes` | Explain it as the `flux narratif` when useful. |

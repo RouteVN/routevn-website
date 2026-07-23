@@ -8,6 +8,7 @@ The current English RouteVN content and actual app behavior are the source of tr
 
 - Translate directly from English.
 - Use other locales only as inspiration, never as the translation source.
+- When researching terminology, check both visual novel tools and narrative design tools in Italian. Use them only as references.
 - Resolve differences against English and verify app labels or behavior.
 
 ## Goal
@@ -78,8 +79,9 @@ Use standard Italian and the locale code `it`. Use a regional code such as `it-I
 | Narration | `narrazione` | |
 | General written content | `testo` | Use when dialogue and narration do not need to be distinguished. |
 | Choice | `scelta` | |
-| Branching story | `storia ramificata` | Use `dialogo ramificato` for dialogue. |
-| Branch | `diramazione` | Use for one branch in a graph or story. |
+| Branching story | `storia a bivi` | Use `dialogo ramificato` for dialogue. |
+| Branch | `ramo narrativo` | Use for one path through the story. |
+| Branch point | `bivio` | Use for a point where the story splits. |
 | Route | `percorso narrativo` | Never use `rotta`. |
 | Ending | `finale` | |
 | Scene Map | `mappa delle scene` | Explain it as the `flusso narrativo` when useful. |
@@ -134,7 +136,7 @@ Preferred marketing labels:
 | Asset Manager | `Gestione delle risorse` |
 | Layout Editor | `Editor del layout` |
 | Scene Map | `Mappa delle scene` |
-| Choices and Branching | `Scelte e diramazioni` |
+| Choices and Branching | `Scelte e bivi` |
 | Publishing | `Pubblica sul web` |
 
 Good product copy:
@@ -142,7 +144,7 @@ Good product copy:
 - `RouteVN Creator è un'applicazione gratuita e open source per creare visual novel senza programmare.`
 - `Modifica il testo o un effetto e controlla subito il risultato nell'anteprima.`
 - `Organizza sfondi, sprite dei personaggi e audio in un unico progetto.`
-- `Collega le scelte a scene diverse per creare una storia ramificata.`
+- `Collega le scelte a scene diverse per creare una storia a bivi.`
 - `Esporta la versione web e pubblicala online.`
 
 ## Visual novel UI

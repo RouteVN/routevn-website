@@ -8,6 +8,7 @@ The current English RouteVN content and actual app behavior are the source of tr
 
 - Translate directly from English.
 - Use other locales only as inspiration, never as the translation source.
+- When researching terminology, check both visual novel tools and narrative design tools in Spanish. Use them only as references.
 - Resolve differences against English and verify app labels or behavior.
 
 ## Goal
@@ -80,7 +81,8 @@ Use neutral international Spanish and the locale code `es`. Use a regional code 
 | General written content | `texto` | Use when dialogue and narration do not need to be distinguished. |
 | Choice | `opción` | Use `elección` for the act or consequence of choosing. |
 | Branching story | `historia ramificada` | Use `diálogo ramificado` for dialogue. |
-| Branch | `ramificación` | Use for one branch in a graph or story. |
+| Branch | `rama narrativa` | Use for one path through the story. |
+| Branch point | `bifurcación` | Use for a point where the story splits. |
 | Route | `ruta narrativa` | Use `ruta del personaje` for a character route. |
 | Ending | `final` | |
 | Scene Map | `mapa de escenas` | Explain it as the `flujo narrativo` when useful. |

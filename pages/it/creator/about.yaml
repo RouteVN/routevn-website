@@ -132,10 +132,10 @@ seo:
       imgSrc: /public/creator/docs/reference/images-2.png
       href: /en/creator/docs/images/
     - title: Mappa delle scene
-      message: Visualizza la struttura della tua visual novel e segui facilmente le scene con diramazioni.
+      message: Visualizza la struttura della tua visual novel e segui facilmente i diversi percorsi narrativi.
       imgSrc: /public/creator/ss-7.png
       href: /en/creator/docs/scene-map/
-    - title: Scelte e diramazioni
+    - title: Scelte e bivi
       message: Aggiungi scelte e collegale alla parte successiva della storia.
       imgSrc: /public/creator/docs/reference/choices-1.png
       href: /en/creator/docs/line-actions/choices/

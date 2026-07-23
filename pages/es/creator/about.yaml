@@ -132,7 +132,7 @@ seo:
       imgSrc: /public/creator/docs/reference/images-2.png
       href: /en/creator/docs/images/
     - title: Mapa de escenas
-      message: Consulta la estructura de tu novela visual y sigue fácilmente las escenas ramificadas.
+      message: Consulta la estructura de tu novela visual y sigue fácilmente las distintas rutas narrativas.
       imgSrc: /public/creator/ss-7.png
       href: /en/creator/docs/scene-map/
     - title: Opciones y ramificaciones

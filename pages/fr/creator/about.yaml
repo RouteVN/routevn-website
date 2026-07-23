@@ -133,7 +133,7 @@ seo:
       imgSrc: /public/creator/docs/reference/images-2.png
       href: /en/creator/docs/images/
     - title: Carte des scènes
-      message: Visualisez la structure de votre visual novel et suivez facilement les scènes à embranchements.
+      message: Visualisez la structure de votre visual novel et suivez facilement les différents parcours narratifs.
       imgSrc: /public/creator/ss-7.png
       href: /en/creator/docs/scene-map/
     - title: Choix et embranchements
