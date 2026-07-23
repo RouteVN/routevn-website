@@ -181,4 +181,4 @@
                         - 'h3 class="rvn-functionality-card-title"': ${item.title}
                         - 'p class="rvn-functionality-card-message"': ${item.message}
                     - 'div class="rvn-functionality-card-media"':
-                        - img src="${item.imgSrc}" alt="${item.title} screenshot":
+                        - 'img src="${item.imgSrc}" alt="${item.title} ${default(screenshotLabel, ''screenshot'')}"':

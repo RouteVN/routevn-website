@@ -1,0 +1,203 @@
+---
+template: creator
+lang: it
+title: RouteVN Creator - Crea visual novel senza programmare
+locale: it
+canonical: https://routevn.com/it/creator/about/
+footerSpacerHeight: 18vh
+seo:
+  title: RouteVN Creator - Crea visual novel senza programmare
+  description: Applicazione gratuita e open source per creare visual novel senza programmare, con anteprima in tempo reale, gestione delle risorse ed editor del layout.
+  keywords: creare visual novel, programma per creare visual novel, editor per visual novel, visual novel senza codice, motore per visual novel, RouteVN Creator
+  ogImage: https://routevn.com/public/images/routevn-illustration-og.png
+  ogImageWidth: 1200
+  ogImageHeight: 630
+  ogImageAlt: Anteprima di RouteVN Creator con Makkuro e strumenti di creazione.
+  ogImageType: image/png
+---
+- $partial: cursor-sparkles
+
+- $partial: hero1
+  title: Bring your Visual Novel to Life
+  subtitle: RouteVN Creator è un’applicazione gratuita e open source per creare visual novel senza programmare
+  subtitleHtml: 'RouteVN Creator è un’applicazione gratuita e <a href="https://github.com/RouteVN/routevn-creator-client" target="_blank" rel="noreferrer">open source</a> per creare visual novel senza programmare'
+  backgroundImageSrc: /public/creator/chibi-hi.png
+  backgroundImageAlt: Personaggio chibi che saluta.
+  videoSrc: /public/creator/0621_merged.mp4
+  videoLabel: Video di presentazione di RouteVN Creator
+
+- style: |
+    rtgl-view.rvn-creator-hero[w="f"] {
+      box-sizing: border-box;
+      max-width: 1200px !important;
+      padding-left: 0 !important;
+      padding-right: 0 !important;
+      width: 1200px !important;
+    }
+
+    .rvn-about-live-editor-section > rtgl-view[w="1200"] {
+      box-sizing: border-box;
+      max-width: 1200px;
+      width: 1200px !important;
+    }
+
+    @media (min-width: 761px) {
+      rtgl-view.rvn-creator-hero[w="f"] .rvn-creator-hero-chibi {
+        left: 0;
+      }
+    }
+
+    @media (max-width: 1280px) {
+      rtgl-view.rvn-creator-hero[w="f"],
+      .rvn-about-live-editor-section > rtgl-view[w="1200"] {
+        max-width: calc(100vw - 64px) !important;
+        width: calc(100vw - 64px) !important;
+      }
+    }
+
+    @media (max-width: 760px) {
+      rtgl-view.rvn-creator-hero[w="f"],
+      .rvn-about-live-editor-section > rtgl-view[w="1200"] {
+        max-width: calc(100vw - 48px) !important;
+        width: calc(100vw - 48px) !important;
+      }
+    }
+
+- $partial: feature-showcase
+  title: Anteprima in tempo reale
+  message: Controlla subito le modifiche
+  backgroundColor: "#141414"
+  foregroundColor: var(--foreground)
+  themeClass: dark rvn-about-live-editor-section
+  features:
+    - title: Anteprima in tempo reale
+      message: Controlla con precisione le modifiche mentre scrivi e passi da una riga all’altra.
+    - title: Pensato per chi scrive e disegna
+      message: Inizia subito a creare, senza conoscenze tecniche.
+  sideImageSrc: /public/landing/object-2.png
+  videoSrc: /public/creator/about-live-editor.mp4
+  learnMoreHref: /en/creator/docs/scene-editor/
+  learnMoreLabel: Scopri di più (in inglese)
+
+- $partial: made-with-carousel
+  title: Creazioni realizzate con RouteVN
+  message: Le testimonianze sono riportate nella lingua originale.
+  trackLabel: Progetti creati con RouteVN Creator
+  authorLabel: di
+  screenshotLabel: — schermata
+  originalPostLabel: Post originale
+  items:
+    - id: dialune
+      active: true
+      title: DiaLune
+      author: sqewree
+      authorAvatarSrc: /public/images/creators/sqewree-avatar.jpg
+      authorHref: https://sqewree.carrd.co/
+      authorProfileLabel: Visita il profilo di sqewree
+      imgSrc: /public/blog/2026/09/dialune.png
+      href: https://sqewree.itch.io/dialune-demo
+      vndbHref: https://vndb.org/v66547
+      description: In una giornata che sembrava destinata a non avere nulla di speciale, trovi Lune, una ragazza sdraiata sull’erba proprio sotto casa tua. L’incontro si rivela molto più strano del previsto e, da quel momento, i vostri destini si intrecciano mentre attraversate insieme mondi diversi attraverso la morte.
+      testimonial: |
+        i loved making my visual novel on @routevn! it was very easy and i was incredibly happy to put out a project i've been passionate about but unable to realize for a long time! do try it out if you're not a coder but you love to write stories :)
+      testimonialHref: https://x.com/sqewree/status/2070518071190770047
+    - id: two-straws
+      title: Two Straws
+      author: BunniBambii
+      authorAvatarSrc: https://pbs.twimg.com/profile_images/2050152862320349185/IDdbzNA-_400x400.jpg
+      authorHref: https://x.com/bunnibambii
+      authorProfileLabel: Visita il profilo di BunniBambii
+      imgSrc: https://img.itch.zone/aW1nLzI4MDg1MjUxLnBuZw==/original/JiUsWy.png
+      href: https://pararinn.itch.io/twostrawscruisinforaconnection
+      vndbHref: https://vndb.org/v66544
+      description: "Doveva essere solo un pranzo. Sul serio. Va bene. Per una volta mangerò fuori… THE DINER, scritto a grandi lettere rosse al neon: dev’essere il posto di cui parlava Dave. E COME HA FATTO LA MIA PAUSA PRANZO A TRASFORMARSI IN UNA STORIA D’AMORE?!"
+      testimonial: |
+        IF U GUYS WANNA MAKE VNs BUT THE CODING PART IS DIFFICULT FOR U
+
+        TRY OUT ROUTEVN YALL!!!
+      testimonialHref: https://x.com/bunnibambii/status/2050891935146250283
+
+- $partial: functionality-grid
+  title: Tutto ciò che ti serve per la tua visual novel
+  message: Studiamo le funzioni più comuni delle visual novel e le integriamo in modo semplice da usare. I link di questa sezione aprono la documentazione in inglese.
+  sideImageSrc: /public/landing/object-4.png
+  screenshotLabel: — schermata
+  items:
+    - title: Editor del layout
+      message: Personalizza completamente l’interfaccia della tua visual novel.
+      imgSrc: /public/creator/docs/reference/layout-editor-2.png
+      href: /en/creator/docs/layouts/
+    - title: Gestione delle risorse
+      message: Organizza immagini, audio, personaggi e file del progetto in un unico spazio di lavoro.
+      imgSrc: /public/creator/docs/reference/images-2.png
+      href: /en/creator/docs/images/
+    - title: Mappa delle scene
+      message: Visualizza la struttura della tua visual novel e segui facilmente i diversi percorsi narrativi.
+      imgSrc: /public/creator/ss-7.png
+      href: /en/creator/docs/scene-map/
+    - title: Scelte e bivi
+      message: Aggiungi scelte e collegale alla parte successiva della storia.
+      imgSrc: /public/creator/docs/reference/choices-1.png
+      href: /en/creator/docs/line-actions/choices/
+    - title: Pubblica sul web
+      message: Esporta il progetto e preparalo per condividerlo sul web.
+      imgSrc: /public/images/routevn_og.png
+      href: /en/creator/docs/publish/
+
+- style: |
+    .rvn-about-faq-shell {
+      box-sizing: border-box;
+      width: min(1200px, 100%);
+    }
+
+    @media (max-width: 1280px) {
+      .rvn-about-faq-shell {
+        max-width: none;
+        width: calc(100% - 32px);
+      }
+    }
+
+    @media (max-width: 760px) {
+      .rvn-about-faq-shell {
+        width: calc(100% - 16px);
+      }
+    }
+
+- $partial: blog-posts-grid
+  title: Ultimi articoli del blog di RouteVN
+  message: Segui gli aggiornamenti, le note di versione e il dietro le quinte dello sviluppo di RouteVN. Gli articoli sono attualmente disponibili in inglese.
+  sideImageSrc: /public/landing/object-1.png
+  thumbnailLabel: — anteprima
+  ctaLabel: Vedi gli articoli in inglese
+  ctaHref: /en/blog/
+
+- rtgl-view h="100":
+- 'rtgl-view class="rvn-about-faq-shell" ah="c"':
+    - rtgl-view d="h" md-d="v" w="f" av="c" g="lg" mb="lg":
+        - rtgl-view w="1fg" md-w="f":
+            - rtgl-text s="h4": Domande frequenti
+        - 'rtgl-view md-hide w="140" h="140" aria-hidden="true" style="flex: 0 0 140px;"':
+            - 'img src="/public/landing/object-3.png" alt="" style="display: block; height: 100%; object-fit: contain; width: 100%;"':
+    - rtgl-view g="lg" d="v" w="f":
+        - rtgl-accordion-item w=f label="Che cosa distingue RouteVN Creator dagli altri motori per visual novel?" content="Non servono programmazione né conoscenze tecniche. RouteVN Creator permette a chi scrive, disegna o crea per passione di realizzare la propria visual novel. È facile da usare fin dall’inizio e mantiene il progetto organizzato man mano che cresce.":
+        - rtgl-accordion-item w=f label="RouteVN Creator resterà sempre gratuito?" content="Sì. Sarà sempre disponibile una versione gratuita e open source. In futuro potremmo aggiungere funzionalità a pagamento, ma saranno facoltative e non limiteranno la versione gratuita.":
+        - rtgl-accordion-item w=f label="Come posso esportare la mia visual novel?" content="Al momento puoi esportare il progetto come versione web, composta da file HTML e JavaScript. Prevediamo di supportare presto le principali piattaforme, tra cui Windows, macOS, Linux, Android e iOS.":
+        - rtgl-accordion-item w=f label="Ci sono limitazioni sui contenuti?" content="RouteVN Creator è solo uno strumento. Puoi creare ciò che vuoi. L’applicazione funziona offline, quindi non possiamo sapere che cosa crei.":
+        - rtgl-accordion-item w=f label="Quali sono i limiti di RouteVN Creator?" content="RouteVN Creator è adatto soprattutto a visual novel relativamente semplici, senza meccaniche di gioco complesse. Potrebbe non essere adatto se il progetto richiede meccaniche personalizzate o funzionalità avanzate poco comuni nelle visual novel.":
+
+- rtgl-view h="100":
+- $partial: cta1
+  title: Bring your Visual Novel to Life
+  subtitle: Scarica RouteVN Creator e inizia a creare
+  imgSrc: /public/images/routevn-icon.png
+  cta:
+    label: Documentazione in inglese
+    href: /en/creator/docs/introduction/
+    variant: se
+  secondaryCta:
+    label: Scarica
+    href: /en/creator/download/
+    variant: pr
+
+- 'rtgl-view ah="c" w="f" style="margin-top: 12vh;"':
+    - 'img src="/public/creator/chibi-thank-you.png" alt="Personaggio chibi che ringrazia." style="display: block; height: auto; max-width: min(256px, calc(100vw - 32px)); width: 100%;"':
