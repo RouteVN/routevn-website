@@ -64,7 +64,7 @@ Use standard Italian and the locale code `it`. Use a regional code such as `it-I
 | Font | `font` | Prefer over `carattere tipografico` in UI copy. |
 | Writing system | `sistema di scrittura` | Use for Latin, Cyrillic, Japanese, and similar font metadata. |
 | Text style | `stile del testo` | |
-| Spritesheet | `foglio sprite` | Add `spritesheet` when matching an English UI or file term. |
+| Spritesheet | `spritesheet` | Keep the English term. |
 
 ### Story and editor
 
