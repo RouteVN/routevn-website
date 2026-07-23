@@ -19,8 +19,8 @@
                 - $partial: navbar1
                   title: ${site.navbar.title}
                   secondaryCta:
-                    label: Docs
-                    href: /en/creator/docs/introduction/
+                    label: ${default(docsLabel, 'Docs')}
+                    href: ${default(docsHref, '/en/creator/docs/introduction/')}
                   cta:
-                    label: Download
-                    href: /en/creator/download/
+                    label: ${default(downloadLabel, 'Download')}
+                    href: ${default(downloadHref, '/en/creator/download/')}

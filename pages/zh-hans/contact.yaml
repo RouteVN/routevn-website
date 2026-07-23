@@ -1,0 +1,17 @@
+---
+template: base
+lang: zh-Hans
+locale: zh-Hans
+title: 联系 RouteVN
+footerSpacerHeight: 20vh
+seo:
+  title: 联系 RouteVN
+  description: 联系 RouteVN，提出问题、分享反馈、寻求支持、报告 Bug，或洽谈商务与项目合作。
+---
+- $partial: contact-page
+  title: 联系 RouteVN
+  intro: 欢迎随时联系我们。
+  message: 我们乐意解答问题、听取反馈并提供支持，也欢迎报告 Bug，洽谈商务与项目合作。
+  buttonLabel: 联系我们
+  formHref: https://tally.so/r/wzZ7rM
+  imageAlt: Makkuro 正在挥手问候。

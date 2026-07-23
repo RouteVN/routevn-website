@@ -1,0 +1,15 @@
+---
+template: base
+title: Contact RouteVN
+footerSpacerHeight: 20vh
+seo:
+  title: Contact RouteVN
+  description: Contact RouteVN with questions, feedback, support requests, bug reports, partnerships, or collaboration opportunities.
+---
+- $partial: contact-page
+  title: Contact RouteVN
+  intro: We’re always open to hearing from you.
+  message: We’re happy to help with questions, feedback, support requests, and bug reports, or discuss partnership and collaboration opportunities.
+  buttonLabel: Contact us
+  formHref: https://tally.so/r/wzZ7rM
+  imageAlt: Makkuro waving hello.

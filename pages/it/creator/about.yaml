@@ -5,6 +5,10 @@ title: RouteVN Creator - Crea visual novel senza programmare
 locale: it
 canonical: https://routevn.com/it/creator/about/
 footerSpacerHeight: 18vh
+docsLabel: Documentazione
+docsHref: /en/creator/docs/introduction/
+downloadLabel: Scarica
+downloadHref: /it/creator/download/
 seo:
   title: RouteVN Creator - Crea visual novel senza programmare
   description: Applicazione gratuita e open source per creare visual novel senza programmare, con anteprima in tempo reale, gestione delle risorse ed editor del layout.
@@ -196,7 +200,7 @@ seo:
     variant: se
   secondaryCta:
     label: Scarica
-    href: /en/creator/download/
+    href: /it/creator/download/
     variant: pr
 
 - 'rtgl-view ah="c" w="f" style="margin-top: 12vh;"':

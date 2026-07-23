@@ -5,6 +5,10 @@ title: RouteVN Creator - プログラミングなしでノベルゲームを制�
 locale: ja
 canonical: https://routevn.com/ja/creator/about/
 footerSpacerHeight: 18vh
+docsLabel: ドキュメント
+docsHref: /en/creator/docs/introduction/
+downloadLabel: ダウンロード
+downloadHref: /ja/creator/download/
 seo:
   title: RouteVN Creator - プログラミングなしでノベルゲームを制作
   description: プログラミング不要でノベルゲームを制作できる無料・オープンソースの制作ツールです。リアルタイムプレビュー、素材管理、レイアウト編集まで、制作に必要な作業をひとつにまとめています。
@@ -155,7 +159,7 @@ seo:
     variant: se
   secondaryCta:
     label: ダウンロード
-    href: /en/creator/download/
+    href: /ja/creator/download/
     variant: pr
 
 - 'rtgl-view ah="c" w="f" style="margin-top: 12vh;"':
