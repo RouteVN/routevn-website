@@ -72,46 +72,57 @@ socialPage:
       handle: "RouteVN"
       href: https://discord.gg/8J9dyZSu9C
       svg: discord
+      iconColor: "#5865F2"
     - name: Bluesky
       handle: "@routevn.bsky.social"
       href: https://bsky.app/profile/routevn.bsky.social
-      svg: bluesky
+      svg: social-bluesky
+      iconColor: "#0560FF"
     - name: X/Twitter
       handle: "@routevn"
       href: https://x.com/routevn
-      svg: x
+      svg: social-x
+      iconColor: "#FFFFFF"
     - name: Instagram
       handle: "@routevn"
       href: https://www.instagram.com/routevn
       svg: instagram
+      iconColor: "#FF0069"
     - name: TikTok
       handle: "@routevn"
       href: https://www.tiktok.com/@routevn
       svg: tiktok
+      iconColor: "#FFFFFF"
     - name: YouTube
       handle: "@routevn"
       href: https://www.youtube.com/@routevn
       svg: youtube
+      iconColor: "#FF0000"
     - name: Reddit
       handle: "r/routevn"
       href: https://www.reddit.com/r/routevn/
       svg: reddit
+      iconColor: "#FF4500"
     - name: itch.io
       handle: "routevn.itch.io"
       href: https://routevn.itch.io/
       svg: itchio
+      iconColor: "#FA5C5C"
     - name: GitHub
       handle: "RouteVN"
       href: https://github.com/RouteVN
       svg: github
+      iconColor: "#FFFFFF"
     - name: Tumblr
       handle: "routevn"
       href: https://www.tumblr.com/routevn
       svg: tumblr
+      iconColor: "#FFFFFF"
     - name: LinkedIn
       handle: "RouteVN"
       href: https://www.linkedin.com/showcase/110652448
       svg: linkedin
+      iconColor: "#0A66C2"
 
 landing:
   discord:
