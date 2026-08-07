@@ -1,0 +1,29 @@
+- style: |
+    .rvn-youtube-video-card {
+      aspect-ratio: 16 / 9;
+      background: #000;
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      box-shadow: var(--shadow-lg);
+      box-sizing: border-box;
+      margin-top: 12vh;
+      max-width: 1000px;
+      overflow: hidden;
+      position: relative;
+      width: 100%;
+    }
+
+    .rvn-youtube-video-card iframe {
+      border: 0;
+      display: block;
+      height: 100%;
+      inset: 0;
+      position: absolute;
+      width: 100%;
+    }
+
+- 'div class="rvn-youtube-video-card"':
+    - 'iframe src="${embedSrc}" title="${videoTitle}" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen':
+- $if linkHref:
+    - 'rtgl-text s="sm" c="mu" ta="c" mt="lg"':
+        - 'a href="${linkHref}"': ${linkLabel}
