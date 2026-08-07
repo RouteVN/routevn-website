@@ -4,18 +4,59 @@ title: Video Tutorials
 sidebarId: video-tutorials
 ---
 
-Official RouteVN Creator video tutorials are planned for this page.
+Official RouteVN video tutorials.
 
-These tutorials will show practical workflows from the creator of RouteVN, from first projects to more advanced production techniques.
+A link will be shared once each tutorial is ready.
 
-## Planned topics
+## Creator pages
 
-- Getting started with RouteVN Creator.
-- Building scenes with dialogue, choices, and visuals.
-- Organizing images, audio, videos, and characters.
-- Using staging tools to create more memorable scenes.
-- Preparing a project for publishing.
+- Introduction to RouteVN
+- Project Overview
+- Images
+- Audio
+- Videos
+- Characters
+- Character Sprites
+- Transforms
+- Animations
+- Animation Editor
+- Particles
+- Spritesheets
+- Colors
+- Fonts
+- Controls
+- Variables
+- Text Styles
+- Layouts
+- Layout Editor
+- Scene Map
+- Scene Editor
+- Versions
+- Web Server
+- Publish
+- About
+- Appearance
 
-## Languages
+## Scene Editor actions
 
-Tutorials are planned in two languages when available.
+- Dialogue
+- Choices
+- Input
+- Conditional
+- Background
+- BGM
+- Voice
+- Sound Effects
+- Characters
+- Section Transition
+- Reset Story At Section
+- Visuals
+- Base Layout
+- Next Line
+- Set Next Line Config
+- Toggle Auto Mode
+- Toggle Skip Mode
+- Controls
+- Update Variable
+- Push Layered View
+- Pop Layered View
