@@ -203,5 +203,8 @@ seo:
     href: /it/creator/download/
     variant: pr
 
-- 'rtgl-view ah="c" w="f" style="margin-top: 12vh;"':
-    - 'img src="/public/creator/chibi-thank-you.png" alt="Personaggio chibi che ringrazia." style="display: block; height: auto; max-width: min(256px, calc(100vw - 32px)); width: 100%;"':
+- $partial: youtube-video-card
+  embedSrc: https://www.youtube-nocookie.com/embed/kX2XSwo0aEA?rel=0
+  videoTitle: Through the Long Nights - RouteVN promo video
+  linkLabel: Through the Long Nights
+  linkHref: /en/through-the-long-nights/

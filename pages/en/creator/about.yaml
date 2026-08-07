@@ -114,29 +114,6 @@ seo:
       width: min(1200px, 100%);
     }
 
-    .rvn-about-bottom-video {
-      aspect-ratio: 16 / 9;
-      background: #000;
-      border: 1px solid var(--border);
-      border-radius: 16px;
-      box-shadow: var(--shadow-lg);
-      box-sizing: border-box;
-      margin-top: 12vh;
-      max-width: 1000px;
-      overflow: hidden;
-      position: relative;
-      width: 100%;
-    }
-
-    .rvn-about-bottom-video iframe {
-      border: 0;
-      display: block;
-      height: 100%;
-      inset: 0;
-      position: absolute;
-      width: 100%;
-    }
-
     @media (max-width: 1280px) {
       .rvn-about-faq-shell {
         max-width: none;
@@ -177,7 +154,8 @@ seo:
   cta: ${site.creator.about.cta.cta}
   secondaryCta: ${site.creator.about.cta.secondaryCta}
 
-- 'div class="rvn-about-bottom-video"':
-    - 'iframe src="https://www.youtube-nocookie.com/embed/kX2XSwo0aEA?rel=0" title="Through the Long Nights - RouteVN promo video" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen':
-- 'rtgl-text s="sm" c="mu" ta="c" mt="lg"':
-    - 'a href="/en/through-the-long-nights/"': Through the Long Nights
+- $partial: youtube-video-card
+  embedSrc: https://www.youtube-nocookie.com/embed/kX2XSwo0aEA?rel=0
+  videoTitle: Through the Long Nights - RouteVN promo video
+  linkLabel: Through the Long Nights
+  linkHref: /en/through-the-long-nights/
