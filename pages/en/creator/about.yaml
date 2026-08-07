@@ -114,6 +114,29 @@ seo:
       width: min(1200px, 100%);
     }
 
+    .rvn-about-bottom-video {
+      aspect-ratio: 16 / 9;
+      background: #000;
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      box-shadow: var(--shadow-lg);
+      box-sizing: border-box;
+      margin-top: 12vh;
+      max-width: 1000px;
+      overflow: hidden;
+      position: relative;
+      width: 100%;
+    }
+
+    .rvn-about-bottom-video iframe {
+      border: 0;
+      display: block;
+      height: 100%;
+      inset: 0;
+      position: absolute;
+      width: 100%;
+    }
+
     @media (max-width: 1280px) {
       .rvn-about-faq-shell {
         max-width: none;
@@ -154,11 +177,7 @@ seo:
   cta: ${site.creator.about.cta.cta}
   secondaryCta: ${site.creator.about.cta.secondaryCta}
 
-- 'rtgl-view ah="c" w="f" style="margin-top: 12vh;"':
-    - 'img src="/public/creator/chibi-thank-you.png" alt="Chibi character in a thank you pose." style="display: block; height: auto; max-width: min(256px, calc(100vw - 32px)); width: 100%;"':
-
-# Temporarily hidden. Restore this block to show the bottom preview video.
-# - $partial: fullscreen-video
-#   label: ${site.creator.about.bottomVideo.label}
-#   videoSrc: ${site.creator.about.bottomVideo.videoSrc}
-#   posterSrc: ${site.creator.about.bottomVideo.posterSrc}
+- 'div class="rvn-about-bottom-video"':
+    - 'iframe src="https://www.youtube-nocookie.com/embed/kX2XSwo0aEA?rel=0" title="Through the Long Nights - RouteVN promo video" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen':
+- 'rtgl-text s="sm" c="mu" ta="c" mt="lg"':
+    - 'a href="/en/through-the-long-nights/"': Through the Long Nights
