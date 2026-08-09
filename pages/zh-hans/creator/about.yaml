@@ -1,0 +1,202 @@
+---
+template: creator
+lang: zh-Hans
+title: RouteVN Creator - 无需编程，制作视觉小说
+locale: zh-Hans
+canonical: https://routevn.com/zh-hans/creator/about/
+footerSpacerHeight: 18vh
+docsLabel: 文档
+docsHref: /en/creator/docs/introduction/
+downloadLabel: 下载
+downloadHref: /zh-hans/creator/download/
+seo:
+  title: RouteVN Creator - 无需编程，制作视觉小说
+  description: RouteVN Creator 是一款免费、开源的视觉小说制作工具，无需编程即可使用。实时预览、素材管理、布局编辑，快速、直观、可靠。加入 Discord 获取最新消息。
+  keywords: 视觉小说制作, 视觉小说制作工具, 视觉小说引擎, Galgame 引擎, Galgame 制作, 无需编程, 不用写代码, 游戏制作, RouteVN Creator
+  ogImage: https://routevn.com/public/images/routevn-illustration-og.png
+  ogImageWidth: 1200
+  ogImageHeight: 630
+  ogImageAlt: RouteVN Creator 的社交预览图，画面中有 Makkuro 和创作工具。
+  ogImageType: image/png
+---
+- $partial: cursor-sparkles
+
+- $partial: hero1
+  title: 把你的故事做成视觉小说
+  subtitle: RouteVN Creator 是一款免费、开源的视觉小说制作工具，无需编程即可开始创作
+  subtitleHtml: 'RouteVN Creator 是一款免费、<a href="https://github.com/RouteVN/routevn-creator-client" target="_blank" rel="noreferrer">开源</a>的视觉小说制作工具，无需编程即可开始创作'
+  backgroundImageSrc: /public/creator/chibi-hi.png
+  backgroundImageAlt: 挥手的 Q 版角色。
+  videoSrc: /public/creator/0621_merged.mp4
+
+- style: |
+    rtgl-view.rvn-creator-hero[w="f"] {
+      box-sizing: border-box;
+      max-width: 1200px !important;
+      padding-left: 0 !important;
+      padding-right: 0 !important;
+      width: 1200px !important;
+    }
+
+    .rvn-about-live-editor-section > rtgl-view[w="1200"] {
+      box-sizing: border-box;
+      max-width: 1200px;
+      width: 1200px !important;
+    }
+
+    @media (min-width: 761px) {
+      rtgl-view.rvn-creator-hero[w="f"] .rvn-creator-hero-chibi {
+        left: 0;
+      }
+    }
+
+    @media (max-width: 1280px) {
+      rtgl-view.rvn-creator-hero[w="f"],
+      .rvn-about-live-editor-section > rtgl-view[w="1200"] {
+        max-width: calc(100vw - 64px) !important;
+        width: calc(100vw - 64px) !important;
+      }
+    }
+
+    @media (max-width: 760px) {
+      rtgl-view.rvn-creator-hero[w="f"],
+      .rvn-about-live-editor-section > rtgl-view[w="1200"] {
+        max-width: calc(100vw - 48px) !important;
+        width: calc(100vw - 48px) !important;
+      }
+    }
+
+- $partial: feature-showcase
+  title: 实时预览
+  message: 编辑内容，立即查看效果
+  backgroundColor: "#141414"
+  foregroundColor: var(--foreground)
+  themeClass: dark rvn-about-live-editor-section
+  features:
+    - title: 实时预览
+      message: 输入文字和切换台词时，可以立即看到准确的画面变化。
+    - title: 为作者和画师设计
+      message: 不需要技术背景，也可以直接开始制作。
+  sideImageSrc: /public/landing/object-2.png
+  videoSrc: /public/creator/about-live-editor.mp4
+  learnMoreHref: /en/creator/docs/scene-editor/
+  learnMoreLabel: 了解更多
+
+- $partial: made-with-carousel
+  title: 用 RouteVN 制作的作品
+  items: ${site.creator.about.madeWith.items}
+
+# Temporarily hidden. Restore this block to show "Expressive Staging".
+# - $partial: feature-showcase
+#   title: 富有表现力的演出
+#   message: 不只是展示静态图片，而是制作能让读者留下印象的体验。
+#   backgroundColor: "#141414"
+#   foregroundColor: var(--foreground)
+#   themeClass: dark
+#   sideImageSrc: /public/landing/object-5.png
+#   videoSrc: /public/creator/animated-2.mp4
+#   learnMoreHref: /en/creator/docs/animations/
+#   learnMoreLabel: 了解更多
+
+- $partial: functionality-grid
+  title: 视觉小说需要的功能，都在这里
+  message: 我们会研究视觉小说常见的功能，并用你可以直接使用的方式实现它们。
+  sideImageSrc: /public/landing/object-4.png
+  items:
+    - title: 画面布局编辑
+      message: 可以完全自定义视觉小说的 UI。
+      imgSrc: /public/creator/docs/reference/layout-editor-2.png
+      href: /en/creator/docs/layouts/
+    - title: 素材管理
+      message: 在一个工作区中整理图像、音频、角色和项目文件。
+      imgSrc: /public/creator/docs/reference/images-2.png
+      href: /en/creator/docs/images/
+    - title: 场景流程
+      message: 查看视觉小说的整体结构，让分支场景更容易梳理。
+      imgSrc: /public/creator/ss-7.png
+      href: /en/creator/docs/scene-map/
+    - title: 选项与剧情分支
+      message: 添加玩家选项，并连接到故事的下一段。
+      imgSrc: /public/creator/docs/reference/choices-1.png
+      href: /en/creator/docs/line-actions/choices/
+    - title: 发布
+      message: 导出项目，并准备在 Web 上分享。
+      imgSrc: /public/images/routevn_og.png
+      href: /en/creator/docs/publish/
+
+# Temporarily hidden. Restore this block to show "Video tutorials from the creator of RouteVN".
+# - $partial: feature1
+#   title: RouteVN 作者制作的视频教程
+#   message: ""
+#   backgroundColor: "#141414"
+#   foregroundColor: var(--foreground)
+#   themeClass: dark
+#   imgSrc: /public/creator/routevn-demo-250108-thumb.png
+#   features:
+#     - title: 超过 20 个视频教程
+#       message: 用分步课程学习如何在 RouteVN Creator 中制作视觉小说。
+#     - title: 从入门到进阶
+#       message: 覆盖基础功能、制作流程和更多进阶 Creator 功能。
+#     - title: 提供 2 种语言
+#       message: 选择适合自己的语言跟着学习。
+#   learnMoreHref: /en/creator/docs/video-tutorials/
+
+- style: |
+    .rvn-about-faq-shell {
+      box-sizing: border-box;
+      width: min(1200px, 100%);
+    }
+
+    @media (max-width: 1280px) {
+      .rvn-about-faq-shell {
+        max-width: none;
+        width: calc(100% - 32px);
+      }
+    }
+
+    @media (max-width: 760px) {
+      .rvn-about-faq-shell {
+        width: calc(100% - 16px);
+      }
+    }
+
+- $partial: blog-posts-grid
+  title: RouteVN 博客
+  message: 阅读更新、发布说明和开发记录。
+  sideImageSrc: /public/landing/object-1.png
+  ctaLabel: 查看文章
+  ctaHref: /en/blog/
+
+- rtgl-view h="100":
+- 'rtgl-view class="rvn-about-faq-shell" ah="c"':
+    - rtgl-view d="h" md-d="v" w="f" av="c" g="lg" mb="lg":
+        - rtgl-view w="1fg" md-w="f":
+            - rtgl-text s="h4": FAQ
+        - 'rtgl-view md-hide w="140" h="140" aria-hidden="true" style="flex: 0 0 140px;"':
+            - 'img src="/public/landing/object-3.png" alt="" style="display: block; height: 100%; object-fit: contain; width: 100%;"':
+    - rtgl-view g="lg" d="v" w="f":
+        - rtgl-accordion-item w=f label="RouteVN Creator 和其他视觉小说制作工具有什么不同？" content="RouteVN Creator 以无需编程为前提设计。它适合写剧本的人、画立绘的人、个人创作者和小团队快速开始制作。即使素材和场景逐渐变多，项目也更容易整理。":
+        - rtgl-accordion-item w=f label="可以免费使用吗？" content="可以。免费版会继续作为免费、开源工具提供。未来可能会加入付费功能，但不会影响免费版的基本使用。":
+        - rtgl-accordion-item w=f label="作品要怎么发布？" content="目前可以导出 Web 版。导出后会生成 HTML 和 JavaScript 文件，你可以把它发布到网站上。未来计划支持 Windows、macOS、Linux、Android、iOS 等平台。":
+        - rtgl-accordion-item w=f label="可以制作的内容有限制吗？" content="RouteVN Creator 是制作工具。要制作什么内容由创作者自己决定。应用可以离线运行，因此我们不会查看你的创作内容。":
+        - rtgl-accordion-item w=f label="RouteVN Creator 适合制作什么作品？" content="RouteVN Creator 适合以剧本、演出和分支选项为核心的视觉小说。如果你想制作复杂的战斗系统、自定义游戏机制或特殊小游戏，其他游戏引擎可能更适合。":
+
+- rtgl-view h="100":
+- $partial: cta1
+  title: 把你的故事做成视觉小说
+  subtitle: 下载 RouteVN Creator，开始制作你的作品
+  imgSrc: /public/images/routevn-icon.png
+  cta:
+    label: 文档
+    href: /en/creator/docs/introduction/
+    variant: se
+  secondaryCta:
+    label: 下载
+    href: /zh-hans/creator/download/
+    variant: pr
+
+- $partial: youtube-video-card
+  embedSrc: https://www.youtube-nocookie.com/embed/kX2XSwo0aEA?rel=0
+  videoTitle: Through the Long Nights - RouteVN promo video
+  linkLabel: Through the Long Nights
+  linkHref: /en/through-the-long-nights/

@@ -12,8 +12,6 @@ tags: [blogPost]
 date: '2025-02-01'
 ---
 
-## To fulfill the full potential of Visual Novels
-
 A year ago, while searching for a meaningful project to work on, I found myself repeatedly drawn to building a Visual Novel engine. At first, I wasn't sure what form it would take, but through continuous iteration and reflection, the vision became clearer.
 
 What began as a simple engine has since evolved into a much broader exploration of Visual Novel tools, distribution methods, and reading experiences.

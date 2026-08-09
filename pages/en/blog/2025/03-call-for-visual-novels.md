@@ -12,8 +12,6 @@ seo:
   ogType: article
 ---
 
-## Call for Visual Novel Creators
-
 Platforms like Steam and itch.io have become essential in distributing Visual Novels, but they primarily serve the broader gaming market, often leaving VNs as an underserved niche. We believe there is a significant opportunity for a store and community designed *specifically* for, and adapted to the unique nature of Visual Novels. (We delve deeper into this in our [previous article](/en/blog/building-a-visual-novel-store/)).
 
 That's why we're building RouteVN.

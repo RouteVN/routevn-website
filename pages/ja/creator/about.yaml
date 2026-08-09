@@ -4,7 +4,11 @@ lang: ja
 title: RouteVN Creator - プログラミングなしでノベルゲームを制作
 locale: ja
 canonical: https://routevn.com/ja/creator/about/
-disableFooterSpacer: true
+footerSpacerHeight: 18vh
+docsLabel: ドキュメント
+docsHref: /en/creator/docs/introduction/
+downloadLabel: ダウンロード
+downloadHref: /ja/creator/download/
 seo:
   title: RouteVN Creator - プログラミングなしでノベルゲームを制作
   description: プログラミング不要でノベルゲームを制作できる無料・オープンソースの制作ツールです。リアルタイムプレビュー、素材管理、レイアウト編集まで、制作に必要な作業をひとつにまとめています。
@@ -23,8 +27,7 @@ seo:
   subtitleHtml: 'RouteVN Creatorは、プログラミング不要でノベルゲームを制作できる無料・<a href="https://github.com/RouteVN/routevn-creator-client" target="_blank" rel="noreferrer">オープンソース</a>の制作ツールです'
   backgroundImageSrc: /public/creator/chibi-hi.png
   backgroundImageAlt: 手を振っているちびキャラクター。
-  videoSrc: /public/creator/routevn-demo-250108.mp4
-  posterSrc: /public/creator/routevn-demo-250108-thumb.png
+  videoSrc: /public/creator/0621_merged.mp4
 
 - style: |
     rtgl-view.rvn-creator-hero[w="f"] {
@@ -86,7 +89,7 @@ seo:
   items:
     - title: 画面レイアウト編集
       message: タイトル画面や会話画面など、作品に合わせたUIを作れます。
-      imgSrc: /public/creator/ss-5.png
+      imgSrc: /public/creator/docs/reference/layout-editor-2.png
       href: /en/creator/docs/layouts/
     - title: 素材管理
       message: 立ち絵、背景、音声などの素材をプロジェクト内で整理できます。
@@ -98,7 +101,7 @@ seo:
       href: /en/creator/docs/scene-map/
     - title: 選択肢と分岐
       message: 選択肢を作り、分岐先のシーンへつなげられます。
-      imgSrc: /public/images/routevn_og.png
+      imgSrc: /public/creator/docs/reference/choices-1.png
       href: /en/creator/docs/line-actions/choices/
     - title: 公開
       message: 完成したゲームをWeb向けに出力して公開できます。
@@ -156,8 +159,11 @@ seo:
     variant: se
   secondaryCta:
     label: ダウンロード
-    href: /en/creator/download/
+    href: /ja/creator/download/
     variant: pr
 
-- 'rtgl-view ah="c" w="f" style="margin-top: 10vh;"':
-    - 'img src="/public/creator/chibi-thank-you.png" alt="お辞儀しているちびキャラクター。" style="display: block; height: auto; max-width: min(320px, calc(100vw - 32px)); width: 100%;"':
+- $partial: youtube-video-card
+  embedSrc: https://www.youtube-nocookie.com/embed/kX2XSwo0aEA?rel=0
+  videoTitle: Through the Long Nights - RouteVN promo video
+  linkLabel: Through the Long Nights
+  linkHref: /en/through-the-long-nights/

@@ -37,30 +37,33 @@ footer:
     - name: YouTube
       svg: youtube
       href: https://www.youtube.com/@routevn
-    - name: LinkedIn
-      svg: linkedin
-      href: https://www.linkedin.com/showcase/110652448
+    - name: TikTok
+      svg: tiktok
+      href: https://www.tiktok.com/@routevn
   columns:
     - links:
-        # - text: About
-        #   href: /about/
+        - text: RouteVN Creator
+          href: /en/creator/about/
+        - text: Creator Download
+          href: /en/creator/download/
         - text: Creator Docs
           href: /en/creator/docs/introduction/
         - text: Creator Changelog
           href: /en/creator/changelog/
+    - links:
         - text: Blog
           href: /en/blog/
-    - links:
         - text: Hiring
           href: /en/hiring/
         - text: Contact
-          href: https://tally.so/r/wzZ7rM
-          newTab: true
+          href: /en/contact/
     - links:
         - text: Privacy Policy
-          href: /en/agreement/privacy-policy/1-0-0/
+          href: /en/agreement/privacy-policy/
         - text: Terms of Service
-          href: /en/agreement/terms-of-service/1-0-0/
+          href: /en/agreement/terms-of-service/
+        - text: Our AI Practices
+          href: /en/how-routevn-uses-ai/
 
 socialPage:
   title: Follow RouteVN
@@ -69,34 +72,57 @@ socialPage:
       handle: "RouteVN"
       href: https://discord.gg/8J9dyZSu9C
       svg: discord
+      iconColor: "#5865F2"
     - name: Bluesky
       handle: "@routevn.bsky.social"
       href: https://bsky.app/profile/routevn.bsky.social
-      svg: bluesky
+      svg: social-bluesky
+      iconColor: "#0560FF"
     - name: X/Twitter
       handle: "@routevn"
       href: https://x.com/routevn
-      svg: x
-    - name: GitHub
-      handle: "RouteVN"
-      href: https://github.com/RouteVN
-      svg: github
+      svg: social-x
+      iconColor: "#FFFFFF"
     - name: Instagram
       handle: "@routevn"
       href: https://www.instagram.com/routevn
       svg: instagram
+      iconColor: "#FF0069"
+    - name: TikTok
+      handle: "@routevn"
+      href: https://www.tiktok.com/@routevn
+      svg: tiktok
+      iconColor: "#FFFFFF"
     - name: YouTube
       handle: "@routevn"
       href: https://www.youtube.com/@routevn
       svg: youtube
+      iconColor: "#FF0000"
     - name: Reddit
       handle: "r/routevn"
       href: https://www.reddit.com/r/routevn/
       svg: reddit
+      iconColor: "#FF4500"
+    - name: itch.io
+      handle: "routevn.itch.io"
+      href: https://routevn.itch.io/
+      svg: itchio
+      iconColor: "#FA5C5C"
+    - name: GitHub
+      handle: "RouteVN"
+      href: https://github.com/RouteVN
+      svg: github
+      iconColor: "#FFFFFF"
+    - name: Tumblr
+      handle: "routevn"
+      href: https://www.tumblr.com/routevn
+      svg: tumblr
+      iconColor: "#FFFFFF"
     - name: LinkedIn
       handle: "RouteVN"
       href: https://www.linkedin.com/showcase/110652448
       svg: linkedin
+      iconColor: "#0A66C2"
 
 landing:
   discord:
@@ -146,7 +172,7 @@ landing:
 
 creator:
   download:
-    version: "1.5.1"
+    version: "1.11.0"
     title: Download RouteVN Creator
     # subtitle: Get started creating your Visual Novel
     platforms:
@@ -154,15 +180,20 @@ creator:
         svg: windows
         cta:
           label: Download for Windows
-          href: https://static-1.routevn.com/routevn-creator-client/RouteVN%20Creator_1.5.1_x64-setup.exe
+          href: https://static-1.routevn.com/routevn-creator-client/RouteVN%20Creator_1.11.0_x64-setup.exe
       - name: macOS
         svg: apple
         cta:
           label: Download for macOS
-          href: https://static-1.routevn.com/routevn-creator-client/RouteVN%20Creator_1.5.1_universal.dmg
+          href: https://static-1.routevn.com/routevn-creator-client/RouteVN%20Creator_1.11.0_universal.dmg
       - name: Linux (x86_64)
         svg: linux
-        comingSoon: true
+        cta:
+          label: Download for Linux (AppImage)
+          href: https://static-1.routevn.com/routevn-creator-client/linux-x86_64-1.11.0/RouteVN-Creator.AppImage
+        helpLink:
+          label: Installation Guide
+          href: /en/creator/docs/quickstart/#linux
   about:
     hero:
       title: Bring your Visual Novel to Life
@@ -177,7 +208,7 @@ creator:
       foregroundColor: var(--foreground)
       themeClass: dark
       sideImageSrc: /public/landing/object-2.png
-      videoSrc: /public/creator/animated-1.mp4
+      videoSrc: /public/creator/about-live-editor.mp4
       learnMoreHref: /en/creator/docs/scene-editor/
       learnMoreLabel: Learn More
       features:
@@ -217,11 +248,11 @@ creator:
       items:
         - title: Layout Editor
           message: Fully customize your Visual Novel's UI.
-          imgSrc: /public/creator/ss-5.png
+          imgSrc: /public/creator/docs/reference/layout-editor-2.png
           href: /en/creator/docs/layouts/
         - title: Asset Manager
           message: Keep images, audio, characters, and project files organized in one workspace.
-          imgSrc: /public/creator/ss-1.png
+          imgSrc: /public/creator/docs/reference/images-2.png
           href: /en/creator/docs/images/
         - title: Scene Map
           message: See the shape of your visual novel and keep branching scenes easy to follow.
@@ -229,7 +260,7 @@ creator:
           href: /en/creator/docs/scene-map/
         - title: Choices and Branching
           message: Add player choices and connect them to the next part of your story.
-          imgSrc: /public/images/routevn_og.png
+          imgSrc: /public/creator/docs/reference/choices-1.png
           href: /en/creator/docs/line-actions/choices/
         - title: Publishing
           message: Export your project and prepare it for sharing on the web.
@@ -243,37 +274,35 @@ creator:
       ctaHref: /en/blog/
 
     madeWith:
-      title: Made with RouteVN Creator
-      message: Placeholder text for projects made with RouteVN Creator.
+      title: Made with RouteVN
       items:
         - id: dialune
           active: true
           title: DiaLune
           author: sqewree
-          authorAvatarSrc: https://img.itch.zone/aW1nLzI1OTU0Njk4LnBuZw==/80x80%23/19kS2C.png
-          authorHref: https://itch.io/profile/sqewree
+          authorAvatarSrc: /public/images/creators/sqewree-avatar.jpg
+          authorHref: https://sqewree.carrd.co/
           imgSrc: /public/blog/2026/09/dialune.png
           href: https://sqewree.itch.io/dialune-demo
-          vndbHref: https://vndb.org/
-          description: A story-focused fantasy romance demo about meeting Lune, a strange girl found outside your home, and becoming bound to her as you cross worlds through death.
-          testimonial: Creator testimonial coming soon. Creator testimonial coming soon. Creator testimonial coming soon.
+          vndbHref: https://vndb.org/v66547
+          description: "On what was supposed to be an unremarkable day, you find a girl -- Lune, laying in the grass just downstairs from your house. It turns out to be more than a strange encounter and you would since become entangled with her, traversing worlds together through the medium of death."
+          testimonial: |
+            i loved making my visual novel on @routevn! it was very easy and i was incredibly happy to put out a project i've been passionate about but unable to realize for a long time! do try it out if you're not a coder but you love to write stories :)
+          testimonialHref: https://x.com/sqewree/status/2070518071190770047
         - id: two-straws
           title: Two Straws
-          author: pararinn
-          authorAvatarSrc: https://img.itch.zone/aW1nLzE1NzU1MjI0LnBuZw==/80x80%23/LnKlnR.png
-          authorHref: https://itch.io/profile/pararinn
-          imgSrc: /public/blog/2026/09/two-straws.png
+          author: BunniBambii
+          authorAvatarSrc: https://pbs.twimg.com/profile_images/2050152862320349185/IDdbzNA-_400x400.jpg
+          authorHref: https://x.com/bunnibambii
+          imgSrc: https://img.itch.zone/aW1nLzI4MDg1MjUxLnBuZw==/original/JiUsWy.png
           href: https://pararinn.itch.io/twostrawscruisinforaconnection
-          vndbHref: https://vndb.org/
-          description: A lunch break goes wrong, sending you into a retro diner with an indoor rollerblading rink where a simple meal somehow turns into romance.
-          testimonial: Creator testimonial coming soon. Creator testimonial coming soon. Creator testimonial coming soon.
-        - id: makkuro-demo
-          title: Makkuro Demo
-          author: RouteVN
-          imgSrc: /public/creator/routevn-demo-250108-thumb.png
-          vndbHref: https://vndb.org/
-          description: A RouteVN demo project used to showcase Creator workflows.
-          testimonial: Creator testimonial coming soon. Creator testimonial coming soon. Creator testimonial coming soon.
+          vndbHref: https://vndb.org/v66544
+          description: This was supposed to be just lunch (Seriously). Fine. Guess I'll eat out for once... THE DINER in big neon red signage, this must be the place Dave mentioned. AND HOW DID MY LUNCH BREAK TURN INTO ROMANCE!?
+          testimonial: |
+            IF U GUYS WANNA MAKE VNs BUT THE CODING PART IS DIFFICULT FOR U
+
+            TRY OUT ROUTEVN YALL!!!
+          testimonialHref: https://x.com/bunnibambii/status/2050891935146250283
 
     faq:
       title: Frequently Asked Questions

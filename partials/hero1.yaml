@@ -67,9 +67,17 @@
         - rtgl-view h=64:
         - 'rtgl-view cur=p md-h="calc((100vw - 48px) / 1.777)"  md-w="calc(100vw - 48px)" xl-h="calc((100vw - 64px) / 1.777)" xl-w="calc(100vw - 64px)" h="calc(1200px / 1.777)" w="1200" bc="bo" bw="xs" br="xs" shadow="sm" style="border-color: rgba(170, 170, 170, 0.42)"':
             - $if build.isScreenshotMode:
-                - video loop="" poster="${posterSrc}" height="100%" width="100%" aria-label="Video content" draggable="true":
-                    - source src="${videoSrc}" type="video/mp4":
+                - $if posterSrc:
+                    - 'video loop="" poster="${posterSrc}" height="100%" width="100%" aria-label="${default(videoLabel, ''Video content'')}" draggable="true"':
+                        - source src="${videoSrc}" type="video/mp4":
+                  $else:
+                    - 'video loop="" height="100%" width="100%" aria-label="${default(videoLabel, ''Video content'')}" draggable="true"':
+                        - source src="${videoSrc}" type="video/mp4":
               $else:
-                - video autoplay="" loop="" muted="" playsinline="" controls="" poster="${posterSrc}" height="100%" width="100%" aria-label="Video content" draggable="true":
-                    - source src="${videoSrc}" type="video/mp4":
+                - $if posterSrc:
+                    - 'video autoplay="" loop="" muted="" playsinline="" controls="" poster="${posterSrc}" height="100%" width="100%" aria-label="${default(videoLabel, ''Video content'')}" draggable="true"':
+                        - source src="${videoSrc}" type="video/mp4":
+                  $else:
+                    - 'video autoplay="" loop="" muted="" playsinline="" controls="" height="100%" width="100%" aria-label="${default(videoLabel, ''Video content'')}" draggable="true"':
+                        - source src="${videoSrc}" type="video/mp4":
         - rtgl-view h=64:

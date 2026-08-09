@@ -232,6 +232,15 @@ p {
   margin-bottom: 16px;
 }
 
+p > img {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  border: 1px solid var(--border);
+  box-sizing: border-box;
+}
+
 ul {
   margin-top: 0;
   margin-bottom: 16px;

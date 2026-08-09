@@ -13,8 +13,6 @@ seo:
   ogImage: https://routevn.com/public/blog/2025/05/738ngx-avatar.png
 ---
 
-## Contributor Introduction: 738NGX
-
 <img src="/public/blog/2025/05/738ngx-avatar.png" style="width: 200px; border-radius: 50%; margin-bottom: 24px;">
 
 738NGX joined RouteVN as an intern in July 2025 and will finish his intern this week in December. During his time here, he has made significant contributions to RouteVN.

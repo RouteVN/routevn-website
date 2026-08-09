@@ -11,10 +11,9 @@ items:
       - id: quickstart
         title: "Quickstart"
         href: "/en/creator/docs/quickstart"
-      # Temporarily hidden. Restore this block to show "Video Tutorials" in the docs sidebar.
-      # - id: video-tutorials
-      #   title: "Video Tutorials"
-      #   href: "/en/creator/docs/video-tutorials"
+      - id: video-tutorials
+        title: "Video Tutorials"
+        href: "/en/creator/docs/video-tutorials"
       - id: page-index
         title: "Page Index"
         href: "/en/creator/docs/page-index"
@@ -102,6 +101,9 @@ items:
       - id: bgm
         title: "BGM"
         href: "/en/creator/docs/line-actions/bgm"
+      - id: voice
+        title: "Voice"
+        href: "/en/creator/docs/line-actions/voice"
       - id: sound-effects
         title: "Sound Effects"
         href: "/en/creator/docs/line-actions/sfx"

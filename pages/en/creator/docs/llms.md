@@ -49,6 +49,7 @@ Line actions define what happens on each line in the Scene Editor.
 - Choices: /en/creator/docs/line-actions/choices.md
 - Background: /en/creator/docs/line-actions/background.md
 - BGM: /en/creator/docs/line-actions/bgm.md
+- Voice: /en/creator/docs/line-actions/voice.md
 - Sound Effects: /en/creator/docs/line-actions/sfx.md
 - Characters: /en/creator/docs/line-actions/characters.md
 - Visuals: /en/creator/docs/line-actions/visuals.md

@@ -12,8 +12,6 @@ seo:
   ogType: article
 ---
 
-## Contributor Introduction: Nellow
-
 Nellow joined RouteVN as an intern from late 2025 until the end of January 2026. During his time here, he made valuable contributions to RouteVN.
 
 ### About Nellow
