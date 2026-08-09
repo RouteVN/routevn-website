@@ -1,0 +1,18 @@
+---
+template: creator
+title: VN Background 1 - RouteVN Creator Asset Store
+disableFooterSpacer: true
+seo:
+  title: VN Background 1 - RouteVN Creator Asset Store
+  description: Preview VN Background 1 from the Transitions pack.
+---
+- $partial: asset-detail
+  backHref: /en/creator/asset-store/rainy-city-street/
+  assetTitle: VN Background 1
+  assetSubtitle: A visual-novel background preview.
+  imageSrc: /public/creator/asset-store/vn-background-1.png
+  imageAlt: VN Background 1 preview
+  thumbFilter: none
+  description: A finished 16:9 visual-novel background included as a preview image for this pack.
+  usageNote: This preview is provided as a 1920 × 1080 PNG image.
+  assetFormat: PNG

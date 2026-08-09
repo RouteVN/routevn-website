@@ -1,0 +1,18 @@
+---
+template: creator
+title: slide-1s - RouteVN Creator Asset Store
+disableFooterSpacer: true
+seo:
+  title: slide-1s - RouteVN Creator Asset Store
+  description: Preview the slide-1s transition from the Transitions pack.
+---
+- $partial: asset-detail
+  backHref: /en/creator/asset-store/rainy-city-street/
+  assetTitle: slide-1s
+  assetSubtitle: A one-second slide transition.
+  videoSrc: /public/creator/asset-store/slide-1s.webm
+  videoLoopDelayMs: 500
+  thumbFilter: none
+  description: A one-second slide animation for quick, directional scene transitions.
+  usageNote: This transition is provided as a 1920 × 1080 WEBM animation.
+  assetFormat: WEBM

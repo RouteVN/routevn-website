@@ -1,0 +1,18 @@
+---
+template: creator
+title: Split - RouteVN Creator Asset Store
+disableFooterSpacer: true
+seo:
+  title: Split - RouteVN Creator Asset Store
+  description: Preview the Split mask from the Transitions pack.
+---
+- $partial: asset-detail
+  backHref: /en/creator/asset-store/rainy-city-street/
+  assetTitle: Split
+  assetSubtitle: A mask image for a split transition.
+  imageSrc: /public/creator/asset-store/split.png
+  imageAlt: Split mask preview
+  thumbFilter: none
+  description: A 16:9 mask image designed for a split transition.
+  usageNote: This mask is provided as a 1920 × 1080 PNG image.
+  assetFormat: PNG

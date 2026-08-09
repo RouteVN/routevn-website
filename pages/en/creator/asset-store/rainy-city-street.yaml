@@ -1,46 +1,44 @@
 ---
 template: creator
-title: Rainy City Street - RouteVN Creator Asset Store
+title: Transitions - RouteVN Creator Asset Store
 disableFooterSpacer: true
 seo:
-  title: Rainy City Street - RouteVN Creator Asset Store
-  description: Preview a placeholder RouteVN Creator background asset with gallery, description, tags, and author details.
+  title: Transitions - RouteVN Creator Asset Store
+  description: Browse the assets included in the Transitions pack for RouteVN Creator.
 ---
 - style: |
-    .rvn-asset-detail {
-      --rvn-detail-panel: #1f1f1f;
-      --rvn-detail-panel-soft: #252525;
-      --rvn-detail-border: rgba(255, 255, 255, 0.12);
-      --rvn-detail-muted: rgba(255, 255, 255, 0.68);
+    .rvn-pack-page {
+      --rvn-pack-panel: #1f1f1f;
+      --rvn-pack-border: rgba(255, 255, 255, 0.12);
+      --rvn-pack-muted: rgba(255, 255, 255, 0.68);
       box-sizing: border-box;
       display: grid;
       gap: 24px;
-      grid-template-columns: minmax(0, 1fr);
       margin: 56px auto 0;
       max-width: 1200px;
       width: 1200px !important;
     }
 
-    .rvn-asset-detail *,
-    .rvn-asset-detail *::before,
-    .rvn-asset-detail *::after {
+    .rvn-pack-page *,
+    .rvn-pack-page *::before,
+    .rvn-pack-page *::after {
       box-sizing: border-box;
     }
 
-    .rvn-detail-back {
-      color: var(--rvn-detail-muted);
+    .rvn-pack-back {
+      color: var(--rvn-pack-muted);
       font-size: 0.92rem;
       text-decoration: none;
       width: fit-content;
     }
 
-    .rvn-detail-back:hover {
+    .rvn-pack-back:hover {
       color: var(--foreground);
       text-decoration: underline;
       text-underline-offset: 4px;
     }
 
-    .rvn-detail-header {
+    .rvn-pack-header {
       align-items: end;
       display: flex;
       gap: 16px;
@@ -49,7 +47,7 @@ seo:
       width: 100% !important;
     }
 
-    .rvn-detail-title {
+    .rvn-pack-title {
       font-size: 2rem;
       font-weight: 600;
       letter-spacing: 0;
@@ -57,272 +55,496 @@ seo:
       margin: 0;
     }
 
-    .rvn-detail-subtitle,
-    .rvn-detail-muted {
-      color: var(--rvn-detail-muted);
+    .rvn-pack-subtitle,
+    .rvn-pack-muted {
+      color: var(--rvn-pack-muted);
     }
 
-    .rvn-detail-layout {
+    .rvn-pack-subtitle {
+      line-height: 1.5;
+      max-width: none;
+    }
+
+    .rvn-pack-summary {
       align-items: start;
+      background: transparent;
+      border: 0;
+      border-radius: 0;
       display: grid;
       gap: 18px;
       grid-template-columns: minmax(0, 1fr) 280px;
-      min-width: 0;
-      width: 100%;
+      overflow: visible;
+      padding: 0;
     }
 
-    .rvn-detail-main,
-    .rvn-detail-aside,
-    .rvn-detail-description {
-      background: var(--rvn-detail-panel);
-      border: 1px solid var(--rvn-detail-border);
-      border-radius: 8px;
-    }
-
-    .rvn-detail-main {
-      display: grid;
-      gap: 16px;
-      grid-template-columns: minmax(0, 1fr);
-      min-width: 0;
-      padding: 16px;
-    }
-
-    .rvn-detail-preview {
+    .rvn-pack-preview {
       aspect-ratio: 16 / 9;
       background: #111;
-      border: 1px solid var(--rvn-detail-border);
+      border: 1px solid var(--rvn-pack-border);
       border-radius: 8px;
       overflow: hidden;
       width: 100%;
     }
 
-    .rvn-detail-preview-video,
-    .rvn-detail-thumb-video {
+    .rvn-pack-preview-column {
+      align-content: start;
+      display: grid;
+      gap: 10px;
+      min-width: 0;
+      width: 100%;
+    }
+
+    .rvn-pack-preview-video,
+    .rvn-pack-preview-image,
+    .rvn-pack-card-video,
+    .rvn-pack-card-image {
       display: block;
+      filter: saturate(0.95) var(--thumb-filter, none);
       height: 100%;
       object-fit: cover;
+      transform: scale(1.01);
       width: 100%;
     }
 
-    .rvn-detail-preview-video {
-      filter: saturate(0.95);
-      transform: scale(1.01);
-    }
-
-    .rvn-detail-gallery {
+    .rvn-pack-overview {
+      align-self: start;
+      align-content: start;
       display: grid;
-      gap: 10px;
-      min-width: 0;
+      gap: 16px;
+      padding: 0;
+      position: sticky;
+      top: 88px;
+      width: 100% !important;
     }
 
-    .rvn-detail-gallery-strip {
-      display: grid;
-      gap: 10px;
-      grid-auto-columns: minmax(180px, 220px);
-      grid-auto-flow: column;
-      min-width: 0;
-      overflow-x: auto;
-      padding-bottom: 4px;
-      scrollbar-width: thin;
-      width: 100%;
-    }
-
-    .rvn-detail-thumb {
-      aspect-ratio: 16 / 10;
-      background: #111;
-      border: 1px solid var(--rvn-detail-border);
-      border-radius: 6px;
-      overflow: hidden;
-      position: relative;
-    }
-
-    .rvn-detail-thumb.is-active {
-      border-color: rgba(255, 255, 255, 0.54);
-    }
-
-    .rvn-detail-thumb-video {
-      filter: saturate(0.95) var(--thumb-filter, none);
-      transform: scale(1.01);
-    }
-
-    .rvn-detail-description {
-      display: grid;
-      gap: 12px;
-      padding: 16px;
-    }
-
-    .rvn-detail-section-title {
+    .rvn-pack-section-title {
       color: var(--foreground);
       font-size: 1rem;
       font-weight: 600;
-      letter-spacing: 0;
       line-height: 1.3;
       margin: 0;
     }
 
-    .rvn-detail-paragraph {
-      color: var(--rvn-detail-muted);
-      line-height: 1.55;
-      margin: 0;
-    }
-
-    .rvn-detail-aside {
-      display: grid;
-      gap: 16px;
-      padding: 16px;
-      position: sticky;
-      top: 88px;
-    }
-
-    .rvn-detail-meta-list {
+    .rvn-pack-meta-list {
       display: grid;
       gap: 12px;
+      grid-template-columns: 1fr;
+      margin: 0;
+      padding: 0;
+      width: 100% !important;
     }
 
-    .rvn-detail-meta-row {
-      border-top: 1px solid var(--rvn-detail-border);
+    .rvn-pack-meta-item {
+      border-top: 1px solid var(--rvn-pack-border);
       display: grid;
       gap: 4px;
+      min-width: 0;
       padding-top: 12px;
     }
 
-    .rvn-detail-meta-row:first-child {
+    .rvn-pack-meta-item:first-child {
       border-top: 0;
       padding-top: 0;
     }
 
-    .rvn-detail-meta-label {
-      color: var(--rvn-detail-muted);
+    .rvn-pack-meta-label {
+      color: var(--rvn-pack-muted);
       font-size: 0.78rem;
       line-height: 1.2;
     }
 
-    .rvn-detail-meta-value {
+    .rvn-pack-meta-value {
       color: var(--foreground);
-      font-size: 0.94rem;
+      font-size: 0.92rem;
       line-height: 1.3;
+      margin: 0;
     }
 
-    .rvn-detail-chip-row {
+    .rvn-pack-author {
+      align-items: center;
+      color: var(--foreground);
       display: flex;
-      flex-wrap: wrap;
-      gap: 8px;
+      gap: 7px;
+      text-decoration: none;
+      width: fit-content;
     }
 
-    .rvn-detail-chip {
-      background: var(--rvn-detail-panel-soft);
-      border: 1px solid var(--rvn-detail-border);
+    .rvn-pack-author:hover span {
+      text-decoration: underline;
+      text-underline-offset: 3px;
+    }
+
+    .rvn-pack-author-avatar {
       border-radius: 999px;
-      color: var(--rvn-detail-muted);
-      font-size: 0.82rem;
-      line-height: 1;
-      padding: 8px 10px;
-      white-space: nowrap;
+      display: block;
+      height: 22px;
+      object-fit: cover;
+      width: 22px;
     }
 
-    .rvn-detail-actions {
+    .rvn-pack-gallery-panel {
+      background: transparent;
+      border: 0;
+      border-radius: 0;
       display: grid;
-      gap: 8px;
+      gap: 32px;
+      padding: 0;
+    }
+
+    .rvn-pack-asset-section {
+      display: grid;
+      gap: 18px;
+    }
+
+    .rvn-pack-subsection {
+      display: grid;
+      gap: 12px;
+    }
+
+    .rvn-pack-subsection-title {
+      color: var(--rvn-pack-muted);
+      font-size: 0.88rem;
+      font-weight: 500;
+      line-height: 1.3;
+      margin: 0;
+    }
+
+    .rvn-pack-grid {
+      width: 100% !important;
+    }
+
+    .rvn-pack-card {
+      background: transparent;
+      border: 1px solid var(--rvn-pack-border);
+      border-radius: 8px;
+      color: inherit;
+      display: block;
+      min-width: 0;
+      overflow: hidden;
+      text-decoration: none;
+      transition: border-color 120ms ease, transform 120ms ease;
+    }
+
+    .rvn-pack-card:hover {
+      border-color: rgba(255, 255, 255, 0.28);
+      transform: translateY(-1px);
+    }
+
+    .rvn-pack-card:focus-visible {
+      outline: 2px solid var(--ring);
+      outline-offset: 3px;
+    }
+
+    .rvn-pack-card-thumb {
+      aspect-ratio: 16 / 10;
+      background: #111;
+      display: block;
+      overflow: hidden;
+      width: 100%;
+    }
+
+    .rvn-pack-card-body {
+      display: grid;
+      gap: 7px;
+      padding: 12px;
+    }
+
+    .rvn-pack-card-title {
+      color: var(--foreground);
+      font-weight: 400;
+      line-height: 1.25;
+      overflow-wrap: anywhere;
     }
 
     @media (max-width: 1280px) {
-      .rvn-asset-detail {
+      .rvn-pack-page {
         max-width: calc(100vw - 64px);
         width: calc(100vw - 64px) !important;
       }
     }
 
     @media (max-width: 980px) {
-      .rvn-detail-layout {
+      .rvn-pack-summary {
         grid-template-columns: 1fr;
       }
 
-      .rvn-detail-aside {
+      .rvn-pack-overview {
         position: static;
       }
     }
 
     @media (max-width: 760px) {
-      .rvn-asset-detail {
+      .rvn-pack-page {
         max-width: calc(100vw - 48px);
         width: calc(100vw - 48px) !important;
       }
+
     }
 
     @media (max-width: 620px) {
-      .rvn-asset-detail {
+      .rvn-pack-page {
         margin-top: 40px;
       }
 
-      .rvn-detail-header {
+      .rvn-pack-header {
         align-items: start;
         flex-direction: column;
       }
-
-      .rvn-detail-main,
-      .rvn-detail-description,
-      .rvn-detail-aside {
-        padding: 12px;
-      }
     }
 
-- 'rtgl-view class="rvn-asset-detail" g="xl"':
-    - 'a class="rvn-detail-back" href="/en/creator/asset-store/"': Back to Asset Store
-    - 'rtgl-view class="rvn-detail-header" d="h" md-d="v" w="f" av="e" md-av="s" g="lg"':
+- 'main class="rvn-pack-page"':
+    - 'a class="rvn-pack-back" href="/en/creator/asset-store/"': Back
+    - 'header class="rvn-pack-header"':
         - rtgl-view g="md":
-            - rtgl-text class="rvn-detail-title" s="h1": Rainy City Street
-            - rtgl-text class="rvn-detail-subtitle" s="md": Background pack placeholder for RouteVN Creator.
-        - rtgl-view w="1fg" md-hide:
-        - rtgl-button v="se" disabled: Add to project
-    - rtgl-view class="rvn-detail-layout" w="f":
-        - rtgl-view g="lg" w="f":
-            - 'rtgl-view class="rvn-detail-main" role="region" aria-label="Asset gallery"':
-                - rtgl-view class="rvn-detail-preview":
-                    - 'video class="rvn-detail-preview-video" src="/public/creator/asset-store/placeholder-thumbnail.webm" autoplay muted loop playsinline preload="metadata"':
-                - rtgl-view class="rvn-detail-gallery":
-                    - rtgl-text class="rvn-detail-section-title" s="h4": Gallery
-                    - rtgl-view class="rvn-detail-gallery-strip" role="list" aria-label="Asset gallery thumbnails":
-                        - 'rtgl-view class="rvn-detail-thumb is-active" role="listitem" style="--thumb-filter: none;"':
-                            - 'video class="rvn-detail-thumb-video" src="/public/creator/asset-store/placeholder-thumbnail.webm" autoplay muted loop playsinline preload="metadata"':
-                        - 'rtgl-view class="rvn-detail-thumb" role="listitem" style="--thumb-filter: hue-rotate(78deg);"':
-                            - 'video class="rvn-detail-thumb-video" src="/public/creator/asset-store/placeholder-thumbnail.webm" autoplay muted loop playsinline preload="metadata"':
-                        - 'rtgl-view class="rvn-detail-thumb" role="listitem" style="--thumb-filter: hue-rotate(168deg) saturate(0.8);"':
-                            - 'video class="rvn-detail-thumb-video" src="/public/creator/asset-store/placeholder-thumbnail.webm" autoplay muted loop playsinline preload="metadata"':
-                        - 'rtgl-view class="rvn-detail-thumb" role="listitem" style="--thumb-filter: hue-rotate(262deg) saturate(0.85);"':
-                            - 'video class="rvn-detail-thumb-video" src="/public/creator/asset-store/placeholder-thumbnail.webm" autoplay muted loop playsinline preload="metadata"':
-                        - 'rtgl-view class="rvn-detail-thumb" role="listitem" style="--thumb-filter: hue-rotate(24deg) saturate(1.1);"':
-                            - 'video class="rvn-detail-thumb-video" src="/public/creator/asset-store/placeholder-thumbnail.webm" autoplay muted loop playsinline preload="metadata"':
-                        - 'rtgl-view class="rvn-detail-thumb" role="listitem" style="--thumb-filter: hue-rotate(138deg) saturate(0.85);"':
-                            - 'video class="rvn-detail-thumb-video" src="/public/creator/asset-store/placeholder-thumbnail.webm" autoplay muted loop playsinline preload="metadata"':
-            - rtgl-view class="rvn-detail-description":
-                - rtgl-text class="rvn-detail-section-title" s="h4": Description
-                - p class="rvn-detail-paragraph": This is placeholder copy for an asset detail page. It shows how users can inspect a larger preview, scan alternate gallery items, and read practical notes before adding an asset to a RouteVN Creator project.
-                - p class="rvn-detail-paragraph": The final page can replace these mock entries with real screenshots, licensing terms, author notes, package contents, and version compatibility details.
-        - 'rtgl-view class="rvn-detail-aside" role="complementary" aria-label="Asset information"':
-            - rtgl-text class="rvn-detail-section-title" s="h4": Asset info
-            - rtgl-view class="rvn-detail-meta-list":
-                - rtgl-view class="rvn-detail-meta-row":
-                    - rtgl-text class="rvn-detail-meta-label": Author
-                    - rtgl-text class="rvn-detail-meta-value": RouteVN Placeholder Team
-                - rtgl-view class="rvn-detail-meta-row":
-                    - rtgl-text class="rvn-detail-meta-label": Type
-                    - rtgl-text class="rvn-detail-meta-value": Background pack
-                - rtgl-view class="rvn-detail-meta-row":
-                    - rtgl-text class="rvn-detail-meta-label": License
-                    - rtgl-text class="rvn-detail-meta-value": Free for personal projects
-                - rtgl-view class="rvn-detail-meta-row":
-                    - rtgl-text class="rvn-detail-meta-label": Includes
-                    - rtgl-text class="rvn-detail-meta-value": 6 images, 1 preview video
-                - rtgl-view class="rvn-detail-meta-row":
-                    - rtgl-text class="rvn-detail-meta-label": Compatible with
-                    - rtgl-text class="rvn-detail-meta-value": RouteVN Creator 1.5+
-            - rtgl-view g="md":
-                - rtgl-text class="rvn-detail-section-title" s="h4": Tags
-                - rtgl-view class="rvn-detail-chip-row":
-                    - span class="rvn-detail-chip": Background
-                    - span class="rvn-detail-chip": City
-                    - span class="rvn-detail-chip": Night
-                    - span class="rvn-detail-chip": Placeholder
-            - rtgl-view class="rvn-detail-actions":
-                - rtgl-button disabled: Download
-                - rtgl-button v="se" disabled: Add to project
+            - 'h1 class="rvn-pack-title"': Transitions
+        - 'rtgl-button id="rvn-add-pack-button" v="se"': Copy import URL
+    - 'section class="rvn-pack-summary" aria-label="Pack information"':
+        - rtgl-view class="rvn-pack-preview-column":
+            - rtgl-view class="rvn-pack-preview" aria-hidden="true":
+                - 'img class="rvn-pack-preview-image" src="/public/creator/asset-store/transitions-cover.png" alt=""':
+            - rtgl-text class="rvn-pack-subtitle" s="md": A collection of rainy urban backgrounds for contemporary visual novels.
+        - rtgl-view class="rvn-pack-overview":
+            - 'h2 class="rvn-pack-section-title"': Pack info
+            - 'dl class="rvn-pack-meta-list"':
+                - 'div class="rvn-pack-meta-item"':
+                    - dt class="rvn-pack-meta-label": Author
+                    - dd class="rvn-pack-meta-value":
+                        - 'a class="rvn-pack-author" href="/en/creator/asset-store/authors/routevn/"':
+                            - 'img class="rvn-pack-author-avatar" src="/public/images/routevn-icon.png" alt=""':
+                            - span: RouteVN
+                - 'div class="rvn-pack-meta-item"':
+                    - dt class="rvn-pack-meta-label": Released
+                    - dd class="rvn-pack-meta-value":
+                        - 'time datetime="2026-08-09"': August 9, 2026
+                - 'div class="rvn-pack-meta-item"':
+                    - dt class="rvn-pack-meta-label": Last updated
+                    - dd class="rvn-pack-meta-value":
+                        - 'time datetime="2026-08-09"': August 9, 2026
+                - 'div class="rvn-pack-meta-item"':
+                    - dt class="rvn-pack-meta-label": License
+                    - dd class="rvn-pack-meta-value": CC0
+    - 'section class="rvn-pack-gallery-panel" aria-label="Assets in this pack"':
+        - 'section class="rvn-pack-asset-section" aria-labelledby="rvn-pack-animations-title"':
+            - 'h2 id="rvn-pack-animations-title" class="rvn-pack-section-title"': Animations
+            - 'section class="rvn-pack-subsection" aria-labelledby="rvn-pack-tween-transitions-title"':
+                - 'h3 id="rvn-pack-tween-transitions-title" class="rvn-pack-subsection-title"': Tween transitions
+                - 'rtgl-grid class="rvn-pack-grid" cols="6" xl-cols="5" lg-cols="4" md-cols="3" sm-cols="2" g="lg" w="f" role="list"':
+                    - 'a class="rvn-pack-card" href="/en/creator/asset-store/rainy-city-street/fade-2s/" role="listitem"':
+                        - 'rtgl-view class="rvn-pack-card-thumb" style="--thumb-filter: none;" aria-hidden="true"':
+                            - 'video class="rvn-pack-card-video" src="/public/creator/asset-store/fade-2s.webm" autoplay muted playsinline preload="metadata"':
+                        - rtgl-view class="rvn-pack-card-body":
+                            - rtgl-text class="rvn-pack-card-title": fade-2s
+                    - 'a class="rvn-pack-card" href="/en/creator/asset-store/rainy-city-street/slide-1s/" role="listitem"':
+                        - 'rtgl-view class="rvn-pack-card-thumb" style="--thumb-filter: none;" aria-hidden="true"':
+                            - 'video class="rvn-pack-card-video" src="/public/creator/asset-store/slide-1s.webm" autoplay muted playsinline preload="metadata"':
+                        - rtgl-view class="rvn-pack-card-body":
+                            - rtgl-text class="rvn-pack-card-title": slide-1s
+            - 'section class="rvn-pack-subsection" aria-labelledby="rvn-pack-mask-transitions-title"':
+                - 'h3 id="rvn-pack-mask-transitions-title" class="rvn-pack-subsection-title"': Mask transitions
+                - 'rtgl-grid class="rvn-pack-grid" cols="6" xl-cols="5" lg-cols="4" md-cols="3" sm-cols="2" g="lg" w="f" role="list"':
+                    - 'a class="rvn-pack-card" href="/en/creator/asset-store/rainy-city-street/slide-mask-1s/" role="listitem"':
+                        - 'rtgl-view class="rvn-pack-card-thumb" style="--thumb-filter: none;" aria-hidden="true"':
+                            - 'video class="rvn-pack-card-video" src="/public/creator/asset-store/slide-mask-1s.webm" autoplay muted playsinline preload="metadata"':
+                        - rtgl-view class="rvn-pack-card-body":
+                            - rtgl-text class="rvn-pack-card-title": slide-mask-1s
+                    - 'a class="rvn-pack-card" href="/en/creator/asset-store/rainy-city-street/aperture-11s/" role="listitem"':
+                        - 'rtgl-view class="rvn-pack-card-thumb" style="--thumb-filter: none;" aria-hidden="true"':
+                            - 'video class="rvn-pack-card-video" src="/public/creator/asset-store/aperture-11s.webm" autoplay muted playsinline preload="metadata"':
+                        - rtgl-view class="rvn-pack-card-body":
+                            - rtgl-text class="rvn-pack-card-title": Aperture
+                    - 'a class="rvn-pack-card" href="/en/creator/asset-store/rainy-city-street/clock-wipe-1s/" role="listitem"':
+                        - 'rtgl-view class="rvn-pack-card-thumb" style="--thumb-filter: none;" aria-hidden="true"':
+                            - 'video class="rvn-pack-card-video" src="/public/creator/asset-store/clock-wipe-1s.webm" autoplay muted playsinline preload="metadata"':
+                        - rtgl-view class="rvn-pack-card-body":
+                            - rtgl-text class="rvn-pack-card-title": Clock Wipe
+                    - 'a class="rvn-pack-card" href="/en/creator/asset-store/rainy-city-street/cross-cut-1s/" role="listitem"':
+                        - 'rtgl-view class="rvn-pack-card-thumb" style="--thumb-filter: none;" aria-hidden="true"':
+                            - 'video class="rvn-pack-card-video" src="/public/creator/asset-store/cross-cut-1s.webm" autoplay muted playsinline preload="metadata"':
+                        - rtgl-view class="rvn-pack-card-body":
+                            - rtgl-text class="rvn-pack-card-title": Cross Cut
+                    - 'a class="rvn-pack-card" href="/en/creator/asset-store/rainy-city-street/halftone-1-1s/" role="listitem"':
+                        - 'rtgl-view class="rvn-pack-card-thumb" style="--thumb-filter: none;" aria-hidden="true"':
+                            - 'video class="rvn-pack-card-video" src="/public/creator/asset-store/halftone-1-1s.webm" autoplay muted playsinline preload="metadata"':
+                        - rtgl-view class="rvn-pack-card-body":
+                            - rtgl-text class="rvn-pack-card-title": Halftone 1
+                    - 'a class="rvn-pack-card" href="/en/creator/asset-store/rainy-city-street/halftone-2-1s/" role="listitem"':
+                        - 'rtgl-view class="rvn-pack-card-thumb" style="--thumb-filter: none;" aria-hidden="true"':
+                            - 'video class="rvn-pack-card-video" src="/public/creator/asset-store/halftone-2-1s.webm" autoplay muted playsinline preload="metadata"':
+                        - rtgl-view class="rvn-pack-card-body":
+                            - rtgl-text class="rvn-pack-card-title": Halftone 2
+        - 'section class="rvn-pack-asset-section" aria-labelledby="rvn-pack-images-title"':
+            - 'h2 id="rvn-pack-images-title" class="rvn-pack-section-title"': Images
+            - 'section class="rvn-pack-subsection" aria-labelledby="rvn-pack-masks-title"':
+                - 'h3 id="rvn-pack-masks-title" class="rvn-pack-subsection-title"': Masks
+                - 'rtgl-grid class="rvn-pack-grid" cols="6" xl-cols="5" lg-cols="4" md-cols="3" sm-cols="2" g="lg" w="f" role="list"':
+                    - 'a class="rvn-pack-card" href="/en/creator/asset-store/rainy-city-street/aperture/" role="listitem"':
+                        - 'rtgl-view class="rvn-pack-card-thumb" aria-hidden="true"':
+                            - 'img class="rvn-pack-card-image" src="/public/creator/asset-store/aperture.png" alt=""':
+                        - rtgl-view class="rvn-pack-card-body":
+                            - rtgl-text class="rvn-pack-card-title": Aperture
+                    - 'a class="rvn-pack-card" href="/en/creator/asset-store/rainy-city-street/clock-wipe/" role="listitem"':
+                        - 'rtgl-view class="rvn-pack-card-thumb" aria-hidden="true"':
+                            - 'img class="rvn-pack-card-image" src="/public/creator/asset-store/clock-wipe.png" alt=""':
+                        - rtgl-view class="rvn-pack-card-body":
+                            - rtgl-text class="rvn-pack-card-title": Clock Wipe
+                    - 'a class="rvn-pack-card" href="/en/creator/asset-store/rainy-city-street/cross-cut/" role="listitem"':
+                        - 'rtgl-view class="rvn-pack-card-thumb" aria-hidden="true"':
+                            - 'img class="rvn-pack-card-image" src="/public/creator/asset-store/cross-cut.png" alt=""':
+                        - rtgl-view class="rvn-pack-card-body":
+                            - rtgl-text class="rvn-pack-card-title": Cross Cut
+                    - 'a class="rvn-pack-card" href="/en/creator/asset-store/rainy-city-street/delay-blinds/" role="listitem"':
+                        - 'rtgl-view class="rvn-pack-card-thumb" aria-hidden="true"':
+                            - 'img class="rvn-pack-card-image" src="/public/creator/asset-store/delay-blinds.png" alt=""':
+                        - rtgl-view class="rvn-pack-card-body":
+                            - rtgl-text class="rvn-pack-card-title": Delay Blinds
+                    - 'a class="rvn-pack-card" href="/en/creator/asset-store/rainy-city-street/eyes/" role="listitem"':
+                        - 'rtgl-view class="rvn-pack-card-thumb" aria-hidden="true"':
+                            - 'img class="rvn-pack-card-image" src="/public/creator/asset-store/eyes.png" alt=""':
+                        - rtgl-view class="rvn-pack-card-body":
+                            - rtgl-text class="rvn-pack-card-title": Eyes
+                    - 'a class="rvn-pack-card" href="/en/creator/asset-store/rainy-city-street/halftone-1/" role="listitem"':
+                        - 'rtgl-view class="rvn-pack-card-thumb" aria-hidden="true"':
+                            - 'img class="rvn-pack-card-image" src="/public/creator/asset-store/halftone-1.png" alt=""':
+                        - rtgl-view class="rvn-pack-card-body":
+                            - rtgl-text class="rvn-pack-card-title": Halftone 1
+                    - 'a class="rvn-pack-card" href="/en/creator/asset-store/rainy-city-street/halftone-2/" role="listitem"':
+                        - 'rtgl-view class="rvn-pack-card-thumb" aria-hidden="true"':
+                            - 'img class="rvn-pack-card-image" src="/public/creator/asset-store/halftone-2.png" alt=""':
+                        - rtgl-view class="rvn-pack-card-body":
+                            - rtgl-text class="rvn-pack-card-title": Halftone 2
+                    - 'a class="rvn-pack-card" href="/en/creator/asset-store/rainy-city-street/halftone-3/" role="listitem"':
+                        - 'rtgl-view class="rvn-pack-card-thumb" aria-hidden="true"':
+                            - 'img class="rvn-pack-card-image" src="/public/creator/asset-store/halftone-3.png" alt=""':
+                        - rtgl-view class="rvn-pack-card-body":
+                            - rtgl-text class="rvn-pack-card-title": Halftone 3
+                    - 'a class="rvn-pack-card" href="/en/creator/asset-store/rainy-city-street/open-shock/" role="listitem"':
+                        - 'rtgl-view class="rvn-pack-card-thumb" aria-hidden="true"':
+                            - 'img class="rvn-pack-card-image" src="/public/creator/asset-store/open-shock.png" alt=""':
+                        - rtgl-view class="rvn-pack-card-body":
+                            - rtgl-text class="rvn-pack-card-title": Open Shock
+                    - 'a class="rvn-pack-card" href="/en/creator/asset-store/rainy-city-street/paw-prints/" role="listitem"':
+                        - 'rtgl-view class="rvn-pack-card-thumb" aria-hidden="true"':
+                            - 'img class="rvn-pack-card-image" src="/public/creator/asset-store/paw-prints.png" alt=""':
+                        - rtgl-view class="rvn-pack-card-body":
+                            - rtgl-text class="rvn-pack-card-title": Paw Prints
+                    - 'a class="rvn-pack-card" href="/en/creator/asset-store/rainy-city-street/slide-level-01/" role="listitem"':
+                        - 'rtgl-view class="rvn-pack-card-thumb" aria-hidden="true"':
+                            - 'img class="rvn-pack-card-image" src="/public/creator/asset-store/slide-level-01.png" alt=""':
+                        - rtgl-view class="rvn-pack-card-body":
+                            - rtgl-text class="rvn-pack-card-title": Slide Level 01
+                    - 'a class="rvn-pack-card" href="/en/creator/asset-store/rainy-city-street/slide-level-02/" role="listitem"':
+                        - 'rtgl-view class="rvn-pack-card-thumb" aria-hidden="true"':
+                            - 'img class="rvn-pack-card-image" src="/public/creator/asset-store/slide-level-02.png" alt=""':
+                        - rtgl-view class="rvn-pack-card-body":
+                            - rtgl-text class="rvn-pack-card-title": Slide Level 02
+                    - 'a class="rvn-pack-card" href="/en/creator/asset-store/rainy-city-street/smoke-clear/" role="listitem"':
+                        - 'rtgl-view class="rvn-pack-card-thumb" aria-hidden="true"':
+                            - 'img class="rvn-pack-card-image" src="/public/creator/asset-store/smoke-clear.png" alt=""':
+                        - rtgl-view class="rvn-pack-card-body":
+                            - rtgl-text class="rvn-pack-card-title": Smoke Clear
+                    - 'a class="rvn-pack-card" href="/en/creator/asset-store/rainy-city-street/spill/" role="listitem"':
+                        - 'rtgl-view class="rvn-pack-card-thumb" aria-hidden="true"':
+                            - 'img class="rvn-pack-card-image" src="/public/creator/asset-store/spill.png" alt=""':
+                        - rtgl-view class="rvn-pack-card-body":
+                            - rtgl-text class="rvn-pack-card-title": Spill
+                    - 'a class="rvn-pack-card" href="/en/creator/asset-store/rainy-city-street/spill-2/" role="listitem"':
+                        - 'rtgl-view class="rvn-pack-card-thumb" aria-hidden="true"':
+                            - 'img class="rvn-pack-card-image" src="/public/creator/asset-store/spill-2.png" alt=""':
+                        - rtgl-view class="rvn-pack-card-body":
+                            - rtgl-text class="rvn-pack-card-title": Spill 2
+                    - 'a class="rvn-pack-card" href="/en/creator/asset-store/rainy-city-street/split/" role="listitem"':
+                        - 'rtgl-view class="rvn-pack-card-thumb" aria-hidden="true"':
+                            - 'img class="rvn-pack-card-image" src="/public/creator/asset-store/split.png" alt=""':
+                        - rtgl-view class="rvn-pack-card-body":
+                            - rtgl-text class="rvn-pack-card-title": Split
+                    - 'a class="rvn-pack-card" href="/en/creator/asset-store/rainy-city-street/steps/" role="listitem"':
+                        - 'rtgl-view class="rvn-pack-card-thumb" aria-hidden="true"':
+                            - 'img class="rvn-pack-card-image" src="/public/creator/asset-store/steps.png" alt=""':
+                        - rtgl-view class="rvn-pack-card-body":
+                            - rtgl-text class="rvn-pack-card-title": Steps
+            - 'section class="rvn-pack-subsection" aria-labelledby="rvn-pack-previews-title"':
+                - 'h3 id="rvn-pack-previews-title" class="rvn-pack-subsection-title"': Previews
+                - 'rtgl-grid class="rvn-pack-grid" cols="6" xl-cols="5" lg-cols="4" md-cols="3" sm-cols="2" g="lg" w="f" role="list"':
+                    - 'a class="rvn-pack-card" href="/en/creator/asset-store/rainy-city-street/vn-background-1/" role="listitem"':
+                        - 'rtgl-view class="rvn-pack-card-thumb" aria-hidden="true"':
+                            - 'img class="rvn-pack-card-image" src="/public/creator/asset-store/vn-background-1.png" alt=""':
+                        - rtgl-view class="rvn-pack-card-body":
+                            - rtgl-text class="rvn-pack-card-title": VN Background 1
+                    - 'a class="rvn-pack-card" href="/en/creator/asset-store/rainy-city-street/vn-background-2/" role="listitem"':
+                        - 'rtgl-view class="rvn-pack-card-thumb" aria-hidden="true"':
+                            - 'img class="rvn-pack-card-image" src="/public/creator/asset-store/vn-background-2.png" alt=""':
+                        - rtgl-view class="rvn-pack-card-body":
+                            - rtgl-text class="rvn-pack-card-title": VN Background 2
+- script: |
+    (() => {
+      document.querySelectorAll(".rvn-pack-card").forEach((card) => {
+        const video = card.querySelector(".rvn-pack-card-video");
+
+        if (!video) {
+          return;
+        }
+
+        let loopTimer;
+
+        const playVideo = () => {
+          const playPromise = video.play();
+
+          if (playPromise) {
+            playPromise.catch(() => {});
+          }
+        };
+
+        video.addEventListener("ended", () => {
+          loopTimer = window.setTimeout(() => {
+            video.currentTime = 0;
+            playVideo();
+          }, 500);
+        });
+
+        window.clearTimeout(loopTimer);
+        playVideo();
+      });
+
+      const button = document.getElementById("rvn-add-pack-button");
+
+      if (!button) {
+        return;
+      }
+
+      const getPackJsonUrl = () => {
+        const url = new URL(window.location.href);
+        url.pathname = url.pathname.replace(/\/+$/, "") + ".json";
+        url.search = "";
+        url.hash = "";
+        return url.href;
+      };
+
+      const copyText = async (text) => {
+        if (navigator.clipboard && window.isSecureContext) {
+          await navigator.clipboard.writeText(text);
+          return;
+        }
+
+        const textarea = document.createElement("textarea");
+        textarea.value = text;
+        textarea.setAttribute("readonly", "");
+        textarea.style.position = "fixed";
+        textarea.style.opacity = "0";
+        document.body.append(textarea);
+        textarea.select();
+        const copied = document.execCommand("copy");
+        textarea.remove();
+
+        if (!copied) {
+          throw new Error("Copy command failed");
+        }
+      };
+
+      button.addEventListener("click", async () => {
+        try {
+          await copyText(getPackJsonUrl());
+        } catch (error) {
+          console.error("Failed to copy import URL", error);
+        }
+      });
+    })();

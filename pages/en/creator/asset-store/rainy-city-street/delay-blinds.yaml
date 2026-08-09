@@ -1,0 +1,18 @@
+---
+template: creator
+title: Delay Blinds - RouteVN Creator Asset Store
+disableFooterSpacer: true
+seo:
+  title: Delay Blinds - RouteVN Creator Asset Store
+  description: Preview the Delay Blinds mask from the Transitions pack.
+---
+- $partial: asset-detail
+  backHref: /en/creator/asset-store/rainy-city-street/
+  assetTitle: Delay Blinds
+  assetSubtitle: A mask image for a delayed blinds transition.
+  imageSrc: /public/creator/asset-store/delay-blinds.png
+  imageAlt: Delay Blinds mask preview
+  thumbFilter: none
+  description: A 16:9 mask image designed for a delayed blinds transition.
+  usageNote: This mask is provided as a 1920 × 1080 PNG image.
+  assetFormat: PNG

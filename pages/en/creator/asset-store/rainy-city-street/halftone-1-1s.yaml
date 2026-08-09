@@ -1,0 +1,20 @@
+---
+template: creator
+title: Halftone 1 - RouteVN Creator Asset Store
+disableFooterSpacer: true
+seo:
+  title: Halftone 1 - RouteVN Creator Asset Store
+  description: Preview the Halftone 1 mask transition from the Transitions pack.
+---
+- $partial: asset-detail
+  backHref: /en/creator/asset-store/rainy-city-street/
+  assetTitle: Halftone 1
+  assetSubtitle: A one-second halftone mask transition.
+  videoSrc: /public/creator/asset-store/halftone-1-1s.webm
+  videoLoopDelayMs: 500
+  maskImageSrc: /public/creator/asset-store/halftone-1.png
+  maskImageAlt: Halftone 1 transition mask
+  thumbFilter: none
+  description: A halftone transition animated with a 16:9 dotted mask that reveals the scene.
+  usageNote: This asset includes a 1920 × 1080 WEBM preview and a 1920 × 1080 PNG mask.
+  assetFormat: WEBM + PNG

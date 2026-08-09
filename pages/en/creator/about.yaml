@@ -40,7 +40,7 @@ seo:
 
     @media (min-width: 761px) {
       rtgl-view.rvn-creator-hero[w="f"] .rvn-creator-hero-chibi {
-        left: 0;
+        left: 48px;
       }
     }
 
