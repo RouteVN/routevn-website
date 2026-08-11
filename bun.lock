@@ -4,6 +4,7 @@
   "workspaces": {
     "": {
       "devDependencies": {
+        "js-yaml": "^4.1.1",
         "rtgl": "1.4.0",
       },
     },

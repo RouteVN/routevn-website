@@ -1,0 +1,18 @@
+- 'rtgl-grid cols="6" xl-cols="5" lg-cols="4" md-cols="3" sm-cols="2" g="lg" w="f" role="list"':
+    - $for asset in assets:
+        - 'rtgl-view data-rvn-asset-card role="button" tabindex="0" data-asset-title="${asset.name}" data-asset-subtitle="${asset.description}" data-asset-format="${asset.format}" data-asset-resolution="${asset.resolution}" data-asset-duration="${asset.duration}" data-asset-media-type="${asset.mediaType}" data-asset-src="${asset.src}" data-asset-placeholder="${asset.placeholderLabel}" data-asset-color="${asset.previewColor}" data-asset-video-controls="${asset.showVideoControls}" data-asset-dialog-aspect-ratio="${asset.dialogAspectRatio}" bw="xs" bc="bo" h-bc="ac" br="md" overflow="hidden" cur="pointer" w="f"':
+            - 'rtgl-view ar="${asset.thumbnailAspectRatio}" bgc="su" overflow="hidden" w="f" aria-hidden="true"':
+                - $if asset.previewColor:
+                    - 'rtgl-view style="background: ${asset.previewColor};" w="f" h="f"':
+                  $elif asset.thumbnailMediaType == "video":
+                    - 'video data-rvn-delayed-loop src="${asset.thumbnailSrc}" autoplay muted playsinline preload="metadata" style="display: block; height: 100%; object-fit: ${asset.objectFit}; width: 100%;"':
+                  $elif asset.thumbnailMediaType == "image":
+                    - $if asset.objectFit == "contain":
+                        - 'rtgl-image w="f" h="f" of="con" src="${asset.thumbnailSrc}" alt=""':
+                      $else:
+                        - 'rtgl-image w="f" h="f" of="cov" src="${asset.thumbnailSrc}" alt=""':
+                  $else:
+                    - 'rtgl-view bgc="su" ah="c" av="c" w="f" h="f"':
+                        - rtgl-text s="sm": ${asset.placeholderLabel}
+            - rtgl-view p="sm" w="f":
+                - rtgl-text break-long-tokens: ${asset.name}

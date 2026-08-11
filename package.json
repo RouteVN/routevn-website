@@ -1,11 +1,13 @@
 {
   "type": "module",
   "scripts": {
+    "asset-store:import": "bun scripts/import-asset-package.js",
     "build": "rtgl sites build",
     "watch": "rtgl sites watch",
     "screenshots": "rtgl sites screenshots"
   },
   "devDependencies": {
+    "js-yaml": "^4.1.1",
     "rtgl": "1.4.0"
   }
 }

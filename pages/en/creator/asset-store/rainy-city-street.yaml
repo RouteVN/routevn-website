@@ -1,693 +1,892 @@
 ---
 template: creator
 title: Transitions - RouteVN Creator Asset Store
+tags:
+  - assetPack
 disableFooterSpacer: true
 seo:
   title: Transitions - RouteVN Creator Asset Store
-  description: Browse the assets included in the Transitions pack for RouteVN Creator.
+  description: A collection of transitions for RouteVN Creator.
+assetPack:
+  slug: rainy-city-street
+  packageId: routevn.transitions
+  name: Transitions
+  version: 1.0.0
+  description: A collection of transitions for RouteVN Creator.
+  url: /en/creator/asset-store/rainy-city-street/
+  importUrl: /en/creator/asset-store/rainy-city-street.json
+  assetCount: 42
+  coverSrc: /public/creator/asset-store/rainy-city-street/files/2a4dnSu6DG1q.png
+  coverThumbnailSrc: /public/creator/asset-store/rainy-city-street/files/NqeNjgUPd9s3.png
+  coverWidth: null
+  author:
+    name: RouteVN
+    slug: routevn
+    avatarSrc: /public/images/routevn-icon.png
+  released: '2026-08-09'
+  releasedLabel: August 9, 2026
+  updated: '2026-08-12'
+  updatedLabel: August 12, 2026
+  license: CC0
+  sections:
+    - id: animations
+      name: Animations
+      groups:
+        - id: animations-tween
+          name: Tween
+          assets:
+            - id: zcPUL4myXFeY
+              name: Crossfade
+              description: Crossfade animation.
+              mediaType: video
+              thumbnailMediaType: video
+              format: Animation
+              resolution: Not specified
+              duration: ''
+              variableScope: ''
+              variableType: ''
+              defaultValue: ''
+              controlBindings: []
+              showVideoControls: false
+              thumbnailAspectRatio: 16/10
+              dialogAspectRatio: 16/9
+              src: /public/creator/asset-store/rainy-city-street/files/animation-preview.zcPUL4myXFeY.webm
+              thumbnailSrc: /public/creator/asset-store/rainy-city-street/files/animation-thumbnail.zcPUL4myXFeY.webm
+              placeholderLabel: Animation
+              previewColor: ''
+              objectFit: cover
+            - id: 7rjLtANzKR4W
+              name: Partial crossfade
+              description: Partial crossfade animation.
+              mediaType: video
+              thumbnailMediaType: video
+              format: Animation
+              resolution: Not specified
+              duration: ''
+              variableScope: ''
+              variableType: ''
+              defaultValue: ''
+              controlBindings: []
+              showVideoControls: false
+              thumbnailAspectRatio: 16/10
+              dialogAspectRatio: 16/9
+              src: /public/creator/asset-store/rainy-city-street/files/animation-preview.7rjLtANzKR4W.webm
+              thumbnailSrc: /public/creator/asset-store/rainy-city-street/files/animation-thumbnail.7rjLtANzKR4W.webm
+              placeholderLabel: Animation
+              previewColor: ''
+              objectFit: cover
+            - id: Bc1xLFyHF4Hs
+              name: Fade-through
+              description: Fade-through animation.
+              mediaType: video
+              thumbnailMediaType: video
+              format: Animation
+              resolution: Not specified
+              duration: ''
+              variableScope: ''
+              variableType: ''
+              defaultValue: ''
+              controlBindings: []
+              showVideoControls: false
+              thumbnailAspectRatio: 16/10
+              dialogAspectRatio: 16/9
+              src: /public/creator/asset-store/rainy-city-street/files/animation-preview.Bc1xLFyHF4Hs.webm
+              thumbnailSrc: /public/creator/asset-store/rainy-city-street/files/animation-thumbnail.Bc1xLFyHF4Hs.webm
+              placeholderLabel: Animation
+              previewColor: ''
+              objectFit: cover
+            - id: Bx1cW6Zax9V8
+              name: Slide
+              description: Slide animation.
+              mediaType: video
+              thumbnailMediaType: video
+              format: Animation
+              resolution: Not specified
+              duration: ''
+              variableScope: ''
+              variableType: ''
+              defaultValue: ''
+              controlBindings: []
+              showVideoControls: false
+              thumbnailAspectRatio: 16/10
+              dialogAspectRatio: 16/9
+              src: /public/creator/asset-store/rainy-city-street/files/animation-preview.Bx1cW6Zax9V8.webm
+              thumbnailSrc: /public/creator/asset-store/rainy-city-street/files/animation-thumbnail.Bx1cW6Zax9V8.webm
+              placeholderLabel: Animation
+              previewColor: ''
+              objectFit: cover
+        - id: animations-mask
+          name: Mask
+          assets:
+            - id: HRY5hwWkqS5K
+              name: Horizontal wipe
+              description: Horizontal wipe animation.
+              mediaType: video
+              thumbnailMediaType: video
+              format: Animation
+              resolution: Not specified
+              duration: ''
+              variableScope: ''
+              variableType: ''
+              defaultValue: ''
+              controlBindings: []
+              showVideoControls: false
+              thumbnailAspectRatio: 16/10
+              dialogAspectRatio: 16/9
+              src: /public/creator/asset-store/rainy-city-street/files/animation-preview.HRY5hwWkqS5K.webm
+              thumbnailSrc: /public/creator/asset-store/rainy-city-street/files/animation-thumbnail.HRY5hwWkqS5K.webm
+              placeholderLabel: Animation
+              previewColor: ''
+              objectFit: cover
+            - id: PJ4zkPdSRw6k
+              name: Clock wipe
+              description: Clock wipe animation.
+              mediaType: video
+              thumbnailMediaType: video
+              format: Animation
+              resolution: Not specified
+              duration: ''
+              variableScope: ''
+              variableType: ''
+              defaultValue: ''
+              controlBindings: []
+              showVideoControls: false
+              thumbnailAspectRatio: 16/10
+              dialogAspectRatio: 16/9
+              src: /public/creator/asset-store/rainy-city-street/files/animation-preview.PJ4zkPdSRw6k.webm
+              thumbnailSrc: /public/creator/asset-store/rainy-city-street/files/animation-thumbnail.PJ4zkPdSRw6k.webm
+              placeholderLabel: Animation
+              previewColor: ''
+              objectFit: cover
+            - id: iHWUj683XVoy
+              name: Aperture
+              description: Aperture animation.
+              mediaType: video
+              thumbnailMediaType: video
+              format: Animation
+              resolution: Not specified
+              duration: ''
+              variableScope: ''
+              variableType: ''
+              defaultValue: ''
+              controlBindings: []
+              showVideoControls: false
+              thumbnailAspectRatio: 16/10
+              dialogAspectRatio: 16/9
+              src: /public/creator/asset-store/rainy-city-street/files/animation-preview.iHWUj683XVoy.webm
+              thumbnailSrc: /public/creator/asset-store/rainy-city-street/files/animation-thumbnail.iHWUj683XVoy.webm
+              placeholderLabel: Animation
+              previewColor: ''
+              objectFit: cover
+            - id: W9kxyxQxrGoF
+              name: Crosscut
+              description: Crosscut animation.
+              mediaType: video
+              thumbnailMediaType: video
+              format: Animation
+              resolution: Not specified
+              duration: ''
+              variableScope: ''
+              variableType: ''
+              defaultValue: ''
+              controlBindings: []
+              showVideoControls: false
+              thumbnailAspectRatio: 16/10
+              dialogAspectRatio: 16/9
+              src: /public/creator/asset-store/rainy-city-street/files/animation-preview.W9kxyxQxrGoF.webm
+              thumbnailSrc: /public/creator/asset-store/rainy-city-street/files/animation-thumbnail.W9kxyxQxrGoF.webm
+              placeholderLabel: Animation
+              previewColor: ''
+              objectFit: cover
+            - id: QoSu9znQz2Pb
+              name: Halftone 1
+              description: Halftone 1 animation.
+              mediaType: video
+              thumbnailMediaType: video
+              format: Animation
+              resolution: Not specified
+              duration: ''
+              variableScope: ''
+              variableType: ''
+              defaultValue: ''
+              controlBindings: []
+              showVideoControls: false
+              thumbnailAspectRatio: 16/10
+              dialogAspectRatio: 16/9
+              src: /public/creator/asset-store/rainy-city-street/files/animation-preview.QoSu9znQz2Pb.webm
+              thumbnailSrc: /public/creator/asset-store/rainy-city-street/files/animation-thumbnail.QoSu9znQz2Pb.webm
+              placeholderLabel: Animation
+              previewColor: ''
+              objectFit: cover
+            - id: foMJn7RNaKHR
+              name: Halftone 2
+              description: Halftone 2 animation.
+              mediaType: video
+              thumbnailMediaType: video
+              format: Animation
+              resolution: Not specified
+              duration: ''
+              variableScope: ''
+              variableType: ''
+              defaultValue: ''
+              controlBindings: []
+              showVideoControls: false
+              thumbnailAspectRatio: 16/10
+              dialogAspectRatio: 16/9
+              src: /public/creator/asset-store/rainy-city-street/files/animation-preview.foMJn7RNaKHR.webm
+              thumbnailSrc: /public/creator/asset-store/rainy-city-street/files/animation-thumbnail.foMJn7RNaKHR.webm
+              placeholderLabel: Animation
+              previewColor: ''
+              objectFit: cover
+            - id: geXUTwdx6MMV
+              name: Halftone 3
+              description: Halftone 3 animation.
+              mediaType: video
+              thumbnailMediaType: video
+              format: Animation
+              resolution: Not specified
+              duration: ''
+              variableScope: ''
+              variableType: ''
+              defaultValue: ''
+              controlBindings: []
+              showVideoControls: false
+              thumbnailAspectRatio: 16/10
+              dialogAspectRatio: 16/9
+              src: /public/creator/asset-store/rainy-city-street/files/animation-preview.geXUTwdx6MMV.webm
+              thumbnailSrc: /public/creator/asset-store/rainy-city-street/files/animation-thumbnail.geXUTwdx6MMV.webm
+              placeholderLabel: Animation
+              previewColor: ''
+              objectFit: cover
+            - id: U92n4jxtFsjS
+              name: Eyes
+              description: Eyes animation.
+              mediaType: video
+              thumbnailMediaType: video
+              format: Animation
+              resolution: Not specified
+              duration: ''
+              variableScope: ''
+              variableType: ''
+              defaultValue: ''
+              controlBindings: []
+              showVideoControls: false
+              thumbnailAspectRatio: 16/10
+              dialogAspectRatio: 16/9
+              src: /public/creator/asset-store/rainy-city-street/files/animation-preview.U92n4jxtFsjS.webm
+              thumbnailSrc: /public/creator/asset-store/rainy-city-street/files/animation-thumbnail.U92n4jxtFsjS.webm
+              placeholderLabel: Animation
+              previewColor: ''
+              objectFit: cover
+            - id: FVKfFGqF6VpW
+              name: Openshock
+              description: Openshock animation.
+              mediaType: video
+              thumbnailMediaType: video
+              format: Animation
+              resolution: Not specified
+              duration: ''
+              variableScope: ''
+              variableType: ''
+              defaultValue: ''
+              controlBindings: []
+              showVideoControls: false
+              thumbnailAspectRatio: 16/10
+              dialogAspectRatio: 16/9
+              src: /public/creator/asset-store/rainy-city-street/files/animation-preview.FVKfFGqF6VpW.webm
+              thumbnailSrc: /public/creator/asset-store/rainy-city-street/files/animation-thumbnail.FVKfFGqF6VpW.webm
+              placeholderLabel: Animation
+              previewColor: ''
+              objectFit: cover
+            - id: V3oQr2oKWFR3
+              name: Paw prints
+              description: Paw prints animation.
+              mediaType: video
+              thumbnailMediaType: video
+              format: Animation
+              resolution: Not specified
+              duration: ''
+              variableScope: ''
+              variableType: ''
+              defaultValue: ''
+              controlBindings: []
+              showVideoControls: false
+              thumbnailAspectRatio: 16/10
+              dialogAspectRatio: 16/9
+              src: /public/creator/asset-store/rainy-city-street/files/animation-preview.V3oQr2oKWFR3.webm
+              thumbnailSrc: /public/creator/asset-store/rainy-city-street/files/animation-thumbnail.V3oQr2oKWFR3.webm
+              placeholderLabel: Animation
+              previewColor: ''
+              objectFit: cover
+            - id: w1p784QKPC7H
+              name: Smoke Clear
+              description: Smoke Clear animation.
+              mediaType: video
+              thumbnailMediaType: video
+              format: Animation
+              resolution: Not specified
+              duration: ''
+              variableScope: ''
+              variableType: ''
+              defaultValue: ''
+              controlBindings: []
+              showVideoControls: false
+              thumbnailAspectRatio: 16/10
+              dialogAspectRatio: 16/9
+              src: /public/creator/asset-store/rainy-city-street/files/animation-preview.w1p784QKPC7H.webm
+              thumbnailSrc: /public/creator/asset-store/rainy-city-street/files/animation-thumbnail.w1p784QKPC7H.webm
+              placeholderLabel: Animation
+              previewColor: ''
+              objectFit: cover
+            - id: s4dctcfY4KAE
+              name: Spill 1
+              description: Spill 1 animation.
+              mediaType: video
+              thumbnailMediaType: video
+              format: Animation
+              resolution: Not specified
+              duration: ''
+              variableScope: ''
+              variableType: ''
+              defaultValue: ''
+              controlBindings: []
+              showVideoControls: false
+              thumbnailAspectRatio: 16/10
+              dialogAspectRatio: 16/9
+              src: /public/creator/asset-store/rainy-city-street/files/animation-preview.s4dctcfY4KAE.webm
+              thumbnailSrc: /public/creator/asset-store/rainy-city-street/files/animation-thumbnail.s4dctcfY4KAE.webm
+              placeholderLabel: Animation
+              previewColor: ''
+              objectFit: cover
+            - id: dPPZUjjDMrgq
+              name: Spill 2
+              description: Spill 2 animation.
+              mediaType: video
+              thumbnailMediaType: video
+              format: Animation
+              resolution: Not specified
+              duration: ''
+              variableScope: ''
+              variableType: ''
+              defaultValue: ''
+              controlBindings: []
+              showVideoControls: false
+              thumbnailAspectRatio: 16/10
+              dialogAspectRatio: 16/9
+              src: /public/creator/asset-store/rainy-city-street/files/animation-preview.dPPZUjjDMrgq.webm
+              thumbnailSrc: /public/creator/asset-store/rainy-city-street/files/animation-thumbnail.dPPZUjjDMrgq.webm
+              placeholderLabel: Animation
+              previewColor: ''
+              objectFit: cover
+            - id: Hoeg76Sqz8xC
+              name: Split
+              description: Split animation.
+              mediaType: video
+              thumbnailMediaType: video
+              format: Animation
+              resolution: Not specified
+              duration: ''
+              variableScope: ''
+              variableType: ''
+              defaultValue: ''
+              controlBindings: []
+              showVideoControls: false
+              thumbnailAspectRatio: 16/10
+              dialogAspectRatio: 16/9
+              src: /public/creator/asset-store/rainy-city-street/files/animation-preview.Hoeg76Sqz8xC.webm
+              thumbnailSrc: /public/creator/asset-store/rainy-city-street/files/animation-thumbnail.Hoeg76Sqz8xC.webm
+              placeholderLabel: Animation
+              previewColor: ''
+              objectFit: cover
+            - id: FujG83vUBtTQ
+              name: Slide level 1
+              description: Slide level 1 animation.
+              mediaType: video
+              thumbnailMediaType: video
+              format: Animation
+              resolution: Not specified
+              duration: ''
+              variableScope: ''
+              variableType: ''
+              defaultValue: ''
+              controlBindings: []
+              showVideoControls: false
+              thumbnailAspectRatio: 16/10
+              dialogAspectRatio: 16/9
+              src: /public/creator/asset-store/rainy-city-street/files/animation-preview.FujG83vUBtTQ.webm
+              thumbnailSrc: /public/creator/asset-store/rainy-city-street/files/animation-thumbnail.FujG83vUBtTQ.webm
+              placeholderLabel: Animation
+              previewColor: ''
+              objectFit: cover
+            - id: eSMMHcNGoQBh
+              name: Slide level 2
+              description: Slide level 2 animation.
+              mediaType: video
+              thumbnailMediaType: video
+              format: Animation
+              resolution: Not specified
+              duration: ''
+              variableScope: ''
+              variableType: ''
+              defaultValue: ''
+              controlBindings: []
+              showVideoControls: false
+              thumbnailAspectRatio: 16/10
+              dialogAspectRatio: 16/9
+              src: /public/creator/asset-store/rainy-city-street/files/animation-preview.eSMMHcNGoQBh.webm
+              thumbnailSrc: /public/creator/asset-store/rainy-city-street/files/animation-thumbnail.eSMMHcNGoQBh.webm
+              placeholderLabel: Animation
+              previewColor: ''
+              objectFit: cover
+            - id: 2Fs7fHHSay9E
+              name: Steps
+              description: Steps animation.
+              mediaType: video
+              thumbnailMediaType: video
+              format: Animation
+              resolution: Not specified
+              duration: ''
+              variableScope: ''
+              variableType: ''
+              defaultValue: ''
+              controlBindings: []
+              showVideoControls: false
+              thumbnailAspectRatio: 16/10
+              dialogAspectRatio: 16/9
+              src: /public/creator/asset-store/rainy-city-street/files/animation-preview.2Fs7fHHSay9E.webm
+              thumbnailSrc: /public/creator/asset-store/rainy-city-street/files/animation-thumbnail.2Fs7fHHSay9E.webm
+              placeholderLabel: Animation
+              previewColor: ''
+              objectFit: cover
+            - id: bB8G9Ut6UQDq
+              name: Blinds
+              description: Blinds animation.
+              mediaType: video
+              thumbnailMediaType: video
+              format: Animation
+              resolution: Not specified
+              duration: ''
+              variableScope: ''
+              variableType: ''
+              defaultValue: ''
+              controlBindings: []
+              showVideoControls: false
+              thumbnailAspectRatio: 16/10
+              dialogAspectRatio: 16/9
+              src: /public/creator/asset-store/rainy-city-street/files/animation-preview.bB8G9Ut6UQDq.webm
+              thumbnailSrc: /public/creator/asset-store/rainy-city-street/files/animation-thumbnail.bB8G9Ut6UQDq.webm
+              placeholderLabel: Animation
+              previewColor: ''
+              objectFit: cover
+    - id: images
+      name: Images
+      groups:
+        - id: images-masks
+          name: Masks
+          assets:
+            - id: ZvJUEaaujuQj
+              name: wipe
+              description: wipe image.
+              mediaType: image
+              thumbnailMediaType: image
+              format: PNG
+              resolution: 1920 × 1080
+              duration: ''
+              variableScope: ''
+              variableType: ''
+              defaultValue: ''
+              controlBindings: []
+              showVideoControls: false
+              thumbnailAspectRatio: 16/10
+              dialogAspectRatio: 16/9
+              src: /public/creator/asset-store/rainy-city-street/files/Wt2LWBPXdux2.png
+              thumbnailSrc: /public/creator/asset-store/rainy-city-street/files/oVd6cHn2uKUk.png
+              placeholderLabel: Image
+              previewColor: ''
+              objectFit: cover
+            - id: mU2QNzLD7YAP
+              name: aperture
+              description: aperture image.
+              mediaType: image
+              thumbnailMediaType: image
+              format: PNG
+              resolution: 1920 × 1080
+              duration: ''
+              variableScope: ''
+              variableType: ''
+              defaultValue: ''
+              controlBindings: []
+              showVideoControls: false
+              thumbnailAspectRatio: 16/10
+              dialogAspectRatio: 16/9
+              src: /public/creator/asset-store/rainy-city-street/files/JTCEpp5qjpd4.png
+              thumbnailSrc: /public/creator/asset-store/rainy-city-street/files/CvHJBJHu4ibk.png
+              placeholderLabel: Image
+              previewColor: ''
+              objectFit: cover
+            - id: GiomBJCBxE5B
+              name: clockwipe
+              description: clockwipe image.
+              mediaType: image
+              thumbnailMediaType: image
+              format: PNG
+              resolution: 1920 × 1080
+              duration: ''
+              variableScope: ''
+              variableType: ''
+              defaultValue: ''
+              controlBindings: []
+              showVideoControls: false
+              thumbnailAspectRatio: 16/10
+              dialogAspectRatio: 16/9
+              src: /public/creator/asset-store/rainy-city-street/files/LYNKk5Z7fcbh.png
+              thumbnailSrc: /public/creator/asset-store/rainy-city-street/files/ZxB8ZoABjVqX.png
+              placeholderLabel: Image
+              previewColor: ''
+              objectFit: cover
+            - id: Q4aNbsxwwqk1
+              name: crosscut
+              description: crosscut image.
+              mediaType: image
+              thumbnailMediaType: image
+              format: PNG
+              resolution: 1920 × 1080
+              duration: ''
+              variableScope: ''
+              variableType: ''
+              defaultValue: ''
+              controlBindings: []
+              showVideoControls: false
+              thumbnailAspectRatio: 16/10
+              dialogAspectRatio: 16/9
+              src: /public/creator/asset-store/rainy-city-street/files/WCvPNwmYGSXi.png
+              thumbnailSrc: /public/creator/asset-store/rainy-city-street/files/He82TdWNohjN.png
+              placeholderLabel: Image
+              previewColor: ''
+              objectFit: cover
+            - id: Ean5CHFUkpgT
+              name: delayblinds
+              description: delayblinds image.
+              mediaType: image
+              thumbnailMediaType: image
+              format: PNG
+              resolution: 1920 × 1080
+              duration: ''
+              variableScope: ''
+              variableType: ''
+              defaultValue: ''
+              controlBindings: []
+              showVideoControls: false
+              thumbnailAspectRatio: 16/10
+              dialogAspectRatio: 16/9
+              src: /public/creator/asset-store/rainy-city-street/files/zc8HmgeNKqgX.png
+              thumbnailSrc: /public/creator/asset-store/rainy-city-street/files/eW5iTTjpgWY1.png
+              placeholderLabel: Image
+              previewColor: ''
+              objectFit: cover
+            - id: Y6WpJ5j31NRG
+              name: eyes
+              description: eyes image.
+              mediaType: image
+              thumbnailMediaType: image
+              format: PNG
+              resolution: 1920 × 1080
+              duration: ''
+              variableScope: ''
+              variableType: ''
+              defaultValue: ''
+              controlBindings: []
+              showVideoControls: false
+              thumbnailAspectRatio: 16/10
+              dialogAspectRatio: 16/9
+              src: /public/creator/asset-store/rainy-city-street/files/KBDxCweDMk4x.png
+              thumbnailSrc: /public/creator/asset-store/rainy-city-street/files/5z73Frfy58uG.png
+              placeholderLabel: Image
+              previewColor: ''
+              objectFit: cover
+            - id: 5TjwMzHqH8iD
+              name: halftone 1
+              description: halftone 1 image.
+              mediaType: image
+              thumbnailMediaType: image
+              format: PNG
+              resolution: 1920 × 1080
+              duration: ''
+              variableScope: ''
+              variableType: ''
+              defaultValue: ''
+              controlBindings: []
+              showVideoControls: false
+              thumbnailAspectRatio: 16/10
+              dialogAspectRatio: 16/9
+              src: /public/creator/asset-store/rainy-city-street/files/oLLQjCmvgBPE.png
+              thumbnailSrc: /public/creator/asset-store/rainy-city-street/files/kJuaJuwoCWiQ.png
+              placeholderLabel: Image
+              previewColor: ''
+              objectFit: cover
+            - id: upGkGCxzRQMv
+              name: halftone 2
+              description: halftone 2 image.
+              mediaType: image
+              thumbnailMediaType: image
+              format: PNG
+              resolution: 1920 × 1080
+              duration: ''
+              variableScope: ''
+              variableType: ''
+              defaultValue: ''
+              controlBindings: []
+              showVideoControls: false
+              thumbnailAspectRatio: 16/10
+              dialogAspectRatio: 16/9
+              src: /public/creator/asset-store/rainy-city-street/files/dXxgczT3csnP.png
+              thumbnailSrc: /public/creator/asset-store/rainy-city-street/files/g86EATZqS2PB.png
+              placeholderLabel: Image
+              previewColor: ''
+              objectFit: cover
+            - id: YAyYnq8XTPCv
+              name: halftone 3
+              description: halftone 3 image.
+              mediaType: image
+              thumbnailMediaType: image
+              format: PNG
+              resolution: 1920 × 1080
+              duration: ''
+              variableScope: ''
+              variableType: ''
+              defaultValue: ''
+              controlBindings: []
+              showVideoControls: false
+              thumbnailAspectRatio: 16/10
+              dialogAspectRatio: 16/9
+              src: /public/creator/asset-store/rainy-city-street/files/spEKTetgsSNt.png
+              thumbnailSrc: /public/creator/asset-store/rainy-city-street/files/rSzNG8d1pr7y.png
+              placeholderLabel: Image
+              previewColor: ''
+              objectFit: cover
+            - id: HgbZFbDk5YY3
+              name: openshock
+              description: openshock image.
+              mediaType: image
+              thumbnailMediaType: image
+              format: PNG
+              resolution: 1920 × 1080
+              duration: ''
+              variableScope: ''
+              variableType: ''
+              defaultValue: ''
+              controlBindings: []
+              showVideoControls: false
+              thumbnailAspectRatio: 16/10
+              dialogAspectRatio: 16/9
+              src: /public/creator/asset-store/rainy-city-street/files/xzQsStaQETNw.png
+              thumbnailSrc: /public/creator/asset-store/rainy-city-street/files/2zxXXRiXrNdo.png
+              placeholderLabel: Image
+              previewColor: ''
+              objectFit: cover
+            - id: ioumY9o9C9dS
+              name: pawprints
+              description: pawprints image.
+              mediaType: image
+              thumbnailMediaType: image
+              format: PNG
+              resolution: 1920 × 1080
+              duration: ''
+              variableScope: ''
+              variableType: ''
+              defaultValue: ''
+              controlBindings: []
+              showVideoControls: false
+              thumbnailAspectRatio: 16/10
+              dialogAspectRatio: 16/9
+              src: /public/creator/asset-store/rainy-city-street/files/zfs24aYjPf5f.png
+              thumbnailSrc: /public/creator/asset-store/rainy-city-street/files/bViCHBywekKR.png
+              placeholderLabel: Image
+              previewColor: ''
+              objectFit: cover
+            - id: gcP5o9AX4uUH
+              name: slidelevel-01
+              description: slidelevel-01 image.
+              mediaType: image
+              thumbnailMediaType: image
+              format: PNG
+              resolution: 1920 × 1080
+              duration: ''
+              variableScope: ''
+              variableType: ''
+              defaultValue: ''
+              controlBindings: []
+              showVideoControls: false
+              thumbnailAspectRatio: 16/10
+              dialogAspectRatio: 16/9
+              src: /public/creator/asset-store/rainy-city-street/files/PTP66rok4ceS.png
+              thumbnailSrc: /public/creator/asset-store/rainy-city-street/files/6ByjhMC9grNa.png
+              placeholderLabel: Image
+              previewColor: ''
+              objectFit: cover
+            - id: wiQGDpUrH5e2
+              name: slidelevel-02
+              description: slidelevel-02 image.
+              mediaType: image
+              thumbnailMediaType: image
+              format: PNG
+              resolution: 1920 × 1080
+              duration: ''
+              variableScope: ''
+              variableType: ''
+              defaultValue: ''
+              controlBindings: []
+              showVideoControls: false
+              thumbnailAspectRatio: 16/10
+              dialogAspectRatio: 16/9
+              src: /public/creator/asset-store/rainy-city-street/files/59VrNTGcQbc9.png
+              thumbnailSrc: /public/creator/asset-store/rainy-city-street/files/am7vt6bzPARL.png
+              placeholderLabel: Image
+              previewColor: ''
+              objectFit: cover
+            - id: 32WFFUJ3W4ua
+              name: smokeclear
+              description: smokeclear image.
+              mediaType: image
+              thumbnailMediaType: image
+              format: PNG
+              resolution: 1920 × 1080
+              duration: ''
+              variableScope: ''
+              variableType: ''
+              defaultValue: ''
+              controlBindings: []
+              showVideoControls: false
+              thumbnailAspectRatio: 16/10
+              dialogAspectRatio: 16/9
+              src: /public/creator/asset-store/rainy-city-street/files/9qWvnkvTtk8X.png
+              thumbnailSrc: /public/creator/asset-store/rainy-city-street/files/vKVXJRvWBeeG.png
+              placeholderLabel: Image
+              previewColor: ''
+              objectFit: cover
+            - id: GL2f6WdKjns6
+              name: spill
+              description: spill image.
+              mediaType: image
+              thumbnailMediaType: image
+              format: PNG
+              resolution: 1920 × 1080
+              duration: ''
+              variableScope: ''
+              variableType: ''
+              defaultValue: ''
+              controlBindings: []
+              showVideoControls: false
+              thumbnailAspectRatio: 16/10
+              dialogAspectRatio: 16/9
+              src: /public/creator/asset-store/rainy-city-street/files/LxvC8SDfeVuT.png
+              thumbnailSrc: /public/creator/asset-store/rainy-city-street/files/PB9HP4HgNutf.png
+              placeholderLabel: Image
+              previewColor: ''
+              objectFit: cover
+            - id: X2PepiHtLnji
+              name: spill2
+              description: spill2 image.
+              mediaType: image
+              thumbnailMediaType: image
+              format: PNG
+              resolution: 1920 × 1080
+              duration: ''
+              variableScope: ''
+              variableType: ''
+              defaultValue: ''
+              controlBindings: []
+              showVideoControls: false
+              thumbnailAspectRatio: 16/10
+              dialogAspectRatio: 16/9
+              src: /public/creator/asset-store/rainy-city-street/files/h7UuCwuyUGFz.png
+              thumbnailSrc: /public/creator/asset-store/rainy-city-street/files/hU7ZvRYPLwnk.png
+              placeholderLabel: Image
+              previewColor: ''
+              objectFit: cover
+            - id: 7ENzKys7Lrtz
+              name: split
+              description: split image.
+              mediaType: image
+              thumbnailMediaType: image
+              format: PNG
+              resolution: 1920 × 1080
+              duration: ''
+              variableScope: ''
+              variableType: ''
+              defaultValue: ''
+              controlBindings: []
+              showVideoControls: false
+              thumbnailAspectRatio: 16/10
+              dialogAspectRatio: 16/9
+              src: /public/creator/asset-store/rainy-city-street/files/kmuB4m8k7HjG.png
+              thumbnailSrc: /public/creator/asset-store/rainy-city-street/files/3XUdwrsWNKhG.png
+              placeholderLabel: Image
+              previewColor: ''
+              objectFit: cover
+            - id: 8qjtVTBZts3V
+              name: steps
+              description: steps image.
+              mediaType: image
+              thumbnailMediaType: image
+              format: PNG
+              resolution: 1920 × 1080
+              duration: ''
+              variableScope: ''
+              variableType: ''
+              defaultValue: ''
+              controlBindings: []
+              showVideoControls: false
+              thumbnailAspectRatio: 16/10
+              dialogAspectRatio: 16/9
+              src: /public/creator/asset-store/rainy-city-street/files/B27Jw1eY3GVV.png
+              thumbnailSrc: /public/creator/asset-store/rainy-city-street/files/qFxaukokAMtb.png
+              placeholderLabel: Image
+              previewColor: ''
+              objectFit: cover
+        - id: images-preview
+          name: Preview
+          assets:
+            - id: WR9PGwHa2o3a
+              name: Mountain field night
+              description: Mountain field night image.
+              mediaType: image
+              thumbnailMediaType: image
+              format: PNG
+              resolution: 1920 × 1080
+              duration: ''
+              variableScope: ''
+              variableType: ''
+              defaultValue: ''
+              controlBindings: []
+              showVideoControls: false
+              thumbnailAspectRatio: 16/10
+              dialogAspectRatio: 16/9
+              src: /public/creator/asset-store/rainy-city-street/files/AuPfjCh1h1hV.png
+              thumbnailSrc: /public/creator/asset-store/rainy-city-street/files/uhey4S4aUgot.png
+              placeholderLabel: Image
+              previewColor: ''
+              objectFit: cover
+            - id: JwYWiyzpVL56
+              name: Mountain lake day
+              description: Mountain lake day image.
+              mediaType: image
+              thumbnailMediaType: image
+              format: PNG
+              resolution: 1920 × 1080
+              duration: ''
+              variableScope: ''
+              variableType: ''
+              defaultValue: ''
+              controlBindings: []
+              showVideoControls: false
+              thumbnailAspectRatio: 16/10
+              dialogAspectRatio: 16/9
+              src: /public/creator/asset-store/rainy-city-street/files/2a4dnSu6DG1q.png
+              thumbnailSrc: /public/creator/asset-store/rainy-city-street/files/NqeNjgUPd9s3.png
+              placeholderLabel: Image
+              previewColor: ''
+              objectFit: cover
 ---
-- style: |
-    .rvn-pack-page {
-      --rvn-pack-panel: #1f1f1f;
-      --rvn-pack-border: rgba(255, 255, 255, 0.12);
-      --rvn-pack-muted: rgba(255, 255, 255, 0.68);
-      box-sizing: border-box;
-      display: grid;
-      gap: 24px;
-      margin: 56px auto 0;
-      max-width: 1200px;
-      width: 1200px !important;
-    }
-
-    .rvn-pack-page *,
-    .rvn-pack-page *::before,
-    .rvn-pack-page *::after {
-      box-sizing: border-box;
-    }
-
-    .rvn-pack-back {
-      color: var(--rvn-pack-muted);
-      font-size: 0.92rem;
-      text-decoration: none;
-      width: fit-content;
-    }
-
-    .rvn-pack-back:hover {
-      color: var(--foreground);
-      text-decoration: underline;
-      text-underline-offset: 4px;
-    }
-
-    .rvn-pack-header {
-      align-items: end;
-      display: flex;
-      gap: 16px;
-      justify-content: space-between;
-      min-width: 0;
-      width: 100% !important;
-    }
-
-    .rvn-pack-title {
-      font-size: 2rem;
-      font-weight: 600;
-      letter-spacing: 0;
-      line-height: 1.1;
-      margin: 0;
-    }
-
-    .rvn-pack-subtitle,
-    .rvn-pack-muted {
-      color: var(--rvn-pack-muted);
-    }
-
-    .rvn-pack-subtitle {
-      line-height: 1.5;
-      max-width: none;
-    }
-
-    .rvn-pack-summary {
-      align-items: start;
-      background: transparent;
-      border: 0;
-      border-radius: 0;
-      display: grid;
-      gap: 18px;
-      grid-template-columns: minmax(0, 1fr) 280px;
-      overflow: visible;
-      padding: 0;
-    }
-
-    .rvn-pack-preview {
-      aspect-ratio: 16 / 9;
-      background: #111;
-      border: 1px solid var(--rvn-pack-border);
-      border-radius: 8px;
-      overflow: hidden;
-      width: 100%;
-    }
-
-    .rvn-pack-preview-column {
-      align-content: start;
-      display: grid;
-      gap: 10px;
-      min-width: 0;
-      width: 100%;
-    }
-
-    .rvn-pack-preview-video,
-    .rvn-pack-preview-image,
-    .rvn-pack-card-video,
-    .rvn-pack-card-image {
-      display: block;
-      filter: saturate(0.95) var(--thumb-filter, none);
-      height: 100%;
-      object-fit: cover;
-      transform: scale(1.01);
-      width: 100%;
-    }
-
-    .rvn-pack-overview {
-      align-self: start;
-      align-content: start;
-      display: grid;
-      gap: 16px;
-      padding: 0;
-      position: sticky;
-      top: 88px;
-      width: 100% !important;
-    }
-
-    .rvn-pack-section-title {
-      color: var(--foreground);
-      font-size: 1rem;
-      font-weight: 600;
-      line-height: 1.3;
-      margin: 0;
-    }
-
-    .rvn-pack-author-avatar {
-      border-radius: 999px;
-      display: block;
-      height: 22px;
-      object-fit: cover;
-      width: 22px;
-    }
-
-    .rvn-pack-gallery-panel {
-      background: transparent;
-      border: 0;
-      border-radius: 0;
-      display: grid;
-      gap: 32px;
-      padding: 0;
-    }
-
-    .rvn-pack-asset-section {
-      display: grid;
-      gap: 18px;
-    }
-
-    .rvn-pack-subsection {
-      display: grid;
-      gap: 12px;
-    }
-
-    .rvn-pack-subsection-title {
-      color: var(--rvn-pack-muted);
-      font-size: 0.88rem;
-      font-weight: 500;
-      line-height: 1.3;
-      margin: 0;
-    }
-
-    .rvn-pack-grid {
-      width: 100% !important;
-    }
-
-    .rvn-pack-card {
-      appearance: none;
-      background: transparent;
-      border: 1px solid var(--rvn-pack-border);
-      border-radius: 8px;
-      color: inherit;
-      display: block;
-      cursor: pointer;
-      font: inherit;
-      min-width: 0;
-      overflow: hidden;
-      padding: 0;
-      text-align: left;
-      text-decoration: none;
-      transition: border-color 120ms ease, transform 120ms ease;
-      width: 100%;
-    }
-
-    .rvn-pack-card:hover {
-      border-color: rgba(255, 255, 255, 0.28);
-      transform: translateY(-1px);
-    }
-
-    .rvn-pack-card:focus-visible {
-      outline: 2px solid var(--ring);
-      outline-offset: 3px;
-    }
-
-    .rvn-pack-card-thumb {
-      aspect-ratio: 16 / 10;
-      background: #111;
-      display: block;
-      overflow: hidden;
-      width: 100%;
-    }
-
-    .rvn-pack-card-body {
-      display: grid;
-      gap: 7px;
-      padding: 12px;
-    }
-
-    .rvn-pack-card-title {
-      color: var(--foreground);
-      font-weight: 400;
-      line-height: 1.25;
-      overflow-wrap: anywhere;
-    }
-
-    .rvn-asset-dialog-content {
-      box-sizing: border-box;
-      max-width: 1200px;
-    }
-
-    .rvn-asset-dialog-content *,
-    .rvn-asset-dialog-content *::before,
-    .rvn-asset-dialog-content *::after {
-      box-sizing: border-box;
-    }
-
-    .rvn-asset-dialog-header {
-      align-items: start;
-      display: grid;
-      gap: 18px;
-      grid-template-columns: minmax(0, 1fr);
-      width: 100% !important;
-    }
-
-    .rvn-asset-dialog-title {
-      color: var(--foreground);
-      font-size: 2rem;
-      font-weight: 600;
-      letter-spacing: 0;
-      line-height: 1.1;
-      margin: 0;
-    }
-
-    .rvn-asset-dialog-subtitle {
-      color: var(--rvn-pack-muted);
-    }
-
-    .rvn-asset-dialog-layout {
-      align-items: start;
-      display: grid;
-      gap: 18px;
-      grid-template-columns: minmax(0, 1fr) 240px;
-      width: 100% !important;
-    }
-
-    .rvn-asset-dialog-preview {
-      aspect-ratio: 16 / 9;
-      background: #111;
-      border: 1px solid var(--rvn-pack-border);
-      border-radius: 8px;
-      overflow: hidden;
-      width: 100% !important;
-    }
-
-    .rvn-asset-dialog-video,
-    .rvn-asset-dialog-image {
-      display: block;
-      height: 100%;
-      object-fit: cover;
-      transform: scale(1.01);
-      width: 100%;
-    }
-
-    .rvn-asset-dialog-video[hidden],
-    .rvn-asset-dialog-image[hidden] {
-      display: none;
-    }
-
-    .rvn-asset-dialog-aside {
-      align-content: start;
-      display: grid;
-      gap: 16px;
-      width: 100% !important;
-    }
-
-    @media (max-width: 1280px) {
-      .rvn-pack-page {
-        max-width: calc(100vw - 64px);
-        width: calc(100vw - 64px) !important;
-      }
-    }
-
-    @media (max-width: 980px) {
-      .rvn-pack-summary {
-        grid-template-columns: 1fr;
-      }
-
-      .rvn-pack-overview {
-        position: static;
-      }
-
-      .rvn-asset-dialog-layout {
-        grid-template-columns: 1fr;
-      }
-    }
-
-    @media (max-width: 760px) {
-      .rvn-pack-page {
-        max-width: calc(100vw - 48px);
-        width: calc(100vw - 48px) !important;
-      }
-
-    }
-
-    @media (max-width: 620px) {
-      .rvn-pack-page {
-        margin-top: 40px;
-      }
-
-      .rvn-pack-header {
-        align-items: start;
-        flex-direction: column;
-      }
-
-    }
-
-- 'main class="rvn-pack-page"':
-    - 'a class="rvn-pack-back" href="/en/creator/asset-store/"': Back
-    - 'header class="rvn-pack-header"':
-        - rtgl-view g="md":
-            - 'h1 class="rvn-pack-title"': Transitions
-        - 'rtgl-button id="rvn-add-pack-button" v="se"': Copy import URL
-    - 'section class="rvn-pack-summary" aria-label="Pack information"':
-        - rtgl-view class="rvn-pack-preview-column":
-            - rtgl-view class="rvn-pack-preview" aria-hidden="true":
-                - 'img class="rvn-pack-preview-image" src="/public/creator/asset-store/transitions-cover.png" alt=""':
-            - rtgl-text class="rvn-pack-subtitle" s="md": A collection of rainy urban backgrounds for contemporary visual novels.
-        - rtgl-view class="rvn-pack-overview":
-            - 'h2 class="rvn-pack-section-title"': Pack info
-            - rtgl-view g="lg" w="f":
-                - rtgl-view g="sm" w="f":
-                    - rtgl-text s="sm": Author
-                    - rtgl-view d="h" g="sm" av="c":
-                        - 'img class="rvn-pack-author-avatar" src="/public/images/routevn-icon.png" alt=""':
-                        - rtgl-text: RouteVN
-                - rtgl-view g="sm" w="f":
-                    - rtgl-text s="sm": Released
-                    - rtgl-text:
-                        - 'time datetime="2026-08-09"': August 9, 2026
-                - rtgl-view g="sm" w="f":
-                    - rtgl-text s="sm": Last updated
-                    - rtgl-text:
-                        - 'time datetime="2026-08-09"': August 9, 2026
-                - rtgl-view g="sm" w="f":
-                    - rtgl-text s="sm": License
-                    - rtgl-text: CC0
-    - 'section class="rvn-pack-gallery-panel" aria-label="Assets in this pack"':
-        - 'section class="rvn-pack-asset-section" aria-labelledby="rvn-pack-animations-title"':
-            - 'h2 id="rvn-pack-animations-title" class="rvn-pack-section-title"': Animations
-            - 'section class="rvn-pack-subsection" aria-labelledby="rvn-pack-tween-transitions-title"':
-                - 'h3 id="rvn-pack-tween-transitions-title" class="rvn-pack-subsection-title"': Tween transitions
-                - 'rtgl-grid class="rvn-pack-grid" cols="6" xl-cols="5" lg-cols="4" md-cols="3" sm-cols="2" g="lg" w="f" role="list"':
-                    - 'button class="rvn-pack-card" type="button" role="listitem" data-asset-subtitle="A two-second quadratic fade transition." data-asset-format="WEBM"':
-                        - 'rtgl-view class="rvn-pack-card-thumb" style="--thumb-filter: none;" aria-hidden="true"':
-                            - 'video class="rvn-pack-card-video" src="/public/creator/asset-store/fade-2s.webm" autoplay muted playsinline preload="metadata"':
-                        - rtgl-view class="rvn-pack-card-body":
-                            - rtgl-text class="rvn-pack-card-title": fade-2s
-                    - 'button class="rvn-pack-card" type="button" role="listitem" data-asset-subtitle="A one-second slide transition." data-asset-format="WEBM"':
-                        - 'rtgl-view class="rvn-pack-card-thumb" style="--thumb-filter: none;" aria-hidden="true"':
-                            - 'video class="rvn-pack-card-video" src="/public/creator/asset-store/slide-1s.webm" autoplay muted playsinline preload="metadata"':
-                        - rtgl-view class="rvn-pack-card-body":
-                            - rtgl-text class="rvn-pack-card-title": slide-1s
-            - 'section class="rvn-pack-subsection" aria-labelledby="rvn-pack-mask-transitions-title"':
-                - 'h3 id="rvn-pack-mask-transitions-title" class="rvn-pack-subsection-title"': Mask transitions
-                - 'rtgl-grid class="rvn-pack-grid" cols="6" xl-cols="5" lg-cols="4" md-cols="3" sm-cols="2" g="lg" w="f" role="list"':
-                    - 'button class="rvn-pack-card" type="button" role="listitem" data-asset-subtitle="A one-second mask-driven slide transition." data-asset-format="WEBM + PNG"':
-                        - 'rtgl-view class="rvn-pack-card-thumb" style="--thumb-filter: none;" aria-hidden="true"':
-                            - 'video class="rvn-pack-card-video" src="/public/creator/asset-store/slide-mask-1s.webm" autoplay muted playsinline preload="metadata"':
-                        - rtgl-view class="rvn-pack-card-body":
-                            - rtgl-text class="rvn-pack-card-title": slide-mask-1s
-                    - 'button class="rvn-pack-card" type="button" role="listitem" data-asset-subtitle="An eleven-second aperture mask transition." data-asset-format="WEBM + PNG"':
-                        - 'rtgl-view class="rvn-pack-card-thumb" style="--thumb-filter: none;" aria-hidden="true"':
-                            - 'video class="rvn-pack-card-video" src="/public/creator/asset-store/aperture-11s.webm" autoplay muted playsinline preload="metadata"':
-                        - rtgl-view class="rvn-pack-card-body":
-                            - rtgl-text class="rvn-pack-card-title": Aperture
-                    - 'button class="rvn-pack-card" type="button" role="listitem" data-asset-subtitle="A one-second clock-wipe mask transition." data-asset-format="WEBM + PNG"':
-                        - 'rtgl-view class="rvn-pack-card-thumb" style="--thumb-filter: none;" aria-hidden="true"':
-                            - 'video class="rvn-pack-card-video" src="/public/creator/asset-store/clock-wipe-1s.webm" autoplay muted playsinline preload="metadata"':
-                        - rtgl-view class="rvn-pack-card-body":
-                            - rtgl-text class="rvn-pack-card-title": Clock Wipe
-                    - 'button class="rvn-pack-card" type="button" role="listitem" data-asset-subtitle="A one-second cross-cut mask transition." data-asset-format="WEBM + PNG"':
-                        - 'rtgl-view class="rvn-pack-card-thumb" style="--thumb-filter: none;" aria-hidden="true"':
-                            - 'video class="rvn-pack-card-video" src="/public/creator/asset-store/cross-cut-1s.webm" autoplay muted playsinline preload="metadata"':
-                        - rtgl-view class="rvn-pack-card-body":
-                            - rtgl-text class="rvn-pack-card-title": Cross Cut
-                    - 'button class="rvn-pack-card" type="button" role="listitem" data-asset-subtitle="A one-second halftone mask transition." data-asset-format="WEBM + PNG"':
-                        - 'rtgl-view class="rvn-pack-card-thumb" style="--thumb-filter: none;" aria-hidden="true"':
-                            - 'video class="rvn-pack-card-video" src="/public/creator/asset-store/halftone-1-1s.webm" autoplay muted playsinline preload="metadata"':
-                        - rtgl-view class="rvn-pack-card-body":
-                            - rtgl-text class="rvn-pack-card-title": Halftone 1
-                    - 'button class="rvn-pack-card" type="button" role="listitem" data-asset-subtitle="A one-second halftone mask transition." data-asset-format="WEBM + PNG"':
-                        - 'rtgl-view class="rvn-pack-card-thumb" style="--thumb-filter: none;" aria-hidden="true"':
-                            - 'video class="rvn-pack-card-video" src="/public/creator/asset-store/halftone-2-1s.webm" autoplay muted playsinline preload="metadata"':
-                        - rtgl-view class="rvn-pack-card-body":
-                            - rtgl-text class="rvn-pack-card-title": Halftone 2
-        - 'section class="rvn-pack-asset-section" aria-labelledby="rvn-pack-images-title"':
-            - 'h2 id="rvn-pack-images-title" class="rvn-pack-section-title"': Images
-            - 'section class="rvn-pack-subsection" aria-labelledby="rvn-pack-masks-title"':
-                - 'h3 id="rvn-pack-masks-title" class="rvn-pack-subsection-title"': Masks
-                - 'rtgl-grid class="rvn-pack-grid" cols="6" xl-cols="5" lg-cols="4" md-cols="3" sm-cols="2" g="lg" w="f" role="list"':
-                    - 'button class="rvn-pack-card" type="button" role="listitem" data-asset-subtitle="A mask image for an aperture-style transition." data-asset-format="PNG"':
-                        - 'rtgl-view class="rvn-pack-card-thumb" aria-hidden="true"':
-                            - 'img class="rvn-pack-card-image" src="/public/creator/asset-store/aperture.png" alt=""':
-                        - rtgl-view class="rvn-pack-card-body":
-                            - rtgl-text class="rvn-pack-card-title": Aperture
-                    - 'button class="rvn-pack-card" type="button" role="listitem" data-asset-subtitle="A mask image for a clock-wipe transition." data-asset-format="PNG"':
-                        - 'rtgl-view class="rvn-pack-card-thumb" aria-hidden="true"':
-                            - 'img class="rvn-pack-card-image" src="/public/creator/asset-store/clock-wipe.png" alt=""':
-                        - rtgl-view class="rvn-pack-card-body":
-                            - rtgl-text class="rvn-pack-card-title": Clock Wipe
-                    - 'button class="rvn-pack-card" type="button" role="listitem" data-asset-subtitle="A mask image for a cross-cut transition." data-asset-format="PNG"':
-                        - 'rtgl-view class="rvn-pack-card-thumb" aria-hidden="true"':
-                            - 'img class="rvn-pack-card-image" src="/public/creator/asset-store/cross-cut.png" alt=""':
-                        - rtgl-view class="rvn-pack-card-body":
-                            - rtgl-text class="rvn-pack-card-title": Cross Cut
-                    - 'button class="rvn-pack-card" type="button" role="listitem" data-asset-subtitle="A mask image for a delayed blinds transition." data-asset-format="PNG"':
-                        - 'rtgl-view class="rvn-pack-card-thumb" aria-hidden="true"':
-                            - 'img class="rvn-pack-card-image" src="/public/creator/asset-store/delay-blinds.png" alt=""':
-                        - rtgl-view class="rvn-pack-card-body":
-                            - rtgl-text class="rvn-pack-card-title": Delay Blinds
-                    - 'button class="rvn-pack-card" type="button" role="listitem" data-asset-subtitle="A mask image for an eye-shaped transition." data-asset-format="PNG"':
-                        - 'rtgl-view class="rvn-pack-card-thumb" aria-hidden="true"':
-                            - 'img class="rvn-pack-card-image" src="/public/creator/asset-store/eyes.png" alt=""':
-                        - rtgl-view class="rvn-pack-card-body":
-                            - rtgl-text class="rvn-pack-card-title": Eyes
-                    - 'button class="rvn-pack-card" type="button" role="listitem" data-asset-subtitle="A mask image for a halftone transition." data-asset-format="PNG"':
-                        - 'rtgl-view class="rvn-pack-card-thumb" aria-hidden="true"':
-                            - 'img class="rvn-pack-card-image" src="/public/creator/asset-store/halftone-1.png" alt=""':
-                        - rtgl-view class="rvn-pack-card-body":
-                            - rtgl-text class="rvn-pack-card-title": Halftone 1
-                    - 'button class="rvn-pack-card" type="button" role="listitem" data-asset-subtitle="A mask image for a halftone transition." data-asset-format="PNG"':
-                        - 'rtgl-view class="rvn-pack-card-thumb" aria-hidden="true"':
-                            - 'img class="rvn-pack-card-image" src="/public/creator/asset-store/halftone-2.png" alt=""':
-                        - rtgl-view class="rvn-pack-card-body":
-                            - rtgl-text class="rvn-pack-card-title": Halftone 2
-                    - 'button class="rvn-pack-card" type="button" role="listitem" data-asset-subtitle="A mask image for a halftone transition." data-asset-format="PNG"':
-                        - 'rtgl-view class="rvn-pack-card-thumb" aria-hidden="true"':
-                            - 'img class="rvn-pack-card-image" src="/public/creator/asset-store/halftone-3.png" alt=""':
-                        - rtgl-view class="rvn-pack-card-body":
-                            - rtgl-text class="rvn-pack-card-title": Halftone 3
-                    - 'button class="rvn-pack-card" type="button" role="listitem" data-asset-subtitle="A mask image for an opening shock transition." data-asset-format="PNG"':
-                        - 'rtgl-view class="rvn-pack-card-thumb" aria-hidden="true"':
-                            - 'img class="rvn-pack-card-image" src="/public/creator/asset-store/open-shock.png" alt=""':
-                        - rtgl-view class="rvn-pack-card-body":
-                            - rtgl-text class="rvn-pack-card-title": Open Shock
-                    - 'button class="rvn-pack-card" type="button" role="listitem" data-asset-subtitle="A mask image for a paw-print transition." data-asset-format="PNG"':
-                        - 'rtgl-view class="rvn-pack-card-thumb" aria-hidden="true"':
-                            - 'img class="rvn-pack-card-image" src="/public/creator/asset-store/paw-prints.png" alt=""':
-                        - rtgl-view class="rvn-pack-card-body":
-                            - rtgl-text class="rvn-pack-card-title": Paw Prints
-                    - 'button class="rvn-pack-card" type="button" role="listitem" data-asset-subtitle="A mask image for a stepped slide transition." data-asset-format="PNG"':
-                        - 'rtgl-view class="rvn-pack-card-thumb" aria-hidden="true"':
-                            - 'img class="rvn-pack-card-image" src="/public/creator/asset-store/slide-level-01.png" alt=""':
-                        - rtgl-view class="rvn-pack-card-body":
-                            - rtgl-text class="rvn-pack-card-title": Slide Level 01
-                    - 'button class="rvn-pack-card" type="button" role="listitem" data-asset-subtitle="A mask image for a stepped slide transition." data-asset-format="PNG"':
-                        - 'rtgl-view class="rvn-pack-card-thumb" aria-hidden="true"':
-                            - 'img class="rvn-pack-card-image" src="/public/creator/asset-store/slide-level-02.png" alt=""':
-                        - rtgl-view class="rvn-pack-card-body":
-                            - rtgl-text class="rvn-pack-card-title": Slide Level 02
-                    - 'button class="rvn-pack-card" type="button" role="listitem" data-asset-subtitle="A mask image for a smoke-clear transition." data-asset-format="PNG"':
-                        - 'rtgl-view class="rvn-pack-card-thumb" aria-hidden="true"':
-                            - 'img class="rvn-pack-card-image" src="/public/creator/asset-store/smoke-clear.png" alt=""':
-                        - rtgl-view class="rvn-pack-card-body":
-                            - rtgl-text class="rvn-pack-card-title": Smoke Clear
-                    - 'button class="rvn-pack-card" type="button" role="listitem" data-asset-subtitle="A mask image for a spill transition." data-asset-format="PNG"':
-                        - 'rtgl-view class="rvn-pack-card-thumb" aria-hidden="true"':
-                            - 'img class="rvn-pack-card-image" src="/public/creator/asset-store/spill.png" alt=""':
-                        - rtgl-view class="rvn-pack-card-body":
-                            - rtgl-text class="rvn-pack-card-title": Spill
-                    - 'button class="rvn-pack-card" type="button" role="listitem" data-asset-subtitle="A mask image for a spill transition." data-asset-format="PNG"':
-                        - 'rtgl-view class="rvn-pack-card-thumb" aria-hidden="true"':
-                            - 'img class="rvn-pack-card-image" src="/public/creator/asset-store/spill-2.png" alt=""':
-                        - rtgl-view class="rvn-pack-card-body":
-                            - rtgl-text class="rvn-pack-card-title": Spill 2
-                    - 'button class="rvn-pack-card" type="button" role="listitem" data-asset-subtitle="A mask image for a split transition." data-asset-format="PNG"':
-                        - 'rtgl-view class="rvn-pack-card-thumb" aria-hidden="true"':
-                            - 'img class="rvn-pack-card-image" src="/public/creator/asset-store/split.png" alt=""':
-                        - rtgl-view class="rvn-pack-card-body":
-                            - rtgl-text class="rvn-pack-card-title": Split
-                    - 'button class="rvn-pack-card" type="button" role="listitem" data-asset-subtitle="A mask image for a stepped transition." data-asset-format="PNG"':
-                        - 'rtgl-view class="rvn-pack-card-thumb" aria-hidden="true"':
-                            - 'img class="rvn-pack-card-image" src="/public/creator/asset-store/steps.png" alt=""':
-                        - rtgl-view class="rvn-pack-card-body":
-                            - rtgl-text class="rvn-pack-card-title": Steps
-            - 'section class="rvn-pack-subsection" aria-labelledby="rvn-pack-previews-title"':
-                - 'h3 id="rvn-pack-previews-title" class="rvn-pack-subsection-title"': Previews
-                - 'rtgl-grid class="rvn-pack-grid" cols="6" xl-cols="5" lg-cols="4" md-cols="3" sm-cols="2" g="lg" w="f" role="list"':
-                    - 'button class="rvn-pack-card" type="button" role="listitem" data-asset-subtitle="A visual-novel background preview." data-asset-format="PNG"':
-                        - 'rtgl-view class="rvn-pack-card-thumb" aria-hidden="true"':
-                            - 'img class="rvn-pack-card-image" src="/public/creator/asset-store/vn-background-1.png" alt=""':
-                        - rtgl-view class="rvn-pack-card-body":
-                            - rtgl-text class="rvn-pack-card-title": VN Background 1
-                    - 'button class="rvn-pack-card" type="button" role="listitem" data-asset-subtitle="A visual-novel background preview." data-asset-format="PNG"':
-                        - 'rtgl-view class="rvn-pack-card-thumb" aria-hidden="true"':
-                            - 'img class="rvn-pack-card-image" src="/public/creator/asset-store/vn-background-2.png" alt=""':
-                        - rtgl-view class="rvn-pack-card-body":
-                            - rtgl-text class="rvn-pack-card-title": VN Background 2
-- 'rtgl-dialog id="rvn-asset-dialog" s="lg" close-button':
-    - 'rtgl-view slot="content" class="rvn-asset-dialog-content" w="f" g="xl"':
-        - 'rtgl-view class="rvn-asset-dialog-header" w="f"':
-            - rtgl-view g="md" w="f":
-                - 'h2 id="rvn-asset-dialog-title" class="rvn-asset-dialog-title"': null
-                - rtgl-text id="rvn-asset-dialog-subtitle" class="rvn-asset-dialog-subtitle" s="md": null
-        - 'rtgl-view class="rvn-asset-dialog-layout" w="f"':
-            - 'rtgl-view class="rvn-asset-dialog-preview" w="f"':
-                - 'video id="rvn-asset-dialog-video" class="rvn-asset-dialog-video" data-loop-delay="500" muted playsinline preload="metadata" hidden':
-                - 'img id="rvn-asset-dialog-image" class="rvn-asset-dialog-image" alt="" hidden':
-            - 'aside class="rvn-asset-dialog-aside" aria-label="Asset information"':
-                - 'h3 class="rvn-pack-section-title"': Asset info
-                - rtgl-view g="lg" w="f":
-                    - rtgl-view g="sm" w="f":
-                        - rtgl-text s="sm": Format
-                        - rtgl-text id="rvn-asset-dialog-format": null
-                    - rtgl-view g="sm" w="f":
-                        - rtgl-text s="sm": Resolution
-                        - rtgl-text: 1920 × 1080
-- script: |
-    (() => {
-      document.querySelectorAll(".rvn-pack-card").forEach((card) => {
-        const video = card.querySelector(".rvn-pack-card-video");
-
-        if (!video) {
-          return;
-        }
-
-        let loopTimer;
-
-        const playVideo = () => {
-          const playPromise = video.play();
-
-          if (playPromise) {
-            playPromise.catch(() => {});
-          }
-        };
-
-        video.addEventListener("ended", () => {
-          loopTimer = window.setTimeout(() => {
-            video.currentTime = 0;
-            playVideo();
-          }, 500);
-        });
-
-        window.clearTimeout(loopTimer);
-        playVideo();
-      });
-
-      const assetCards = document.querySelectorAll(".rvn-pack-card");
-      const assetDialog = document.getElementById("rvn-asset-dialog");
-      const assetDialogTitle = document.getElementById("rvn-asset-dialog-title");
-      const assetDialogSubtitle = document.getElementById("rvn-asset-dialog-subtitle");
-      const assetDialogFormat = document.getElementById("rvn-asset-dialog-format");
-      const assetDialogVideo = document.getElementById("rvn-asset-dialog-video");
-      const assetDialogImage = document.getElementById("rvn-asset-dialog-image");
-      let activeAssetCard;
-      let assetDialogLoopTimer;
-
-      const playAssetDialogVideo = () => {
-        if (!assetDialogVideo || assetDialogVideo.hidden) {
-          return;
-        }
-
-        const playPromise = assetDialogVideo.play();
-
-        if (playPromise) {
-          playPromise.catch(() => {});
-        }
-      };
-
-      const openAssetDialog = (card) => {
-        if (!assetDialog) {
-          return;
-        }
-
-        const cardTitle = card.querySelector(".rvn-pack-card-title")?.textContent?.trim() || "Asset";
-        const cardMedia = card.querySelector(".rvn-pack-card-video, .rvn-pack-card-image");
-        const mediaSrc = cardMedia?.getAttribute("src") || "";
-
-        activeAssetCard = card;
-        assetDialogTitle.textContent = cardTitle;
-        assetDialogSubtitle.textContent = card.dataset.assetSubtitle || "";
-        assetDialogFormat.textContent = card.dataset.assetFormat || "";
-
-        window.clearTimeout(assetDialogLoopTimer);
-
-        if (cardMedia instanceof HTMLVideoElement) {
-          assetDialogImage.hidden = true;
-          assetDialogVideo.hidden = false;
-          assetDialogVideo.src = mediaSrc;
-          assetDialogVideo.load();
-        } else {
-          assetDialogVideo.pause();
-          assetDialogVideo.removeAttribute("src");
-          assetDialogVideo.load();
-          assetDialogVideo.hidden = true;
-          assetDialogImage.src = mediaSrc;
-          assetDialogImage.alt = `${cardTitle} preview`;
-          assetDialogImage.hidden = false;
-        }
-
-        assetDialog.setAttribute("open", "");
-        assetDialog.dialog?.setAttribute("aria-labelledby", "rvn-asset-dialog-title");
-        assetDialog.dialog?.setAttribute("aria-describedby", "rvn-asset-dialog-subtitle");
-        playAssetDialogVideo();
-      };
-
-      const closeAssetDialog = () => {
-        if (!assetDialog) {
-          return;
-        }
-
-        assetDialog.removeAttribute("open");
-        window.clearTimeout(assetDialogLoopTimer);
-
-        if (assetDialogVideo) {
-          assetDialogVideo.pause();
-          assetDialogVideo.removeAttribute("src");
-          assetDialogVideo.load();
-          assetDialogVideo.hidden = true;
-        }
-
-        activeAssetCard?.focus();
-        activeAssetCard = null;
-      };
-
-      assetCards.forEach((card) => {
-        card.addEventListener("click", () => {
-          openAssetDialog(card);
-        });
-      });
-
-      assetDialog?.addEventListener("close", closeAssetDialog);
-
-      assetDialogVideo?.addEventListener("ended", () => {
-        assetDialogLoopTimer = window.setTimeout(() => {
-          assetDialogVideo.currentTime = 0;
-          playAssetDialogVideo();
-        }, Number(assetDialogVideo.dataset.loopDelay));
-      });
-
-      const button = document.getElementById("rvn-add-pack-button");
-
-      if (!button) {
-        return;
-      }
-
-      const getPackJsonUrl = () => {
-        const url = new URL(window.location.href);
-        url.pathname = url.pathname.replace(/\/+$/, "") + ".json";
-        url.search = "";
-        url.hash = "";
-        return url.href;
-      };
-
-      const copyText = async (text) => {
-        if (navigator.clipboard && window.isSecureContext) {
-          await navigator.clipboard.writeText(text);
-          return;
-        }
-
-        const textarea = document.createElement("textarea");
-        textarea.value = text;
-        textarea.setAttribute("readonly", "");
-        textarea.style.position = "fixed";
-        textarea.style.opacity = "0";
-        document.body.append(textarea);
-        textarea.select();
-        const copied = document.execCommand("copy");
-        textarea.remove();
-
-        if (!copied) {
-          throw new Error("Copy command failed");
-        }
-      };
-
-      button.addEventListener("click", async () => {
-        try {
-          await copyText(getPackJsonUrl());
-        } catch (error) {
-          console.error("Failed to copy import URL", error);
-        }
-      });
-    })();
+- $partial: asset-store/pack
+  pack: ${assetPack}

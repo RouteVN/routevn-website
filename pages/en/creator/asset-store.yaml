@@ -6,200 +6,27 @@ seo:
   title: RouteVN Creator Asset Store
   description: Browse curated asset packs for RouteVN Creator.
 ---
-- style: |
-    .rvn-asset-store {
-      --rvn-store-border: rgba(255, 255, 255, 0.12);
-      --rvn-store-muted: rgba(255, 255, 255, 0.68);
-      box-sizing: border-box;
-      display: grid;
-      gap: 48px;
-      grid-template-columns: minmax(0, 1fr);
-      margin: 56px auto 0;
-      max-width: 1200px;
-      width: 1200px !important;
-    }
-
-    .rvn-asset-store *,
-    .rvn-asset-store *::before,
-    .rvn-asset-store *::after {
-      box-sizing: border-box;
-    }
-
-    .rvn-asset-store-header {
-      align-items: center;
-      display: flex;
-      gap: 16px;
-      justify-content: space-between;
-      min-width: 0;
-      width: 100% !important;
-    }
-
-    .rvn-asset-store-title {
-      font-size: 2rem;
-      font-weight: 600;
-      letter-spacing: 0;
-      line-height: 1.1;
-      margin: 0;
-    }
-
-    .rvn-asset-store-heading {
-      flex: 1 1 auto;
-      min-width: 0;
-      width: 100% !important;
-    }
-
-    .rvn-asset-store-subtitle {
-      color: var(--rvn-store-muted);
-      max-width: none;
-      width: 100% !important;
-    }
-
-    .rvn-asset-store-sticker {
-      display: block;
-      flex: 0 0 auto;
-      height: auto;
-      margin-left: auto;
-      width: clamp(96px, 14vw, 160px);
-    }
-
-    .rvn-asset-card {
-      background: transparent;
-      border: 1px solid var(--rvn-store-border);
-      border-radius: 8px;
-      color: inherit;
-      display: block;
-      overflow: hidden;
-      min-width: 0;
-      text-decoration: none;
-      transition: border-color 120ms ease, transform 120ms ease;
-      width: 100% !important;
-    }
-
-    .rvn-asset-card:hover {
-      border-color: rgba(255, 255, 255, 0.28);
-      transform: translateY(-1px);
-    }
-
-    .rvn-asset-thumb {
-      aspect-ratio: 16 / 10;
-      background: #111;
-      display: block;
-      overflow: hidden;
-      position: relative;
-      width: 100%;
-    }
-
-    .rvn-asset-thumb-image {
-      display: block;
-      filter: saturate(0.95) var(--thumb-filter, none);
-      height: 100%;
-      object-fit: cover;
-      transform: scale(1.01);
-      width: 100%;
-    }
-
-    .rvn-asset-title {
-      color: var(--foreground);
-      font-weight: 400;
-      line-height: 1.25;
-      min-width: 0;
-      overflow: hidden;
-      text-overflow: ellipsis;
-      white-space: nowrap;
-    }
-
-    .rvn-asset-meta-row {
-      align-items: center;
-      display: flex !important;
-      flex-direction: row;
-      flex-wrap: nowrap;
-      gap: 8px;
-      justify-content: flex-start;
-      min-width: 0;
-      width: 100% !important;
-    }
-
-    .rvn-asset-meta-spacer {
-      flex: 1 1 auto;
-      min-width: 0;
-    }
-
-    .rvn-asset-author {
-      align-items: center;
-      color: inherit;
-      display: flex !important;
-      flex-direction: row;
-      flex-wrap: nowrap;
-      gap: 6px;
-      min-width: 0;
-      text-decoration: none;
-    }
-
-    .rvn-asset-author:hover .rvn-asset-author-name {
-      color: var(--foreground);
-      text-decoration: underline;
-      text-underline-offset: 3px;
-    }
-
-    .rvn-asset-author-avatar {
-      border-radius: 999px;
-      display: block;
-      flex: 0 0 20px;
-      height: 20px;
-      object-fit: cover;
-      width: 20px;
-    }
-
-    .rvn-asset-author-name,
-    .rvn-asset-count {
-      color: var(--rvn-store-muted);
-      display: block;
-      font-size: 0.82rem;
-      line-height: 1.25;
-    }
-
-    .rvn-asset-count {
-      flex: 0 0 auto;
-      text-align: right;
-      white-space: nowrap;
-    }
-
-    @media (max-width: 1280px) {
-      .rvn-asset-store {
-        max-width: calc(100vw - 64px);
-        width: calc(100vw - 64px) !important;
-      }
-    }
-
-    @media (max-width: 760px) {
-      .rvn-asset-store {
-        max-width: calc(100vw - 48px);
-        width: calc(100vw - 48px) !important;
-      }
-    }
-
-    @media (max-width: 620px) {
-      .rvn-asset-store {
-        margin-top: 40px;
-      }
-
-    }
-
-- 'rtgl-view class="rvn-asset-store" g="xl"':
-    - 'rtgl-view class="rvn-asset-store-header" d="h" w="f" g="lg"':
-        - rtgl-view class="rvn-asset-store-heading" g="md":
-            - rtgl-text class="rvn-asset-store-title" s="h1": Asset Store
-            - rtgl-text class="rvn-asset-store-subtitle" s="md": Browse curated asset packs for RouteVN Creator. Open a pack to explore every included asset.
-        - 'img class="rvn-asset-store-sticker" src="/public/creator/asset-store/asset-store-sticker.png" alt="" aria-hidden="true"':
-    - 'rtgl-grid class="rvn-asset-grid" cols="4" xl-cols="3" lg-cols="3" md-cols="2" sm-cols="1" g="lg" w="f" role="main" aria-label="Asset packs"':
-                - 'rtgl-view class="rvn-asset-card" href="/en/creator/asset-store/rainy-city-street/" cur="p"':
-                    - 'rtgl-view class="rvn-asset-thumb" style="--thumb-filter: none;" aria-hidden="true"':
-                        - 'img class="rvn-asset-thumb-image" src="/public/creator/asset-store/transitions-cover.png" alt=""':
-                    - rtgl-view g="sm" p="md" w="f":
-                        - rtgl-text class="rvn-asset-title": Transitions
-                        - rtgl-view class="rvn-asset-meta-row" d="h" av="c" w="f":
-                            - 'a class="rvn-asset-author" href="/en/creator/asset-store/authors/routevn/"':
-                                - 'img class="rvn-asset-author-avatar" src="/public/images/routevn-icon.png" alt=""':
-                                - span class="rvn-asset-author-name": RouteVN
-                            - rtgl-view class="rvn-asset-meta-spacer" w="f":
-                            - span class="rvn-asset-count": 27 assets
+- rtgl-view h="56" sm-h="40":
+- rtgl-view w="f" ah="c":
+    - 'rtgl-view w="1200" xl-w="calc(100vw - 64px)" md-w="calc(100vw - 48px)" role="main"':
+        - 'rtgl-view d="h" av="c" w="f" g="lg"':
+            - rtgl-view g="md" w="f":
+                - 'rtgl-text s="h1" role="heading" aria-level="1"': Asset Store
+                - rtgl-text s="md" c="mu-fg" w="f": Browse curated asset packs for RouteVN Creator. Open a pack to explore every included asset.
+            - 'rtgl-view aria-hidden="true"':
+                - 'rtgl-image w="clamp(96px, 14vw, 160px)" src="/public/creator/asset-store/asset-store-sticker.png" alt=""':
+        - rtgl-view h="48":
+        - 'rtgl-grid cols="4" xl-cols="3" lg-cols="3" md-cols="2" sm-cols="1" g="lg" w="f" aria-label="Asset packs"':
+            - $for item in sort(collections.assetPack, "data.assetPack.released", "desc"):
+                - $if item.data.assetPack.slug == "rainy-city-street":
+                    - 'rtgl-view href="${item.url}" bw="xs" bc="bo" h-bc="ac" br="md" overflow="hidden" cur="pointer" w="f"':
+                        - 'rtgl-view ar="16/10" bgc="su" overflow="hidden" w="f" aria-hidden="true"':
+                            - 'rtgl-image w="f" h="f" of="cov" src="${item.data.assetPack.coverThumbnailSrc}" alt=""':
+                        - rtgl-view g="sm" p="md" w="f":
+                            - rtgl-text ellipsis w="f": ${item.data.assetPack.name}
+                            - rtgl-view d="h" av="c" g="sm" w="f" no-wrap:
+                                - 'rtgl-view d="h" av="c" g="sm" w="1fg" href="/en/creator/asset-store/authors/${item.data.assetPack.author.slug}/"':
+                                    - 'rtgl-image wh="20" of="cov" br="f" src="${item.data.assetPack.author.avatarSrc}" alt=""':
+                                    - rtgl-text s="sm" c="mu-fg": ${item.data.assetPack.author.name}
+                                - rtgl-view:
+                                    - rtgl-text s="sm" c="mu-fg": ${item.data.assetPack.assetCount} assets

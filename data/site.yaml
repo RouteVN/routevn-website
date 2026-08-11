@@ -50,8 +50,8 @@ footer:
           href: /en/creator/docs/introduction/
         - text: Creator Changelog
           href: /en/creator/changelog/
-        - text: Asset Store
-          href: /en/creator/asset-store/
+        # - text: Asset Store
+        #   href: /en/creator/asset-store/
     - links:
         - text: Blog
           href: /en/blog/

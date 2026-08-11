@@ -137,6 +137,7 @@ a:hover {
 
   /* surface color */
   --background: oklch(1 0 0);
+  --surface: oklch(0.992 0.002 250);
   --foreground: oklch(0.145 0 0);
 
   /* item hovered color */
@@ -172,6 +173,7 @@ a:hover {
 
 .dark {
   --background: oklch(0.145 0 0);
+  --surface: oklch(0.18 0 0);
   --foreground: oklch(0.985 0 0);
   --primary: oklch(0.922 0 0);
   --primary-foreground: oklch(0.305 0 0);

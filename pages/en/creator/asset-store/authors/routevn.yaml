@@ -6,227 +6,32 @@ seo:
   title: RouteVN - Asset Store Author
   description: Browse asset packs published by RouteVN for RouteVN Creator.
 ---
-- style: |
-    .rvn-author-page {
-      --rvn-author-border: rgba(255, 255, 255, 0.12);
-      --rvn-author-muted: rgba(255, 255, 255, 0.68);
-      box-sizing: border-box;
-      display: grid;
-      gap: 48px;
-      margin: 56px auto 0;
-      max-width: 1200px;
-      width: 1200px !important;
-    }
-
-    .rvn-author-page *,
-    .rvn-author-page *::before,
-    .rvn-author-page *::after {
-      box-sizing: border-box;
-    }
-
-    .rvn-author-back {
-      color: var(--rvn-author-muted);
-      font-size: 0.92rem;
-      text-decoration: none;
-      width: fit-content;
-    }
-
-    .rvn-author-back:hover {
-      color: var(--foreground);
-      text-decoration: underline;
-      text-underline-offset: 4px;
-    }
-
-    .rvn-author-profile {
-      align-items: center;
-      display: grid;
-      gap: 28px;
-      grid-template-columns: 160px minmax(0, 1fr);
-    }
-
-    .rvn-author-avatar {
-      border-radius: 999px;
-      display: block;
-      height: 160px;
-      object-fit: cover;
-      width: 160px;
-    }
-
-    .rvn-author-info {
-      align-content: center;
-      display: grid;
-      gap: 10px;
-      min-width: 0;
-    }
-
-    .rvn-author-name {
-      color: var(--foreground);
-      font-size: 2rem;
-      font-weight: 600;
-      line-height: 1.1;
-      margin: 0;
-    }
-
-    .rvn-author-social {
-      align-items: center;
-      color: var(--rvn-author-muted);
-      display: flex;
-      height: 32px;
-      justify-content: center;
-      text-decoration: none;
-      width: 32px;
-    }
-
-    .rvn-author-socials {
-      align-items: center;
-      display: flex;
-      gap: 6px;
-    }
-
-    .rvn-author-social:hover {
-      color: var(--foreground);
-    }
-
-    .rvn-author-description {
-      color: var(--rvn-author-muted);
-      line-height: 1.55;
-      margin: 2px 0 0;
-      max-width: 680px;
-    }
-
-    .rvn-author-packages {
-      display: grid;
-      gap: 18px;
-    }
-
-    .rvn-author-section-title {
-      color: var(--foreground);
-      font-size: 1rem;
-      font-weight: 600;
-      line-height: 1.3;
-      margin: 0;
-    }
-
-    .rvn-author-pack-grid {
-      width: 100% !important;
-    }
-
-    .rvn-author-pack-card {
-      background: transparent;
-      border: 1px solid var(--rvn-author-border);
-      border-radius: 8px;
-      color: inherit;
-      display: block;
-      min-width: 0;
-      overflow: hidden;
-      text-decoration: none;
-      transition: border-color 120ms ease, transform 120ms ease;
-      width: 100%;
-    }
-
-    .rvn-author-pack-card:hover {
-      border-color: rgba(255, 255, 255, 0.28);
-      transform: translateY(-1px);
-    }
-
-    .rvn-author-pack-card:focus-visible {
-      outline: 2px solid var(--ring);
-      outline-offset: 3px;
-    }
-
-    .rvn-author-pack-image-frame {
-      aspect-ratio: 16 / 10;
-      background: #111;
-      display: block;
-      overflow: hidden;
-      width: 100%;
-    }
-
-    .rvn-author-pack-image {
-      display: block;
-      height: 100%;
-      object-fit: cover;
-      transform: scale(1.01);
-      width: 100%;
-    }
-
-    .rvn-author-pack-body {
-      align-items: center;
-      display: flex;
-      gap: 10px;
-      justify-content: space-between;
-      min-width: 0;
-      padding: 8px;
-      width: 100%;
-    }
-
-    .rvn-author-pack-title {
-      color: var(--foreground);
-      font-weight: 400;
-      line-height: 1.25;
-      min-width: 0;
-      overflow: hidden;
-      text-overflow: ellipsis;
-      white-space: nowrap;
-    }
-
-    .rvn-author-pack-count {
-      color: var(--rvn-author-muted);
-      flex: 0 0 auto;
-      font-size: 0.82rem;
-      line-height: 1.25;
-      white-space: nowrap;
-    }
-
-    @media (max-width: 1280px) {
-      .rvn-author-page {
-        max-width: calc(100vw - 64px);
-        width: calc(100vw - 64px) !important;
-      }
-    }
-
-    @media (max-width: 760px) {
-      .rvn-author-page {
-        max-width: calc(100vw - 48px);
-        width: calc(100vw - 48px) !important;
-      }
-    }
-
-    @media (max-width: 620px) {
-      .rvn-author-page {
-        margin-top: 40px;
-      }
-
-      .rvn-author-profile {
-        align-items: start;
-        gap: 18px;
-        grid-template-columns: 96px minmax(0, 1fr);
-      }
-
-      .rvn-author-avatar {
-        height: 96px;
-        width: 96px;
-      }
-    }
-
-- 'main class="rvn-author-page"':
-    - 'a class="rvn-author-back" href="/en/creator/asset-store/"': Back
-    - 'section class="rvn-author-profile" aria-labelledby="rvn-author-name"':
-        - 'img class="rvn-author-avatar" src="/public/images/routevn-icon.png" alt="RouteVN"':
-        - 'rtgl-view class="rvn-author-info"':
-            - 'h1 id="rvn-author-name" class="rvn-author-name"': RouteVN
-            - 'div class="rvn-author-socials" aria-label="Social media"':
-                - 'a class="rvn-author-social" href="https://x.com/routevn" target="_blank" rel="noreferrer" aria-label="RouteVN on X" title="X"':
-                    - 'rtgl-svg svg="social-x" wh="22"':
-                - 'a class="rvn-author-social" href="https://www.instagram.com/routevn" target="_blank" rel="noreferrer" aria-label="RouteVN on Instagram" title="Instagram"':
-                    - 'rtgl-svg svg="instagram" wh="22"':
-            - p class="rvn-author-description": RouteVN creates free tools and resources that help visual novel creators build and publish their stories.
-    - 'section class="rvn-author-packages" aria-labelledby="rvn-author-packages-title"':
-        - 'h2 id="rvn-author-packages-title" class="rvn-author-section-title"': Asset packs
-        - 'rtgl-grid class="rvn-author-pack-grid" cols="4" xl-cols="3" lg-cols="3" md-cols="2" sm-cols="1" g="lg" w="f" role="list"':
-            - 'a class="rvn-author-pack-card" href="/en/creator/asset-store/rainy-city-street/" role="listitem"':
-                - 'span class="rvn-author-pack-image-frame" aria-hidden="true"':
-                    - 'img class="rvn-author-pack-image" src="/public/creator/asset-store/transitions-cover.png" alt=""':
-                - 'span class="rvn-author-pack-body"':
-                    - span class="rvn-author-pack-title": Transitions
-                    - span class="rvn-author-pack-count": 27 assets
+- rtgl-view h="56" sm-h="40":
+- rtgl-view w="f" ah="c":
+    - 'rtgl-view w="1200" xl-w="calc(100vw - 64px)" md-w="calc(100vw - 48px)" g="xl" role="main"':
+        - 'rtgl-text href="/en/creator/asset-store/" s="sm" c="mu-fg"': Back
+        - 'rtgl-view d="h" av="c" g="xl" w="f" role="region" aria-labelledby="rvn-author-name"':
+            - 'rtgl-image wh="160" sm-wh="96" of="cov" br="f" src="/public/images/routevn-icon.png" alt="RouteVN"':
+            - rtgl-view g="md" w="f":
+                - 'rtgl-text id="rvn-author-name" s="h1" role="heading" aria-level="1"': RouteVN
+                - 'rtgl-view d="h" av="c" g="sm" aria-label="Social media"':
+                    - 'rtgl-view wh="32" ah="c" av="c" href="https://x.com/routevn" new-tab rel="noreferrer" aria-label="RouteVN on X" title="X"':
+                        - 'rtgl-svg svg="social-x" wh="22"':
+                    - 'rtgl-view wh="32" ah="c" av="c" href="https://bsky.app/profile/routevn.bsky.social" new-tab rel="noreferrer" aria-label="RouteVN on Bluesky" title="Bluesky"':
+                        - 'rtgl-svg svg="social-bluesky" wh="22"':
+                    - 'rtgl-view wh="32" ah="c" av="c" href="https://www.instagram.com/routevn" new-tab rel="noreferrer" aria-label="RouteVN on Instagram" title="Instagram"':
+                        - 'rtgl-svg svg="instagram" wh="22"':
+                - rtgl-view w="680" md-w="f":
+                    - rtgl-text c="mu-fg": RouteVN creates free tools and resources that help visual novel creators build and publish their stories.
+        - 'rtgl-view g="lg" w="f" role="region" aria-labelledby="rvn-author-packages-title"':
+            - 'rtgl-text id="rvn-author-packages-title" s="h4" role="heading" aria-level="2"': Asset packs
+            - 'rtgl-grid cols="4" xl-cols="3" lg-cols="3" md-cols="2" sm-cols="1" g="lg" w="f" role="list"':
+                - $for item in sort(collections.assetPack, "data.assetPack.released", "desc"):
+                    - $if item.data.assetPack.author.slug == "routevn" && item.data.assetPack.slug == "rainy-city-street":
+                        - 'rtgl-view href="${item.url}" role="listitem" bw="xs" bc="bo" h-bc="ac" br="md" overflow="hidden" cur="pointer" w="f"':
+                            - 'rtgl-view ar="16/10" bgc="su" overflow="hidden" w="f" aria-hidden="true"':
+                                - 'rtgl-image w="f" h="f" of="cov" src="${item.data.assetPack.coverThumbnailSrc}" alt=""':
+                            - rtgl-view d="h" av="c" g="sm" p="sm" w="f" no-wrap:
+                                - rtgl-text ellipsis w="1fg": ${item.data.assetPack.name}
+                                - rtgl-view:
+                                    - rtgl-text s="sm" c="mu-fg": ${item.data.assetPack.assetCount} assets
