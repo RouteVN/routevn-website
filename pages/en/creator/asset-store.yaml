@@ -195,7 +195,7 @@ seo:
                 - 'rtgl-view class="rvn-asset-card" href="/en/creator/asset-store/rainy-city-street/" cur="p"':
                     - 'rtgl-view class="rvn-asset-thumb" style="--thumb-filter: none;" aria-hidden="true"':
                         - 'img class="rvn-asset-thumb-image" src="/public/creator/asset-store/transitions-cover.png" alt=""':
-                    - rtgl-view g="sm" p="sm" w="f":
+                    - rtgl-view g="sm" p="md" w="f":
                         - rtgl-text class="rvn-asset-title": Transitions
                         - rtgl-view class="rvn-asset-meta-row" d="h" av="c" w="f":
                             - 'a class="rvn-asset-author" href="/en/creator/asset-store/authors/routevn/"':
