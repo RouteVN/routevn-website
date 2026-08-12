@@ -1,5 +1,5 @@
-slug: rainy-city-street
-packageId: routevn.transitions
+slug: essential-transition-pack
+packageId: vLjG5GPfLfNy
 name: Essential Transition Pack
 version: 1.0.0
 description: A collection of transitions for RouteVN Creator.
@@ -7,9 +7,8 @@ author:
   name: RouteVN
   slug: routevn
   avatarSrc: /public/images/routevn-icon.png
-license: CC0
 released: '2026-08-09'
 updated: '2026-08-12'
 coverAssetId: JwYWiyzpVL56
-coverSrc: /public/creator/asset-store/rainy-city-street/mask-animations-cover.png
-coverThumbnailSrc: /public/creator/asset-store/rainy-city-street/mask-animations-cover.thumbnail.webp
+coverSrc: /public/creator/asset-store/essential-transition-pack/mask-animations-cover.png
+coverThumbnailSrc: /public/creator/asset-store/essential-transition-pack/mask-animations-cover.thumbnail.webp

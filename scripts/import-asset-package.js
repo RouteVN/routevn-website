@@ -308,7 +308,7 @@ function validateMetadata(metadata) {
     fail('metadata.slug must be a lowercase URL slug such as "city-backgrounds".');
   }
 
-  for (const key of ['license', 'released', 'updated', 'coverAssetId']) {
+  for (const key of ['released', 'updated', 'coverAssetId']) {
     if (!metadata?.[key]) {
       fail(`metadata.${key} is required.`);
     }
@@ -939,7 +939,6 @@ function main() {
       releasedLabel: formatDate(metadata.released),
       updated: metadata.updated,
       updatedLabel: formatDate(metadata.updated),
-      license: metadata.license,
       sections,
     };
 

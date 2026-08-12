@@ -2,7 +2,7 @@
   "schema": "routevn.import-pack.v1",
   "package": {
     "kind": "routevn.creator.asset-package",
-    "id": "routevn.transitions",
+    "id": "vLjG5GPfLfNy",
     "name": "Essential Transition Pack",
     "version": "1.0.0",
     "description": "A collection of transitions for RouteVN Creator."
@@ -14,7 +14,7 @@
           "id": "Wt2LWBPXdux2",
           "mimeType": "image/png",
           "source": {
-            "url": "/public/creator/asset-store/rainy-city-street/files/Wt2LWBPXdux2.png"
+            "url": "/public/creator/asset-store/essential-transition-pack/files/Wt2LWBPXdux2.png"
           },
           "type": "image",
           "size": 324934,
@@ -24,7 +24,7 @@
           "id": "oVd6cHn2uKUk",
           "mimeType": "image/png",
           "source": {
-            "url": "/public/creator/asset-store/rainy-city-street/files/oVd6cHn2uKUk.png"
+            "url": "/public/creator/asset-store/essential-transition-pack/files/oVd6cHn2uKUk.png"
           },
           "type": "image",
           "size": 18670,
@@ -34,7 +34,7 @@
           "id": "JTCEpp5qjpd4",
           "mimeType": "image/png",
           "source": {
-            "url": "/public/creator/asset-store/rainy-city-street/files/JTCEpp5qjpd4.png"
+            "url": "/public/creator/asset-store/essential-transition-pack/files/JTCEpp5qjpd4.png"
           },
           "size": 47956,
           "sha256": "c540d93951090c11570b8caa2d2c1df429e6c71b7f7e9f0dd73f4cd314ab5753"
@@ -43,7 +43,7 @@
           "id": "CvHJBJHu4ibk",
           "mimeType": "image/png",
           "source": {
-            "url": "/public/creator/asset-store/rainy-city-street/files/CvHJBJHu4ibk.png"
+            "url": "/public/creator/asset-store/essential-transition-pack/files/CvHJBJHu4ibk.png"
           },
           "size": 25046,
           "sha256": "b50be157f7744d626c8b32019a5fa5e87980bae0a88b06d352b9815a85ba2de3"
@@ -52,7 +52,7 @@
           "id": "LYNKk5Z7fcbh",
           "mimeType": "image/png",
           "source": {
-            "url": "/public/creator/asset-store/rainy-city-street/files/LYNKk5Z7fcbh.png"
+            "url": "/public/creator/asset-store/essential-transition-pack/files/LYNKk5Z7fcbh.png"
           },
           "size": 523332,
           "sha256": "bcdb887a199c99be7059ddffd47aa7912c5fe29192011826e037bf496479d67c"
@@ -61,7 +61,7 @@
           "id": "ZxB8ZoABjVqX",
           "mimeType": "image/png",
           "source": {
-            "url": "/public/creator/asset-store/rainy-city-street/files/ZxB8ZoABjVqX.png"
+            "url": "/public/creator/asset-store/essential-transition-pack/files/ZxB8ZoABjVqX.png"
           },
           "size": 44456,
           "sha256": "cf432eeb823d189d01f33d41ab9448e3c7d025425944fa92fd716e9b0073899e"
@@ -70,7 +70,7 @@
           "id": "WCvPNwmYGSXi",
           "mimeType": "image/png",
           "source": {
-            "url": "/public/creator/asset-store/rainy-city-street/files/WCvPNwmYGSXi.png"
+            "url": "/public/creator/asset-store/essential-transition-pack/files/WCvPNwmYGSXi.png"
           },
           "size": 32758,
           "sha256": "4d89ba6699874f35488c4b393e2c3c5f3454cdd10ebc820b4f3adf5d394879bc"
@@ -79,7 +79,7 @@
           "id": "He82TdWNohjN",
           "mimeType": "image/png",
           "source": {
-            "url": "/public/creator/asset-store/rainy-city-street/files/He82TdWNohjN.png"
+            "url": "/public/creator/asset-store/essential-transition-pack/files/He82TdWNohjN.png"
           },
           "size": 5553,
           "sha256": "3642df505f92c2bf871e6c43ab15978109ea494554695324984f496c2e1b3b86"
@@ -88,7 +88,7 @@
           "id": "zc8HmgeNKqgX",
           "mimeType": "image/png",
           "source": {
-            "url": "/public/creator/asset-store/rainy-city-street/files/zc8HmgeNKqgX.png"
+            "url": "/public/creator/asset-store/essential-transition-pack/files/zc8HmgeNKqgX.png"
           },
           "size": 224556,
           "sha256": "e151de84cca9a2cb335fe15d01dc1ab98ba4dfbc9adbb88a24bea73c850be4d5"
@@ -97,7 +97,7 @@
           "id": "eW5iTTjpgWY1",
           "mimeType": "image/png",
           "source": {
-            "url": "/public/creator/asset-store/rainy-city-street/files/eW5iTTjpgWY1.png"
+            "url": "/public/creator/asset-store/essential-transition-pack/files/eW5iTTjpgWY1.png"
           },
           "size": 4411,
           "sha256": "a6829825a4dd0676d3744e379a60a4bf44d7cdb34373cfb21dbf93166b757752"
@@ -106,7 +106,7 @@
           "id": "KBDxCweDMk4x",
           "mimeType": "image/png",
           "source": {
-            "url": "/public/creator/asset-store/rainy-city-street/files/KBDxCweDMk4x.png"
+            "url": "/public/creator/asset-store/essential-transition-pack/files/KBDxCweDMk4x.png"
           },
           "size": 693286,
           "sha256": "c6b1cb679eb523dcdbf2b77eac446e29dad2617753eb27c1beeda1dbda0cbd0a"
@@ -115,7 +115,7 @@
           "id": "5z73Frfy58uG",
           "mimeType": "image/png",
           "source": {
-            "url": "/public/creator/asset-store/rainy-city-street/files/5z73Frfy58uG.png"
+            "url": "/public/creator/asset-store/essential-transition-pack/files/5z73Frfy58uG.png"
           },
           "size": 50538,
           "sha256": "a359d79931c628af01a667bf5562557d922081b6b62f0ddc838ed27a93b79e2b"
@@ -124,7 +124,7 @@
           "id": "oLLQjCmvgBPE",
           "mimeType": "image/png",
           "source": {
-            "url": "/public/creator/asset-store/rainy-city-street/files/oLLQjCmvgBPE.png"
+            "url": "/public/creator/asset-store/essential-transition-pack/files/oLLQjCmvgBPE.png"
           },
           "size": 821685,
           "sha256": "da3335f8d3a53e9149ce18a90d2c0c767b6fba046b6043e588f2bdadfd17831e"
@@ -133,7 +133,7 @@
           "id": "kJuaJuwoCWiQ",
           "mimeType": "image/png",
           "source": {
-            "url": "/public/creator/asset-store/rainy-city-street/files/kJuaJuwoCWiQ.png"
+            "url": "/public/creator/asset-store/essential-transition-pack/files/kJuaJuwoCWiQ.png"
           },
           "size": 92926,
           "sha256": "de82e4a816050cc9696a2c4e7298b9efad8373d261674ea88a9a3768139a0265"
@@ -142,7 +142,7 @@
           "id": "dXxgczT3csnP",
           "mimeType": "image/png",
           "source": {
-            "url": "/public/creator/asset-store/rainy-city-street/files/dXxgczT3csnP.png"
+            "url": "/public/creator/asset-store/essential-transition-pack/files/dXxgczT3csnP.png"
           },
           "size": 734694,
           "sha256": "ecfc6205001370d5aa4592e77d621c5f63e9efcfe36527833da7bfc33502d4d0"
@@ -151,7 +151,7 @@
           "id": "g86EATZqS2PB",
           "mimeType": "image/png",
           "source": {
-            "url": "/public/creator/asset-store/rainy-city-street/files/g86EATZqS2PB.png"
+            "url": "/public/creator/asset-store/essential-transition-pack/files/g86EATZqS2PB.png"
           },
           "size": 105817,
           "sha256": "51ac855703811e3edeea084942c3e988215997f6560018afed51e7fbd7818029"
@@ -160,7 +160,7 @@
           "id": "spEKTetgsSNt",
           "mimeType": "image/png",
           "source": {
-            "url": "/public/creator/asset-store/rainy-city-street/files/spEKTetgsSNt.png"
+            "url": "/public/creator/asset-store/essential-transition-pack/files/spEKTetgsSNt.png"
           },
           "size": 1981483,
           "sha256": "9313af343548ca087f97a2f19c253e624e78a5a0d166e6707c5b8255965d541e"
@@ -169,7 +169,7 @@
           "id": "rSzNG8d1pr7y",
           "mimeType": "image/png",
           "source": {
-            "url": "/public/creator/asset-store/rainy-city-street/files/rSzNG8d1pr7y.png"
+            "url": "/public/creator/asset-store/essential-transition-pack/files/rSzNG8d1pr7y.png"
           },
           "size": 76537,
           "sha256": "acd9299c8203a55339b3d4b900bf19447828ca387ca85e69b9f267bae64484d3"
@@ -178,7 +178,7 @@
           "id": "xzQsStaQETNw",
           "mimeType": "image/png",
           "source": {
-            "url": "/public/creator/asset-store/rainy-city-street/files/xzQsStaQETNw.png"
+            "url": "/public/creator/asset-store/essential-transition-pack/files/xzQsStaQETNw.png"
           },
           "size": 342736,
           "sha256": "30a2ec1f28722cb321ad29fd0a4bfc6946d07e85c878255f98a8cb2e93e8d002"
@@ -187,7 +187,7 @@
           "id": "2zxXXRiXrNdo",
           "mimeType": "image/png",
           "source": {
-            "url": "/public/creator/asset-store/rainy-city-street/files/2zxXXRiXrNdo.png"
+            "url": "/public/creator/asset-store/essential-transition-pack/files/2zxXXRiXrNdo.png"
           },
           "size": 25910,
           "sha256": "1233efe83579c5a71affa34454c7e54871bbdc5ec1af75ac71574cb1f7411205"
@@ -196,7 +196,7 @@
           "id": "zfs24aYjPf5f",
           "mimeType": "image/png",
           "source": {
-            "url": "/public/creator/asset-store/rainy-city-street/files/zfs24aYjPf5f.png"
+            "url": "/public/creator/asset-store/essential-transition-pack/files/zfs24aYjPf5f.png"
           },
           "size": 47637,
           "sha256": "7d2fb13d94f67b641d30e008e4287997176527de84fe10aebc93428761abd0ec"
@@ -205,7 +205,7 @@
           "id": "bViCHBywekKR",
           "mimeType": "image/png",
           "source": {
-            "url": "/public/creator/asset-store/rainy-city-street/files/bViCHBywekKR.png"
+            "url": "/public/creator/asset-store/essential-transition-pack/files/bViCHBywekKR.png"
           },
           "size": 6897,
           "sha256": "0ddd87550ee2d353b6a9c562466b48e344f0369f6ed62f808eb7e7debb4f44f5"
@@ -214,7 +214,7 @@
           "id": "PTP66rok4ceS",
           "mimeType": "image/png",
           "source": {
-            "url": "/public/creator/asset-store/rainy-city-street/files/PTP66rok4ceS.png"
+            "url": "/public/creator/asset-store/essential-transition-pack/files/PTP66rok4ceS.png"
           },
           "size": 11621,
           "sha256": "52ee64be3a68bb6c9e30ff014f2b4dc95f0754525a3599a65325c0c6ac8e0262"
@@ -223,7 +223,7 @@
           "id": "6ByjhMC9grNa",
           "mimeType": "image/png",
           "source": {
-            "url": "/public/creator/asset-store/rainy-city-street/files/6ByjhMC9grNa.png"
+            "url": "/public/creator/asset-store/essential-transition-pack/files/6ByjhMC9grNa.png"
           },
           "size": 5790,
           "sha256": "7581f2f3c9ef8c011e56e009ec63e4780f721eda2c11a1db8b2700c641e39f67"
@@ -232,7 +232,7 @@
           "id": "59VrNTGcQbc9",
           "mimeType": "image/png",
           "source": {
-            "url": "/public/creator/asset-store/rainy-city-street/files/59VrNTGcQbc9.png"
+            "url": "/public/creator/asset-store/essential-transition-pack/files/59VrNTGcQbc9.png"
           },
           "size": 12972,
           "sha256": "0c8c799d68043d1d6886771b01be14bb7c0b0c40774d3dc7bcba63b42d4177ff"
@@ -241,7 +241,7 @@
           "id": "am7vt6bzPARL",
           "mimeType": "image/png",
           "source": {
-            "url": "/public/creator/asset-store/rainy-city-street/files/am7vt6bzPARL.png"
+            "url": "/public/creator/asset-store/essential-transition-pack/files/am7vt6bzPARL.png"
           },
           "size": 3364,
           "sha256": "644525ab57e6257c1c9c21d02aed2c4dd41af9a7f90676270f3ca0d6a222091b"
@@ -250,7 +250,7 @@
           "id": "9qWvnkvTtk8X",
           "mimeType": "image/png",
           "source": {
-            "url": "/public/creator/asset-store/rainy-city-street/files/9qWvnkvTtk8X.png"
+            "url": "/public/creator/asset-store/essential-transition-pack/files/9qWvnkvTtk8X.png"
           },
           "size": 309799,
           "sha256": "d1f777086dc7c57c7c325b4925523b084decd6202b4b0690959736e4d874cfaf"
@@ -259,7 +259,7 @@
           "id": "vKVXJRvWBeeG",
           "mimeType": "image/png",
           "source": {
-            "url": "/public/creator/asset-store/rainy-city-street/files/vKVXJRvWBeeG.png"
+            "url": "/public/creator/asset-store/essential-transition-pack/files/vKVXJRvWBeeG.png"
           },
           "size": 41081,
           "sha256": "b60ff12289c41ff0422d150fa1a4e2dcfe2e7c55dd62972b16cd98a7201ddb3a"
@@ -268,7 +268,7 @@
           "id": "LxvC8SDfeVuT",
           "mimeType": "image/png",
           "source": {
-            "url": "/public/creator/asset-store/rainy-city-street/files/LxvC8SDfeVuT.png"
+            "url": "/public/creator/asset-store/essential-transition-pack/files/LxvC8SDfeVuT.png"
           },
           "size": 85884,
           "sha256": "f4d666ac9718991e7ecae8307012b1ccf5e0ebe319d5963515a0544e555821da"
@@ -277,7 +277,7 @@
           "id": "PB9HP4HgNutf",
           "mimeType": "image/png",
           "source": {
-            "url": "/public/creator/asset-store/rainy-city-street/files/PB9HP4HgNutf.png"
+            "url": "/public/creator/asset-store/essential-transition-pack/files/PB9HP4HgNutf.png"
           },
           "size": 43603,
           "sha256": "d0d2a3df53f8a30530928b973d9bad923c3c63baf7cd92674daafda3536b3cf4"
@@ -286,7 +286,7 @@
           "id": "h7UuCwuyUGFz",
           "mimeType": "image/png",
           "source": {
-            "url": "/public/creator/asset-store/rainy-city-street/files/h7UuCwuyUGFz.png"
+            "url": "/public/creator/asset-store/essential-transition-pack/files/h7UuCwuyUGFz.png"
           },
           "size": 250717,
           "sha256": "a388c501fb20e8dbfd47ed0b93a88ece5ae6ca5d59e50676b3a6b7bbe89d3489"
@@ -295,7 +295,7 @@
           "id": "hU7ZvRYPLwnk",
           "mimeType": "image/png",
           "source": {
-            "url": "/public/creator/asset-store/rainy-city-street/files/hU7ZvRYPLwnk.png"
+            "url": "/public/creator/asset-store/essential-transition-pack/files/hU7ZvRYPLwnk.png"
           },
           "size": 31594,
           "sha256": "8a7b405f6d66de79467f931e4985bb84fca6e228a2f0a5b9b4cc389dbf184e3d"
@@ -304,7 +304,7 @@
           "id": "kmuB4m8k7HjG",
           "mimeType": "image/png",
           "source": {
-            "url": "/public/creator/asset-store/rainy-city-street/files/kmuB4m8k7HjG.png"
+            "url": "/public/creator/asset-store/essential-transition-pack/files/kmuB4m8k7HjG.png"
           },
           "size": 17521,
           "sha256": "770f8aac682866795150784016e4b401882100ffd411d6daf062388df2ede8df"
@@ -313,7 +313,7 @@
           "id": "3XUdwrsWNKhG",
           "mimeType": "image/png",
           "source": {
-            "url": "/public/creator/asset-store/rainy-city-street/files/3XUdwrsWNKhG.png"
+            "url": "/public/creator/asset-store/essential-transition-pack/files/3XUdwrsWNKhG.png"
           },
           "size": 12973,
           "sha256": "b1c07158644d62e7bbd2417dd6bd54bf43d2e67f659cc63a6a3be4532447afe5"
@@ -322,7 +322,7 @@
           "id": "B27Jw1eY3GVV",
           "mimeType": "image/png",
           "source": {
-            "url": "/public/creator/asset-store/rainy-city-street/files/B27Jw1eY3GVV.png"
+            "url": "/public/creator/asset-store/essential-transition-pack/files/B27Jw1eY3GVV.png"
           },
           "size": 5347,
           "sha256": "1ec9b9d29699e2aa41aab1f39184dc6c231ee2cf2fb0e92962b068f141241ff4"
@@ -331,7 +331,7 @@
           "id": "qFxaukokAMtb",
           "mimeType": "image/png",
           "source": {
-            "url": "/public/creator/asset-store/rainy-city-street/files/qFxaukokAMtb.png"
+            "url": "/public/creator/asset-store/essential-transition-pack/files/qFxaukokAMtb.png"
           },
           "size": 1869,
           "sha256": "9bc035d3ec4c2d48e70e49f2f76e65311caec9d88605266e8e02713e761e8bf2"
@@ -340,7 +340,7 @@
           "id": "AuPfjCh1h1hV",
           "mimeType": "image/png",
           "source": {
-            "url": "/public/creator/asset-store/rainy-city-street/files/AuPfjCh1h1hV.png"
+            "url": "/public/creator/asset-store/essential-transition-pack/files/AuPfjCh1h1hV.png"
           },
           "size": 789280,
           "sha256": "4e11b8358036fe77aad85efcb571747923235e0247e61aef9e9fc0ea00e78e60"
@@ -349,7 +349,7 @@
           "id": "uhey4S4aUgot",
           "mimeType": "image/png",
           "source": {
-            "url": "/public/creator/asset-store/rainy-city-street/files/uhey4S4aUgot.png"
+            "url": "/public/creator/asset-store/essential-transition-pack/files/uhey4S4aUgot.png"
           },
           "size": 75381,
           "sha256": "90a0f85f9e141d0f36b6de6f02ed3e10839eabb4005cf721f70cf586c09242a8"
@@ -358,7 +358,7 @@
           "id": "2a4dnSu6DG1q",
           "mimeType": "image/png",
           "source": {
-            "url": "/public/creator/asset-store/rainy-city-street/files/2a4dnSu6DG1q.png"
+            "url": "/public/creator/asset-store/essential-transition-pack/files/2a4dnSu6DG1q.png"
           },
           "size": 1165593,
           "sha256": "bd5cd0a456a226d19084a30f01e0039ef475296ec0dd2e3913d0a93b81922e8a"
@@ -367,7 +367,7 @@
           "id": "NqeNjgUPd9s3",
           "mimeType": "image/png",
           "source": {
-            "url": "/public/creator/asset-store/rainy-city-street/files/NqeNjgUPd9s3.png"
+            "url": "/public/creator/asset-store/essential-transition-pack/files/NqeNjgUPd9s3.png"
           },
           "size": 89453,
           "sha256": "ed93ebf0eb13751cd042eecfb1e352d68410e8ead2b6298fd99f63e6558519f1"
@@ -379,7 +379,7 @@
           "mimeType": "video/webm",
           "size": 1657106,
           "source": {
-            "url": "/public/creator/asset-store/rainy-city-street/files/animation-preview.zcPUL4myXFeY.webm"
+            "url": "/public/creator/asset-store/essential-transition-pack/files/animation-preview.zcPUL4myXFeY.webm"
           },
           "sha256": "ada6f3761cf514a550b0fed6ea40859b4269c4583165b131631fd85397e0c71a"
         },
@@ -390,7 +390,7 @@
           "mimeType": "video/webm",
           "size": 583668,
           "source": {
-            "url": "/public/creator/asset-store/rainy-city-street/files/animation-thumbnail.zcPUL4myXFeY.webm"
+            "url": "/public/creator/asset-store/essential-transition-pack/files/animation-thumbnail.zcPUL4myXFeY.webm"
           },
           "sha256": "be47e961206702421c85f6d288ec44a20cb8c31234690b71cf97933bd1ff23c0"
         },
@@ -401,7 +401,7 @@
           "mimeType": "video/webm",
           "size": 2602340,
           "source": {
-            "url": "/public/creator/asset-store/rainy-city-street/files/animation-preview.7rjLtANzKR4W.webm"
+            "url": "/public/creator/asset-store/essential-transition-pack/files/animation-preview.7rjLtANzKR4W.webm"
           },
           "sha256": "9f080a1ae00932cf89721adcc2e93d8b89dea82d09849bd314990c10f660b7b6"
         },
@@ -412,7 +412,7 @@
           "mimeType": "video/webm",
           "size": 1060526,
           "source": {
-            "url": "/public/creator/asset-store/rainy-city-street/files/animation-thumbnail.7rjLtANzKR4W.webm"
+            "url": "/public/creator/asset-store/essential-transition-pack/files/animation-thumbnail.7rjLtANzKR4W.webm"
           },
           "sha256": "8a6bdc75fec7e970001a52303c35645d2af07af527e02311ba0a8771f4cca8f1"
         },
@@ -423,7 +423,7 @@
           "mimeType": "video/webm",
           "size": 3727839,
           "source": {
-            "url": "/public/creator/asset-store/rainy-city-street/files/animation-preview.Bc1xLFyHF4Hs.webm"
+            "url": "/public/creator/asset-store/essential-transition-pack/files/animation-preview.Bc1xLFyHF4Hs.webm"
           },
           "sha256": "423355e8926eb534db419bd85094c1a1c1f7b7d0f42f4594c67a49e5a5a9708d"
         },
@@ -434,7 +434,7 @@
           "mimeType": "video/webm",
           "size": 1299457,
           "source": {
-            "url": "/public/creator/asset-store/rainy-city-street/files/animation-thumbnail.Bc1xLFyHF4Hs.webm"
+            "url": "/public/creator/asset-store/essential-transition-pack/files/animation-thumbnail.Bc1xLFyHF4Hs.webm"
           },
           "sha256": "e8d07a0860c6fe1ec5a16bd13096e82e716e441f5b49dc48d83c28de6d51c4b1"
         },
@@ -445,7 +445,7 @@
           "mimeType": "video/webm",
           "size": 1716898,
           "source": {
-            "url": "/public/creator/asset-store/rainy-city-street/files/animation-preview.Bx1cW6Zax9V8.webm"
+            "url": "/public/creator/asset-store/essential-transition-pack/files/animation-preview.Bx1cW6Zax9V8.webm"
           },
           "sha256": "ac8567f5ccb9ad63b6beeda389c5e2cbd705eaf386cd402cf7d4bb813742bbb4"
         },
@@ -456,7 +456,7 @@
           "mimeType": "video/webm",
           "size": 558949,
           "source": {
-            "url": "/public/creator/asset-store/rainy-city-street/files/animation-thumbnail.Bx1cW6Zax9V8.webm"
+            "url": "/public/creator/asset-store/essential-transition-pack/files/animation-thumbnail.Bx1cW6Zax9V8.webm"
           },
           "sha256": "22b840acc932a073de0d18e4348cc47c2c4694e58ea2917f4cf8d0b6b6183cbb"
         },
@@ -467,7 +467,7 @@
           "mimeType": "video/webm",
           "size": 1590614,
           "source": {
-            "url": "/public/creator/asset-store/rainy-city-street/files/animation-preview.HRY5hwWkqS5K.webm"
+            "url": "/public/creator/asset-store/essential-transition-pack/files/animation-preview.HRY5hwWkqS5K.webm"
           },
           "sha256": "d1fdc960ea169581f323b654e025244da8a5d5df7751f5311bf7a2733d15f8cb"
         },
@@ -478,7 +478,7 @@
           "mimeType": "video/webm",
           "size": 589371,
           "source": {
-            "url": "/public/creator/asset-store/rainy-city-street/files/animation-thumbnail.HRY5hwWkqS5K.webm"
+            "url": "/public/creator/asset-store/essential-transition-pack/files/animation-thumbnail.HRY5hwWkqS5K.webm"
           },
           "sha256": "bdb488827e35cc927aff0b2b147eeaefa8f648da82c6905564cb3fdbea65d399"
         },
@@ -489,7 +489,7 @@
           "mimeType": "video/webm",
           "size": 1567488,
           "source": {
-            "url": "/public/creator/asset-store/rainy-city-street/files/animation-preview.PJ4zkPdSRw6k.webm"
+            "url": "/public/creator/asset-store/essential-transition-pack/files/animation-preview.PJ4zkPdSRw6k.webm"
           },
           "sha256": "56149826f0fe31670ca918ecc041442c0969232c448c0c3ed27897c61bf1e578"
         },
@@ -500,7 +500,7 @@
           "mimeType": "video/webm",
           "size": 560346,
           "source": {
-            "url": "/public/creator/asset-store/rainy-city-street/files/animation-thumbnail.PJ4zkPdSRw6k.webm"
+            "url": "/public/creator/asset-store/essential-transition-pack/files/animation-thumbnail.PJ4zkPdSRw6k.webm"
           },
           "sha256": "3bdcf449a1b65ef5415c75240a247dc9c5768669419f683e33286fda6f545540"
         },
@@ -511,7 +511,7 @@
           "mimeType": "video/webm",
           "size": 1636874,
           "source": {
-            "url": "/public/creator/asset-store/rainy-city-street/files/animation-preview.iHWUj683XVoy.webm"
+            "url": "/public/creator/asset-store/essential-transition-pack/files/animation-preview.iHWUj683XVoy.webm"
           },
           "sha256": "62ea5aa7f4a67ea6549dc193725b8ad84ccedbe1748bdc773216a83e81e99d97"
         },
@@ -522,7 +522,7 @@
           "mimeType": "video/webm",
           "size": 630143,
           "source": {
-            "url": "/public/creator/asset-store/rainy-city-street/files/animation-thumbnail.iHWUj683XVoy.webm"
+            "url": "/public/creator/asset-store/essential-transition-pack/files/animation-thumbnail.iHWUj683XVoy.webm"
           },
           "sha256": "c78318985996a8f53c78217099802a9ad16c96bf45c458b9db4c7f674d3a1806"
         },
@@ -533,7 +533,7 @@
           "mimeType": "video/webm",
           "size": 1687102,
           "source": {
-            "url": "/public/creator/asset-store/rainy-city-street/files/animation-preview.W9kxyxQxrGoF.webm"
+            "url": "/public/creator/asset-store/essential-transition-pack/files/animation-preview.W9kxyxQxrGoF.webm"
           },
           "sha256": "63c5ed50c536332458cca32a21065549d8ee6a76ab14c8f75d20b5374088c926"
         },
@@ -544,7 +544,7 @@
           "mimeType": "video/webm",
           "size": 535096,
           "source": {
-            "url": "/public/creator/asset-store/rainy-city-street/files/animation-thumbnail.W9kxyxQxrGoF.webm"
+            "url": "/public/creator/asset-store/essential-transition-pack/files/animation-thumbnail.W9kxyxQxrGoF.webm"
           },
           "sha256": "60355747de4715f9b9ca8989d25a79efa3f5245a56752abca9175d26bef54aea"
         },
@@ -555,7 +555,7 @@
           "mimeType": "video/webm",
           "size": 2137497,
           "source": {
-            "url": "/public/creator/asset-store/rainy-city-street/files/animation-preview.QoSu9znQz2Pb.webm"
+            "url": "/public/creator/asset-store/essential-transition-pack/files/animation-preview.QoSu9znQz2Pb.webm"
           },
           "sha256": "bacfa9cc7f99e6a2fb2417eaa65ed99b0d9f868d91d771ea705baa50d5e620fe"
         },
@@ -566,7 +566,7 @@
           "mimeType": "video/webm",
           "size": 1266747,
           "source": {
-            "url": "/public/creator/asset-store/rainy-city-street/files/animation-thumbnail.QoSu9znQz2Pb.webm"
+            "url": "/public/creator/asset-store/essential-transition-pack/files/animation-thumbnail.QoSu9znQz2Pb.webm"
           },
           "sha256": "c963532c863a0d815f0ccdaf55c16a5487c9884d5688ddde4f8083f115d3161d"
         },
@@ -577,7 +577,7 @@
           "mimeType": "video/webm",
           "size": 2136547,
           "source": {
-            "url": "/public/creator/asset-store/rainy-city-street/files/animation-preview.foMJn7RNaKHR.webm"
+            "url": "/public/creator/asset-store/essential-transition-pack/files/animation-preview.foMJn7RNaKHR.webm"
           },
           "sha256": "6d6c3bd609a1377d8ee0a121259783780f826509d843a16867de454fd35ed330"
         },
@@ -588,7 +588,7 @@
           "mimeType": "video/webm",
           "size": 1149360,
           "source": {
-            "url": "/public/creator/asset-store/rainy-city-street/files/animation-thumbnail.foMJn7RNaKHR.webm"
+            "url": "/public/creator/asset-store/essential-transition-pack/files/animation-thumbnail.foMJn7RNaKHR.webm"
           },
           "sha256": "b55e412b33f4e990e8abd23d1c9990cb38fc7f7a412666d77403222a9c93ea04"
         },
@@ -599,7 +599,7 @@
           "mimeType": "video/webm",
           "size": 2407135,
           "source": {
-            "url": "/public/creator/asset-store/rainy-city-street/files/animation-preview.geXUTwdx6MMV.webm"
+            "url": "/public/creator/asset-store/essential-transition-pack/files/animation-preview.geXUTwdx6MMV.webm"
           },
           "sha256": "aa2e98a26972f4c4cf1390078e09b42a1dd6886cdce5025149079bb5bb1ec1a1"
         },
@@ -610,7 +610,7 @@
           "mimeType": "video/webm",
           "size": 1286320,
           "source": {
-            "url": "/public/creator/asset-store/rainy-city-street/files/animation-thumbnail.geXUTwdx6MMV.webm"
+            "url": "/public/creator/asset-store/essential-transition-pack/files/animation-thumbnail.geXUTwdx6MMV.webm"
           },
           "sha256": "47913c2daacdcd7d17cd73b9a84af4c8f8859642a3c9e43ead51047da3746505"
         },
@@ -621,7 +621,7 @@
           "mimeType": "video/webm",
           "size": 5128027,
           "source": {
-            "url": "/public/creator/asset-store/rainy-city-street/files/animation-preview.U92n4jxtFsjS.webm"
+            "url": "/public/creator/asset-store/essential-transition-pack/files/animation-preview.U92n4jxtFsjS.webm"
           },
           "sha256": "b083baeb471333f32624486e1a84d9a4aeded4d827d1018afbc49fae5a4698a4"
         },
@@ -632,7 +632,7 @@
           "mimeType": "video/webm",
           "size": 1266865,
           "source": {
-            "url": "/public/creator/asset-store/rainy-city-street/files/animation-thumbnail.U92n4jxtFsjS.webm"
+            "url": "/public/creator/asset-store/essential-transition-pack/files/animation-thumbnail.U92n4jxtFsjS.webm"
           },
           "sha256": "919b23d9cb73cbb2389c2bc101001fb8db5ad1f57f4af3d67dce5b341ab80bf7"
         },
@@ -643,7 +643,7 @@
           "mimeType": "video/webm",
           "size": 1606670,
           "source": {
-            "url": "/public/creator/asset-store/rainy-city-street/files/animation-preview.FVKfFGqF6VpW.webm"
+            "url": "/public/creator/asset-store/essential-transition-pack/files/animation-preview.FVKfFGqF6VpW.webm"
           },
           "sha256": "45f3c49336e77f56131ee079522903d34882e761c68159c0dc694ab441936bec"
         },
@@ -654,7 +654,7 @@
           "mimeType": "video/webm",
           "size": 599058,
           "source": {
-            "url": "/public/creator/asset-store/rainy-city-street/files/animation-thumbnail.FVKfFGqF6VpW.webm"
+            "url": "/public/creator/asset-store/essential-transition-pack/files/animation-thumbnail.FVKfFGqF6VpW.webm"
           },
           "sha256": "ac3e35ab285fca9a527ab74b28aca48c6f7667bc734c38b368f27784927b2009"
         },
@@ -665,7 +665,7 @@
           "mimeType": "video/webm",
           "size": 2606376,
           "source": {
-            "url": "/public/creator/asset-store/rainy-city-street/files/animation-preview.V3oQr2oKWFR3.webm"
+            "url": "/public/creator/asset-store/essential-transition-pack/files/animation-preview.V3oQr2oKWFR3.webm"
           },
           "sha256": "5d727b145394d30e886dd67e2345e8f99c670d4284c49f282bbdefa8d5e49d52"
         },
@@ -676,7 +676,7 @@
           "mimeType": "video/webm",
           "size": 1136530,
           "source": {
-            "url": "/public/creator/asset-store/rainy-city-street/files/animation-thumbnail.V3oQr2oKWFR3.webm"
+            "url": "/public/creator/asset-store/essential-transition-pack/files/animation-thumbnail.V3oQr2oKWFR3.webm"
           },
           "sha256": "a5d745ddf075bc1709926057f86c3e6c15e432e929bb35b58622a0f524e9cd5d"
         },
@@ -687,7 +687,7 @@
           "mimeType": "video/webm",
           "size": 2628279,
           "source": {
-            "url": "/public/creator/asset-store/rainy-city-street/files/animation-preview.w1p784QKPC7H.webm"
+            "url": "/public/creator/asset-store/essential-transition-pack/files/animation-preview.w1p784QKPC7H.webm"
           },
           "sha256": "1e683f3b10deb0d14bc88dca366cb5b39f8fea276b879706bf63e6f53e782cee"
         },
@@ -698,7 +698,7 @@
           "mimeType": "video/webm",
           "size": 1143455,
           "source": {
-            "url": "/public/creator/asset-store/rainy-city-street/files/animation-thumbnail.w1p784QKPC7H.webm"
+            "url": "/public/creator/asset-store/essential-transition-pack/files/animation-thumbnail.w1p784QKPC7H.webm"
           },
           "sha256": "ae0e5728a915b606e4707952d64e86de0a05931eccc7d61140a8130140a60912"
         },
@@ -709,7 +709,7 @@
           "mimeType": "video/webm",
           "size": 2638446,
           "source": {
-            "url": "/public/creator/asset-store/rainy-city-street/files/animation-preview.s4dctcfY4KAE.webm"
+            "url": "/public/creator/asset-store/essential-transition-pack/files/animation-preview.s4dctcfY4KAE.webm"
           },
           "sha256": "216c0918bd9e830d04e35568212bb35c2f12ebbe272b1101e3672ccfe3163cbd"
         },
@@ -720,7 +720,7 @@
           "mimeType": "video/webm",
           "size": 1047208,
           "source": {
-            "url": "/public/creator/asset-store/rainy-city-street/files/animation-thumbnail.s4dctcfY4KAE.webm"
+            "url": "/public/creator/asset-store/essential-transition-pack/files/animation-thumbnail.s4dctcfY4KAE.webm"
           },
           "sha256": "7f623ec54bfc52a1068ac6e06c41ce87105b5ff5bd0f5f0ce2995d647415cdb0"
         },
@@ -731,7 +731,7 @@
           "mimeType": "video/webm",
           "size": 2793134,
           "source": {
-            "url": "/public/creator/asset-store/rainy-city-street/files/animation-preview.dPPZUjjDMrgq.webm"
+            "url": "/public/creator/asset-store/essential-transition-pack/files/animation-preview.dPPZUjjDMrgq.webm"
           },
           "sha256": "c3155bb8c4c045b367815ac58decdcde9db245251dd2098c4c431b85f22a8c80"
         },
@@ -742,7 +742,7 @@
           "mimeType": "video/webm",
           "size": 1082806,
           "source": {
-            "url": "/public/creator/asset-store/rainy-city-street/files/animation-thumbnail.dPPZUjjDMrgq.webm"
+            "url": "/public/creator/asset-store/essential-transition-pack/files/animation-thumbnail.dPPZUjjDMrgq.webm"
           },
           "sha256": "c4b23a10f9087985a45abbd225104df59ed22252d9ebfcc55211943ed40f277e"
         },
@@ -753,7 +753,7 @@
           "mimeType": "video/webm",
           "size": 2653496,
           "source": {
-            "url": "/public/creator/asset-store/rainy-city-street/files/animation-preview.Hoeg76Sqz8xC.webm"
+            "url": "/public/creator/asset-store/essential-transition-pack/files/animation-preview.Hoeg76Sqz8xC.webm"
           },
           "sha256": "4fe1f8520a8c536939bad7b28c365668492cdeaed2c9fd7832f619200554a917"
         },
@@ -764,7 +764,7 @@
           "mimeType": "video/webm",
           "size": 1088197,
           "source": {
-            "url": "/public/creator/asset-store/rainy-city-street/files/animation-thumbnail.Hoeg76Sqz8xC.webm"
+            "url": "/public/creator/asset-store/essential-transition-pack/files/animation-thumbnail.Hoeg76Sqz8xC.webm"
           },
           "sha256": "e24ed825ec0eaf6cbdec9011877d139544f280e05891e79997d98289ece81bf3"
         },
@@ -775,7 +775,7 @@
           "mimeType": "video/webm",
           "size": 1603468,
           "source": {
-            "url": "/public/creator/asset-store/rainy-city-street/files/animation-preview.FujG83vUBtTQ.webm"
+            "url": "/public/creator/asset-store/essential-transition-pack/files/animation-preview.FujG83vUBtTQ.webm"
           },
           "sha256": "ba8c5ce0c1c3fbcf368517db8eb5691bf4a1463629b21ff46a368260260cf3e1"
         },
@@ -786,7 +786,7 @@
           "mimeType": "video/webm",
           "size": 533996,
           "source": {
-            "url": "/public/creator/asset-store/rainy-city-street/files/animation-thumbnail.FujG83vUBtTQ.webm"
+            "url": "/public/creator/asset-store/essential-transition-pack/files/animation-thumbnail.FujG83vUBtTQ.webm"
           },
           "sha256": "e57a0314c9a9193ace3f45494488f8795e42fd9d69020311b00336d5c717678a"
         },
@@ -797,7 +797,7 @@
           "mimeType": "video/webm",
           "size": 1472585,
           "source": {
-            "url": "/public/creator/asset-store/rainy-city-street/files/animation-preview.eSMMHcNGoQBh.webm"
+            "url": "/public/creator/asset-store/essential-transition-pack/files/animation-preview.eSMMHcNGoQBh.webm"
           },
           "sha256": "cfd402b14b16f9683ae323a72b13862f6e58365951c77d95f2737079607944e7"
         },
@@ -808,7 +808,7 @@
           "mimeType": "video/webm",
           "size": 547265,
           "source": {
-            "url": "/public/creator/asset-store/rainy-city-street/files/animation-thumbnail.eSMMHcNGoQBh.webm"
+            "url": "/public/creator/asset-store/essential-transition-pack/files/animation-thumbnail.eSMMHcNGoQBh.webm"
           },
           "sha256": "aa3acf1b87203dfc1a8645c07616f9faed517f192abb7797cfb74bbacef06dad"
         },
@@ -819,7 +819,7 @@
           "mimeType": "video/webm",
           "size": 1470988,
           "source": {
-            "url": "/public/creator/asset-store/rainy-city-street/files/animation-preview.2Fs7fHHSay9E.webm"
+            "url": "/public/creator/asset-store/essential-transition-pack/files/animation-preview.2Fs7fHHSay9E.webm"
           },
           "sha256": "e9974de42ad5be85e50bcfaa4465143d8770e4dddaa59ee8dce45a0ccf388807"
         },
@@ -830,7 +830,7 @@
           "mimeType": "video/webm",
           "size": 587027,
           "source": {
-            "url": "/public/creator/asset-store/rainy-city-street/files/animation-thumbnail.2Fs7fHHSay9E.webm"
+            "url": "/public/creator/asset-store/essential-transition-pack/files/animation-thumbnail.2Fs7fHHSay9E.webm"
           },
           "sha256": "0f969e5f9236bbf54f935b6a9f4675387db08da4a4b5a1a86c3b1d82dbdfd2c0"
         },
@@ -841,7 +841,7 @@
           "mimeType": "video/webm",
           "size": 1713850,
           "source": {
-            "url": "/public/creator/asset-store/rainy-city-street/files/animation-preview.bB8G9Ut6UQDq.webm"
+            "url": "/public/creator/asset-store/essential-transition-pack/files/animation-preview.bB8G9Ut6UQDq.webm"
           },
           "sha256": "85777250a34d1c15c2a1f711a44fe9f3c33a431626b6504bd7643df4608df71e"
         },
@@ -852,7 +852,7 @@
           "mimeType": "video/webm",
           "size": 689918,
           "source": {
-            "url": "/public/creator/asset-store/rainy-city-street/files/animation-thumbnail.bB8G9Ut6UQDq.webm"
+            "url": "/public/creator/asset-store/essential-transition-pack/files/animation-thumbnail.bB8G9Ut6UQDq.webm"
           },
           "sha256": "d45a603a0b5c76d988ea7aa2e9c66978ccec99760ff2135f63f68e7ea3de3621"
         }

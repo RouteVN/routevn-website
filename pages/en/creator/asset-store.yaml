@@ -18,7 +18,7 @@ seo:
         - rtgl-view h="48":
         - 'rtgl-grid cols="4" xl-cols="3" lg-cols="3" md-cols="2" sm-cols="1" g="lg" w="f" aria-label="Asset packs"':
             - $for item in sort(collections.assetPack, "data.assetPack.released", "desc"):
-                - $if item.data.assetPack.slug == "rainy-city-street":
+                - $if item.data.assetPack.slug == "essential-transition-pack":
                     - 'rtgl-view data-rvn-pack-card data-rvn-pack-href="${item.url}" role="link" tabindex="0" bw="xs" bc="bo" h-bc="ac" br="md" overflow="hidden" cur="pointer" w="f"':
                         - 'rtgl-view ar="16/10" bgc="su" overflow="hidden" w="f" aria-hidden="true"':
                             - 'rtgl-image w="f" h="f" of="cov" src="${item.data.assetPack.coverThumbnailSrc}" alt=""':

@@ -8,16 +8,16 @@ seo:
   title: Essential Transition Pack - RouteVN Creator Asset Store
   description: A collection of transitions for RouteVN Creator.
 assetPack:
-  slug: rainy-city-street
-  packageId: routevn.transitions
+  slug: essential-transition-pack
+  packageId: vLjG5GPfLfNy
   name: Essential Transition Pack
   version: 1.0.0
   description: A collection of transitions for RouteVN Creator.
-  url: /en/creator/asset-store/rainy-city-street/
-  importUrl: /en/creator/asset-store/rainy-city-street.json
+  url: /en/creator/asset-store/essential-transition-pack/
+  importUrl: /en/creator/asset-store/essential-transition-pack.json
   assetCount: 42
-  coverSrc: /public/creator/asset-store/rainy-city-street/mask-animations-cover.png
-  coverThumbnailSrc: /public/creator/asset-store/rainy-city-street/mask-animations-cover.thumbnail.webp
+  coverSrc: /public/creator/asset-store/essential-transition-pack/mask-animations-cover.png
+  coverThumbnailSrc: /public/creator/asset-store/essential-transition-pack/mask-animations-cover.thumbnail.webp
   coverWidth: null
   author:
     name: RouteVN
@@ -27,7 +27,6 @@ assetPack:
   releasedLabel: August 9, 2026
   updated: '2026-08-12'
   updatedLabel: August 12, 2026
-  license: CC0
   sections:
     - id: animations
       name: Animations
@@ -50,8 +49,8 @@ assetPack:
               showVideoControls: false
               thumbnailAspectRatio: 16/10
               dialogAspectRatio: 16/9
-              src: /public/creator/asset-store/rainy-city-street/files/animation-preview.zcPUL4myXFeY.webm
-              thumbnailSrc: /public/creator/asset-store/rainy-city-street/files/animation-thumbnail.zcPUL4myXFeY.webm
+              src: /public/creator/asset-store/essential-transition-pack/files/animation-preview.zcPUL4myXFeY.webm
+              thumbnailSrc: /public/creator/asset-store/essential-transition-pack/files/animation-thumbnail.zcPUL4myXFeY.webm
               placeholderLabel: Animation
               previewColor: ''
               objectFit: cover
@@ -70,8 +69,8 @@ assetPack:
               showVideoControls: false
               thumbnailAspectRatio: 16/10
               dialogAspectRatio: 16/9
-              src: /public/creator/asset-store/rainy-city-street/files/animation-preview.7rjLtANzKR4W.webm
-              thumbnailSrc: /public/creator/asset-store/rainy-city-street/files/animation-thumbnail.7rjLtANzKR4W.webm
+              src: /public/creator/asset-store/essential-transition-pack/files/animation-preview.7rjLtANzKR4W.webm
+              thumbnailSrc: /public/creator/asset-store/essential-transition-pack/files/animation-thumbnail.7rjLtANzKR4W.webm
               placeholderLabel: Animation
               previewColor: ''
               objectFit: cover
@@ -90,8 +89,8 @@ assetPack:
               showVideoControls: false
               thumbnailAspectRatio: 16/10
               dialogAspectRatio: 16/9
-              src: /public/creator/asset-store/rainy-city-street/files/animation-preview.Bc1xLFyHF4Hs.webm
-              thumbnailSrc: /public/creator/asset-store/rainy-city-street/files/animation-thumbnail.Bc1xLFyHF4Hs.webm
+              src: /public/creator/asset-store/essential-transition-pack/files/animation-preview.Bc1xLFyHF4Hs.webm
+              thumbnailSrc: /public/creator/asset-store/essential-transition-pack/files/animation-thumbnail.Bc1xLFyHF4Hs.webm
               placeholderLabel: Animation
               previewColor: ''
               objectFit: cover
@@ -110,8 +109,8 @@ assetPack:
               showVideoControls: false
               thumbnailAspectRatio: 16/10
               dialogAspectRatio: 16/9
-              src: /public/creator/asset-store/rainy-city-street/files/animation-preview.Bx1cW6Zax9V8.webm
-              thumbnailSrc: /public/creator/asset-store/rainy-city-street/files/animation-thumbnail.Bx1cW6Zax9V8.webm
+              src: /public/creator/asset-store/essential-transition-pack/files/animation-preview.Bx1cW6Zax9V8.webm
+              thumbnailSrc: /public/creator/asset-store/essential-transition-pack/files/animation-thumbnail.Bx1cW6Zax9V8.webm
               placeholderLabel: Animation
               previewColor: ''
               objectFit: cover
@@ -133,8 +132,8 @@ assetPack:
               showVideoControls: false
               thumbnailAspectRatio: 16/10
               dialogAspectRatio: 16/9
-              src: /public/creator/asset-store/rainy-city-street/files/animation-preview.HRY5hwWkqS5K.webm
-              thumbnailSrc: /public/creator/asset-store/rainy-city-street/files/animation-thumbnail.HRY5hwWkqS5K.webm
+              src: /public/creator/asset-store/essential-transition-pack/files/animation-preview.HRY5hwWkqS5K.webm
+              thumbnailSrc: /public/creator/asset-store/essential-transition-pack/files/animation-thumbnail.HRY5hwWkqS5K.webm
               placeholderLabel: Animation
               previewColor: ''
               objectFit: cover
@@ -153,8 +152,8 @@ assetPack:
               showVideoControls: false
               thumbnailAspectRatio: 16/10
               dialogAspectRatio: 16/9
-              src: /public/creator/asset-store/rainy-city-street/files/animation-preview.PJ4zkPdSRw6k.webm
-              thumbnailSrc: /public/creator/asset-store/rainy-city-street/files/animation-thumbnail.PJ4zkPdSRw6k.webm
+              src: /public/creator/asset-store/essential-transition-pack/files/animation-preview.PJ4zkPdSRw6k.webm
+              thumbnailSrc: /public/creator/asset-store/essential-transition-pack/files/animation-thumbnail.PJ4zkPdSRw6k.webm
               placeholderLabel: Animation
               previewColor: ''
               objectFit: cover
@@ -173,8 +172,8 @@ assetPack:
               showVideoControls: false
               thumbnailAspectRatio: 16/10
               dialogAspectRatio: 16/9
-              src: /public/creator/asset-store/rainy-city-street/files/animation-preview.iHWUj683XVoy.webm
-              thumbnailSrc: /public/creator/asset-store/rainy-city-street/files/animation-thumbnail.iHWUj683XVoy.webm
+              src: /public/creator/asset-store/essential-transition-pack/files/animation-preview.iHWUj683XVoy.webm
+              thumbnailSrc: /public/creator/asset-store/essential-transition-pack/files/animation-thumbnail.iHWUj683XVoy.webm
               placeholderLabel: Animation
               previewColor: ''
               objectFit: cover
@@ -193,8 +192,8 @@ assetPack:
               showVideoControls: false
               thumbnailAspectRatio: 16/10
               dialogAspectRatio: 16/9
-              src: /public/creator/asset-store/rainy-city-street/files/animation-preview.W9kxyxQxrGoF.webm
-              thumbnailSrc: /public/creator/asset-store/rainy-city-street/files/animation-thumbnail.W9kxyxQxrGoF.webm
+              src: /public/creator/asset-store/essential-transition-pack/files/animation-preview.W9kxyxQxrGoF.webm
+              thumbnailSrc: /public/creator/asset-store/essential-transition-pack/files/animation-thumbnail.W9kxyxQxrGoF.webm
               placeholderLabel: Animation
               previewColor: ''
               objectFit: cover
@@ -213,8 +212,8 @@ assetPack:
               showVideoControls: false
               thumbnailAspectRatio: 16/10
               dialogAspectRatio: 16/9
-              src: /public/creator/asset-store/rainy-city-street/files/animation-preview.QoSu9znQz2Pb.webm
-              thumbnailSrc: /public/creator/asset-store/rainy-city-street/files/animation-thumbnail.QoSu9znQz2Pb.webm
+              src: /public/creator/asset-store/essential-transition-pack/files/animation-preview.QoSu9znQz2Pb.webm
+              thumbnailSrc: /public/creator/asset-store/essential-transition-pack/files/animation-thumbnail.QoSu9znQz2Pb.webm
               placeholderLabel: Animation
               previewColor: ''
               objectFit: cover
@@ -233,8 +232,8 @@ assetPack:
               showVideoControls: false
               thumbnailAspectRatio: 16/10
               dialogAspectRatio: 16/9
-              src: /public/creator/asset-store/rainy-city-street/files/animation-preview.foMJn7RNaKHR.webm
-              thumbnailSrc: /public/creator/asset-store/rainy-city-street/files/animation-thumbnail.foMJn7RNaKHR.webm
+              src: /public/creator/asset-store/essential-transition-pack/files/animation-preview.foMJn7RNaKHR.webm
+              thumbnailSrc: /public/creator/asset-store/essential-transition-pack/files/animation-thumbnail.foMJn7RNaKHR.webm
               placeholderLabel: Animation
               previewColor: ''
               objectFit: cover
@@ -253,8 +252,8 @@ assetPack:
               showVideoControls: false
               thumbnailAspectRatio: 16/10
               dialogAspectRatio: 16/9
-              src: /public/creator/asset-store/rainy-city-street/files/animation-preview.geXUTwdx6MMV.webm
-              thumbnailSrc: /public/creator/asset-store/rainy-city-street/files/animation-thumbnail.geXUTwdx6MMV.webm
+              src: /public/creator/asset-store/essential-transition-pack/files/animation-preview.geXUTwdx6MMV.webm
+              thumbnailSrc: /public/creator/asset-store/essential-transition-pack/files/animation-thumbnail.geXUTwdx6MMV.webm
               placeholderLabel: Animation
               previewColor: ''
               objectFit: cover
@@ -273,8 +272,8 @@ assetPack:
               showVideoControls: false
               thumbnailAspectRatio: 16/10
               dialogAspectRatio: 16/9
-              src: /public/creator/asset-store/rainy-city-street/files/animation-preview.U92n4jxtFsjS.webm
-              thumbnailSrc: /public/creator/asset-store/rainy-city-street/files/animation-thumbnail.U92n4jxtFsjS.webm
+              src: /public/creator/asset-store/essential-transition-pack/files/animation-preview.U92n4jxtFsjS.webm
+              thumbnailSrc: /public/creator/asset-store/essential-transition-pack/files/animation-thumbnail.U92n4jxtFsjS.webm
               placeholderLabel: Animation
               previewColor: ''
               objectFit: cover
@@ -293,8 +292,8 @@ assetPack:
               showVideoControls: false
               thumbnailAspectRatio: 16/10
               dialogAspectRatio: 16/9
-              src: /public/creator/asset-store/rainy-city-street/files/animation-preview.FVKfFGqF6VpW.webm
-              thumbnailSrc: /public/creator/asset-store/rainy-city-street/files/animation-thumbnail.FVKfFGqF6VpW.webm
+              src: /public/creator/asset-store/essential-transition-pack/files/animation-preview.FVKfFGqF6VpW.webm
+              thumbnailSrc: /public/creator/asset-store/essential-transition-pack/files/animation-thumbnail.FVKfFGqF6VpW.webm
               placeholderLabel: Animation
               previewColor: ''
               objectFit: cover
@@ -313,8 +312,8 @@ assetPack:
               showVideoControls: false
               thumbnailAspectRatio: 16/10
               dialogAspectRatio: 16/9
-              src: /public/creator/asset-store/rainy-city-street/files/animation-preview.V3oQr2oKWFR3.webm
-              thumbnailSrc: /public/creator/asset-store/rainy-city-street/files/animation-thumbnail.V3oQr2oKWFR3.webm
+              src: /public/creator/asset-store/essential-transition-pack/files/animation-preview.V3oQr2oKWFR3.webm
+              thumbnailSrc: /public/creator/asset-store/essential-transition-pack/files/animation-thumbnail.V3oQr2oKWFR3.webm
               placeholderLabel: Animation
               previewColor: ''
               objectFit: cover
@@ -333,8 +332,8 @@ assetPack:
               showVideoControls: false
               thumbnailAspectRatio: 16/10
               dialogAspectRatio: 16/9
-              src: /public/creator/asset-store/rainy-city-street/files/animation-preview.w1p784QKPC7H.webm
-              thumbnailSrc: /public/creator/asset-store/rainy-city-street/files/animation-thumbnail.w1p784QKPC7H.webm
+              src: /public/creator/asset-store/essential-transition-pack/files/animation-preview.w1p784QKPC7H.webm
+              thumbnailSrc: /public/creator/asset-store/essential-transition-pack/files/animation-thumbnail.w1p784QKPC7H.webm
               placeholderLabel: Animation
               previewColor: ''
               objectFit: cover
@@ -353,8 +352,8 @@ assetPack:
               showVideoControls: false
               thumbnailAspectRatio: 16/10
               dialogAspectRatio: 16/9
-              src: /public/creator/asset-store/rainy-city-street/files/animation-preview.s4dctcfY4KAE.webm
-              thumbnailSrc: /public/creator/asset-store/rainy-city-street/files/animation-thumbnail.s4dctcfY4KAE.webm
+              src: /public/creator/asset-store/essential-transition-pack/files/animation-preview.s4dctcfY4KAE.webm
+              thumbnailSrc: /public/creator/asset-store/essential-transition-pack/files/animation-thumbnail.s4dctcfY4KAE.webm
               placeholderLabel: Animation
               previewColor: ''
               objectFit: cover
@@ -373,8 +372,8 @@ assetPack:
               showVideoControls: false
               thumbnailAspectRatio: 16/10
               dialogAspectRatio: 16/9
-              src: /public/creator/asset-store/rainy-city-street/files/animation-preview.dPPZUjjDMrgq.webm
-              thumbnailSrc: /public/creator/asset-store/rainy-city-street/files/animation-thumbnail.dPPZUjjDMrgq.webm
+              src: /public/creator/asset-store/essential-transition-pack/files/animation-preview.dPPZUjjDMrgq.webm
+              thumbnailSrc: /public/creator/asset-store/essential-transition-pack/files/animation-thumbnail.dPPZUjjDMrgq.webm
               placeholderLabel: Animation
               previewColor: ''
               objectFit: cover
@@ -393,8 +392,8 @@ assetPack:
               showVideoControls: false
               thumbnailAspectRatio: 16/10
               dialogAspectRatio: 16/9
-              src: /public/creator/asset-store/rainy-city-street/files/animation-preview.Hoeg76Sqz8xC.webm
-              thumbnailSrc: /public/creator/asset-store/rainy-city-street/files/animation-thumbnail.Hoeg76Sqz8xC.webm
+              src: /public/creator/asset-store/essential-transition-pack/files/animation-preview.Hoeg76Sqz8xC.webm
+              thumbnailSrc: /public/creator/asset-store/essential-transition-pack/files/animation-thumbnail.Hoeg76Sqz8xC.webm
               placeholderLabel: Animation
               previewColor: ''
               objectFit: cover
@@ -413,8 +412,8 @@ assetPack:
               showVideoControls: false
               thumbnailAspectRatio: 16/10
               dialogAspectRatio: 16/9
-              src: /public/creator/asset-store/rainy-city-street/files/animation-preview.FujG83vUBtTQ.webm
-              thumbnailSrc: /public/creator/asset-store/rainy-city-street/files/animation-thumbnail.FujG83vUBtTQ.webm
+              src: /public/creator/asset-store/essential-transition-pack/files/animation-preview.FujG83vUBtTQ.webm
+              thumbnailSrc: /public/creator/asset-store/essential-transition-pack/files/animation-thumbnail.FujG83vUBtTQ.webm
               placeholderLabel: Animation
               previewColor: ''
               objectFit: cover
@@ -433,8 +432,8 @@ assetPack:
               showVideoControls: false
               thumbnailAspectRatio: 16/10
               dialogAspectRatio: 16/9
-              src: /public/creator/asset-store/rainy-city-street/files/animation-preview.eSMMHcNGoQBh.webm
-              thumbnailSrc: /public/creator/asset-store/rainy-city-street/files/animation-thumbnail.eSMMHcNGoQBh.webm
+              src: /public/creator/asset-store/essential-transition-pack/files/animation-preview.eSMMHcNGoQBh.webm
+              thumbnailSrc: /public/creator/asset-store/essential-transition-pack/files/animation-thumbnail.eSMMHcNGoQBh.webm
               placeholderLabel: Animation
               previewColor: ''
               objectFit: cover
@@ -453,8 +452,8 @@ assetPack:
               showVideoControls: false
               thumbnailAspectRatio: 16/10
               dialogAspectRatio: 16/9
-              src: /public/creator/asset-store/rainy-city-street/files/animation-preview.2Fs7fHHSay9E.webm
-              thumbnailSrc: /public/creator/asset-store/rainy-city-street/files/animation-thumbnail.2Fs7fHHSay9E.webm
+              src: /public/creator/asset-store/essential-transition-pack/files/animation-preview.2Fs7fHHSay9E.webm
+              thumbnailSrc: /public/creator/asset-store/essential-transition-pack/files/animation-thumbnail.2Fs7fHHSay9E.webm
               placeholderLabel: Animation
               previewColor: ''
               objectFit: cover
@@ -473,8 +472,8 @@ assetPack:
               showVideoControls: false
               thumbnailAspectRatio: 16/10
               dialogAspectRatio: 16/9
-              src: /public/creator/asset-store/rainy-city-street/files/animation-preview.bB8G9Ut6UQDq.webm
-              thumbnailSrc: /public/creator/asset-store/rainy-city-street/files/animation-thumbnail.bB8G9Ut6UQDq.webm
+              src: /public/creator/asset-store/essential-transition-pack/files/animation-preview.bB8G9Ut6UQDq.webm
+              thumbnailSrc: /public/creator/asset-store/essential-transition-pack/files/animation-thumbnail.bB8G9Ut6UQDq.webm
               placeholderLabel: Animation
               previewColor: ''
               objectFit: cover
@@ -499,8 +498,8 @@ assetPack:
               showVideoControls: false
               thumbnailAspectRatio: 16/10
               dialogAspectRatio: 16/9
-              src: /public/creator/asset-store/rainy-city-street/files/Wt2LWBPXdux2.png
-              thumbnailSrc: /public/creator/asset-store/rainy-city-street/files/oVd6cHn2uKUk.png
+              src: /public/creator/asset-store/essential-transition-pack/files/Wt2LWBPXdux2.png
+              thumbnailSrc: /public/creator/asset-store/essential-transition-pack/files/oVd6cHn2uKUk.png
               placeholderLabel: Image
               previewColor: ''
               objectFit: cover
@@ -519,8 +518,8 @@ assetPack:
               showVideoControls: false
               thumbnailAspectRatio: 16/10
               dialogAspectRatio: 16/9
-              src: /public/creator/asset-store/rainy-city-street/files/JTCEpp5qjpd4.png
-              thumbnailSrc: /public/creator/asset-store/rainy-city-street/files/CvHJBJHu4ibk.png
+              src: /public/creator/asset-store/essential-transition-pack/files/JTCEpp5qjpd4.png
+              thumbnailSrc: /public/creator/asset-store/essential-transition-pack/files/CvHJBJHu4ibk.png
               placeholderLabel: Image
               previewColor: ''
               objectFit: cover
@@ -539,8 +538,8 @@ assetPack:
               showVideoControls: false
               thumbnailAspectRatio: 16/10
               dialogAspectRatio: 16/9
-              src: /public/creator/asset-store/rainy-city-street/files/LYNKk5Z7fcbh.png
-              thumbnailSrc: /public/creator/asset-store/rainy-city-street/files/ZxB8ZoABjVqX.png
+              src: /public/creator/asset-store/essential-transition-pack/files/LYNKk5Z7fcbh.png
+              thumbnailSrc: /public/creator/asset-store/essential-transition-pack/files/ZxB8ZoABjVqX.png
               placeholderLabel: Image
               previewColor: ''
               objectFit: cover
@@ -559,8 +558,8 @@ assetPack:
               showVideoControls: false
               thumbnailAspectRatio: 16/10
               dialogAspectRatio: 16/9
-              src: /public/creator/asset-store/rainy-city-street/files/WCvPNwmYGSXi.png
-              thumbnailSrc: /public/creator/asset-store/rainy-city-street/files/He82TdWNohjN.png
+              src: /public/creator/asset-store/essential-transition-pack/files/WCvPNwmYGSXi.png
+              thumbnailSrc: /public/creator/asset-store/essential-transition-pack/files/He82TdWNohjN.png
               placeholderLabel: Image
               previewColor: ''
               objectFit: cover
@@ -579,8 +578,8 @@ assetPack:
               showVideoControls: false
               thumbnailAspectRatio: 16/10
               dialogAspectRatio: 16/9
-              src: /public/creator/asset-store/rainy-city-street/files/zc8HmgeNKqgX.png
-              thumbnailSrc: /public/creator/asset-store/rainy-city-street/files/eW5iTTjpgWY1.png
+              src: /public/creator/asset-store/essential-transition-pack/files/zc8HmgeNKqgX.png
+              thumbnailSrc: /public/creator/asset-store/essential-transition-pack/files/eW5iTTjpgWY1.png
               placeholderLabel: Image
               previewColor: ''
               objectFit: cover
@@ -599,8 +598,8 @@ assetPack:
               showVideoControls: false
               thumbnailAspectRatio: 16/10
               dialogAspectRatio: 16/9
-              src: /public/creator/asset-store/rainy-city-street/files/KBDxCweDMk4x.png
-              thumbnailSrc: /public/creator/asset-store/rainy-city-street/files/5z73Frfy58uG.png
+              src: /public/creator/asset-store/essential-transition-pack/files/KBDxCweDMk4x.png
+              thumbnailSrc: /public/creator/asset-store/essential-transition-pack/files/5z73Frfy58uG.png
               placeholderLabel: Image
               previewColor: ''
               objectFit: cover
@@ -619,8 +618,8 @@ assetPack:
               showVideoControls: false
               thumbnailAspectRatio: 16/10
               dialogAspectRatio: 16/9
-              src: /public/creator/asset-store/rainy-city-street/files/oLLQjCmvgBPE.png
-              thumbnailSrc: /public/creator/asset-store/rainy-city-street/files/kJuaJuwoCWiQ.png
+              src: /public/creator/asset-store/essential-transition-pack/files/oLLQjCmvgBPE.png
+              thumbnailSrc: /public/creator/asset-store/essential-transition-pack/files/kJuaJuwoCWiQ.png
               placeholderLabel: Image
               previewColor: ''
               objectFit: cover
@@ -639,8 +638,8 @@ assetPack:
               showVideoControls: false
               thumbnailAspectRatio: 16/10
               dialogAspectRatio: 16/9
-              src: /public/creator/asset-store/rainy-city-street/files/dXxgczT3csnP.png
-              thumbnailSrc: /public/creator/asset-store/rainy-city-street/files/g86EATZqS2PB.png
+              src: /public/creator/asset-store/essential-transition-pack/files/dXxgczT3csnP.png
+              thumbnailSrc: /public/creator/asset-store/essential-transition-pack/files/g86EATZqS2PB.png
               placeholderLabel: Image
               previewColor: ''
               objectFit: cover
@@ -659,8 +658,8 @@ assetPack:
               showVideoControls: false
               thumbnailAspectRatio: 16/10
               dialogAspectRatio: 16/9
-              src: /public/creator/asset-store/rainy-city-street/files/spEKTetgsSNt.png
-              thumbnailSrc: /public/creator/asset-store/rainy-city-street/files/rSzNG8d1pr7y.png
+              src: /public/creator/asset-store/essential-transition-pack/files/spEKTetgsSNt.png
+              thumbnailSrc: /public/creator/asset-store/essential-transition-pack/files/rSzNG8d1pr7y.png
               placeholderLabel: Image
               previewColor: ''
               objectFit: cover
@@ -679,8 +678,8 @@ assetPack:
               showVideoControls: false
               thumbnailAspectRatio: 16/10
               dialogAspectRatio: 16/9
-              src: /public/creator/asset-store/rainy-city-street/files/xzQsStaQETNw.png
-              thumbnailSrc: /public/creator/asset-store/rainy-city-street/files/2zxXXRiXrNdo.png
+              src: /public/creator/asset-store/essential-transition-pack/files/xzQsStaQETNw.png
+              thumbnailSrc: /public/creator/asset-store/essential-transition-pack/files/2zxXXRiXrNdo.png
               placeholderLabel: Image
               previewColor: ''
               objectFit: cover
@@ -699,8 +698,8 @@ assetPack:
               showVideoControls: false
               thumbnailAspectRatio: 16/10
               dialogAspectRatio: 16/9
-              src: /public/creator/asset-store/rainy-city-street/files/zfs24aYjPf5f.png
-              thumbnailSrc: /public/creator/asset-store/rainy-city-street/files/bViCHBywekKR.png
+              src: /public/creator/asset-store/essential-transition-pack/files/zfs24aYjPf5f.png
+              thumbnailSrc: /public/creator/asset-store/essential-transition-pack/files/bViCHBywekKR.png
               placeholderLabel: Image
               previewColor: ''
               objectFit: cover
@@ -719,8 +718,8 @@ assetPack:
               showVideoControls: false
               thumbnailAspectRatio: 16/10
               dialogAspectRatio: 16/9
-              src: /public/creator/asset-store/rainy-city-street/files/PTP66rok4ceS.png
-              thumbnailSrc: /public/creator/asset-store/rainy-city-street/files/6ByjhMC9grNa.png
+              src: /public/creator/asset-store/essential-transition-pack/files/PTP66rok4ceS.png
+              thumbnailSrc: /public/creator/asset-store/essential-transition-pack/files/6ByjhMC9grNa.png
               placeholderLabel: Image
               previewColor: ''
               objectFit: cover
@@ -739,8 +738,8 @@ assetPack:
               showVideoControls: false
               thumbnailAspectRatio: 16/10
               dialogAspectRatio: 16/9
-              src: /public/creator/asset-store/rainy-city-street/files/59VrNTGcQbc9.png
-              thumbnailSrc: /public/creator/asset-store/rainy-city-street/files/am7vt6bzPARL.png
+              src: /public/creator/asset-store/essential-transition-pack/files/59VrNTGcQbc9.png
+              thumbnailSrc: /public/creator/asset-store/essential-transition-pack/files/am7vt6bzPARL.png
               placeholderLabel: Image
               previewColor: ''
               objectFit: cover
@@ -759,8 +758,8 @@ assetPack:
               showVideoControls: false
               thumbnailAspectRatio: 16/10
               dialogAspectRatio: 16/9
-              src: /public/creator/asset-store/rainy-city-street/files/9qWvnkvTtk8X.png
-              thumbnailSrc: /public/creator/asset-store/rainy-city-street/files/vKVXJRvWBeeG.png
+              src: /public/creator/asset-store/essential-transition-pack/files/9qWvnkvTtk8X.png
+              thumbnailSrc: /public/creator/asset-store/essential-transition-pack/files/vKVXJRvWBeeG.png
               placeholderLabel: Image
               previewColor: ''
               objectFit: cover
@@ -779,8 +778,8 @@ assetPack:
               showVideoControls: false
               thumbnailAspectRatio: 16/10
               dialogAspectRatio: 16/9
-              src: /public/creator/asset-store/rainy-city-street/files/LxvC8SDfeVuT.png
-              thumbnailSrc: /public/creator/asset-store/rainy-city-street/files/PB9HP4HgNutf.png
+              src: /public/creator/asset-store/essential-transition-pack/files/LxvC8SDfeVuT.png
+              thumbnailSrc: /public/creator/asset-store/essential-transition-pack/files/PB9HP4HgNutf.png
               placeholderLabel: Image
               previewColor: ''
               objectFit: cover
@@ -799,8 +798,8 @@ assetPack:
               showVideoControls: false
               thumbnailAspectRatio: 16/10
               dialogAspectRatio: 16/9
-              src: /public/creator/asset-store/rainy-city-street/files/h7UuCwuyUGFz.png
-              thumbnailSrc: /public/creator/asset-store/rainy-city-street/files/hU7ZvRYPLwnk.png
+              src: /public/creator/asset-store/essential-transition-pack/files/h7UuCwuyUGFz.png
+              thumbnailSrc: /public/creator/asset-store/essential-transition-pack/files/hU7ZvRYPLwnk.png
               placeholderLabel: Image
               previewColor: ''
               objectFit: cover
@@ -819,8 +818,8 @@ assetPack:
               showVideoControls: false
               thumbnailAspectRatio: 16/10
               dialogAspectRatio: 16/9
-              src: /public/creator/asset-store/rainy-city-street/files/kmuB4m8k7HjG.png
-              thumbnailSrc: /public/creator/asset-store/rainy-city-street/files/3XUdwrsWNKhG.png
+              src: /public/creator/asset-store/essential-transition-pack/files/kmuB4m8k7HjG.png
+              thumbnailSrc: /public/creator/asset-store/essential-transition-pack/files/3XUdwrsWNKhG.png
               placeholderLabel: Image
               previewColor: ''
               objectFit: cover
@@ -839,8 +838,8 @@ assetPack:
               showVideoControls: false
               thumbnailAspectRatio: 16/10
               dialogAspectRatio: 16/9
-              src: /public/creator/asset-store/rainy-city-street/files/B27Jw1eY3GVV.png
-              thumbnailSrc: /public/creator/asset-store/rainy-city-street/files/qFxaukokAMtb.png
+              src: /public/creator/asset-store/essential-transition-pack/files/B27Jw1eY3GVV.png
+              thumbnailSrc: /public/creator/asset-store/essential-transition-pack/files/qFxaukokAMtb.png
               placeholderLabel: Image
               previewColor: ''
               objectFit: cover
@@ -862,8 +861,8 @@ assetPack:
               showVideoControls: false
               thumbnailAspectRatio: 16/10
               dialogAspectRatio: 16/9
-              src: /public/creator/asset-store/rainy-city-street/files/AuPfjCh1h1hV.png
-              thumbnailSrc: /public/creator/asset-store/rainy-city-street/files/uhey4S4aUgot.png
+              src: /public/creator/asset-store/essential-transition-pack/files/AuPfjCh1h1hV.png
+              thumbnailSrc: /public/creator/asset-store/essential-transition-pack/files/uhey4S4aUgot.png
               placeholderLabel: Image
               previewColor: ''
               objectFit: cover
@@ -882,8 +881,8 @@ assetPack:
               showVideoControls: false
               thumbnailAspectRatio: 16/10
               dialogAspectRatio: 16/9
-              src: /public/creator/asset-store/rainy-city-street/files/2a4dnSu6DG1q.png
-              thumbnailSrc: /public/creator/asset-store/rainy-city-street/files/NqeNjgUPd9s3.png
+              src: /public/creator/asset-store/essential-transition-pack/files/2a4dnSu6DG1q.png
+              thumbnailSrc: /public/creator/asset-store/essential-transition-pack/files/NqeNjgUPd9s3.png
               placeholderLabel: Image
               previewColor: ''
               objectFit: cover
