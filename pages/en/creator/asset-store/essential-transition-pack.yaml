@@ -23,8 +23,8 @@ assetPack:
     name: RouteVN
     slug: routevn
     avatarSrc: /public/images/routevn-icon.png
-  released: '2026-08-09'
-  releasedLabel: August 9, 2026
+  released: '2026-08-12'
+  releasedLabel: August 12, 2026
   updated: '2026-08-12'
   updatedLabel: August 12, 2026
   sections:
