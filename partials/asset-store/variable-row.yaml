@@ -1,0 +1,9 @@
+- 'rtgl-view d="h" w="f" bwb="xs" bc="bo" role="row"':
+    - 'rtgl-view w="2fg" p="sm" role="cell"':
+        - rtgl-text break-long-tokens: ${asset.name}
+    - 'rtgl-view w="1fg" p="sm" role="cell"':
+        - rtgl-text: ${asset.variableScope}
+    - 'rtgl-view w="1fg" p="sm" role="cell"':
+        - rtgl-text: ${asset.variableType}
+    - 'rtgl-view w="2fg" p="sm" role="cell"':
+        - rtgl-text break-long-tokens: ${asset.defaultValue}
