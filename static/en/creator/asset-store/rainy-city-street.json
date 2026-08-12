@@ -3,7 +3,7 @@
   "package": {
     "kind": "routevn.creator.asset-package",
     "id": "routevn.transitions",
-    "name": "Transitions",
+    "name": "Essential Transition Pack",
     "version": "1.0.0",
     "description": "A collection of transitions for RouteVN Creator."
   },

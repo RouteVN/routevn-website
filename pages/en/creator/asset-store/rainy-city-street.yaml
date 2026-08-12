@@ -1,23 +1,23 @@
 ---
 template: creator
-title: Transitions - RouteVN Creator Asset Store
+title: Essential Transition Pack - RouteVN Creator Asset Store
 tags:
   - assetPack
 disableFooterSpacer: true
 seo:
-  title: Transitions - RouteVN Creator Asset Store
+  title: Essential Transition Pack - RouteVN Creator Asset Store
   description: A collection of transitions for RouteVN Creator.
 assetPack:
   slug: rainy-city-street
   packageId: routevn.transitions
-  name: Transitions
+  name: Essential Transition Pack
   version: 1.0.0
   description: A collection of transitions for RouteVN Creator.
   url: /en/creator/asset-store/rainy-city-street/
   importUrl: /en/creator/asset-store/rainy-city-street.json
   assetCount: 42
-  coverSrc: /public/creator/asset-store/rainy-city-street/files/2a4dnSu6DG1q.png
-  coverThumbnailSrc: /public/creator/asset-store/rainy-city-street/files/NqeNjgUPd9s3.png
+  coverSrc: /public/creator/asset-store/rainy-city-street/mask-animations-cover.png
+  coverThumbnailSrc: /public/creator/asset-store/rainy-city-street/mask-animations-cover.thumbnail.webp
   coverWidth: null
   author:
     name: RouteVN

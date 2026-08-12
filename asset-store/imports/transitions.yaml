@@ -1,6 +1,6 @@
 slug: rainy-city-street
 packageId: routevn.transitions
-name: Transitions
+name: Essential Transition Pack
 version: 1.0.0
 description: A collection of transitions for RouteVN Creator.
 author:
@@ -11,3 +11,5 @@ license: CC0
 released: '2026-08-09'
 updated: '2026-08-12'
 coverAssetId: JwYWiyzpVL56
+coverSrc: /public/creator/asset-store/rainy-city-street/mask-animations-cover.png
+coverThumbnailSrc: /public/creator/asset-store/rainy-city-street/mask-animations-cover.thumbnail.webp
