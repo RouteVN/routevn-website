@@ -6,6 +6,8 @@ import { fileURLToPath } from 'node:url';
 import yaml from 'js-yaml';
 
 const SUPPORTED_SCHEMA = 'routevn.import-pack.v1';
+const ASSET_PACKAGE_KIND = 'routevn.creator.asset-package';
+const PROJECT_REFERENCE_KEYS = new Set(['lineId', 'sceneId', 'sectionId']);
 const MIME_EXTENSIONS = {
   'application/json': '.json',
   'audio/mpeg': '.mp3',
@@ -194,8 +196,25 @@ function ensureInside(parentPath, childPath, label) {
   const relative = path.relative(parentPath, childPath);
 
   if (relative.startsWith('..') || path.isAbsolute(relative)) {
-    fail(`${label} resolves outside the package directory.`);
+    fail(`${label} resolves outside its allowed directory.`);
   }
+}
+
+function safeOutputFileName(fileId, extension) {
+  if (
+    typeof fileId !== 'string'
+    || fileId.length === 0
+    || fileId === '.'
+    || fileId === '..'
+    || fileId.includes('..')
+    || fileId.includes('/')
+    || fileId.includes('\\')
+    || fileId.includes('\0')
+  ) {
+    fail(`File id ${JSON.stringify(fileId)} is not safe for use as an output file name.`);
+  }
+
+  return fileId.toLowerCase().endsWith(extension) ? fileId : `${fileId}${extension}`;
 }
 
 function sha256(filePath) {
@@ -311,7 +330,7 @@ function validateManifest(manifest) {
   const hasLegacyPackageMetadata = manifest?.package?.id
     && manifest.package.name
     && manifest.package.version;
-  const hasCurrentPackageKind = manifest?.package?.kind === 'routevn.creator.asset-package';
+  const hasCurrentPackageKind = manifest?.package?.kind === ASSET_PACKAGE_KIND;
 
   if (!hasLegacyPackageMetadata && !hasCurrentPackageKind) {
     fail('asset-package.json requires package.kind or the legacy package id, name, and version fields.');
@@ -324,6 +343,7 @@ function validateManifest(manifest) {
 
 function validateAndDescribeFiles(sourceDir, files) {
   const describedFiles = {};
+  const outputFileNames = new Map();
 
   for (const [fileId, file] of Object.entries(files)) {
     if (file.id !== fileId) {
@@ -356,10 +376,19 @@ function validateAndDescribeFiles(sourceDir, files) {
       fail(`File ${fileId} failed SHA-256 validation.`);
     }
 
+    const fileName = safeOutputFileName(fileId, extension);
+    const normalizedFileName = fileName.toLowerCase();
+    const collidingFileId = outputFileNames.get(normalizedFileName);
+
+    if (collidingFileId) {
+      fail(`Files ${collidingFileId} and ${fileId} resolve to the same output file name.`);
+    }
+
+    outputFileNames.set(normalizedFileName, fileId);
     describedFiles[fileId] = {
       ...file,
       extension,
-      fileName: fileId.toLowerCase().endsWith(extension) ? fileId : `${fileId}${extension}`,
+      fileName,
       sha256: actualHash,
       sourcePath,
       dimensions: readDimensions(sourcePath, file.mimeType),
@@ -367,6 +396,27 @@ function validateAndDescribeFiles(sourceDir, files) {
   }
 
   return describedFiles;
+}
+
+function validateProjectOwnedReferences(value, pathParts = ['repository']) {
+  if (Array.isArray(value)) {
+    value.forEach((item, index) => validateProjectOwnedReferences(item, [...pathParts, String(index)]));
+    return;
+  }
+
+  if (!value || typeof value !== 'object') {
+    return;
+  }
+
+  for (const [key, childValue] of Object.entries(value)) {
+    const childPath = [...pathParts, key];
+
+    if (PROJECT_REFERENCE_KEYS.has(key)) {
+      fail(`${childPath.join('.')} contains project-owned reference ${key}, which asset packages cannot import.`);
+    }
+
+    validateProjectOwnedReferences(childValue, childPath);
+  }
 }
 
 function validateFileReferences(value, files, pathParts = ['repository']) {
@@ -406,9 +456,10 @@ function createGeneratedThumbnail(item, repositoryKey, previewFile, outputDir) {
   }
 
   fs.mkdirSync(outputDir, { recursive: true });
-  const baseName = slugify(`${repositoryKey}-${item.id}`) || item.id;
+  const baseName = slugify(`${repositoryKey}-${item.id}`) || 'asset';
   const fileName = `${baseName}-${previewFile.sha256.slice(0, 12)}.thumbnail.webp`;
-  const outputPath = path.join(outputDir, fileName);
+  const outputPath = path.resolve(outputDir, fileName);
+  ensureInside(outputDir, outputPath, `Generated thumbnail ${fileName}`);
 
   if (!fs.existsSync(outputPath) || fs.statSync(outputPath).size === 0) {
     const baseArgs = ['-loglevel', 'error', '-y'];
@@ -705,7 +756,8 @@ function copyFiles(files, outputDir) {
   fs.mkdirSync(outputDir, { recursive: true });
 
   for (const file of Object.values(files)) {
-    const outputPath = path.join(outputDir, file.fileName);
+    const outputPath = path.resolve(outputDir, file.fileName);
+    ensureInside(outputDir, outputPath, `Output file ${file.fileName}`);
     const alreadyMatches = fs.existsSync(outputPath)
       && fs.statSync(outputPath).size === file.size
       && sha256(outputPath) === file.sha256;
@@ -719,6 +771,7 @@ function copyFiles(files, outputDir) {
 function writePublicManifest(manifest, metadata, files, outputPath, publicBasePath) {
   const publicManifest = structuredClone(manifest);
 
+  publicManifest.package.kind = ASSET_PACKAGE_KIND;
   publicManifest.package.id = metadata.packageId || manifest.package.id;
   publicManifest.package.name = metadata.name || manifest.package.name;
   publicManifest.package.version = metadata.version || manifest.package.version || '1.0.0';
@@ -754,6 +807,44 @@ function writePage(pack, outputPath) {
   writeTextFileIfChanged(outputPath, `---\n${yamlText}---\n${body}`);
 }
 
+function publishStagedOutputs(outputs, backupRoot) {
+  const published = [];
+  fs.mkdirSync(backupRoot, { recursive: true });
+
+  try {
+    outputs.forEach(({ stagedPath, targetPath }, index) => {
+      fs.mkdirSync(path.dirname(targetPath), { recursive: true });
+      const backupPath = path.join(backupRoot, String(index));
+      const hadExistingTarget = fs.existsSync(targetPath);
+
+      if (hadExistingTarget) {
+        fs.renameSync(targetPath, backupPath);
+      }
+
+      try {
+        fs.renameSync(stagedPath, targetPath);
+      } catch (error) {
+        if (hadExistingTarget && fs.existsSync(backupPath)) {
+          fs.renameSync(backupPath, targetPath);
+        }
+        throw error;
+      }
+
+      published.push({ backupPath, hadExistingTarget, targetPath });
+    });
+  } catch (error) {
+    for (const output of published.reverse()) {
+      fs.rmSync(output.targetPath, { force: true, recursive: true });
+
+      if (output.hadExistingTarget && fs.existsSync(output.backupPath)) {
+        fs.renameSync(output.backupPath, output.targetPath);
+      }
+    }
+
+    throw error;
+  }
+}
+
 function main() {
   const repoRoot = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
   const args = parseArgs(process.argv.slice(2));
@@ -772,6 +863,7 @@ function main() {
 
   const files = validateAndDescribeFiles(sourceDir, manifest.repository.files.items);
   validateFileReferences(manifest.repository, files);
+  validateProjectOwnedReferences(manifest.repository);
   const publicBasePath = `/public/creator/asset-store/${metadata.slug}/files`;
   const staticFilesDir = path.join(
     repoRoot,
@@ -782,49 +874,6 @@ function main() {
     metadata.slug,
     'files',
   );
-  fs.rmSync(staticFilesDir, { force: true, recursive: true });
-  const sections = buildSections(manifest.repository, files, publicBasePath, staticFilesDir);
-  const coverAsset = findAsset(sections, metadata.coverAssetId);
-
-  if (!coverAsset) {
-    fail(`coverAssetId ${metadata.coverAssetId} is not a displayable package asset.`);
-  }
-
-  const assetCount = sections.reduce(
-    (sectionTotal, section) => sectionTotal + section.groups.reduce(
-      (groupTotal, group) => groupTotal
-        + (group.assets?.length ?? 0)
-        + (group.folders ?? []).reduce(
-          (folderTotal, folder) => folderTotal + (folder.assets?.length ?? 0),
-          0,
-        ),
-      0,
-    ),
-    0,
-  );
-  const pageUrl = `/en/creator/asset-store/${metadata.slug}/`;
-  const packageId = metadata.packageId || manifest.package.id;
-  const pack = {
-    slug: metadata.slug,
-    packageId,
-    name: metadata.name || manifest.package.name,
-    version: metadata.version || manifest.package.version || '1.0.0',
-    description: metadata.description || manifest.package.description || '',
-    url: pageUrl,
-    importUrl: `${pageUrl.replace(/\/$/, '')}.json`,
-    assetCount,
-    coverSrc: coverAsset.src,
-    coverThumbnailSrc: coverAsset.thumbnailSrc,
-    coverWidth: metadata.coverWidth || null,
-    author: metadata.author,
-    released: metadata.released,
-    releasedLabel: formatDate(metadata.released),
-    updated: metadata.updated,
-    updatedLabel: formatDate(metadata.updated),
-    license: metadata.license,
-    sections,
-  };
-
   const publicManifestPath = path.join(
     repoRoot,
     'static',
@@ -841,20 +890,94 @@ function main() {
     'asset-store',
     `${metadata.slug}.yaml`,
   );
+  const stagingRoot = fs.mkdtempSync(path.join(repoRoot, '.asset-store-import-'));
+  const stagedStaticFilesDir = path.join(stagingRoot, 'files');
+  const stagedPublicManifestPath = path.join(stagingRoot, 'manifest.json');
+  const stagedPagePath = path.join(stagingRoot, 'page.yaml');
 
-  copyFiles(files, staticFilesDir);
-  writePublicManifest(manifest, metadata, files, publicManifestPath, publicBasePath);
-  writePage(pack, pagePath);
+  try {
+    const sections = buildSections(
+      manifest.repository,
+      files,
+      publicBasePath,
+      stagedStaticFilesDir,
+    );
+    const coverAsset = findAsset(sections, metadata.coverAssetId);
 
-  console.log(`Imported ${pack.name} (${assetCount} assets, ${Object.keys(files).length} files).`);
-  console.log(`Page data: ${path.relative(repoRoot, pagePath)}`);
-  console.log(`Import manifest: ${path.relative(repoRoot, publicManifestPath)}`);
-  console.log(`Static files: ${path.relative(repoRoot, staticFilesDir)}`);
+    if (!coverAsset) {
+      fail(`coverAssetId ${metadata.coverAssetId} is not a displayable package asset.`);
+    }
+
+    const assetCount = sections.reduce(
+      (sectionTotal, section) => sectionTotal + section.groups.reduce(
+        (groupTotal, group) => groupTotal
+          + (group.assets?.length ?? 0)
+          + (group.folders ?? []).reduce(
+            (folderTotal, folder) => folderTotal + (folder.assets?.length ?? 0),
+            0,
+          ),
+          0,
+        ),
+      0,
+    );
+    const pageUrl = `/en/creator/asset-store/${metadata.slug}/`;
+    const packageId = metadata.packageId || manifest.package.id;
+    const pack = {
+      slug: metadata.slug,
+      packageId,
+      name: metadata.name || manifest.package.name,
+      version: metadata.version || manifest.package.version || '1.0.0',
+      description: metadata.description || manifest.package.description || '',
+      url: pageUrl,
+      importUrl: `${pageUrl.replace(/\/$/, '')}.json`,
+      assetCount,
+      coverSrc: coverAsset.src,
+      coverThumbnailSrc: coverAsset.thumbnailSrc,
+      coverWidth: metadata.coverWidth || null,
+      author: metadata.author,
+      released: metadata.released,
+      releasedLabel: formatDate(metadata.released),
+      updated: metadata.updated,
+      updatedLabel: formatDate(metadata.updated),
+      license: metadata.license,
+      sections,
+    };
+
+    copyFiles(files, stagedStaticFilesDir);
+    writePublicManifest(
+      manifest,
+      metadata,
+      files,
+      stagedPublicManifestPath,
+      publicBasePath,
+    );
+    writePage(pack, stagedPagePath);
+    publishStagedOutputs([
+      { stagedPath: stagedStaticFilesDir, targetPath: staticFilesDir },
+      { stagedPath: stagedPublicManifestPath, targetPath: publicManifestPath },
+      { stagedPath: stagedPagePath, targetPath: pagePath },
+    ], path.join(stagingRoot, 'backups'));
+
+    console.log(`Imported ${pack.name} (${assetCount} assets, ${Object.keys(files).length} files).`);
+    console.log(`Page data: ${path.relative(repoRoot, pagePath)}`);
+    console.log(`Import manifest: ${path.relative(repoRoot, publicManifestPath)}`);
+    console.log(`Static files: ${path.relative(repoRoot, staticFilesDir)}`);
+  } finally {
+    fs.rmSync(stagingRoot, { force: true, recursive: true });
+  }
 }
 
-try {
-  main();
-} catch (error) {
-  console.error(`Asset package import failed: ${error.message}`);
-  process.exitCode = 1;
+if (process.argv[1] && path.resolve(process.argv[1]) === fileURLToPath(import.meta.url)) {
+  try {
+    main();
+  } catch (error) {
+    console.error(`Asset package import failed: ${error.message}`);
+    process.exitCode = 1;
+  }
 }
+
+export {
+  publishStagedOutputs,
+  safeOutputFileName,
+  validateProjectOwnedReferences,
+};

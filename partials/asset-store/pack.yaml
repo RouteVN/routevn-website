@@ -150,6 +150,28 @@
 
       document.querySelectorAll("[data-rvn-delayed-loop]").forEach(enableDelayedVideoLoop);
 
+      const thumbnailVideos = document.querySelectorAll("[data-rvn-thumbnail-video]");
+
+      if ("IntersectionObserver" in window) {
+        const thumbnailObserver = new IntersectionObserver((entries) => {
+          entries.forEach((entry) => {
+            const video = entry.target;
+
+            if (entry.isIntersecting) {
+              video.play().catch(() => {});
+              return;
+            }
+
+            clearVideoLoopTimer(video);
+            video.pause();
+          });
+        }, { threshold: 0.01 });
+
+        thumbnailVideos.forEach((video) => thumbnailObserver.observe(video));
+      } else {
+        thumbnailVideos.forEach((video) => video.play().catch(() => {}));
+      }
+
       const hideMedia = (media) => {
         if (!media) {
           return;

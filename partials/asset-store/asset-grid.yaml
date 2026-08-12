@@ -5,7 +5,7 @@
                 - $if asset.previewColor:
                     - 'rtgl-view style="background: ${asset.previewColor};" w="f" h="f"':
                   $elif asset.thumbnailMediaType == "video":
-                    - 'video data-rvn-delayed-loop src="${asset.thumbnailSrc}" autoplay muted playsinline preload="metadata" style="display: block; height: 100%; object-fit: ${asset.objectFit}; width: 100%;"':
+                    - 'video data-rvn-delayed-loop data-rvn-thumbnail-video src="${asset.thumbnailSrc}" muted playsinline preload="none" style="display: block; height: 100%; object-fit: ${asset.objectFit}; width: 100%;"':
                   $elif asset.thumbnailMediaType == "image":
                     - $if asset.objectFit == "contain":
                         - 'rtgl-image w="f" h="f" of="con" src="${asset.thumbnailSrc}" alt=""':

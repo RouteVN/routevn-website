@@ -4,7 +4,8 @@
     "id": "placeholder.asset-package",
     "name": "Placeholder Asset Package",
     "version": "1.0.0",
-    "description": "Placeholder asset package description."
+    "description": "Placeholder asset package description.",
+    "kind": "routevn.creator.asset-package"
   },
   "repository": {
     "files": {

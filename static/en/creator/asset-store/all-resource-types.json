@@ -5919,16 +5919,7 @@
                 "gapX": 0,
                 "gapY": 0,
                 "width": 0,
-                "height": 0,
-                "click": {
-                  "payload": {
-                    "actions": {
-                      "resetStoryAtSection": {
-                        "sectionId": "DbhYkg5Lng7f"
-                      }
-                    }
-                  }
-                }
+                "height": 0
               },
               "BbvfEiV6UQ8V": {
                 "id": "BbvfEiV6UQ8V",
@@ -6270,10 +6261,7 @@
                       "showConfirmDialog": {
                         "resourceId": "3SbNExCHBKaN",
                         "confirmActions": {
-                          "popOverlay": {},
-                          "resetStoryAtSection": {
-                            "sectionId": "oivTjWAhhYG1"
-                          }
+                          "popOverlay": {}
                         }
                       }
                     }

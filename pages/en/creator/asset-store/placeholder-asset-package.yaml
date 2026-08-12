@@ -18,6 +18,7 @@ assetPack:
   assetCount: 37
   coverSrc: /public/creator/asset-store/placeholder-asset-package/files/PyxmkKz9Gquh.png
   coverThumbnailSrc: /public/creator/asset-store/placeholder-asset-package/files/F5XkSi3RDD6w.png
+  coverWidth: null
   author:
     name: RouteVN
     slug: routevn
@@ -41,6 +42,14 @@ assetPack:
               thumbnailMediaType: image
               format: JPEG
               resolution: 1920 × 1080
+              duration: ''
+              variableScope: ''
+              variableType: ''
+              defaultValue: ''
+              controlBindings: []
+              showVideoControls: false
+              thumbnailAspectRatio: 16/10
+              dialogAspectRatio: 16/9
               src: /public/creator/asset-store/placeholder-asset-package/files/mFVWW7QUDC8m.jpg
               thumbnailSrc: /public/creator/asset-store/placeholder-asset-package/files/PVHmpegYoSrL.png
               placeholderLabel: Image
@@ -53,6 +62,14 @@ assetPack:
               thumbnailMediaType: image
               format: JPEG
               resolution: 1920 × 1080
+              duration: ''
+              variableScope: ''
+              variableType: ''
+              defaultValue: ''
+              controlBindings: []
+              showVideoControls: false
+              thumbnailAspectRatio: 16/10
+              dialogAspectRatio: 16/9
               src: /public/creator/asset-store/placeholder-asset-package/files/24KfEoRiP4dn.jpg
               thumbnailSrc: /public/creator/asset-store/placeholder-asset-package/files/h65Zc41sHXZH.png
               placeholderLabel: Image
@@ -65,6 +82,14 @@ assetPack:
               thumbnailMediaType: image
               format: JPEG
               resolution: 2160 × 1080
+              duration: ''
+              variableScope: ''
+              variableType: ''
+              defaultValue: ''
+              controlBindings: []
+              showVideoControls: false
+              thumbnailAspectRatio: 16/10
+              dialogAspectRatio: 16/9
               src: /public/creator/asset-store/placeholder-asset-package/files/yKwgudwMLAFz.jpg
               thumbnailSrc: /public/creator/asset-store/placeholder-asset-package/files/H54QmK36fZ9S.png
               placeholderLabel: Image
@@ -77,6 +102,14 @@ assetPack:
               thumbnailMediaType: image
               format: JPEG
               resolution: 1920 × 1080
+              duration: ''
+              variableScope: ''
+              variableType: ''
+              defaultValue: ''
+              controlBindings: []
+              showVideoControls: false
+              thumbnailAspectRatio: 16/10
+              dialogAspectRatio: 16/9
               src: /public/creator/asset-store/placeholder-asset-package/files/VUjgzs8AfETp.jpg
               thumbnailSrc: /public/creator/asset-store/placeholder-asset-package/files/vF6kAdk67V41.png
               placeholderLabel: Image
@@ -89,6 +122,14 @@ assetPack:
               thumbnailMediaType: image
               format: JPEG
               resolution: 1920 × 1080
+              duration: ''
+              variableScope: ''
+              variableType: ''
+              defaultValue: ''
+              controlBindings: []
+              showVideoControls: false
+              thumbnailAspectRatio: 16/10
+              dialogAspectRatio: 16/9
               src: /public/creator/asset-store/placeholder-asset-package/files/utRtyw2Ebt4j.jpg
               thumbnailSrc: /public/creator/asset-store/placeholder-asset-package/files/fzzacGkaPWku.png
               placeholderLabel: Image
@@ -101,6 +142,14 @@ assetPack:
               thumbnailMediaType: image
               format: JPEG
               resolution: 1920 × 1080
+              duration: ''
+              variableScope: ''
+              variableType: ''
+              defaultValue: ''
+              controlBindings: []
+              showVideoControls: false
+              thumbnailAspectRatio: 16/10
+              dialogAspectRatio: 16/9
               src: /public/creator/asset-store/placeholder-asset-package/files/rDDyLHUEAfpJ.jpg
               thumbnailSrc: /public/creator/asset-store/placeholder-asset-package/files/PodNwqyctj51.png
               placeholderLabel: Image
@@ -113,6 +162,14 @@ assetPack:
               thumbnailMediaType: image
               format: JPEG
               resolution: 1920 × 1080
+              duration: ''
+              variableScope: ''
+              variableType: ''
+              defaultValue: ''
+              controlBindings: []
+              showVideoControls: false
+              thumbnailAspectRatio: 16/10
+              dialogAspectRatio: 16/9
               src: /public/creator/asset-store/placeholder-asset-package/files/U5Y2ZLjJDjfo.jpg
               thumbnailSrc: /public/creator/asset-store/placeholder-asset-package/files/4x4vdWScq2oT.png
               placeholderLabel: Image
@@ -125,6 +182,14 @@ assetPack:
               thumbnailMediaType: image
               format: JPEG
               resolution: 2160 × 1080
+              duration: ''
+              variableScope: ''
+              variableType: ''
+              defaultValue: ''
+              controlBindings: []
+              showVideoControls: false
+              thumbnailAspectRatio: 16/10
+              dialogAspectRatio: 16/9
               src: /public/creator/asset-store/placeholder-asset-package/files/JfqLY5eAEbH6.jpg
               thumbnailSrc: /public/creator/asset-store/placeholder-asset-package/files/4tjyXDEtmuAw.png
               placeholderLabel: Image
@@ -137,6 +202,14 @@ assetPack:
               thumbnailMediaType: image
               format: JPEG
               resolution: 2160 × 1080
+              duration: ''
+              variableScope: ''
+              variableType: ''
+              defaultValue: ''
+              controlBindings: []
+              showVideoControls: false
+              thumbnailAspectRatio: 16/10
+              dialogAspectRatio: 16/9
               src: /public/creator/asset-store/placeholder-asset-package/files/MEw4NLpAdpXD.jpg
               thumbnailSrc: /public/creator/asset-store/placeholder-asset-package/files/gyMry4PYUuhe.png
               placeholderLabel: Image
@@ -149,6 +222,14 @@ assetPack:
               thumbnailMediaType: image
               format: JPEG
               resolution: 1920 × 1080
+              duration: ''
+              variableScope: ''
+              variableType: ''
+              defaultValue: ''
+              controlBindings: []
+              showVideoControls: false
+              thumbnailAspectRatio: 16/10
+              dialogAspectRatio: 16/9
               src: /public/creator/asset-store/placeholder-asset-package/files/kDE5RvVVrBjx.jpg
               thumbnailSrc: /public/creator/asset-store/placeholder-asset-package/files/qnKVWs3CP4jA.png
               placeholderLabel: Image
@@ -161,6 +242,14 @@ assetPack:
               thumbnailMediaType: image
               format: PNG
               resolution: 1920 × 1080
+              duration: ''
+              variableScope: ''
+              variableType: ''
+              defaultValue: ''
+              controlBindings: []
+              showVideoControls: false
+              thumbnailAspectRatio: 16/10
+              dialogAspectRatio: 16/9
               src: /public/creator/asset-store/placeholder-asset-package/files/qjrDJfjnmLRE.png
               thumbnailSrc: /public/creator/asset-store/placeholder-asset-package/files/HvTuSVPgHVh4.png
               placeholderLabel: Image
@@ -173,6 +262,14 @@ assetPack:
               thumbnailMediaType: image
               format: PNG
               resolution: 1920 × 1080
+              duration: ''
+              variableScope: ''
+              variableType: ''
+              defaultValue: ''
+              controlBindings: []
+              showVideoControls: false
+              thumbnailAspectRatio: 16/10
+              dialogAspectRatio: 16/9
               src: /public/creator/asset-store/placeholder-asset-package/files/PyxmkKz9Gquh.png
               thumbnailSrc: /public/creator/asset-store/placeholder-asset-package/files/F5XkSi3RDD6w.png
               placeholderLabel: Image
@@ -185,6 +282,14 @@ assetPack:
               thumbnailMediaType: image
               format: PNG
               resolution: 1920 × 1080
+              duration: ''
+              variableScope: ''
+              variableType: ''
+              defaultValue: ''
+              controlBindings: []
+              showVideoControls: false
+              thumbnailAspectRatio: 16/10
+              dialogAspectRatio: 16/9
               src: /public/creator/asset-store/placeholder-asset-package/files/U7RtRX6EPxaG.png
               thumbnailSrc: /public/creator/asset-store/placeholder-asset-package/files/zoLRaraoRNEE.png
               placeholderLabel: Image
@@ -197,6 +302,14 @@ assetPack:
               thumbnailMediaType: image
               format: PNG
               resolution: 1920 × 1080
+              duration: ''
+              variableScope: ''
+              variableType: ''
+              defaultValue: ''
+              controlBindings: []
+              showVideoControls: false
+              thumbnailAspectRatio: 16/10
+              dialogAspectRatio: 16/9
               src: /public/creator/asset-store/placeholder-asset-package/files/C21xwhZUsPoC.png
               thumbnailSrc: /public/creator/asset-store/placeholder-asset-package/files/2qQVkbZw6G4J.png
               placeholderLabel: Image
@@ -209,6 +322,14 @@ assetPack:
               thumbnailMediaType: image
               format: PNG
               resolution: 1920 × 1080
+              duration: ''
+              variableScope: ''
+              variableType: ''
+              defaultValue: ''
+              controlBindings: []
+              showVideoControls: false
+              thumbnailAspectRatio: 16/10
+              dialogAspectRatio: 16/9
               src: /public/creator/asset-store/placeholder-asset-package/files/oB4VLEbqtH7f.png
               thumbnailSrc: /public/creator/asset-store/placeholder-asset-package/files/gJqJobjxxG9w.png
               placeholderLabel: Image
@@ -221,6 +342,14 @@ assetPack:
               thumbnailMediaType: image
               format: PNG
               resolution: 1920 × 1080
+              duration: ''
+              variableScope: ''
+              variableType: ''
+              defaultValue: ''
+              controlBindings: []
+              showVideoControls: false
+              thumbnailAspectRatio: 16/10
+              dialogAspectRatio: 16/9
               src: /public/creator/asset-store/placeholder-asset-package/files/CiXLKedUyhhX.png
               thumbnailSrc: /public/creator/asset-store/placeholder-asset-package/files/fWsUj6QmWtFJ.png
               placeholderLabel: Image
@@ -233,6 +362,14 @@ assetPack:
               thumbnailMediaType: image
               format: PNG
               resolution: 1920 × 1080
+              duration: ''
+              variableScope: ''
+              variableType: ''
+              defaultValue: ''
+              controlBindings: []
+              showVideoControls: false
+              thumbnailAspectRatio: 16/10
+              dialogAspectRatio: 16/9
               src: /public/creator/asset-store/placeholder-asset-package/files/TGUY6msDRYC6.png
               thumbnailSrc: /public/creator/asset-store/placeholder-asset-package/files/5eAM1rn2snyh.png
               placeholderLabel: Image
@@ -248,8 +385,16 @@ assetPack:
               thumbnailMediaType: image
               format: PNG
               resolution: 1920 × 1080
+              duration: ''
+              variableScope: ''
+              variableType: ''
+              defaultValue: ''
+              controlBindings: []
+              showVideoControls: false
+              thumbnailAspectRatio: 16/10
+              dialogAspectRatio: 16/9
               src: /public/creator/asset-store/placeholder-asset-package/files/L1mNut4zVMsr.png
-              thumbnailSrc: /public/creator/asset-store/placeholder-asset-package/files/L1mNut4zVMsr.png
+              thumbnailSrc: /public/creator/asset-store/placeholder-asset-package/files/images-9ne5en6jfxhj-b369e13fe70f.thumbnail.webp
               placeholderLabel: Image
               previewColor: ''
               objectFit: cover
@@ -260,8 +405,16 @@ assetPack:
               thumbnailMediaType: image
               format: PNG
               resolution: 1920 × 1080
+              duration: ''
+              variableScope: ''
+              variableType: ''
+              defaultValue: ''
+              controlBindings: []
+              showVideoControls: false
+              thumbnailAspectRatio: 16/10
+              dialogAspectRatio: 16/9
               src: /public/creator/asset-store/placeholder-asset-package/files/9phZ8YaUGoUG.png
-              thumbnailSrc: /public/creator/asset-store/placeholder-asset-package/files/9phZ8YaUGoUG.png
+              thumbnailSrc: /public/creator/asset-store/placeholder-asset-package/files/images-2fhb9gfjmx6x-47e78db31141.thumbnail.webp
               placeholderLabel: Image
               previewColor: ''
               objectFit: cover
@@ -272,8 +425,16 @@ assetPack:
               thumbnailMediaType: image
               format: PNG
               resolution: 1920 × 1080
+              duration: ''
+              variableScope: ''
+              variableType: ''
+              defaultValue: ''
+              controlBindings: []
+              showVideoControls: false
+              thumbnailAspectRatio: 16/10
+              dialogAspectRatio: 16/9
               src: /public/creator/asset-store/placeholder-asset-package/files/BJxpAwLdpPh3.png
-              thumbnailSrc: /public/creator/asset-store/placeholder-asset-package/files/BJxpAwLdpPh3.png
+              thumbnailSrc: /public/creator/asset-store/placeholder-asset-package/files/images-nywji71vmz3w-3024d6df26cc.thumbnail.webp
               placeholderLabel: Image
               previewColor: ''
               objectFit: cover
@@ -284,8 +445,16 @@ assetPack:
               thumbnailMediaType: image
               format: PNG
               resolution: 1920 × 1080
+              duration: ''
+              variableScope: ''
+              variableType: ''
+              defaultValue: ''
+              controlBindings: []
+              showVideoControls: false
+              thumbnailAspectRatio: 16/10
+              dialogAspectRatio: 16/9
               src: /public/creator/asset-store/placeholder-asset-package/files/cAqa9XfDPwwN.png
-              thumbnailSrc: /public/creator/asset-store/placeholder-asset-package/files/cAqa9XfDPwwN.png
+              thumbnailSrc: /public/creator/asset-store/placeholder-asset-package/files/images-ns9kbuz24tqx-9de3320a1a7b.thumbnail.webp
               placeholderLabel: Image
               previewColor: ''
               objectFit: cover
@@ -296,8 +465,16 @@ assetPack:
               thumbnailMediaType: image
               format: PNG
               resolution: 1920 × 1080
+              duration: ''
+              variableScope: ''
+              variableType: ''
+              defaultValue: ''
+              controlBindings: []
+              showVideoControls: false
+              thumbnailAspectRatio: 16/10
+              dialogAspectRatio: 16/9
               src: /public/creator/asset-store/placeholder-asset-package/files/cAqa9XfDPwwN.png
-              thumbnailSrc: /public/creator/asset-store/placeholder-asset-package/files/cAqa9XfDPwwN.png
+              thumbnailSrc: /public/creator/asset-store/placeholder-asset-package/files/images-c5xw9bbcnaxd-9de3320a1a7b.thumbnail.webp
               placeholderLabel: Image
               previewColor: ''
               objectFit: cover
@@ -308,6 +485,14 @@ assetPack:
               thumbnailMediaType: image
               format: PNG
               resolution: 1 × 1
+              duration: ''
+              variableScope: ''
+              variableType: ''
+              defaultValue: ''
+              controlBindings: []
+              showVideoControls: false
+              thumbnailAspectRatio: 16/10
+              dialogAspectRatio: 16/9
               src: /public/creator/asset-store/placeholder-asset-package/files/1bZnYtbrjdtz.png
               thumbnailSrc: /public/creator/asset-store/placeholder-asset-package/files/nL7YHsTNUkNA.png
               placeholderLabel: Image
@@ -320,6 +505,14 @@ assetPack:
               thumbnailMediaType: image
               format: PNG
               resolution: 1 × 1
+              duration: ''
+              variableScope: ''
+              variableType: ''
+              defaultValue: ''
+              controlBindings: []
+              showVideoControls: false
+              thumbnailAspectRatio: 16/10
+              dialogAspectRatio: 16/9
               src: /public/creator/asset-store/placeholder-asset-package/files/sH4gdh5rkQ1z.png
               thumbnailSrc: /public/creator/asset-store/placeholder-asset-package/files/9uEFK3eGxT1d.png
               placeholderLabel: Image
@@ -332,6 +525,14 @@ assetPack:
               thumbnailMediaType: image
               format: PNG
               resolution: 1 × 1
+              duration: ''
+              variableScope: ''
+              variableType: ''
+              defaultValue: ''
+              controlBindings: []
+              showVideoControls: false
+              thumbnailAspectRatio: 16/10
+              dialogAspectRatio: 16/9
               src: /public/creator/asset-store/placeholder-asset-package/files/HceE3RJro86v.png
               thumbnailSrc: /public/creator/asset-store/placeholder-asset-package/files/cLCeoCqovKqV.png
               placeholderLabel: Image
@@ -354,6 +555,14 @@ assetPack:
                   thumbnailMediaType: image
                   format: PNG
                   resolution: 426 × 1080
+                  duration: ''
+                  variableScope: ''
+                  variableType: ''
+                  defaultValue: ''
+                  controlBindings: []
+                  showVideoControls: false
+                  thumbnailAspectRatio: 16/10
+                  dialogAspectRatio: 16/9
                   src: /public/creator/asset-store/placeholder-asset-package/files/dWjxQypwH8nR.png
                   thumbnailSrc: /public/creator/asset-store/placeholder-asset-package/files/Z2gtZ2WjqmiC.png
                   placeholderLabel: Image
@@ -366,6 +575,14 @@ assetPack:
                   thumbnailMediaType: image
                   format: PNG
                   resolution: 426 × 1080
+                  duration: ''
+                  variableScope: ''
+                  variableType: ''
+                  defaultValue: ''
+                  controlBindings: []
+                  showVideoControls: false
+                  thumbnailAspectRatio: 16/10
+                  dialogAspectRatio: 16/9
                   src: /public/creator/asset-store/placeholder-asset-package/files/TXmTfA4uURFU.png
                   thumbnailSrc: /public/creator/asset-store/placeholder-asset-package/files/HzxJMgyS6S9i.png
                   placeholderLabel: Image
@@ -378,6 +595,14 @@ assetPack:
                   thumbnailMediaType: image
                   format: PNG
                   resolution: 426 × 1080
+                  duration: ''
+                  variableScope: ''
+                  variableType: ''
+                  defaultValue: ''
+                  controlBindings: []
+                  showVideoControls: false
+                  thumbnailAspectRatio: 16/10
+                  dialogAspectRatio: 16/9
                   src: /public/creator/asset-store/placeholder-asset-package/files/zth2ggoP6WRy.png
                   thumbnailSrc: /public/creator/asset-store/placeholder-asset-package/files/xLc1n23NP8md.png
                   placeholderLabel: Image
@@ -390,6 +615,14 @@ assetPack:
                   thumbnailMediaType: image
                   format: PNG
                   resolution: 426 × 1080
+                  duration: ''
+                  variableScope: ''
+                  variableType: ''
+                  defaultValue: ''
+                  controlBindings: []
+                  showVideoControls: false
+                  thumbnailAspectRatio: 16/10
+                  dialogAspectRatio: 16/9
                   src: /public/creator/asset-store/placeholder-asset-package/files/deydbkHzwuUZ.png
                   thumbnailSrc: /public/creator/asset-store/placeholder-asset-package/files/PrYGSTnEMy6y.png
                   placeholderLabel: Image
@@ -402,6 +635,14 @@ assetPack:
                   thumbnailMediaType: image
                   format: PNG
                   resolution: 426 × 1080
+                  duration: ''
+                  variableScope: ''
+                  variableType: ''
+                  defaultValue: ''
+                  controlBindings: []
+                  showVideoControls: false
+                  thumbnailAspectRatio: 16/10
+                  dialogAspectRatio: 16/9
                   src: /public/creator/asset-store/placeholder-asset-package/files/5PQLrDw271V1.png
                   thumbnailSrc: /public/creator/asset-store/placeholder-asset-package/files/WStgsTpf7UjF.png
                   placeholderLabel: Image
@@ -421,6 +662,14 @@ assetPack:
                   thumbnailMediaType: image
                   format: PNG
                   resolution: 568 × 1080
+                  duration: ''
+                  variableScope: ''
+                  variableType: ''
+                  defaultValue: ''
+                  controlBindings: []
+                  showVideoControls: false
+                  thumbnailAspectRatio: 16/10
+                  dialogAspectRatio: 16/9
                   src: /public/creator/asset-store/placeholder-asset-package/files/tGCVkGbYAnCi.png
                   thumbnailSrc: /public/creator/asset-store/placeholder-asset-package/files/o2meuedNohUj.png
                   placeholderLabel: Image
@@ -433,6 +682,14 @@ assetPack:
                   thumbnailMediaType: image
                   format: PNG
                   resolution: 568 × 1080
+                  duration: ''
+                  variableScope: ''
+                  variableType: ''
+                  defaultValue: ''
+                  controlBindings: []
+                  showVideoControls: false
+                  thumbnailAspectRatio: 16/10
+                  dialogAspectRatio: 16/9
                   src: /public/creator/asset-store/placeholder-asset-package/files/nbauzbX2KsZM.png
                   thumbnailSrc: /public/creator/asset-store/placeholder-asset-package/files/BtNNS8oJZ6wD.png
                   placeholderLabel: Image
@@ -445,6 +702,14 @@ assetPack:
                   thumbnailMediaType: image
                   format: PNG
                   resolution: 568 × 1080
+                  duration: ''
+                  variableScope: ''
+                  variableType: ''
+                  defaultValue: ''
+                  controlBindings: []
+                  showVideoControls: false
+                  thumbnailAspectRatio: 16/10
+                  dialogAspectRatio: 16/9
                   src: /public/creator/asset-store/placeholder-asset-package/files/eu7G9eTXjaMo.png
                   thumbnailSrc: /public/creator/asset-store/placeholder-asset-package/files/mBEXmQckEs1M.png
                   placeholderLabel: Image
@@ -457,6 +722,14 @@ assetPack:
                   thumbnailMediaType: image
                   format: PNG
                   resolution: 568 × 1080
+                  duration: ''
+                  variableScope: ''
+                  variableType: ''
+                  defaultValue: ''
+                  controlBindings: []
+                  showVideoControls: false
+                  thumbnailAspectRatio: 16/10
+                  dialogAspectRatio: 16/9
                   src: /public/creator/asset-store/placeholder-asset-package/files/FzNoihCGpzGn.png
                   thumbnailSrc: /public/creator/asset-store/placeholder-asset-package/files/F54JerBf8vsj.png
                   placeholderLabel: Image
@@ -469,6 +742,14 @@ assetPack:
                   thumbnailMediaType: image
                   format: PNG
                   resolution: 568 × 1080
+                  duration: ''
+                  variableScope: ''
+                  variableType: ''
+                  defaultValue: ''
+                  controlBindings: []
+                  showVideoControls: false
+                  thumbnailAspectRatio: 16/10
+                  dialogAspectRatio: 16/9
                   src: /public/creator/asset-store/placeholder-asset-package/files/zXiGnAH4VLqQ.png
                   thumbnailSrc: /public/creator/asset-store/placeholder-asset-package/files/gGgxjE7qxvAN.png
                   placeholderLabel: Image
@@ -481,6 +762,14 @@ assetPack:
                   thumbnailMediaType: image
                   format: PNG
                   resolution: 568 × 1080
+                  duration: ''
+                  variableScope: ''
+                  variableType: ''
+                  defaultValue: ''
+                  controlBindings: []
+                  showVideoControls: false
+                  thumbnailAspectRatio: 16/10
+                  dialogAspectRatio: 16/9
                   src: /public/creator/asset-store/placeholder-asset-package/files/XSmuS8r55fdj.png
                   thumbnailSrc: /public/creator/asset-store/placeholder-asset-package/files/AmqKxW9dZ3MJ.png
                   placeholderLabel: Image
@@ -500,6 +789,14 @@ assetPack:
                   thumbnailMediaType: image
                   format: PNG
                   resolution: 512 × 512
+                  duration: ''
+                  variableScope: ''
+                  variableType: ''
+                  defaultValue: ''
+                  controlBindings: []
+                  showVideoControls: false
+                  thumbnailAspectRatio: 16/10
+                  dialogAspectRatio: 16/9
                   src: /public/creator/asset-store/placeholder-asset-package/files/6U9Cho1XJXBM.png
                   thumbnailSrc: /public/creator/asset-store/placeholder-asset-package/files/UGJaNVM98MYT.png
                   placeholderLabel: Image
