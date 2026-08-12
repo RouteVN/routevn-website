@@ -97,7 +97,7 @@
                     - rtgl-view g="sm" w="f":
                         - rtgl-text s="sm": Format
                         - rtgl-text id="rvn-asset-dialog-format": null
-                    - rtgl-view g="sm" w="f":
+                    - 'rtgl-view id="rvn-asset-dialog-detail" g="sm" w="f"':
                         - rtgl-text id="rvn-asset-dialog-detail-label" s="sm": Resolution
                         - rtgl-text id="rvn-asset-dialog-resolution": null
 - script: |
@@ -106,6 +106,7 @@
       const dialogTitle = document.getElementById("rvn-asset-dialog-title");
       const dialogSubtitle = document.getElementById("rvn-asset-dialog-subtitle");
       const dialogFormat = document.getElementById("rvn-asset-dialog-format");
+      const dialogDetail = document.getElementById("rvn-asset-dialog-detail");
       const dialogDetailLabel = document.getElementById("rvn-asset-dialog-detail-label");
       const dialogResolution = document.getElementById("rvn-asset-dialog-resolution");
       const dialogPreview = document.getElementById("rvn-asset-dialog-preview");
@@ -228,6 +229,9 @@
         dialogTitle.textContent = card.dataset.assetTitle || "Asset";
         dialogSubtitle.textContent = card.dataset.assetSubtitle || "";
         dialogFormat.textContent = card.dataset.assetFormat || "";
+        const isAnimation = card.dataset.assetFormat === "Animation";
+        dialogDetail.hidden = isAnimation;
+        dialogDetail.style.display = isAnimation ? "none" : "";
         dialogDetailLabel.textContent = mediaType === "audio" ? "Duration" : "Resolution";
         dialogResolution.textContent = mediaType === "audio"
           ? (card.dataset.assetDuration || "Not specified")
