@@ -17,7 +17,19 @@ body::-webkit-scrollbar {
 
 /* Firefox */
 * {
-  scrollbar-color: var(--input) transparent;
+  scrollbar-color: var(--scrollbar-thumb) var(--scrollbar-track);
+}
+
+*::-webkit-scrollbar-track {
+  background: var(--scrollbar-track);
+}
+
+*::-webkit-scrollbar-thumb {
+  background: var(--scrollbar-thumb);
+}
+
+*::-webkit-scrollbar-thumb:hover {
+  background: var(--scrollbar-thumb-hover);
 }
 
 body {
@@ -157,6 +169,18 @@ a:hover {
 
   /* ring of text inputs */
   --ring: oklch(0.708 0 0);
+
+  --scrollbar-track: transparent;
+  --scrollbar-thumb: color-mix(
+    in oklch,
+    var(--background) 82%,
+    var(--foreground) 18%
+  );
+  --scrollbar-thumb-hover: color-mix(
+    in oklch,
+    var(--background) 76%,
+    var(--foreground) 24%
+  );
 }
 
 /* Override in supported browsers */
@@ -331,6 +355,47 @@ pre {
   min-width: max-content;
 }
 
+#content-container img[data-rvn-image-preview="true"] {
+  cursor: zoom-in;
+}
+
+.rvn-image-lightbox {
+  background: transparent;
+  border: 0;
+  box-sizing: border-box;
+  cursor: zoom-out;
+  height: 100vh;
+  height: 100dvh;
+  margin: auto;
+  max-height: none;
+  max-width: none;
+  overflow: hidden;
+  padding: clamp(16px, 4vw, 48px);
+  width: 100vw;
+}
+
+.rvn-image-lightbox[open] {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.rvn-image-lightbox::backdrop {
+  backdrop-filter: blur(4px);
+  background: rgb(0 0 0 / 84%);
+}
+
+.rvn-image-lightbox__image {
+  box-shadow: 0 24px 64px rgb(0 0 0 / 45%);
+  cursor: zoom-out;
+  display: block;
+  height: auto;
+  max-height: 100%;
+  max-width: 100%;
+  object-fit: contain;
+  width: auto;
+}
+
 pre {
   -ms-overflow-style: auto;
   scrollbar-width: thin;
@@ -342,8 +407,16 @@ pre::-webkit-scrollbar {
 }
 
 pre::-webkit-scrollbar-thumb {
-  background: var(--border);
+  background: var(--scrollbar-thumb);
   border-radius: var(--border-radius-lg);
+}
+
+pre::-webkit-scrollbar-thumb:hover {
+  background: var(--scrollbar-thumb-hover);
+}
+
+pre::-webkit-scrollbar-track {
+  background: var(--scrollbar-track);
 }
 
 code:not(pre code) {

@@ -33,6 +33,7 @@ All documentation pages live under `/en/creator/docs/`.
 - Layouts: /en/creator/docs/layouts.md
 - Transforms: /en/creator/docs/transforms.md
 - Animations: /en/creator/docs/animations.md
+- Audio Effects: /en/creator/docs/audio-effects.md
 - Particles: /en/creator/docs/particles.md
 - Spritesheets: /en/creator/docs/spritesheets.md
 
@@ -68,8 +69,15 @@ Line actions define what happens on each line in the Scene Editor.
 ## Release
 
 - Versions: /en/creator/docs/versions.md
+- Platform Details: /en/creator/docs/platform-details.md
 - Web Server: /en/creator/docs/web-server.md
 - Publish: /en/creator/docs/publish.md
+
+## Asset Store
+
+- Asset Store: /en/creator/docs/asset-store.md
+- Essential Transition Pack: /en/creator/docs/essential-transition-pack.md
+- Asset Store Authors: /en/creator/docs/asset-store-authors.md
 
 ## Support
 
