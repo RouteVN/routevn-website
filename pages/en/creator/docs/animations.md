@@ -63,19 +63,32 @@ Each property can have:
 If no initial value is provided, the current value of the element is used.
 This makes it easier to create reusable animations.
 
-Each keyframe has:
+#### Supported properties
 
-- A value
-- A duration
-- An easing
+| Property | Availability | Description |
+| --- | --- | --- |
+| Alpha | Update and transition | Controls opacity from `0` (transparent) to `1` (opaque). |
+| Position X and Position Y | Update and transition | Set the position using project coordinates. |
+| Translate X and Translate Y | Update and transition | Move the element relative to the screen width or height. |
+| Scale X and Scale Y | Update and transition | Change the width or height scale. A value of `1` keeps the original scale. |
+| Rotation | Update and transition | Rotates the element in degrees. |
+| Blur X and Blur Y | Update only | Apply horizontal or vertical blur. |
 
-Values can be absolute or relative.
+Position and Translate cannot be used together on the same axis. For example, use either Position X or Translate X for horizontal movement.
 
-The main properties you can animate are:
+#### Keyframes
 
-- Position
-- Dimension
-- Alpha
+Keyframes define how a property changes over time. Each keyframe moves from the previous value to a new value. Multiple keyframes can be used to create an animation with several stages.
+
+| Field | Description |
+| --- | --- |
+| Delay (ms) | Waits before the keyframe starts. |
+| Duration (ms) | Sets how long it takes to move from the previous value to this keyframe's value. |
+| Value | Sets the property's value at the end of the keyframe. |
+| Value type | `Absolute` sets the exact value. `Relative` adds the value to the previous value. |
+| Easing | Controls how the rate of change accelerates or slows during the keyframe. |
+
+If the property has no initial value, the first keyframe starts from the element's current value when the animation begins.
 
 ### Mask
 
@@ -84,6 +97,8 @@ They reveal or hide an image based on a mask image instead of only moving or fad
 
 The most important input is the mask image itself.
 You can also control values such as duration and smoothness.
+
+Mask effects animate a Progress property from `0` to `1`. Progress keyframes use the same delay, duration, value, value type, and easing fields described above.
 
 
 <!-- ### Shader -->
@@ -100,7 +115,5 @@ You can:
 - Configure mask-based transitions
 - Click preview to test the result
 - Hover the timeline to inspect how the animation looks at a specific point in time
-
-
 
 

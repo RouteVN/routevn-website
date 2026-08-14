@@ -34,8 +34,6 @@ A link will be shared once each tutorial is ready.
 - Versions
 - Web Server
 - Publish
-- About
-- Appearance
 
 ## Scene Editor actions
 

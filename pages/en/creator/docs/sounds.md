@@ -17,11 +17,9 @@ Common categories include BGM (Background music), and SFX (Sound effects).
 
 The following file formats are supported:
 
-- `mp3`
-- `wav`
-- `ogg`
-
-Note: `ogg` is currently not supported on macOS.
+- `mp3`: Convenient, but it can cause small gaps when game music loops.
+- `wav`: Has the best quality but produces larger files.
+- `ogg`: Usually offers the best balance of quality, performance, and file size.
 
 ## Upload sounds
 
@@ -54,9 +52,9 @@ To update a sound:
 
 Read the [File Explorer](/en/creator/docs/file-explorer/) docs for general navigation.
 
-### Play a sound
+### Playing a sound
 
-- Double click a sound item to start playing it.
+Double-click a sound item to play it.
 
 ## Usages
 

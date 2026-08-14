@@ -8,7 +8,7 @@
                       seo: ${item.data.seo}
                       publishedTime: ${item.data.effective_date}
         - link rel="stylesheet" href="/public/theme.css":
-        - script src="https://cdn.jsdelivr.net/npm/@rettangoli/ui@1.19.1/dist/rettangoli-iife-ui.min.js":
+        - script src="https://cdn.jsdelivr.net/npm/@rettangoli/ui@1.21.0/dist/rettangoli-iife-ui.min.js":
         - script src="/public/rtgl-icons.js":
     - body.dark:
         - rtgl-view h="64":
