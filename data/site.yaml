@@ -174,7 +174,7 @@ landing:
 
 creator:
   download:
-    version: "1.11.1"
+    version: "1.12.1"
     title: Download RouteVN Creator
     # subtitle: Get started creating your Visual Novel
     platforms:
@@ -182,17 +182,17 @@ creator:
         svg: windows
         cta:
           label: Download for Windows
-          href: https://static-1.routevn.com/routevn-creator-client/RouteVN%20Creator_1.11.1_x64-setup.exe
+          href: https://static-1.routevn.com/routevn-creator-client/RouteVN%20Creator_1.12.1_x64-setup.exe
       - name: macOS
         svg: apple
         cta:
           label: Download for macOS
-          href: https://static-1.routevn.com/routevn-creator-client/RouteVN%20Creator_1.11.1_universal.dmg
+          href: https://static-1.routevn.com/routevn-creator-client/RouteVN%20Creator_1.12.1_universal.dmg
       - name: Linux (x86_64)
         svg: linux
         cta:
           label: Download for Linux (AppImage)
-          href: https://static-1.routevn.com/routevn-creator-client/linux-x86_64-1.11.1/RouteVN-Creator.AppImage
+          href: https://static-1.routevn.com/routevn-creator-client/linux-x86_64-1.12.1/RouteVN-Creator.AppImage
         helpLink:
           label: Installation Guide
           href: /en/creator/docs/quickstart/#linux
