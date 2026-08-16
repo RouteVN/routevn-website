@@ -1,0 +1,100 @@
+---
+template: base
+title: RouteVN Media Kit
+footerSpacerHeight: 96
+creatorLongDescription: |
+  RouteVN Creator is a free and open source application that gives writers, artists, and small teams a feature-complete way to create visual novels without coding or technical expertise. It is available for Windows, macOS, and Linux.
+
+  **Features:**
+
+  - An intuitive writing interface with a live preview that updates as you edit.
+  - Asset Manager to organize all your assets, including images, audio, video, fonts, characters, animations, and more.
+  - Fully customizable UI through a design-grade Layout Editor.
+  - Flexible logic tools for variables, conditions, choices, branching, and other custom story behaviors.
+  - Export visual novels to the web, Windows, and macOS. Android and iOS export support is coming soon.
+seo:
+  title: RouteVN Media Kit
+  description: Download official RouteVN logos and find basic information for press, partners, and community projects.
+---
+- style: |
+    .rvn-transparency-preview {
+      background-color: #ffffff;
+      background-image:
+        linear-gradient(45deg, #d8d8d8 25%, transparent 25%),
+        linear-gradient(-45deg, #d8d8d8 25%, transparent 25%),
+        linear-gradient(45deg, transparent 75%, #d8d8d8 75%),
+        linear-gradient(-45deg, transparent 75%, #d8d8d8 75%);
+      background-position: 0 0, 0 10px, 10px -10px, -10px 0;
+      background-size: 20px 20px;
+    }
+- rtgl-view h="80" sm-h="56":
+- 'rtgl-view w="1200" xl-w="calc(100vw - 64px)" md-w="calc(100vw - 48px)" g="xl" role="main"':
+    - 'rtgl-view g="lg" w="760" md-w="f"':
+        - 'rtgl-text s="h1" role="heading" aria-level="1"': Media Kit
+        - rtgl-text s="lg" c="mu-fg": Official RouteVN logos and brand resources.
+    - rtgl-view h="1" w="f" bgc="bo":
+    - 'rtgl-view g="md" role="region" aria-labelledby="routevn-media-kit-logos"':
+        - 'rtgl-text id="routevn-media-kit-logos" s="h2" role="heading" aria-level="2"': Logos
+        - rtgl-view h="16":
+        - rtgl-view g="xl" w="760" md-w="f":
+            - rtgl-view g="lg" w="f":
+                - rtgl-text s="h4": Square icon
+                - rtgl-view g="xl" w="f":
+                    - rtgl-view g="sm" w="f":
+                        - rtgl-text s="sm" c="mu-fg": Black background · PNG · 512 × 512
+                        - 'a href="/public/media-kit/routevn-square-icon-black.png" target="_blank" rel="noreferrer" aria-label="Open the RouteVN square icon with a black background" style="display: block; text-decoration: none; width: fit-content;"':
+                            - 'rtgl-image wh="200" sm-wh="160" of="con" src="/public/media-kit/routevn-square-icon-black.png" alt="RouteVN square icon featuring Makkuro on a black background"':
+                    - rtgl-view g="sm" w="f":
+                        - rtgl-text s="sm" c="mu-fg": Transparent background · PNG · 512 × 512
+                        - 'a class="rvn-transparency-preview" href="/public/media-kit/routevn-square-icon-transparent.png" target="_blank" rel="noreferrer" aria-label="Open the RouteVN square icon with a transparent background" style="display: block; text-decoration: none; width: fit-content;"':
+                            - 'rtgl-image wh="200" sm-wh="160" of="con" src="/public/media-kit/routevn-square-icon-transparent.png" alt="RouteVN square icon featuring Makkuro on a transparent background"':
+            - rtgl-view g="lg" w="f":
+                - rtgl-text s="h4": Horizontal logo with text
+                - rtgl-view g="xl" w="f":
+                    - rtgl-view g="sm" w="f":
+                        - rtgl-text s="sm" c="mu-fg": Black background · PNG · 960 × 213
+                        - 'a href="/public/media-kit/routevn-horizontal-logo-black.png" target="_blank" rel="noreferrer" aria-label="Open the RouteVN horizontal logo with a black background" style="display: block; max-width: 100%; text-decoration: none; width: fit-content;"':
+                            - 'rtgl-image w="720" md-w="f" of="con" src="/public/media-kit/routevn-horizontal-logo-black.png" alt="RouteVN horizontal logo on a black background" style="max-width: 100%; object-position: left center;"':
+                    - rtgl-view g="sm" w="f":
+                        - rtgl-text s="sm" c="mu-fg": Transparent background · PNG · 960 × 213
+                        - 'a class="rvn-transparency-preview" href="/public/media-kit/routevn-horizontal-logo-transparent.png" target="_blank" rel="noreferrer" aria-label="Open the RouteVN horizontal logo with a transparent background" style="display: block; max-width: 100%; text-decoration: none; width: fit-content;"':
+                            - 'rtgl-image w="720" md-w="f" of="con" src="/public/media-kit/routevn-horizontal-logo-transparent.png" alt="RouteVN horizontal logo on a transparent background" style="max-width: 100%; object-position: left center;"':
+    - rtgl-view h="1" w="f" bgc="bo":
+    - 'rtgl-view g="lg" w="760" md-w="f" role="region" aria-labelledby="routevn-media-kit-about"':
+        - 'rtgl-text id="routevn-media-kit-about" s="h2" role="heading" aria-level="2"': About RouteVN
+        - rtgl-text s="lg": RouteVN is a dedicated platform for visual novels.
+        - rtgl-view g="sm":
+            - rtgl-text s="h4": Our mission
+            - rtgl-text: To fulfill the full potential of visual novels.
+    - rtgl-view h="1" w="f" bgc="bo":
+    - 'rtgl-view g="lg" w="760" md-w="f" role="region" aria-labelledby="routevn-media-kit-creator"':
+        - 'rtgl-text id="routevn-media-kit-creator" s="h2" role="heading" aria-level="2"': About RouteVN Creator
+        - rtgl-view g="sm":
+            - rtgl-text s="sm" c="mu-fg": Slogan
+            - rtgl-text: Bring Your Visual Novel to Life
+        - rtgl-view g="sm":
+            - rtgl-text s="sm" c="mu-fg": Short description
+            - rtgl-text s="lg": RouteVN Creator is a free and open source application for making visual novels without coding.
+        - rtgl-view g="sm":
+            - rtgl-text s="sm" c="mu-fg": Long description
+            - "${md(creatorLongDescription)}"
+    - 'rtgl-view g="xl" w="f" role="region" aria-labelledby="routevn-media-kit-screenshots"':
+        - 'rtgl-text id="routevn-media-kit-screenshots" s="h3" role="heading" aria-level="3"': Screenshots
+        - rtgl-grid cols="2" md-cols="1" g="xl" w="f":
+            - rtgl-view g="sm" w="f":
+                - rtgl-text s="sm" c="mu-fg": Scene editor
+                - 'a href="/public/creator/docs/reference/scene-editor-2.png" target="_blank" rel="noreferrer" aria-label="Open the RouteVN Creator scene editor screenshot" style="display: block; text-decoration: none; width: 100%;"':
+                    - 'rtgl-image w="f" ar="16/9" of="con" bw="xs" bc="bo" src="/public/creator/docs/reference/scene-editor-2.png" alt="RouteVN Creator scene editor with a visual novel preview"':
+            - rtgl-view g="sm" w="f":
+                - rtgl-text s="sm" c="mu-fg": Choices and branching
+                - 'a href="/public/creator/docs/reference/choices-1.png" target="_blank" rel="noreferrer" aria-label="Open the RouteVN Creator choices and branching screenshot" style="display: block; text-decoration: none; width: 100%;"':
+                    - 'rtgl-image w="f" ar="16/9" of="con" bw="xs" bc="bo" src="/public/creator/docs/reference/choices-1.png" alt="RouteVN Creator choices editor alongside a live visual novel preview"':
+            - rtgl-view g="sm" w="f":
+                - rtgl-text s="sm" c="mu-fg": Scene map
+                - 'a href="/public/creator/ss-7.png" target="_blank" rel="noreferrer" aria-label="Open the RouteVN Creator scene map screenshot" style="display: block; text-decoration: none; width: 100%;"':
+                    - 'rtgl-image w="f" ar="16/9" of="con" bw="xs" bc="bo" src="/public/creator/ss-7.png" alt="RouteVN Creator scene map with two connected scenes"':
+            - rtgl-view g="sm" w="f":
+                - rtgl-text s="sm" c="mu-fg": Asset manager
+                - 'a href="/public/creator/docs/reference/images-2.png" target="_blank" rel="noreferrer" aria-label="Open the RouteVN Creator asset manager screenshot" style="display: block; text-decoration: none; width: 100%;"':
+                    - 'rtgl-image w="f" ar="16/9" of="con" bw="xs" bc="bo" src="/public/creator/docs/reference/images-2.png" alt="RouteVN Creator asset manager displaying a library of background images"':
+- rtgl-view h="64":
