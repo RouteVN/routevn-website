@@ -1,0 +1,59 @@
+---
+template: creator
+title: RouteVN Creator Asset Store
+disableFooterSpacer: true
+seo:
+  title: RouteVN Creator Asset Store
+  description: Browse curated asset packs for RouteVN Creator.
+---
+- rtgl-view h="56" sm-h="40":
+- rtgl-view w="f" ah="c":
+    - 'rtgl-view w="1200" xl-w="calc(100vw - 64px)" md-w="calc(100vw - 48px)" role="main"':
+        - 'rtgl-view d="h" av="c" w="f" g="lg"':
+            - rtgl-view g="md" w="f":
+                - 'rtgl-text s="h1" role="heading" aria-level="1"': Asset Store
+                - rtgl-text s="md" c="mu-fg" w="f": Browse curated asset packs for RouteVN Creator. Open a pack to explore every included asset.
+            - 'rtgl-view aria-hidden="true"':
+                - 'rtgl-image w="clamp(96px, 14vw, 160px)" src="/public/creator/asset-store/asset-store-sticker.png" alt=""':
+        - rtgl-view h="48":
+        - 'rtgl-grid cols="4" xl-cols="3" lg-cols="3" md-cols="2" sm-cols="1" g="lg" w="f" aria-label="Asset packs"':
+            - $for item in sort(collections.assetPack, "data.assetPack.released", "desc"):
+                - $if item.data.assetPack.slug == "essential-transition-pack":
+                    - 'rtgl-view data-rvn-pack-card data-rvn-pack-href="${item.url}" role="link" tabindex="0" bw="xs" bc="bo" h-bc="ac" br="md" overflow="hidden" cur="pointer" w="f"':
+                        - 'rtgl-view ar="16/10" bgc="su" overflow="hidden" w="f" aria-hidden="true"':
+                            - 'rtgl-image w="f" h="f" of="cov" src="${item.data.assetPack.coverThumbnailSrc}" alt=""':
+                        - rtgl-view g="sm" p="md" w="f":
+                            - rtgl-text ellipsis w="f": ${item.data.assetPack.name}
+                            - rtgl-view d="h" av="c" g="sm" w="f" no-wrap:
+                                - 'rtgl-view d="h" av="c" g="sm" w="1fg" href="/en/creator/asset-store/authors/${item.data.assetPack.author.slug}/"':
+                                    - 'rtgl-image wh="20" of="cov" br="f" src="${item.data.assetPack.author.avatarSrc}" alt=""':
+                                    - rtgl-text s="sm" c="mu-fg": ${item.data.assetPack.author.name}
+                                - rtgl-view:
+                                    - rtgl-text s="sm" c="mu-fg": ${item.data.assetPack.assetCount} assets
+- script: |
+    (() => {
+      document.querySelectorAll("[data-rvn-pack-card]").forEach((card) => {
+        const navigate = () => {
+          window.location.href = card.dataset.rvnPackHref;
+        };
+        const cameFromNestedLink = (event) => event.composedPath().some((node) => (
+          node !== card
+          && node instanceof Element
+          && node.hasAttribute("href")
+        ));
+
+        card.addEventListener("click", (event) => {
+          if (!cameFromNestedLink(event)) {
+            navigate();
+          }
+        });
+        card.addEventListener("keydown", (event) => {
+          if (event.target !== card || (event.key !== "Enter" && event.key !== " ")) {
+            return;
+          }
+
+          event.preventDefault();
+          navigate();
+        });
+      });
+    })();

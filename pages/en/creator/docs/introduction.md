@@ -47,6 +47,6 @@ If you need support, please reach out to staff or community:
 - [Reddit](https://www.reddit.com/r/routevn/)
 - [Bluesky](https://bsky.app/profile/routevn.bsky.social)
 - [X](https://x.com/routevn)
-- [Contact form](/en/support/)
+- [Contact form](/en/contact/)
 
 Next, proceed to [quickstart](/en/creator/docs/quickstart/)

@@ -19,6 +19,7 @@ You will be asked to fill the following fields:
 
 - Project name (required)
 - Project description
+- [Language](#language)
 - [Resolution](#resolution) (required)
 - [Icon](#icon)
 - [Folder path](#folder-path) (required)
@@ -28,6 +29,10 @@ You will be asked to fill the following fields:
   alt="Create project form"
   style="width: 100%; height: auto; display: block; border: 1px solid var(--border); box-sizing: border-box;"
 />
+
+### Language
+
+Select the language you will use to write your project. RouteVN Creator uses this setting to determine whether writing goals use word or character counts.
 
 ### Resolution
 
@@ -56,8 +61,7 @@ This is just a icon to better identify the project. You can use any image that i
 
 ### Folder path
 
-The folder path must be empty. We assume that you manually create this folder first.
-All data for the project will be saved under this folder.
+The folder path must point to an empty folder, not a file. Create an empty folder first, then select it for the project. RouteVN Creator saves all project data in this folder.
 
 
 ## Removing a project

@@ -24,28 +24,13 @@ seo:
   videoSrc: /public/creator/0621_merged.mp4
 
 - style: |
-    rtgl-view.rvn-creator-hero[w="f"] {
-      box-sizing: border-box;
-      max-width: 1200px !important;
-      padding-left: 0 !important;
-      padding-right: 0 !important;
-      width: 1200px !important;
-    }
-
     .rvn-about-live-editor-section > rtgl-view[w="1200"] {
       box-sizing: border-box;
       max-width: 1200px;
       width: 1200px !important;
     }
 
-    @media (min-width: 761px) {
-      rtgl-view.rvn-creator-hero[w="f"] .rvn-creator-hero-chibi {
-        left: 0;
-      }
-    }
-
     @media (max-width: 1280px) {
-      rtgl-view.rvn-creator-hero[w="f"],
       .rvn-about-live-editor-section > rtgl-view[w="1200"] {
         max-width: calc(100vw - 64px) !important;
         width: calc(100vw - 64px) !important;
@@ -53,7 +38,6 @@ seo:
     }
 
     @media (max-width: 760px) {
-      rtgl-view.rvn-creator-hero[w="f"],
       .rvn-about-live-editor-section > rtgl-view[w="1200"] {
         max-width: calc(100vw - 48px) !important;
         width: calc(100vw - 48px) !important;
@@ -154,11 +138,8 @@ seo:
   cta: ${site.creator.about.cta.cta}
   secondaryCta: ${site.creator.about.cta.secondaryCta}
 
-- 'rtgl-view ah="c" w="f" style="margin-top: 12vh;"':
-    - 'img src="/public/creator/chibi-thank-you.png" alt="Chibi character in a thank you pose." style="display: block; height: auto; max-width: min(256px, calc(100vw - 32px)); width: 100%;"':
-
-# Temporarily hidden. Restore this block to show the bottom preview video.
-# - $partial: fullscreen-video
-#   label: ${site.creator.about.bottomVideo.label}
-#   videoSrc: ${site.creator.about.bottomVideo.videoSrc}
-#   posterSrc: ${site.creator.about.bottomVideo.posterSrc}
+- $partial: youtube-video-card
+  embedSrc: https://www.youtube-nocookie.com/embed/kX2XSwo0aEA?rel=0
+  videoTitle: Through the Long Nights - RouteVN promo video
+  linkLabel: Through the Long Nights
+  linkHref: /en/through-the-long-nights/

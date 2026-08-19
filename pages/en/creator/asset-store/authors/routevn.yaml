@@ -1,0 +1,37 @@
+---
+template: creator
+title: RouteVN - Asset Store Author
+disableFooterSpacer: true
+seo:
+  title: RouteVN - Asset Store Author
+  description: Browse asset packs published by RouteVN for RouteVN Creator.
+---
+- rtgl-view h="56" sm-h="40":
+- rtgl-view w="f" ah="c":
+    - 'rtgl-view w="1200" xl-w="calc(100vw - 64px)" md-w="calc(100vw - 48px)" g="xl" role="main"':
+        - 'rtgl-text href="/en/creator/asset-store/" s="sm" c="mu-fg"': Back
+        - 'rtgl-view d="h" av="c" g="xl" w="f" role="region" aria-labelledby="rvn-author-name"':
+            - 'rtgl-image wh="160" sm-wh="96" of="cov" br="f" src="/public/images/routevn-icon.png" alt="RouteVN"':
+            - rtgl-view g="md" w="f":
+                - 'rtgl-text id="rvn-author-name" s="h1" role="heading" aria-level="1"': RouteVN
+                - 'rtgl-view d="h" av="c" g="sm" aria-label="Social media"':
+                    - 'rtgl-view wh="32" ah="c" av="c" href="https://x.com/routevn" new-tab rel="noreferrer" aria-label="RouteVN on X" title="X"':
+                        - 'rtgl-svg svg="social-x" wh="22"':
+                    - 'rtgl-view wh="32" ah="c" av="c" href="https://bsky.app/profile/routevn.bsky.social" new-tab rel="noreferrer" aria-label="RouteVN on Bluesky" title="Bluesky"':
+                        - 'rtgl-svg svg="social-bluesky" wh="22"':
+                    - 'rtgl-view wh="32" ah="c" av="c" href="https://www.instagram.com/routevn" new-tab rel="noreferrer" aria-label="RouteVN on Instagram" title="Instagram"':
+                        - 'rtgl-svg svg="instagram" wh="22"':
+                - rtgl-view w="680" md-w="f":
+                    - rtgl-text c="mu-fg": RouteVN creates free tools and resources that help visual novel creators build and publish their stories.
+        - 'rtgl-view g="lg" w="f" role="region" aria-labelledby="rvn-author-packages-title"':
+            - 'rtgl-text id="rvn-author-packages-title" s="h4" role="heading" aria-level="2"': Asset packs
+            - 'rtgl-grid cols="4" xl-cols="3" lg-cols="3" md-cols="2" sm-cols="1" g="lg" w="f" role="list"':
+                - $for item in sort(collections.assetPack, "data.assetPack.released", "desc"):
+                    - $if item.data.assetPack.author.slug == "routevn" && item.data.assetPack.slug == "essential-transition-pack":
+                        - 'rtgl-view href="${item.url}" role="listitem" bw="xs" bc="bo" h-bc="ac" br="md" overflow="hidden" cur="pointer" w="f"':
+                            - 'rtgl-view ar="16/10" bgc="su" overflow="hidden" w="f" aria-hidden="true"':
+                                - 'rtgl-image w="f" h="f" of="cov" src="${item.data.assetPack.coverThumbnailSrc}" alt=""':
+                            - rtgl-view d="h" av="c" g="sm" p="sm" w="f" no-wrap:
+                                - rtgl-text ellipsis w="1fg": ${item.data.assetPack.name}
+                                - rtgl-view:
+                                    - rtgl-text s="sm" c="mu-fg": ${item.data.assetPack.assetCount} assets

@@ -31,7 +31,7 @@ You can override the name in specific dialogue lines, but the character name is 
 
 The avatar is used to identify the character inside RouteVN Creator.
 
-The player will not see this avatar. It is only a convenience preview for you.
+The player will not see this avatar. It is only a convenience preview for the author.
 
 You can use any image that is not too small. RouteVN Creator will crop it into a square.
 

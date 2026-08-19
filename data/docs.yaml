@@ -1,3 +1,4 @@
+id: creator-docs
 header:
   label: Creator Docs
   href: /en/creator/about
@@ -11,10 +12,9 @@ items:
       - id: quickstart
         title: "Quickstart"
         href: "/en/creator/docs/quickstart"
-      # Temporarily hidden. Restore this block to show "Video Tutorials" in the docs sidebar.
-      # - id: video-tutorials
-      #   title: "Video Tutorials"
-      #   href: "/en/creator/docs/video-tutorials"
+      - id: video-tutorials
+        title: "Video Tutorials"
+        href: "/en/creator/docs/video-tutorials"
       - id: page-index
         title: "Page Index"
         href: "/en/creator/docs/page-index"
@@ -48,6 +48,9 @@ items:
       - id: animations
         title: "Animations"
         href: "/en/creator/docs/animations"
+      - id: audio-effects
+        title: "Audio Effects"
+        href: "/en/creator/docs/audio-effects"
       - id: particles
         title: "Particles"
         href: "/en/creator/docs/particles"
@@ -141,9 +144,24 @@ items:
       - id: versions
         title: "Versions"
         href: "/en/creator/docs/versions"
+      - id: platform-details
+        title: "Platform Details"
+        href: "/en/creator/docs/platform-details"
       - id: web-server
         title: "Web Server"
         href: "/en/creator/docs/web-server"
       - id: publish
         title: "Publish"
         href: "/en/creator/docs/publish"
+  - title: "Asset Store"
+    type: groupLabel
+    items:
+      - id: asset-store
+        title: "Asset Store"
+        href: "/en/creator/docs/asset-store"
+      - id: essential-transition-pack
+        title: "Essential Transition Pack"
+        href: "/en/creator/docs/essential-transition-pack"
+      - id: asset-store-authors
+        title: "Asset Store Authors"
+        href: "/en/creator/docs/asset-store-authors"

@@ -5,6 +5,10 @@ title: RouteVN Creator - 无需编程，制作视觉小说
 locale: zh-Hans
 canonical: https://routevn.com/zh-hans/creator/about/
 footerSpacerHeight: 18vh
+docsLabel: 文档
+docsHref: /en/creator/docs/introduction/
+downloadLabel: 下载
+downloadHref: /zh-hans/creator/download/
 seo:
   title: RouteVN Creator - 无需编程，制作视觉小说
   description: RouteVN Creator 是一款免费、开源的视觉小说制作工具，无需编程即可使用。实时预览、素材管理、布局编辑，快速、直观、可靠。加入 Discord 获取最新消息。
@@ -188,8 +192,11 @@ seo:
     variant: se
   secondaryCta:
     label: 下载
-    href: /en/creator/download/
+    href: /zh-hans/creator/download/
     variant: pr
 
-- 'rtgl-view ah="c" w="f" style="margin-top: 12vh;"':
-    - 'img src="/public/creator/chibi-thank-you.png" alt="双手合十表示感谢的 Q 版角色。" style="display: block; height: auto; max-width: min(256px, calc(100vw - 32px)); width: 100%;"':
+- $partial: youtube-video-card
+  embedSrc: https://www.youtube-nocookie.com/embed/kX2XSwo0aEA?rel=0
+  videoTitle: Through the Long Nights - RouteVN promo video
+  linkLabel: Through the Long Nights
+  linkHref: /en/through-the-long-nights/

@@ -1,0 +1,21 @@
+---
+template: base
+lang: es
+locale: es
+title: Descargar RouteVN Creator
+seo:
+  title: Descargar RouteVN Creator - Herramienta para crear novelas visuales
+  description: Descarga RouteVN Creator para Windows, macOS y Linux. Crea novelas visuales fácilmente con un editor intuitivo.
+---
+- $partial: creator-download
+  title: Descargar RouteVN Creator
+  versionLabel: Versión
+  changelogLabel: Ver las notas de la versión
+  comingSoonLabel: Próximamente
+  windowsDownloadLabel: Descargar para Windows
+  macDownloadLabel: Descargar para macOS
+  linuxDownloadLabel: Descargar para Linux (AppImage)
+  installationGuideLabel: Guía de instalación
+  communityTitle: Únete a nuestra comunidad de Discord
+  communitySubtitle: Descubre cómo se desarrolla RouteVN. Participa en la conversación, comparte tus comentarios y sigue las últimas novedades.
+  communityButtonLabel: Únete a Discord

@@ -50,19 +50,22 @@ footer:
           href: /en/creator/docs/introduction/
         - text: Creator Changelog
           href: /en/creator/changelog/
+        # - text: Asset Store
+        #   href: /en/creator/asset-store/
     - links:
         - text: Blog
           href: /en/blog/
         - text: Hiring
           href: /en/hiring/
         - text: Contact
-          href: https://tally.so/r/wzZ7rM
-          newTab: true
+          href: /en/contact/
     - links:
+        - text: Media Kit
+          href: /en/media-kit/
         - text: Privacy Policy
-          href: /en/agreement/privacy-policy/1-0-0/
+          href: /en/agreement/privacy-policy/
         - text: Terms of Service
-          href: /en/agreement/terms-of-service/1-0-0/
+          href: /en/agreement/terms-of-service/
         - text: Our AI Practices
           href: /en/how-routevn-uses-ai/
 
@@ -73,42 +76,57 @@ socialPage:
       handle: "RouteVN"
       href: https://discord.gg/8J9dyZSu9C
       svg: discord
+      iconColor: "#5865F2"
     - name: Bluesky
       handle: "@routevn.bsky.social"
       href: https://bsky.app/profile/routevn.bsky.social
-      svg: bluesky
+      svg: social-bluesky
+      iconColor: "#0560FF"
     - name: X/Twitter
       handle: "@routevn"
       href: https://x.com/routevn
-      svg: x
-    - name: GitHub
-      handle: "RouteVN"
-      href: https://github.com/RouteVN
-      svg: github
+      svg: social-x
+      iconColor: "#FFFFFF"
     - name: Instagram
       handle: "@routevn"
       href: https://www.instagram.com/routevn
       svg: instagram
+      iconColor: "#FF0069"
     - name: TikTok
       handle: "@routevn"
       href: https://www.tiktok.com/@routevn
       svg: tiktok
-    - name: Tumblr
-      handle: "routevn"
-      href: https://www.tumblr.com/routevn
-      svg: tumblr
+      iconColor: "#FFFFFF"
     - name: YouTube
       handle: "@routevn"
       href: https://www.youtube.com/@routevn
       svg: youtube
+      iconColor: "#FF0000"
     - name: Reddit
       handle: "r/routevn"
       href: https://www.reddit.com/r/routevn/
       svg: reddit
+      iconColor: "#FF4500"
+    - name: itch.io
+      handle: "routevn.itch.io"
+      href: https://routevn.itch.io/
+      svg: itchio
+      iconColor: "#FA5C5C"
+    - name: GitHub
+      handle: "RouteVN"
+      href: https://github.com/RouteVN
+      svg: github
+      iconColor: "#FFFFFF"
+    - name: Tumblr
+      handle: "routevn"
+      href: https://www.tumblr.com/routevn
+      svg: tumblr
+      iconColor: "#FFFFFF"
     - name: LinkedIn
       handle: "RouteVN"
       href: https://www.linkedin.com/showcase/110652448
       svg: linkedin
+      iconColor: "#0A66C2"
 
 landing:
   discord:
@@ -158,7 +176,7 @@ landing:
 
 creator:
   download:
-    version: "1.9.4"
+    version: "1.12.1"
     title: Download RouteVN Creator
     # subtitle: Get started creating your Visual Novel
     platforms:
@@ -166,17 +184,17 @@ creator:
         svg: windows
         cta:
           label: Download for Windows
-          href: https://static-1.routevn.com/routevn-creator-client/RouteVN%20Creator_1.9.4_x64-setup.exe
+          href: https://static-1.routevn.com/routevn-creator-client/RouteVN%20Creator_1.12.1_x64-setup.exe
       - name: macOS
         svg: apple
         cta:
           label: Download for macOS
-          href: https://static-1.routevn.com/routevn-creator-client/RouteVN%20Creator_1.9.4_universal.dmg
+          href: https://static-1.routevn.com/routevn-creator-client/RouteVN%20Creator_1.12.1_universal.dmg
       - name: Linux (x86_64)
         svg: linux
         cta:
           label: Download for Linux (AppImage)
-          href: https://static-1.routevn.com/routevn-creator-client/linux-x86_64-1.9.4/RouteVN-Creator.AppImage
+          href: https://static-1.routevn.com/routevn-creator-client/linux-x86_64-1.12.1/RouteVN-Creator.AppImage
         helpLink:
           label: Installation Guide
           href: /en/creator/docs/quickstart/#linux
@@ -266,7 +284,7 @@ creator:
           active: true
           title: DiaLune
           author: sqewree
-          authorAvatarSrc: https://img.itch.zone/aW1nLzI1OTU0Njk4LnBuZw==/80x80%23/19kS2C.png
+          authorAvatarSrc: /public/images/creators/sqewree-avatar.jpg
           authorHref: https://sqewree.carrd.co/
           imgSrc: /public/blog/2026/09/dialune.png
           href: https://sqewree.itch.io/dialune-demo

@@ -1,0 +1,21 @@
+---
+template: base
+lang: zh-Hans
+locale: zh-Hans
+title: 下载 RouteVN Creator
+seo:
+  title: 下载 RouteVN Creator - 视觉小说制作工具
+  description: 下载适用于 Windows、macOS 和 Linux 的 RouteVN Creator。使用直观的编辑器，轻松制作视觉小说。
+---
+- $partial: creator-download
+  title: 下载 RouteVN Creator
+  versionLabel: 版本
+  changelogLabel: 查看更新日志
+  comingSoonLabel: 即将推出
+  windowsDownloadLabel: 下载 Windows 版
+  macDownloadLabel: 下载 macOS 版
+  linuxDownloadLabel: 下载 Linux 版（AppImage）
+  installationGuideLabel: 安装指南
+  communityTitle: 加入 Discord 社区
+  communitySubtitle: 了解 RouteVN 的开发过程，参与讨论、分享反馈并关注最新动态。
+  communityButtonLabel: 加入 Discord
