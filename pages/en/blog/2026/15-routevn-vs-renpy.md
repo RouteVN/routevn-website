@@ -1,7 +1,12 @@
 ---
 template: post
+author: han4wluc
+authorDisplay: RouteVN
 title: RouteVN vs Ren'Py
-url: /en/routevn-vs-renpy/
+url: /en/blog/routevn-vs-renpy/
+tags: [blogPost]
+date: '2026-08-20'
+thumbnail: /public/images/routevn_og.png
 seo:
   title: RouteVN vs Ren'Py - RouteVN
   description: 'Ren''Py or RouteVN? A practical comparison of the two visual novel engines: workflow, code vs no-code, customization, exports, docs, and community.'
@@ -86,7 +91,7 @@ To preview your changes, you run the project from the launcher.
 
 In RouteVN Creator, projects are organized into scenes and sections on a story map. Dialogue, choices, and other story actions are edited as lines in the [Scene Editor](/en/creator/docs/scene-editor/), whose live preview is RouteVN's signature experience: dialogue, characters, backgrounds, sound, and presentation changes appear immediately as you move through the story.
 
-<video src="/public/routevn-vs-renpy/scene-editor.mp4" autoplay loop muted playsinline style="width: 100%; max-width: 100%; margin-bottom: 24px; border: 1px solid var(--border); box-sizing: border-box;"></video>
+<video src="/public/blog/2026/15/scene-editor.mp4" autoplay loop muted playsinline style="width: 100%; max-width: 100%; margin-bottom: 24px; border: 1px solid var(--border); box-sizing: border-box;"></video>
 
 ### Customizing layout
 
@@ -166,7 +171,7 @@ style pref_button:
 
 In RouteVN Creator, layouts are customized visually in the Layout Editor, an experience similar to using a design tool.
 
-<video src="/public/routevn-vs-renpy/layout-editor.mp4" autoplay loop muted playsinline style="width: 100%; max-width: 100%; margin-bottom: 24px; border: 1px solid var(--border); box-sizing: border-box;"></video>
+<video src="/public/blog/2026/15/layout-editor.mp4" autoplay loop muted playsinline style="width: 100%; max-width: 100%; margin-bottom: 24px; border: 1px solid var(--border); box-sizing: border-box;"></video>
 
 ### Asset and resource management
 
@@ -174,7 +179,7 @@ Ren'Py manages assets and project structure through the OS's files and folders. 
 
 In RouteVN Creator, images, audio, videos, characters, and fonts each have a dedicated manager where you drag and drop files to import them. Once imported, viewing and re-ordering the assets is done inside the app, without dependency to the file system.
 
-<img src="/public/routevn-vs-renpy/screen4.png" alt="RouteVN Creator asset managers" style="width: 100%; margin-bottom: 24px; border: 1px solid var(--border); box-sizing: border-box;">
+<img src="/public/blog/2026/15/screen4.png" alt="RouteVN Creator asset managers" style="width: 100%; margin-bottom: 24px; border: 1px solid var(--border); box-sizing: border-box;">
 
 ## Maturity & community
 
