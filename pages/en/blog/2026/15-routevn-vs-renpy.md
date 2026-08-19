@@ -6,15 +6,15 @@ title: RouteVN vs Ren'Py
 url: /en/blog/routevn-vs-renpy/
 tags: [blogPost]
 date: '2026-08-20'
-thumbnail: /public/images/routevn_og.png
+thumbnail: /public/blog/2026/15/routevn-vs-renpy-og.png
 seo:
   title: RouteVN vs Ren'Py - RouteVN
   description: 'Ren''Py or RouteVN? A practical comparison of the two visual novel engines: workflow, code vs no-code, customization, exports, docs, and community.'
   ogType: article
-  ogImage: https://routevn.com/public/images/routevn_og.png
+  ogImage: https://routevn.com/public/blog/2026/15/routevn-vs-renpy-og.png
   ogImageWidth: 1200
   ogImageHeight: 630
-  ogImageAlt: RouteVN logo
+  ogImageAlt: RouteVN vs Ren'Py comparison
   ogImageType: image/png
 ---
 
