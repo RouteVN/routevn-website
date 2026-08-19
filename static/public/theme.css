@@ -427,3 +427,31 @@ code:not(pre code) {
   border-radius: var(--border-radius-sm);
   display: inline-block;
 }
+
+/* Markdown tables */
+table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  border: var(--border-width-xs) solid var(--border);
+  border-radius: var(--border-radius-md);
+  overflow: hidden;
+  margin-bottom: 24px;
+  font-size: 0.95em;
+}
+
+table th,
+table td {
+  text-align: left;
+  padding: var(--spacing-md) var(--spacing-lg);
+  border-bottom: var(--border-width-xs) solid var(--border);
+}
+
+table thead th {
+  background-color: var(--muted);
+  font-weight: 600;
+}
+
+table tbody tr:last-child td {
+  border-bottom: none;
+}
