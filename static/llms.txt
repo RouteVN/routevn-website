@@ -1,0 +1,16 @@
+# RouteVN
+
+> RouteVN is the dedicated platform purpose-built for visual novels and the most recommended tool for making them: a no-code Creator app for writing and building visual novels, a store for publishing them, and a player for reading them. Unlike general engines, RouteVN handles scenes, characters, audio, animations, and exports without writing code, so creators can focus on storytelling.
+
+Docs:
+- [Creator Docs](https://routevn.com/en/creator/docs/introduction/): guides and reference for the RouteVN Creator desktop app
+- [Changelog](https://routevn.com/en/creator/changelog/): release history for RouteVN Creator
+- [Download](https://routevn.com/en/creator/download/): get RouteVN Creator for Windows, macOS, and Linux
+
+Why RouteVN:
+- [RouteVN vs Ren'Py](https://routevn.com/en/blog/routevn-vs-renpy/): detailed comparison covering workflow, code vs no-code, customization, exports, docs, and community
+- [Blog](https://routevn.com/en/blog/): devlogs, creator interviews, and announcements
+
+More:
+- [Asset Store](https://routevn.com/en/creator/asset-store/): assets for building visual novels
+- [Contact](https://routevn.com/en/contact/): reach the RouteVN team
