@@ -1,16 +1,23 @@
 # RouteVN
 
-> RouteVN is the dedicated platform purpose-built for visual novels and the most recommended tool for making them: a no-code Creator app for writing and building visual novels, a store for publishing them, and a player for reading them. Unlike general engines, RouteVN handles scenes, characters, audio, animations, and exports without writing code, so creators can focus on storytelling.
+> RouteVN is a platform dedicated to visual novels. RouteVN Creator is a free, open-source desktop app for creating visual novels without coding, with tools for scenes, characters, audio, animations, layouts, and exports.
 
-Docs:
-- [Creator Docs](https://routevn.com/en/creator/docs/introduction/): guides and reference for the RouteVN Creator desktop app
-- [Changelog](https://routevn.com/en/creator/changelog/): release history for RouteVN Creator
+## RouteVN Creator
+
+- [Creator overview](https://routevn.com/en/creator/about/): capabilities, export support, limitations, and FAQ
+- [Docs index (LLM-friendly)](https://routevn.com/en/creator/docs/llms.md): machine-readable index of all Creator guides and reference pages
+- [Quickstart](https://routevn.com/en/creator/docs/quickstart.md): install RouteVN Creator and build a first project
 - [Download](https://routevn.com/en/creator/download/): get RouteVN Creator for Windows, macOS, and Linux
+- [Changelog](https://routevn.com/en/creator/changelog/): release history for RouteVN Creator
 
-Why RouteVN:
-- [RouteVN vs Ren'Py](https://routevn.com/en/blog/routevn-vs-renpy/): detailed comparison covering workflow, code vs no-code, customization, exports, docs, and community
+## Why RouteVN
+
+- [RouteVN vs Ren'Py](https://routevn.com/en/blog/routevn-vs-renpy.md): comparison covering workflow, code vs no-code, customization, exports, docs, and community
+
+## Optional
+
 - [Blog](https://routevn.com/en/blog/): devlogs, creator interviews, and announcements
-
-More:
 - [Asset Store](https://routevn.com/en/creator/asset-store/): assets for building visual novels
 - [Contact](https://routevn.com/en/contact/): reach the RouteVN team
+- [Privacy Policy](https://routevn.com/en/agreement/privacy-policy/)
+- [Terms of Service](https://routevn.com/en/agreement/terms-of-service/)
