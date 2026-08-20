@@ -20,7 +20,7 @@ seo:
 
 ## Introduction
 
-The question I hear most often when I show RouteVN to someone is: "How is it different from Ren'Py?"
+The question I hear most often when I tell someone about RouteVN is: "How is it different from Ren'Py?"
 
 This article attempts to give a full answer to that question and explains the trade-offs you should consider when choosing between the two engines.
 
