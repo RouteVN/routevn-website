@@ -1,7 +1,7 @@
 ---
 template: post
 author: han4wluc
-authorDisplay: RouteVN
+authorDisplay: han4wluc
 title: RouteVN vs Ren'Py
 url: /en/blog/routevn-vs-renpy/
 tags: [blogPost]
@@ -226,9 +226,9 @@ Both RouteVN Creator and the Ren'Py SDK run on Windows, macOS, and Linux, but th
 | macOS | Yes | Yes |
 | Linux | Yes | Coming soon |
 | Android | Yes | Coming soon |
-| iOS | Yes | Coming soon |
+| iOS | Work in progress | Coming soon |
 
-Ren'Py also builds for all major desktop and mobile platforms, though its [web export](https://www.renpy.org/doc/html/web.html) is still in beta.
+Ren'Py also builds for all major desktop and mobile platforms. Its [web export](https://www.renpy.org/doc/html/web.html) is officially in beta, and [iOS support](https://www.renpy.org/doc/html/ios.html) is described by the Ren'Py team as a work in progress: it requires a Mac with Xcode, and the default interface does not comply with Apple's App Store guidelines, so expect extra work to ship on iOS.
 
 RouteVN exports as a web build you can publish on platforms such as itch.io, plus desktop exports for Windows and macOS. Linux, Android, and iOS are coming soon.
 
