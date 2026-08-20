@@ -5,7 +5,7 @@
         - 'rtgl-text href="/en/creator/asset-store/" s="sm" c="mu-fg"': Back
         - 'rtgl-view d="h" sm-d="v" g="lg" w="f"':
             - rtgl-view g="md" w="f":
-                - 'rtgl-text s="h1" role="heading" aria-level="1"': ${pack.name}
+                - h1: ${pack.name}
             - 'rtgl-button id="rvn-add-pack-button" v="se" w="fit-content" data-import-url="${pack.importUrl}"': Copy import URL
         - 'rtgl-view d="h" sm-d="v" g="xl" w="f" role="region" aria-label="Pack information"':
             - rtgl-view g="md" w="1fg" sm-w="f":

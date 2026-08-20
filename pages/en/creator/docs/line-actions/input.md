@@ -1,6 +1,9 @@
 ---
 template: documentation
 title: Input
+seo:
+  title: "Input | RouteVN Creator Docs"
+  description: "Input shows a form to the player and saves submitted text into string variables."
 sidebarId: input
 ---
 

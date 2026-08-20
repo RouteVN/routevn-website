@@ -1,6 +1,9 @@
 ---
 template: documentation
 title: File Explorer
+seo:
+  title: "File Explorer | RouteVN Creator Docs"
+  description: "The file explorer is the panel that you see on the left side. It is used in many places and behaves the same way."
 sidebarId: file-explorer
 ---
 

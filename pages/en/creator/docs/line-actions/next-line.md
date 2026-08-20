@@ -1,6 +1,9 @@
 ---
 template: documentation
 title: Next Line
+seo:
+  title: "Next Line | RouteVN Creator Docs"
+  description: "Next line action will simply move to next line"
 sidebarId: next-line
 ---
 

@@ -38,7 +38,7 @@ Dev & Draft 2 was part of the event. It was the second season of Dev & Draft, fo
 
 It was organized by [Bobadee Events](https://www.instagram.com/bobadeeevents/), in collaboration with [fireplace](https://thisisfireplace.com/) for Ideafest S2.
 
-<img src="/public/blog/2026/12/fireplace-ideafest-s2.png" alt="fireplace ideafest s2 event space during Dev & Draft 2" style="width: 100%; margin-bottom: 24px; border: 1px solid var(--border); box-sizing: border-box;">
+<img src="/public/blog/2026/12/fireplace-ideafest-s2.png" alt="fireplace ideafest s2 event space during Dev & Draft 2" style="width: 100%; margin-bottom: 24px; border: 1px solid var(--border); box-sizing: border-box;" width="1800" height="1013" decoding="async">
 
 The fifth floor was split between tabletop games and digital games. The digital games were shown inside [MAGES Institute](https://mages.edu.sg/), a Singapore school for game art, technology, and digital media.
 
@@ -53,7 +53,7 @@ The fifth floor was split between tabletop games and digital games. The digital 
 
 Our booth was very similar to the booth at our previous event, though the table was a little smaller.
 
-<img src="/public/blog/2026/12/dev-draft-2-og.png" alt="RouteVN booth setup at Dev & Draft 2" style="width: 100%; margin-bottom: 16px; border: 1px solid var(--border); box-sizing: border-box;">
+<img src="/public/blog/2026/12/dev-draft-2-og.png" alt="RouteVN booth setup at Dev & Draft 2" style="width: 100%; margin-bottom: 16px; border: 1px solid var(--border); box-sizing: border-box;" width="1200" height="630" decoding="async" loading="lazy">
 
 Several people passed by and tried [Two Straws](https://pararinn.itch.io/twostrawscruisinforaconnection) and [DiaLune](https://sqewree.itch.io/dialune-demo). It was so nice to hear the audience laughing out loud during gameplay and saying things like, "That is so cute."
 
@@ -61,7 +61,7 @@ Other game developers and general attendees also tested RouteVN. Several of them
 
 The funniest moment happened when a user sat down to play Two Straws. She was shocked when she saw her name appear in the name input. How did the VN know her name? It turns out her name is Dean, the same default name as the main character in Two Straws.
 
-<img src="/public/blog/2026/12/two-straws-shocked-2.png" alt="An attendee reading Two Straws on a phone during Dev & Draft 2" style="width: 100%; margin-bottom: 24px; border: 1px solid var(--border); box-sizing: border-box;">
+<img src="/public/blog/2026/12/two-straws-shocked-2.png" alt="An attendee reading Two Straws on a phone during Dev & Draft 2" style="width: 100%; margin-bottom: 24px; border: 1px solid var(--border); box-sizing: border-box;" width="1800" height="1013" decoding="async" loading="lazy">
 
 ## Meeting other devs
 
@@ -73,15 +73,15 @@ Some highlights:
 
 - [Arcana Romance 2](https://raineyellow.itch.io/arcanaromance2) was our neighbouring booth at the event. They made their VN before RouteVN started. The gameplay is really nice, with many interactions, minigames, and animations that make the whole experience more interesting and engaging than static-image VNs.
 
-<img src="/public/blog/2026/12/arcana-romance-2.png" alt="Arcana Romance 2 booth at Dev & Draft 2" style="width: 100%; margin: 16px 0 24px; border: 1px solid var(--border); box-sizing: border-box;">
+<img src="/public/blog/2026/12/arcana-romance-2.png" alt="Arcana Romance 2 booth at Dev & Draft 2" style="width: 100%; margin: 16px 0 24px; border: 1px solid var(--border); box-sizing: border-box;" width="1163" height="872" decoding="async" loading="lazy">
 
 - [Pictoria.world](https://pictoria.world) has been an amazing journey and is already an impressive product. It was used for the Ideafest virtual festival, and the user experience is so nice. I believe it has huge potential.
 
-<img src="/public/blog/2026/12/pictoria-world.png" alt="Pictoria.world booth display at Dev & Draft 2" style="width: 100%; margin: 16px 0 24px; border: 1px solid var(--border); box-sizing: border-box;">
+<img src="/public/blog/2026/12/pictoria-world.png" alt="Pictoria.world booth display at Dev & Draft 2" style="width: 100%; margin: 16px 0 24px; border: 1px solid var(--border); box-sizing: border-box;" width="1800" height="1013" decoding="async" loading="lazy">
 
 - Toobi is a student at MAGES Institute and an aspiring game designer. Play his game [All Will Be Goo](https://hongrong.itch.io/all-will-be-goo). It works on both desktop and mobile.
 
-<img src="/public/blog/2026/12/all-will-be-goo.png" alt="All Will Be Goo booth setup at Dev & Draft 2" style="width: 100%; margin: 16px 0 24px; border: 1px solid var(--border); box-sizing: border-box;">
+<img src="/public/blog/2026/12/all-will-be-goo.png" alt="All Will Be Goo booth setup at Dev & Draft 2" style="width: 100%; margin: 16px 0 24px; border: 1px solid var(--border); box-sizing: border-box;" width="1080" height="601" decoding="async" loading="lazy">
 
 Find out about more games showcased during the event on the [Dev Draft itch.io page](https://dev-draft.itch.io/).
 

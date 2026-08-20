@@ -1,6 +1,9 @@
 ---
 template: documentation
 title: Quickstart
+seo:
+  title: "Quickstart | RouteVN Creator Docs"
+  description: "Download the latest version of RouteVN Creator from the download page."
 sidebarId: quickstart
 ---
 

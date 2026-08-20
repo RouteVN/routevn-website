@@ -1,6 +1,9 @@
 ---
 template: documentation
 title: Characters
+seo:
+  title: "Characters (line action) | RouteVN Creator Docs"
+  description: "Characters lets you place character sprites on screen."
 sidebarId: line-actions-characters
 ---
 

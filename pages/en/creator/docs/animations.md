@@ -1,13 +1,16 @@
 ---
 template: documentation
 title: Animations
+seo:
+  title: "Animations | RouteVN Creator Docs"
+  description: "Animations are used on images and other visual elements to make transitions and motion feel smoother."
 sidebarId: animations
 ---
 
 <img
   src="/public/creator/docs/reference/animations-1.png"
   alt="Animations page"
-  style="width: 100%; height: auto; display: block; border: 1px solid var(--border); box-sizing: border-box;"
+  style="width: 100%; height: auto; display: block; border: 1px solid var(--border); box-sizing: border-box;" width="1920" height="1080" decoding="async"
 />
 
 Animations are used on images and other visual elements to make transitions and motion feel smoother.

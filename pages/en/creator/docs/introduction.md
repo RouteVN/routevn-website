@@ -1,6 +1,9 @@
 ---
 template: documentation
 title: Introduction
+seo:
+  title: "Introduction | RouteVN Creator Docs"
+  description: "Welcome to the RouteVN Creator docs. This documentation will cover everything you need to know about RouteVN Creator and how to use it to create a Visual."
 sidebarId: introduction
 ---
 

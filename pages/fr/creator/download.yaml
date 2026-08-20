@@ -6,6 +6,21 @@ title: Télécharger RouteVN Creator
 seo:
   title: Télécharger RouteVN Creator - Outil de création de visual novels
   description: Téléchargez RouteVN Creator pour Windows, macOS et Linux. Créez facilement des visual novels avec un éditeur intuitif.
+alternates:
+  - hreflang: en
+    href: https://routevn.com/en/creator/download/
+  - hreflang: es
+    href: https://routevn.com/es/creator/download/
+  - hreflang: fr
+    href: https://routevn.com/fr/creator/download/
+  - hreflang: it
+    href: https://routevn.com/it/creator/download/
+  - hreflang: ja
+    href: https://routevn.com/ja/creator/download/
+  - hreflang: zh-Hans
+    href: https://routevn.com/zh-hans/creator/download/
+  - hreflang: x-default
+    href: https://routevn.com/en/creator/download/
 ---
 - $partial: creator-download
   title: Télécharger RouteVN Creator
@@ -19,3 +34,24 @@ seo:
   communityTitle: Rejoignez notre communauté Discord
   communitySubtitle: Découvrez comment RouteVN est développé. Participez aux échanges, partagez vos retours et suivez les dernières actualités.
   communityButtonLabel: Rejoindre Discord
+
+- $partial: language-links
+  links:
+    - hreflang: en
+      label: English
+      href: https://routevn.com/en/creator/download/
+    - hreflang: es
+      label: Español
+      href: https://routevn.com/es/creator/download/
+    - hreflang: fr
+      label: Français
+      href: https://routevn.com/fr/creator/download/
+    - hreflang: it
+      label: Italiano
+      href: https://routevn.com/it/creator/download/
+    - hreflang: ja
+      label: 日本語
+      href: https://routevn.com/ja/creator/download/
+    - hreflang: zh-Hans
+      label: 简体中文
+      href: https://routevn.com/zh-hans/creator/download/

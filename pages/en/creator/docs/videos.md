@@ -1,6 +1,9 @@
 ---
 template: documentation
 title: Videos
+seo:
+  title: "Videos | RouteVN Creator Docs"
+  description: "On this page you can upload all video files for your project. Common categories include intro video, cutscenes. Video can also act as a background."
 sidebarId: videos
 ---
 

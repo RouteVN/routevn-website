@@ -1,6 +1,8 @@
+- __html: "<!doctype html>"
 - html lang="en":
     - head:
         - $partial: seo1
+          alternates: ${alternates}
           page: ${page}
           seo: ${seo}
         - style: |
@@ -28,6 +30,14 @@
               padding: 24px;
               place-items: center;
               position: relative;
+            }
+            .sr-only {
+              clip-path: inset(50%);
+              height: 1px;
+              overflow: hidden;
+              position: absolute;
+              white-space: nowrap;
+              width: 1px;
             }
             .landing-shell::before {
               background: #fff;

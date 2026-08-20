@@ -1,6 +1,9 @@
 ---
 template: documentation
 title: Reset Story At Section
+seo:
+  title: "Reset Story At Section | RouteVN Creator Docs"
+  description: "Reset Story At Section moves to a section and resets the story context."
 sidebarId: reset-story-at-section
 ---
 

@@ -1,6 +1,9 @@
 ---
 template: documentation
 title: Conditional
+seo:
+  title: "Conditional | RouteVN Creator Docs"
+  description: "Conditional checks variable values and runs actions when a condition matches."
 sidebarId: conditional
 ---
 

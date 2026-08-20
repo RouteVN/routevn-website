@@ -1,6 +1,9 @@
 ---
 template: documentation
 title: Projects
+seo:
+  title: "Projects | RouteVN Creator Docs"
+  description: "On the main page of RouteVN Creator, you will see a list of all projects You can either create a new project or import an existing project"
 sidebarId: projects
 ---
 
@@ -27,7 +30,7 @@ You will be asked to fill the following fields:
 <img
   src="/public/creator/docs/reference/project-1.png"
   alt="Create project form"
-  style="width: 100%; height: auto; display: block; border: 1px solid var(--border); box-sizing: border-box;"
+  style="width: 100%; height: auto; display: block; border: 1px solid var(--border); box-sizing: border-box;" width="1920" height="1080" decoding="async"
 />
 
 ### Language
@@ -84,7 +87,7 @@ In the project page you click at the title or other fields to edit.
 <img
   src="/public/creator/docs/reference/project-2.png"
   alt="Project page"
-  style="width: 100%; height: auto; display: block; border: 1px solid var(--border); box-sizing: border-box;"
+  style="width: 100%; height: auto; display: block; border: 1px solid var(--border); box-sizing: border-box;" width="1920" height="1080" decoding="async" loading="lazy"
 />
 
 ## Troubleshooting

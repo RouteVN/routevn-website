@@ -1,6 +1,6 @@
 - rtgl-view h="100":
 - rtgl-view ah="c" ph="lg" g="lg" md-w="100vw" lg-w="768" w="1024":
-    - rtgl-text s="h1" mb="sm" ta="c": ${title}
+    - 'h1 style="text-align: center; margin: 0 0 8px;"': ${title}
     - $if subtitle:
         - rtgl-text s="lg" c="mu" mb="md" ta="c": ${subtitle}
     - rtgl-view d="h" g="lg" av="c" mb="xl" ah="c":

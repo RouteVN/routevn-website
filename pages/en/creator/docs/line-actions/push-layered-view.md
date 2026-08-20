@@ -1,6 +1,9 @@
 ---
 template: documentation
 title: Push Layered View
+seo:
+  title: "Push Layered View | RouteVN Creator Docs"
+  description: "A layered view is a layout that is put on top of current layout. One common use case is to add dialogue boxes. It is calso be used to manage 'pages', for."
 sidebarId: push-layered-view
 ---
 

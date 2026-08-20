@@ -1,6 +1,9 @@
 ---
 template: documentation
 title: Audio Effects
+seo:
+  title: "Audio Effects | RouteVN Creator Docs"
+  description: "Audio Effects define reusable changes to audio playback."
 sidebarId: audio-effects
 ---
 

@@ -34,7 +34,7 @@ Route Graphics is a declarative library built based on PixiJS.
 
 Below is an example of a typical Visual Novel screen:
 
-<img src="/public/blog/2026/03/graphics-1.png" style="width: 100%; margin-bottom: 24px;"> </img>
+<img src="/public/blog/2026/03/graphics-1.png" style="width: 100%; margin-bottom: 24px;" width="1920" height="1080" decoding="async"> </img>
 
 The above screen was created using Route Graphics's declarative interface:
 

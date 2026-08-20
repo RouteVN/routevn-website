@@ -1,6 +1,9 @@
 ---
 template: documentation
 title: Variables
+seo:
+  title: "Variables | RouteVN Creator Docs"
+  description: "Variables store values that can change while the player goes through the Visual Novel."
 sidebarId: variables
 ---
 

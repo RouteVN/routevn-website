@@ -1,3 +1,11 @@
+---
+template: documentation
+title: Docs Index
+sidebarId: page-index
+seo:
+  title: "Docs Index | RouteVN Creator Docs"
+  description: "Index of all RouteVN Creator documentation pages with links to every guide and reference page."
+---
 # RouteVN Creator documentation
 
 RouteVN Creator is a desktop application for creating Visual Novels without coding.

@@ -1,6 +1,9 @@
 ---
 template: documentation
 title: Tags
+seo:
+  title: "Tags | RouteVN Creator Docs"
+  description: "Tags are labels that help you group related resources without moving them between folders. One item can have multiple tags, and one tag can be used by."
 sidebarId: tags
 ---
 

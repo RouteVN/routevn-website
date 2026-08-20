@@ -1,6 +1,9 @@
 ---
 template: documentation
 title: Dialogue
+seo:
+  title: "Dialogue | RouteVN Creator Docs"
+  description: "Dialogue lets you manage the dialogue box. It is sometimes called Message Box in some other engines."
 sidebarId: dialogue
 ---
 

@@ -1,6 +1,9 @@
 ---
 template: documentation
 title: Section Transition
+seo:
+  title: "Section Transition | RouteVN Creator Docs"
+  description: "Section Transition moves the story to another section."
 sidebarId: section-transition
 ---
 

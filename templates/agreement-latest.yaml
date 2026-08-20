@@ -1,9 +1,11 @@
+- __html: "<!doctype html>"
 - html lang="en":
     - head:
         - $for item in collections.agreement:
             - $if item.data.isLatest:
                 - $if item.data.agreementType == agreementType:
                     - $partial: seo1
+                      alternates: ${alternates}
                       page: ${page}
                       seo: ${item.data.seo}
                       publishedTime: ${item.data.effective_date}

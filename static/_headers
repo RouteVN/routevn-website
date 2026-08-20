@@ -7,3 +7,15 @@
   Access-Control-Allow-Origin: *
   Access-Control-Allow-Methods: GET, HEAD, OPTIONS
   Access-Control-Allow-Headers: *
+
+/*.md
+  X-Robots-Tag: noindex
+
+/llms.txt
+  X-Robots-Tag: noindex
+
+https://routevn-website.pages.dev/*
+  X-Robots-Tag: noindex
+
+https://:version.routevn-website.pages.dev/*
+  X-Robots-Tag: noindex

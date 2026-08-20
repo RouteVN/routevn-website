@@ -184,7 +184,7 @@ shareLinks:
 
 - 'main class="rvn-long-nights-page"':
     - 'header class="rvn-long-nights-header"':
-        - 'rtgl-text class="rvn-long-nights-title" s="h1" ta="c" role="heading" aria-level="1"': Through the Long Nights
+        - 'h1 class="rvn-long-nights-title" style="text-align: center; margin: 0;"': Through the Long Nights
         - 'rtgl-text class="rvn-long-nights-description" s="lg" c="mu" ta="c"': A tribute to artists, writers, musicians, voice actors, developers, animators, and creators of all kinds who have spent endless nights working through uncertainty, setbacks, and doubt to bring their work into the world.
     - 'div class="rvn-long-nights-video"':
         - 'iframe src="https://www.youtube-nocookie.com/embed/kX2XSwo0aEA?rel=0" title="Through the Long Nights - RouteVN promo video" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen':
