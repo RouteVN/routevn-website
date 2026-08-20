@@ -203,7 +203,7 @@ RouteVN provides [official documentation](/en/creator/docs/), with official vide
 
 Both projects remain actively developed, but with different release strategies. Ren'Py supports a broad, mature feature set and must test releases carefully against a large user base, so it publishes larger, less frequent updates. In 2026, it published [four releases](https://github.com/renpy/renpy/releases).
 
-RouteVN moves in smaller, faster steps. Expect roughly [weekly releases](/en/creator/changelog/) of the Creator client, with the underlying [Route Engine](https://github.com/RouteVN/route-engine/releases) released even more often. Release counts are not directly comparable between projects, but the difference in pace is clear.
+RouteVN moves in smaller, faster steps. Expect roughly [weekly releases](/en/creator/changelog/) of the Creator client, with the underlying [Route Engine](https://github.com/RouteVN/route-engine/releases) released even more often. Release counts are not directly comparable between projects, but being a younger project, a higher pace of updates can be expected from RouteVN.
 
 ## Customization
 
