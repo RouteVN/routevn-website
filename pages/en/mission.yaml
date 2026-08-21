@@ -9,31 +9,22 @@ seo:
 - rtgl-view h="80" sm-h="56":
 - 'rtgl-view w="760" md-w="calc(100vw - 48px)" g="xl" role="main"':
     - rtgl-view g="lg":
-        - 'rtgl-text s="h1" role="heading" aria-level="1"': The full potential of visual novels
+        - 'rtgl-text s="h1" role="heading" aria-level="1"': ${mission.heading}
     - rtgl-view g="lg":
-        - rtgl-text s="lg": Visual novels bring writing, art, sound, and interaction together in a uniquely expressive medium.
-        - rtgl-text: We believe much of their potential remains unrealized. RouteVN exists to fulfill that potential.
+        - rtgl-text s="lg": ${mission.intro.lead}
+        - rtgl-text: ${mission.intro.body}
     - rtgl-view h="1" w="f" bgc="bo":
     - rtgl-view g="xl":
-        - rtgl-view g="sm":
-            - 'rtgl-text s="h3" role="heading" aria-level="2"': Empowering creators
-            - rtgl-text: "We want RouteVN Creator to become the best tool for creating visual novels: approachable for new creators and powerful enough for professionals to choose for their most ambitious work."
-            - rtgl-text: We want it to unlock creative possibilities that would otherwise remain out of reach.
-        - rtgl-view g="sm":
-            - 'rtgl-text s="h3" role="heading" aria-level="2"': Connecting creators and readers
-            - 'ul style="margin: 0; padding-left: 20px;"':
-                - li:
-                    - rtgl-text:
-                        - __html: "<strong>For creators:</strong> We want creators to have an effective way to publish their work, reach the right readers, and retain greater creative freedom. They should be able to devote most of their effort to making the best visual novels they can and worry less about distribution."
-                - li:
-                    - rtgl-text:
-                        - __html: "<strong>For readers:</strong> We want readers to easily discover a large, diverse library of high-quality visual novels from official sources, directly support the creators behind those works, and take part in discussions about the works they value."
-        - rtgl-view g="sm":
-            - 'rtgl-text s="h3" role="heading" aria-level="2"': Internationalization
-            - rtgl-text: Visual novels have long crossed borders. We want to carry that forward by lowering barriers to localization and global distribution, helping more stories travel between languages and cultures.
-            - rtgl-text: A global visual novel ecosystem brings more voices, perspectives, and creative traditions into the medium. It also gives individual creators access to larger audiences, making it more sustainable for them to keep creating.
-        - rtgl-view g="sm":
-            - 'rtgl-text s="h3" role="heading" aria-level="2"': Learning through visual novels
-            - rtgl-text: We believe visual novels hold great potential for learning beyond traditional education. They can immerse people, hold their attention, and support experiential learning through choices, consequences, and the freedom to try again.
-            - rtgl-text: We want to realize this potential and find new ways for visual novels to enrich people’s lives beyond entertainment.
+        - $for section in mission.sections:
+            - rtgl-view g="sm":
+                - 'rtgl-text s="h3" role="heading" aria-level="2"': ${section.title}
+                - $if section.paragraphs:
+                    - $for paragraph in section.paragraphs:
+                        - rtgl-text: ${paragraph}
+                - $if section.audiences:
+                    - 'ul style="margin: 0; padding-left: 20px;"':
+                        - $for audience in section.audiences:
+                            - li:
+                                - rtgl-text:
+                                    - __html: "<strong>${audience.label}:</strong> ${audience.text}"
 - rtgl-view h="64":
