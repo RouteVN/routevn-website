@@ -55,6 +55,8 @@ footer:
         # - text: Asset Store
         #   href: /en/creator/asset-store/
     - links:
+        - text: Mission
+          href: /en/mission/
         - text: Blog
           href: /en/blog/
         - text: Hiring
