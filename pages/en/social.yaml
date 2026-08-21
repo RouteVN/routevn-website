@@ -5,6 +5,7 @@ seo:
   title: Follow RouteVN
   description: Follow RouteVN on Instagram, TikTok, Tumblr, YouTube, Discord, X, Bluesky, Reddit, LinkedIn, GitHub, and itch.io.
 ---
+- h1 class="sr-only": Follow RouteVN
 - 'rtgl-view w="f" g="xl" p="xl" br="xl" bw="xs" bgc="se"':
     - rtgl-view w="f" ah="c":
         - rtgl-text: Follow on social media

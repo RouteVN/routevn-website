@@ -7,6 +7,21 @@ footerSpacerHeight: 20vh
 seo:
   title: Contacter RouteVN
   description: Contactez RouteVN pour poser vos questions, partager vos retours, demander de l’assistance, signaler un bug ou discuter d’un partenariat.
+alternates:
+  - hreflang: en
+    href: https://routevn.com/en/contact/
+  - hreflang: es
+    href: https://routevn.com/es/contact/
+  - hreflang: fr
+    href: https://routevn.com/fr/contact/
+  - hreflang: it
+    href: https://routevn.com/it/contact/
+  - hreflang: ja
+    href: https://routevn.com/ja/contact/
+  - hreflang: zh-Hans
+    href: https://routevn.com/zh-hans/contact/
+  - hreflang: x-default
+    href: https://routevn.com/en/contact/
 ---
 - $partial: contact-page
   title: Contacter RouteVN
@@ -16,3 +31,24 @@ seo:
   formHref: https://tally.so/r/wzZ7rM
   socialMessageHtml: Vous pouvez également nous joindre sur les <a href="/en/social/">réseaux sociaux</a>. N’hésitez pas à nous envoyer un message privé.
   imageAlt: Makkuro salue de la main.
+
+- $partial: language-links
+  links:
+    - hreflang: en
+      label: English
+      href: https://routevn.com/en/contact/
+    - hreflang: es
+      label: Español
+      href: https://routevn.com/es/contact/
+    - hreflang: fr
+      label: Français
+      href: https://routevn.com/fr/contact/
+    - hreflang: it
+      label: Italiano
+      href: https://routevn.com/it/contact/
+    - hreflang: ja
+      label: 日本語
+      href: https://routevn.com/ja/contact/
+    - hreflang: zh-Hans
+      label: 简体中文
+      href: https://routevn.com/zh-hans/contact/

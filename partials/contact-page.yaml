@@ -1,7 +1,7 @@
 - rtgl-view h="96":
 - rtgl-view md-w="100vw" lg-w="768" w="1024" ph="lg" ah="c" g="lg":
     - 'img src="/public/creator/chibi-hi.png" alt="${imageAlt}" style="display: block; height: auto; margin-bottom: 16px; max-width: 240px; width: 100%;"':
-    - rtgl-text s="h1" ta="c": ${title}
+    - 'h1 style="text-align: center; margin: 0;"': ${title}
     - 'rtgl-text s="lg" ta="c" style="max-width: 640px;"': ${intro}
     - 'rtgl-text ta="c" style="max-width: 640px;"': ${message}
     - 'rtgl-button href="${formHref}" new-tab': ${buttonLabel}

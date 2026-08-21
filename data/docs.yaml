@@ -8,160 +8,172 @@ items:
     items:
       - id: introduction
         title: "Introduction"
-        href: "/en/creator/docs/introduction"
+        href: "/en/creator/docs/introduction/"
       - id: quickstart
         title: "Quickstart"
-        href: "/en/creator/docs/quickstart"
+        href: "/en/creator/docs/quickstart/"
       - id: video-tutorials
         title: "Video Tutorials"
-        href: "/en/creator/docs/video-tutorials"
+        href: "/en/creator/docs/video-tutorials/"
       - id: page-index
         title: "Page Index"
-        href: "/en/creator/docs/page-index"
+        href: "/en/creator/docs/page-index/"
+      - id: features-limitations
+        title: "Features & Limitations"
+        href: "/en/creator/docs/features-and-limitations/"
       - id: file-explorer
         title: "File Explorer"
-        href: "/en/creator/docs/file-explorer"
+        href: "/en/creator/docs/file-explorer/"
       - id: tags
         title: "Tags"
-        href: "/en/creator/docs/tags"
+        href: "/en/creator/docs/tags/"
   - title: "Project"
     type: groupLabel
     items:
       - id: projects
         title: "Projects"
-        href: "/en/creator/docs/projects"
+        href: "/en/creator/docs/projects/"
       - id: images
         title: "Images"
-        href: "/en/creator/docs/images"
+        href: "/en/creator/docs/images/"
       - id: sounds
         title: "Sounds"
-        href: "/en/creator/docs/sounds"
+        href: "/en/creator/docs/sounds/"
       - id: videos
         title: "Videos"
-        href: "/en/creator/docs/videos"
+        href: "/en/creator/docs/videos/"
       - id: characters
         title: "Characters"
-        href: "/en/creator/docs/characters"
+        href: "/en/creator/docs/characters/"
       - id: transforms
         title: "Transforms"
-        href: "/en/creator/docs/transforms"
+        href: "/en/creator/docs/transforms/"
       - id: animations
         title: "Animations"
-        href: "/en/creator/docs/animations"
+        href: "/en/creator/docs/animations/"
       - id: audio-effects
         title: "Audio Effects"
-        href: "/en/creator/docs/audio-effects"
+        href: "/en/creator/docs/audio-effects/"
       - id: particles
         title: "Particles"
-        href: "/en/creator/docs/particles"
+        href: "/en/creator/docs/particles/"
       - id: spritesheets
         title: "Spritesheets"
-        href: "/en/creator/docs/spritesheets"
+        href: "/en/creator/docs/spritesheets/"
       - id: colors
         title: "Colors"
-        href: "/en/creator/docs/colors"
+        href: "/en/creator/docs/colors/"
       - id: fonts
         title: "Fonts"
-        href: "/en/creator/docs/fonts"
+        href: "/en/creator/docs/fonts/"
       - id: project-controls
         title: "Controls"
-        href: "/en/creator/docs/controls"
+        href: "/en/creator/docs/controls/"
       - id: variables
         title: "Variables"
-        href: "/en/creator/docs/variables"
+        href: "/en/creator/docs/variables/"
       - id: text-styles
         title: "Text Styles"
-        href: "/en/creator/docs/text-styles"
+        href: "/en/creator/docs/text-styles/"
       - id: layouts
         title: "Layouts"
-        href: "/en/creator/docs/layouts"
+        href: "/en/creator/docs/layouts/"
   - title: "Scene"
     type: groupLabel
     items:
       - id: scene-map
         title: "Scene Map"
-        href: "/en/creator/docs/scene-map"
+        href: "/en/creator/docs/scene-map/"
       - id: scene-editor
         title: "Scene Editor"
-        href: "/en/creator/docs/scene-editor"
+        href: "/en/creator/docs/scene-editor/"
   - title: "Line Actions"
     type: groupLabel
     items:
       - id: dialogue
         title: "Dialogue"
-        href: "/en/creator/docs/line-actions/dialogue"
+        href: "/en/creator/docs/line-actions/dialogue/"
       - id: choices
         title: "Choices"
-        href: "/en/creator/docs/line-actions/choices"
+        href: "/en/creator/docs/line-actions/choices/"
       - id: input
         title: "Input"
-        href: "/en/creator/docs/line-actions/input"
+        href: "/en/creator/docs/line-actions/input/"
       - id: conditional
         title: "Conditional"
-        href: "/en/creator/docs/line-actions/conditional"
+        href: "/en/creator/docs/line-actions/conditional/"
+      - id: update-variable
+        title: "Update Variable"
+        href: "/en/creator/docs/line-actions/update-variable/"
       - id: background
         title: "Background"
-        href: "/en/creator/docs/line-actions/background"
+        href: "/en/creator/docs/line-actions/background/"
       - id: bgm
         title: "BGM"
-        href: "/en/creator/docs/line-actions/bgm"
+        href: "/en/creator/docs/line-actions/bgm/"
       - id: voice
         title: "Voice"
-        href: "/en/creator/docs/line-actions/voice"
+        href: "/en/creator/docs/line-actions/voice/"
       - id: sound-effects
         title: "Sound Effects"
-        href: "/en/creator/docs/line-actions/sfx"
+        href: "/en/creator/docs/line-actions/sfx/"
       - id: line-actions-characters
         title: "Characters"
-        href: "/en/creator/docs/line-actions/characters"
+        href: "/en/creator/docs/line-actions/characters/"
       - id: section-transition
         title: "Section Transition"
-        href: "/en/creator/docs/line-actions/section-transition"
+        href: "/en/creator/docs/line-actions/section-transition/"
       - id: reset-story-at-section
         title: "Reset Story At Section"
-        href: "/en/creator/docs/line-actions/reset-story-at-section"
+        href: "/en/creator/docs/line-actions/reset-story-at-section/"
       - id: visuals
         title: "Visuals"
-        href: "/en/creator/docs/line-actions/visuals"
+        href: "/en/creator/docs/line-actions/visuals/"
+      - id: push-layered-view
+        title: "Push Layered View"
+        href: "/en/creator/docs/line-actions/push-layered-view/"
+      - id: pop-layered-view
+        title: "Pop Layered View"
+        href: "/en/creator/docs/line-actions/pop-layered-view/"
       - id: next-line
         title: "Next Line"
-        href: "/en/creator/docs/line-actions/next-line"
+        href: "/en/creator/docs/line-actions/next-line/"
       - id: toggle-auto-mode
         title: "Toggle Auto Mode"
-        href: "/en/creator/docs/line-actions/toggle-auto-mode"
+        href: "/en/creator/docs/line-actions/toggle-auto-mode/"
       - id: toggle-skip-mode
         title: "Toggle Skip Mode"
-        href: "/en/creator/docs/line-actions/toggle-skip-mode"
+        href: "/en/creator/docs/line-actions/toggle-skip-mode/"
       - id: controls
         title: "Controls"
-        href: "/en/creator/docs/line-actions/controls"
+        href: "/en/creator/docs/line-actions/controls/"
       - id: next-line-config
         title: "Next Line Config"
-        href: "/en/creator/docs/line-actions/next-line-config"
+        href: "/en/creator/docs/line-actions/next-line-config/"
   - title: "Release"
     type: groupLabel
     items:
       - id: versions
         title: "Versions"
-        href: "/en/creator/docs/versions"
+        href: "/en/creator/docs/versions/"
       - id: platform-details
         title: "Platform Details"
-        href: "/en/creator/docs/platform-details"
+        href: "/en/creator/docs/platform-details/"
       - id: web-server
         title: "Web Server"
-        href: "/en/creator/docs/web-server"
+        href: "/en/creator/docs/web-server/"
       - id: publish
         title: "Publish"
-        href: "/en/creator/docs/publish"
+        href: "/en/creator/docs/publish/"
   - title: "Asset Store"
     type: groupLabel
     items:
       - id: asset-store
         title: "Asset Store"
-        href: "/en/creator/docs/asset-store"
+        href: "/en/creator/docs/asset-store/"
       - id: essential-transition-pack
         title: "Essential Transition Pack"
-        href: "/en/creator/docs/essential-transition-pack"
+        href: "/en/creator/docs/essential-transition-pack/"
       - id: asset-store-authors
         title: "Asset Store Authors"
-        href: "/en/creator/docs/asset-store-authors"
+        href: "/en/creator/docs/asset-store-authors/"

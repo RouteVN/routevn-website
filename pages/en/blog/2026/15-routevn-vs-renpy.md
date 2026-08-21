@@ -179,7 +179,7 @@ Ren'Py manages assets and project structure through the OS's files and folders. 
 
 In RouteVN Creator, images, audio, videos, characters, and fonts each have a dedicated manager where you drag and drop files to import them. Once imported, viewing and re-ordering the assets is done inside the app, without dependency to the file system.
 
-<img src="/public/blog/2026/15/screen4.png" alt="RouteVN Creator asset managers" style="width: 100%; margin-bottom: 24px; border: 1px solid var(--border); box-sizing: border-box;">
+<img src="/public/blog/2026/15/screen4.png" alt="RouteVN Creator asset managers" style="width: 100%; height: auto; margin-bottom: 24px; border: 1px solid var(--border); box-sizing: border-box;" width="1920" height="1080" decoding="async">
 
 ## Maturity & community
 
@@ -197,7 +197,7 @@ Ren'Py's [documentation](https://www.renpy.org/doc/html/) is extensive. It cover
 
 There are also many community Ren'Py tutorials out there. Those can be found across YouTube, blogs, and forums. There is no single place to look, quality varies, and some tutorials are out of date and no longer match the current version of Ren'Py.
 
-RouteVN provides [official documentation](/en/creator/docs/), with official video tutorials coming soon. Both are produced by the RouteVN team, the same people who build the app. Learning material and application stay in sync, so the tutorials are more consistent in quality and accuracy.
+RouteVN provides [official documentation](/en/creator/docs/introduction/), with official video tutorials coming soon. Both are produced by the RouteVN team, the same people who build the app. Learning material and application stay in sync, so the tutorials are more consistent in quality and accuracy.
 
 ## Active development
 
@@ -241,4 +241,3 @@ Ren'Py remains the mature, proven default, with a big community. Choose Ren'Py i
 RouteVN is the new contender, striving to greatly simplify and improve the experience of making visual novels. It is very actively developed and improving quickly. Choose RouteVN if you want a friendlier user experience, an easier start without coding, and do not mind a small but growing community.
 
 Ultimately, the best way to decide is to try both engines yourself and see which feels most natural to you.
-

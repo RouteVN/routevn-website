@@ -1,13 +1,16 @@
 ---
 template: documentation
 title: Fonts
+seo:
+  title: "Fonts | RouteVN Creator Docs"
+  description: "Upload and manage the fonts used by your project. Imported fonts can be used in text styles and layouts."
 sidebarId: fonts
 ---
 
 <img
   src="/public/creator/docs/reference/fonts-1.png"
   alt="Fonts page"
-  style="width: 100%; height: auto; display: block; border: 1px solid var(--border); box-sizing: border-box;"
+  style="width: 100%; height: auto; display: block; border: 1px solid var(--border); box-sizing: border-box;" width="1920" height="1080" decoding="async"
 />
 
 ## Supported font formats
@@ -31,7 +34,7 @@ Double click font item to preview the font glyphs
 <img
   src="/public/creator/docs/reference/fonts-2.png"
   alt="Font preview"
-  style="width: 100%; height: auto; display: block; border: 1px solid var(--border); box-sizing: border-box;"
+  style="width: 100%; height: auto; display: block; border: 1px solid var(--border); box-sizing: border-box;" width="1920" height="1080" decoding="async" loading="lazy"
 />
 
 ## Usage

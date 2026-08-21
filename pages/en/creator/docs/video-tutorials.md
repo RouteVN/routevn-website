@@ -1,6 +1,9 @@
 ---
 template: documentation
 title: Video Tutorials
+seo:
+  title: "Video Tutorials | RouteVN Creator Docs"
+  description: "Official RouteVN video tutorials."
 sidebarId: video-tutorials
 ---
 

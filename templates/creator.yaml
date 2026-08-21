@@ -1,6 +1,8 @@
+- __html: "<!doctype html>"
 - html lang="${default(lang, 'en')}":
     - head:
         - $partial: seo1
+          alternates: ${alternates}
           page: ${page}
           seo: ${seo}
         - link rel="stylesheet" href="/public/theme.css":

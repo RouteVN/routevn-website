@@ -1,6 +1,8 @@
+- __html: "<!doctype html>"
 - html lang="en":
     - head:
         - $partial: seo1
+          alternates: ${alternates}
           page: ${page}
           seo: ${seo}
         - link rel="stylesheet" href="/public/theme.css":
@@ -13,17 +15,17 @@
                 - rtgl-view d=h md-d=v g=xl w=f mb="xl":
                     - rtgl-view md-w=f w="140" mt="sm":
                     - rtgl-view w="1fg" mb=xl:
-                        - rtgl-text s="h1" mb="sm": ${changelog.title}
+                        - h1: ${changelog.title}
                 - rtgl-view g="xl" w=f:
                     - $for item in sort(collections.changelog, "data.date", "desc"):
                         - rtgl-view d=h md-d=v g=xl w=f mb=xl:
-                            - rtgl-view md-w=f w="140" mt=lg:
+                            - rtgl-view md-w=f w="140":
                                 - rtgl-text c="mu" s="sm":
                                     - $partial: changelog-date
                                       date: ${item.data.date}
-                            - rtgl-view w="1fg":
+                            - rtgl-view class="changelog-release-content" w="1fg":
                                 - 'a href="${item.url}" style="text-decoration: none; color: inherit;"':
-                                    - rtgl-text s="h1" cur=p mb="md": ${item.data.version}
+                                    - h2: ${item.data.version}
                                 - "${md(item.content)}"
                                 - $if item.data.videoSrc:
                                     - 'video src="${item.data.videoSrc}" controls playsinline preload="metadata" style="width: 100%; max-width: 100%; display: block; border: 1px solid var(--border); box-sizing: border-box; margin-bottom: 24px;"':
@@ -34,7 +36,7 @@
                                         - 'video src="${video.src}" controls playsinline preload="metadata" style="width: 100%; max-width: 100%; display: block; border: 1px solid var(--border); box-sizing: border-box; margin-bottom: 24px;"':
                                 - $if item.data.images:
                                     - $if item.data.imagesTitle:
-                                        - h2: ${item.data.imagesTitle}
+                                        - h3: ${item.data.imagesTitle}
                                     - $for image in item.data.images:
                                         - $if image.description:
                                             - rtgl-text mb="sm": ${image.description}

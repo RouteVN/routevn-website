@@ -40,7 +40,7 @@ We wanted the brand to feel simple, elegant, polished, and approachable, consist
 
 ## Old design
 
-<img src="/public/blog/2026/12/routevn-old-logo.png" alt="Old RouteVN logo" style="width: 100%; margin-bottom: 24px; border: 1px solid var(--border); box-sizing: border-box;">
+<img src="/public/blog/2026/12/routevn-old-logo.png" alt="Old RouteVN logo" style="width: 100%; margin-bottom: 24px; border: 1px solid var(--border); box-sizing: border-box;" width="958" height="174" decoding="async">
 
 The old icon attempted to represent choices in a visual novel. Choices are one of the more iconic UI patterns unique to visual novels.
 
@@ -64,7 +64,7 @@ So we went through an exploration stage. The focus was to try different things, 
 
 After many iterations and a few full versions, we finally arrived at the character reference sheet.
 
-<img src="/public/blog/2026/12/makkuro-reference-sheet.png" alt="Makkuro character reference sheet" style="width: 100%; margin-bottom: 24px; border: 1px solid var(--border); box-sizing: border-box;">
+<img src="/public/blog/2026/12/makkuro-reference-sheet.png" alt="Makkuro character reference sheet" style="width: 100%; margin-bottom: 24px; border: 1px solid var(--border); box-sizing: border-box;" width="1920" height="1080" decoding="async" loading="lazy">
 
 Some notes on the final outcome:
 
@@ -75,7 +75,7 @@ Some notes on the final outcome:
 
 After agreeing on the character reference sheet, working on the sprites was very smooth.
 
-<img src="/public/blog/2026/12/makkuro-neutral-sprites.png" alt="Makkuro neutral sprite examples" style="width: 100%; margin-bottom: 24px; border: 1px solid var(--border); box-sizing: border-box;">
+<img src="/public/blog/2026/12/makkuro-neutral-sprites.png" alt="Makkuro neutral sprite examples" style="width: 100%; margin-bottom: 24px; border: 1px solid var(--border); box-sizing: border-box;" width="1600" height="1000" decoding="async" loading="lazy">
 
 At this point, we had our mascot character, and we were happy with the outcome. Later, a lot of the branding would end up revolving around her.
 
@@ -93,7 +93,7 @@ But none of them really clicked with us. Some candidates were better than others
 
 In the end, we decided to use the mascot character in the app icon.
 
-<img src="/public/blog/2026/12/routevn-new-icon.jpg" alt="New RouteVN app icon featuring Makkuro" style="width: 100%; max-width: 400px; margin-bottom: 24px; border: 1px solid var(--border); box-sizing: border-box;">
+<img src="/public/blog/2026/12/routevn-new-icon.jpg" alt="New RouteVN app icon featuring Makkuro" style="width: 100%; max-width: 400px; margin-bottom: 24px; border: 1px solid var(--border); box-sizing: border-box;" width="400" height="400" decoding="async" loading="lazy">
 
 The icon is more opinionated and less neutral than a shape icon, but it better represents what RouteVN stands for, and it feels closer to the actual visual novels that users will create.
 
@@ -101,7 +101,7 @@ The icon still uses black and white, so it keeps the neutrality of the brand.
 
 ## Cover illustration
 
-<img src="/public/blog/2026/12/cover-illustration-makkuro-and-objects.png" alt="Makkuro cover illustration with creative objects" style="width: 100%; margin-bottom: 24px; padding: 24px; background: #000000; border: 1px solid var(--border); box-sizing: border-box;">
+<img src="/public/blog/2026/12/cover-illustration-makkuro-and-objects.png" alt="Makkuro cover illustration with creative objects" style="width: 100%; margin-bottom: 24px; padding: 24px; background: #000000; border: 1px solid var(--border); box-sizing: border-box;" width="1805" height="1920" decoding="async" loading="lazy">
 
 We wanted a strong illustration that could carry this direction, and that we could reuse as a cover illustration in various places.
 
@@ -117,7 +117,7 @@ We considered adding a computer keyboard for writing, but it reads more broadly 
 <div style="height: 24px;"></div>
 
 <a href="https://x.com/aiyuuno" target="_blank" rel="noopener noreferrer" style="display: inline-block;">
-  <img src="/public/blog/2026/12/artist-aiyuuno.jpg" alt="@aiyuuno avatar" style="width: 120px; height: 120px; border-radius: 999px; display: block;">
+  <img src="/public/blog/2026/12/artist-aiyuuno.jpg" alt="@aiyuuno avatar" style="width: 120px; height: 120px; border-radius: 999px; display: block;" width="400" height="400" decoding="async" loading="lazy">
 </a>
 
 <div style="height: 24px;"></div>
@@ -130,7 +130,7 @@ After finishing the icon, we needed a text logo as well.
 
 I didn't know a specific text logo designer, but one day I found a VTuber logo designer whose style felt close to the direction we wanted:
 
-<img src="/public/blog/2026/12/routevn-horizontal-logo.png" alt="RouteVN horizontal text logo" style="width: 100%; margin-bottom: 24px; padding: 24px; background: #000000; border: 1px solid var(--border); box-sizing: border-box;">
+<img src="/public/blog/2026/12/routevn-horizontal-logo.png" alt="RouteVN horizontal text logo" style="width: 100%; margin-bottom: 24px; padding: 24px; background: #000000; border: 1px solid var(--border); box-sizing: border-box;" width="1920" height="426" decoding="async" loading="lazy">
 
 After choosing the designer, we still had to write down all the things we wanted for the logo.
 
@@ -145,7 +145,7 @@ At one point, we wondered if it was a bit too cute, but we decided to stick with
 <div style="height: 24px;"></div>
 
 <a href="https://x.com/Mikalogo" target="_blank" rel="noopener noreferrer" style="display: inline-block;">
-  <img src="/public/blog/2026/12/artist-mikalogo.jpg" alt="@Mikalogo avatar" style="width: 120px; height: 120px; border-radius: 999px; display: block;">
+  <img src="/public/blog/2026/12/artist-mikalogo.jpg" alt="@Mikalogo avatar" style="width: 120px; height: 120px; border-radius: 999px; display: block;" width="400" height="400" decoding="async" loading="lazy">
 </a>
 
 <div style="height: 24px;"></div>
@@ -154,7 +154,7 @@ At one point, we wondered if it was a bit too cute, but we decided to stick with
 
 ## Stickers
 
-<img src="/public/blog/2026/12/routevn-stickers.png" alt="RouteVN Makkuro sticker examples" style="width: 100%; margin-bottom: 24px; border: 1px solid var(--border); box-sizing: border-box;">
+<img src="/public/blog/2026/12/routevn-stickers.png" alt="RouteVN Makkuro sticker examples" style="width: 100%; margin-bottom: 24px; border: 1px solid var(--border); box-sizing: border-box;" width="1920" height="640" decoding="async" loading="lazy">
 
 Stickers are fun, cute, easy to share, and easy to reuse in many places.
 
@@ -167,7 +167,7 @@ This gives the brand a more playful touch while still keeping the main product i
 <div style="height: 24px;"></div>
 
 <a href="https://x.com/RE_0rie" target="_blank" rel="noopener noreferrer" style="display: inline-block;">
-  <img src="/public/blog/2026/12/artist-re-0rie.jpg" alt="@RE_0rie avatar" style="width: 120px; height: 120px; border-radius: 999px; display: block;">
+  <img src="/public/blog/2026/12/artist-re-0rie.jpg" alt="@RE_0rie avatar" style="width: 120px; height: 120px; border-radius: 999px; display: block;" width="400" height="400" decoding="async" loading="lazy">
 </a>
 
 <div style="height: 24px;"></div>

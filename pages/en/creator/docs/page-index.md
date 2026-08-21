@@ -1,6 +1,9 @@
 ---
 template: documentation
 title: Page Index
+seo:
+  title: "Page Index | RouteVN Creator Docs"
+  description: "Find the RouteVN Creator page for each feature before opening its detailed guide."
 sidebarId: page-index
 ---
 

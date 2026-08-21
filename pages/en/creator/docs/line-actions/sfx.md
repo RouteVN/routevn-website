@@ -1,6 +1,9 @@
 ---
 template: documentation
 title: Sound Effects
+seo:
+  title: "Sound Effects | RouteVN Creator Docs"
+  description: "Sound Effects play one or more sound effects on the current line."
 sidebarId: sound-effects
 ---
 

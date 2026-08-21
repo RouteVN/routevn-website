@@ -18,6 +18,21 @@ seo:
   ogImageHeight: 630
   ogImageAlt: Aperçu de RouteVN Creator avec Makkuro et des outils de création.
   ogImageType: image/png
+alternates:
+  - hreflang: en
+    href: https://routevn.com/en/creator/about/
+  - hreflang: es
+    href: https://routevn.com/es/creator/about/
+  - hreflang: fr
+    href: https://routevn.com/fr/creator/about/
+  - hreflang: it
+    href: https://routevn.com/it/creator/about/
+  - hreflang: ja
+    href: https://routevn.com/ja/creator/about/
+  - hreflang: zh-Hans
+    href: https://routevn.com/zh-hans/creator/about/
+  - hreflang: x-default
+    href: https://routevn.com/en/creator/about/
 ---
 - $partial: cursor-sparkles
 
@@ -209,3 +224,24 @@ seo:
   videoTitle: Through the Long Nights - RouteVN promo video
   linkLabel: Through the Long Nights
   linkHref: /en/through-the-long-nights/
+
+- $partial: language-links
+  links:
+    - hreflang: en
+      label: English
+      href: https://routevn.com/en/creator/about/
+    - hreflang: es
+      label: Español
+      href: https://routevn.com/es/creator/about/
+    - hreflang: fr
+      label: Français
+      href: https://routevn.com/fr/creator/about/
+    - hreflang: it
+      label: Italiano
+      href: https://routevn.com/it/creator/about/
+    - hreflang: ja
+      label: 日本語
+      href: https://routevn.com/ja/creator/about/
+    - hreflang: zh-Hans
+      label: 简体中文
+      href: https://routevn.com/zh-hans/creator/about/

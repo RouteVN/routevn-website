@@ -54,7 +54,7 @@
         - 'img class="rvn-creator-hero-chibi" src="${backgroundImageSrc}" alt="${backgroundImageAlt}"':
     - rtgl-view h=128:
     - $if title:
-        - rtgl-text class="rvn-creator-hero-copy" s=h1 ta=c: "${title}"
+        - 'h1 class="rvn-creator-hero-copy" style="text-align: center; margin: 0;"': "${title}"
         - rtgl-view h=24:
     - $if subtitleHtml:
         - rtgl-text class="rvn-creator-hero-copy" s=lg ta=c:

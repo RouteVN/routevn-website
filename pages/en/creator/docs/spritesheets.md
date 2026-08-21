@@ -1,6 +1,9 @@
 ---
 template: documentation
 title: Spritesheets
+seo:
+  title: "Spritesheets | RouteVN Creator Docs"
+  description: "Spritesheets are animated image resources made from a single PNG image and a JSON atlas."
 sidebarId: spritesheets
 ---
 

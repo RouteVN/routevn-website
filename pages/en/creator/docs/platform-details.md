@@ -1,6 +1,9 @@
 ---
 template: documentation
 title: Platform Details
+seo:
+  title: "Platform Details | RouteVN Creator Docs"
+  description: "Platform Details stores the metadata used when exporting your project."
 sidebarId: platform-details
 ---
 

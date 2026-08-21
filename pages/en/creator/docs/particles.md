@@ -1,6 +1,9 @@
 ---
 template: documentation
 title: Particles
+seo:
+  title: "Particles | RouteVN Creator Docs"
+  description: "Particles are reusable animated effects, such as rain, snow, fire, smoke, embers, or sparkle effects."
 sidebarId: particles
 ---
 

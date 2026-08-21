@@ -11,7 +11,7 @@ seo:
     - 'rtgl-view w="1200" xl-w="calc(100vw - 64px)" md-w="calc(100vw - 48px)" role="main"':
         - 'rtgl-view d="h" av="c" w="f" g="lg"':
             - rtgl-view g="md" w="f":
-                - 'rtgl-text s="h1" role="heading" aria-level="1"': Asset Store
+                - h1: Asset Store
                 - rtgl-text s="md" c="mu-fg" w="f": Browse curated asset packs for RouteVN Creator. Open a pack to explore every included asset.
             - 'rtgl-view aria-hidden="true"':
                 - 'rtgl-image w="clamp(96px, 14vw, 160px)" src="/public/creator/asset-store/asset-store-sticker.png" alt=""':

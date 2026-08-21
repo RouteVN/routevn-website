@@ -9,6 +9,7 @@ seo:
   ogImageType: image/png
 ---
 - main class="landing-shell":
+    - h1 class="sr-only": RouteVN – The Dedicated Platform for Visual Novels
     - a href="/en/creator/about/" aria-label="Open RouteVN Creator" class="landing-link":
         - div class="landing-copy":
             - div class="landing-brand":

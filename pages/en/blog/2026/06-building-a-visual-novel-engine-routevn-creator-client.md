@@ -124,7 +124,7 @@ Asset workflows are more straightforward: users upload files, resources are orga
 
 ### Layout Editor
 
-<img src="/public/blog/2026/06/layout-editor.png" style="width: 100%; margin-bottom: 24px;">
+<img src="/public/blog/2026/06/layout-editor.png" style="width: 100%; margin-bottom: 24px;" width="1280" height="720" decoding="async">
 
 
 The Layout Editor was a completely different level of complexity.

@@ -462,7 +462,7 @@ This works for asynchronous operations too. When an async operation completes, i
 
 Below is a full example of how an interaction flows through the entire system:
 
-<img src="/public/blog/2026/05/route-engine-01.png" style="width: 100%; margin-bottom: 24px;">
+<img src="/public/blog/2026/05/route-engine-01.png" style="width: 100%; margin-bottom: 24px;" width="1574" height="1098" decoding="async">
 
 <!-- ```mermaid -->
 <!-- sequenceDiagram -->

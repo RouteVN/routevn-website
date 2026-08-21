@@ -1,6 +1,9 @@
 ---
 template: documentation
 title: Asset Store
+seo:
+  title: "Asset Store | RouteVN Creator Docs"
+  description: "The RouteVN Creator Asset Store lists reusable asset packs."
 sidebarId: asset-store
 ---
 

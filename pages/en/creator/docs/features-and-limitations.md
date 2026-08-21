@@ -1,6 +1,9 @@
 ---
 template: documentation
 title: Features & Limitations
+seo:
+  title: "Features & Limitations | RouteVN Creator Docs"
+  description: "RouteVN Creator is designed to be no code and keep the interface simple. As a tradeoff, it is harder to implement advanced features."
 sidebarId: features-limitations
 ---
 

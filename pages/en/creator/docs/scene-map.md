@@ -1,6 +1,9 @@
 ---
 template: documentation
 title: Scene Map
+seo:
+  title: "Scene Map | RouteVN Creator Docs"
+  description: "The scene map is where you can manage and visualize all your scenes"
 sidebarId: scene-map
 ---
 

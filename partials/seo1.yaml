@@ -36,3 +36,7 @@
     - meta name="twitter:site" content="${seo.twitterSite}":
 - $if seo.twitterCreator:
     - meta name="twitter:creator" content="${seo.twitterCreator}":
+
+- $if alternates:
+    - $for alternate in alternates:
+        - 'link rel="alternate" hreflang="${alternate.hreflang}" href="${alternate.href}"':

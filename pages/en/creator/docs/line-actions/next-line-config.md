@@ -1,6 +1,9 @@
 ---
 template: documentation
 title: Set Next Line Config
+seo:
+  title: "Set Next Line Config | RouteVN Creator Docs"
+  description: "Set Next Line Config controls how the player advances to the next line."
 sidebarId: next-line-config
 ---
 

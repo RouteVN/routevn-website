@@ -1,6 +1,9 @@
 ---
 template: documentation
 title: Update Variable
+seo:
+  title: "Update Variable | RouteVN Creator Docs"
+  description: "Update Variable changes one or more variables when the action runs."
 sidebarId: update-variable
 ---
 

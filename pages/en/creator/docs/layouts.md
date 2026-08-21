@@ -1,13 +1,16 @@
 ---
 template: documentation
 title: Layouts
+seo:
+  title: "Layouts | RouteVN Creator Docs"
+  description: "Layouts define reusable UI and presentation structures. Customize them visually in the layout editor."
 sidebarId: layouts
 ---
 
 <img
   src="/public/creator/docs/reference/layouts-1.png"
   alt="Layouts page"
-  style="width: 100%; height: auto; display: block; border: 1px solid var(--border); box-sizing: border-box;"
+  style="width: 100%; height: auto; display: block; border: 1px solid var(--border); box-sizing: border-box;" width="1920" height="1080" decoding="async"
 />
 
 Layouts define reusable UI and presentation structures.
@@ -55,7 +58,7 @@ Fragments are similar to components, but you cannot pass custom variables to a f
 <img
   src="/public/creator/docs/reference/layout-editor-1.png"
   alt="Layout editor"
-  style="width: 100%; height: auto; display: block; border: 1px solid var(--border); box-sizing: border-box;"
+  style="width: 100%; height: auto; display: block; border: 1px solid var(--border); box-sizing: border-box;" width="1920" height="1080" decoding="async" loading="lazy"
 />
 
 The layout editor is where you place and configure layout elements.

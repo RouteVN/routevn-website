@@ -1,6 +1,9 @@
 ---
 template: documentation
 title: Characters
+seo:
+  title: "Characters | RouteVN Creator Docs"
+  description: "On this page you can create characters."
 sidebarId: characters
 ---
 
@@ -18,7 +21,7 @@ When creating a character you will fill those fields:
 <img
   src="/public/creator/docs/reference/character-1.png"
   alt="Create character form"
-  style="width: 100%; height: auto; display: block; border: 1px solid var(--border); box-sizing: border-box;"
+  style="width: 100%; height: auto; display: block; border: 1px solid var(--border); box-sizing: border-box;" width="1920" height="1080" decoding="async"
 />
 
 ### Name
@@ -58,7 +61,7 @@ Characters are used in the following places:
 <img
   src="/public/creator/docs/reference/character-2.png"
   alt="Character sprites page"
-  style="width: 100%; height: auto; display: block; border: 1px solid var(--border); box-sizing: border-box;"
+  style="width: 100%; height: auto; display: block; border: 1px solid var(--border); box-sizing: border-box;" width="1920" height="1080" decoding="async" loading="lazy"
 />
 
 ### Notes

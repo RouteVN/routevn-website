@@ -10,10 +10,13 @@ seo:
   title: "Contributor Introduction: 738NGX"
   description: Introducing 738NGX, a developer at RouteVN. Computer Science student from Shanghai, who has made significant contributions to RouteVN.
   ogType: article
-  ogImage: https://routevn.com/public/blog/2025/05/738ngx-avatar.png
+  ogImage: https://routevn.com/public/blog/2025/05/738ngx-avatar.jpg
+  ogImageWidth: 460
+  ogImageHeight: 460
+  ogImageType: image/jpeg
 ---
 
-<img src="/public/blog/2025/05/738ngx-avatar.png" style="width: 200px; border-radius: 50%; margin-bottom: 24px;">
+<img src="/public/blog/2025/05/738ngx-avatar.jpg" width="460" height="460" decoding="async" style="width: 200px; border-radius: 50%; margin-bottom: 24px;">
 
 738NGX joined RouteVN as an intern in July 2025 and will finish his intern this week in December. During his time here, he has made significant contributions to RouteVN.
 

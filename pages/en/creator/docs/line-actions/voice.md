@@ -1,6 +1,9 @@
 ---
 template: documentation
 title: Voice
+seo:
+  title: "Voice | RouteVN Creator Docs"
+  description: "Voice plays voice audio on the current line."
 sidebarId: voice
 ---
 

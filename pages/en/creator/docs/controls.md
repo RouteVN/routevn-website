@@ -1,6 +1,9 @@
 ---
 template: documentation
 title: Controls
+seo:
+  title: "Controls | RouteVN Creator Docs"
+  description: "Controls connect user input to actions."
 sidebarId: project-controls
 ---
 

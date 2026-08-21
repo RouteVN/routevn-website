@@ -1,6 +1,9 @@
 ---
 template: documentation
 title: Essential Transition Pack
+seo:
+  title: "Essential Transition Pack | RouteVN Creator Docs"
+  description: "The Essential Transition Pack contains 42 reusable assets for visual transitions."
 sidebarId: essential-transition-pack
 ---
 
