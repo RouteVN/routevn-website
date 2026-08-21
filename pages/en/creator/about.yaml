@@ -11,6 +11,8 @@ seo:
   ogImageHeight: 630
   ogImageAlt: RouteVN Creator social preview with Makkuro and creative tools
   ogImageType: image/png
+# Keep hreflang metadata for the existing localized pages. The visible language
+# selector is intentionally postponed and will be added in a future update.
 alternates:
   - hreflang: en
     href: https://routevn.com/en/creator/about/
