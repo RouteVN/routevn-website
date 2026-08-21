@@ -56,7 +56,7 @@ These platforms allow AI-generated content and generally require creators to dis
 
 [itch.io](https://itch.io/search?type=games&facets=c.2&q=visual+novel) is known for indie games, but it also has a large game asset marketplace. Its filters can help you find assets made for visual novels, including backgrounds, sprites, music, sound effects, fonts, and user interface elements.
 
-<img src="/public/blog/2026/14/itchio-visual-novel-assets.png" alt="itch.io search results showing visual novel asset packs" style="width: 100%; margin-bottom: 24px; border: 1px solid var(--border); box-sizing: border-box;">
+<img src="/public/blog/2026/16/itchio-visual-novel-assets.png" alt="itch.io search results showing visual novel asset packs" style="width: 100%; margin-bottom: 24px; border: 1px solid var(--border); box-sizing: border-box;">
 
 Useful searches:
 
@@ -69,7 +69,7 @@ Both free and paid assets are available. The creator of each asset sets its lice
 
 [BOOTH](https://booth.pm/) is an online marketplace connected to pixiv. Creators use it to distribute physical and digital work, including backgrounds, character sprites, interface assets, music, and other game materials.
 
-<img src="/public/blog/2026/14/booth-character-sprites.png" alt="BOOTH search results showing character sprite materials" style="width: 100%; margin-bottom: 24px; border: 1px solid var(--border); box-sizing: border-box;">
+<img src="/public/blog/2026/16/booth-character-sprites.png" alt="BOOTH search results showing character sprite materials" style="width: 100%; margin-bottom: 24px; border: 1px solid var(--border); box-sizing: border-box;">
 
 Browse these categories as a starting point:
 
