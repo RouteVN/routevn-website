@@ -1,0 +1,90 @@
+- html lang="en":
+    - head:
+        - $for item in collections.agreement:
+            - $if item.data.isLatest:
+                - $if item.data.agreementType == agreementType:
+                    - $partial: seo1
+                      page: ${page}
+                      seo: ${item.data.seo}
+                      publishedTime: ${item.data.effective_date}
+        - link rel="stylesheet" href="/public/theme.css":
+        - script src="https://cdn.jsdelivr.net/npm/@rettangoli/ui@1.21.0/dist/rettangoli-iife-ui.min.js":
+        - script src="/public/rtgl-icons.js":
+    - body.dark:
+        - rtgl-view h="64":
+        - rtgl-view w="f" ah="c":
+            - rtgl-view d=h g=xl pb="lg" md-w="100vw" lg-w="768" w="1024" ph=lg:
+                - rtgl-view id="content-container" lg-w="100%" w="624":
+                    - $for item in collections.agreement:
+                        - $if item.data.isLatest:
+                            - $if item.data.agreementType == agreementType:
+                                - h1: ${item.data.title}
+                                - "${md(item.content)}"
+                - script: |
+                    (() => {
+                      const headingCounts = new Map();
+                      const headings = document.querySelectorAll(
+                        "#content-container h2, #content-container h3, #content-container h4",
+                      );
+
+                      headings.forEach((heading) => {
+                        if (heading.id) {
+                          return;
+                        }
+
+                        const baseId = heading.textContent
+                          .toLowerCase()
+                          .normalize("NFKD")
+                          .replace(/[\u0300-\u036f]/g, "")
+                          .replace(/[^a-z0-9\s-]/g, "")
+                          .trim()
+                          .replace(/\s+/g, "-")
+                          .replace(/--+/g, "-") || "section";
+                        const count = (headingCounts.get(baseId) || 0) + 1;
+
+                        headingCounts.set(baseId, count);
+                        heading.id = count === 1 ? baseId : baseId + "-" + count;
+                      });
+                    })();
+                - 'rtgl-view lg-hide w="1fg" style="position: sticky; top: 64px;"':
+                    - rtgl-page-outline id="page-outline" target-id="content-container":
+            - rtgl-view d="h" h="30vh":
+            - $partial: footer1
+        - rtgl-view pos="abs" edge="t" ah="c" bgc="mu":
+            - $partial: navbar1
+              title: ${site.navbar.title}
+              cta: ${site.navbar.cta}
+        - script: |
+            (() => {
+              if (window.__rvnPostOutlineScrollRelayInitialized) {
+                return;
+              }
+
+              window.__rvnPostOutlineScrollRelayInitialized = true;
+
+              let frame = null;
+
+              const relayScrollToWindow = () => {
+                if (frame !== null) {
+                  return;
+                }
+
+                frame = window.requestAnimationFrame(() => {
+                  frame = null;
+                  window.dispatchEvent(new Event("scroll"));
+                });
+              };
+
+              [
+                document,
+                document.scrollingElement,
+                document.documentElement,
+                document.body,
+              ].forEach((scrollTarget, index, scrollTargets) => {
+                if (!scrollTarget || scrollTargets.indexOf(scrollTarget) !== index) {
+                  return;
+                }
+
+                scrollTarget.addEventListener("scroll", relayScrollToWindow, { passive: true });
+              });
+            })();

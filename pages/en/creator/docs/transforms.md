@@ -18,6 +18,7 @@ Defining transforms ensures consistency.
 
 - Position X and Y
 - Scale X and Y
+- Rotation, measured in degrees
 - Anchor
 
 ### Anchor

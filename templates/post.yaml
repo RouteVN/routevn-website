@@ -6,7 +6,7 @@
           publishedTime: ${date}
           modifiedTime: ${updatedAt}
         - link rel="stylesheet" href="/public/theme.css":
-        - script src="https://cdn.jsdelivr.net/npm/@rettangoli/ui@1.0.0-rc12/dist/rettangoli-iife-ui.min.js":
+        - script src="https://cdn.jsdelivr.net/npm/@rettangoli/ui@1.21.0/dist/rettangoli-iife-ui.min.js":
         - script src="/public/rtgl-icons.js":
     - body.dark:
         - rtgl-view h="64":
@@ -60,4 +60,43 @@
 
                 scrollTarget.addEventListener("scroll", relayScrollToWindow, { passive: true });
               });
+            })();
+
+            (() => {
+              // The page scrolls on <body>, so browsers skip fragment scrolling on
+              // reload (history restores the window scroll, which stays 0).
+              // Scroll to the hash target manually on initial load.
+              if (window.__rvnPostHashScrollInitialized) {
+                return;
+              }
+
+              window.__rvnPostHashScrollInitialized = true;
+
+              const scrollToHash = () => {
+                const hash = window.location.hash;
+
+                if (!hash || hash.length < 2) {
+                  return;
+                }
+
+                let target;
+
+                try {
+                  target = document.querySelector(hash);
+                } catch (_error) {
+                  return;
+                }
+
+                if (target) {
+                  target.scrollIntoView();
+                }
+              };
+
+              if (document.readyState === "loading") {
+                document.addEventListener("DOMContentLoaded", () => {
+                  window.requestAnimationFrame(() => window.requestAnimationFrame(scrollToHash));
+                });
+              } else {
+                window.requestAnimationFrame(() => window.requestAnimationFrame(scrollToHash));
+              }
             })();

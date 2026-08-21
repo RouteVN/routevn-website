@@ -25,7 +25,7 @@ v1.0.3 includes a breaking change for older projects.
 
 Projects created with v0.17.0 and below will not work with this new version and need to be migrated.
 
-If you wish to continue using your previous projects, please contact us via [this form](/en/support/) or any of our [social channels](/en/social/). We will manually upgrade them for you.
+If you wish to continue using your previous projects, please contact us via [this form](/en/contact/) or any of our [social channels](/en/social/). We will manually upgrade them for you.
 
 Sorry for the inconvenience. We know this is not ideal, but this change is necessary for the future development of the product.
 

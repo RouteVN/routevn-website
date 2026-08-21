@@ -1,0 +1,14 @@
+- 'rtgl-grid cols="6" xl-cols="5" lg-cols="4" md-cols="3" sm-cols="2" g="lg" w="f" role="list"':
+    - $for asset in assets:
+        - 'rtgl-view data-rvn-asset-card role="button" tabindex="0" data-asset-title="${asset.name}" data-asset-subtitle="${asset.description}" data-asset-format="${asset.format}" data-asset-resolution="${asset.resolution}" data-asset-duration="${asset.duration}" data-asset-media-type="${asset.mediaType}" data-asset-src="${asset.src}" data-asset-placeholder="${asset.name}" data-asset-color="${asset.previewColor}" bw="xs" bc="bo" h-bc="ac" br="md" overflow="hidden" cur="pointer" w="f"':
+            - 'rtgl-view ar="16/10" bgc="su" overflow="hidden" w="f" ah="c" av="c" aria-hidden="true"':
+                - rtgl-text s="sm" break-long-tokens: ${asset.name}
+            - 'rtgl-view data-rvn-control-preview hidden style="display: none;"':
+                - $for eventGroup in asset.controlBindings:
+                    - rtgl-view g="md" w="f":
+                        - rtgl-text s="h4": ${eventGroup.event}
+                        - rtgl-view g="md" w="f":
+                            - $for binding in eventGroup.bindings:
+                                - rtgl-view d="h" g="lg" w="f":
+                                    - rtgl-text w="96" s="sm": ${binding.key}
+                                    - rtgl-text w="f": ${binding.action}

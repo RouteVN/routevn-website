@@ -1,0 +1,21 @@
+---
+template: base
+lang: ja
+locale: ja
+title: RouteVN Creatorをダウンロード
+seo:
+  title: RouteVN Creatorをダウンロード - ノベルゲーム制作ツール
+  description: Windows、macOS、Linux版のRouteVN Creatorをダウンロード。直感的なエディターでノベルゲームを手軽に制作できます。
+---
+- $partial: creator-download
+  title: RouteVN Creatorをダウンロード
+  versionLabel: バージョン
+  changelogLabel: 変更履歴を見る
+  comingSoonLabel: 近日公開
+  windowsDownloadLabel: Windows版をダウンロード
+  macDownloadLabel: macOS版をダウンロード
+  linuxDownloadLabel: Linux版をダウンロード（AppImage）
+  installationGuideLabel: インストールガイド
+  communityTitle: Discordコミュニティに参加
+  communitySubtitle: RouteVNの開発の様子を知り、議論に参加し、フィードバックを共有して、最新情報を確認できます。
+  communityButtonLabel: Discordに参加

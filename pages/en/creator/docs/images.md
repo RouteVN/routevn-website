@@ -18,9 +18,10 @@ Character sprites should not be added here. Use the [character sprites](/en/crea
 
 - Image dimensions should match or be relative to the project [resolution](/en/creator/docs/projects/#resolution).
 - If your project resolution is 1920 x 1080, you should usually upload background and CG images with the same dimensions.
-- You may sometimes want to upload a larger image when you intend to zoom into it. This is fine, but it is a more advanced use case.
-- Raw images can be much larger than size-optimized images, even with the same dimensions.
-- The visual difference is usually small. For large projects with many images, size-optimized images help reduce disk space, memory usage, and download bandwidth.
+
+## Image optimization
+
+Adding similar images is fine. A common example is a set of character sprites that differ only by expression. During export, RouteVN Creator automatically de-duplicates matching parts of the images to reduce the final output size.
 
 ## Supported image formats
 
@@ -62,8 +63,10 @@ Read the [File Explorer](/en/creator/docs/file-explorer/) docs for general navig
 
 ### Previewing an image
 
-- Double click an image to preview it in a larger dimension
-- Click anywhere when the image is in preview to hide it
+Double-click an image to open the full-screen preview. Use the buttons at the top of the preview to choose one of two display modes:
+
+- Canvas scale (default): Shows the image at its true size relative to the project resolution. Use this mode to see how much of the screen the image occupies.
+- Fit to preview: Enlarges or reduces the image to fit the preview. Use this mode to inspect a small image more closely.
 
 ## Organizing your images assets
 

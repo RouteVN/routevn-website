@@ -1,0 +1,309 @@
+- rtgl-global-ui:
+- rtgl-view h="56" sm-h="40":
+- rtgl-view w="f" ah="c":
+    - 'rtgl-view w="1200" xl-w="calc(100vw - 64px)" md-w="calc(100vw - 48px)" g="xl" role="main"':
+        - 'rtgl-text href="/en/creator/asset-store/" s="sm" c="mu-fg"': Back
+        - 'rtgl-view d="h" sm-d="v" g="lg" w="f"':
+            - rtgl-view g="md" w="f":
+                - 'rtgl-text s="h1" role="heading" aria-level="1"': ${pack.name}
+            - 'rtgl-button id="rvn-add-pack-button" v="se" w="fit-content" data-import-url="${pack.importUrl}"': Copy import URL
+        - 'rtgl-view d="h" sm-d="v" g="xl" w="f" role="region" aria-label="Pack information"':
+            - rtgl-view g="md" w="1fg" sm-w="f":
+                - $if pack.coverWidth:
+                    - 'rtgl-image w="${pack.coverWidth}" lg-w="f" ar="16/9" of="cov" bw="xs" bc="bo" h-bc="mu" br="md" cur="p" src="${pack.coverSrc}" alt="${pack.name} preview"':
+                  $else:
+                    - 'rtgl-view ar="16/9" bgc="su" bw="xs" bc="bo" br="md" overflow="hidden" w="f"':
+                        - 'rtgl-image w="f" h="f" of="cov" src="${pack.coverSrc}" alt="${pack.name} preview"':
+                - rtgl-text: ${pack.description}
+            - rtgl-view g="lg" w="280" sm-w="f":
+                - 'rtgl-text s="h4" role="heading" aria-level="2"': Pack info
+                - rtgl-view g="lg" w="f":
+                    - rtgl-view g="sm" w="f":
+                        - rtgl-text s="sm": Author
+                        - 'rtgl-view d="h" g="sm" av="c" w="fit-content" href="/en/creator/asset-store/authors/${pack.author.slug}/"':
+                            - 'rtgl-image wh="22" of="cov" br="f" src="${pack.author.avatarSrc}" alt=""':
+                            - rtgl-text: ${pack.author.name}
+                    - rtgl-view g="sm" w="f":
+                        - rtgl-text s="sm": Released
+                        - rtgl-text:
+                            - 'time datetime="${pack.released}"': ${pack.releasedLabel}
+                    - rtgl-view g="sm" w="f":
+                        - rtgl-text s="sm": Last updated
+                        - rtgl-text:
+                            - 'time datetime="${pack.updated}"': ${pack.updatedLabel}
+        - 'rtgl-view g="xl" w="f" role="region" aria-label="Assets in this pack"':
+            - $for section in pack.sections:
+                - 'rtgl-view g="lg" w="f" role="region" aria-labelledby="rvn-pack-${section.id}-title"':
+                    - 'rtgl-text id="rvn-pack-${section.id}-title" s="h4" role="heading" aria-level="2"': ${section.name}
+                    - $if section.id == "variables":
+                        - 'rtgl-view w="f" bw="xs" bc="bo" br="md" overflow="auto" role="table" aria-label="Variables"':
+                            - rtgl-view w="f" sm-w="720":
+                                - 'rtgl-view d="h" w="f" bgc="mu" bwb="xs" bc="bo" role="row"':
+                                    - 'rtgl-view w="2fg" p="sm" role="columnheader"':
+                                        - rtgl-text s="sm": Name
+                                    - 'rtgl-view w="1fg" p="sm" role="columnheader"':
+                                        - rtgl-text s="sm": Scope
+                                    - 'rtgl-view w="1fg" p="sm" role="columnheader"':
+                                        - rtgl-text s="sm": Type
+                                    - 'rtgl-view w="2fg" p="sm" role="columnheader"':
+                                        - rtgl-text s="sm": Default value
+                                - 'rtgl-view w="f" role="rowgroup"':
+                                    - $for group in section.groups:
+                                        - $if group.assets:
+                                            - $for asset in group.assets:
+                                                - $partial: asset-store/variable-row
+                                                  asset: ${asset}
+                      $elif section.id == "controls":
+                        - $for group in section.groups:
+                            - $if group.assets:
+                                - $partial: asset-store/control-grid
+                                  assets: ${group.assets}
+                      $else:
+                        - $for group in section.groups:
+                            - $if group.folders:
+                                - 'rtgl-view g="lg" w="f" role="region" aria-labelledby="rvn-pack-${group.id}-title"':
+                                    - 'rtgl-text id="rvn-pack-${group.id}-title" s="h4" role="heading" aria-level="3"': ${group.name}
+                                    - $if group.avatarSrc:
+                                        - rtgl-view d="h" ah="s" w="f":
+                                            - 'rtgl-image wh="96" of="con" bw="xs" bc="bo" br="f" src="${group.avatarSrc}" alt="${group.name} avatar"':
+                                    - rtgl-view g="lg" w="f":
+                                        - $for folder in group.folders:
+                                            - 'rtgl-view g="md" w="f" role="region" aria-labelledby="rvn-pack-${folder.id}-title"':
+                                                - 'rtgl-text id="rvn-pack-${folder.id}-title" s="sm" c="mu-fg" role="heading" aria-level="4"': ${folder.name}
+                                                - $partial: asset-store/asset-grid
+                                                  assets: ${folder.assets}
+                              $else:
+                                - 'rtgl-view g="md" w="f" role="region" aria-labelledby="rvn-pack-${group.id}-title"':
+                                    - 'rtgl-text id="rvn-pack-${group.id}-title" s="sm" c="mu-fg" role="heading" aria-level="3"': ${group.name}
+                                    - $partial: asset-store/asset-grid
+                                      assets: ${group.assets}
+- 'rtgl-dialog id="rvn-asset-dialog" s="lg" close-button':
+    - 'rtgl-view slot="content" w="f" g="xl"':
+        - rtgl-view g="md" w="f":
+            - 'rtgl-text id="rvn-asset-dialog-title" s="h1" role="heading" aria-level="2"': null
+            - rtgl-text id="rvn-asset-dialog-subtitle" s="md" c="mu-fg": null
+        - 'rtgl-view d="h" sm-d="v" g="lg" w="f"':
+            - 'rtgl-view id="rvn-asset-dialog-preview" ar="16/9" bgc="su" bw="xs" bc="bo" br="md" overflow="hidden" ah="c" av="c" w="f"':
+                - 'video id="rvn-asset-dialog-video" data-rvn-delayed-loop playsinline preload="metadata" style="display: none; height: 100%; object-fit: contain; width: 100%;" hidden':
+                - 'rtgl-image id="rvn-asset-dialog-image" w="f" h="f" of="con" alt="" style="display: none;" hidden':
+                - 'audio id="rvn-asset-dialog-audio" controls preload="metadata" style="display: none; width: min(520px, calc(100% - 48px));" hidden':
+                - 'rtgl-view id="rvn-asset-dialog-placeholder" bgc="su" ah="c" av="c" w="f" h="f" style="display: none;" hidden':
+                    - rtgl-text id="rvn-asset-dialog-placeholder-label": null
+                - 'rtgl-view id="rvn-asset-dialog-color" w="f" h="f" style="display: none;" hidden':
+                - 'rtgl-view id="rvn-asset-dialog-control" p="xl" g="xl" w="f" h="f" overflow="auto" style="display: none;" hidden':
+            - 'rtgl-view w="240" sm-w="f" g="lg" role="complementary" aria-label="Asset information"':
+                - 'rtgl-text s="h4" role="heading" aria-level="3"': Asset info
+                - rtgl-view g="lg" w="f":
+                    - rtgl-view g="sm" w="f":
+                        - rtgl-text s="sm": Format
+                        - rtgl-text id="rvn-asset-dialog-format": null
+                    - 'rtgl-view id="rvn-asset-dialog-detail" g="sm" w="f"':
+                        - rtgl-text id="rvn-asset-dialog-detail-label" s="sm": Resolution
+                        - rtgl-text id="rvn-asset-dialog-resolution": null
+- script: |
+    (() => {
+      const assetDialog = document.getElementById("rvn-asset-dialog");
+      const dialogTitle = document.getElementById("rvn-asset-dialog-title");
+      const dialogSubtitle = document.getElementById("rvn-asset-dialog-subtitle");
+      const dialogFormat = document.getElementById("rvn-asset-dialog-format");
+      const dialogDetail = document.getElementById("rvn-asset-dialog-detail");
+      const dialogDetailLabel = document.getElementById("rvn-asset-dialog-detail-label");
+      const dialogResolution = document.getElementById("rvn-asset-dialog-resolution");
+      const dialogPreview = document.getElementById("rvn-asset-dialog-preview");
+      const dialogVideo = document.getElementById("rvn-asset-dialog-video");
+      const dialogImage = document.getElementById("rvn-asset-dialog-image");
+      const dialogAudio = document.getElementById("rvn-asset-dialog-audio");
+      const dialogPlaceholder = document.getElementById("rvn-asset-dialog-placeholder");
+      const dialogPlaceholderLabel = document.getElementById("rvn-asset-dialog-placeholder-label");
+      const dialogColor = document.getElementById("rvn-asset-dialog-color");
+      const dialogControl = document.getElementById("rvn-asset-dialog-control");
+      const globalUI = document.querySelector("rtgl-global-ui");
+      const videoLoopTimers = new WeakMap();
+      const videoLoopDelay = 1000;
+      let activeCard;
+
+      const clearVideoLoopTimer = (video) => {
+        const timer = videoLoopTimers.get(video);
+
+        if (timer) {
+          window.clearTimeout(timer);
+          videoLoopTimers.delete(video);
+        }
+      };
+
+      const enableDelayedVideoLoop = (video) => {
+        video.addEventListener("play", () => clearVideoLoopTimer(video));
+        video.addEventListener("ended", () => {
+          clearVideoLoopTimer(video);
+          const timer = window.setTimeout(() => {
+            videoLoopTimers.delete(video);
+
+            if (!video.isConnected || video.hidden) {
+              return;
+            }
+
+            video.currentTime = 0;
+            video.play().catch(() => {});
+          }, videoLoopDelay);
+          videoLoopTimers.set(video, timer);
+        });
+      };
+
+      document.querySelectorAll("[data-rvn-delayed-loop]").forEach(enableDelayedVideoLoop);
+
+      const thumbnailVideos = document.querySelectorAll("[data-rvn-thumbnail-video]");
+
+      if ("IntersectionObserver" in window) {
+        const thumbnailObserver = new IntersectionObserver((entries) => {
+          entries.forEach((entry) => {
+            const video = entry.target;
+
+            if (entry.isIntersecting) {
+              video.play().catch(() => {});
+              return;
+            }
+
+            clearVideoLoopTimer(video);
+            video.pause();
+          });
+        }, { threshold: 0.01 });
+
+        thumbnailVideos.forEach((video) => thumbnailObserver.observe(video));
+      } else {
+        thumbnailVideos.forEach((video) => video.play().catch(() => {}));
+      }
+
+      const hideMedia = (media) => {
+        if (!media) {
+          return;
+        }
+
+        media.hidden = true;
+        media.style.display = "none";
+      };
+
+      const showMedia = (media, display) => {
+        if (!media) {
+          return;
+        }
+
+        media.hidden = false;
+
+        if (display) {
+          media.style.display = display;
+        } else {
+          media.style.removeProperty("display");
+        }
+      };
+
+      const resetMedia = () => {
+        clearVideoLoopTimer(dialogVideo);
+        dialogVideo?.pause();
+        dialogVideo?.removeAttribute("src");
+        dialogVideo?.load();
+        hideMedia(dialogVideo);
+        dialogAudio?.pause();
+        dialogAudio?.removeAttribute("src");
+        dialogAudio?.load();
+        hideMedia(dialogAudio);
+        dialogImage?.removeAttribute("src");
+        hideMedia(dialogImage);
+        dialogPlaceholder.style.removeProperty("background");
+        hideMedia(dialogPlaceholder);
+        dialogColor.style.removeProperty("background");
+        hideMedia(dialogColor);
+        dialogControl.replaceChildren();
+        hideMedia(dialogControl);
+      };
+
+      const closeDialog = () => {
+        assetDialog?.removeAttribute("open");
+        resetMedia();
+        activeCard?.focus();
+        activeCard = null;
+      };
+
+      const openAssetDialog = (card) => {
+        const mediaType = card.dataset.assetMediaType;
+        activeCard = card;
+        dialogTitle.textContent = card.dataset.assetTitle || "Asset";
+        dialogSubtitle.textContent = card.dataset.assetSubtitle || "";
+        dialogFormat.textContent = card.dataset.assetFormat || "";
+        const isAnimation = card.dataset.assetFormat === "Animation";
+        dialogDetail.hidden = isAnimation;
+        dialogDetail.style.display = isAnimation ? "none" : "";
+        dialogDetailLabel.textContent = mediaType === "audio" ? "Duration" : "Resolution";
+        dialogResolution.textContent = mediaType === "audio"
+          ? (card.dataset.assetDuration || "Not specified")
+          : (card.dataset.assetResolution || "Not specified");
+        dialogPreview.setAttribute("ar", card.dataset.assetDialogAspectRatio || "16/9");
+        resetMedia();
+
+        if (mediaType === "video") {
+          showMedia(dialogVideo, "block");
+          dialogVideo.controls = card.dataset.assetVideoControls === "true";
+          dialogVideo.muted = false;
+          dialogVideo.volume = 1;
+          dialogVideo.src = card.dataset.assetSrc || "";
+          dialogVideo.load();
+          dialogVideo.play().catch(() => {
+            dialogVideo.muted = true;
+            dialogVideo.play().catch(() => {});
+          });
+        } else if (mediaType === "audio") {
+          showMedia(dialogAudio, "block");
+          dialogAudio.src = card.dataset.assetSrc || "";
+          dialogAudio.load();
+          dialogAudio.play().catch(() => {});
+        } else if (mediaType === "image") {
+          dialogImage.setAttribute("src", card.dataset.assetSrc || "");
+          dialogImage.setAttribute("alt", (card.dataset.assetTitle || "Asset") + " preview");
+          showMedia(dialogImage);
+        } else if (card.dataset.assetFormat === "Control") {
+          const controlPreview = card.querySelector("[data-rvn-control-preview]");
+          dialogControl.innerHTML = controlPreview?.innerHTML || "";
+          showMedia(dialogControl);
+        } else if (card.dataset.assetColor) {
+          dialogColor.style.background = card.dataset.assetColor;
+          showMedia(dialogColor);
+        } else {
+          dialogPlaceholderLabel.textContent = card.dataset.assetPlaceholder || "Resource";
+          showMedia(dialogPlaceholder);
+        }
+
+        assetDialog.setAttribute("open", "");
+        assetDialog.dialog?.setAttribute("aria-labelledby", "rvn-asset-dialog-title");
+        assetDialog.dialog?.setAttribute("aria-describedby", "rvn-asset-dialog-subtitle");
+      };
+
+      document.querySelectorAll("[data-rvn-asset-card]").forEach((card) => {
+        card.addEventListener("click", () => openAssetDialog(card));
+        card.addEventListener("keydown", (event) => {
+          if (event.key !== "Enter" && event.key !== " ") {
+            return;
+          }
+
+          event.preventDefault();
+          openAssetDialog(card);
+        });
+      });
+
+      assetDialog?.addEventListener("close", closeDialog);
+
+      const copyButton = document.getElementById("rvn-add-pack-button");
+      copyButton?.addEventListener("click", async () => {
+        const importUrl = new URL(copyButton.dataset.importUrl, window.location.origin).href;
+
+        try {
+          await navigator.clipboard.writeText(importUrl);
+          globalUI?.transformedHandlers?.handleShowToast({
+            message: "Import URL copied.",
+          });
+        } catch (error) {
+          console.error("Failed to copy import URL", error);
+          globalUI?.transformedHandlers?.handleShowToast({
+            message: "Could not copy the import URL.",
+          });
+        }
+      });
+    })();
