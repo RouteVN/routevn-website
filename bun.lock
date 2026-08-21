@@ -5,6 +5,7 @@
     "": {
       "devDependencies": {
         "js-yaml": "^4.1.1",
+        "markdown-it": "^14.1.0",
         "rtgl": "1.4.0",
       },
     },

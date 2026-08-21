@@ -3,7 +3,7 @@ template: documentation
 title: Page Index
 seo:
   title: "Page Index | RouteVN Creator Docs"
-  description: "This page gives an overview of the main pages inside RouteVN Creator. Use it as a quick index when you want to understand where a feature lives before."
+  description: "Find the RouteVN Creator page for each feature before opening its detailed guide."
 sidebarId: page-index
 ---
 

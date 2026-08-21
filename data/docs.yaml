@@ -18,7 +18,7 @@ items:
       - id: page-index
         title: "Page Index"
         href: "/en/creator/docs/page-index/"
-      - id: features-and-limitations
+      - id: features-limitations
         title: "Features & Limitations"
         href: "/en/creator/docs/features-and-limitations/"
       - id: file-explorer

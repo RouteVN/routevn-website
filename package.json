@@ -2,13 +2,14 @@
   "type": "module",
   "scripts": {
     "asset-store:import": "bun scripts/import-asset-package.js",
-    "build": "rtgl sites build",
+    "build": "bun scripts/build.js",
     "watch": "rtgl sites watch",
     "screenshots": "rtgl sites screenshots",
-    "test": "node --test scripts/import-asset-package.test.js"
+    "test": "node --test scripts/*.test.js"
   },
   "devDependencies": {
     "js-yaml": "^4.1.1",
+    "markdown-it": "^14.1.0",
     "rtgl": "1.4.0"
   }
 }
