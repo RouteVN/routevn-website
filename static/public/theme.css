@@ -377,6 +377,7 @@ pre {
   margin: auto;
   max-height: none;
   max-width: none;
+  outline: none;
   overflow: hidden;
   padding: clamp(16px, 4vw, 48px);
   width: 100vw;
