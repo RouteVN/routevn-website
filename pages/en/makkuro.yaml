@@ -3,8 +3,13 @@ template: base
 title: Makkuro
 footerSpacerHeight: 96
 seo:
-  title: Makkuro - RouteVN
-  description: Makkuro — 真っ黒.
+  title: Makkuro 真っ黒 - RouteVN
+  description: A mysterious girl who likes to create stories, draw illustrations and make music
+  ogImage: https://routevn.com/public/makkuro/makkuro-og.png
+  ogImageWidth: 1200
+  ogImageHeight: 630
+  ogImageAlt: Makkuro surrounded by creative tools
+  ogImageType: image/png
 ---
 - rtgl-view h="80" md-h="48":
 - 'rtgl-view w="1200" xl-w="calc(100vw - 64px)" md-w="calc(100vw - 48px)" d="h" md-d="v" av="c" g="xl" role="main"':
@@ -14,7 +19,7 @@ seo:
         - 'rtgl-text s="h1" role="heading" aria-level="1"': Makkuro
         - 'rtgl-text s="h1" lang="ja"': 真っ黒
         - rtgl-view h="8":
-        - 'rtgl-text s="lg" c="mu-fg"': A mysterious girl who likes to create stories, draw illustrations and make music.
+        - 'rtgl-text s="lg" c="mu-fg"': A mysterious girl who likes to create stories, draw illustrations and make music
         - rtgl-view h="16":
         - 'rtgl-grid cols="2" g="lg" w="f"':
             - rtgl-view g="sm":
