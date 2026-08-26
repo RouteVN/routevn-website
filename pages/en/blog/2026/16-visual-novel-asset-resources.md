@@ -2,25 +2,25 @@
 template: post
 author: [han4wluc]
 authorDisplay: han4wluc
-title: Visual Novel Asset Resources
+title: Recommended Free Assets for Visual Novels
 url: /en/blog/visual-novel-asset-resources/
 tags: [blogPost]
-date: '2026-07-18'
-thumbnail: /public/images/routevn_og.png
+date: '2026-08-26'
+thumbnail: /public/blog/2026/16/recommended-free-assets-og.png
 seo:
-  title: Visual Novel Asset Resources - RouteVN Blog
+  title: Recommended Free Assets for Visual Novels - RouteVN Blog
   description: Find art, background, music, and sound resources for your visual novel, with practical guidance for checking licenses and recording credits.
   ogType: article
-  ogImage: https://routevn.com/public/images/routevn_og.png
+  ogImage: https://routevn.com/public/blog/2026/16/recommended-free-assets-og.png
   ogImageWidth: 1200
   ogImageHeight: 630
-  ogImageAlt: RouteVN – The Dedicated Platform for Visual Novels
+  ogImageAlt: Recommended Free Assets for Visual Novels
   ogImageType: image/png
 ---
 
-Creating a visual novel often requires backgrounds, character art, music, sound effects, and interface assets. You do not need to create every asset yourself.
+Making a visual novel can feel overwhelming. There are many parts to create and manage, including backgrounds, character art, music, sound effects, and interface assets.
 
-Most of the resources in this guide offer content that is free to use and royalty-free under their published terms. Some individual assets, collections, or premium versions are paid, so check the price and license before using them.
+The good news is that you do not need to make everything from scratch. Existing assets can reduce the workload and help you start building your visual novel.
 
 ## Why use pre-made assets
 
@@ -37,20 +37,18 @@ This list introduces places where you can find free and paid assets for your pro
 
 Check the license for every asset before adding it to your project. Assets on the same platform can have different rules.
 
-Confirm whether the license allows you to:
+Check the license for:
 
-- Use the asset in a commercial project.
-- Modify, crop, recolour, or convert the asset.
-- Publish the asset as part of your visual novel.
-- Use the asset without credit, or how the creator must be credited.
+- Credit requirements for the original artist
+- Permission for commercial use
+- Permission to modify the asset
+- Any other restrictions imposed by the creator
 
-Check the dimensions before downloading a background. A common visual novel resolution is 1920 × 1080, so an image at that size or larger should work well for a project using that resolution. Smaller backgrounds may look blurry or pixelated when enlarged to fill the screen.
+Many platforms allow AI-generated content but cannot reliably enforce disclosure. Some creators are more transparent than others, so do your own research to determine whether an asset was AI-generated.
 
-Keep a record of the asset name, creator, source link, download date, and license. Save a copy of the license with your project files when possible. This will make it easier to prepare your credits and check usage rights before publishing.
+Record each asset’s name, creator, and source link so you can verify usage rights and refer to this information later when preparing your credits page.
 
 ## Asset platforms
-
-These platforms allow AI-generated content and generally require creators to disclose it. Check the product description to see whether an asset was AI-generated.
 
 ### itch.io
 
@@ -78,7 +76,7 @@ Browse these categories as a starting point:
 - [Sound effects](https://booth.pm/en/browse/Sound%20Effects?in_stock=true&sort=new&type=digital)
 - [Character sprites](https://booth.pm/en/browse/Source%20Materials?in_stock=true&sort=new&tags%5B%5D=%E7%AB%8B%E3%81%A1%E7%B5%B5&type=digital)
 
-These searches return many results, so BOOTH offers a wide variety of content. However, finding the right asset can take time. Add more specific keywords for the location, mood, genre, or art style you need to narrow the results.
+My main difficulty with BOOTH is the amount of material available. Quality varies, so filtering the results to find the resources I need can take significant time. Add specific keywords for the location, mood, genre, or art style you need to narrow the results.
 
 BOOTH has an English interface, but many product descriptions and licenses are written in Japanese. Use a translator if needed.
 
@@ -88,17 +86,23 @@ BOOTH has an English interface, but many product descriptions and licenses are w
 
 [効果音ラボ](https://soundeffect-lab.info/) is my favourite place to find sound effects. It has almost everything I need for a visual novel, including button and system sounds, dramatic effects, environmental ambience, everyday sounds, combat, machines, vehicles, nature, and animals.
 
+<img src="/public/blog/2026/16/sound-effect-lab.png" alt="Sound Effect Lab page listing everyday sound effects" style="width: 100%; margin-bottom: 24px; border: 1px solid var(--border); box-sizing: border-box;">
+
 The website is only available in Japanese, so use a translator to browse its categories and read the terms. Its standard terms allow free commercial use without mandatory credit, but redistribution is not allowed. Read the [usage rules](https://soundeffect-lab.info/agreement/) before downloading.
 
+<!--
 ### ポケットサウンド (Pocket Sound)
 
 [ポケットサウンド](https://en.pocket-se.info/) provides royalty-free background music and sound effects across categories such as interface sounds, nature, daily life, machines, and ambience.
 
 ポケットサウンド requires credit for free downloads. Read its [usage rules](https://en.pocket-se.info/rules/) for the required credit format and other conditions.
+-->
 
 ### DOVA-SYNDROME
 
 [DOVA-SYNDROME](https://dova-s.jp/en/) provides a large searchable collection of background music, jingles, and sound effects from multiple creators. The website is available in several languages.
+
+<img src="/public/blog/2026/16/dova-syndrome.png" alt="DOVA-SYNDROME page for searching free background music and sound effects" style="width: 100%; margin-bottom: 24px; border: 1px solid var(--border); box-sizing: border-box;">
 
 Each track has its own page, so you need to open and preview tracks one at a time. This can make it less convenient to compare many tracks quickly.
 
@@ -108,6 +112,10 @@ The resources can be used without a usage fee or mandatory credit under the site
 
 [音楽の卵](https://ontama-m.com/ongaku.html) is a music resource site by the musician takai. It includes a good collection of piano pieces and other background music for games and creative work.
 
+<img src="/public/blog/2026/16/ongaku-no-tamago.png" alt="音楽の卵 page listing downloadable piano background music" style="width: 100%; margin-bottom: 24px; border: 1px solid var(--border); box-sizing: border-box;">
+
+We have used several of its piano pieces in RouteVN demos and tutorials and enjoyed them a lot.
+
 Its original music can be used for free in personal and commercial projects under the published terms. The site is in Japanese, so translate and read the full license before downloading a track.
 
 ## Background art
@@ -116,14 +124,16 @@ Its original music can be used for free in personal and commercial projects unde
 
 [みんちりえ](https://min-chi.material.jp/) provides illustrated backgrounds for a wide variety of settings, most with a Japanese theme. Its collection includes homes, schools, shops, streets, and seasonal locations.
 
+<img src="/public/blog/2026/16/minchirie-backgrounds.png" alt="みんちりえ page showing illustrated backgrounds for schools, homes, streets, parks, and shops" style="width: 100%; margin-bottom: 24px; border: 1px solid var(--border); box-sizing: border-box;">
+
 Paid background materials are also available through the creator's [pixivFANBOX](https://min-chi.fanbox.cc/).
 
 The site allows free personal and commercial use under its terms, including modifications. Each asset page includes usage rules that you should read before downloading the image.
 
 ## Conclusion
 
-Using pre-made assets is a practical way to start making a visual novel. Although creating everything from scratch may be ideal, every project has limits on time and resources.
+We have attempted to compile a list of good-quality free assets to make it easier to start creating a visual novel.
 
-Using pre-made assets for selected parts of your project can reduce the workload, letting you focus on the parts you care about most. If you have more time and resources later, you can always replace them with custom assets.
+Free assets can help you begin quickly and save significant production time, whether you use them as placeholders or include them in the final version of your project.
 
-Happy visual novel making. We look forward to seeing what you create.
+This is not a complete list. Many more resources are available, and we plan to continue researching useful options and update this post with new additions.
