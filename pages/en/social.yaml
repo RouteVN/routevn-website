@@ -3,13 +3,27 @@ template: social
 title: Follow RouteVN
 seo:
   title: Follow RouteVN
-  description: Follow RouteVN on Instagram, TikTok, Tumblr, YouTube, Discord, X, Bluesky, Reddit, LinkedIn, GitHub, and itch.io.
+  description: Follow RouteVN on Instagram, Facebook, TikTok, Tumblr, YouTube, Discord, X, Bluesky, Reddit, LinkedIn, GitHub, and itch.io.
 ---
+- style: |
+    .rvn-social-links {
+      box-sizing: border-box;
+      display: grid;
+      gap: var(--spacing-lg);
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      width: 100%;
+    }
+
+    @media (max-width: 768px) {
+      .rvn-social-links {
+        grid-template-columns: minmax(0, 1fr);
+      }
+    }
 - h1 class="sr-only": Follow RouteVN
 - 'rtgl-view w="f" g="xl" p="xl" br="xl" bw="xs" bgc="se"':
     - rtgl-view w="f" ah="c":
         - rtgl-text: Follow on social media
-    - rtgl-view g="lg" w="f":
+    - 'div class="rvn-social-links"':
         - $for link in site.socialPage.links:
             - 'a href="${link.href}" rel="noreferrer" aria-label="Open ${link.name}" style="display: contents; text-decoration: none; color: inherit;"':
                 - 'rtgl-view d="h" av="c" g="lg" w="f" p="lg" br="lg" bw="xs" bgc="bg" cur="p"':
