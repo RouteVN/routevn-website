@@ -3,7 +3,7 @@ template: post
 author: [han4wluc]
 authorDisplay: han4wluc
 title: Recommended Free Assets for Visual Novels
-url: /en/blog/visual-novel-asset-resources/
+url: /en/blog/recommended-free-assets-for-visual-novels/
 tags: [blogPost]
 date: '2026-08-26'
 thumbnail: /public/blog/2026/16/recommended-free-assets-og.png
