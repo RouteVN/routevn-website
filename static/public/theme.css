@@ -334,6 +334,11 @@ pre {
   min-width: 0 !important;
 }
 
+#content-container img {
+  height: auto;
+  max-width: 100%;
+}
+
 #content-container > *,
 #content-container li {
   box-sizing: border-box;
