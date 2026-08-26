@@ -34,12 +34,6 @@
       margin: 0;
     }
 
-    .rvn-video-tutorial-series-grid {
-      display: grid;
-      gap: 16px;
-      grid-template-columns: repeat(3, minmax(0, 1fr));
-    }
-
     .rvn-video-tutorial-card {
       background: var(--surface);
       border: 1px solid var(--border);
@@ -64,10 +58,7 @@
       aspect-ratio: 16 / 9;
       background: var(--muted);
       border-bottom: 1px solid var(--border);
-      display: grid;
       overflow: hidden;
-      place-items: center;
-      position: relative;
       width: 100%;
     }
 
@@ -96,22 +87,10 @@
       margin: 0;
     }
 
-    .rvn-video-tutorial-series-cta-wrap {
-      display: flex;
-      justify-content: center;
-      margin-top: 32px;
-    }
-
     @media (max-width: 1280px) {
       .rvn-video-tutorial-series-shell {
         max-width: none;
         width: calc(100% - 32px);
-      }
-    }
-
-    @media (max-width: 900px) {
-      .rvn-video-tutorial-series-grid {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
       }
     }
 
@@ -123,10 +102,6 @@
 
       .rvn-video-tutorial-series-title {
         font-size: 2rem;
-      }
-
-      .rvn-video-tutorial-series-grid {
-        grid-template-columns: 1fr;
       }
     }
 
@@ -142,25 +117,25 @@
     }
 
 - 'section class="rvn-video-tutorial-series"':
-    - 'div class="rvn-video-tutorial-series-shell"':
-        - 'div class="rvn-video-tutorial-series-header"':
+    - 'rtgl-view class="rvn-video-tutorial-series-shell" d="v"':
+        - 'rtgl-view class="rvn-video-tutorial-series-header" d="v"':
             - 'h2 class="rvn-video-tutorial-series-title"': ${title}
             - $if message:
                 - 'p class="rvn-video-tutorial-series-message"': ${message}
-        - 'div class="rvn-video-tutorial-series-grid"':
+        - 'rtgl-grid cols="3" md-cols="1" g="lg" w="f"':
             - $for item in items:
                 - $if item.href:
                     - 'a class="rvn-video-tutorial-card" href="${item.href}" target="_blank" rel="noreferrer"':
-                        - 'div class="rvn-video-tutorial-card-media"':
+                        - 'rtgl-view class="rvn-video-tutorial-card-media" av="c" ah="c"':
                             - 'img src="${item.imgSrc}" alt="${item.title} tutorial thumbnail"':
-                        - 'div class="rvn-video-tutorial-card-body"':
+                        - 'rtgl-view class="rvn-video-tutorial-card-body" d="v"':
                             - 'h3 class="rvn-video-tutorial-card-title"': ${item.title}
                   $else:
                     - 'article class="rvn-video-tutorial-card" aria-label="${item.title}. Coming soon."':
-                        - 'div class="rvn-video-tutorial-card-media"':
+                        - 'rtgl-view class="rvn-video-tutorial-card-media" av="c" ah="c"':
                             - 'span class="rvn-video-tutorial-card-placeholder"': Coming soon
-                        - 'div class="rvn-video-tutorial-card-body"':
+                        - 'rtgl-view class="rvn-video-tutorial-card-body" d="v"':
                             - 'h3 class="rvn-video-tutorial-card-title"': ${item.title}
         - $if learnMoreHref:
-            - 'div class="rvn-video-tutorial-series-cta-wrap"':
+            - rtgl-view ah="c" mt="xl":
                 - 'a href="${learnMoreHref}"': ${learnMoreLabel}

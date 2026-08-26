@@ -2,6 +2,10 @@
 
 Official website for [RouteVN](https://routevn.com)
 
+## Development
+
+- [Engineering guidelines](internal/engineering.md)
+
 ## License
 
 This project uses a **dual-license structure**:
