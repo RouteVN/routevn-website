@@ -131,6 +131,11 @@ socialPage:
       href: https://www.linkedin.com/showcase/110652448
       svg: linkedin
       iconColor: "#0A66C2"
+    - name: Facebook
+      handle: "RouteVN"
+      href: https://www.facebook.com/profile.php?id=61592791533235
+      svg: facebook
+      iconColor: "#0866FF"
 
 landing:
   discord:
