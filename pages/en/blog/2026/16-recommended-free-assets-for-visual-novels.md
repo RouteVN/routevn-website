@@ -3,15 +3,15 @@ template: post
 author: [han4wluc]
 authorDisplay: han4wluc
 title: Recommended Free Assets for Visual Novels
-url: /en/blog/visual-novel-asset-resources/
+url: /en/blog/recommended-free-assets-for-visual-novels/
 tags: [blogPost]
 date: '2026-08-26'
-thumbnail: /public/blog/2026/16/recommended-free-assets-og.png
+thumbnail: /public/blog/2026/16/recommended-free-assets-for-visual-novels-og.png
 seo:
   title: Recommended Free Assets for Visual Novels - RouteVN Blog
   description: Find art, background, music, and sound resources for your visual novel, with practical guidance for checking licenses and recording credits.
   ogType: article
-  ogImage: https://routevn.com/public/blog/2026/16/recommended-free-assets-og.png
+  ogImage: https://routevn.com/public/blog/2026/16/recommended-free-assets-for-visual-novels-og.png
   ogImageWidth: 1200
   ogImageHeight: 630
   ogImageAlt: Recommended Free Assets for Visual Novels
