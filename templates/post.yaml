@@ -107,3 +107,4 @@
                 window.requestAnimationFrame(() => window.requestAnimationFrame(scrollToHash));
               }
             })();
+        - script src="/public/image-lightbox.js":
