@@ -20,7 +20,7 @@ Open RouteVN Creator before you start so you can follow each step in the app.
 ### Creator pages
 
 - Introduction to RouteVN
-- Project Overview
+- Customizing Your Visual Novel Layout
 - Images
 - Audio
 - Videos

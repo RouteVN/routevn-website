@@ -249,7 +249,7 @@ creator:
         - title: Creating Your First Visual Novel Project
           imgSrc: /public/creator/tutorials/creating-your-first-visual-novel-project.jpg
           href: https://www.youtube.com/watch?v=ijrdTYZA1eA
-        - title: RouteVN Creator Project Overview
+        - title: Customizing Your Visual Novel Layout
         - title: Working with Images and Assets
     functionalityGrid:
       title: Everything you need for your Visual Novel
