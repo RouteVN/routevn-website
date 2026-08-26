@@ -1,0 +1,166 @@
+- style: |
+    .rvn-video-tutorial-series {
+      background: ${default(backgroundColor, 'var(--background)')};
+      color: var(--foreground);
+      margin-left: calc(50% - 50vw);
+      margin-right: calc(50% - 50vw);
+      width: 100vw;
+    }
+
+    .rvn-video-tutorial-series-shell {
+      box-sizing: border-box;
+      margin: 0 auto;
+      max-width: 1200px;
+      padding: 80px 0;
+      width: min(1200px, 100%);
+    }
+
+    .rvn-video-tutorial-series-header {
+      margin-bottom: 36px;
+      max-width: 760px;
+    }
+
+    .rvn-video-tutorial-series-title {
+      font-size: 2.5rem;
+      font-weight: 600;
+      line-height: 1.05;
+      margin: 0 0 12px;
+    }
+
+    .rvn-video-tutorial-series-message {
+      color: var(--foreground);
+      font-size: var(--lg-font-size);
+      line-height: var(--lg-line-height);
+      margin: 0;
+    }
+
+    .rvn-video-tutorial-series-grid {
+      display: grid;
+      gap: 16px;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    .rvn-video-tutorial-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      box-sizing: border-box;
+      color: inherit;
+      display: block;
+      min-width: 0;
+      overflow: hidden;
+      text-decoration: none;
+      transition: border-color 160ms ease, transform 160ms ease;
+    }
+
+    a.rvn-video-tutorial-card:hover,
+    a.rvn-video-tutorial-card:focus-visible {
+      border-color: var(--foreground);
+      outline: none;
+      transform: translateY(-2px);
+    }
+
+    .rvn-video-tutorial-card-media {
+      aspect-ratio: 16 / 9;
+      background: var(--muted);
+      border-bottom: 1px solid var(--border);
+      display: grid;
+      overflow: hidden;
+      place-items: center;
+      position: relative;
+      width: 100%;
+    }
+
+    .rvn-video-tutorial-card-media img {
+      display: block;
+      height: 100%;
+      object-fit: cover;
+      width: 100%;
+    }
+
+    .rvn-video-tutorial-card-placeholder {
+      color: var(--muted-foreground);
+      font-size: var(--sm-font-size);
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    .rvn-video-tutorial-card-body {
+      padding: 18px;
+    }
+
+    .rvn-video-tutorial-card-title {
+      font-size: 1.15rem;
+      font-weight: 600;
+      line-height: 1.3;
+      margin: 0;
+    }
+
+    .rvn-video-tutorial-series-cta-wrap {
+      display: flex;
+      justify-content: center;
+      margin-top: 32px;
+    }
+
+    @media (max-width: 1280px) {
+      .rvn-video-tutorial-series-shell {
+        max-width: none;
+        width: calc(100% - 32px);
+      }
+    }
+
+    @media (max-width: 900px) {
+      .rvn-video-tutorial-series-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+    }
+
+    @media (max-width: 600px) {
+      .rvn-video-tutorial-series-shell {
+        padding: 64px 0;
+        width: calc(100% - 16px);
+      }
+
+      .rvn-video-tutorial-series-title {
+        font-size: 2rem;
+      }
+
+      .rvn-video-tutorial-series-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .rvn-video-tutorial-card {
+        transition: none;
+      }
+
+      a.rvn-video-tutorial-card:hover,
+      a.rvn-video-tutorial-card:focus-visible {
+        transform: none;
+      }
+    }
+
+- 'section class="rvn-video-tutorial-series"':
+    - 'div class="rvn-video-tutorial-series-shell"':
+        - 'div class="rvn-video-tutorial-series-header"':
+            - 'h2 class="rvn-video-tutorial-series-title"': ${title}
+            - $if message:
+                - 'p class="rvn-video-tutorial-series-message"': ${message}
+        - 'div class="rvn-video-tutorial-series-grid"':
+            - $for item in items:
+                - $if item.href:
+                    - 'a class="rvn-video-tutorial-card" href="${item.href}" target="_blank" rel="noreferrer"':
+                        - 'div class="rvn-video-tutorial-card-media"':
+                            - 'img src="${item.imgSrc}" alt="${item.title} tutorial thumbnail"':
+                        - 'div class="rvn-video-tutorial-card-body"':
+                            - 'h3 class="rvn-video-tutorial-card-title"': ${item.title}
+                  $else:
+                    - 'article class="rvn-video-tutorial-card" aria-label="${item.title}. Coming soon."':
+                        - 'div class="rvn-video-tutorial-card-media"':
+                            - 'span class="rvn-video-tutorial-card-placeholder"': Coming soon
+                        - 'div class="rvn-video-tutorial-card-body"':
+                            - 'h3 class="rvn-video-tutorial-card-title"': ${item.title}
+        - $if learnMoreHref:
+            - 'div class="rvn-video-tutorial-series-cta-wrap"':
+                - 'a href="${learnMoreHref}"': ${learnMoreLabel}

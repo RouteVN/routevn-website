@@ -1,8 +1,10 @@
 - style: |
     .rvn-functionality-grid {
-      background: var(--background);
+      background: ${default(backgroundColor, 'var(--background)')};
       color: var(--foreground);
-      width: 100%;
+      margin-left: calc(50% - 50vw);
+      margin-right: calc(50% - 50vw);
+      width: 100vw;
     }
     .rvn-functionality-grid-shell {
       box-sizing: border-box;

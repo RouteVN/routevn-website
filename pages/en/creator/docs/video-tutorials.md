@@ -3,15 +3,21 @@ template: documentation
 title: Video Tutorials
 seo:
   title: "Video Tutorials | RouteVN Creator Docs"
-  description: "Official RouteVN video tutorials."
+  description: "Official RouteVN Creator video tutorials for making Visual Novels."
 sidebarId: video-tutorials
 ---
 
-Official RouteVN video tutorials.
+Learn RouteVN Creator with official step-by-step video tutorials.
 
-A link will be shared once each tutorial is ready.
+## Available tutorials
 
-## Creator pages
+- [Creating Your First Visual Novel Project](https://www.youtube.com/watch?v=ijrdTYZA1eA)
+
+Open RouteVN Creator before you start so you can follow each step in the app.
+
+## Planned tutorials
+
+### Creator pages
 
 - Introduction to RouteVN
 - Project Overview
@@ -38,7 +44,7 @@ A link will be shared once each tutorial is ready.
 - Web Server
 - Publish
 
-## Scene Editor actions
+### Scene Editor actions
 
 - Dialogue
 - Choices

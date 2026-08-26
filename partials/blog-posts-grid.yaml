@@ -1,8 +1,10 @@
 - style: |
     .rvn-blog-posts-grid {
-      background: var(--background);
+      background: ${default(backgroundColor, 'var(--background)')};
       color: var(--foreground);
-      width: 100%;
+      margin-left: calc(50% - 50vw);
+      margin-right: calc(50% - 50vw);
+      width: 100vw;
     }
     .rvn-blog-posts-grid-shell {
       box-sizing: border-box;
@@ -122,28 +124,6 @@
       margin-top: 28px;
       width: 100%;
     }
-    .rvn-blog-posts-grid-cta {
-      align-items: center;
-      border: 1px solid var(--border);
-      border-radius: 8px;
-      box-sizing: border-box;
-      color: inherit;
-      display: inline-flex;
-      font-size: var(--md-font-size);
-      gap: 8px;
-      justify-content: center;
-      line-height: var(--md-line-height);
-      min-height: 44px;
-      padding: 8px 18px;
-      text-decoration: none;
-      transition: background 160ms ease, border-color 160ms ease;
-    }
-    .rvn-blog-posts-grid-cta:hover,
-    .rvn-blog-posts-grid-cta:focus-visible {
-      background: var(--accent);
-      border-color: var(--foreground);
-      outline: none;
-    }
     @media (max-width: 1100px) {
       .rvn-blog-posts-grid-list {
         grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -174,8 +154,7 @@
       }
     }
     @media (prefers-reduced-motion: reduce) {
-      .rvn-blog-post-card,
-      .rvn-blog-posts-grid-cta {
+      .rvn-blog-post-card {
         transition: none;
       }
       .rvn-blog-post-card:hover,
@@ -207,4 +186,4 @@
                             - 'p class="rvn-blog-post-card-message"': ${item.data.seo.description}
         - $if ctaHref:
             - 'div class="rvn-blog-posts-grid-cta-wrap"':
-                - 'a class="rvn-blog-posts-grid-cta" href="${ctaHref}"': ${ctaLabel}
+                - 'a href="${ctaHref}"': ${ctaLabel}

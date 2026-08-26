@@ -95,24 +95,45 @@ alternates:
 - $partial: functionality-grid
   title: ${site.creator.about.functionalityGrid.title}
   message: ${site.creator.about.functionalityGrid.message}
+  backgroundColor: "#141414"
   sideImageSrc: ${site.creator.about.functionalityGrid.sideImageSrc}
   items: ${site.creator.about.functionalityGrid.items}
 
-# Temporarily hidden. Restore this block to show "Video tutorials from the creator of RouteVN".
-# - $partial: feature1
-#   title: ${site.creator.about.videoTutorialsFeature.title}
-#   message: ${site.creator.about.videoTutorialsFeature.message}
-#   backgroundColor: ${site.creator.about.videoTutorialsFeature.backgroundColor}
-#   foregroundColor: ${site.creator.about.videoTutorialsFeature.foregroundColor}
-#   themeClass: ${site.creator.about.videoTutorialsFeature.themeClass}
-#   imgSrc: ${site.creator.about.videoTutorialsFeature.imgSrc}
-#   features: ${site.creator.about.videoTutorialsFeature.features}
-#   learnMoreHref: ${site.creator.about.videoTutorialsFeature.learnMoreHref}
+- $partial: video-tutorial-series
+  title: ${site.creator.about.videoTutorialsFeature.title}
+  message: ${site.creator.about.videoTutorialsFeature.message}
+  backgroundColor: ${site.creator.about.videoTutorialsFeature.backgroundColor}
+  items: ${site.creator.about.videoTutorialsFeature.items}
+  learnMoreHref: ${site.creator.about.videoTutorialsFeature.learnMoreHref}
+  learnMoreLabel: ${site.creator.about.videoTutorialsFeature.learnMoreLabel}
 
 - style: |
     .rvn-about-faq-shell {
       box-sizing: border-box;
+      padding-bottom: 128px;
       width: min(1200px, 100%);
+    }
+
+    .rvn-about-faq-content {
+      color: var(--muted-foreground);
+    }
+
+    .rvn-about-faq-title {
+      font-size: 2.5rem;
+      font-weight: 600;
+      line-height: 1.05;
+      margin: 0;
+    }
+
+    .rvn-about-alternate-section {
+      background: #141414;
+      box-sizing: border-box;
+      display: flex;
+      justify-content: center;
+      margin-left: calc(50% - 50vw);
+      margin-right: calc(50% - 50vw);
+      padding: 100px 24px;
+      width: 100vw;
     }
 
     @media (max-width: 1280px) {
@@ -124,13 +145,23 @@ alternates:
 
     @media (max-width: 760px) {
       .rvn-about-faq-shell {
+        padding-bottom: 96px;
         width: calc(100% - 16px);
+      }
+
+      .rvn-about-faq-title {
+        font-size: 2rem;
+      }
+
+      .rvn-about-alternate-section {
+        padding: 80px 16px;
       }
     }
 
 - $partial: blog-posts-grid
   title: ${site.creator.about.blogPosts.title}
   message: ${site.creator.about.blogPosts.message}
+  backgroundColor: "#141414"
   sideImageSrc: ${site.creator.about.blogPosts.sideImageSrc}
   ctaLabel: ${site.creator.about.blogPosts.ctaLabel}
   ctaHref: ${site.creator.about.blogPosts.ctaHref}
@@ -139,21 +170,26 @@ alternates:
 - 'rtgl-view class="rvn-about-faq-shell" ah="c"':
     - rtgl-view d="h" md-d="v" w="f" av="c" g="lg" mb="lg":
         - rtgl-view w="1fg" md-w="f":
-            - rtgl-text s="h4": ${site.creator.about.faq.title}
+            - 'h2 class="rvn-about-faq-title"': ${site.creator.about.faq.title}
         - $if site.creator.about.faq.sideImageSrc:
             - 'rtgl-view md-hide w="140" h="140" aria-hidden="true" style="flex: 0 0 140px;"':
                 - 'img src="${site.creator.about.faq.sideImageSrc}" alt="" style="display: block; height: 100%; object-fit: contain; width: 100%;"':
     - rtgl-view g="lg" d="v" w="f":
         - $for item in site.creator.about.faq.items:
-            - rtgl-accordion-item w=f label="${item.title}" content="${item.content}":
+            - $if item.contentHtml:
+                - 'rtgl-accordion-item w=f label="${item.title}"':
+                    - 'span class="rvn-about-faq-content" slot="content"':
+                        - __html: "${item.contentHtml}"
+              $else:
+                - rtgl-accordion-item w=f label="${item.title}" content="${item.content}":
 
-- rtgl-view h="100":
-- $partial: cta1
-  title: ${site.creator.about.cta.title}
-  subtitle: ${site.creator.about.cta.subtitle}
-  imgSrc: ${site.creator.about.cta.imgSrc}
-  cta: ${site.creator.about.cta.cta}
-  secondaryCta: ${site.creator.about.cta.secondaryCta}
+- 'section class="rvn-about-alternate-section"':
+    - $partial: cta1
+      title: ${site.creator.about.cta.title}
+      subtitle: ${site.creator.about.cta.subtitle}
+      imgSrc: ${site.creator.about.cta.imgSrc}
+      cta: ${site.creator.about.cta.cta}
+      secondaryCta: ${site.creator.about.cta.secondaryCta}
 
 - $partial: youtube-video-card
   embedSrc: https://www.youtube-nocookie.com/embed/kX2XSwo0aEA?rel=0
