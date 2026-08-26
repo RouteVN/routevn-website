@@ -119,9 +119,9 @@
 - 'section class="rvn-video-tutorial-series"':
     - 'rtgl-view class="rvn-video-tutorial-series-shell" d="v"':
         - 'rtgl-view class="rvn-video-tutorial-series-header" d="v"':
-            - 'h2 class="rvn-video-tutorial-series-title"': ${title}
+            - 'rtgl-text class="rvn-video-tutorial-series-title" s="h2" role="heading" aria-level="2"': ${title}
             - $if message:
-                - 'p class="rvn-video-tutorial-series-message"': ${message}
+                - 'rtgl-text class="rvn-video-tutorial-series-message" s="lg"': ${message}
         - 'rtgl-grid cols="3" md-cols="1" g="lg" w="f"':
             - $for item in items:
                 - $if item.href:
@@ -129,13 +129,13 @@
                         - 'rtgl-view class="rvn-video-tutorial-card-media" av="c" ah="c"':
                             - 'img src="${item.imgSrc}" alt="${item.title} tutorial thumbnail"':
                         - 'rtgl-view class="rvn-video-tutorial-card-body" d="v"':
-                            - 'h3 class="rvn-video-tutorial-card-title"': ${item.title}
+                            - 'rtgl-text class="rvn-video-tutorial-card-title" s="lg" role="heading" aria-level="3"': ${item.title}
                   $else:
                     - 'article class="rvn-video-tutorial-card" aria-label="${item.title}. Coming soon."':
                         - 'rtgl-view class="rvn-video-tutorial-card-media" av="c" ah="c"':
-                            - 'span class="rvn-video-tutorial-card-placeholder"': Coming soon
+                            - 'rtgl-text class="rvn-video-tutorial-card-placeholder" s="sm"': Coming soon
                         - 'rtgl-view class="rvn-video-tutorial-card-body" d="v"':
-                            - 'h3 class="rvn-video-tutorial-card-title"': ${item.title}
+                            - 'rtgl-text class="rvn-video-tutorial-card-title" s="lg" role="heading" aria-level="3"': ${item.title}
         - $if learnMoreHref:
             - rtgl-view ah="c" mt="xl":
                 - 'a href="${learnMoreHref}"': ${learnMoreLabel}
