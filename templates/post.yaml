@@ -8,6 +8,11 @@
           publishedTime: ${date}
           modifiedTime: ${updatedAt}
         - link rel="stylesheet" href="/public/theme.css":
+        - style: |
+            /* Blog posts use <body> as their scroll container. */
+            html {
+              height: 100%;
+            }
         - script src="https://cdn.jsdelivr.net/npm/@rettangoli/ui@1.21.0/dist/rettangoli-iife-ui.min.js":
         - script src="/public/rtgl-icons.js":
     - body.dark:
@@ -21,7 +26,7 @@
                             - $partial: changelog-date
                               date: ${date}
                     - "${content}"
-                - 'rtgl-view lg-hide w="1fg" style="position: sticky; top: 64px;"':
+                - 'rtgl-view lg-hide w="1fg" style="align-self: flex-start; position: sticky; top: 64px;"':
                     - rtgl-page-outline id="page-outline" target-id="content-container":
             - rtgl-view d="h" h="30vh":
             - $partial: footer1
