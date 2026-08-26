@@ -240,20 +240,17 @@ creator:
       learnMoreHref: /en/creator/docs/animations/
       learnMoreLabel: Learn More
     videoTutorialsFeature:
-      title: Video tutorials from the creator of RouteVN
-      message: ""
-      backgroundColor: "#141414"
-      foregroundColor: var(--foreground)
-      themeClass: dark
-      imgSrc: /public/creator/routevn-demo-250108-thumb.png
+      title: Learn RouteVN Creator with video tutorials
+      message: Follow a growing series of step-by-step lessons covering the complete creation process, from starting a project to publishing your Visual Novel.
+      backgroundColor: var(--background)
       learnMoreHref: /en/creator/docs/video-tutorials/
-      features:
-        - title: Over 20 video tutorials
-          message: Step-by-step lessons for building visual novels in RouteVN Creator.
-        - title: Beginner to advanced
-          message: Covers the basics, production workflows, and more advanced Creator features.
-        - title: Available in 2 languages
-          message: Follow along in the language that works best for you.
+      learnMoreLabel: View all video tutorials
+      items:
+        - title: Creating Your First Visual Novel Project
+          imgSrc: /public/creator/tutorials/creating-your-first-visual-novel-project.jpg
+          href: https://www.youtube.com/watch?v=ijrdTYZA1eA
+        - title: Customizing Your Visual Novel Layout
+        - title: Working with Images and Assets
     functionalityGrid:
       title: Everything you need for your Visual Novel
       message: We look at all features that Visual Novels have, and implement it in a way that you can just use it.
@@ -322,7 +319,8 @@ creator:
       sideImageSrc: /public/landing/object-3.png
       items:
         - title: What makes RouteVN Creator different from other Visual Novel engines?
-          content: No coding, no technical background required. We built RouteVN Creator so anyone, including writers, artists, and hobbyists, can create their own Visual Novel. Easy to start, and stays organized as your project grows.
+          contentHtml: >-
+            No coding, no technical background required. We built RouteVN Creator so anyone, including writers, artists, and hobbyists, can create their own Visual Novel. It is easy to start and stays organized as your project grows. Read our <a href="/en/blog/routevn-vs-renpy/">RouteVN vs. Ren'Py comparison</a> for a detailed feature comparison.
         - title: Will RouteVN Creator always stay free?
           content: Yes, the free version will always be free and open source. We may add paid features in the future, but they will be optional and won't limit the free version.
         - title: How do I export my Visual Novel?
