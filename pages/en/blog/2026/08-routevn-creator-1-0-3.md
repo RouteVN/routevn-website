@@ -17,7 +17,7 @@ We have just released RouteVN Creator v1.0.3.
 
 This is our biggest update yet and a big step up in terms of product maturity, with new features and improvements across the board.
 
-<img src="/public/blog/2026/08/screenshot-3.png" style="width: 100%; margin-bottom: 24px; border: 1px solid var(--border); box-sizing: border-box;">
+<img src="/public/blog/2026/08/screenshot-3.png" style="width: 100%; margin-bottom: 24px; border: 1px solid var(--border); box-sizing: border-box;" width="1920" height="1080" decoding="async">
 
 ## Breaking change for older projects
 
@@ -53,13 +53,13 @@ This is not a claim that everything is perfect, but we now have a much more soli
 
 The Layout Editor is the biggest step up in terms of features in this release.
 
-<img src="/public/blog/2026/08/screenshot-1.png" style="width: 100%; margin-bottom: 24px; border: 1px solid var(--border); box-sizing: border-box;">
+<img src="/public/blog/2026/08/screenshot-1.png" style="width: 100%; margin-bottom: 24px; border: 1px solid var(--border); box-sizing: border-box;" width="1920" height="1080" decoding="async" loading="lazy">
 
 New projects now come with a fully functioning default UI, including Dialogue ADV, Dialogue NVL, title page, menu page, save/load pages, and options page.
 
 Users can keep the template and simply replace it with their own UI assets, or, for more adventurous users, use the Layout Editor to customize it further.
 
-<img src="/public/blog/2026/08/screenshot-2.png" style="width: 100%; margin-bottom: 24px; border: 1px solid var(--border); box-sizing: border-box;">
+<img src="/public/blog/2026/08/screenshot-2.png" style="width: 100%; margin-bottom: 24px; border: 1px solid var(--border); box-sizing: border-box;" width="1920" height="1080" decoding="async" loading="lazy">
 
 Building this has been very challenging technically, but we believe it is one of the features that makes RouteVN Creator unique: the ability to fully customize UI layouts and events without any coding.
 

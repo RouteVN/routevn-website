@@ -3,7 +3,7 @@
     - 'rtgl-view md-w="calc(100vw - 48px)" xl-w="calc(100vw - 64px)" w="1200" mh="xl" pb="lg" g="lg"':
         - rtgl-view d="h" md-d="v" w="f" av="c" g="lg":
             - rtgl-view g="md" w="1fg" ah="s":
-                - rtgl-text s=h1 mb="sm": ${title}
+                - 'h2 style="margin: 0 0 8px;"': ${title}
                 - $if message:
                     - rtgl-text s=lg: ${message}
                 - $if features:

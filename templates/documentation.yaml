@@ -1,9 +1,10 @@
+- __html: "<!doctype html>"
 - html lang="en":
     - head:
-        - $partial: seo
+        - $partial: seo1
           page: ${page}
           seo: ${seo}
-          title: ${title}
+          alternates: ${alternates}
         - link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@rettangoli/ui@1.21.0/dist/themes/base.css":
         - link rel="stylesheet" href="${default(themeCssHref, '/public/theme-rtgl-themes.css')}":
         - script src="/public/docs-sidebar-scroll.js" data-docs-sidebar-restore-scope="${docs.header.href}":
@@ -35,7 +36,7 @@
                     - rtgl-view w="1fg" ah=c:
                         - rtgl-view pv="lg" lg-w=f w="720" ph="lg" sv id="content-container":
                             - rtgl-view hide md-show h=56:
-                            - rtgl-text s="h1" mt="xl" mb="lg": ${title}
+                            - h1: ${title}
                             - "${content}"
                             - rtgl-view h=200:
                 - 'aside style="display: contents;"':

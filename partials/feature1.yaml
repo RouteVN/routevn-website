@@ -24,7 +24,7 @@
 - 'rtgl-view class="${themeClass}" w="f" ah="c" bgc="${backgroundColor}" style="background: ${backgroundColor}; box-sizing: border-box; color: ${foregroundColor}; margin-left: calc(50% - 50vw); margin-right: calc(50% - 50vw); width: 100vw;"':
     - rtgl-view h=96:
     - 'rtgl-view md-w="calc(100vw - 32px)" xl-w="calc(100vw - 64px)" w="1200" mh="xl" pb="xl" ah="c" g="md"':
-        - rtgl-text s=h1 mb=md ta=c: ${title}
+        - 'h2 style="text-align: center; margin: 0 0 16px;"': ${title}
         - $if message:
             - rtgl-text mb=lg ta=c: ${message}
         - rtgl-view h=80:

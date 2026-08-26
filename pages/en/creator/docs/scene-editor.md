@@ -1,13 +1,16 @@
 ---
 template: documentation
 title: Scene Editor
+seo:
+  title: "Scene Editor | RouteVN Creator Docs"
+  description: "Create and edit the lines of your story. Dialogue, choices, and other actions are added and edited on the scene editor canvas."
 sidebarId: scene-editor
 ---
 
 <img
   src="/public/creator/docs/reference/scene-editor-2.png"
   alt="Scene editor"
-  style="width: 100%; height: auto; display: block; border: 1px solid var(--border); box-sizing: border-box;"
+  style="width: 100%; height: auto; display: block; border: 1px solid var(--border); box-sizing: border-box;" width="1920" height="1080" decoding="async"
 />
 
 The scene editor is likely the page where largest amount of time is spent.

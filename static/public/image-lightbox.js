@@ -4,11 +4,16 @@
   }
 
   var content = document.getElementById('content-container');
-  if (!content) {
-    return;
-  }
-
-  var images = Array.prototype.slice.call(content.querySelectorAll('img'))
+  var contentImages = content
+    ? Array.prototype.slice.call(content.querySelectorAll('img'))
+    : [];
+  var optedInImages = Array.prototype.slice.call(
+    document.querySelectorAll('[data-rvn-image-lightbox]')
+  );
+  var images = contentImages.concat(optedInImages)
+    .filter(function (image, index, allImages) {
+      return allImages.indexOf(image) === index;
+    })
     .filter(function (image) {
       return !image.hasAttribute('data-rvn-no-preview')
         && !image.closest('a, button, [role="button"]');
@@ -53,10 +58,27 @@
     }
   }
 
+  function getImageSource(image) {
+    if (image.tagName === 'IMG') {
+      return image.currentSrc || image.src;
+    }
+
+    return image.getAttribute('src') || '';
+  }
+
+  function getImageAlt(image) {
+    return image.getAttribute('alt') || image.alt || '';
+  }
+
   function openPreview(image) {
+    var source = getImageSource(image);
+    if (!source) {
+      return;
+    }
+
     trigger = image;
-    preview.src = image.currentSrc || image.src;
-    preview.alt = image.alt || '';
+    preview.src = source;
+    preview.alt = getImageAlt(image);
 
     if (typeof dialog.showModal === 'function') {
       dialog.showModal();
@@ -68,8 +90,9 @@
   }
 
   images.forEach(function (image) {
-    var imageDescription = image.alt
-      ? 'Open image preview: ' + image.alt
+    var imageAlt = getImageAlt(image);
+    var imageDescription = imageAlt
+      ? 'Open image preview: ' + imageAlt
       : 'Open image preview';
 
     image.setAttribute('data-rvn-image-preview', 'true');

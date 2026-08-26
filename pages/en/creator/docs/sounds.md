@@ -1,13 +1,16 @@
 ---
 template: documentation
 title: Sounds
+seo:
+  title: "Sounds | RouteVN Creator Docs"
+  description: "On this page you can upload all sound files for your project. Sounds can be used as BGM, voice, or sound effects."
 sidebarId: sounds
 ---
 
 <img
   src="/public/creator/docs/reference/sounds-1.png"
   alt="Sounds page"
-  style="width: 100%; height: auto; display: block; border: 1px solid var(--border); box-sizing: border-box;"
+  style="width: 100%; height: auto; display: block; border: 1px solid var(--border); box-sizing: border-box;" width="1920" height="1080" decoding="async"
 />
 
 On this page you can upload all sound files for your project.

@@ -1,8 +1,10 @@
+- __html: "<!doctype html>"
 - html lang="${default(lang, 'en')}":
     - head:
         - $partial: seo1
           page: ${page}
           seo: ${seo}
+          alternates: ${alternates}
         - link rel="stylesheet" href="/public/theme.css":
         - script src="https://cdn.jsdelivr.net/npm/@rettangoli/ui@1.21.0/dist/rettangoli-iife-ui.min.js":
         - script src="/public/rtgl-icons.js":

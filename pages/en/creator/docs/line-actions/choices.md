@@ -1,13 +1,16 @@
 ---
 template: documentation
 title: Choices
+seo:
+  title: "Choices | RouteVN Creator Docs"
+  description: "Choices show a list of options that the player selects to branch the story. Each choice item runs its own action."
 sidebarId: choices
 ---
 
 <img
   src="/public/creator/docs/reference/choices-1.png"
   alt="Choices editor and preview"
-  style="width: 100%; height: auto; display: block; border: 1px solid var(--border); box-sizing: border-box;"
+  style="width: 100%; height: auto; display: block; border: 1px solid var(--border); box-sizing: border-box;" width="1920" height="1080" decoding="async"
 />
 
 Choices show a list of options for the player to select.

@@ -1,0 +1,79 @@
+---
+template: base
+title: Makkuro
+footerSpacerHeight: 96
+seo:
+  title: Makkuro 真っ黒 - RouteVN
+  description: A mysterious girl who likes to create stories, draw illustrations and make music
+  ogImage: https://routevn.com/public/makkuro/makkuro-og.png
+  ogImageWidth: 1200
+  ogImageHeight: 630
+  ogImageAlt: Makkuro surrounded by creative tools
+  ogImageType: image/png
+---
+- rtgl-view h="80" md-h="48":
+- 'rtgl-view w="1200" xl-w="calc(100vw - 64px)" md-w="calc(100vw - 48px)" d="h" md-d="v" av="c" g="xl" role="main"':
+    - 'rtgl-view w="1/2fb" md-w="f" ah="c"':
+        - 'rtgl-image data-rvn-image-lightbox cur="zoom-in" w="f" src="/public/makkuro/cover-illustration.png" alt="Cover illustration of Makkuro surrounded by creative tools"':
+    - 'rtgl-view w="1/2fb" md-w="f" g="lg"':
+        - 'rtgl-text s="h1" role="heading" aria-level="1"': Makkuro
+        - 'rtgl-text s="h1" lang="ja"': 真っ黒
+        - rtgl-view h="8":
+        - 'rtgl-text s="lg" c="mu-fg"': A mysterious girl who likes to create stories, draw illustrations and make music
+        - rtgl-view h="16":
+        - 'rtgl-grid cols="2" g="lg" w="f"':
+            - rtgl-view g="sm":
+                - 'rtgl-text s="sm" c="mu-fg"': Height
+                - 'rtgl-text s="lg"': 163cm
+            - rtgl-view g="sm":
+                - 'rtgl-text s="sm" c="mu-fg"': Birthday
+                - 'rtgl-text s="lg"': 5 May
+            - rtgl-view g="sm":
+                - 'rtgl-text s="sm" c="mu-fg"': Favourite food
+                - 'rtgl-text s="lg"': Anything with black sesame
+            - rtgl-view g="sm":
+                - 'rtgl-text s="sm" c="mu-fg"': Handedness
+                - 'rtgl-text s="lg"': Left-handed
+- rtgl-view h="80" md-h="48":
+- 'rtgl-view w="1200" xl-w="calc(100vw - 64px)" md-w="calc(100vw - 48px)" g="xl"':
+    - 'rtgl-view g="lg" w="f" role="region" aria-labelledby="makkuro-gallery-title"':
+        - 'rtgl-text id="makkuro-gallery-title" s="h2" role="heading" aria-level="2"': Gallery
+        - 'rtgl-grid cols="3" md-cols="1" g="lg" w="f"':
+            - 'rtgl-image data-rvn-image-lightbox cur="zoom-in" w="f" ar="16/9" of="con" bgc="su" bw="xs" bc="bo" br="lg" src="/public/makkuro/screenshots/reference-sheet.png" alt="Makkuro character reference sheet with front, side, and back views"':
+            - 'rtgl-image data-rvn-image-lightbox cur="zoom-in" w="f" ar="16/9" of="con" bgc="su" bw="xs" bc="bo" br="lg" src="/public/makkuro/screenshots/title-screen-simple.png" alt="Makkuro title screen with Makkuro in front of a starry blue and purple sky"':
+            - 'rtgl-image data-rvn-image-lightbox cur="zoom-in" w="f" ar="16/9" of="con" bgc="su" bw="xs" bc="bo" br="lg" src="/public/makkuro/screenshots/cg-illustration-1.png" alt="Makkuro smiling and gesturing while drawing at a desk"':
+            - 'rtgl-image data-rvn-image-lightbox cur="zoom-in" w="f" ar="16/9" of="con" bgc="su" bw="xs" bc="bo" br="lg" src="/public/makkuro/screenshots/outfit-design.png" alt="Makkuro outfit designs with shirts, sweaters, and hoodies"':
+            - 'rtgl-image data-rvn-image-lightbox cur="zoom-in" w="f" ar="16/9" of="con" bgc="su" bw="xs" bc="bo" br="lg" src="/public/makkuro/screenshots/video-thumbnail.png" alt="Makkuro sitting at her desk in front of a microphone"':
+    - 'rtgl-view g="lg" w="f" role="region" aria-labelledby="makkuro-sprites-title"':
+        - 'rtgl-text id="makkuro-sprites-title" s="h2" role="heading" aria-level="2"': Character sprites
+        - 'rtgl-grid cols="4" md-cols="2" sm-cols="1" g="lg" w="f"':
+            - 'rtgl-image data-rvn-image-lightbox cur="zoom-in" w="f" ar="3/4" of="con" bgc="su" bw="xs" bc="bo" br="lg" src="/public/makkuro/sprites/sprite-1-neutral.png" alt="Makkuro standing with her hands clasped"':
+            - 'rtgl-image data-rvn-image-lightbox cur="zoom-in" w="f" ar="3/4" of="con" bgc="su" bw="xs" bc="bo" br="lg" src="/public/makkuro/sprites/sprite-2-happy.png" alt="Makkuro smiling and pointing"':
+            - 'rtgl-image data-rvn-image-lightbox cur="zoom-in" w="f" ar="3/4" of="con" bgc="su" bw="xs" bc="bo" br="lg" src="/public/makkuro/sprites/sprite-3-nervous.png" alt="Makkuro smiling nervously"':
+            - 'rtgl-image data-rvn-image-lightbox cur="zoom-in" w="f" ar="3/4" of="con" bgc="su" bw="xs" bc="bo" br="lg" src="/public/makkuro/sprites/sprite-4-scheming.png" alt="Makkuro smiling with a scheming expression"':
+    - 'rtgl-view g="lg" w="f" role="region" aria-labelledby="makkuro-stickers-title"':
+        - 'rtgl-text id="makkuro-stickers-title" s="h2" role="heading" aria-level="2"': Stickers
+        - 'rtgl-grid cols="4" md-cols="2" g="lg" w="f"':
+            - 'rtgl-image data-rvn-image-lightbox cur="zoom-in" w="f" ar="1/1" of="con" bgc="su" bw="xs" bc="bo" br="lg" src="/public/makkuro/stickers/histicker.png" alt="Makkuro waving hello sticker"':
+            - 'rtgl-image data-rvn-image-lightbox cur="zoom-in" w="f" ar="1/1" of="con" bgc="su" bw="xs" bc="bo" br="lg" src="/public/makkuro/stickers/thanksticker.png" alt="Makkuro saying thanks sticker"':
+            - 'rtgl-image data-rvn-image-lightbox cur="zoom-in" w="f" ar="1/1" of="con" bgc="su" bw="xs" bc="bo" br="lg" src="/public/makkuro/stickers/sorrystickers.png" alt="Makkuro apologizing sticker"':
+            - 'rtgl-image data-rvn-image-lightbox cur="zoom-in" w="f" ar="1/1" of="con" bgc="su" bw="xs" bc="bo" br="lg" src="/public/makkuro/stickers/sticker_Cheer.png" alt="Makkuro cheering sticker"':
+            - 'rtgl-image data-rvn-image-lightbox cur="zoom-in" w="f" ar="1/1" of="con" bgc="su" bw="xs" bc="bo" br="lg" src="/public/makkuro/stickers/sticker_celebrate.png" alt="Makkuro celebrating sticker"':
+            - 'rtgl-image data-rvn-image-lightbox cur="zoom-in" w="f" ar="1/1" of="con" bgc="su" bw="xs" bc="bo" br="lg" src="/public/makkuro/stickers/sticker_stressed.png" alt="Makkuro feeling stressed sticker"':
+            - 'rtgl-image data-rvn-image-lightbox cur="zoom-in" w="f" ar="1/1" of="con" bgc="su" bw="xs" bc="bo" br="lg" src="/public/makkuro/stickers/sticker_thumbup.png" alt="Makkuro giving a thumbs-up sticker"':
+            - 'rtgl-image data-rvn-image-lightbox cur="zoom-in" w="f" ar="1/1" of="con" bgc="su" bw="xs" bc="bo" br="lg" src="/public/makkuro/stickers/sticker_working.png" alt="Makkuro working on a drawing tablet sticker"':
+    - 'rtgl-view g="lg" w="f" role="region" aria-labelledby="makkuro-community-creations-title"':
+        - 'rtgl-text id="makkuro-community-creations-title" s="h2" role="heading" aria-level="2"': Community creations
+        - 'rtgl-view d="h" g="xs" av="c"':
+            - 'rtgl-text c="mu-fg"': Share your fan art with the hashtag
+            - rtgl-text: "#makkuro55"
+        - 'rtgl-grid cols="4" lg-cols="2" md-cols="1" g="lg" w="f"':
+            - 'rtgl-view w="f" ah="c" role="group" aria-label="Fan art reel on Instagram"':
+                - 'blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/DcER2g5Pkvg/" data-instgrm-version="14" style="margin: 0 !important; min-width: 0 !important; padding: 0 !important; width: 100% !important;"':
+                    - 'a href="https://www.instagram.com/reel/DcER2g5Pkvg/" target="_blank" rel="noopener noreferrer"': View this reel on Instagram
+- rtgl-view h="80" md-h="48":
+- script src="/public/image-lightbox.js":
+- script async src="https://platform.twitter.com/widgets.js" charset="utf-8":
+- script async src="https://embed.bsky.app/static/embed.js" charset="utf-8":
+- script async src="https://www.instagram.com/embed.js":
+- script async src="https://www.tiktok.com/embed.js":

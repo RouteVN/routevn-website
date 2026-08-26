@@ -48,7 +48,7 @@ There has been an increasing number of users asking questions in the last month,
 
 The event itself was relatively small and short, but definitely high energy.
 
-<img src="/public/blog/2026/09/dev-and-draft.webp" alt="RouteVN booth at Dev & Draft" style="width: 100%; margin-bottom: 24px; border: 1px solid var(--border); box-sizing: border-box;">
+<img src="/public/blog/2026/09/dev-and-draft.webp" alt="RouteVN booth at Dev & Draft" style="width: 100%; margin-bottom: 24px; border: 1px solid var(--border); box-sizing: border-box;" width="1920" height="1244" decoding="async">
 
 ## Visual Novel collaborations
 
@@ -56,7 +56,7 @@ The event itself was relatively small and short, but definitely high energy.
 
 [DiaLune](https://sqewree.itch.io/dialune-demo) was a huge highlight of the past few months. It is technically the first published Visual Novel made with RouteVN. Try it out and share your thoughts. We are expecting a small update with quality of life features to land soon.
 
-<img src="/public/blog/2026/09/dialune.png" alt="DiaLune key art" style="width: 100%; margin-bottom: 24px; border: 1px solid var(--border); box-sizing: border-box;">
+<img src="/public/blog/2026/09/dialune.png" alt="DiaLune key art" style="width: 100%; margin-bottom: 24px; border: 1px solid var(--border); box-sizing: border-box;" width="1920" height="1080" decoding="async" loading="lazy">
 
 ### Two Straws
 
@@ -64,7 +64,7 @@ The event itself was relatively small and short, but definitely high energy.
 
 I have been having calls with the artist regularly for the last few months, and we have been impressed by how much care she has put into this project.
 
-<img src="/public/blog/2026/09/two-straws.png" alt="Two Straws key art" style="width: 100%; margin-bottom: 24px; border: 1px solid var(--border); box-sizing: border-box;">
+<img src="/public/blog/2026/09/two-straws.png" alt="Two Straws key art" style="width: 100%; margin-bottom: 24px; border: 1px solid var(--border); box-sizing: border-box;" width="1920" height="1080" decoding="async" loading="lazy">
 
 ### New Project
 

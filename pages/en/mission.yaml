@@ -1,0 +1,30 @@
+---
+template: base
+title: RouteVN Mission
+footerSpacerHeight: 96
+seo:
+  title: RouteVN Mission
+  description: Learn about RouteVN’s mission of empowering creators, connecting creators and readers, internationalization, and learning through visual novels.
+---
+- rtgl-view h="80" sm-h="56":
+- 'rtgl-view w="760" md-w="calc(100vw - 48px)" g="xl" role="main"':
+    - rtgl-view g="lg":
+        - 'rtgl-text s="h1" role="heading" aria-level="1"': ${mission.heading}
+    - rtgl-view g="lg":
+        - rtgl-text s="lg": ${mission.intro.lead}
+        - rtgl-text: ${mission.intro.body}
+    - rtgl-view h="1" w="f" bgc="bo":
+    - rtgl-view g="xl":
+        - $for section in mission.sections:
+            - rtgl-view g="sm":
+                - 'rtgl-text s="h3" role="heading" aria-level="2"': ${section.title}
+                - $if section.paragraphs:
+                    - $for paragraph in section.paragraphs:
+                        - rtgl-text: ${paragraph}
+                - $if section.audiences:
+                    - 'ul style="margin: 0; padding-left: 20px;"':
+                        - $for audience in section.audiences:
+                            - li:
+                                - rtgl-text:
+                                    - __html: "<strong>${audience.label}:</strong> ${audience.text}"
+- rtgl-view h="64":

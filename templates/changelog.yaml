@@ -1,6 +1,8 @@
+- __html: "<!doctype html>"
 - html lang="en":
     - head:
         - $partial: seo1
+          alternates: ${alternates}
           page: ${page}
           seo: ${seo}
         - link rel="stylesheet" href="/public/theme.css":
@@ -12,10 +14,10 @@
             - rtgl-view md-w="100vw" lg-w="768" w="900" ph=lg pb="xl":
                 - rtgl-view d=h md-d=v g=xl w=f:
                     - rtgl-view md-w=f w="140" mt="sm":
-                        - 'a href="/en/creator/changelog" style="display: contents"':
+                        - 'a href="/en/creator/changelog/" style="display: contents"':
                             - rtgl-text s="lg" cur=p: Back
                     - rtgl-view w="1fg":
-                        - rtgl-text s="h1" mb="sm": ${version}
+                        - h1: ${version}
                         - rtgl-text c="mu" s="sm" mb="lg":
                             - $partial: changelog-date
                               date: ${date}

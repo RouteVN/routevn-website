@@ -1,13 +1,16 @@
 ---
 template: documentation
 title: Transforms
+seo:
+  title: "Transforms | RouteVN Creator Docs"
+  description: "Transforms animate elements over time. Use them to move, scale, rotate, or fade images, text, and other resources."
 sidebarId: transforms
 ---
 
 <img
   src="/public/creator/docs/reference/transform-1.png"
   alt="Project page"
-  style="width: 100%; height: auto; display: block; border: 1px solid var(--border); box-sizing: border-box;"
+  style="width: 100%; height: auto; display: block; border: 1px solid var(--border); box-sizing: border-box;" width="1920" height="1080" decoding="async"
 />
 
 Use transforms to set position, scale, rotation, and opacity for scene elements.
@@ -43,7 +46,7 @@ Anchor indicates where the image should be positioned relative to the position. 
 <img
   src="/public/creator/docs/reference/transform-2.png"
   alt="Project page"
-  style="width: 100%; height: auto; display: block; border: 1px solid var(--border); box-sizing: border-box;"
+  style="width: 100%; height: auto; display: block; border: 1px solid var(--border); box-sizing: border-box;" width="1920" height="1080" decoding="async" loading="lazy"
 />
 
 ## Usages

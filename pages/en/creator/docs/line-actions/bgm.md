@@ -1,6 +1,9 @@
 ---
 template: documentation
 title: BGM
+seo:
+  title: "BGM | RouteVN Creator Docs"
+  description: "BGM controls the background music for the scene."
 sidebarId: bgm
 ---
 

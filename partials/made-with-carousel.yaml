@@ -234,7 +234,7 @@
 - 'section class="rvn-made-with"':
     - 'div class="rvn-made-with-shell"':
         - 'div class="rvn-made-with-title"':
-            - rtgl-text s="h1" mb="sm": ${title}
+            - 'h2 style="margin: 0 0 8px;"': ${title}
             - $if message:
                 - p: ${message}
         - 'div class="rvn-made-with-track" aria-label="${default(trackLabel, ''Made with RouteVN Creator projects'')}"':

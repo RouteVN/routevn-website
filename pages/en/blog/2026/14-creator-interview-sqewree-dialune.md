@@ -24,11 +24,11 @@ We spoke with sqewree about DiaLune's origins, making a first playable demo, and
 
 RouteVN provided partial sponsorship for DiaLune’s development.
 
-<img src="/public/blog/2026/09/dialune.png" alt="DiaLune key art" style="width: 100%; margin-bottom: 24px; border: 1px solid var(--border); box-sizing: border-box;">
+<img src="/public/blog/2026/09/dialune.png" alt="DiaLune key art" style="width: 100%; margin-bottom: 24px; border: 1px solid var(--border); box-sizing: border-box;" width="1920" height="1080" decoding="async">
 
 #### Congratulations on releasing the DiaLune demo. Could you introduce yourself and your creative work?
 
-<img src="/public/images/creators/sqewree-avatar.jpg" alt="sqewree avatar" style="width: 120px; height: 120px; border-radius: 50%; object-fit: cover; display: block; margin-bottom: 24px;">
+<img src="/public/images/creators/sqewree-avatar.jpg" alt="sqewree avatar" style="width: 120px; height: 120px; border-radius: 50%; object-fit: cover; display: block; margin-bottom: 24px;" width="337" height="337" decoding="async" loading="lazy">
 
 I go by sqewree. I primarily create illustrations, and I aspire to become a VTuber designer and bring my stories and concepts to life.
 
@@ -36,7 +36,7 @@ I go by sqewree. I primarily create illustrations, and I aspire to become a VTub
 
 The basic gist of DiaLune is that it is an isekai manhwa-inspired story. If you have read villainess manhwa, you will know what I am talking about. It is essentially an otome isekai story, but the protagonist is a man.
 
-<img src="/public/blog/2026/14/dialune-bedroom.jpg" alt="Lune standing in a bedroom in DiaLune" style="width: 100%; margin-bottom: 24px; border: 1px solid var(--border); box-sizing: border-box;">
+<img src="/public/blog/2026/14/dialune-bedroom.jpg" alt="Lune standing in a bedroom in DiaLune" style="width: 100%; margin-bottom: 24px; border: 1px solid var(--border); box-sizing: border-box;" width="1920" height="1080" decoding="async" loading="lazy">
 
 #### Where did the idea for DiaLune come from, and what inspired its mood and story?
 
@@ -54,7 +54,7 @@ DiaLune did not decide my visual direction. My existing visual library and gener
 
 I have always loved macabre, cute horror aesthetics and themes in both stories and art.
 
-<img src="/public/blog/2026/14/dialune-moonlit-scene.jpg" alt="Dia standing beneath a crescent moon in a dark DiaLune scene" style="width: 100%; margin-bottom: 24px; border: 1px solid var(--border); box-sizing: border-box;">
+<img src="/public/blog/2026/14/dialune-moonlit-scene.jpg" alt="Dia standing beneath a crescent moon in a dark DiaLune scene" style="width: 100%; margin-bottom: 24px; border: 1px solid var(--border); box-sizing: border-box;" width="1920" height="1080" decoding="async" loading="lazy">
 
 #### How did RouteVN fit into your workflow, and what helped you most?
 
@@ -72,7 +72,7 @@ Now that some time has passed, I feel super relieved. Something I thought up did
 
 I learnt a lot about my limitations, the tools I have at my disposal, and what I should and should not have done. I feel more prepared to handle my next project, whether that means reworking DiaLune or making a sequel.
 
-<img src="/public/blog/2026/14/dialune-classroom.jpg" alt="Dia and Deme talking in a classroom in DiaLune" style="width: 100%; margin-bottom: 24px; border: 1px solid var(--border); box-sizing: border-box;">
+<img src="/public/blog/2026/14/dialune-classroom.jpg" alt="Dia and Deme talking in a classroom in DiaLune" style="width: 100%; margin-bottom: 24px; border: 1px solid var(--border); box-sizing: border-box;" width="1920" height="1080" decoding="async" loading="lazy">
 
 #### Do you have a message for other writers or artists who want to make their first visual novel?
 

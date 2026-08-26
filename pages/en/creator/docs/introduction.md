@@ -1,6 +1,9 @@
 ---
 template: documentation
 title: Introduction
+seo:
+  title: "Introduction | RouteVN Creator Docs"
+  description: "Learn what RouteVN Creator is and how to use it to create a visual novel without coding."
 sidebarId: introduction
 ---
 

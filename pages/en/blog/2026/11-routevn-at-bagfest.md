@@ -18,7 +18,7 @@ seo:
   ogImageType: image/png
 ---
 
-<img src="/public/blog/2026/11/bagfest-entrance.png" alt="BAGFest entrance at Singapore Chinese Cultural Centre" style="width: 100%; margin-bottom: 24px; border: 1px solid var(--border); box-sizing: border-box;">
+<img src="/public/blog/2026/11/bagfest-entrance.png" alt="BAGFest entrance at Singapore Chinese Cultural Centre" style="width: 100%; margin-bottom: 24px; border: 1px solid var(--border); box-sizing: border-box;" width="1600" height="1200" decoding="async">
 
 We just wrapped up two days at BAGFest.
 
@@ -28,7 +28,7 @@ This was the first BAGFest, and it drew around 1,200 attendees over two days, wi
 
 ## Booth preparation
 
-<img src="/public/blog/2026/11/bagfest-booth.png" alt="RouteVN booth setup at BAGFest" style="width: 100%; margin-bottom: 24px; border: 1px solid var(--border); box-sizing: border-box;">
+<img src="/public/blog/2026/11/bagfest-booth.png" alt="RouteVN booth setup at BAGFest" style="width: 100%; margin-bottom: 24px; border: 1px solid var(--border); box-sizing: border-box;" width="2618" height="1964" decoding="async" loading="lazy">
 
 This was the first time I set up a proper booth. I had to prepare several things:
 
@@ -48,7 +48,7 @@ In the end, the setup was good enough, and it all worked out.
 
 One minor mistake I noticed was that I printed the catalogue with the event name and booth number. For the next event, I plan to cover that part with black tape so I can reuse the same catalogue.
 
-<img src="/public/blog/2026/11/bagfest-catalogue.png" alt="RouteVN merch catalogue at BAGFest" style="width: 100%; margin-bottom: 24px; border: 1px solid var(--border); box-sizing: border-box;">
+<img src="/public/blog/2026/11/bagfest-catalogue.png" alt="RouteVN merch catalogue at BAGFest" style="width: 100%; margin-bottom: 24px; border: 1px solid var(--border); box-sizing: border-box;" width="1237" height="1337" decoding="async" loading="lazy">
 
 I expect to have more merchandise in the future, so the catalogue will need to be updated eventually anyway.
 
@@ -71,7 +71,7 @@ People understood the difference quickly once I gave a short demo and showed how
 
 One interesting thing the organisers did was a stamp system. Attendees could get rewards by collecting all the stamps.
 
-<img src="/public/blog/2026/11/bagfest-stamp.png" alt="RouteVN stamp used for BAGFest attendee rewards" style="width: 100%; margin-bottom: 24px; border: 1px solid var(--border); box-sizing: border-box;">
+<img src="/public/blog/2026/11/bagfest-stamp.png" alt="RouteVN stamp used for BAGFest attendee rewards" style="width: 100%; margin-bottom: 24px; border: 1px solid var(--border); box-sizing: border-box;" width="1168" height="1200" decoding="async" loading="lazy">
 
 At our booth, attendees could get a stamp either by trying RouteVN Creator or by reading one of our Visual Novels.
 
@@ -79,9 +79,9 @@ For the people who tried RouteVN Creator, I had them write a few sentences to co
 
 Below are some screenshots of the stories they made:
 
-<img src="/public/blog/2026/11/bagfest-story-1.png" alt="RouteVN story screenshot made during BAGFest" style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; margin-bottom: 16px; border: 1px solid var(--border); box-sizing: border-box;">
-<img src="/public/blog/2026/11/bagfest-story-2.png" alt="RouteVN story screenshot made during BAGFest" style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; margin-bottom: 16px; border: 1px solid var(--border); box-sizing: border-box;">
-<img src="/public/blog/2026/11/bagfest-story-3.png" alt="RouteVN story screenshot made during BAGFest" style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; margin-bottom: 24px; border: 1px solid var(--border); box-sizing: border-box;">
+<img src="/public/blog/2026/11/bagfest-story-1.png" alt="RouteVN story screenshot made during BAGFest" style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; margin-bottom: 16px; border: 1px solid var(--border); box-sizing: border-box;" width="1600" height="900" decoding="async" loading="lazy">
+<img src="/public/blog/2026/11/bagfest-story-2.png" alt="RouteVN story screenshot made during BAGFest" style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; margin-bottom: 16px; border: 1px solid var(--border); box-sizing: border-box;" width="1600" height="900" decoding="async" loading="lazy">
+<img src="/public/blog/2026/11/bagfest-story-3.png" alt="RouteVN story screenshot made during BAGFest" style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; margin-bottom: 24px; border: 1px solid var(--border); box-sizing: border-box;" width="1600" height="900" decoding="async" loading="lazy">
 
 Seeing how users picked up the application in a few minutes and where they ran into difficulty gave me more insight into what works well and what can be improved.
 

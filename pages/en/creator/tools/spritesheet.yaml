@@ -5,6 +5,7 @@ seo:
   title: RouteVN Spritesheet Tool - PNG to PixiJS Atlas
   description: Create a PixiJS spritesheet PNG and atlas JSON from uploaded PNG images in the browser.
 ---
+- h1 class="sr-only": RouteVN Spritesheet Tool
 - style: |
     .rvn-spritesheet-tool {
       --rvn-tool-panel: #1e1e1e;

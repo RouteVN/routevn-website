@@ -1,6 +1,9 @@
 ---
 template: documentation
 title: Visuals
+seo:
+  title: "Visuals | RouteVN Creator Docs"
+  description: "Visuals lets you add extra visual resources to the current line."
 sidebarId: visuals
 ---
 

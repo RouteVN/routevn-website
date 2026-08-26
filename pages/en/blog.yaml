@@ -8,7 +8,7 @@ seo:
 ---
 - rtgl-view h="96":
 - rtgl-view md-w="100vw" lg-w="768" w="1024" ph=lg:
-    - rtgl-text s="h1" mb="md": Blog
+    - 'h1 style="margin: 0 0 16px;"': Blog
     - rtgl-view h=32:
     - rtgl-view g="lg" w=f:
         - $for item in sort(collections.blogPost, "data.date", "desc"):

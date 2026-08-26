@@ -1,6 +1,9 @@
 ---
 template: documentation
 title: Versions
+seo:
+  title: "Versions | RouteVN Creator Docs"
+  description: "You need to create a specific version of the project before you can export it for distribution."
 sidebarId: versions
 ---
 

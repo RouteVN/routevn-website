@@ -66,7 +66,7 @@ I don't remember exactly how much time it took, but I'm guessing around 2 weeks.
 
 This is what it looked like
 
-<img src="/public/blog/2025/04/1.png" style="width: 100%; margin-bottom: 24px;">
+<img src="/public/blog/2025/04/1.png" style="width: 100%; margin-bottom: 24px;" width="2406" height="1424" decoding="async">
 
 
 I was very proud of having built this, and it felt good to use. It was an early prototype, but a much better approach than anything else that I knew of.
@@ -86,7 +86,7 @@ By the end of May, I had a new version with more features and more polished.
 
 This is what it looked like:
 
-<img src="/public/blog/2025/04/2.png" style="width: 100%; margin-bottom: 24px;">
+<img src="/public/blog/2025/04/2.png" style="width: 100%; margin-bottom: 24px;" width="1920" height="1080" decoding="async" loading="lazy">
 
 
 The original plan was to do another round of usability test. But I ended up not doing that, and jump into a huge rabbit hole.
@@ -197,7 +197,7 @@ We got a lot of development done in July and August; we had caught up with all f
 
 This is what it looked like:
 
-<img src="/public/blog/2025/04/3.png" style="width: 100%;">
+<img src="/public/blog/2025/04/3.png" style="width: 100%;" width="1280" height="801" decoding="async" loading="lazy">
 
 ## Second batch of usability test
 

@@ -1,6 +1,9 @@
 ---
 template: documentation
 title: Push Layered View
+seo:
+  title: "Push Layered View | RouteVN Creator Docs"
+  description: "Learn how Push Layered View places a layout above the current layout without changing the current line ID."
 sidebarId: push-layered-view
 ---
 
@@ -19,5 +22,4 @@ The convenient thing is that using layered view does not change the lineId.
 - Replace layered view
 - Pop layered view
 - Clear layered view
-
 

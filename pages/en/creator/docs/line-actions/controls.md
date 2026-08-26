@@ -1,6 +1,9 @@
 ---
 template: documentation
 title: Controls
+seo:
+  title: "Controls (line action) | RouteVN Creator Docs"
+  description: "The Controls action selects which control resource is active for this line."
 sidebarId: controls
 ---
 

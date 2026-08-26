@@ -1,13 +1,16 @@
 ---
 template: documentation
 title: Images
+seo:
+  title: "Images | RouteVN Creator Docs"
+  description: "The images page manages all visual assets including backgrounds, event CG, visual effects, and UI assets."
 sidebarId: images
 ---
 
 <img
   src="/public/creator/docs/reference/images-2.png"
   alt="Images page"
-  style="width: 100%; height: auto; display: block; border: 1px solid var(--border); box-sizing: border-box;"
+  style="width: 100%; height: auto; display: block; border: 1px solid var(--border); box-sizing: border-box;" width="1920" height="1080" decoding="async"
 />
 
 The images page is a flexible page to manage all visual assets including Background, Event CG, Visual Effects, UI assets.

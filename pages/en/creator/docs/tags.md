@@ -1,6 +1,9 @@
 ---
 template: documentation
 title: Tags
+seo:
+  title: "Tags | RouteVN Creator Docs"
+  description: "Learn how tags group resources and how to assign, manage, and filter them."
 sidebarId: tags
 ---
 

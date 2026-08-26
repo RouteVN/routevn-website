@@ -30,7 +30,7 @@ seo:
 - rtgl-view h="80" sm-h="56":
 - 'rtgl-view w="1200" xl-w="calc(100vw - 64px)" md-w="calc(100vw - 48px)" g="xl" role="main"':
     - 'rtgl-view g="lg" w="760" md-w="f"':
-        - 'rtgl-text s="h1" role="heading" aria-level="1"': Media Kit
+        - h1: Media Kit
         - rtgl-text s="lg" c="mu-fg": Official RouteVN logos and brand resources.
     - rtgl-view h="1" w="f" bgc="bo":
     - 'rtgl-view g="md" role="region" aria-labelledby="routevn-media-kit-logos"':

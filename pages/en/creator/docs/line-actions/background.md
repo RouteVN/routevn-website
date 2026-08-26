@@ -1,6 +1,9 @@
 ---
 template: documentation
 title: Background
+seo:
+  title: "Background | RouteVN Creator Docs"
+  description: "Background sets the main visual backdrop for the current line."
 sidebarId: background
 ---
 

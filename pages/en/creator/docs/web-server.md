@@ -1,6 +1,9 @@
 ---
 template: documentation
 title: Web Server
+seo:
+  title: "Web Server | RouteVN Creator Docs"
+  description: "Web Server lets you preview an exported web build in a real browser. It is a convenience tool."
 sidebarId: web-server
 ---
 

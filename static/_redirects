@@ -1,3 +1,11 @@
+# Canonical redirects
+/en / 301
+/en/ / 301
+/makkuro /en/makkuro/ 301
+/makkuro/ /en/makkuro/ 301
+/en/creator/docs /en/creator/docs/introduction/ 301
+/en/creator/docs/ /en/creator/docs/introduction/ 301
+
 /en/creator/docs/audio-effects-editor /en/creator/docs/audio-effects/#audio-effect-editor 301
 /en/creator/docs/audio-effects-editor/ /en/creator/docs/audio-effects/#audio-effect-editor 301
 /blog/2025/01-to-fulfill-the-whole-potential-of-visual-novels /en/blog/to-fulfill-the-full-potential-of-visual-novels/ 301
