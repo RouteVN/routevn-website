@@ -31,24 +31,3 @@ alternates:
   formHref: https://tally.so/r/wzZ7rM
   socialMessageHtml: 你也可以通过<a href="/en/social/">社交媒体</a>联系我们，欢迎随时发送私信。
   imageAlt: Makkuro 正在挥手问候。
-
-- $partial: language-links
-  links:
-    - hreflang: en
-      label: English
-      href: https://routevn.com/en/contact/
-    - hreflang: es
-      label: Español
-      href: https://routevn.com/es/contact/
-    - hreflang: fr
-      label: Français
-      href: https://routevn.com/fr/contact/
-    - hreflang: it
-      label: Italiano
-      href: https://routevn.com/it/contact/
-    - hreflang: ja
-      label: 日本語
-      href: https://routevn.com/ja/contact/
-    - hreflang: zh-Hans
-      label: 简体中文
-      href: https://routevn.com/zh-hans/contact/
