@@ -137,5 +137,5 @@
                         - 'rtgl-view class="rvn-video-tutorial-card-body" d="v"':
                             - 'rtgl-text class="rvn-video-tutorial-card-title" s="lg" role="heading" aria-level="3"': ${item.title}
         - $if learnMoreHref:
-            - rtgl-view ah="c" mt="xl":
+            - rtgl-view ah="c" mt="xl" w="f":
                 - 'a href="${learnMoreHref}"': ${learnMoreLabel}
