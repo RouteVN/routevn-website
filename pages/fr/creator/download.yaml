@@ -34,24 +34,3 @@ alternates:
   communityTitle: Rejoignez notre communauté Discord
   communitySubtitle: Découvrez comment RouteVN est développé. Participez aux échanges, partagez vos retours et suivez les dernières actualités.
   communityButtonLabel: Rejoindre Discord
-
-- $partial: language-links
-  links:
-    - hreflang: en
-      label: English
-      href: https://routevn.com/en/creator/download/
-    - hreflang: es
-      label: Español
-      href: https://routevn.com/es/creator/download/
-    - hreflang: fr
-      label: Français
-      href: https://routevn.com/fr/creator/download/
-    - hreflang: it
-      label: Italiano
-      href: https://routevn.com/it/creator/download/
-    - hreflang: ja
-      label: 日本語
-      href: https://routevn.com/ja/creator/download/
-    - hreflang: zh-Hans
-      label: 简体中文
-      href: https://routevn.com/zh-hans/creator/download/
