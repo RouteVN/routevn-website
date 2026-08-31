@@ -34,24 +34,3 @@ alternates:
   communityTitle: Discordコミュニティに参加
   communitySubtitle: RouteVNの開発の様子を知り、議論に参加し、フィードバックを共有して、最新情報を確認できます。
   communityButtonLabel: Discordに参加
-
-- $partial: language-links
-  links:
-    - hreflang: en
-      label: English
-      href: https://routevn.com/en/creator/download/
-    - hreflang: es
-      label: Español
-      href: https://routevn.com/es/creator/download/
-    - hreflang: fr
-      label: Français
-      href: https://routevn.com/fr/creator/download/
-    - hreflang: it
-      label: Italiano
-      href: https://routevn.com/it/creator/download/
-    - hreflang: ja
-      label: 日本語
-      href: https://routevn.com/ja/creator/download/
-    - hreflang: zh-Hans
-      label: 简体中文
-      href: https://routevn.com/zh-hans/creator/download/
