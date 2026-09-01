@@ -44,6 +44,10 @@ seo:
             - 'rtgl-image data-rvn-image-lightbox cur="zoom-in" w="f" ar="16/9" of="con" bgc="su" bw="xs" bc="bo" br="lg" src="/public/makkuro/screenshots/cg-illustration-1.png" alt="Makkuro smiling and gesturing while drawing at a desk"':
             - 'rtgl-image data-rvn-image-lightbox cur="zoom-in" w="f" ar="16/9" of="con" bgc="su" bw="xs" bc="bo" br="lg" src="/public/makkuro/screenshots/outfit-design.png" alt="Makkuro outfit designs with shirts, sweaters, and hoodies"':
             - 'rtgl-image data-rvn-image-lightbox cur="zoom-in" w="f" ar="16/9" of="con" bgc="su" bw="xs" bc="bo" br="lg" src="/public/makkuro/screenshots/video-thumbnail.png" alt="Makkuro sitting at her desk in front of a microphone"':
+        - 'rtgl-view d="h" g="xs" av="c" ah="c" w="f"':
+            - 'rtgl-text s="sm" c="mu-fg"': Character design by
+            - 'rtgl-text s="sm" c="mu-fg"':
+                - 'a href="https://x.com/aiyuuno" target="_blank" rel="noopener noreferrer"': "@aiyuuno"
     - 'rtgl-view g="lg" w="f" role="region" aria-labelledby="makkuro-sprites-title"':
         - 'rtgl-text id="makkuro-sprites-title" s="h2" role="heading" aria-level="2"': Character sprites
         - 'rtgl-grid cols="4" md-cols="2" sm-cols="1" g="lg" w="f"':
