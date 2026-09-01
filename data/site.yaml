@@ -313,6 +313,17 @@ creator:
 
             TRY OUT ROUTEVN YALL!!!
           testimonialHref: https://x.com/bunnibambii/status/2050891935146250283
+        - id: makkuros-guide
+          title: Makkuro's Guide to RouteVN
+          author: RouteVN
+          authorAvatarSrc: /public/images/routevn-icon.png
+          authorHref: https://routevn.itch.io/
+          imgSrc: /public/creator/makkuros-guide-to-routevn.png
+          href: https://routevn.itch.io/makkuros-guide-to-routevn
+          description: |-
+            You wake up from a dream-like state in a mysterous surrounding and encounter a girl.
+            The girl says she will guide you on your journey to "Bring Your Visual Novel to Life".
+            Are you ready for this journey
 
     faq:
       title: Frequently Asked Questions
