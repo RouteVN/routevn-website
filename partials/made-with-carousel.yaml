@@ -104,7 +104,6 @@
       font-size: var(--md-font-size);
       line-height: var(--md-line-height);
       margin: 0 0 10px;
-      white-space: pre-line;
     }
     .rvn-made-with-quote {
       border-left: 2px solid var(--border);
