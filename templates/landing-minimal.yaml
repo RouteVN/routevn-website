@@ -23,12 +23,16 @@
               overflow: hidden;
             }
             .landing-shell {
+              --landing-focus: 0;
+              --landing-neutral: calc(1 - max(var(--landing-focus), calc(-1 * var(--landing-focus))));
+              --landing-split-offset: 0%;
+              --landing-split-top: 72%;
+              --landing-split-bottom: 28%;
               box-sizing: border-box;
-              display: grid;
               isolation: isolate;
-              min-height: 100vh;
-              padding: 24px;
-              place-items: center;
+              height: 100vh;
+              height: 100svh;
+              overflow: hidden;
               position: relative;
             }
             .sr-only {
@@ -41,22 +45,17 @@
             }
             .landing-shell::before {
               background: #fff;
-              bottom: 0;
-              clip-path: polygon(100% 0, 0 100%, 100% 100%);
+              clip-path: polygon(calc(var(--landing-split-top) + var(--landing-split-offset)) 0, 100% 0, 100% 100%, calc(var(--landing-split-bottom) + var(--landing-split-offset)) 100%);
               content: "";
-              height: min(28vh, 300px);
+              inset: 0;
               pointer-events: none;
-              position: fixed;
-              right: 0;
-              width: min(38vw, 520px);
+              position: absolute;
               z-index: 0;
             }
             .landing-link {
-              align-items: flex-start;
               color: inherit;
-              --landing-stage-width: min(64vw, 720px, calc(90vh * 1440 / 1532));
-              display: grid;
-              grid-template-columns: minmax(0, 1fr) var(--landing-stage-width) minmax(0, 1fr);
+              display: block;
+              height: 100%;
               line-height: normal;
               text-decoration: none;
               -webkit-touch-callout: none;
@@ -64,11 +63,31 @@
               width: 100%;
               z-index: 1;
             }
+            .landing-link:focus-visible {
+              outline: 3px solid #888;
+              outline-offset: -8px;
+            }
             .landing-stage {
+              position: absolute;
+            }
+            .landing-stage-makkuro {
               aspect-ratio: 1440 / 1532;
-              grid-column: 2;
-              position: relative;
-              width: var(--landing-stage-width);
+              left: 4%;
+              top: 50%;
+              transform: translateY(-46%);
+              translate: calc(max(0, var(--landing-focus)) * 9vw + min(0, var(--landing-focus)) * 6vw) calc(min(0, var(--landing-focus)) * 24svh - var(--landing-neutral) * 12svh);
+              scale: calc(1 + min(0, var(--landing-focus)) * 0.16);
+              width: min(46vw, 760px, calc(76svh * 1440 / 1532));
+            }
+            .landing-stage-masshiro {
+              aspect-ratio: 4244 / 3662;
+              right: 3%;
+              top: 43%;
+              transform: translateY(-45%);
+              transform-origin: center top;
+              translate: calc(max(0, var(--landing-focus)) * 6vw + min(0, var(--landing-focus)) * 9vw) calc(max(0, var(--landing-focus)) * 16svh + var(--landing-neutral) * 8svh);
+              scale: calc(1 - max(0, var(--landing-focus)) * 0.22);
+              width: min(48vw, 820px, calc(70svh * 4244 / 3662));
             }
             .landing-layer {
               display: block;
@@ -95,18 +114,29 @@
               color: #fff;
               display: grid;
               gap: 10px;
-              grid-column: 1;
-              justify-self: end;
+              left: clamp(24px, 6vw, 96px);
               line-height: 1.2;
-              margin-top: 0;
-              margin-right: clamp(16px, 4vw, 56px);
+              position: absolute;
               text-shadow: 0 2px 16px rgba(0, 0, 0, 0.45);
-              transform: translateY(clamp(-44px, -3vh, -24px));
+              top: clamp(16px, 2svh, 24px);
               width: max-content;
+              z-index: 4;
             }
             .landing-brand {
               align-items: center;
               display: flex;
+            }
+            .landing-copy-reader {
+              bottom: clamp(16px, 2svh, 24px);
+              color: #000;
+              left: auto;
+              right: clamp(24px, 6vw, 96px);
+              text-align: right;
+              text-shadow: none;
+              top: auto;
+            }
+            .landing-copy-reader .landing-brand {
+              justify-content: flex-end;
             }
             .landing-brand-logo {
               display: block;
@@ -122,38 +152,50 @@
               margin: 0;
               white-space: nowrap;
             }
-            @media (orientation: landscape) {
-              .landing-shell::before {
-                height: min(76vh, 720px);
-                width: min(38vw, 680px);
+            @media (orientation: landscape) and (max-height: 540px) {
+              .landing-stage-makkuro {
+                top: 56%;
+                translate: calc(max(0, var(--landing-focus)) * 9vw + min(0, var(--landing-focus)) * 6vw) calc(min(0, var(--landing-focus)) * 14svh - var(--landing-neutral) * 6svh);
+                width: min(46vw, calc(64svh * 1440 / 1532));
               }
-            }
-            @media (max-width: 1800px) {
-              .landing-link {
-                align-items: flex-start;
-                display: flex;
-                flex-direction: column;
-                gap: 18px;
-                width: min(92vw, 720px);
-              }
-              .landing-stage {
-                flex-basis: auto;
-                width: min(92vw, 720px, calc(76vh * 1440 / 1532));
-              }
-              .landing-copy {
-                margin-top: 0;
-                margin-right: 0;
-                text-align: left;
-                transform: translateY(-28px);
-              }
-              .landing-brand {
-                justify-content: flex-start;
-              }
-              .landing-tagline {
-                font-size: clamp(14px, 3.6vw, 18px);
+              .landing-stage-masshiro {
+                top: 42%;
+                translate: calc(max(0, var(--landing-focus)) * 6vw + min(0, var(--landing-focus)) * 9vw) calc(max(0, var(--landing-focus)) * 12svh + var(--landing-neutral) * 4svh);
+                width: min(48vw, calc((70svh - 64px) * 4244 / 3662));
               }
             }
             @media (orientation: portrait) {
+              .landing-shell {
+                --landing-split-top: 34%;
+                --landing-split-bottom: 66%;
+              }
+              .landing-shell::before {
+                clip-path: polygon(100% calc(var(--landing-split-top) + var(--landing-split-offset)), 100% 100%, 0 100%, 0 calc(var(--landing-split-bottom) + var(--landing-split-offset)));
+              }
+              .landing-copy {
+                gap: 8px;
+                top: clamp(24px, 4svh, 40px);
+              }
+              .landing-copy-reader {
+                bottom: clamp(24px, 4svh, 40px);
+                top: auto;
+              }
+              .landing-stage-makkuro {
+                left: 2%;
+                top: 13%;
+                transform: none;
+                translate: calc(max(0, var(--landing-focus)) * 6vw + min(0, var(--landing-focus)) * 4vw) calc(max(0, var(--landing-focus)) * 4svh + min(0, var(--landing-focus)) * min(5svh, max(3.5svh, calc(13svh - 70px))) - var(--landing-neutral) * min(4svh, max(0px, calc(13svh - 74px))));
+                width: min(78vw, calc(43svh * 1440 / 1532));
+              }
+              .landing-stage-masshiro {
+                bottom: calc(clamp(24px, 4svh, 40px) + 92px);
+                right: 3%;
+                top: auto;
+                transform: none;
+                transform-origin: center;
+                translate: calc(max(0, var(--landing-focus)) * 4vw + min(0, var(--landing-focus)) * 6vw) calc(max(0, var(--landing-focus)) * 5svh + min(0, var(--landing-focus)) * 4svh + var(--landing-neutral) * min(3svh, 24px));
+                width: min(76vw, calc((44svh - 96px) * 4244 / 3662));
+              }
               .landing-brand-logo {
                 width: clamp(150px, 46vw, 200px);
               }
@@ -171,7 +213,7 @@
     - body:
         - "${content}"
         - $partial: cursor-sparkles
-          darkArea: landing-wedge
+          darkArea: landing-split
         - script: |
             (() => {
               document.addEventListener("contextmenu", (event) => {
@@ -207,10 +249,14 @@
                 return;
               }
 
-              const maxShift = 28;
-              const idleShift = 18;
+              const maxShift = 22;
+              const idleShift = 12;
+              const shell = document.querySelector(".landing-shell");
+              const makkuroStage = document.querySelector(".landing-stage-makkuro");
+              const masshiroStage = document.querySelector(".landing-stage-masshiro");
               const layers = elements.map((element) => ({
                 element,
+                stage: element.closest(".landing-stage"),
                 depth: Number(element.dataset.depth) || 1,
                 idle: Number(element.dataset.idle) || 1,
                 phase: Number(element.dataset.phase) || 0,
@@ -219,17 +265,32 @@
               }));
               let pointerX = 0;
               let pointerY = 0;
+              let activeStage = null;
+              let focus = 0;
               let frame = 0;
 
               const update = (time) => {
+                const targetFocus = activeStage === makkuroStage ? 1 : activeStage === masshiroStage ? -1 : 0;
+
+                if (focus !== targetFocus) {
+                  focus += (targetFocus - focus) * 0.1;
+                  if (Math.abs(targetFocus - focus) < 0.001) {
+                    focus = targetFocus;
+                  }
+                  shell.style.setProperty("--landing-focus", focus.toFixed(4));
+                  shell.style.setProperty("--landing-split-offset", (focus * 15).toFixed(3) + "%");
+                }
+
+                const motionScale = Math.min(1, window.innerWidth / 1440, window.innerHeight / 900);
                 const idleX = Math.sin(time * 0.00055) * idleShift + Math.sin(time * 0.00031) * 7;
                 const idleY = Math.cos(time * 0.00042) * idleShift + Math.sin(time * 0.00028) * 7;
 
                 layers.forEach((layer) => {
+                  const hoverDepth = layer.stage === activeStage ? layer.depth : 0;
                   const layerIdleX = idleX * layer.idle + Math.sin(time * 0.00038 + layer.phase) * 5;
                   const layerIdleY = idleY * layer.idle + Math.cos(time * 0.00034 + layer.phase) * 5;
-                  const targetX = pointerX * layer.depth + layerIdleX;
-                  const targetY = pointerY * layer.depth + layerIdleY;
+                  const targetX = (pointerX * hoverDepth + layerIdleX) * motionScale;
+                  const targetY = (pointerY * hoverDepth + layerIdleY) * motionScale;
 
                   layer.currentX += (targetX - layer.currentX) * 0.08;
                   layer.currentY += (targetY - layer.currentY) * 0.08;
@@ -241,24 +302,55 @@
               };
 
               const setTargetFromPointer = (event) => {
+                if (event.pointerType !== "mouse") {
+                  return;
+                }
+
                 const x = (event.clientX / window.innerWidth - 0.5) * 2;
                 const y = (event.clientY / window.innerHeight - 0.5) * 2;
+                const bounds = shell.getBoundingClientRect();
+                const style = window.getComputedStyle(shell);
+                const start = Number.parseFloat(style.getPropertyValue("--landing-split-top")) / 100;
+                const end = Number.parseFloat(style.getPropertyValue("--landing-split-bottom")) / 100;
+                const localX = event.clientX - bounds.left;
+                const localY = event.clientY - bounds.top;
+                const portrait = window.matchMedia("(orientation: portrait)").matches;
+                const slope = portrait
+                  ? (start - end) * bounds.height / bounds.width
+                  : (end - start) * bounds.width / bounds.height;
 
+                // Anchor the neutral band to the 50/50 diagonal so animation cannot move it away from the cursor.
+                const distance = (portrait
+                  ? localY - end * bounds.height - slope * localX
+                  : localX - start * bounds.width - slope * localY) / Math.hypot(1, slope);
+                const neutralHalfWidth = Math.max(36, Math.min(90, Math.min(bounds.width, bounds.height) * 0.1));
+                const hoveredStage = event.target.closest?.(".landing-stage");
+
+                // The center takes priority even when a character overlaps the neutral band.
+                activeStage = Math.abs(distance) <= neutralHalfWidth
+                  ? null
+                  : hoveredStage || (distance > 0 ? masshiroStage : makkuroStage);
                 pointerX = x * maxShift;
                 pointerY = y * maxShift;
               };
 
-              window.addEventListener("pointermove", setTargetFromPointer, { passive: true });
-              window.addEventListener("mousemove", setTargetFromPointer, { passive: true });
-              window.addEventListener("pointerleave", () => {
+              const resetPointer = () => {
+                activeStage = null;
                 pointerX = 0;
                 pointerY = 0;
-              });
+              };
+
+              window.addEventListener("pointermove", setTargetFromPointer, { passive: true });
+              document.addEventListener("pointerleave", resetPointer);
+              window.addEventListener("blur", resetPointer);
+              window.addEventListener("resize", resetPointer);
 
               frame = requestAnimationFrame(update);
 
               reduceMotion.addEventListener("change", () => {
                 cancelAnimationFrame(frame);
+                shell.style.removeProperty("--landing-focus");
+                shell.style.removeProperty("--landing-split-offset");
                 layers.forEach((layer) => {
                   layer.element.style.removeProperty("transform");
                 });

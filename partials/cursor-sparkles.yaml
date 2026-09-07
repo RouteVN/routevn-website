@@ -57,7 +57,7 @@
         display: none;
       }
     }
-- $if darkArea == "landing-wedge":
+- $if darkArea == "landing-split":
     - script: |
         window.RouteVNCursorSparklesDarkArea = (clientX, clientY) => {
           const shell = document.querySelector(".landing-shell");
@@ -66,22 +66,24 @@
             return false;
           }
 
-          const wedgeStyle = window.getComputedStyle(shell, "::before");
-          const wedgeWidth = Number.parseFloat(wedgeStyle.width);
-          const wedgeHeight = Number.parseFloat(wedgeStyle.height);
+          const bounds = shell.getBoundingClientRect();
+          const style = window.getComputedStyle(shell);
+          const start = Number.parseFloat(style.getPropertyValue("--landing-split-top")) / 100;
+          const end = Number.parseFloat(style.getPropertyValue("--landing-split-bottom")) / 100;
+          const offset = (Number.parseFloat(style.getPropertyValue("--landing-split-offset")) || 0) / 100;
 
-          if (!Number.isFinite(wedgeWidth) || !Number.isFinite(wedgeHeight) || wedgeWidth <= 0 || wedgeHeight <= 0) {
+          if (!Number.isFinite(start) || !Number.isFinite(end) || bounds.width <= 0 || bounds.height <= 0) {
             return false;
           }
 
-          const localX = clientX - (window.innerWidth - wedgeWidth);
-          const localY = clientY - (window.innerHeight - wedgeHeight);
+          const x = (clientX - bounds.left) / bounds.width;
+          const y = (clientY - bounds.top) / bounds.height;
 
-          if (localX < 0 || localX > wedgeWidth || localY < 0 || localY > wedgeHeight) {
-            return false;
+          if (window.matchMedia("(orientation: portrait)").matches) {
+            return y >= end + offset + (start - end) * x;
           }
 
-          return localX / wedgeWidth + localY / wedgeHeight >= 1;
+          return x >= start + offset + (end - start) * y;
         };
 - script: |
     (() => {
