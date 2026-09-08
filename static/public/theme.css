@@ -410,6 +410,14 @@ pre {
   width: auto;
 }
 
+.light .rvn-image-lightbox::backdrop {
+  background: rgb(245 245 245 / 84%);
+}
+
+.light .rvn-image-lightbox__image {
+  box-shadow: none;
+}
+
 pre {
   -ms-overflow-style: auto;
   scrollbar-width: thin;

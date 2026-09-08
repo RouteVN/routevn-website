@@ -260,6 +260,7 @@
                 depth: Number(element.dataset.depth) || 1,
                 idle: Number(element.dataset.idle) || 1,
                 phase: Number(element.dataset.phase) || 0,
+                floatSpeed: Number(element.dataset.floatSpeed) || 1,
                 currentX: 0,
                 currentY: 0,
               }));
@@ -282,13 +283,14 @@
                 }
 
                 const motionScale = Math.min(1, window.innerWidth / 1440, window.innerHeight / 900);
-                const idleX = Math.sin(time * 0.00055) * idleShift + Math.sin(time * 0.00031) * 7;
-                const idleY = Math.cos(time * 0.00042) * idleShift + Math.sin(time * 0.00028) * 7;
 
                 layers.forEach((layer) => {
+                  const floatTime = time * layer.floatSpeed;
+                  const idleX = Math.sin(floatTime * 0.00055 + layer.phase) * idleShift + Math.sin(floatTime * 0.00031 + layer.phase) * 7;
+                  const idleY = Math.cos(floatTime * 0.00042 + layer.phase) * idleShift + Math.sin(floatTime * 0.00028 + layer.phase) * 7;
                   const hoverDepth = layer.stage === activeStage ? layer.depth : 0;
-                  const layerIdleX = idleX * layer.idle + Math.sin(time * 0.00038 + layer.phase) * 5;
-                  const layerIdleY = idleY * layer.idle + Math.cos(time * 0.00034 + layer.phase) * 5;
+                  const layerIdleX = idleX * layer.idle + Math.sin(floatTime * 0.00038 + layer.phase) * 5;
+                  const layerIdleY = idleY * layer.idle + Math.cos(floatTime * 0.00034 + layer.phase) * 5;
                   const targetX = (pointerX * hoverDepth + layerIdleX) * motionScale;
                   const targetY = (pointerY * hoverDepth + layerIdleY) * motionScale;
 

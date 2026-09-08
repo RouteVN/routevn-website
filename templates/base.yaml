@@ -9,7 +9,7 @@
         - script src="https://cdn.jsdelivr.net/npm/@rettangoli/ui@1.21.0/dist/rettangoli-iife-ui.min.js":
         - script src="/public/rtgl-icons.js":
 
-    - body.dark:
+    - body class="${default(themeBodyClass, 'dark')}":
         - rtgl-view w=f:
             - rtgl-view h="48":
             - rtgl-view w="f" ah="c":
