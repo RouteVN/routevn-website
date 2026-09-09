@@ -48,6 +48,14 @@ All documentation pages must live in:
 - Keep links practical and relevant.
 - When instructions must be followed in order, keep them ordered and numbered so users can follow without guessing.
 
+## Website image optimization
+
+- Optimize all new or replacement website images before committing.
+- Resize oversized images for their intended display size, allowing for high-density screens and fullscreen previews. Never upscale.
+- Compress PNGs with `pngquant`, targeting quality 95–100. Going below 90 requires explicit approval.
+- Preserve original source files and check the optimized image visually.
+- Document exceptions, such as original-resolution downloads, fixed OG dimensions, or already optimized assets. SVGs do not need PNG compression.
+
 ## Release and changelog updates
 
 When adding a new RouteVN Creator version, check each release-facing place that may need a version update:
