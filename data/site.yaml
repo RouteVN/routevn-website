@@ -42,6 +42,8 @@ footer:
       href: https://www.tiktok.com/@routevn
   columns:
     - links:
+        - text: Makkuro
+          href: /en/makkuro
         - text: RouteVN Creator
           href: /en/creator/about/
         - text: Creator Download
@@ -54,6 +56,11 @@ footer:
           href: /en/blog/routevn-vs-renpy/
         # - text: Asset Store
         #   href: /en/creator/asset-store/
+    - links:
+        - text: Masshiro
+          href: /en/masshiro
+        - text: Web Extractor
+          href: /en/reader/web-extractor
     - links:
         - text: Mission
           href: /en/mission/

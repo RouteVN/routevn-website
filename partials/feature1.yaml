@@ -24,78 +24,66 @@
 - 'rtgl-view class="${themeClass}" w="f" ah="c" bgc="${backgroundColor}" style="background: ${backgroundColor}; box-sizing: border-box; color: ${foregroundColor}; margin-left: calc(50% - 50vw); margin-right: calc(50% - 50vw); width: 100vw;"':
     - rtgl-view h=96:
     - 'rtgl-view md-w="calc(100vw - 32px)" xl-w="calc(100vw - 64px)" w="1200" mh="xl" pb="xl" ah="c" g="md"':
-        - 'h2 style="text-align: center; margin: 0 0 16px;"': ${title}
-        - $if message:
-            - rtgl-text mb=lg ta=c: ${message}
-        - rtgl-view h=80:
-        - rtgl-view md-hide d=h w=f g=lg:
+        - $if sideImageSrc:
+            - rtgl-view d="h" md-d="v" w="f" av="c" g="lg":
+                - rtgl-view g="md" w="1fg" md-w="f" ah="s":
+                    - 'h2 class="rvn-feature1-title" style="margin: 0 0 8px;"': ${title}
+                    - $if message:
+                        - rtgl-text s=lg: ${message}
+                - 'rtgl-view md-hide w="180" h="180" aria-hidden="true" style="flex: 0 0 180px; background-image: url(${sideImageSrc}); background-repeat: no-repeat; background-size: contain; background-position: center;"':
+          $else:
+            - 'h2 class="rvn-feature1-title" style="text-align: center; margin: 0 0 16px;"': ${title}
+            - $if message:
+                - rtgl-text mb=lg ta=c: ${message}
+            - rtgl-view h=80:
+        - 'rtgl-view class="rvn-feature1-row" md-hide d="h" w="f" g="lg" av="c"':
             - $if v != "2":
-                - 'rtgl-view class="rvn-feature1-media" w="2fg" bc="bo" bw="xs" br="sm"':
-                    - $if learnMoreHref:
-                        - 'a href="${learnMoreHref}"':
-                            - $if imgSrc:
-                                - img src="${imgSrc}" alt="${title} preview":
-                            - $if videoSrc:
-                                - $if build.isScreenshotMode:
-                                    - video src="${videoSrc}" loop muted playsinline:
-                                  $else:
-                                    - video src="${videoSrc}" autoplay loop muted playsinline:
-                      $else:
-                        - $if imgSrc:
-                            - img src="${imgSrc}" alt="${title} preview":
-                        - $if videoSrc:
-                            - $if build.isScreenshotMode:
-                                - video src="${videoSrc}" loop muted playsinline:
-                              $else:
-                                - video src="${videoSrc}" autoplay loop muted playsinline:
-            - rtgl-view g="lg" w="1fg" av=c h=f:
+                - 'rtgl-view w="2fg" style="min-width: 0;"':
+                    - $partial: feature-media
+                      title: ${title}
+                      images: ${images}
+                      imgSrc: ${imgSrc}
+                      videoSrc: ${videoSrc}
+                      learnMoreHref: ${learnMoreHref}
+                      mediaPlaceholder: ${mediaPlaceholder}
+            - rtgl-view g="lg" w="1fg" av=c:
                 - $for feature in features:
                     - rtgl-view  p="lg" br="lg" g=md:
-                        - rtgl-text s=h4 mb=sm: "${feature.title}"
+                        - $if feature.title:
+                            - rtgl-text s=h4 mb=sm: "${feature.title}"
                         - rtgl-text mb="sm":
                             - __html: "${feature.message}"
+                        - $if feature.bullets:
+                            - 'ul style="margin: 0; padding-left: 20px; text-align: left;"':
+                                - $for bullet in feature.bullets:
+                                    - li: ${bullet}
             - $if v == "2":
-                - 'rtgl-view class="rvn-feature1-media" w="2fg" bc="bo" bw="xs" br="sm"':
-                    - $if learnMoreHref:
-                        - 'a href="${learnMoreHref}"':
-                            - $if imgSrc:
-                                - img src="${imgSrc}" alt="${title} preview":
-                            - $if videoSrc:
-                                - $if build.isScreenshotMode:
-                                    - video src="${videoSrc}" loop muted playsinline:
-                                  $else:
-                                    - video src="${videoSrc}" autoplay loop muted playsinline:
-                      $else:
-                        - $if imgSrc:
-                            - img src="${imgSrc}" alt="${title} preview":
-                        - $if videoSrc:
-                            - $if build.isScreenshotMode:
-                                - video src="${videoSrc}" loop muted playsinline:
-                              $else:
-                                - video src="${videoSrc}" autoplay loop muted playsinline:
+                - 'rtgl-view w="2fg" style="min-width: 0;"':
+                    - $partial: feature-media
+                      title: ${title}
+                      images: ${images}
+                      imgSrc: ${imgSrc}
+                      videoSrc: ${videoSrc}
+                      learnMoreHref: ${learnMoreHref}
+                      mediaPlaceholder: ${mediaPlaceholder}
         - rtgl-view md-show hide w=f g=lg:
-            - 'rtgl-view class="rvn-feature1-media" w="f" h="calc((100vw - 32px) / 1.777)" bc="bo" bw="xs" br="sm" style="max-width: 100%;"':
-                - $if learnMoreHref:
-                    - 'a href="${learnMoreHref}"':
-                        - $if imgSrc:
-                            - img src="${imgSrc}" alt="${title} preview":
-                        - $if videoSrc:
-                            - $if build.isScreenshotMode:
-                                - video src="${videoSrc}" loop muted playsinline:
-                              $else:
-                                - video src="${videoSrc}" autoplay loop muted playsinline:
-                  $else:
-                    - $if imgSrc:
-                        - img src="${imgSrc}" alt="${title} preview":
-                    - $if videoSrc:
-                        - $if build.isScreenshotMode:
-                            - video src="${videoSrc}" loop muted playsinline:
-                          $else:
-                            - video src="${videoSrc}" autoplay loop muted playsinline:
+            - 'rtgl-view w="f" style="min-width: 0; max-width: 100%;"':
+                - $partial: feature-media
+                  title: ${title}
+                  images: ${images}
+                  imgSrc: ${imgSrc}
+                  videoSrc: ${videoSrc}
+                  learnMoreHref: ${learnMoreHref}
+                  mediaPlaceholder: ${mediaPlaceholder}
             - rtgl-view g="lg" w=f av=c h=f:
                 - $for feature in features:
                     - rtgl-view  p="lg" br="lg" g=md w=f ah=c:
-                        - rtgl-text s=h4 mb=sm ta=c: "${feature.title}"
+                        - $if feature.title:
+                            - rtgl-text s=h4 mb=sm ta=c: "${feature.title}"
                         - rtgl-text mb="sm" ta=c:
                             - __html: "${feature.message}"
+                        - $if feature.bullets:
+                            - 'ul style="margin: 0; padding-left: 20px; text-align: left;"':
+                                - $for bullet in feature.bullets:
+                                    - li: ${bullet}
     - rtgl-view h=96:

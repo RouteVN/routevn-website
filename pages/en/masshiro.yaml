@@ -3,15 +3,33 @@ template: base
 title: Masshiro
 themeBodyClass: light
 footerSpacerHeight: 96
+navbarTitle:
+  imgSrc: /public/masshiro/logo-horizontal.png
+  imgWidth: 150
+  imgHeight: 33
+  alt: RouteVN with Masshiro
+  href: /
+footerLogo:
+  src: /public/masshiro/logo-horizontal.png
+  width: 150
+  height: 33
+  alt: RouteVN with Masshiro
 seo:
   title: Masshiro 真っ白 - RouteVN
-  description: A studious boy who likes to read stories, enjoy visual novels and explore new worlds.
+  description: A studious boy who likes to read stories, enjoy visual novels and explore the world.
   ogImage: https://routevn.com/public/masshiro/masshiro-og.png
   ogImageWidth: 1200
   ogImageHeight: 630
   ogImageAlt: Masshiro 真っ白 with his reading and study tools
   ogImageType: image/png
 ---
+- $partial: cursor-sparkles
+
+- style: |
+    body.light {
+      --surface: #fcfcfc;
+    }
+
 - rtgl-view h="80" md-h="48":
 - 'rtgl-view w="1200" xl-w="calc(100vw - 64px)" md-w="calc(100vw - 48px)" d="h" md-d="v" av="c" g="xl" role="main"':
     - 'rtgl-view w="1/2fb" md-w="f" ah="c"':
@@ -20,7 +38,7 @@ seo:
         - 'rtgl-text s="h1" role="heading" aria-level="1"': Masshiro
         - 'rtgl-text s="h1" lang="ja"': 真っ白
         - rtgl-view h="8":
-        - 'rtgl-text s="lg" c="mu-fg"': A studious boy who likes to read stories, enjoy visual novels and explore new worlds.
+        - 'rtgl-text s="lg" c="mu-fg"': A studious boy who likes to read stories, enjoy visual novels and explore the world.
         - rtgl-view h="16":
         - 'rtgl-grid cols="2" g="lg" w="f"':
             - rtgl-view g="sm":

@@ -17,7 +17,8 @@
                     - "${content}"
                 - rtgl-view d="h" h="${default(footerSpacerHeight, '30vh')}":
                 - $partial: footer1
+                  logo: ${default(footerLogo, site.footer.logo)}
             - rtgl-view pos="abs" edge="t" ah="c" bgc="bg":
                 - $partial: navbar1
-                  title: ${site.navbar.title}
-                  cta: ${site.navbar.cta}
+                  title: ${default(navbarTitle, site.navbar.title)}
+                  cta: ${default(navbarCta, site.navbar.cta)}

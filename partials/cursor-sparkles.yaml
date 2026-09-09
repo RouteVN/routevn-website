@@ -109,7 +109,11 @@
 
       const shouldUseDarkParticle = (clientX, clientY) => {
         const darkArea = window.RouteVNCursorSparklesDarkArea;
-        return typeof darkArea === "function" && darkArea(clientX, clientY);
+        if (typeof darkArea === "function") {
+          return darkArea(clientX, clientY);
+        }
+
+        return document.body.classList.contains("light");
       };
 
       const emitParticle = (clientX, clientY, isIdle = false) => {

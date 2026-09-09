@@ -56,38 +56,62 @@
               color: inherit;
               display: block;
               height: 100%;
+              inset: 0;
               line-height: normal;
+              pointer-events: none;
               text-decoration: none;
               -webkit-touch-callout: none;
-              position: relative;
+              position: absolute;
               width: 100%;
+            }
+            .landing-link::before {
+              content: "";
+              inset: 0;
+              pointer-events: auto;
+              position: absolute;
               z-index: 1;
             }
+            .landing-link-creator::before {
+              clip-path: polygon(0 0, calc(var(--landing-split-top) + var(--landing-split-offset)) 0, calc(var(--landing-split-bottom) + var(--landing-split-offset)) 100%, 0 100%);
+            }
+            .landing-link-reader::before {
+              clip-path: polygon(calc(var(--landing-split-top) + var(--landing-split-offset)) 0, 100% 0, 100% 100%, calc(var(--landing-split-bottom) + var(--landing-split-offset)) 100%);
+            }
+            .landing-link > .landing-stage,
+            .landing-link > .landing-copy {
+              pointer-events: auto;
+            }
             .landing-link:focus-visible {
+              outline: none;
+            }
+            .landing-link:focus-visible .landing-brand-logo {
               outline: 3px solid #888;
-              outline-offset: -8px;
+              outline-offset: 8px;
             }
             .landing-stage {
+              --landing-offset-x: clamp(8px, 2vw, 24px);
+              --landing-offset-y: clamp(8px, 2svh, 24px);
               position: absolute;
+              z-index: 2;
             }
             .landing-stage-makkuro {
               aspect-ratio: 1440 / 1532;
-              left: 4%;
-              top: 50%;
+              left: calc(4% - var(--landing-offset-x));
+              top: calc(50% - var(--landing-offset-y));
               transform: translateY(-46%);
               translate: calc(max(0, var(--landing-focus)) * 9vw + min(0, var(--landing-focus)) * 6vw) calc(min(0, var(--landing-focus)) * 24svh - var(--landing-neutral) * 12svh);
-              scale: calc(1 + min(0, var(--landing-focus)) * 0.16);
-              width: min(46vw, 760px, calc(76svh * 1440 / 1532));
+              scale: calc(1 + max(0, var(--landing-focus)) * 0.1 + min(0, var(--landing-focus)) * 0.16);
+              width: min(41.4vw, 684px, calc(68.4svh * 1440 / 1532));
             }
             .landing-stage-masshiro {
               aspect-ratio: 4244 / 3662;
-              right: 3%;
-              top: 43%;
+              right: calc(3% - var(--landing-offset-x));
+              top: calc(43% + var(--landing-offset-y));
               transform: translateY(-45%);
               transform-origin: center top;
               translate: calc(max(0, var(--landing-focus)) * 6vw + min(0, var(--landing-focus)) * 9vw) calc(max(0, var(--landing-focus)) * 16svh + var(--landing-neutral) * 8svh);
-              scale: calc(1 - max(0, var(--landing-focus)) * 0.22);
-              width: min(48vw, 820px, calc(70svh * 4244 / 3662));
+              scale: calc(1 - min(0, var(--landing-focus)) * 0.1 - max(0, var(--landing-focus)) * 0.22);
+              width: min(43.2vw, 738px, calc(63svh * 4244 / 3662));
             }
             .landing-layer {
               display: block;
@@ -154,14 +178,14 @@
             }
             @media (orientation: landscape) and (max-height: 540px) {
               .landing-stage-makkuro {
-                top: 56%;
+                top: calc(56% - var(--landing-offset-y));
                 translate: calc(max(0, var(--landing-focus)) * 9vw + min(0, var(--landing-focus)) * 6vw) calc(min(0, var(--landing-focus)) * 14svh - var(--landing-neutral) * 6svh);
-                width: min(46vw, calc(64svh * 1440 / 1532));
+                width: min(41.4vw, calc(57.6svh * 1440 / 1532));
               }
               .landing-stage-masshiro {
-                top: 42%;
+                top: calc(42% + var(--landing-offset-y));
                 translate: calc(max(0, var(--landing-focus)) * 6vw + min(0, var(--landing-focus)) * 9vw) calc(max(0, var(--landing-focus)) * 12svh + var(--landing-neutral) * 4svh);
-                width: min(48vw, calc((70svh - 64px) * 4244 / 3662));
+                width: min(43.2vw, calc((63svh - 57.6px) * 4244 / 3662));
               }
             }
             @media (orientation: portrait) {
@@ -172,6 +196,12 @@
               .landing-shell::before {
                 clip-path: polygon(100% calc(var(--landing-split-top) + var(--landing-split-offset)), 100% 100%, 0 100%, 0 calc(var(--landing-split-bottom) + var(--landing-split-offset)));
               }
+              .landing-link-creator::before {
+                clip-path: polygon(0 0, 100% 0, 100% calc(var(--landing-split-top) + var(--landing-split-offset)), 0 calc(var(--landing-split-bottom) + var(--landing-split-offset)));
+              }
+              .landing-link-reader::before {
+                clip-path: polygon(100% calc(var(--landing-split-top) + var(--landing-split-offset)), 100% 100%, 0 100%, 0 calc(var(--landing-split-bottom) + var(--landing-split-offset)));
+              }
               .landing-copy {
                 gap: 8px;
                 top: clamp(24px, 4svh, 40px);
@@ -180,21 +210,25 @@
                 bottom: clamp(24px, 4svh, 40px);
                 top: auto;
               }
+              .landing-stage {
+                --landing-offset-x: clamp(4px, 1vw, 12px);
+                --landing-offset-y: clamp(4px, 1svh, 12px);
+              }
               .landing-stage-makkuro {
-                left: 2%;
-                top: 13%;
+                left: calc(2% - var(--landing-offset-x));
+                top: calc(13% - var(--landing-offset-y));
                 transform: none;
                 translate: calc(max(0, var(--landing-focus)) * 6vw + min(0, var(--landing-focus)) * 4vw) calc(max(0, var(--landing-focus)) * 4svh + min(0, var(--landing-focus)) * min(5svh, max(3.5svh, calc(13svh - 70px))) - var(--landing-neutral) * min(4svh, max(0px, calc(13svh - 74px))));
-                width: min(78vw, calc(43svh * 1440 / 1532));
+                width: min(70.2vw, calc(38.7svh * 1440 / 1532));
               }
               .landing-stage-masshiro {
-                bottom: calc(clamp(24px, 4svh, 40px) + 92px);
-                right: 3%;
+                bottom: calc(clamp(24px, 4svh, 40px) + 92px - var(--landing-offset-y));
+                right: calc(3% - var(--landing-offset-x));
                 top: auto;
                 transform: none;
                 transform-origin: center;
                 translate: calc(max(0, var(--landing-focus)) * 4vw + min(0, var(--landing-focus)) * 6vw) calc(max(0, var(--landing-focus)) * 5svh + min(0, var(--landing-focus)) * 4svh + var(--landing-neutral) * min(3svh, 24px));
-                width: min(76vw, calc((44svh - 96px) * 4244 / 3662));
+                width: min(68.4vw, calc((39.6svh - 86.4px) * 4244 / 3662));
               }
               .landing-brand-logo {
                 width: clamp(150px, 46vw, 200px);
@@ -227,10 +261,10 @@
                 }
               });
 
-              const landingLink = document.querySelector(".landing-link");
-              let touchStartY = 0;
+              const landingLinks = document.querySelectorAll(".landing-link");
 
-              if (landingLink) {
+              landingLinks.forEach((landingLink) => {
+                let touchStartY = 0;
                 landingLink.addEventListener("touchstart", (event) => {
                   touchStartY = event.touches[0].clientY;
                 }, { passive: true });
@@ -240,7 +274,7 @@
                     window.location.assign(landingLink.href);
                   }
                 }, { passive: true });
-              }
+              });
 
               const elements = Array.from(document.querySelectorAll("[data-depth]"));
               const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)");

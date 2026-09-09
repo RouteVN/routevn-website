@@ -12,7 +12,10 @@
                 - rtgl-view md-hide d="h" av="c":
                     - 'rtgl-button href="${secondaryCta.href}" v="se"': ${secondaryCta.label}
             - $if cta.label:
-                - rtgl-button href="${cta.href}": ${cta.label}
+                - $if cta.disabled:
+                    - rtgl-button disabled: ${cta.label}
+                  $else:
+                    - rtgl-button href="${cta.href}": ${cta.label}
 - script: |
     (() => {
       if (window.__rvnNavbarAutohideInitialized) {

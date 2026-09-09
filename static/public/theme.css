@@ -368,7 +368,7 @@ pre {
   min-width: max-content;
 }
 
-#content-container img[data-rvn-image-preview="true"] {
+[data-rvn-image-preview="true"] {
   cursor: zoom-in;
 }
 

@@ -1,0 +1,193 @@
+---
+template: base
+title: Web Extractor
+themeBodyClass: light
+footerSpacerHeight: 96
+navbarTitle:
+  imgSrc: /public/masshiro/logo-horizontal.png
+  imgWidth: 150
+  imgHeight: 33
+  alt: RouteVN with Masshiro
+  href: /
+navbarCta:
+  label: Coming soon
+  disabled: true
+footerLogo:
+  src: /public/masshiro/logo-horizontal.png
+  width: 150
+  height: 33
+  alt: RouteVN with Masshiro
+seo:
+  title: Web Extractor - RouteVN
+  description: RouteVN Web Extractor is a browser extension that helps you read visual novels in other languages with a pop-up dictionary.
+  ogImage: https://routevn.com/public/reader/web-extractor/masshiro-og.png
+  ogImageWidth: 512
+  ogImageHeight: 512
+  ogImageAlt: Masshiro
+  ogImageType: image/png
+  twitterCard: summary
+---
+- $partial: cursor-sparkles
+
+- style: |
+    body.light {
+      --surface: #fcfcfc;
+    }
+
+    .rvn-web-extractor-main {
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+    }
+
+    .rvn-web-extractor-feature > rtgl-view[w="1200"] {
+      box-sizing: border-box;
+      max-width: 1200px;
+      width: min(1200px, calc(100vw - 64px)) !important;
+    }
+
+    .rvn-web-extractor-feature .rvn-feature1-media img {
+      object-fit: contain;
+    }
+
+    .rvn-web-extractor-feature .rvn-feature1-title {
+      font-size: 2.5rem;
+      font-weight: 600;
+      line-height: 1.05;
+    }
+
+    .rvn-web-extractor-faq-section {
+      background: var(--muted);
+      box-sizing: border-box;
+      display: flex;
+      justify-content: center;
+      margin-left: calc(50% - 50vw);
+      margin-right: calc(50% - 50vw);
+      padding: 0 24px;
+      width: 100vw;
+    }
+
+    .rvn-web-extractor-faq {
+      box-sizing: border-box;
+      padding: 100px 0 128px;
+      width: min(1200px, 100%);
+    }
+
+    .rvn-web-extractor-faq-title {
+      font-size: 2.5rem;
+      font-weight: 600;
+      line-height: 1.05;
+      margin: 0;
+    }
+
+    .rvn-web-extractor-faq-content {
+      color: var(--muted-foreground);
+    }
+
+    .rvn-web-extractor-cta {
+      background: var(--background);
+      box-sizing: border-box;
+      display: flex;
+      justify-content: center;
+      margin-left: calc(50% - 50vw);
+      margin-right: calc(50% - 50vw);
+      padding: 100px 24px;
+      width: 100vw;
+    }
+
+    @media (max-width: 1280px) {
+      .rvn-web-extractor-faq {
+        width: calc(100% - 32px);
+      }
+    }
+
+    @media (max-width: 760px) {
+      .rvn-web-extractor-feature > rtgl-view[w="1200"] {
+        width: calc(100vw - 48px) !important;
+      }
+
+      .rvn-web-extractor-feature .rvn-feature1-title {
+        font-size: 2rem;
+      }
+
+      .rvn-web-extractor-faq {
+        padding: 80px 0 96px;
+        width: calc(100% - 16px);
+      }
+
+      .rvn-web-extractor-faq-title {
+        font-size: 2rem;
+      }
+
+      .rvn-web-extractor-cta {
+        padding: 80px 16px;
+      }
+    }
+
+- 'main class="rvn-web-extractor-main"':
+    - $partial: hero1
+      title: RouteVN Web Extractor
+      subtitleHtml: RouteVN Web Extractor is a browser extension that helps you<br>read visual novels in other languages with a pop-up dictionary
+      backgroundImageSrc: /public/masshiro/stickers/masshirook.png
+      backgroundImageAlt: Chibi Masshiro winking and making an OK hand gesture.
+      imgSrc: /public/reader/web-extractor/hero.png
+      imgAlt: A pop-up dictionary over visual novel dialogue confirming a word was added to Anki.
+
+    - $partial: feature1
+      title: Look up words that you don't know
+      sideImageSrc: /public/reader/web-extractor/telescope.png
+      features:
+        - message: RouteVN Web Extractor integrates with different engines to provide a seamless reading experience.
+          bullets:
+            - Hover over text to open a pop-up dictionary.
+            - Extract text from dialogue choices.
+            - Browse the history of extracted lines.
+      themeClass: light rvn-web-extractor-feature
+      backgroundColor: var(--muted)
+      foregroundColor: var(--foreground)
+      images:
+        - src: /public/reader/web-extractor/popup.png
+          alt: Dictionary popup showing a word definition over visual novel dialogue.
+        - src: /public/reader/web-extractor/history.png
+          alt: Captured dialogue history with a pop-up dictionary definition.
+        - src: /public/reader/web-extractor/choices.png
+          alt: A pop-up dictionary definition for a word in a dialogue choice.
+
+    - $partial: feature1
+      title: Anki integration
+      sideImageSrc: /public/reader/web-extractor/notebook.png
+      features:
+        - message: Save words to Anki for a seamless learning experience.
+          bullets:
+            - Works with AnkiConnect.
+            - Capture full lines and screenshots for richer context.
+            - Configure custom note types and card types.
+      themeClass: light rvn-web-extractor-feature
+      backgroundColor: var(--background)
+      foregroundColor: var(--foreground)
+      imgSrc: /public/reader/web-extractor/anki.png
+
+    - 'section class="rvn-web-extractor-faq-section" aria-labelledby="web-extractor-faq-title"':
+        - 'div class="rvn-web-extractor-faq"':
+            - rtgl-view d="h" md-d="v" w="f" av="c" g="lg" mb="lg":
+                - rtgl-view w="1fg" md-w="f":
+                    - 'h2 id="web-extractor-faq-title" class="rvn-web-extractor-faq-title"': Frequently Asked Questions
+                - 'rtgl-view md-hide w="140" h="140" aria-hidden="true" style="flex: 0 0 140px;"':
+                    - 'img src="/public/reader/web-extractor/kindle.png" alt="" loading="lazy" width="257" height="280" style="display: block; height: 100%; object-fit: contain; width: 100%;"':
+            - rtgl-view g="lg" d="v" w="f":
+                - 'rtgl-accordion-item w="f" label="How do I get RouteVN Web Extractor?" content="RouteVN Web Extractor has been submitted to the Chrome Web Store for review. It will be available to install as soon as it is approved."':
+                - 'rtgl-accordion-item w="f" label="Where can I find free visual novels on the web?"':
+                    - 'span class="rvn-web-extractor-faq-content" slot="content"':
+                        - __html: >-
+                            For Japanese visual novels, we recommend <a href="https://novelgame.jp/">novelgame.jp</a>.
+                            For English visual novels, browse <a href="https://itch.io/games/free/genre-visual-novel/platform-web">itch.io’s free visual novels that you can play in your browser</a>.
+
+    - 'section class="rvn-web-extractor-cta" aria-label="Join our Discord community"':
+        - $partial: cta1
+          title: ${site.landing.discord.title}
+          subtitle: ${site.landing.discord.subtitle}
+          svg: ${site.landing.discord.svg}
+          cta: ${site.landing.discord.cta}
+
+- script src="/public/image-lightbox.js" defer:
