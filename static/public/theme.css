@@ -368,7 +368,7 @@ pre {
   min-width: max-content;
 }
 
-#content-container img[data-rvn-image-preview="true"] {
+[data-rvn-image-preview="true"] {
   cursor: zoom-in;
 }
 
@@ -408,6 +408,14 @@ pre {
   max-width: 100%;
   object-fit: contain;
   width: auto;
+}
+
+.light .rvn-image-lightbox::backdrop {
+  background: rgb(245 245 245 / 84%);
+}
+
+.light .rvn-image-lightbox__image {
+  box-shadow: none;
 }
 
 pre {

@@ -80,3 +80,15 @@
                     - 'video autoplay="" loop="" muted="" playsinline="" controls="" height="100%" width="100%" aria-label="${default(videoLabel, ''Video content'')}" draggable="true"':
                         - source src="${videoSrc}" type="video/mp4":
         - rtgl-view h=64:
+      $else:
+        - $if imgSrc:
+            - rtgl-view h=64:
+            - 'rtgl-view w="f" bc="bo" bw="xs" br="xs" shadow="sm" style="overflow: hidden; border-color: rgba(170, 170, 170, 0.42);"':
+                - 'img src="${imgSrc}" alt="${default(imgAlt, title)}" fetchpriority="high" style="display: block; width: 100%; height: auto;"':
+            - rtgl-view h=64:
+          $else:
+            - $if mediaPlaceholder:
+                - rtgl-view h=64:
+                - $partial: media-placeholder
+                  label: ${mediaPlaceholder}
+                - rtgl-view h=64:

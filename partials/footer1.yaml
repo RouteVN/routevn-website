@@ -5,7 +5,7 @@
         - rtgl-view g="xl" md-w=f w="1fg" ah="s":
             - 'a href="/" style="display: contents"':
                 - rtgl-view d=h av=c g=md:
-                    - 'rtgl-image h="${site.footer.logo.height}" w="${site.footer.logo.width}" src="${site.footer.logo.src}" alt="${site.footer.logo.alt}"':
+                    - 'rtgl-image h="${default(logo.height, site.footer.logo.height)}" w="${default(logo.width, site.footer.logo.width)}" src="${default(logo.src, site.footer.logo.src)}" alt="${default(logo.alt, site.footer.logo.alt)}"':
                     - $if site.footer.logo.label:
                         - rtgl-text s="lg": ${site.footer.logo.label}
             - 'rtgl-view style="display: grid; grid-template-columns: repeat(4, 20px); gap: 16px; align-items: center;"':

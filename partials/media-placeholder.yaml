@@ -1,0 +1,2 @@
+- 'rtgl-view w="f" ar="16/9" ah="c" av="c" p="lg" bgc="su" bc="bo" bw="xs" br="sm" style="min-width: 0; border-style: dashed;"':
+    - 'rtgl-text s="sm" c="mu-fg" ta="c"': ${label}

@@ -1,0 +1,84 @@
+---
+template: base
+title: Masshiro
+themeBodyClass: light
+footerSpacerHeight: 96
+navbarTitle:
+  imgSrc: /public/masshiro/logo-horizontal.png
+  imgWidth: 150
+  imgHeight: 33
+  alt: RouteVN with Masshiro
+  href: /
+footerLogo:
+  src: /public/masshiro/logo-horizontal.png
+  width: 150
+  height: 33
+  alt: RouteVN with Masshiro
+seo:
+  title: Masshiro 真っ白 - RouteVN
+  description: A studious boy who likes to read stories, enjoy visual novels and explore the world.
+  ogImage: https://routevn.com/public/masshiro/masshiro-og.png
+  ogImageWidth: 1200
+  ogImageHeight: 630
+  ogImageAlt: Masshiro 真っ白 with his reading and study tools
+  ogImageType: image/png
+---
+- $partial: cursor-sparkles
+
+- style: |
+    body.light {
+      --surface: #fcfcfc;
+    }
+
+- rtgl-view h="80" md-h="48":
+- 'rtgl-view w="1200" xl-w="calc(100vw - 64px)" md-w="calc(100vw - 48px)" d="h" md-d="v" av="c" g="xl" role="main"':
+    - 'rtgl-view w="1/2fb" md-w="f" ah="c"':
+        - 'rtgl-image data-rvn-image-lightbox cur="zoom-in" w="f" src="/public/masshiro/cover-illustration.png" alt="Cover illustration of Masshiro surrounded by a book, headphones, an e-reader, a notebook, a game console, and a telescope"':
+    - 'rtgl-view w="1/2fb" md-w="f" g="lg"':
+        - 'rtgl-text s="h1" role="heading" aria-level="1"': Masshiro
+        - 'rtgl-text s="h1" lang="ja"': 真っ白
+        - rtgl-view h="8":
+        - 'rtgl-text s="lg" c="mu-fg"': A studious boy who likes to read stories, enjoy visual novels and explore the world.
+        - rtgl-view h="16":
+        - 'rtgl-grid cols="2" g="lg" w="f"':
+            - rtgl-view g="sm":
+                - 'rtgl-text s="sm" c="mu-fg"': Height
+                - 'rtgl-text s="lg"': 172cm
+            - rtgl-view g="sm":
+                - 'rtgl-text s="sm" c="mu-fg"': Birthday
+                - 'rtgl-text s="lg"': 9 September
+            - rtgl-view g="sm":
+                - 'rtgl-text s="sm" c="mu-fg"': Favourite food
+                - 'rtgl-text s="lg"': Milk and yoghurt
+            - rtgl-view g="sm":
+                - 'rtgl-text s="sm" c="mu-fg"': Handedness
+                - 'rtgl-text s="lg"': Right-handed
+- rtgl-view h="80" md-h="48":
+- 'rtgl-view w="1200" xl-w="calc(100vw - 64px)" md-w="calc(100vw - 48px)" g="xl"':
+    - 'rtgl-view g="lg" w="f" role="region" aria-labelledby="masshiro-gallery-title"':
+        - 'rtgl-text id="masshiro-gallery-title" s="h2" role="heading" aria-level="2"': Gallery
+        - 'rtgl-grid cols="3" md-cols="1" g="lg" w="f"':
+            - 'rtgl-image data-rvn-image-lightbox cur="zoom-in" w="f" ar="16/9" of="con" bgc="su" bw="xs" bc="bo" br="lg" src="/public/masshiro/screenshots/reference-sheet.png" alt="Masshiro character reference sheet with front, side, and back views, facial details, outfit notes, and colours"':
+        - 'rtgl-view d="h" g="xs" av="c" ah="c" w="f"':
+            - 'rtgl-text s="sm" c="mu-fg"': Character design by
+            - 'rtgl-text s="sm" c="mu-fg"':
+                - 'a href="https://x.com/RE_0rie" target="_blank" rel="noopener noreferrer"': "@RE_0rie"
+    - 'rtgl-view g="lg" w="f" role="region" aria-labelledby="masshiro-sprites-title"':
+        - 'rtgl-text id="masshiro-sprites-title" s="h2" role="heading" aria-level="2"': Character sprites
+        - 'rtgl-grid cols="4" md-cols="2" sm-cols="1" g="lg" w="f"':
+            - 'rtgl-image data-rvn-image-lightbox cur="zoom-in" w="f" ar="3/4" of="con" bgc="su" bw="xs" bc="bo" br="lg" src="/public/masshiro/sprites/sprite-1-hug-book-neutral.png" alt="Masshiro holding a book against his chest with a neutral expression"':
+            - 'rtgl-image data-rvn-image-lightbox cur="zoom-in" w="f" ar="3/4" of="con" bgc="su" bw="xs" bc="bo" br="lg" src="/public/masshiro/sprites/sprite-2-adjust-glasses-smiling.png" alt="Masshiro smiling with his eyes closed while adjusting his glasses"':
+    - 'rtgl-view g="lg" w="f" role="region" aria-labelledby="masshiro-stickers-title"':
+        - 'rtgl-text id="masshiro-stickers-title" s="h2" role="heading" aria-level="2"': Stickers
+        - 'rtgl-grid cols="4" md-cols="2" g="lg" w="f"':
+            - 'rtgl-image data-rvn-image-lightbox cur="zoom-in" w="f" ar="1/1" of="con" bgc="su" bw="xs" bc="bo" br="lg" src="/public/masshiro/stickers/eepymasshiro.png" alt="Masshiro sleeping on his folded arms sticker"':
+            - 'rtgl-image data-rvn-image-lightbox cur="zoom-in" w="f" ar="1/1" of="con" bgc="su" bw="xs" bc="bo" br="lg" src="/public/masshiro/stickers/ermackshually.png" alt="Masshiro raising a finger to explain something sticker"':
+            - 'rtgl-image data-rvn-image-lightbox cur="zoom-in" w="f" ar="1/1" of="con" bgc="su" bw="xs" bc="bo" br="lg" src="/public/masshiro/stickers/masshirook.png" alt="Masshiro winking and making an OK hand gesture sticker"':
+            - 'rtgl-image data-rvn-image-lightbox cur="zoom-in" w="f" ar="1/1" of="con" bgc="su" bw="xs" bc="bo" br="lg" src="/public/masshiro/stickers/masshiropwease.png" alt="Masshiro pleading with teary eyes and clasped hands sticker"':
+    - 'rtgl-view g="lg" w="f" role="region" aria-labelledby="masshiro-community-creations-title"':
+        - 'rtgl-text id="masshiro-community-creations-title" s="h2" role="heading" aria-level="2"': Community creations
+        - 'rtgl-text c="mu-fg"': "Share your fan art with the hashtag #masshiro99"
+        - 'rtgl-view w="f" ah="c" av="c" p="xl" bgc="su" bw="xs" bc="bo" br="lg"':
+            - 'rtgl-text c="mu-fg"': Coming soon
+- rtgl-view h="80" md-h="48":
+- script src="/public/image-lightbox.js":

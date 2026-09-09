@@ -18,7 +18,7 @@
     }
 
 - 'rtgl-view class="rvn-cta-shell" ah="c"':
-    - rtgl-view ah="c" p="xl" br="md" bw="sm" w="f":
+    - rtgl-view ah="c" p="xl" br="md" bw="sm" w="f" bgc="su":
         - $if imgSrc:
             - 'rtgl-image h="56" w="56" src="${imgSrc}" alt="" mb="md"':
           $else:

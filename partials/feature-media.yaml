@@ -1,0 +1,34 @@
+- $if images:
+    - link rel="stylesheet" href="/public/feature-gallery.css":
+    - 'div class="rvn-feature-gallery" data-rvn-feature-gallery role="group" aria-label="${title} screenshots"':
+        - 'rtgl-view class="rvn-feature1-media" w="f" bc="bo" bw="xs" br="sm"':
+            - $for image, i in images:
+                - $if i == 0:
+                    - 'img data-rvn-gallery-image data-rvn-image-lightbox src="${image.src}" alt="${default(image.alt, title)}" draggable="false"':
+                  $else:
+                    - 'img data-rvn-gallery-image data-rvn-image-lightbox src="${image.src}" alt="${default(image.alt, title)}" draggable="false" hidden':
+        - 'div class="rvn-feature-gallery-dots" role="group" aria-label="Choose a screenshot" hidden':
+        - 'span class="rvn-feature-gallery-status" role="status" aria-live="polite" aria-atomic="true"':
+    - script src="/public/feature-gallery.js" defer:
+  $else:
+    - 'rtgl-view class="rvn-feature1-media" w="f" bc="bo" bw="xs" br="sm"':
+        - $if learnMoreHref:
+            - 'a href="${learnMoreHref}"':
+                - $if imgSrc:
+                    - img src="${imgSrc}" alt="${title} preview":
+                - $if videoSrc:
+                    - $if build.isScreenshotMode:
+                        - video src="${videoSrc}" loop muted playsinline:
+                      $else:
+                        - video src="${videoSrc}" autoplay loop muted playsinline:
+          $else:
+            - $if imgSrc:
+                - img data-rvn-image-lightbox src="${imgSrc}" alt="${title} preview":
+            - $if videoSrc:
+                - $if build.isScreenshotMode:
+                    - video src="${videoSrc}" loop muted playsinline:
+                  $else:
+                    - video src="${videoSrc}" autoplay loop muted playsinline:
+        - $if mediaPlaceholder:
+            - 'rtgl-view w="f" h="f" ah="c" av="c" p="lg" bgc="su"':
+                - 'rtgl-text s="sm" c="mu-fg" ta="c"': ${mediaPlaceholder}

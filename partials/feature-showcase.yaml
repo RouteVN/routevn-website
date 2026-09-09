@@ -23,6 +23,9 @@
                     - video src="${videoSrc}" style="width:100%;height:auto;display:block" loop muted playsinline:
                   $else:
                     - video src="${videoSrc}" style="width:100%;height:auto;display:block" autoplay loop muted playsinline:
+        - $if mediaPlaceholder:
+            - $partial: media-placeholder
+              label: ${mediaPlaceholder}
         - $if learnMoreHref:
             - rtgl-view w="f" ah="c" mt="md":
                 - rtgl-text s="sm":
