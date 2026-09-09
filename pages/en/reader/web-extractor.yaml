@@ -21,11 +21,11 @@ seo:
   title: Web Extractor - RouteVN
   description: RouteVN Web Extractor is a browser extension that helps you read visual novels in other languages with a pop-up dictionary.
   ogImage: https://routevn.com/public/reader/web-extractor/masshiro-og.png
-  ogImageWidth: 512
-  ogImageHeight: 512
+  ogImageWidth: 1200
+  ogImageHeight: 630
   ogImageAlt: Masshiro
   ogImageType: image/png
-  twitterCard: summary
+  twitterCard: summary_large_image
 ---
 - $partial: cursor-sparkles
 
