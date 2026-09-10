@@ -176,6 +176,22 @@
               margin: 0;
               white-space: nowrap;
             }
+            @media (min-width: 2001px) {
+              .landing-stage-makkuro {
+                width: min(41.4vw, 890px, calc(76svh * 1440 / 1532));
+              }
+              .landing-stage-masshiro {
+                width: min(43.2vw, 960px, calc(72svh * 4244 / 3662));
+              }
+            }
+            @media (min-width: 1000px) and (max-width: 1348px) {
+              .landing-stage-makkuro {
+                width: min(45.54vw, 752.4px, calc(75.24svh * 1440 / 1532));
+              }
+              .landing-stage-masshiro {
+                width: min(47.52vw, 811.8px, calc(69.3svh * 4244 / 3662));
+              }
+            }
             @media (orientation: landscape) and (max-height: 540px) {
               .landing-stage-makkuro {
                 top: calc(56% - var(--landing-offset-y));
@@ -235,6 +251,34 @@
               }
               .landing-tagline {
                 font-size: clamp(13px, 3.2vw, 16px);
+              }
+            }
+            @media (orientation: portrait) and (max-width: 599px) {
+              .landing-stage-makkuro {
+                width: min(87.75vw, calc(48.375svh * 1440 / 1532));
+              }
+              .landing-stage-masshiro {
+                width: min(85.5vw, calc((49.5svh - 108px) * 4244 / 3662));
+              }
+            }
+            @media (orientation: portrait) and (min-width: 1000px) and (max-width: 1348px) {
+              .landing-stage-makkuro {
+                width: min(77.22vw, calc(42.57svh * 1440 / 1532));
+              }
+              .landing-stage-masshiro {
+                width: min(75.24vw, calc((43.56svh - 95.04px) * 4244 / 3662));
+              }
+            }
+            @media (orientation: landscape) and (min-width: 1200px) and (max-width: 1348px) {
+              .landing-shell {
+                --landing-split-top: 68%;
+                --landing-split-bottom: 32%;
+              }
+            }
+            @media (orientation: portrait) and (min-width: 1200px) and (max-width: 1348px) {
+              .landing-shell {
+                --landing-split-top: 30%;
+                --landing-split-bottom: 70%;
               }
             }
             @media (prefers-reduced-motion: reduce) {
