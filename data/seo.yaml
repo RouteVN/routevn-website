@@ -4,7 +4,7 @@
 title: RouteVN – The Dedicated Platform for Visual Novels
 description: RouteVN is the dedicated platform exclusively for Visual Novels. Creators can create, publish, and distribute their work while readers can discover and read.
 keywords: visual novels, VN, visual novel platform, visual novel creator, visual novel publisher, interactive fiction, narrative games, RouteVN, visual novel engine, visual novel store
-author: RouteVN Team
+author: han4wluc
 robots: index, follow
 
 # Open Graph defaults
@@ -22,5 +22,5 @@ twitterCreator: "@routevn"
 
 # Schema.org defaults
 schemaType: WebSite
-schemaAuthor: RouteVN
-schemaAuthorType: Organization
+schemaAuthor: han4wluc
+schemaAuthorType: Person

@@ -21,7 +21,11 @@
       margin-bottom: 28px;
     }
     .rvn-blog-posts-grid-heading {
+      flex: 1;
       min-width: 0;
+    }
+    h1.rvn-blog-posts-grid-title {
+      text-align: center;
     }
     .rvn-blog-posts-grid-title {
       font-size: 2.5rem;
@@ -108,9 +112,13 @@
     }
     .rvn-blog-post-card-message {
       color: var(--muted-foreground);
+      display: -webkit-box;
       font-size: var(--md-font-size);
       line-height: var(--md-line-height);
       margin: 0;
+      overflow: hidden;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 3;
     }
     .rvn-blog-post-card:hover .rvn-blog-post-card-meta,
     .rvn-blog-post-card:focus-visible .rvn-blog-post-card-meta,
@@ -166,23 +174,30 @@
     - 'div class="rvn-blog-posts-grid-shell"':
         - 'div class="rvn-blog-posts-grid-header"':
             - 'div class="rvn-blog-posts-grid-heading"':
-                - 'h2 class="rvn-blog-posts-grid-title"': ${title}
+                - $if isArchive:
+                    - 'h1 class="rvn-blog-posts-grid-title"': ${title}
+                  $else:
+                    - 'h2 class="rvn-blog-posts-grid-title"': ${title}
                 - $if message:
                     - 'p class="rvn-blog-posts-grid-message"': ${message}
             - $if sideImageSrc:
                 - 'div class="rvn-blog-posts-grid-illustration" aria-hidden="true" style="background-image: url(${sideImageSrc});"':
         - 'div class="rvn-blog-posts-grid-list"':
             - $for item, i in sort(collections.blogPost, "data.date", "desc"):
-                - $if i < 3:
+                - $if i < default(postLimit, 3):
                     - 'a class="rvn-blog-post-card" href="${item.url}"':
                         - 'div class="rvn-blog-post-card-media"':
-                            - 'img src="${default(item.data.thumbnail, ''/public/creator/routevn-demo-250108-thumb.png'')}" alt="${item.data.title} ${default(thumbnailLabel, ''thumbnail'')}" style="object-position: ${default(item.data.thumbnailPosition, ''center'')};"':
+                            - 'img src="${default(item.data.thumbnail, ''/public/images/routevn_og.png'')}" alt="" loading="lazy" decoding="async" style="object-position: ${default(item.data.thumbnailPosition, ''center'')}; object-fit: ${default(item.data.thumbnailFit, ''cover'')};"':
                         - 'div class="rvn-blog-post-card-meta"':
-                            - span: ${formatDate(item.data.date, "MMM D, YYYY")}
+                            - $partial: date
+                              date: ${item.data.date}
                             - 'span aria-hidden="true"': /
                             - span: ${item.data.authorDisplay}
                         - 'div class="rvn-blog-post-card-body"':
-                            - 'h3 class="rvn-blog-post-card-title"': ${item.data.title}
+                            - $if isArchive:
+                                - 'h2 class="rvn-blog-post-card-title"': ${item.data.title}
+                              $else:
+                                - 'h3 class="rvn-blog-post-card-title"': ${item.data.title}
                             - 'p class="rvn-blog-post-card-message"': ${item.data.seo.description}
         - $if ctaHref:
             - 'div class="rvn-blog-posts-grid-cta-wrap"':

@@ -6,6 +6,7 @@ title: Building a Visual Novel Engine Part 1 - Route Graphics
 url: /en/blog/building-a-visual-novel-engine-route-graphics/
 tags: [blogPost]
 date: '2026-01-28'
+thumbnail: /public/blog/2026/03/graphics-1.png
 updatedAt: '2026-02-04'
 seo:
   title: Building a Visual Novel Engine Part 1 - Route Graphics

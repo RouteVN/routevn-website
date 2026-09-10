@@ -6,6 +6,7 @@ title: Building a Visual Novel Engine Part 3 - RouteVN Creator
 url: /en/blog/building-a-visual-novel-engine-routevn-creator-client/
 tags: [blogPost]
 date: '2026-02-12'
+thumbnail: /public/blog/2026/06/layout-editor.png
 seo:
   title: Building a Visual Novel Engine Part 3 - RouteVN Creator
   description: This post walks through how we built RouteVN Creator, a no-code desktop application for creating Visual Novels, covering the architecture and design decisions page by page.

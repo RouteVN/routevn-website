@@ -6,6 +6,7 @@ title: RouteVN Devlog first 1.5 year
 url: /en/blog/devlog-y1-5/
 tags: [blogPost]
 date: '2025-10-08'
+thumbnail: /public/blog/2025/04/3.png
 seo:
   title: RouteVN Devlog first 1.5 year
   description: A 1.5-year development journey of RouteVN, a visual novel engine and editor built from scratch. Follow the process from initial prototype through multiple rewrites, usability testing, and challenges in creating a no-code visual novel creation tool with modern UX.
