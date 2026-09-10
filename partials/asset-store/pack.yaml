@@ -26,11 +26,13 @@
                     - rtgl-view g="sm" w="f":
                         - rtgl-text s="sm": Released
                         - rtgl-text:
-                            - 'time datetime="${pack.released}"': ${pack.releasedLabel}
+                            - $partial: date
+                              date: ${pack.released}
                     - rtgl-view g="sm" w="f":
                         - rtgl-text s="sm": Last updated
                         - rtgl-text:
-                            - 'time datetime="${pack.updated}"': ${pack.updatedLabel}
+                            - $partial: date
+                              date: ${pack.updated}
         - 'rtgl-view g="xl" w="f" role="region" aria-label="Assets in this pack"':
             - $for section in pack.sections:
                 - 'rtgl-view g="lg" w="f" role="region" aria-labelledby="rvn-pack-${section.id}-title"':

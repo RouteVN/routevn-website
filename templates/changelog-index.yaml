@@ -21,7 +21,7 @@
                         - rtgl-view d=h md-d=v g=xl w=f mb=xl:
                             - rtgl-view md-w=f w="140":
                                 - rtgl-text c="mu" s="sm":
-                                    - $partial: changelog-date
+                                    - $partial: date
                                       date: ${item.data.date}
                             - rtgl-view class="changelog-release-content" w="1fg":
                                 - 'a href="${item.url}" style="text-decoration: none; color: inherit;"':

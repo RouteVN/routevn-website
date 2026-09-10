@@ -114,19 +114,12 @@ function titleCase(value) {
     .replace(/\b\w/g, (letter) => letter.toUpperCase());
 }
 
-function formatDate(value) {
+function validateDate(value) {
   const date = new Date(`${value}T00:00:00Z`);
 
   if (Number.isNaN(date.getTime())) {
     fail(`Invalid date: ${value}. Use YYYY-MM-DD.`);
   }
-
-  return new Intl.DateTimeFormat('en', {
-    day: 'numeric',
-    month: 'long',
-    timeZone: 'UTC',
-    year: 'numeric',
-  }).format(date);
 }
 
 function formatDuration(value) {
@@ -318,8 +311,8 @@ function validateMetadata(metadata) {
     fail('metadata.author requires name, slug, and avatarSrc.');
   }
 
-  formatDate(metadata.released);
-  formatDate(metadata.updated);
+  validateDate(metadata.released);
+  validateDate(metadata.updated);
 }
 
 function validateManifest(manifest) {
@@ -936,9 +929,7 @@ function main() {
       coverWidth: metadata.coverWidth || null,
       author: metadata.author,
       released: metadata.released,
-      releasedLabel: formatDate(metadata.released),
       updated: metadata.updated,
-      updatedLabel: formatDate(metadata.updated),
       sections,
     };
 

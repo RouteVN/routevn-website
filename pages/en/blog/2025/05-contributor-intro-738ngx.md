@@ -6,6 +6,8 @@ title: "Contributor Introduction: 738NGX"
 url: /en/blog/contributor-intro-738ngx/
 tags: [blogPost]
 date: '2025-12-29'
+thumbnail: /public/blog/2025/05/738ngx-avatar.jpg
+thumbnailFit: contain
 seo:
   title: "Contributor Introduction: 738NGX"
   description: Introducing 738NGX, a developer at RouteVN. Computer Science student from Shanghai, who has made significant contributions to RouteVN.

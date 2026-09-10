@@ -19,7 +19,7 @@
                     - rtgl-view w="1fg":
                         - h1: ${version}
                         - rtgl-text c="mu" s="sm" mb="lg":
-                            - $partial: changelog-date
+                            - $partial: date
                               date: ${date}
                 - rtgl-view d=h md-d=v g=xl av=s:
                     - rtgl-view md-w=f w="140":

@@ -1,7 +1,7 @@
 ---
 template: post
 author: han4wluc
-authorDisplay: RouteVN
+authorDisplay: han4wluc
 title: "Creator Interview with BunniBambii: Making Two Straws"
 url: /en/blog/creator-interview-bunnibambii-two-straws/
 tags: [blogPost]

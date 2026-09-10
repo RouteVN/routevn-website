@@ -23,8 +23,11 @@
                     - h1: ${title}
                     - $if date:
                         - rtgl-text mb="xl" c="mu" s="sm":
-                            - $partial: changelog-date
+                            - $partial: date
                               date: ${date}
+                            - $if authorDisplay:
+                                - 'span aria-hidden="true"': " / "
+                                - span: ${authorDisplay}
                     - "${content}"
                 - 'rtgl-view lg-hide w="1fg" style="align-self: flex-start; position: sticky; top: 64px;"':
                     - rtgl-page-outline id="page-outline" target-id="content-container":

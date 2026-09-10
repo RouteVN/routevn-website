@@ -1,7 +1,7 @@
 ---
 template: post
 author: han4wluc
-authorDisplay: RouteVN
+authorDisplay: han4wluc
 title: Introducing Masshiro 真っ白
 url: /en/blog/introducing-masshiro/
 tags: [blogPost]
