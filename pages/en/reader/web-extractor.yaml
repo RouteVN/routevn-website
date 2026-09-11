@@ -10,8 +10,9 @@ navbarTitle:
   alt: RouteVN with Masshiro
   href: /
 navbarCta:
-  label: Coming soon
-  disabled: true
+  label: Get Chrome Extension
+  href: https://chromewebstore.google.com/detail/routevn-web-extractor/mmaeimemigaiffcbhaaplmgkoimijcik
+  newTab: true
 footerLogo:
   src: /public/masshiro/logo-horizontal.png
   width: 150
@@ -176,18 +177,20 @@ seo:
                 - 'rtgl-view md-hide w="140" h="140" aria-hidden="true" style="flex: 0 0 140px;"':
                     - 'img src="/public/reader/web-extractor/kindle.png" alt="" loading="lazy" width="257" height="280" style="display: block; height: 100%; object-fit: contain; width: 100%;"':
             - rtgl-view g="lg" d="v" w="f":
-                - 'rtgl-accordion-item w="f" label="How do I get RouteVN Web Extractor?" content="RouteVN Web Extractor has been submitted to the Chrome Web Store for review. It will be available to install as soon as it is approved."':
+                - 'rtgl-accordion-item w="f" label="How do I get RouteVN Web Extractor?" content="Install RouteVN Web Extractor from the Chrome Web Store using the Get Chrome Extension button on this page."':
                 - 'rtgl-accordion-item w="f" label="Where can I find free visual novels on the web?"':
                     - 'span class="rvn-web-extractor-faq-content" slot="content"':
                         - __html: >-
                             For Japanese visual novels, we recommend <a href="https://novelgame.jp/">novelgame.jp</a>.
                             For English visual novels, browse <a href="https://itch.io/games/free/genre-visual-novel/platform-web">itch.io’s free visual novels that you can play in your browser</a>.
 
-    - 'section class="rvn-web-extractor-cta" aria-label="Join our Discord community"':
+    - 'section class="rvn-web-extractor-cta" aria-label="Download RouteVN Web Extractor"':
         - $partial: cta1
-          title: ${site.landing.discord.title}
-          subtitle: ${site.landing.discord.subtitle}
-          svg: ${site.landing.discord.svg}
-          cta: ${site.landing.discord.cta}
+          title: Download RouteVN Web Extractor
+          subtitle: Get the extension from the Chrome Web Store.
+          cta:
+            label: Get Chrome Extension
+            href: https://chromewebstore.google.com/detail/routevn-web-extractor/mmaeimemigaiffcbhaaplmgkoimijcik
+            newTab: true
 
 - script src="/public/image-lightbox.js" defer:
