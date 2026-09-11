@@ -15,7 +15,10 @@
                 - $if cta.disabled:
                     - rtgl-button disabled: ${cta.label}
                   $else:
-                    - rtgl-button href="${cta.href}": ${cta.label}
+                    - $if cta.newTab:
+                        - rtgl-button href="${cta.href}" new-tab: ${cta.label}
+                      $else:
+                        - rtgl-button href="${cta.href}": ${cta.label}
 - script: |
     (() => {
       if (window.__rvnNavbarAutohideInitialized) {
