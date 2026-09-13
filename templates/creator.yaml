@@ -14,9 +14,9 @@
         - rtgl-view w=f:
             - rtgl-view h="48":
             - rtgl-view w="f" ah="c":
-                - rtgl-view w=f ph="lg" pb="lg" ah=c:
+                - rtgl-view w=f ph="lg" pb="${default(contentPaddingBottom, 'lg')}" ah=c:
                     - "${content}"
-                - rtgl-view d="h" h="${default(footerSpacerHeight, '20vh')}":
+                - 'rtgl-view d="h" w="f" h="${default(footerSpacerHeight, "20vh")}" style="background: ${default(footerSpacerBackground, "transparent")};"':
                 - $partial: footer1
             - rtgl-view pos="abs" edge="t" ah="c" bgc="bg":
                 - $partial: navbar1

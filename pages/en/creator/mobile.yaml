@@ -1,7 +1,9 @@
 ---
 template: creator
 title: Visual Novel Maker for Android, iPhone & iPad
-footerSpacerHeight: 64
+contentPaddingBottom: "0"
+footerSpacerHeight: 80
+footerSpacerBackground: "#141414"
 seo:
   title: Visual Novel Maker for Android, iPhone & iPad | RouteVN
   description: Create visual novels on your phone or tablet with RouteVN Creator. Write dialogue, build branching stories, and customize your game. Free, offline, and no coding.

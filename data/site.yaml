@@ -228,7 +228,6 @@ creator:
         columns: 2
         platforms:
           - name: Android
-            svg: google-play
             badge:
               platform: google-play
               badgeSrc: /public/creator/mobile/google-play-badge-mono.svg
@@ -238,7 +237,6 @@ creator:
               label: Get it on Google Play
               href: https://play.google.com/store/apps/details?id=com.routevn.creator
           - name: iPhone / iPad
-            svg: apple
             badge:
               platform: app-store
               disabled: true
