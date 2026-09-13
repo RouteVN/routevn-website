@@ -60,7 +60,9 @@ footer:
         - text: Masshiro
           href: /en/masshiro
         - text: Web Extractor
-          href: /en/reader/web-extractor
+          href: /en/web-extractor/
+        - text: Web Extractor Docs
+          href: /en/web-extractor/docs/
     - links:
         - text: Mission
           href: /en/mission/

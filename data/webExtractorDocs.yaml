@@ -1,0 +1,14 @@
+id: web-extractor-docs
+header:
+  label: Web Extractor Docs
+  href: /en/web-extractor/
+items:
+  - title: General
+    type: groupLabel
+    items:
+      - id: getting-started
+        title: Getting Started
+        href: /en/web-extractor/docs/
+      - id: using-the-dictionary
+        title: Using the Dictionary
+        href: /en/web-extractor/docs/using-the-dictionary/
