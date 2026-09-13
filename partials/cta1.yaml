@@ -17,6 +17,9 @@
       }
     }
 
+- $if storeLinks:
+    - link rel="stylesheet" href="/public/store-badges.css":
+
 - 'rtgl-view class="rvn-cta-shell" ah="c"':
     - rtgl-view ah="c" p="xl" br="md" bw="sm" w="f" bgc="su":
         - $if imgSrc:
@@ -25,26 +28,36 @@
             - $if svg:
                 - rtgl-svg svg="${svg}" wh="48" f="pr" mb="md":
         - rtgl-text s="h2" mb="md" c="pr" ta="c": ${title}
-        - rtgl-text s="lg" c="pr" mb="lg" ta="c": ${subtitle}
-        - rtgl-view d="h" g="md" ah="c":
-            - $if cta.variant == "se":
-                - $if cta.newTab:
-                    - 'rtgl-button href="${cta.href}" v="se" new-tab': ${cta.label}
-                  $else:
-                    - 'rtgl-button href="${cta.href}" v="se"': ${cta.label}
-              $else:
-                - $if cta.newTab:
-                    - rtgl-button href="${cta.href}" new-tab: ${cta.label}
-                  $else:
-                    - rtgl-button href="${cta.href}": ${cta.label}
-            - $if secondaryCta:
-                - $if secondaryCta.variant == "pr":
-                    - $if secondaryCta.newTab:
-                        - rtgl-button href="${secondaryCta.href}" new-tab: ${secondaryCta.label}
+        - $if subtitle:
+            - rtgl-text s="lg" c="pr" mb="lg" ta="c": ${subtitle}
+        - $if storeLinks:
+            - rtgl-view d="h" md-d="v" g="lg" ah="c" av="c" mt="md":
+                - $for store in storeLinks:
+                    - $partial: store-badge
+                      store: ${store}
+                      href: ${store.href}
+                      alt: ${store.alt}
+                      disabledLabel: ${default(store.disabledLabel, 'Coming soon')}
+          $else:
+            - rtgl-view d="h" g="md" ah="c":
+                - $if cta.variant == "se":
+                    - $if cta.newTab:
+                        - 'rtgl-button href="${cta.href}" v="se" new-tab': ${cta.label}
                       $else:
-                        - rtgl-button href="${secondaryCta.href}": ${secondaryCta.label}
+                        - 'rtgl-button href="${cta.href}" v="se"': ${cta.label}
                   $else:
-                    - $if secondaryCta.newTab:
-                        - 'rtgl-button href="${secondaryCta.href}" v="se" new-tab': ${secondaryCta.label}
+                    - $if cta.newTab:
+                        - rtgl-button href="${cta.href}" new-tab: ${cta.label}
                       $else:
-                        - 'rtgl-button href="${secondaryCta.href}" v="se"': ${secondaryCta.label}
+                        - rtgl-button href="${cta.href}": ${cta.label}
+                - $if secondaryCta:
+                    - $if secondaryCta.variant == "pr":
+                        - $if secondaryCta.newTab:
+                            - rtgl-button href="${secondaryCta.href}" new-tab: ${secondaryCta.label}
+                          $else:
+                            - rtgl-button href="${secondaryCta.href}": ${secondaryCta.label}
+                      $else:
+                        - $if secondaryCta.newTab:
+                            - 'rtgl-button href="${secondaryCta.href}" v="se" new-tab': ${secondaryCta.label}
+                          $else:
+                            - 'rtgl-button href="${secondaryCta.href}" v="se"': ${secondaryCta.label}

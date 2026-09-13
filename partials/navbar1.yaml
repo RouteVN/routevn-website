@@ -13,12 +13,12 @@
                     - 'rtgl-button href="${secondaryCta.href}" v="se"': ${secondaryCta.label}
             - $if cta.label:
                 - $if cta.disabled:
-                    - rtgl-button disabled: ${cta.label}
+                    - 'rtgl-button v="${default(cta.variant, "pr")}" disabled': ${cta.label}
                   $else:
                     - $if cta.newTab:
-                        - rtgl-button href="${cta.href}" new-tab: ${cta.label}
+                        - 'rtgl-button href="${cta.href}" v="${default(cta.variant, "pr")}" new-tab': ${cta.label}
                       $else:
-                        - rtgl-button href="${cta.href}": ${cta.label}
+                        - 'rtgl-button href="${cta.href}" v="${default(cta.variant, "pr")}"': ${cta.label}
 - script: |
     (() => {
       if (window.__rvnNavbarAutohideInitialized) {

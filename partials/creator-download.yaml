@@ -1,29 +1,41 @@
+- link rel="stylesheet" href="/public/store-badges.css":
 - rtgl-view h="100":
 - rtgl-view ah="c" ph="lg" g="lg" md-w="100vw" lg-w="768" w="1024":
-    - 'h1 style="text-align: center; margin: 0 0 8px;"': ${title}
+    - 'rtgl-image wh="128" of="con" bw="sm" br="xl" src="/public/creator/app-icon.png" alt="Makkuro" style="border-color: #fff;"':
+    - 'h1 style="font-size: 2rem; text-align: center; margin: 0 0 8px;"': ${title}
     - $if subtitle:
         - rtgl-text s="lg" c="mu" mb="md" ta="c": ${subtitle}
-    - rtgl-view d="h" g="lg" av="c" mb="xl" ah="c":
+    - rtgl-view d="v" g="md" mb="xl" ah="c":
         - rtgl-text s="lg": ${versionLabel} ${site.creator.download.version}
-        - rtgl-text c="mu": "-"
-        - rtgl-text href="/en/creator/changelog/" s="lg" c="pr" cur="p": ${changelogLabel}
-    - rtgl-view g="lg" w="f":
-        - $for platform in site.creator.download.platforms:
-            - rtgl-view w="f" p="lg" bw="xs" br="lg" bgc="se" ah="c":
-                - rtgl-svg svg="${platform.svg}" wh="32" f="pr-fg" mb="md":
-                - rtgl-text s="h3" mb="md": ${platform.name}
-                - $if platform.comingSoon:
-                    - rtgl-text c="mu": ${comingSoonLabel}
-                - $if platform.cta:
-                    - 'a href="${platform.cta.href}" style="text-decoration: none;"':
-                        - $if platform.svg == "windows":
-                            - rtgl-button: ${windowsDownloadLabel}
-                        - $if platform.svg == "apple":
-                            - rtgl-button: ${macDownloadLabel}
-                        - $if platform.svg == "linux":
-                            - rtgl-button: ${linuxDownloadLabel}
-                - $if platform.helpLink:
-                    - 'rtgl-text href="${platform.helpLink.href}" s="sm" c="pr" cur="p" mt="md" style="text-decoration: underline; text-underline-offset: 2px;"': ${installationGuideLabel}
+        - 'rtgl-text href="/en/creator/changelog/" s="lg" c="pr" cur="p" style="text-decoration: underline; text-underline-offset: 2px;"': ${changelogLabel}
+    - rtgl-view g="xl" w="f":
+        - $for group in site.creator.download.groups:
+            - 'rtgl-view w="f" g="xl" ah="c" pt="xl" role="region" aria-labelledby="download-${group.id}-title"':
+                - $if group.id == "desktop":
+                    - 'rtgl-text id="download-${group.id}-title" s="h2" w="f" role="heading" aria-level="2" ta="c" style="font-size: 2.25rem;"': ${desktopDownloadTitle}
+                  $else:
+                    - 'rtgl-text id="download-${group.id}-title" s="h2" w="f" role="heading" aria-level="2" ta="c" style="font-size: 2.25rem;"': ${mobileDownloadTitle}
+                - 'rtgl-grid cols="${group.columns}" md-cols="1" g="lg" w="f"':
+                    - $for downloadOption in group.platforms:
+                        - $if group.id == "mobile":
+                            - rtgl-view w="f" p="lg" bw="xs" br="lg" bgc="su" ah="c":
+                                - rtgl-text s="h3" mb="md" ta="c": ${downloadOption.name}
+                                - $partial: store-badge
+                                  store: ${downloadOption.badge}
+                                  href: ${downloadOption.cta.href}
+                                  alt: ${downloadOption.cta.label}
+                                  disabledLabel: ${comingSoonLabel}
+                          $else:
+                            - rtgl-view w="f" g="md" ah="c":
+                                - 'a class="rvn-desktop-download-card" href="${downloadOption.cta.href}" aria-label="${downloadOption.cta.label}" style="display: block; width: 100%; color: inherit; text-decoration: none; border-radius: var(--border-radius-lg);"':
+                                    - rtgl-view w="f" h="180" p="lg" bw="xs" br="lg" bgc="su" ah="c" av="c" g="md":
+                                        - rtgl-svg svg="${downloadOption.svg}" wh="64" f="pr-fg":
+                                        - rtgl-view g="sm" ah="c":
+                                            - rtgl-text s="h3" ta="c": ${downloadOption.name}
+                                            - $if downloadOption.format:
+                                                - rtgl-text s="md" c="mu" ta="c": ${downloadOption.format}
+                                - $if downloadOption.helpLink:
+                                    - 'rtgl-text href="${downloadOption.helpLink.href}" s="sm" c="pr" cur="p" style="text-decoration: underline; text-underline-offset: 2px;"': ${installationGuideLabel}
 - rtgl-view h="20vh":
 - $partial: cta1
   svg: ${site.landing.discord.svg}

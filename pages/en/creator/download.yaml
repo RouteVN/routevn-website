@@ -1,9 +1,13 @@
 ---
 template: base
+navbarCta:
+  variant: se
+  label: Docs
+  href: /en/creator/docs/introduction/
 title: Download RouteVN Creator
 seo:
   title: Download RouteVN Creator - Visual Novel Creation Tool
-  description: Download RouteVN Creator for Windows, macOS, and Linux. Create visual novels easily with our intuitive editor.
+  description: Download RouteVN Creator for Windows, macOS, Linux, Android, iPhone, and iPad. Create visual novels easily with our intuitive editor.
 alternates:
   - hreflang: en
     href: https://routevn.com/en/creator/download/
@@ -26,6 +30,10 @@ alternates:
   versionLabel: Version
   changelogLabel: View changelog
   comingSoonLabel: Coming soon
+  desktopDownloadTitle: Download for Desktop
+  mobileDownloadTitle: Get it for mobile and tablet
+  googlePlayDownloadLabel: Get it on Google Play
+  appStoreDownloadLabel: Download on the App Store
   windowsDownloadLabel: Download for Windows
   macDownloadLabel: Download for macOS
   linuxDownloadLabel: Download for Linux (AppImage)

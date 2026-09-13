@@ -1,0 +1,85 @@
+---
+template: creator
+title: Visual Novel Maker for Android, iPhone & iPad
+footerSpacerHeight: 64
+seo:
+  title: Visual Novel Maker for Android, iPhone & iPad | RouteVN
+  description: Create visual novels on your phone or tablet with RouteVN Creator. Write dialogue, build branching stories, and customize your game. Free, offline, and no coding.
+  keywords: visual novel maker android, visual novel maker iphone, visual novel maker ipad, mobile visual novel creator, offline visual novel editor, RouteVN Creator
+mobile:
+  screenshots:
+    - image: /public/creator/mobile/live-preview.png
+      alt: Android dialogue editor with a live visual novel preview above the script and editing controls.
+    - image: /public/creator/mobile/branching-choices.png
+      alt: Android choice editor showing choice text, a destination scene, and two options in the story preview.
+    - image: /public/creator/mobile/custom-interface.png
+      alt: Android title screen layout editor showing a visual novel preview and controls for element position, size, and rotation.
+  tabletScreenshots:
+    - src: /public/creator/mobile/tablet/s1.png
+      alt: Tablet image library with folders of backgrounds and illustrations.
+    - src: /public/creator/mobile/tablet/s2.png
+      alt: Tablet dialogue editor with a live scene preview above the script and keyboard.
+    - src: /public/creator/mobile/tablet/s3.png
+      alt: Tablet character sprite picker with expressions and a classroom scene preview.
+    - src: /public/creator/mobile/tablet/s4.png
+      alt: Tablet choice editor with branching options and a destination section.
+    - src: /public/creator/mobile/tablet/s5.png
+      alt: Tablet title screen editor with position, size, and layout controls.
+    - src: /public/creator/mobile/tablet/s6.png
+      alt: Tablet Scene Map showing connected scenes and branching story sections.
+---
+- link rel="stylesheet" href="/public/creator/mobile.css":
+
+- 'main class="rvn-mobile"':
+    - 'section class="rvn-mobile-hero" aria-labelledby="mobile-title"':
+        - rtgl-view w="f" ah="c" g="lg":
+            - 'rtgl-text id="mobile-title" class="rvn-mobile-title" s="h1" role="heading" aria-level="1" ta="c"': Make visual novels on your phone or tablet
+            - 'rtgl-text class="rvn-mobile-intro" s="lg" c="mu" ta="c"': Create on Android phones and tablets, iPhone, and iPad. Write dialogue, build branching stories, and bring your characters to life without coding.
+            - 'rtgl-view w="f" mt="xl" bc="bo" bw="xs" br="xs" shadow="sm" style="overflow: hidden;"':
+                - 'img src="/public/creator/mobile/android-cover.png" alt="Create Visual Novels on Your Phone. Makkuro beside the Android editor and a branching story preview." width="2212" height="1080" fetchpriority="high" decoding="async" style="display: block; width: 100%; height: auto;"':
+
+    - 'section class="rvn-mobile-section" aria-labelledby="mobile-editor-title"':
+        - rtgl-view w="f" ah="c":
+            - 'rtgl-view w="1200" xl-w="calc(100vw - 64px)" md-w="calc(100vw - 48px)"':
+                - rtgl-view g="md" mb="xl":
+                    - 'rtgl-text id="mobile-editor-title" s="h2" role="heading" aria-level="2"': A visual novel editor in your hands
+                - rtgl-grid cols="3" md-cols="1" g="xl" w="f":
+                    - $for item in mobile.screenshots:
+                        - 'rtgl-view class="rvn-mobile-feature" w="f"':
+                            - 'img class="rvn-mobile-screenshot" src="${item.image}" alt="${item.alt}" width="864" height="1536" decoding="async" loading="lazy" data-rvn-image-lightbox="true"':
+
+- $partial: feature1
+  title: Create on Android tablets and iPad
+  backgroundColor: var(--background)
+  foregroundColor: var(--foreground)
+  themeClass: dark rvn-mobile-tablet
+  images: ${mobile.tabletScreenshots}
+  features:
+    - title: Write with a live preview
+      message: Edit your dialogue and see the scene above your script on your tablet.
+    - title: Build your branching story
+      message: Add choices and follow the connections between scenes in the Scene Map.
+    - title: Optimized for tablets
+      message: Work in portrait or landscape. The editor adapts to your tablet’s orientation as you write, edit, and preview your story.
+
+- 'section class="rvn-mobile-section" aria-label="Get RouteVN Creator"':
+    - rtgl-view w="f" ah="c":
+        - $partial: cta1
+          title: Get RouteVN Creator
+          storeLinks:
+            - platform: google-play
+              badgeSrc: /public/creator/mobile/google-play-badge-mono.svg
+              alt: Get it on Google Play
+              width: 1357
+              height: 402
+              href: https://play.google.com/store/apps/details?id=com.routevn.creator
+            - platform: app-store
+              disabled: true
+              badgeSrc: /public/creator/mobile/app-store-badge-mono.svg
+              alt: Download on the App Store
+              width: 1360
+              height: 390
+              # App ID from the supplied listing; confirm availability before publishing.
+              href: https://apps.apple.com/app/id6810571721
+
+- script src="/public/image-lightbox.js" defer:

@@ -1,0 +1,8 @@
+- $if store.disabled:
+    - 'span class="rvn-store-badge rvn-store-badge--${store.platform}" role="link" aria-disabled="true" aria-label="${alt}" aria-describedby="store-${store.platform}-status" tabindex="0"':
+        - 'img src="${store.badgeSrc}" alt="${alt}" width="${store.width}" height="${store.height}" loading="lazy" decoding="async"':
+        - 'rtgl-view id="store-${store.platform}-status" class="rvn-store-tooltip" role="tooltip" bgc="mu" bw="xs" bc="bo" br="md" ph="md" pv="sm"':
+            - rtgl-text s="sm" c="fg": ${disabledLabel}
+  $else:
+    - 'a class="rvn-store-badge rvn-store-badge--${store.platform}" href="${href}"':
+        - 'img src="${store.badgeSrc}" alt="${alt}" width="${store.width}" height="${store.height}" loading="lazy" decoding="async"':

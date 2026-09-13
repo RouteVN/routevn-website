@@ -23,6 +23,8 @@ The following pages are available in every supported locale:
 
 Documentation, changelogs, blog posts, legal pages, and hiring pages remain English-only unless a localized page exists.
 
+The Creator mobile page (`/en/creator/mobile/`) is also English-only.
+
 ## Routing behavior
 
 - `/` is a language-neutral home page.

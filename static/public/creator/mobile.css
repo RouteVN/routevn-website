@@ -1,0 +1,93 @@
+.rvn-mobile {
+  box-sizing: border-box;
+  max-width: 1160px;
+  width: 100%;
+  --h2-font-size: clamp(1.75rem, 3vw, 2.5rem);
+  --h2-font-weight: 600;
+  --h2-line-height: 1.15;
+  --h3-font-size: 1.375rem;
+  --h3-line-height: 1.3;
+}
+
+.rvn-mobile section {
+  scroll-margin-top: 88px;
+}
+
+.rvn-mobile-hero {
+  padding: 88px 0 64px;
+}
+
+.rvn-mobile-title {
+  max-width: 920px;
+  --h1-font-size: clamp(2.25rem, 5.5vw, 4rem);
+  --h1-font-weight: 600;
+  --h1-line-height: 1.08;
+  --h1-letter-spacing: -0.035em;
+}
+
+.rvn-mobile-intro {
+  max-width: 720px;
+}
+
+.rvn-mobile-section {
+  background: #141414;
+  box-sizing: border-box;
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
+  padding: 48px 0 64px;
+  width: 100vw;
+}
+
+.rvn-mobile-feature {
+  min-width: 0;
+}
+
+.rvn-mobile-screenshot {
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  box-sizing: border-box;
+  display: block;
+  height: auto;
+  max-width: 100%;
+  width: 100%;
+}
+
+.rvn-mobile :is(a, img):focus-visible {
+  outline: 2px solid var(--foreground);
+  outline-offset: 6px;
+}
+
+/* Fit portrait tablet artwork into the standard feature gallery without cropping. */
+.rvn-mobile-tablet .rvn-feature-gallery {
+  margin-inline: auto;
+  max-width: 440px;
+}
+
+.rvn-mobile-tablet .rvn-feature1-media {
+  aspect-ratio: 1200 / 1601;
+}
+
+.rvn-mobile-tablet .rvn-feature1-media img {
+  object-fit: contain;
+}
+
+@media (max-width: 768px) {
+  .rvn-mobile-hero {
+    padding: 64px 0 32px;
+  }
+
+  .rvn-mobile-section {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  .rvn-mobile-feature {
+    margin: 0 auto;
+    max-width: 440px;
+  }
+
+  .rvn-mobile-screenshot {
+    align-self: center;
+    max-width: 360px;
+  }
+}

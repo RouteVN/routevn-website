@@ -1,11 +1,15 @@
 ---
 template: base
+navbarCta:
+  variant: se
+  label: ドキュメント
+  href: /en/creator/docs/introduction/
 lang: ja
 locale: ja
 title: RouteVN Creatorをダウンロード
 seo:
   title: RouteVN Creatorをダウンロード - ノベルゲーム制作ツール
-  description: Windows、macOS、Linux版のRouteVN Creatorをダウンロード。直感的なエディターでノベルゲームを手軽に制作できます。
+  description: Windows、macOS、Linux、Android、iPhone、iPad版のRouteVN Creatorをダウンロード。直感的なエディターでノベルゲームを手軽に制作できます。
 alternates:
   - hreflang: en
     href: https://routevn.com/en/creator/download/
@@ -23,10 +27,14 @@ alternates:
     href: https://routevn.com/en/creator/download/
 ---
 - $partial: creator-download
-  title: RouteVN Creatorをダウンロード
+  title: RouteVN Creator
   versionLabel: バージョン
   changelogLabel: 変更履歴を見る
   comingSoonLabel: 近日公開
+  desktopDownloadTitle: パソコン版をダウンロード
+  mobileDownloadTitle: スマートフォン・タブレット版を入手
+  googlePlayDownloadLabel: Google Play で手に入れよう
+  appStoreDownloadLabel: App Storeからダウンロード
   windowsDownloadLabel: Windows版をダウンロード
   macDownloadLabel: macOS版をダウンロード
   linuxDownloadLabel: Linux版をダウンロード（AppImage）

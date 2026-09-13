@@ -46,6 +46,8 @@ footer:
           href: /en/makkuro
         - text: RouteVN Creator
           href: /en/creator/about/
+        - text: Creator for Mobile
+          href: /en/creator/mobile/
         - text: Creator Download
           href: /en/creator/download/
         - text: Creator Docs
@@ -195,27 +197,58 @@ landing:
 creator:
   download:
     version: "1.13.1"
-    title: Download RouteVN Creator
+    title: RouteVN Creator
     # subtitle: Get started creating your Visual Novel
-    platforms:
-      - name: Windows
-        svg: windows
-        cta:
-          label: Download for Windows
-          href: https://static-1.routevn.com/routevn-creator-client/RouteVN%20Creator_1.13.1_x64-setup.exe
-      - name: macOS
-        svg: apple
-        cta:
-          label: Download for macOS
-          href: https://static-1.routevn.com/routevn-creator-client/RouteVN%20Creator_1.13.1_universal.dmg
-      - name: Linux (x86_64)
-        svg: linux
-        cta:
-          label: Download for Linux (AppImage)
-          href: https://static-1.routevn.com/routevn-creator-client/linux-x86_64-1.13.1/RouteVN-Creator.AppImage
-        helpLink:
-          label: Installation Guide
-          href: /en/creator/docs/quickstart/#linux
+    groups:
+      - id: desktop
+        columns: 3
+        platforms:
+          - name: Windows
+            svg: windows
+            format: exe
+            cta:
+              label: Download for Windows
+              href: https://static-1.routevn.com/routevn-creator-client/RouteVN%20Creator_1.13.1_x64-setup.exe
+          - name: macOS
+            svg: apple
+            format: dmg
+            cta:
+              label: Download for macOS
+              href: https://static-1.routevn.com/routevn-creator-client/RouteVN%20Creator_1.13.1_universal.dmg
+          - name: Linux (x86_64)
+            svg: linux
+            format: AppImage
+            cta:
+              label: Download for Linux (AppImage)
+              href: https://static-1.routevn.com/routevn-creator-client/linux-x86_64-1.13.1/RouteVN-Creator.AppImage
+            helpLink:
+              label: Installation Guide
+              href: /en/creator/docs/quickstart/#linux
+      - id: mobile
+        columns: 2
+        platforms:
+          - name: Android
+            svg: google-play
+            badge:
+              platform: google-play
+              badgeSrc: /public/creator/mobile/google-play-badge-mono.svg
+              width: 1357
+              height: 402
+            cta:
+              label: Get it on Google Play
+              href: https://play.google.com/store/apps/details?id=com.routevn.creator
+          - name: iPhone / iPad
+            svg: apple
+            badge:
+              platform: app-store
+              disabled: true
+              badgeSrc: /public/creator/mobile/app-store-badge-mono.svg
+              width: 1360
+              height: 390
+            cta:
+              label: Download on the App Store
+              # App ID from the supplied listing; confirm availability before publishing.
+              href: https://apps.apple.com/app/id6810571721
   about:
     hero:
       title: Bring your Visual Novel to Life

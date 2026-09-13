@@ -1,0 +1,55 @@
+.rvn-store-badge {
+  --rvn-store-badge-height: 96px;
+  box-sizing: border-box;
+  display: block;
+  max-width: 100%;
+  padding: calc(var(--rvn-store-badge-height) / 4);
+  text-decoration: none;
+}
+
+.rvn-store-badge img {
+  background: #000;
+  border: 2px solid #fff;
+  border-radius: calc(var(--rvn-store-badge-height) / 8);
+  box-sizing: border-box;
+  display: block;
+  height: var(--rvn-store-badge-height);
+  width: auto;
+  max-width: 100%;
+  object-fit: contain;
+}
+
+.rvn-store-badge:focus-visible {
+  outline: 2px solid var(--foreground);
+  outline-offset: 4px;
+}
+
+.rvn-store-badge[aria-disabled="true"],
+.rvn-store-badge[aria-disabled="true"] img {
+  cursor: not-allowed;
+}
+
+.rvn-store-badge[aria-disabled="true"] {
+  position: relative;
+}
+
+.rvn-store-tooltip {
+  position: absolute;
+  bottom: calc(100% - var(--rvn-store-badge-height) / 4 + 8px);
+  left: 50%;
+  transform: translateX(-50%);
+  visibility: hidden;
+  white-space: nowrap;
+  z-index: 10;
+}
+
+.rvn-store-badge[aria-disabled="true"]:hover .rvn-store-tooltip,
+.rvn-store-badge[aria-disabled="true"]:focus .rvn-store-tooltip {
+  visibility: visible;
+}
+
+@media (max-width: 1024px) {
+  .rvn-store-badge {
+    --rvn-store-badge-height: min(72px, 20vw);
+  }
+}
