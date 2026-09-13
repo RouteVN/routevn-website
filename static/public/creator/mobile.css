@@ -2,6 +2,10 @@
   box-sizing: border-box;
   max-width: 1160px;
   width: 100%;
+}
+
+.rvn-mobile,
+.rvn-mobile-tablet {
   --h2-font-size: clamp(1.75rem, 3vw, 2.5rem);
   --h2-font-weight: 600;
   --h2-line-height: 1.15;
@@ -42,6 +46,10 @@
   min-width: 0;
 }
 
+.rvn-mobile-editor {
+  padding-block: 96px;
+}
+
 .rvn-mobile-screenshot {
   border: 1px solid var(--border);
   border-radius: 12px;
@@ -79,6 +87,10 @@
   .rvn-mobile-section {
     padding-top: 40px;
     padding-bottom: 40px;
+  }
+
+  .rvn-mobile-editor {
+    padding-block: 64px;
   }
 
   .rvn-mobile-feature {

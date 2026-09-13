@@ -40,11 +40,13 @@ mobile:
             - 'rtgl-view w="f" mt="xl" bc="bo" bw="xs" br="xs" shadow="sm" style="overflow: hidden;"':
                 - 'img src="/public/creator/mobile/android-cover.png" alt="Create Visual Novels on Your Phone. Makkuro beside the Android editor and a branching story preview." width="2212" height="1080" fetchpriority="high" decoding="async" style="display: block; width: 100%; height: auto;"':
 
-    - 'section class="rvn-mobile-section" aria-labelledby="mobile-editor-title"':
+    - 'section class="rvn-mobile-section rvn-mobile-editor" aria-labelledby="mobile-editor-title"':
         - rtgl-view w="f" ah="c":
             - 'rtgl-view w="1200" xl-w="calc(100vw - 64px)" md-w="calc(100vw - 48px)"':
-                - rtgl-view g="md" mb="xl":
-                    - 'rtgl-text id="mobile-editor-title" s="h2" role="heading" aria-level="2"': A visual novel editor in your hands
+                - rtgl-view d="h" md-d="v" w="f" av="c" g="lg" mb="xl":
+                    - rtgl-view g="md" w="1fg" md-w="f" ah="s":
+                        - 'rtgl-text id="mobile-editor-title" s="h2" role="heading" aria-level="2"': A visual novel editor in your hands
+                    - 'rtgl-view md-hide w="180" h="180" aria-hidden="true" style="flex: 0 0 180px; background-image: url(/public/landing/object-2.png); background-repeat: no-repeat; background-size: contain; background-position: center;"':
                 - rtgl-grid cols="3" md-cols="1" g="xl" w="f":
                     - $for item in mobile.screenshots:
                         - 'rtgl-view class="rvn-mobile-feature" w="f"':
@@ -55,6 +57,8 @@ mobile:
   backgroundColor: var(--background)
   foregroundColor: var(--foreground)
   themeClass: dark rvn-mobile-tablet
+  mobileContentWidth: calc(100vw - 48px)
+  sideImageSrc: /public/landing/object-4.png
   images: ${mobile.tabletScreenshots}
   features:
     - title: Write with a live preview
