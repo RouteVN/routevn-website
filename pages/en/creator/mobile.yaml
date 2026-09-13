@@ -46,7 +46,7 @@ mobile:
                 - rtgl-view d="h" md-d="v" w="f" av="c" g="lg" mb="xl":
                     - rtgl-view g="md" w="1fg" md-w="f" ah="s":
                         - 'rtgl-text id="mobile-editor-title" s="h2" role="heading" aria-level="2"': A visual novel editor in your hands
-                    - 'rtgl-view md-hide w="180" h="180" aria-hidden="true" style="flex: 0 0 180px; background-image: url(/public/landing/object-2.png); background-repeat: no-repeat; background-size: contain; background-position: center;"':
+                    - 'rtgl-view md-hide w="140" h="140" aria-hidden="true" style="flex: 0 0 140px; background-image: url(/public/landing/object-2.png); background-repeat: no-repeat; background-size: contain; background-position: center;"':
                 - rtgl-grid cols="3" md-cols="1" g="xl" w="f":
                     - $for item in mobile.screenshots:
                         - 'rtgl-view class="rvn-mobile-feature" w="f"':
