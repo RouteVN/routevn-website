@@ -1,4 +1,6 @@
 # Canonical redirects
+/en/reader/web-extractor /en/web-extractor/ 301
+/en/reader/web-extractor/ /en/web-extractor/ 301
 /en / 301
 /en/ / 301
 /makkuro /en/makkuro/ 301

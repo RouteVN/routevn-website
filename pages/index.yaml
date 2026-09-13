@@ -20,7 +20,7 @@ seo:
             - 'img class="landing-layer landing-layer-back" data-depth="0.84" data-idle="0.95" data-phase="3.3" src="/public/landing/remaining_objects_layer_below_character.png" alt="" aria-hidden="true" draggable="false"':
             - 'img class="landing-layer landing-layer-character" data-depth="1" data-idle="1" data-phase="0" src="/public/landing/cover_illustration_makkuro.png" alt="Makkuro" draggable="false"':
             - 'img class="landing-layer landing-layer-front" data-depth="1.18" data-idle="1.20" data-phase="5.1" src="/public/landing/notebook_with_pen_and_papers_layer_above_character.png" alt="" aria-hidden="true" draggable="false"':
-    - a href="/en/reader/web-extractor/" aria-label="Open RouteVN Web Extractor" class="landing-link landing-link-reader":
+    - a href="/en/web-extractor/" aria-label="Open RouteVN Web Extractor" class="landing-link landing-link-reader":
         - div class="landing-copy landing-copy-reader":
             - div class="landing-brand":
                 - 'img class="landing-brand-logo" src="/public/masshiro/logo-horizontal.png" alt="RouteVN with Masshiro" width="440" height="98" draggable="false"':
