@@ -63,8 +63,6 @@ mobile:
   features:
     - title: Write with a live preview
       message: Edit your dialogue and see the scene above your script on your tablet.
-    - title: Build your branching story
-      message: Add choices and follow the connections between scenes in the Scene Map.
     - title: Optimized for tablets
       message: Work in portrait or landscape. The editor adapts to your tablet’s orientation as you write, edit, and preview your story.
 
