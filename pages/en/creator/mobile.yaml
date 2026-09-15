@@ -9,6 +9,10 @@ seo:
   description: Create visual novels on your phone or tablet with RouteVN Creator. Write dialogue, build branching stories, and customize your game. Free, offline, and no coding.
   keywords: visual novel maker android, visual novel maker iphone, visual novel maker ipad, mobile visual novel creator, offline visual novel editor, RouteVN Creator
 mobile:
+  tutorials:
+    - title: Make Visual Novels From Your Phone
+      imgSrc: /public/creator/tutorials/make-visual-novels-from-your-phone.webp
+      href: https://www.youtube.com/watch?v=7RsQlggwVbI
   screenshots:
     - image: /public/creator/mobile/live-preview.png
       alt: Android dialogue editor with a live visual novel preview above the script and editing controls.
@@ -65,6 +69,11 @@ mobile:
       message: Edit your dialogue and see the scene above your script on your tablet.
     - title: Optimized for tablets
       message: Work in portrait or landscape. The editor adapts to your tablet’s orientation as you write, edit, and preview your story.
+
+- $partial: video-tutorial-series
+  title: Mobile video tutorials
+  message: Follow along in RouteVN Creator on your phone.
+  items: ${mobile.tutorials}
 
 - 'section class="rvn-mobile-section" aria-label="Get RouteVN Creator"':
     - rtgl-view w="f" ah="c":
