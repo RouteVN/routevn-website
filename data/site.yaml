@@ -239,13 +239,11 @@ creator:
           - name: iPhone / iPad
             badge:
               platform: app-store
-              disabled: true
               badgeSrc: /public/creator/mobile/app-store-badge-mono.svg
               width: 1360
               height: 390
             cta:
               label: Download on the App Store
-              # App ID from the supplied listing; confirm availability before publishing.
               href: https://apps.apple.com/app/id6810571721
   about:
     hero:
