@@ -3,7 +3,7 @@ template: creator
 title: Visual Novel Maker for Android, iPhone & iPad
 contentPaddingBottom: "0"
 footerSpacerHeight: 80
-footerSpacerBackground: "#141414"
+footerSpacerBackground: var(--background)
 seo:
   title: Visual Novel Maker for Android, iPhone & iPad | RouteVN
   description: Create visual novels on your phone or tablet with RouteVN Creator. Write dialogue, build branching stories, and customize your game. Free, offline, and no coding.
@@ -75,13 +75,17 @@ mobile:
 - $partial: video-tutorial-series
   title: Mobile video tutorials
   message: Follow along in RouteVN Creator on your phone.
+  backgroundColor: "#141414"
   themeClass: rvn-mobile-tutorials
   items: ${mobile.tutorials}
 
-- 'section class="rvn-mobile-section" aria-label="Get RouteVN Creator"':
+- 'section class="rvn-mobile-section rvn-mobile-download" aria-label="Get RouteVN Creator"':
     - rtgl-view w="f" ah="c":
         - $partial: cta1
           title: Get RouteVN Creator
+          textLink:
+            label: Check desktop version
+            href: /en/creator/download/#download-desktop-title
           storeLinks:
             - platform: google-play
               badgeSrc: /public/creator/mobile/google-play-badge-mono.svg
