@@ -116,7 +116,7 @@
       }
     }
 
-- 'section class="rvn-video-tutorial-series"':
+- 'section class="rvn-video-tutorial-series ${default(themeClass, "")}"':
     - 'rtgl-view class="rvn-video-tutorial-series-shell" d="v"':
         - 'rtgl-view class="rvn-video-tutorial-series-header" d="v"':
             - 'rtgl-text class="rvn-video-tutorial-series-title" s="h2" role="heading" aria-level="2"': ${title}

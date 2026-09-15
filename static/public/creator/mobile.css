@@ -79,6 +79,16 @@
   object-fit: contain;
 }
 
+.rvn-mobile-tutorials .rvn-video-tutorial-card {
+  margin-inline: auto;
+  max-width: 360px;
+  width: 100%;
+}
+
+.rvn-mobile-tutorials .rvn-video-tutorial-card-media {
+  aspect-ratio: 9 / 16;
+}
+
 @media (max-width: 768px) {
   .rvn-mobile-hero {
     padding: 64px 0 32px;

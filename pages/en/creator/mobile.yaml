@@ -13,6 +13,8 @@ mobile:
     - title: Make Visual Novels From Your Phone
       imgSrc: /public/creator/tutorials/make-visual-novels-from-your-phone.webp
       href: https://www.youtube.com/watch?v=7RsQlggwVbI
+    - title: Customizing Your Visual Novel Layout
+    - title: Working with Images and Assets
   screenshots:
     - image: /public/creator/mobile/live-preview.png
       alt: Android dialogue editor with a live visual novel preview above the script and editing controls.
@@ -73,6 +75,7 @@ mobile:
 - $partial: video-tutorial-series
   title: Mobile video tutorials
   message: Follow along in RouteVN Creator on your phone.
+  themeClass: rvn-mobile-tutorials
   items: ${mobile.tutorials}
 
 - 'section class="rvn-mobile-section" aria-label="Get RouteVN Creator"':
