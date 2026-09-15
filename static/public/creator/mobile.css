@@ -89,6 +89,10 @@
   aspect-ratio: 9 / 16;
 }
 
+.rvn-mobile-tutorials .rvn-video-tutorial-card-media img {
+  object-fit: contain;
+}
+
 .rvn-mobile-download {
   background: var(--background);
   padding-block: 96px;
