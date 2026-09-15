@@ -85,7 +85,7 @@ mobile:
           title: Get RouteVN Creator
           textLink:
             label: Check desktop version
-            href: /en/creator/download/#download-desktop-title
+            href: /en/creator/about/
           storeLinks:
             - platform: google-play
               badgeSrc: /public/creator/mobile/google-play-badge-mono.svg

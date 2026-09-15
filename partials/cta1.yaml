@@ -61,6 +61,6 @@
                             - 'rtgl-button href="${secondaryCta.href}" v="se" new-tab': ${secondaryCta.label}
                           $else:
                             - 'rtgl-button href="${secondaryCta.href}" v="se"': ${secondaryCta.label}
-        - $if textLink:
-            - rtgl-text s="md" ta="c" mt="lg":
-                - 'a href="${textLink.href}"': ${textLink.label}
+    - $if textLink:
+        - rtgl-text s="md" ta="c" mt="lg":
+            - 'a href="${textLink.href}"': ${textLink.label}
