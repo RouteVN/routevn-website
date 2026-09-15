@@ -1,0 +1,94 @@
+{
+  "scope": "PNG artwork used by the Creator mobile page and new about-page mobile section, plus the generated tutorial PNG source.",
+  "command": "pngquant --quality=95-100 --speed 1 --strip",
+  "sizing": {
+    "tutorial": "720 x 1280 WebP for the 360-pixel card at 2x density; PNG compression does not apply to this served format.",
+    "phoneScreenshots": "864 x 1536, retained for high-density display and fullscreen previews.",
+    "tabletScreenshots": "1200 x 1601, retained for the 440-pixel gallery and fullscreen previews.",
+    "cover": "2212 x 1080, retained for 1160-1200-pixel sections on high-density screens; no upscaling.",
+    "decorativeArtwork": "Original dimensions retained for shared 140-180-pixel illustrations on high-density screens.",
+    "sources": "User JPG originals remain untouched. The generated PNG keeps its original resolution; its untouched original remains in the built-in generated_images directory and Git history.",
+    "storeBadges": "Existing SVGs require no PNG compression."
+  },
+  "assets": [
+    {
+      "path": "static/public/creator/mobile/branching-choices.png",
+      "beforeBytes": 186682,
+      "afterBytes": 186623,
+      "result": "Smaller PNG; decoded pixels are identical to the original (ImageMagick AE = 0)."
+    },
+    {
+      "path": "static/public/creator/mobile/live-preview.png",
+      "beforeBytes": 231849,
+      "afterBytes": 231785,
+      "result": "Smaller PNG; decoded pixels are identical to the original (ImageMagick AE = 0)."
+    },
+    {
+      "path": "static/public/creator/mobile/tablet/s1.png",
+      "beforeBytes": 995061,
+      "afterBytes": 995061,
+      "result": "Retained lossless PNG: pngquant could not meet minimum quality 95."
+    },
+    {
+      "path": "static/public/creator/mobile/custom-interface.png",
+      "beforeBytes": 199774,
+      "afterBytes": 199014,
+      "result": "Smaller PNG; decoded pixels are identical to the original (ImageMagick AE = 0)."
+    },
+    {
+      "path": "static/public/creator/mobile/android-cover.png",
+      "beforeBytes": 388800,
+      "afterBytes": 388684,
+      "result": "Smaller PNG; decoded pixels are identical to the original (ImageMagick AE = 0)."
+    },
+    {
+      "path": "static/public/creator/mobile/tablet/s3.png",
+      "beforeBytes": 247027,
+      "afterBytes": 246540,
+      "result": "Smaller PNG; decoded pixels are identical to the original (ImageMagick AE = 0)."
+    },
+    {
+      "path": "static/public/creator/mobile/tablet/s4.png",
+      "beforeBytes": 270690,
+      "afterBytes": 270690,
+      "result": "Retained existing smaller PNG: recompression increased file size."
+    },
+    {
+      "path": "static/public/creator/mobile/tablet/s2.png",
+      "beforeBytes": 319778,
+      "afterBytes": 319778,
+      "result": "Retained existing smaller PNG: recompression increased file size."
+    },
+    {
+      "path": "static/public/landing/object-2.png",
+      "beforeBytes": 42785,
+      "afterBytes": 15727,
+      "result": "Smaller PNG; decoded pixels are identical to the original (ImageMagick AE = 0)."
+    },
+    {
+      "path": "static/public/landing/object-4.png",
+      "beforeBytes": 79283,
+      "afterBytes": 29567,
+      "result": "Smaller PNG; decoded pixels are identical to the original (ImageMagick AE = 0)."
+    },
+    {
+      "path": "static/public/creator/mobile/tablet/s5.png",
+      "beforeBytes": 256820,
+      "afterBytes": 256820,
+      "result": "Retained existing smaller PNG: recompression increased file size."
+    },
+    {
+      "path": "static/public/creator/mobile/tablet/s6.png",
+      "beforeBytes": 101583,
+      "afterBytes": 101583,
+      "result": "Retained existing smaller PNG: recompression increased file size."
+    },
+    {
+      "path": "internal/asset-sources/make-visual-novels-from-your-phone-9x16.png",
+      "beforeBytes": 1363239,
+      "afterBytes": 587574,
+      "result": "Compressed repository copy; untouched generated original preserved."
+    }
+  ],
+  "bytesSaved": 853925
+}
