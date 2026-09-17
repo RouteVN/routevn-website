@@ -12,3 +12,6 @@ items:
       - id: using-the-dictionary
         title: Using the Dictionary
         href: /en/web-extractor/docs/using-the-dictionary/
+      - id: anki-setup
+        title: Set Up Anki
+        href: /en/web-extractor/docs/anki-setup/

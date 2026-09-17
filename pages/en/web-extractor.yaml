@@ -52,7 +52,16 @@ seo:
       object-fit: contain;
     }
 
-    .rvn-web-extractor-feature .rvn-feature1-title {
+    .rvn-pitch-accent .rvn-feature-gallery {
+      max-width: 419px;
+      margin-inline: auto;
+    }
+
+    .rvn-pitch-accent .rvn-feature1-media {
+      aspect-ratio: 419 / 296;
+    }
+
+    .rvn-web-extractor-feature h2 {
       font-size: 2.5rem;
       font-weight: 600;
       line-height: 1.05;
@@ -108,7 +117,7 @@ seo:
         width: calc(100vw - 48px) !important;
       }
 
-      .rvn-web-extractor-feature .rvn-feature1-title {
+      .rvn-web-extractor-feature h2 {
         font-size: 2rem;
       }
 
@@ -132,14 +141,14 @@ seo:
       subtitleHtml: RouteVN Web Extractor is a browser extension that helps you<br>read visual novels in other languages with a pop-up dictionary
       backgroundImageSrc: /public/masshiro/stickers/masshirook.png
       backgroundImageAlt: Chibi Masshiro winking and making an OK hand gesture.
-      imgSrc: /public/reader/web-extractor/hero.png
-      imgAlt: A pop-up dictionary over visual novel dialogue confirming a word was added to Anki.
+      videoSrc: /public/masshiro/masshiro-website.mp4
+      videoLabel: RouteVN Web Extractor demonstration in a Japanese visual novel.
 
     - $partial: feature1
       title: Look up words that you don't know
       sideImageSrc: /public/reader/web-extractor/telescope.png
       features:
-        - message: RouteVN Web Extractor integrates with different engines to provide a seamless reading experience.
+        - message: RouteVN Web Extractor supports browser games built with RouteVN, Ren'Py, or TyranoScript.
           bullets:
             - Hover over text to open a pop-up dictionary.
             - Extract text from dialogue choices.
@@ -168,6 +177,22 @@ seo:
       backgroundColor: var(--background)
       foregroundColor: var(--foreground)
       imgSrc: /public/reader/web-extractor/anki.png
+
+    - $partial: feature1
+      title: Pitch Accent
+      message: See the high and low pitch pattern of Japanese words as you look them up.
+      sideImageSrc: /public/reader/web-extractor/notebook.png
+      images:
+        - src: /public/reader/web-extractor/screenshots/pitch-accent.png
+          alt: Dictionary entry for 図書室 showing its reading としょしつ and pitch accent graph.
+      features:
+        - title: Pronunciation at a glance
+          message: Pitch information appears when the installed data matches a word and its reading.
+        - title: Available offline
+          message: Install the bundled Kanjium pitch data to use it alongside your Japanese definition dictionaries.
+      themeClass: light rvn-web-extractor-feature rvn-pitch-accent
+      backgroundColor: var(--background)
+      foregroundColor: var(--foreground)
 
     - 'section class="rvn-web-extractor-faq-section" aria-labelledby="web-extractor-faq-title"':
         - 'div class="rvn-web-extractor-faq"':
