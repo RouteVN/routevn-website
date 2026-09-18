@@ -79,6 +79,9 @@
                   $else:
                     - 'video autoplay="" loop="" muted="" playsinline="" controls="" height="100%" width="100%" aria-label="${default(videoLabel, ''Video content'')}" draggable="true"':
                         - source src="${videoSrc}" type="video/mp4":
+        - $if videoSoundButton:
+            - 'button class="rvn-video-sound" type="button" data-video-sound hidden': Watch with sound
+            - 'p class="rvn-video-sound-status" data-video-sound-status role="status"':
         - rtgl-view h=64:
       $else:
         - $if imgSrc:

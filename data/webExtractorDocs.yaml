@@ -8,10 +8,13 @@ items:
     items:
       - id: getting-started
         title: Getting Started
-        href: /en/web-extractor/docs/
+        href: /en/web-extractor/docs/getting-started/
       - id: using-the-dictionary
         title: Using the Dictionary
         href: /en/web-extractor/docs/using-the-dictionary/
+      - id: japanese-pitch-accent
+        title: Japanese Pitch Accent
+        href: /en/web-extractor/docs/japanese-pitch-accent/
       - id: anki-setup
         title: Set Up Anki
         href: /en/web-extractor/docs/anki-setup/

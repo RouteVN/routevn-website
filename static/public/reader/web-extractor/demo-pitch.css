@@ -1,0 +1,155 @@
+.masshiro-pitch {
+  font-size: 13px;
+  line-height: 1.5;
+  overflow-wrap: anywhere;
+}
+.masshiro-pitch[hidden] {
+  display: none;
+}
+.masshiro-pitch-summary {
+  margin-top: 4px;
+}
+.masshiro-pitch-toggle {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 6px;
+  max-width: 100%;
+  min-height: 24px;
+  padding: 0;
+  border: 0;
+  border-radius: 2px;
+  color: inherit;
+  background: transparent;
+  font: inherit;
+  text-align: left;
+  cursor: pointer;
+}
+.masshiro-pitch-toggle:hover {
+  background: color-mix(in srgb, currentColor 6%, transparent);
+}
+.masshiro-pitch-summary .masshiro-pitch-pattern {
+  display: inline-flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 5px;
+  margin: 0;
+  max-width: 100%;
+}
+.masshiro-pitch-summary .masshiro-pitch-notation {
+  font-size: 13px;
+  line-height: 1.5;
+}
+.masshiro-pitch-more,
+.masshiro-pitch-chevron,
+.masshiro-pitch-base {
+  font-size: 11px;
+}
+.masshiro-pitch-details {
+  border-top: 1px solid color-mix(in srgb, currentColor 20%, transparent);
+  margin-top: 12px;
+  padding-top: 10px;
+}
+.masshiro-pitch-close {
+  padding: 0;
+  margin: 0 0 8px;
+  border: 0;
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  font-size: 12px;
+  text-decoration: underline;
+  cursor: pointer;
+}
+.masshiro-pitch-toggle:focus-visible,
+.masshiro-pitch-close:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 2px;
+}
+.masshiro-pitch-graph.masshiro-pitch-mini {
+  display: inline-block;
+  width: 60px;
+  height: 18px;
+  margin: 0;
+  flex-shrink: 0;
+}
+.masshiro-pitch-group + .masshiro-pitch-group {
+  margin-top: 12px;
+}
+.masshiro-pitch-heading,
+.masshiro-pitch-description {
+  display: block;
+  font-size: 12px;
+}
+.masshiro-pitch-source {
+  margin-left: 6px;
+}
+.masshiro-pitch-pattern {
+  display: block;
+  margin: 8px 0;
+}
+.masshiro-pitch-notation {
+  font-size: 16px;
+  line-height: 1.9;
+}
+.masshiro-pitch-mora {
+  display: inline-block;
+  padding: 0 1px;
+  border-top: 1.5px solid transparent;
+}
+.masshiro-pitch-mora[data-high="true"] {
+  border-top-color: currentColor;
+}
+.masshiro-pitch-mora[data-drop="true"] {
+  border-right: 1.5px solid currentColor;
+}
+/* The source credit disclosure remains native details/summary. */
+.masshiro-pitch .masshiro-source-credit > summary {
+  cursor: pointer;
+  font-size: 12px;
+}
+.masshiro-pitch .masshiro-source-credit > summary:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 3px;
+}
+.masshiro-pitch-graph {
+  display: block;
+  width: auto;
+  max-width: 100%;
+  height: 66px;
+  margin: 4px 0;
+  overflow: visible;
+}
+.masshiro-pitch-graph polyline {
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.5;
+}
+.masshiro-pitch-graph circle {
+  fill: currentColor;
+  stroke: currentColor;
+}
+.masshiro-pitch-graph text {
+  fill: currentColor;
+  text-anchor: middle;
+  font-size: 12px;
+}
+.masshiro-pitch-graph .masshiro-pitch-tail {
+  stroke-dasharray: 3 3;
+}
+.masshiro-pitch-graph .masshiro-pitch-following {
+  fill: none;
+}
+
+.masshiro-pitch-chevron {
+  display: inline-block;
+  width: 5px;
+  height: 5px;
+  margin: 0 3px;
+  border-right: 1px solid currentColor;
+  border-bottom: 1px solid currentColor;
+  transform: rotate(45deg);
+}
+.masshiro-pitch-toggle[aria-expanded="true"] .masshiro-pitch-chevron {
+  transform: rotate(225deg);
+}

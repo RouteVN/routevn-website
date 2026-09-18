@@ -124,9 +124,9 @@ A Visual Novel store will also need to take a stance on how DRM is implemented f
 
 I like to think of these two quotes as great approaches on how to think about piracy:
 
-> "The easiest way to stop piracy is not by putting antipiracy technology to work. It's by giving those people a service that's better than what they're receiving from the pirates." — Gabe Newell, Valve Corporation
+> "The easiest way to stop piracy is not by putting antipiracy technology to work. It's by giving those people a service that's better than what they're receiving from the pirates." (Gabe Newell, Valve Corporation)
 
-> "Piracy is not an issue of price. It's an issue of access. I just really believe that if we create the right product, which is better than piracy, that people will come." — Daniel Ek, Spotify
+> "Piracy is not an issue of price. It's an issue of access. I just really believe that if we create the right product, which is better than piracy, that people will come." (Daniel Ek, Spotify)
 
 ### Translated work
 

@@ -1,0 +1,22 @@
+{
+  "source": "https://www.edrdg.org/pub/Nihongo/JMdict_e.gz",
+  "sha256": "e40b35352337812b1f0e6ee9429b57591e5b141f5ad7a54ae3335024c33e916c",
+  "entries": [
+    "1002980",
+    "1006970",
+    "1008490",
+    "1288810",
+    "1293990",
+    "1521400",
+    "1580620",
+    "1586270",
+    "1587040",
+    "1628500",
+    "2028970",
+    "2087820",
+    "2819970"
+  ],
+  "license": "CC BY-SA 4.0",
+  "changes": "Selected entries and fields; XML entities expanded. Glosses unchanged.",
+  "refresh": "Download current JMdict_e.gz and rerun scripts/extract-jmdict-demo.py monthly."
+}

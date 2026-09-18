@@ -1,0 +1,63 @@
+/* Landing-page layout. Popup appearance is in extension-sidepanel-popup.css. */
+.rvn-demo { box-sizing:border-box; width:100%; padding:48px max(32px, calc((100% - 1200px) / 2)); background:var(--muted); color:var(--foreground); --demo-accent:var(--foreground); }
+.rvn-demo *, .rvn-demo *::before, .rvn-demo *::after { box-sizing:border-box; }
+.rvn-demo [hidden] { display:none !important; }
+.rvn-demo rtgl-text { font-family:inherit; line-height:1.5; }
+.rvn-demo rtgl-view[d="h"] { display:flex; flex-direction:row; align-items:center; justify-content:space-between; gap:8px; }
+.rvn-demo-header { min-height:112px; margin-bottom:16px; }
+.rvn-demo-decoration { display:block; flex:0 0 112px; width:112px; height:112px; object-fit:contain; }
+.rvn-demo .rvn-demo-heading { color:var(--foreground); font-size:clamp(28px,3.3vw,40px); font-weight:600; line-height:1.05; }
+.rvn-demo-intro { color:#636970; font-size:17px; }
+.rvn-demo-workspace { display:grid; grid-template-columns:minmax(0,2fr) minmax(280px,1fr); gap:24px; align-items:start; }
+.rvn-demo-left { display:flex; flex-direction:column; min-width:0; }
+.rvn-demo-player { display:block; border:1px solid #d9dce0; border-radius:4px; overflow:hidden; box-shadow:0 1px 3px #00000012; }
+.rvn-demo-scene { display:block; position:relative; aspect-ratio:16/9; background:#202c2e; }
+.rvn-demo-art { display:block; width:100%; height:100%; object-fit:cover; }
+.rvn-demo-dialogue { position:absolute; inset:auto 0 0; padding:52px 30px 30px; color:white; background:linear-gradient(transparent, #0b151be8 42%); }
+.rvn-demo-speaker { font-size:18px; letter-spacing:.08em; }
+.rvn-demo-sentence { margin:10px 0 0; font-size:clamp(18px,1.7vw,24px); line-height:1.9; }
+.rvn-demo button { font:inherit; cursor:pointer; }
+.rvn-demo button:focus-visible, .rvn-demo summary:focus-visible, .rvn-demo a:focus-visible { outline:3px solid var(--foreground); outline-offset:4px; }
+.rvn-demo-word { display:inline; color:#fff; padding:0; background:transparent; border:0; border-bottom:2px solid transparent; border-radius:3px; line-height:inherit; }
+.rvn-demo-word:hover, .rvn-demo-word[aria-expanded=true] { background:#526064; border-bottom-color:#fff; }
+.rvn-demo a { color:var(--demo-accent); text-underline-offset:3px; }
+.rvn-demo-sr-only { position:absolute; width:1px; height:1px; overflow:hidden; clip-path:inset(50%); }
+
+/* Keep the extension popup outside the scene clipping region. */
+.rvn-demo #rvn-demo-popup.masshiro-yomitan-popup { display:flex; position:fixed !important; top:var(--popup-y,100px) !important; left:var(--popup-x,24px) !important; bottom:auto !important; margin:0; width:340px; max-width:calc(100vw - 24px); max-height:min(400px,calc(100dvh - 100px)); z-index:10000; animation:none; }
+.rvn-demo #rvn-demo-popup { font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Hiragino Sans","Hiragino Kaku Gothic ProN","Noto Sans JP",Meiryo,sans-serif; font-size:12.5px; line-height:1.5; font-weight:400; font-style:normal; letter-spacing:-0.13px; }
+.rvn-demo .masshiro-audio-error { font-size:12px; color:#666; margin-bottom:8px; }
+.rvn-demo .masshiro-audio-error[data-error=true] { color:#a32525; }
+
+.rvn-demo-backlog { width:100%; border:1px solid #e5e5e5; border-radius:6px; padding:18px; background:#fff; }
+.rvn-demo-backlog input { width:100%; padding:10px 12px; margin:14px 0; border:1px solid #e5e5e5; border-radius:4px; background:#fafafa; color:#202020; font:inherit; }
+.rvn-demo .backlog-list { display:flex; flex-direction:column; align-items:stretch; width:100%; gap:10px; max-height:400px; overflow:auto; }
+.rvn-demo .backlog-card { width:100%; background:#fafafa; border:1px solid #e5e5e5; border-radius:6px; padding:14px; display:flex; flex-direction:column; gap:8px; }
+.rvn-demo .speaker-tag { color:#666; font-size:12px; font-weight:600; letter-spacing:.2px; }
+.rvn-demo .backlog-jp { font-size:15px; font-weight:400; line-height:1.8; letter-spacing:.02em; overflow-wrap:anywhere; }
+.rvn-demo-backlog .rvn-demo-word { color:#202020; }
+.rvn-demo-backlog .rvn-demo-word:hover, .rvn-demo-backlog .rvn-demo-word[aria-expanded=true] { background:#e5e5e5; border-bottom-color:#202020; }
+
+.rvn-demo-review { display:block; width:100%; margin-top:20px; background:var(--background); border:1px solid #e3e6e8; padding:20px; border-radius:4px; }
+.rvn-demo-review-title { font-size:14px; font-weight:600; }
+.rvn-demo-empty { display:flex; justify-content:center; gap:6px; padding:8px 0; color:#757d83; font-size:13px; }
+.rvn-demo-empty-title { color:#36434c; font-size:16px; font-weight:500; }
+.rvn-demo-card { display:flex; padding:0; background:#2c2c2c; border:1px solid #e1e5e7; border-radius:4px; overflow:hidden; text-align:center; box-shadow:0 3px 10px #243b4a08; scroll-margin-top:90px; }
+.rvn-demo-card-frame { display:block; border:0; width:100%; height:650px; background:#2c2c2c; }
+.rvn-demo-card .rvn-demo-flip { width:100%; margin:0; border:0; border-top:1px solid #454545; background:#252525; color:#eee; border-radius:0; padding:13px; font-size:12px; }
+.rvn-demo-disclaimer { font-size:11px; color:#788188; margin-top:18px; }
+@media(max-width:1050px) {
+ .rvn-demo-scene { aspect-ratio:auto; }
+ .rvn-demo-art { height:auto; aspect-ratio:16/10; object-fit:cover; }
+ .rvn-demo-dialogue { position:relative; padding:20px; background:#18252a; }
+}
+@media(max-width:760px) {
+ .rvn-demo { padding:32px 24px; }
+ .rvn-demo-header { min-height:0; }
+ .rvn-demo-decoration { display:none; }
+ .rvn-demo-workspace { grid-template-columns:1fr; gap:16px; }
+ .rvn-demo-intro { font-size:15px; }
+ .rvn-demo-dialogue { padding:18px; }
+ .rvn-demo-sentence { font-size:19px; }
+}
+@media(prefers-reduced-motion:reduce) { .rvn-demo #rvn-demo-popup * { transition:none !important; animation:none !important; } }

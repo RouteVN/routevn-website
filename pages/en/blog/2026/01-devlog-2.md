@@ -98,7 +98,7 @@ Blog posts every week. They will cover various topics. Some will be technical, s
 
 #### Social Media & user engagement
 
-We plan to be more active on social media — sharing development progress, behind-the-scenes content, and engaging with the VN community. We primarily operate on Discord, but will post updates across all our channels:
+We plan to be more active on social media, sharing development progress, behind-the-scenes content, and engaging with the VN community. We primarily operate on Discord, but will post updates across all our channels:
 
 - [Discord](https://discord.gg/8J9dyZSu9C)
 - [X](https://x.com/routevn)

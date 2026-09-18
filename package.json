@@ -5,7 +5,7 @@
     "build": "rtgl sites build",
     "watch": "rtgl sites watch",
     "screenshots": "rtgl sites screenshots",
-    "test": "node --test scripts/import-asset-package.test.js"
+    "test": "node --test scripts/*.test.js"
   },
   "devDependencies": {
     "js-yaml": "^4.1.1",

@@ -110,19 +110,19 @@ You can click an action to edit it or plus button to add a new action.
 
 Below is a list of all actions:
 
-- [Dialogue](/en/creator/docs/line-actions/dialogue/) — define character lines and text output.
-- [Choices](/en/creator/docs/line-actions/choices/) — show player decision options and branch flow.
-- [Conditional](/en/creator/docs/line-actions/conditional/) — run actions from the first branch whose condition matches.
-- [Section Transition](/en/creator/docs/line-actions/section-transition/) — move to another section in the same scene or another scene.
-- [Reset Story At Section](/en/creator/docs/line-actions/reset-story-at-section/) — move to a section with a reset story context.
-- [Background](/en/creator/docs/line-actions/background/) — set or replace the scene background.
-- [Visuals](/en/creator/docs/line-actions/visuals/) — edit visual object entries in the current line.
-- Base Layout — set a base UI/layout template for a line.
-- [Characters](/en/creator/docs/line-actions/characters/) — add, replace, or remove character entries.
-- [BGM](/en/creator/docs/line-actions/bgm/) — control background music state.
-- [Sound Effects](/en/creator/docs/line-actions/sfx/) — play one-shot or grouped effects.
-- [Next Line](/en/creator/docs/line-actions/next-line/) — force direct line progression.
-- [Set Next Line Config](/en/creator/docs/line-actions/next-line-config/) — set default advancement behavior.
-- [Controls](/en/creator/docs/line-actions/controls/) — tune interaction behavior (click, autoplay settings).
-- [Toggle Auto Mode](/en/creator/docs/line-actions/toggle-auto-mode/) — enable or disable auto progression.
-- [Toggle Skip Mode](/en/creator/docs/line-actions/toggle-skip-mode/) — enable or disable skip behavior.
+- [Dialogue](/en/creator/docs/line-actions/dialogue/): define character lines and text output.
+- [Choices](/en/creator/docs/line-actions/choices/): show player decision options and branch flow.
+- [Conditional](/en/creator/docs/line-actions/conditional/): run actions from the first branch whose condition matches.
+- [Section Transition](/en/creator/docs/line-actions/section-transition/): move to another section in the same scene or another scene.
+- [Reset Story At Section](/en/creator/docs/line-actions/reset-story-at-section/): move to a section with a reset story context.
+- [Background](/en/creator/docs/line-actions/background/): set or replace the scene background.
+- [Visuals](/en/creator/docs/line-actions/visuals/): edit visual object entries in the current line.
+- Base Layout: set a base UI/layout template for a line.
+- [Characters](/en/creator/docs/line-actions/characters/): add, replace, or remove character entries.
+- [BGM](/en/creator/docs/line-actions/bgm/): control background music state.
+- [Sound Effects](/en/creator/docs/line-actions/sfx/): play one-shot or grouped effects.
+- [Next Line](/en/creator/docs/line-actions/next-line/): force direct line progression.
+- [Set Next Line Config](/en/creator/docs/line-actions/next-line-config/): set default advancement behavior.
+- [Controls](/en/creator/docs/line-actions/controls/): tune interaction behavior (click, autoplay settings).
+- [Toggle Auto Mode](/en/creator/docs/line-actions/toggle-auto-mode/): enable or disable auto progression.
+- [Toggle Skip Mode](/en/creator/docs/line-actions/toggle-skip-mode/): enable or disable skip behavior.

@@ -104,7 +104,7 @@ alternates:
   message: Les témoignages sont présentés dans leur langue d’origine.
   trackLabel: Projets créés avec RouteVN Creator
   authorLabel: par
-  screenshotLabel: — capture d’écran
+  screenshotLabel: capture d’écran
   originalPostLabel: Publication d’origine
   items:
     - id: dialune
@@ -141,7 +141,7 @@ alternates:
   title: Tout ce qu’il vous faut pour votre visual novel
   message: Nous étudions les fonctions courantes des visual novels et les intégrons de façon simple à utiliser. Les liens de cette section mènent à la documentation en anglais.
   sideImageSrc: /public/landing/object-4.png
-  screenshotLabel: — capture d’écran
+  screenshotLabel: capture d’écran
   items:
     - title: Éditeur de mise en page
       message: Personnalisez entièrement l’interface de votre visual novel.
@@ -187,7 +187,7 @@ alternates:
   title: Derniers articles du blog de RouteVN
   message: Suivez les mises à jour, les notes de version et les coulisses du développement de RouteVN. Les articles sont actuellement disponibles en anglais.
   sideImageSrc: /public/landing/object-1.png
-  thumbnailLabel: — miniature
+  thumbnailLabel: miniature
   ctaLabel: Voir les articles en anglais
   ctaHref: /en/blog/
 

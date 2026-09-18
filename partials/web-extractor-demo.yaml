@@ -1,0 +1,51 @@
+- link rel=stylesheet href=/public/reader/web-extractor/demo-pitch.css:
+- link rel=stylesheet href=/public/reader/web-extractor/demo.css:
+- link rel=stylesheet href=/public/reader/web-extractor/extension-sidepanel-popup.css:
+- 'section class="rvn-demo" data-vn-demo="" aria-labelledby="rvn-demo-heading"':
+    - rtgl-view class=rvn-demo-header d=h av=c g=lg:
+        - rtgl-view g=md w=1fg:
+            - 'rtgl-text id="rvn-demo-heading" role="heading" aria-level="2" class="rvn-demo-heading"': Try it on a visual novel
+            - rtgl-text class=rvn-demo-intro: Hover over a word to look up its meaning, play its audio, and preview an Anki card.
+        - 'img class="rvn-demo-decoration" src="/public/reader/web-extractor/notebook.png" width="112" height="112" alt="" aria-hidden="true" loading="lazy"':
+    - 'rtgl-view class="rvn-demo-workspace"':
+        - 'rtgl-view class="rvn-demo-left"':
+            - 'rtgl-view class="rvn-demo-player"':
+                - 'rtgl-view class="rvn-demo-scene"':
+                    - 'img class="rvn-demo-art" src="/public/reader/web-extractor/demo/scene.webp" width="1600" height="900" loading="lazy" alt="真っ白, a white-haired boy with glasses, standing in a sunlit library."':
+                    - 'rtgl-view class="rvn-demo-dialogue" lang="ja"':
+                        - rtgl-text class=rvn-demo-speaker: 真っ白
+                        - 'p class="rvn-demo-sentence" data-demo-sentence=""': それ、最初から真っ白だったんですか？
+                    - 'section id="rvn-demo-popup" class="masshiro-yomitan-popup" data-theme="light" data-demo-popup="" aria-label="Dictionary definition" hidden=""':
+                        - __html: |
+                            <div class="masshiro-yomi-header">
+                              <div class="masshiro-yomi-main-group">
+                                <div class="masshiro-yomi-reading-top" lang="ja" data-demo-reading></div>
+                                <div class="masshiro-yomi-term-row"><span class="masshiro-yomi-word" lang="ja" data-demo-headword></span></div>
+                              </div>
+                              <div class="masshiro-yomi-actions">
+                                <button class="masshiro-btn-audio" type="button" data-demo-audio aria-label="Play pronunciation of さいしょ" title="Play audio"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon><path d="M15.54 8.46a5 5 0 0 1 0 7.07"></path></svg><span data-demo-audio-label class="rvn-demo-sr-only">Listen</span></button>
+                                <span class="masshiro-mine-action"><span class="masshiro-yomi-hint">Preview Anki card</span><button class="masshiro-btn-mine" type="button" data-demo-preview aria-label="Preview Anki card"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button></span>
+                              </div>
+                            </div>
+                            <div class="masshiro-audio-error" data-demo-audio-error role="status" hidden></div>
+                            <div class="masshiro-yomi-dict-title">1. <a href="/public/reader/web-extractor/demo/credits.html" target="_blank" rel="noopener" title="JMdict source and license">JMdict</a></div>
+                            <div class="masshiro-yomi-body" data-demo-definitions role="region" tabindex="0" aria-label="JMdict definitions"></div>
+        - 'section class="rvn-demo-backlog" aria-label="Dialogue history"':
+            - rtgl-text class=rvn-demo-review-title role=heading aria-level=3: Backlog
+            - 'input type="search" data-demo-search="" aria-label="Search dialogue history" placeholder="Search dialogue…"':
+            - 'rtgl-view class="backlog-list" data-demo-history=""':
+            - 'p data-demo-no-results="" hidden=""': No matching dialogue.
+    - 'rtgl-view class="rvn-demo-review"':
+        - 'rtgl-view d=h ah=sb av=c mb=lg':
+            - rtgl-text class=rvn-demo-review-title: Anki card preview
+        - 'rtgl-view data-demo-empty="" class="rvn-demo-empty"':
+            - rtgl-text class=rvn-demo-empty-title: Save words with context
+            - rtgl-text: Look up a word, then select + in the dictionary. Your card will appear here.
+        - 'rtgl-view data-demo-card="" class="rvn-demo-card" hidden=""':
+            - 'iframe title="Lapis Anki word card preview" src="/public/reader/web-extractor/demo/lapis-preview.html" data-demo-frame="" class="rvn-demo-card-frame"':
+            - 'button type="button" data-demo-flip="" class="rvn-demo-flip" aria-expanded="false"': Show answer
+        - 'rtgl-text class="rvn-demo-disclaimer"':
+            - __html: 'This is a preview. Saving to your own deck requires the extension and <a href="/en/web-extractor/docs/anki-setup/">AnkiConnect setup</a>.'
+    - 'span data-demo-status="" role="status" aria-live="polite" class="rvn-demo-sr-only"':
+    - noscript: Enable JavaScript to try dictionary lookup and the card preview.
+- script type=module src=/public/reader/web-extractor/demo.js:

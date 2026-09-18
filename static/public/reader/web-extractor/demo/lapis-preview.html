@@ -1,0 +1,35 @@
+<!doctype html>
+<!-- Adapted from donkuri/lapis front.html and back.html, commit
+f4eb29bd4129ae1dde068c64cf6557b7603462dc. GPL-3.0; see lapis-LICENSE.
+Anki field substitution is handled by the parent demo. No Anki runtime or scripts.
+Lapis stylesheet is unchanged. Only embedding dimensions/visibility are added. -->
+<html lang="ja">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Lapis Anki card preview</title>
+<link rel="stylesheet" href="lapis-styling.css">
+<style>
+img{max-width:100%;height:auto}
+[hidden]{display:none!important}
+button:focus-visible,summary:focus-visible{outline:2px solid currentColor}
+.dh-vocab{min-width:0}
+.dh-image,.mobile .dh-image{flex-shrink:0;max-width:none}
+.dh-image img{display:block;max-width:none;max-height:none;height:var(--card-word-height,165px);width:auto}
+.mobile .def-header{flex-direction:column}
+.mobile .dh-vocab:has(~ .dh-image){box-sizing:border-box;max-width:100%;width:100%}
+</style>
+<script defer src="lapis-preview-layout.js"></script></head>
+<body class="card nightMode">
+<div id="lapis" data-sentence-position="above" data-main-picture-position="right">
+<main>
+<section data-card-front><div class="front-vocab" data-field="word"></div></section>
+<section data-card-back hidden>
+<div class="def-header">
+ <div class="dh-vocab"><div class="vocab"><ruby><span data-field="word"></span><rt data-field="reading"></rt></ruby></div><div class="info"><div class="pitch" data-field="reading"></div><span id="pitch-tags" class="tags"></span></div></div>
+ <div class="dh-image"><div class="image"><img src="scene.webp" alt="真っ白 in the library, asking about the notebook."></div></div>
+</div>
+<br>
+<div class="sentence" data-field="sentence"></div>
+<div class="main-def"><div class="definition"><div id="primary" data-display-name="Primary Definition"><div data-field="meaning"></div></div></div></div>
+<details><summary>Misc. info</summary><div class="misc-info">Speaker: 真っ白<br>白紙のノート</div></details>
+</section>
+</main>
+</div></body></html>

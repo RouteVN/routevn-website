@@ -369,8 +369,8 @@ That is all for the introduction of the JSON. Next, we will talk more about how 
 So far we've talked about the **content**. The JSON file that defines your Visual Novel. But who actually **runs** that content? That's the **runtime**.
 
 Think of it like this:
-- The JSON is like a **script**—it tells the story, defines characters, sets up scenes
-- The runtime is the **program** that runs it—like a video player for your Visual Novel
+- The JSON is like a **script**: it tells the story, defines characters, sets up scenes
+- The runtime is the **program** that runs it, like a video player for your Visual Novel
 
 The runtime:
 - Reads your JSON file
@@ -385,7 +385,7 @@ Designing and implementing the runtime happened iteratively together with the JS
 
 This store comprises around 80% of the entire Route Engine codebase.
 
-There is a single big JavaScript object that contains the full state of the Visual Novel runtime. It's called the system store—a single source of truth that's centralized and authoritative. This is very simple and works very reliably.
+There is a single big JavaScript object that contains the full state of the Visual Novel runtime. It's called the system store, a single source of truth that's centralized and authoritative. This is very simple and works very reliably.
 
 If you're a frontend developer, this will sound familiar. It's similar to state management libraries, which inspired this design.
 
@@ -455,7 +455,7 @@ export const stopAutoMode = ({ state }) => {
 
 A separate `sideEffectsHandler` processes these queued effects. For example, the `render` effect calls Route Graphics's render function.
 
-This approach keeps actions pure while handling complexity elsewhere. The complicated stuff—timers, async operations, rendering calls—lives in the sideEffectsHandler, keeping the core state management clean and predictable.
+This approach keeps actions pure while handling complexity elsewhere. The complicated stuff (timers, async operations, rendering calls) lives in the sideEffectsHandler, keeping the core state management clean and predictable.
 
 This works for asynchronous operations too. When an async operation completes, it triggers another action to update the state.
 
@@ -517,7 +517,7 @@ Route Engine is an intentionally designed compact library which has gone through
 In this article, we've covered:
 
 - **The JSON structure**: How resources, story hierarchy (scenes, sections, lines, actions), and Jempl templating enable a full Visual Novel to be expressed as a single JSON file
-- **The runtime architecture**: A single state store with pure functions—selectors for derived state, actions for state transitions, and a queued effect system for handling side effects without compromising purity
+- **The runtime architecture**: A single state store with pure functions: selectors for derived state, actions for state transitions, and a queued effect system for handling side effects without compromising purity
 
 This design prioritizes maintainability and predictability. By keeping the core as pure functions and pushing complexity to the edges, we can handle advanced features like save/load, rollback, auto/skip modes, and dynamic UI without the codebase becoming unmanageable.
 

@@ -1,0 +1,809 @@
+<JMdict>
+<entry>
+<ent_seq>1002980</ent_seq>
+<r_ele>
+<reb>から</reb>
+<re_pri>spec1</re_pri>
+</r_ele>
+<sense>
+<pos>particle</pos>
+<s_inf>indicates starting location or time, or point of separation; as ...～...まで when setting a scope</s_inf>
+<gloss xml:lang="eng">from</gloss>
+<gloss xml:lang="eng">since</gloss>
+<gloss xml:lang="eng">at</gloss>
+</sense>
+<sense>
+<pos>particle</pos>
+<s_inf>indicates passage or transit</s_inf>
+<gloss xml:lang="eng">through (e.g. a window, door)</gloss>
+<gloss xml:lang="eng">via</gloss>
+<gloss xml:lang="eng">by</gloss>
+<gloss xml:lang="eng">from</gloss>
+</sense>
+<sense>
+<pos>particle</pos>
+<pos>conjunction</pos>
+<s_inf>after a verb or i-adjective; だ～ after a noun or na-adjective</s_inf>
+<gloss xml:lang="eng">because</gloss>
+<gloss xml:lang="eng">as</gloss>
+<gloss xml:lang="eng">since</gloss>
+<gloss xml:lang="eng">so</gloss>
+<gloss xml:lang="eng">therefore</gloss>
+</sense>
+<sense>
+<pos>particle</pos>
+<s_inf>indicates constituency</s_inf>
+<gloss xml:lang="eng">from (as in "made from")</gloss>
+<gloss xml:lang="eng">of (as in "consisting of")</gloss>
+<gloss xml:lang="eng">out of</gloss>
+</sense>
+<sense>
+<pos>particle</pos>
+<s_inf>indicates source domain</s_inf>
+<gloss xml:lang="eng">from (as in "a quotation from a book")</gloss>
+<gloss xml:lang="eng">out of (as in "out of 10 people")</gloss>
+<gloss xml:lang="eng">from among</gloss>
+</sense>
+<sense>
+<pos>particle</pos>
+<s_inf>after the -te form of a verb</s_inf>
+<gloss xml:lang="eng">after (doing)</gloss>
+<gloss xml:lang="eng">since</gloss>
+</sense>
+<sense>
+<pos>particle</pos>
+<s_inf>indicates origin of action</s_inf>
+<gloss xml:lang="eng">from</gloss>
+<gloss xml:lang="eng">by (as in "getting scolded by")</gloss>
+</sense>
+<sense>
+<pos>particle</pos>
+<s_inf>indicates basis or standpoint; oft. ～見て, ～言って or ～すると</s_inf>
+<gloss xml:lang="eng">from (e.g. one's viewpoint)</gloss>
+<gloss xml:lang="eng">based on</gloss>
+<gloss xml:lang="eng">according to</gloss>
+<gloss xml:lang="eng">in (e.g. one's eyes)</gloss>
+<gloss xml:lang="eng">by</gloss>
+</sense>
+<sense>
+<pos>particle</pos>
+<s_inf>indicates reason, cause or motive</s_inf>
+<gloss xml:lang="eng">because of</gloss>
+<gloss xml:lang="eng">from</gloss>
+<gloss xml:lang="eng">out of (curiosity, necessity, etc.)</gloss>
+<gloss xml:lang="eng">due to</gloss>
+<gloss xml:lang="eng">by</gloss>
+<gloss xml:lang="eng">owing to</gloss>
+</sense>
+<sense>
+<pos>particle</pos>
+<s_inf>emphasizes an amount; ～（ある／の）for weight, distance, size or general quantity, ～する for price and ～の for people</s_inf>
+<gloss xml:lang="eng">as much as</gloss>
+<gloss xml:lang="eng">upwards of</gloss>
+<gloss xml:lang="eng">at least</gloss>
+<gloss xml:lang="eng">more than</gloss>
+</sense>
+<sense>
+<pos>particle</pos>
+<gloss xml:lang="eng">marks the starting state of a change</gloss>
+</sense>
+<sense>
+<pos>particle</pos>
+<xref>いいから・1</xref>
+<misc>colloquial</misc>
+<s_inf>at sentence end</s_inf>
+<gloss xml:lang="eng">expresses warning, sympathy, excitement or determination</gloss>
+<gloss xml:lang="eng">emphasizes the previous statement</gloss>
+</sense>
+<sense>
+<pos>particle</pos>
+<misc>colloquial</misc>
+<s_inf>at sentence end</s_inf>
+<gloss xml:lang="eng">trails off with an implied reason or consequence left unstated</gloss>
+<gloss xml:lang="eng">so ...</gloss>
+</sense>
+<sense>
+<pos>particle</pos>
+<s_inf>as ～（して／が）or にして～; when comparing to the most basic example of something; emphatic</s_inf>
+<gloss xml:lang="eng">even</gloss>
+<gloss xml:lang="eng">to begin with, even ...</gloss>
+<gloss xml:lang="eng">right from ...</gloss>
+<gloss xml:lang="eng">starting with ... (let alone)</gloss>
+</sense>
+<sense>
+<pos>particle</pos>
+<pos>conjunction</pos>
+<s_inf>as ～といって or ～って; oft. with a neg. sentence</s_inf>
+<gloss xml:lang="eng">it is precisely due to ... (one can't)</gloss>
+<gloss xml:lang="eng">it is because ...</gloss>
+</sense>
+<sense>
+<pos>particle</pos>
+<pos>conjunction</pos>
+<xref>からには</xref>
+<xref>からは</xref>
+<s_inf>as ～（に）は; indicates that what follows is natural or expected</s_inf>
+<gloss xml:lang="eng">now that</gloss>
+<gloss xml:lang="eng">since</gloss>
+<gloss xml:lang="eng">so long as</gloss>
+<gloss xml:lang="eng">because</gloss>
+</sense>
+<sense>
+<pos>conjunction</pos>
+<xref>だから・1</xref>
+<gloss xml:lang="eng">so</gloss>
+<gloss xml:lang="eng">therefore</gloss>
+<gloss xml:lang="eng">accordingly</gloss>
+<gloss xml:lang="eng">consequently</gloss>
+<gloss xml:lang="eng">on those grounds</gloss>
+<gloss xml:lang="eng">that is why</gloss>
+<gloss xml:lang="eng">for that reason</gloss>
+</sense>
+<sense>
+<pos>particle</pos>
+<pos>conjunction</pos>
+<xref>からに・2</xref>
+<misc>dated term</misc>
+<gloss xml:lang="eng">just from (doing)</gloss>
+<gloss xml:lang="eng">simply by</gloss>
+</sense>
+<sense>
+<pos>particle</pos>
+<misc>archaic</misc>
+<gloss xml:lang="eng">by</gloss>
+<gloss xml:lang="eng">with</gloss>
+<gloss xml:lang="eng">by means of</gloss>
+<gloss xml:lang="eng">via</gloss>
+</sense>
+</entry>
+<entry>
+<ent_seq>1006970</ent_seq>
+<k_ele>
+<keb>其れ</keb>
+<ke_inf>rarely used kanji form</ke_inf>
+</k_ele>
+<k_ele>
+<keb>其</keb>
+<ke_inf>search-only kanji form</ke_inf>
+</k_ele>
+<r_ele>
+<reb>それ</reb>
+<re_pri>ichi1</re_pri>
+</r_ele>
+<sense>
+<pos>pronoun</pos>
+<xref>これ・1</xref>
+<xref>あれ・1</xref>
+<xref>どれ・1</xref>
+<misc>word usually written using kana alone</misc>
+<s_inf>indicating an item or person near the listener, the action of the listener, or something on their mind</s_inf>
+<gloss xml:lang="eng">that</gloss>
+<gloss xml:lang="eng">it</gloss>
+</sense>
+<sense>
+<pos>pronoun</pos>
+<misc>word usually written using kana alone</misc>
+<gloss xml:lang="eng">then</gloss>
+<gloss xml:lang="eng">that point (in time)</gloss>
+<gloss xml:lang="eng">that time</gloss>
+</sense>
+<sense>
+<pos>pronoun</pos>
+<misc>archaic</misc>
+<s_inf>indicating a place near the listener</s_inf>
+<gloss xml:lang="eng">there</gloss>
+</sense>
+<sense>
+<pos>pronoun</pos>
+<misc>archaic</misc>
+<gloss xml:lang="eng">you</gloss>
+</sense>
+</entry>
+<entry>
+<ent_seq>1008490</ent_seq>
+<r_ele>
+<reb>と</reb>
+<re_pri>spec1</re_pri>
+</r_ele>
+<sense>
+<pos>particle</pos>
+<pos>conjunction</pos>
+<s_inf>marks hypothetical condition</s_inf>
+<gloss xml:lang="eng">if</gloss>
+<gloss xml:lang="eng">when</gloss>
+</sense>
+<sense>
+<pos>particle</pos>
+<pos>conjunction</pos>
+<gloss xml:lang="eng">and</gloss>
+<gloss xml:lang="eng">as well as</gloss>
+</sense>
+<sense>
+<pos>particle</pos>
+<gloss xml:lang="eng">with</gloss>
+<gloss xml:lang="eng">together with</gloss>
+<gloss xml:lang="eng">accompanied by</gloss>
+</sense>
+<sense>
+<pos>particle</pos>
+<gloss xml:lang="eng">used for quoting (thoughts, speech, etc.)</gloss>
+</sense>
+<sense>
+<pos>particle</pos>
+<pos>conjunction</pos>
+<s_inf>indicates natural or certain outcome</s_inf>
+<gloss xml:lang="eng">when</gloss>
+<gloss xml:lang="eng">once</gloss>
+</sense>
+<sense>
+<pos>particle</pos>
+<s_inf>indicates target of action</s_inf>
+<gloss xml:lang="eng">with</gloss>
+<gloss xml:lang="eng">against</gloss>
+<gloss xml:lang="eng">to</gloss>
+</sense>
+<sense>
+<pos>particle</pos>
+<gloss xml:lang="eng">indicates manner of action</gloss>
+<gloss xml:lang="eng">forms an adverb of manner</gloss>
+</sense>
+<sense>
+<pos>particle</pos>
+<s_inf>marks the thing being compared to, or taken as a basis</s_inf>
+<gloss xml:lang="eng">with</gloss>
+<gloss xml:lang="eng">to (as in "similar to")</gloss>
+<gloss xml:lang="eng">from (as in "different from")</gloss>
+<gloss xml:lang="eng">than</gloss>
+</sense>
+<sense>
+<pos>particle</pos>
+<pos>conjunction</pos>
+<s_inf>indicates simultaneity, impetus or sequence</s_inf>
+<gloss xml:lang="eng">when</gloss>
+<gloss xml:lang="eng">as</gloss>
+<gloss xml:lang="eng">as soon as</gloss>
+<gloss xml:lang="eng">upon</gloss>
+<gloss xml:lang="eng">the moment that</gloss>
+<gloss xml:lang="eng">after</gloss>
+</sense>
+<sense>
+<pos>particle</pos>
+<s_inf>indicates designation or specification</s_inf>
+<gloss xml:lang="eng">as</gloss>
+<gloss xml:lang="eng">to</gloss>
+</sense>
+<sense>
+<pos>particle</pos>
+<xref>に・6</xref>
+<s_inf>oft. as ～なる; more formal than に</s_inf>
+<gloss xml:lang="eng">marks the outcome of a change</gloss>
+<gloss xml:lang="eng">marks the result of an action</gloss>
+</sense>
+<sense>
+<pos>particle</pos>
+<s_inf>at sentence end, with rising intonation; indicates scrutiny, mistrust or retort</s_inf>
+<gloss xml:lang="eng">what's this?</gloss>
+<gloss xml:lang="eng">what do you mean ...?</gloss>
+<gloss xml:lang="eng">how can you ...</gloss>
+</sense>
+<sense>
+<pos>particle</pos>
+<misc>colloquial</misc>
+<s_inf>at sentence end; ellipsis of ～思う, 言う, etc.</s_inf>
+<gloss xml:lang="eng">... I think</gloss>
+<gloss xml:lang="eng">I guess ...</gloss>
+<gloss xml:lang="eng">it's that ...</gloss>
+<gloss xml:lang="eng">... you mean?</gloss>
+<gloss xml:lang="eng">... you're saying?</gloss>
+</sense>
+<sense>
+<pos>particle</pos>
+<xref>さてと</xref>
+<misc>colloquial</misc>
+<s_inf>at sentence end; self-confirmatory utterance when talking to oneself</s_inf>
+<gloss xml:lang="eng">... right</gloss>
+<gloss xml:lang="eng">... OK</gloss>
+<gloss xml:lang="eng">... there</gloss>
+<gloss xml:lang="eng">let's see...</gloss>
+<gloss xml:lang="eng">... check</gloss>
+</sense>
+<sense>
+<pos>particle</pos>
+<pos>conjunction</pos>
+<s_inf>after (repeated) volitionals</s_inf>
+<gloss xml:lang="eng">be it ... or ...</gloss>
+<gloss xml:lang="eng">no matter (what, who, etc.)</gloss>
+</sense>
+<sense>
+<pos>particle</pos>
+<s_inf>e.g. as Ａ、Ｂ、Ｃ～する, where する is any verb</s_inf>
+<gloss xml:lang="eng">indicates the order something is done in</gloss>
+</sense>
+<sense>
+<pos>particle</pos>
+<s_inf>with neg. sentence; after a small amount; emphatic</s_inf>
+<gloss xml:lang="eng">(not) even</gloss>
+<gloss xml:lang="eng">(less) than</gloss>
+<gloss xml:lang="eng">(not) as much as</gloss>
+<gloss xml:lang="eng">within</gloss>
+</sense>
+<sense>
+<pos>particle</pos>
+<s_inf>indicates similarity</s_inf>
+<gloss xml:lang="eng">like</gloss>
+<gloss xml:lang="eng">as</gloss>
+</sense>
+<sense>
+<pos>conjunction</pos>
+<xref>すると・1</xref>
+<gloss xml:lang="eng">(and) then</gloss>
+<gloss xml:lang="eng">and</gloss>
+<gloss xml:lang="eng">thereupon</gloss>
+<gloss xml:lang="eng">whereupon</gloss>
+</sense>
+<sense>
+<pos>particle</pos>
+<s_inf>at sentence end</s_inf>
+<dial>Kyuushuu-ben</dial>
+<gloss xml:lang="eng">indicates a question</gloss>
+</sense>
+</entry>
+<entry>
+<ent_seq>1288810</ent_seq>
+<k_ele>
+<keb>此処</keb>
+<ke_inf>rarely used kanji form</ke_inf>
+</k_ele>
+<k_ele>
+<keb>此所</keb>
+<ke_inf>rarely used kanji form</ke_inf>
+</k_ele>
+<k_ele>
+<keb>是</keb>
+<ke_inf>rarely used kanji form</ke_inf>
+</k_ele>
+<k_ele>
+<keb>茲</keb>
+<ke_inf>rarely used kanji form</ke_inf>
+</k_ele>
+<k_ele>
+<keb>爰</keb>
+<ke_inf>rarely used kanji form</ke_inf>
+</k_ele>
+<r_ele>
+<reb>ここ</reb>
+<re_pri>ichi1</re_pri>
+</r_ele>
+<sense>
+<pos>pronoun</pos>
+<xref>そこ・1</xref>
+<xref>あそこ・1</xref>
+<xref>どこ・1</xref>
+<misc>word usually written using kana alone</misc>
+<gloss xml:lang="eng">here</gloss>
+<gloss xml:lang="eng">this place</gloss>
+</sense>
+<sense>
+<pos>pronoun</pos>
+<misc>word usually written using kana alone</misc>
+<gloss xml:lang="eng">this point</gloss>
+<gloss xml:lang="eng">here</gloss>
+<gloss xml:lang="eng">now</gloss>
+</sense>
+<sense>
+<pos>pronoun</pos>
+<misc>word usually written using kana alone</misc>
+<s_inf>followed by a duration noun</s_inf>
+<gloss xml:lang="eng">these past ... (e.g. three years)</gloss>
+<gloss xml:lang="eng">these last ...</gloss>
+</sense>
+<sense>
+<pos>pronoun</pos>
+<misc>word usually written using kana alone</misc>
+<s_inf>followed by a duration noun</s_inf>
+<gloss xml:lang="eng">the next ... (e.g. few days)</gloss>
+<gloss xml:lang="eng">these next ...</gloss>
+</sense>
+</entry>
+<entry>
+<ent_seq>1293990</ent_seq>
+<k_ele>
+<keb>最初</keb>
+<ke_pri>ichi1</ke_pri>
+<ke_pri>news1</ke_pri>
+<ke_pri>nf01</ke_pri>
+</k_ele>
+<r_ele>
+<reb>さいしょ</reb>
+<re_pri>ichi1</re_pri>
+<re_pri>news1</re_pri>
+<re_pri>nf01</re_pri>
+</r_ele>
+<sense>
+<pos>nouns which may take the genitive case particle 'no'</pos>
+<pos>noun (common) (futsuumeishi)</pos>
+<pos>adverb (fukushi)</pos>
+<gloss xml:lang="eng">beginning</gloss>
+<gloss xml:lang="eng">outset</gloss>
+<gloss xml:lang="eng">first</gloss>
+<gloss xml:lang="eng">onset</gloss>
+</sense>
+</entry>
+<entry>
+<ent_seq>1521400</ent_seq>
+<k_ele>
+<keb>僕</keb>
+<ke_pri>ichi1</ke_pri>
+<ke_pri>news1</ke_pri>
+<ke_pri>nf07</ke_pri>
+</k_ele>
+<r_ele>
+<reb>ぼく</reb>
+<re_pri>ichi1</re_pri>
+<re_pri>news1</re_pri>
+<re_pri>nf07</re_pri>
+</r_ele>
+<r_ele>
+<reb>ボク</reb>
+<re_nokanji />
+</r_ele>
+<sense>
+<pos>pronoun</pos>
+<misc>male term or language</misc>
+<gloss xml:lang="eng">I</gloss>
+<gloss xml:lang="eng">me</gloss>
+</sense>
+<sense>
+<pos>pronoun</pos>
+<misc>colloquial</misc>
+<s_inf>when addressing a young boy</s_inf>
+<gloss xml:lang="eng">you</gloss>
+</sense>
+<sense>
+<pos>noun (common) (futsuumeishi)</pos>
+<misc>archaic</misc>
+<gloss xml:lang="eng">manservant</gloss>
+</sense>
+</entry>
+<entry>
+<ent_seq>1580620</ent_seq>
+<k_ele>
+<keb>真っ白</keb>
+<ke_pri>ichi1</ke_pri>
+<ke_pri>news1</ke_pri>
+<ke_pri>nf15</ke_pri>
+</k_ele>
+<k_ele>
+<keb>まっ白</keb>
+</k_ele>
+<k_ele>
+<keb>真白</keb>
+</k_ele>
+<r_ele>
+<reb>まっしろ</reb>
+<re_pri>ichi1</re_pri>
+<re_pri>news1</re_pri>
+<re_pri>nf15</re_pri>
+</r_ele>
+<r_ele>
+<reb>ましろ</reb>
+<re_restr>真白</re_restr>
+<re_inf>out-dated or obsolete kana usage</re_inf>
+</r_ele>
+<sense>
+<pos>adjectival nouns or quasi-adjectives (keiyodoshi)</pos>
+<pos>nouns which may take the genitive case particle 'no'</pos>
+<pos>noun (common) (futsuumeishi)</pos>
+<gloss xml:lang="eng">pure white</gloss>
+</sense>
+<sense>
+<pos>adjectival nouns or quasi-adjectives (keiyodoshi)</pos>
+<pos>nouns which may take the genitive case particle 'no'</pos>
+<pos>noun (common) (futsuumeishi)</pos>
+<gloss xml:lang="eng">blank (e.g. mind, paper)</gloss>
+</sense>
+</entry>
+<entry>
+<ent_seq>1586270</ent_seq>
+<k_ele>
+<keb>開く</keb>
+<ke_pri>spec1</ke_pri>
+</k_ele>
+<k_ele>
+<keb>空く</keb>
+<ke_pri>ichi1</ke_pri>
+</k_ele>
+<k_ele>
+<keb>明く</keb>
+</k_ele>
+<r_ele>
+<reb>あく</reb>
+<re_pri>ichi1</re_pri>
+<re_pri>spec1</re_pri>
+</r_ele>
+<sense>
+<pos>Godan verb with 'ku' ending</pos>
+<pos>intransitive verb</pos>
+<s_inf>esp. 開く</s_inf>
+<gloss xml:lang="eng">to open (e.g. doors)</gloss>
+</sense>
+<sense>
+<pos>Godan verb with 'ku' ending</pos>
+<pos>intransitive verb</pos>
+<s_inf>esp. 開く</s_inf>
+<gloss xml:lang="eng">to open (e.g. business, etc.)</gloss>
+</sense>
+<sense>
+<pos>Godan verb with 'ku' ending</pos>
+<pos>intransitive verb</pos>
+<s_inf>esp. 空く</s_inf>
+<gloss xml:lang="eng">to be empty</gloss>
+</sense>
+<sense>
+<pos>Godan verb with 'ku' ending</pos>
+<pos>intransitive verb</pos>
+<s_inf>esp. 空く</s_inf>
+<gloss xml:lang="eng">to be vacant</gloss>
+<gloss xml:lang="eng">to be available</gloss>
+<gloss xml:lang="eng">to be free</gloss>
+</sense>
+<sense>
+<pos>Godan verb with 'ku' ending</pos>
+<pos>intransitive verb</pos>
+<s_inf>esp. 明く</s_inf>
+<gloss xml:lang="eng">to be open (e.g. neckline, etc.)</gloss>
+</sense>
+<sense>
+<pos>Godan verb with 'ku' ending</pos>
+<pos>intransitive verb</pos>
+<s_inf>esp. 明く</s_inf>
+<gloss xml:lang="eng">to have been opened (of one's eyes, mouth, etc.)</gloss>
+</sense>
+<sense>
+<pos>Godan verb with 'ku' ending</pos>
+<pos>intransitive verb</pos>
+<s_inf>esp. 明く</s_inf>
+<gloss xml:lang="eng">to come to an end</gloss>
+</sense>
+<sense>
+<pos>Godan verb with 'ku' ending</pos>
+<pos>transitive verb</pos>
+<s_inf>esp. 明く</s_inf>
+<gloss xml:lang="eng">to open (one's eyes, mouth, etc.)</gloss>
+</sense>
+<sense>
+<pos>Godan verb with 'ku' ending</pos>
+<pos>intransitive verb</pos>
+<xref>穴が開く</xref>
+<gloss xml:lang="eng">to have a hole</gloss>
+<gloss xml:lang="eng">to form a gap</gloss>
+<gloss xml:lang="eng">to have an interval (between events)</gloss>
+</sense>
+</entry>
+<entry>
+<ent_seq>1587040</ent_seq>
+<k_ele>
+<keb>言う</keb>
+<ke_pri>ichi1</ke_pri>
+<ke_pri>news1</ke_pri>
+<ke_pri>nf01</ke_pri>
+</k_ele>
+<k_ele>
+<keb>云う</keb>
+<ke_inf>rarely used kanji form</ke_inf>
+</k_ele>
+<k_ele>
+<keb>謂う</keb>
+<ke_inf>rarely used kanji form</ke_inf>
+</k_ele>
+<r_ele>
+<reb>いう</reb>
+<re_pri>ichi1</re_pri>
+<re_pri>news1</re_pri>
+<re_pri>nf01</re_pri>
+</r_ele>
+<r_ele>
+<reb>ゆう</reb>
+<re_pri>ichi1</re_pri>
+</r_ele>
+<sense>
+<pos>Godan verb with 'u' ending</pos>
+<pos>transitive verb</pos>
+<gloss xml:lang="eng">to say</gloss>
+<gloss xml:lang="eng">to utter</gloss>
+<gloss xml:lang="eng">to declare</gloss>
+</sense>
+<sense>
+<pos>Godan verb with 'u' ending</pos>
+<pos>transitive verb</pos>
+<gloss xml:lang="eng">to name</gloss>
+<gloss xml:lang="eng">to call</gloss>
+</sense>
+<sense>
+<stagk>言う</stagk>
+<pos>Godan verb with 'u' ending</pos>
+<pos>intransitive verb</pos>
+<gloss xml:lang="eng">to go (e.g. "the alarm went ping")</gloss>
+<gloss xml:lang="eng">to make a noise</gloss>
+</sense>
+</entry>
+<entry>
+<ent_seq>1628500</ent_seq>
+<r_ele>
+<reb>です</reb>
+<re_pri>spec1</re_pri>
+</r_ele>
+<sense>
+<pos>copula</pos>
+<pos>auxiliary verb</pos>
+<xref>だ</xref>
+<misc>polite (teineigo) language</misc>
+<gloss xml:lang="eng">be</gloss>
+<gloss xml:lang="eng">is</gloss>
+</sense>
+</entry>
+<entry>
+<ent_seq>2028970</ent_seq>
+<r_ele>
+<reb>か</reb>
+<re_pri>spec1</re_pri>
+</r_ele>
+<sense>
+<pos>particle</pos>
+<s_inf>at sentence end</s_inf>
+<gloss xml:lang="eng">indicates a question</gloss>
+</sense>
+<sense>
+<pos>particle</pos>
+<s_inf>at the end of a subordinate clause</s_inf>
+<gloss xml:lang="eng">indicates an embedded question</gloss>
+<gloss xml:lang="eng">indicates an indirect question</gloss>
+</sense>
+<sense>
+<pos>particle</pos>
+<s_inf>as ...か...（か）</s_inf>
+<gloss xml:lang="eng">or</gloss>
+<gloss xml:lang="eng">whether or not</gloss>
+<gloss xml:lang="eng">either ... or ...</gloss>
+</sense>
+<sense>
+<pos>particle</pos>
+<xref>何か・1</xref>
+<s_inf>after an interrogative</s_inf>
+<gloss xml:lang="eng">some- (e.g. something, someone)</gloss>
+</sense>
+<sense>
+<pos>particle</pos>
+<s_inf>indicates uncertainty, conjecture, doubt, etc.</s_inf>
+<gloss xml:lang="eng">hmm</gloss>
+<gloss xml:lang="eng">huh</gloss>
+<gloss xml:lang="eng">I wonder (if, why, etc.)</gloss>
+<gloss xml:lang="eng">it might (be)</gloss>
+<gloss xml:lang="eng">maybe</gloss>
+<gloss xml:lang="eng">perhaps it's (because of)</gloss>
+<gloss xml:lang="eng">could it be (that)</gloss>
+</sense>
+<sense>
+<pos>particle</pos>
+<s_inf>indicates invitation, suggestion, or polite request; after a negative or volitional</s_inf>
+<gloss xml:lang="eng">shouldn't we ...?</gloss>
+<gloss xml:lang="eng">why don't we ...?</gloss>
+<gloss xml:lang="eng">what about ...?</gloss>
+<gloss xml:lang="eng">how about ...?</gloss>
+<gloss xml:lang="eng">let's ...</gloss>
+<gloss xml:lang="eng">may I ...?</gloss>
+<gloss xml:lang="eng">could you ...?</gloss>
+</sense>
+<sense>
+<pos>particle</pos>
+<xref>何人か</xref>
+<s_inf>indicates a rough amount</s_inf>
+<gloss xml:lang="eng">some (amount)</gloss>
+<gloss xml:lang="eng">roughly</gloss>
+<gloss xml:lang="eng">about</gloss>
+<gloss xml:lang="eng">circa</gloss>
+<gloss xml:lang="eng">more or less</gloss>
+<gloss xml:lang="eng">or so</gloss>
+</sense>
+<sense>
+<pos>particle</pos>
+<s_inf>indicates indirect command or critique; usu. after a negative</s_inf>
+<gloss xml:lang="eng">won't you ...?</gloss>
+<gloss xml:lang="eng">why don't you ...?</gloss>
+<gloss xml:lang="eng">couldn't you (e.g. have done differently)?</gloss>
+<gloss xml:lang="eng">shouldn't you ...?</gloss>
+</sense>
+<sense>
+<pos>particle</pos>
+<s_inf>indicates irony or rhetorical question</s_inf>
+<gloss xml:lang="eng">why should ...?</gloss>
+<gloss xml:lang="eng">why would ...?</gloss>
+<gloss xml:lang="eng">would I (really) ...?</gloss>
+<gloss xml:lang="eng">who could have (guessed, foreseen, etc.) ...?</gloss>
+<gloss xml:lang="eng">how could ...?</gloss>
+<gloss xml:lang="eng">how should ...?</gloss>
+</sense>
+<sense>
+<pos>particle</pos>
+<s_inf>used to confirm or emphasize information</s_inf>
+<gloss xml:lang="eng">OK?</gloss>
+<gloss xml:lang="eng">(you) understand?</gloss>
+<gloss xml:lang="eng">got it?</gloss>
+<gloss xml:lang="eng">really?</gloss>
+<gloss xml:lang="eng">right?</gloss>
+<gloss xml:lang="eng">didn't (I, you, etc.) ...?</gloss>
+</sense>
+<sense>
+<pos>particle</pos>
+<s_inf>indicates surprise or strong emotion</s_inf>
+<gloss xml:lang="eng">oh</gloss>
+<gloss xml:lang="eng">wow</gloss>
+<gloss xml:lang="eng">how (incredible, strongly, badly, etc.)</gloss>
+</sense>
+<sense>
+<pos>particle</pos>
+<s_inf>indicates (sudden) realization or recollection</s_inf>
+<gloss xml:lang="eng">come to think of ...</gloss>
+<gloss xml:lang="eng">... you say?</gloss>
+<gloss xml:lang="eng">ah</gloss>
+<gloss xml:lang="eng">now that (you, it, etc.) ...</gloss>
+</sense>
+<sense>
+<pos>prefix</pos>
+<xref>か弱い</xref>
+<s_inf>emphatic prefix; usu. before an adjective</s_inf>
+<gloss xml:lang="eng">very</gloss>
+</sense>
+<sense>
+<pos>suffix</pos>
+<xref>定か</xref>
+<s_inf>suffix forming adjectives or adverbs; after an uninflectable word</s_inf>
+<gloss xml:lang="eng">-al</gloss>
+<gloss xml:lang="eng">-ial</gloss>
+<gloss xml:lang="eng">-ic</gloss>
+<gloss xml:lang="eng">-ical</gloss>
+<gloss xml:lang="eng">-ish</gloss>
+<gloss xml:lang="eng">-y</gloss>
+</sense>
+<sense>
+<pos>adverb (fukushi)</pos>
+<misc>archaic</misc>
+<gloss xml:lang="eng">in that way</gloss>
+</sense>
+</entry>
+<entry>
+<ent_seq>2087820</ent_seq>
+<r_ele>
+<reb>のです</reb>
+<re_pri>spec1</re_pri>
+</r_ele>
+<r_ele>
+<reb>んです</reb>
+<re_pri>spec1</re_pri>
+</r_ele>
+<sense>
+<pos>expressions (phrases, clauses, etc.)</pos>
+<s_inf>の and ん add emphasis</s_inf>
+<gloss xml:lang="eng">the expectation is that ...</gloss>
+<gloss xml:lang="eng">the reason is that ...</gloss>
+<gloss xml:lang="eng">the fact is that ...</gloss>
+<gloss xml:lang="eng">the explanation is that ...</gloss>
+<gloss xml:lang="eng">it is that ...</gloss>
+</sense>
+</entry>
+<entry>
+<ent_seq>2819970</ent_seq>
+<r_ele>
+<reb>だった</reb>
+<re_pri>spec1</re_pri>
+</r_ele>
+<sense>
+<pos>expressions (phrases, clauses, etc.)</pos>
+<xref>だ</xref>
+<s_inf>past tense of plain copula</s_inf>
+<gloss xml:lang="eng">was</gloss>
+<gloss xml:lang="eng">were</gloss>
+</sense>
+</entry>
+
+</JMdict>

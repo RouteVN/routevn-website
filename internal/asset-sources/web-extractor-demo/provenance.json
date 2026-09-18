@@ -1,0 +1,28 @@
+{
+  "artwork": "User-approved Masshiro library scene; original Drive character provenance in drive-artwork.json",
+  "composition": "1920x1080 library, character resized to 792x1584 at (564,56), cropped to canvas; output 1600x900",
+  "optimization": "WebP quality 95; originals preserved. No new PNG output; PNG compression rule does not apply.",
+  "audio": {
+    "word": "\u6700\u521d",
+    "reading": "\u3055\u3044\u3057\u3087",
+    "source": "https://media.kanjialive.com/examples_audio/audio-mp3/sho-haji(me)_06_a.mp3",
+    "creator": "Kanji alive",
+    "license": "https://creativecommons.org/licenses/by/4.0/",
+    "modified": false,
+    "fallback": "Production RouteVN pronunciation player uses a Japanese device voice when native audio is absent."
+  },
+  "definition": "Official JMdict subset; unchanged glosses. See jmdict-provenance.json and jmdict-entries.xml.",
+  "lapis": {
+    "commit": "f4eb29bd4129ae1dde068c64cf6557b7603462dc",
+    "source": "https://github.com/donkuri/lapis",
+    "license": "GPL-3.0",
+    "styling": "Unmodified src/styling.css, isolated in iframe; desktop sizes for full-width review and native mobile sizes below 600px.",
+    "definition": "Unmodified AnkiService.formatMainDefinitionHtml formatter from production routevn-lite, with the bundled JMdict senses.",
+    "pitch": "Adapted upstream groupMoras and constructPitch markup; category selection follows production Anki pitchFields. Missing pitch is omitted."
+  },
+  "popup": {
+    "source": "routevn-lite/src/sidepanel/sidepanel.css",
+    "license": "MIT",
+    "adaptation": "Scoped production side-panel declarations, light theme, original font stack and inherited letter spacing. Position is adapted for page embedding. Footer omitted."
+  }
+}

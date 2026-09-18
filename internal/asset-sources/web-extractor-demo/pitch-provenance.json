@@ -1,0 +1,14 @@
+{
+  "title": "Kanjium Pitch Accents",
+  "format": 3,
+  "revision": "kanjium-8a0cdaa16d64-masshiro1",
+  "author": "RouteVN Web Extractor",
+  "sourceLanguage": "ja",
+  "url": "https://github.com/mifunetoshiro/kanjium",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "attribution": "Japanese pitch accent data by Uros Ozvatic (Kanjium). Original contributors retain their rights.",
+  "description": "Converted to Yomitan metadata by RouteVN Web Extractor. Reformatted data is available under CC BY-SA 4.0. Lexical accent only; coverage and pronunciation vary.",
+  "sourceRevision": "8a0cdaa16d64a281a2048de2eee2ec5e3a440fa6",
+  "sourceSha256": "8bd0dd127dab32ceec94cb03ab1ba6b68858ea73421dfa1731af2f373deb4f20"
+}

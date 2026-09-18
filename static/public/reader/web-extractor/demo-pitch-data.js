@@ -1,0 +1,2 @@
+// Kanjium by Uros Ozvatic, CC BY-SA 4.0. Exact demo pairs only.
+export const pitchRecords = [["から", "pitch", {"reading": "から", "pitches": [{"position": 1}]}], ["それ", "pitch", {"reading": "それ", "pitches": [{"position": 1}]}], ["言う", "pitch", {"reading": "いう", "pitches": [{"position": 0}]}], ["最初", "pitch", {"reading": "さいしょ", "pitches": [{"position": 0}]}], ["真っ白", "pitch", {"reading": "まっしろ", "pitches": [{"position": 3}]}], ["僕", "pitch", {"reading": "ぼく", "pitches": [{"position": 1}]}], ["空く", "pitch", {"reading": "あく", "pitches": [{"position": 0}]}]];

@@ -1,0 +1,29 @@
+# Web Extractor interactive demo
+
+The landing page includes a self-contained Masshiro library scene below the hero video. Desktop places the scene beside a searchable backlog, with an Anki preview below. Mobile stacks these regions. Use the website’s alternating neutral backgrounds, compact section spacing and decorative notebook image.
+
+## Dictionary and history
+
+The scene displays 「それ、最初から真っ白だったんですか？」. The backlog starts with ???「ここ、空いてますか？」, followed by 真っ白「僕、真っ白といいます。」 and the scene line. Every lexical span supports hover, tap and keyboard lookup; punctuation does not. Inflections resolve to their dictionary forms while retaining the original sentence for cards.
+
+Bundle only the required official JMdict and Kanjium records. Preserve unchanged glosses, entry IDs, source provenance and licenses. Never fabricate missing pitch data. Use production dictionary, pitch and pronunciation renderers. The 最初 recording is native audio; other entries use the production Japanese device-voice fallback or report unavailable audio.
+
+The popup uses the extension’s light side-panel appearance: 340px width, 12px/14px padding, 12.5px body, 20px headword, 11px reading and 10px compact tags. Position it near the selected word without obscuring the word. Omit the preview/close footer. Leaving the word and popup dismisses after 250ms; entering either cancels dismissal. Keep focused controls open. Escape and outside taps dismiss it. Stop audio on dismissal.
+
+## Anki preview
+
+The + button snapshots the selected word, original sentence and scene. Subsequent lookups must not change that card. No Anki connection or save occurs; label the region as a preview and link the setup guide.
+
+Use the unmodified Lapis stylesheet in an isolated iframe and the production Anki definition formatter. Keep the viewport 650px tall on both sides, with internal scrolling for long answers. Switch Lapis typography to mobile below 600px. The front shows the word; the back shows reading, picture, sentence, definition and pitch.
+
+Render verified pitch positions with Lapis mora overlines, downstep marks, numeric tags and category colors. Apply the category to the word and sentence target. Use production category rules: heiban for zero, kifuku for accented verbs/i-adjectives, otherwise atamadaka, odaka or nakadaka. Explain dictionary-form pitch for inflections and include Kanjium attribution. Missing pitch shows the reading without a graph or category. Switching cards must clear the preceding card’s pitch state.
+
+## Assets and maintenance
+
+Preserve original artwork and upstream Lapis sources under internal/asset-sources. Serve the optimized WebP scene. Keep credits on the linked source page and within card definitions. Preserve upstream license notices.
+
+Use scoped popup CSS; keep embedding rules separate from production appearance rules. Remove obsolete demo controls, superseded styles and historical layout notes.
+
+## Verification
+
+Offline tests cover dictionary coverage, sentence reconstruction, pitch categories, missing data and card snapshots. Browser checks cover computed style parity, hover dismissal, keyboard/touch lookup, history search, card context, pitch rendering, fixed card geometry and responsive layout. Run website tests and build before delivery.

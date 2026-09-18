@@ -93,110 +93,120 @@
 
       const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
 
-      if (reduceMotion.matches) {
-        return;
-      }
-
       window.RouteVNCursorSparklesStarted = true;
+      let stopEffect = null;
 
-      let lastParticleAt = 0;
-      let lastPointerClientX = null;
-      let lastPointerClientY = null;
-      let pointerInsideWindow = false;
-      const particleLayer = document.createElement("div");
-      particleLayer.className = "rvn-cursor-sparkles-layer";
-      document.body.appendChild(particleLayer);
+      const startEffect = () => {
+        let lastParticleAt = 0;
+        let lastPointerClientX = null;
+        let lastPointerClientY = null;
+        let pointerInsideWindow = false;
+        const particleLayer = document.createElement("div");
+        particleLayer.className = "rvn-cursor-sparkles-layer";
+        document.body.appendChild(particleLayer);
 
-      const shouldUseDarkParticle = (clientX, clientY) => {
-        const darkArea = window.RouteVNCursorSparklesDarkArea;
-        if (typeof darkArea === "function") {
-          return darkArea(clientX, clientY);
-        }
+        const shouldUseDarkParticle = (clientX, clientY) => {
+          const darkArea = window.RouteVNCursorSparklesDarkArea;
+          if (typeof darkArea === "function") {
+            return darkArea(clientX, clientY);
+          }
 
-        return document.body.classList.contains("light");
+          return document.body.classList.contains("light");
+        };
+
+        const emitParticle = (clientX, clientY, isIdle = false) => {
+          const particle = document.createElement("span");
+          const shapeRoll = Math.random();
+          const isDot = shapeRoll < 0.06;
+          const size = isDot ? 1.3 + Math.random() * 1.2 : (isIdle ? 2.25 : 2.5) + Math.random() * (isIdle ? 2.8 : 3.2);
+          const spawnX = clientX + (isIdle ? (Math.random() - 0.5) * 46 : 0);
+          const spawnY = clientY + (isIdle ? (Math.random() - 0.5) * 38 : 0);
+          const driftX = (Math.random() - 0.5) * (isIdle ? 44 : 22);
+          const driftY = (Math.random() - 0.5) * (isIdle ? 34 : 18);
+          const rotation = Math.random() * 180;
+
+          particle.className = "rvn-cursor-sparkle";
+          particle.style.setProperty("--size", size.toFixed(2) + "px");
+          particle.style.setProperty("--x", (spawnX - size / 2).toFixed(2) + "px");
+          particle.style.setProperty("--y", (spawnY - size / 2).toFixed(2) + "px");
+          particle.style.setProperty("--dx", driftX.toFixed(2) + "px");
+          particle.style.setProperty("--dy", driftY.toFixed(2) + "px");
+          particle.style.setProperty("--rotation", rotation.toFixed(2) + "deg");
+
+          if (isDot) {
+            particle.dataset.shape = "dot";
+          } else if (shapeRoll < 0.82) {
+            particle.dataset.shape = "star";
+          }
+          if (shouldUseDarkParticle(spawnX, spawnY)) {
+            particle.dataset.tone = "dark";
+          }
+
+          if (particleLayer.childElementCount > 78) {
+            particleLayer.firstElementChild.remove();
+          }
+
+          particleLayer.appendChild(particle);
+          window.setTimeout(() => {
+            particle.remove();
+          }, 1340);
+        };
+
+        const setTargetFromPointer = (event) => {
+          if (event.pointerType && event.pointerType !== "mouse") {
+            return;
+          }
+
+          lastPointerClientX = event.clientX;
+          lastPointerClientY = event.clientY;
+          pointerInsideWindow = true;
+
+          const now = performance.now();
+          if (now - lastParticleAt < 24) {
+            return;
+          }
+
+          lastParticleAt = now;
+          emitParticle(event.clientX, event.clientY);
+          emitParticle(event.clientX, event.clientY);
+        };
+
+        const resetPointer = () => {
+          pointerInsideWindow = false;
+        };
+
+        window.addEventListener("pointermove", setTargetFromPointer, { passive: true });
+        window.addEventListener("mousemove", setTargetFromPointer, { passive: true });
+        window.addEventListener("pointerleave", resetPointer);
+        document.addEventListener("mouseleave", resetPointer);
+
+        const idleParticleTimer = window.setInterval(() => {
+          if (!pointerInsideWindow || document.hidden || lastPointerClientX === null || lastPointerClientY === null) {
+            return;
+          }
+
+          emitParticle(lastPointerClientX, lastPointerClientY, true);
+          emitParticle(lastPointerClientX, lastPointerClientY, true);
+        }, 100);
+
+        return () => {
+          window.clearInterval(idleParticleTimer);
+          particleLayer.remove();
+          window.removeEventListener("pointermove", setTargetFromPointer);
+          window.removeEventListener("mousemove", setTargetFromPointer);
+          window.removeEventListener("pointerleave", resetPointer);
+          document.removeEventListener("mouseleave", resetPointer);
+        };
       };
 
-      const emitParticle = (clientX, clientY, isIdle = false) => {
-        const particle = document.createElement("span");
-        const shapeRoll = Math.random();
-        const isDot = shapeRoll < 0.06;
-        const size = isDot ? 1.3 + Math.random() * 1.2 : (isIdle ? 2.25 : 2.5) + Math.random() * (isIdle ? 2.8 : 3.2);
-        const spawnX = clientX + (isIdle ? (Math.random() - 0.5) * 46 : 0);
-        const spawnY = clientY + (isIdle ? (Math.random() - 0.5) * 38 : 0);
-        const driftX = (Math.random() - 0.5) * (isIdle ? 44 : 22);
-        const driftY = (Math.random() - 0.5) * (isIdle ? 34 : 18);
-        const rotation = Math.random() * 180;
-
-        particle.className = "rvn-cursor-sparkle";
-        particle.style.setProperty("--size", size.toFixed(2) + "px");
-        particle.style.setProperty("--x", (spawnX - size / 2).toFixed(2) + "px");
-        particle.style.setProperty("--y", (spawnY - size / 2).toFixed(2) + "px");
-        particle.style.setProperty("--dx", driftX.toFixed(2) + "px");
-        particle.style.setProperty("--dy", driftY.toFixed(2) + "px");
-        particle.style.setProperty("--rotation", rotation.toFixed(2) + "deg");
-
-        if (isDot) {
-          particle.dataset.shape = "dot";
-        } else if (shapeRoll < 0.82) {
-          particle.dataset.shape = "star";
+      const syncMotionPreference = () => {
+        if (reduceMotion.matches) {
+          stopEffect?.();
+          stopEffect = null;
+        } else if (!stopEffect) {
+          stopEffect = startEffect();
         }
-        if (shouldUseDarkParticle(spawnX, spawnY)) {
-          particle.dataset.tone = "dark";
-        }
-
-        if (particleLayer.childElementCount > 78) {
-          particleLayer.firstElementChild.remove();
-        }
-
-        particleLayer.appendChild(particle);
-        window.setTimeout(() => {
-          particle.remove();
-        }, 1340);
       };
-
-      const setTargetFromPointer = (event) => {
-        if (event.pointerType && event.pointerType !== "mouse") {
-          return;
-        }
-
-        lastPointerClientX = event.clientX;
-        lastPointerClientY = event.clientY;
-        pointerInsideWindow = true;
-
-        const now = performance.now();
-        if (now - lastParticleAt < 24) {
-          return;
-        }
-
-        lastParticleAt = now;
-        emitParticle(event.clientX, event.clientY);
-        emitParticle(event.clientX, event.clientY);
-      };
-
-      const resetPointer = () => {
-        pointerInsideWindow = false;
-      };
-
-      window.addEventListener("pointermove", setTargetFromPointer, { passive: true });
-      window.addEventListener("mousemove", setTargetFromPointer, { passive: true });
-      window.addEventListener("pointerleave", resetPointer);
-      document.addEventListener("mouseleave", resetPointer);
-
-      const idleParticleTimer = window.setInterval(() => {
-        if (!pointerInsideWindow || document.hidden || lastPointerClientX === null || lastPointerClientY === null) {
-          return;
-        }
-
-        emitParticle(lastPointerClientX, lastPointerClientY, true);
-        emitParticle(lastPointerClientX, lastPointerClientY, true);
-      }, 100);
-
-      reduceMotion.addEventListener("change", () => {
-        window.clearInterval(idleParticleTimer);
-        particleLayer.remove();
-        window.removeEventListener("pointermove", setTargetFromPointer);
-        window.removeEventListener("mousemove", setTargetFromPointer);
-        window.removeEventListener("pointerleave", resetPointer);
-        document.removeEventListener("mouseleave", resetPointer);
-      }, { once: true });
+      reduceMotion.addEventListener("change", syncMotionPreference);
+      syncMotionPreference();
     })();

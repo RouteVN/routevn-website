@@ -10,7 +10,7 @@ seo:
 sidebarId: using-the-dictionary
 ---
 
-First, [install a dictionary](/en/web-extractor/docs/#install-a-dictionary).
+First, [install a dictionary](/en/web-extractor/docs/getting-started/#install-a-dictionary).
 
 ## Look up words while reading
 
@@ -22,18 +22,18 @@ Some supported games also allow lookup directly on game text and choices.
 
 ## Review earlier dialogue
 
-1. Click the RouteVN Web Extractor icon in Chrome's toolbar.
+1. Click the RouteVN Web Extractor icon in your browser's Extensions menu.
 2. Select **Open Side Panel** if it is not already open.
 3. Use the search field to find a captured line.
 4. Hover over a word in that line to look it up.
 
-<img src="/public/reader/web-extractor/screenshots/backlog-cropped.png" alt="Backlog with captured dialogue, a search field, and a dictionary definition for the selected word." width="415" height="887" loading="lazy" style="width: 415px; display: block; max-width: 100%; height: auto; margin: 24px auto;">
+<img src="/public/reader/web-extractor/screenshots/backlog-cropped.png" alt="Backlog of Masshiro dialogue with a dictionary definition for 不思議." width="438" height="952" loading="lazy" style="width: 438px; display: block; max-width: 100%; height: auto; margin: 24px auto;">
 
 The backlog contains dialogue captured while the extension was running. New lines appear as you advance through the game.
 
 ## Open Settings
 
-1. Click the RouteVN Web Extractor icon in Chrome's toolbar.
+1. Click the RouteVN Web Extractor icon in your browser's Extensions menu.
 2. Select **Open Side Panel** if it is not already open.
 3. Select **Settings**.
 
@@ -75,19 +75,9 @@ Enabled dictionaries higher in the list appear first in definitions.
 
 For example, move your preferred definition dictionary above a supplemental dictionary to see its results first. Uncheck a dictionary to exclude it from lookups without removing it.
 
-## Install Japanese pitch accent
+## Japanese pitch accent
 
-Pitch accent shows the high and low pitch pattern of a Japanese word. It is optional and is not installed during initial dictionary setup. The Kanjium pitch data is bundled with the extension and can be installed and used offline.
-
-1. [Open Settings](#open-settings).
-2. Under **Dictionary & Language**, turn on **Japanese pitch accent**.
-3. In the **Japanese pitch accent** dialog, select **Install**.
-4. Wait for **Japanese pitch accent is enabled.** The dialog closes when installation succeeds.
-5. Return to a Japanese game and look up a word. Pitch information appears when the installed data contains a matching word and reading.
-
-If pitch data is already installed, turning on **Japanese pitch accent** enables it without opening the installation dialog. Keep a Japanese definition dictionary enabled as well: pitch data supplies pronunciation information, not word meanings.
-
-If installation fails, read the error in the dialog and select **Retry**. To hide pitch information later, turn off **Japanese pitch accent**; the installed data remains available to enable again.
+See [Japanese Pitch Accent](/en/web-extractor/docs/japanese-pitch-accent/) for installation steps, screenshots, and troubleshooting.
 
 ## Save a word for review
 

@@ -1,0 +1,7 @@
+Masshiro replacements: masshiro-first-word.png is a frame from MasshiroWebsiteVideo.mp4; masshiro-backlog.png is the 21-second frame from static/public/masshiro/masshiro-demo-w-text.mp4. Original frames are preserved here. The published backlog crops the side panel at x=1482, y=128, width=438, height=952.
+
+onboarding.png and pitch-install.png are the RouteVN Web Extractor application's onboarding--welcome-light-01 and sidepanel--pitch-install-offer-light-01 visual captures.
+
+anki-masshiro.png is the supplied Anki integration screenshot. pitch-accent-masshiro.png preserves the earlier supplied version.
+
+Published UI PNGs use pngquant --quality=95-100 --speed 1 --strip. The gameplay frame could not meet PNG quality 95, so it uses lossless WebP instead. Original dimensions are retained for UI readability and fullscreen previews; no images are upscaled. Original superseded screenshots remain here as source archives.

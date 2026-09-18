@@ -1,18 +1,20 @@
 ---
 template: documentation
-url: /en/web-extractor/docs/
+url: /en/web-extractor/docs/getting-started/
 _bind:
   docs: webExtractorDocs
 title: Getting Started
 seo:
   title: "Getting Started | RouteVN Web Extractor Docs"
-  description: "Set up RouteVN Web Extractor in Chrome, install a dictionary, and look up your first word in a supported web visual novel."
+  description: "Set up RouteVN Web Extractor in Chrome or Firefox, install a dictionary, and look up your first word in a supported web visual novel."
 sidebarId: getting-started
 ---
 
-RouteVN Web Extractor is a browser extension that captures dialogue from supported web visual novels and shows word definitions as you read. This guide covers setup in desktop Chrome.
+RouteVN Web Extractor is a browser extension that captures dialogue from supported web visual novels and shows word definitions as you read. This guide covers setup in desktop Chrome and Firefox.
 
 ## Install the extension
+
+### Chrome
 
 1. Open [RouteVN Web Extractor in the Chrome Web Store](https://chromewebstore.google.com/detail/routevn-web-extractor/mmaeimemigaiffcbhaaplmgkoimijcik).
 2. Select **Add to Chrome**.
@@ -20,11 +22,22 @@ RouteVN Web Extractor is a browser extension that captures dialogue from support
 4. Open Chrome's **Extensions** menu in the toolbar.
 5. Pin **RouteVN Web Extractor** for quick access.
 
+### Firefox
+
+1. Open [RouteVN Web Extractor on Firefox Add-ons](https://addons.mozilla.org/en-US/firefox/addon/routevn-web-extractor/).
+2. Select **Add to Firefox**.
+3. Review the permissions and confirm installation.
+4. Open Firefox's **Extensions** menu to access **RouteVN Web Extractor**.
+
+### Safari
+
+Safari support is coming soon. We will add the installation link here when it is available.
+
 ## Install a dictionary
 
 The setup page opens after installation. To open it again:
 
-1. Click the RouteVN Web Extractor icon in Chrome's toolbar.
+1. Click the RouteVN Web Extractor icon in your browser's Extensions menu.
 2. Select **Languages & dictionaries**.
 
 - **Reading language** is the language of the visual novel: Japanese or English.
@@ -32,13 +45,17 @@ The setup page opens after installation. To open it again:
 
 For Japanese dialogue with English definitions, choose **Japanese** for reading and **English** for definitions.
 
+<img src="/public/reader/web-extractor/screenshots/onboarding.png" alt="Setup page with English definitions, Japanese reading, and the Install Japanese Dictionary button." width="1024" height="768" loading="lazy" style="display: block; max-width: 100%; height: auto; margin: 24px auto;">
+
 1. Choose your **Reading language**.
-2. Choose your **Definition language**. The language you want word meanings displayed in.
+2. Choose your **Definition language** for word meanings.
 3. Select **Install Japanese Dictionary** or **Install English Dictionary**, depending on your choice.
 4. Keep the setup page open while the dictionary downloads and installs. This step requires an internet connection.
 5. Wait for the completion message, then select the **Start Reading** button to open the suggested platform.
 
-For download errors, see [Dictionary download fails](#dictionary-download-fails). After setup, you can [download more dictionaries](/en/web-extractor/docs/using-the-dictionary/#add-or-change-dictionaries), [rearrange dictionary order](/en/web-extractor/docs/using-the-dictionary/#rearrange-dictionary-order), or [install Japanese pitch accent](/en/web-extractor/docs/using-the-dictionary/#install-japanese-pitch-accent).
+Installation may take a few minutes: the extension downloads the dictionary, unpacks its entries, and indexes them for fast local lookups. The time depends on the dictionary size, your connection, and your device. This is a one-time setup for each dictionary; you only need to repeat it if you remove or reinstall that dictionary.
+
+For download errors, see [Dictionary download fails](#dictionary-download-fails). After setup, you can [download more dictionaries](/en/web-extractor/docs/using-the-dictionary/#add-or-change-dictionaries), [rearrange dictionary order](/en/web-extractor/docs/using-the-dictionary/#rearrange-dictionary-order), or [install Japanese pitch accent](/en/web-extractor/docs/japanese-pitch-accent/).
 
 ## Look up your first word
 
@@ -49,7 +66,7 @@ The extension supports browser games built with RouteVN, Ren'Py, or TyranoScript
 3. Start the game and advance until dialogue appears.
 4. Hover over a word in the dialogue overlay to show its definition.
 
-<img src="/public/reader/web-extractor/screenshots/first-word.png" alt="A Japanese word highlighted in visual novel dialogue with its dictionary definition open." width="1683" height="944" loading="lazy" style="width: 1683px; display: block; max-width: 100%; height: auto; margin: 24px auto;">
+<img src="/public/reader/web-extractor/screenshots/masshiro-first-word.webp" alt="Dictionary definition for 驚かせる open over dialogue in the Masshiro library scene." width="1920" height="1080" loading="lazy" style="width: 960px; display: block; max-width: 100%; height: auto; margin: 24px auto;">
 
 See [Using the Dictionary](/en/web-extractor/docs/using-the-dictionary/) to review earlier dialogue, change lookup controls, or add dictionaries.
 

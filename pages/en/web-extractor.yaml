@@ -42,6 +42,33 @@ seo:
       width: 100%;
     }
 
+    .rvn-video-sound {
+      background: transparent;
+      border: 0;
+      color: var(--foreground);
+      cursor: pointer;
+      font: inherit;
+      margin-top: 16px;
+      min-height: 44px;
+      padding: 8px 4px;
+      text-decoration: underline;
+      text-underline-offset: 4px;
+    }
+
+    .rvn-video-sound:focus-visible {
+      outline: 2px solid var(--foreground);
+      outline-offset: 4px;
+    }
+
+    .rvn-video-sound-status {
+      margin: 0 0 16px;
+      text-align: center;
+    }
+
+    .rvn-video-sound-status:empty {
+      display: none;
+    }
+
     .rvn-web-extractor-feature > rtgl-view[w="1200"] {
       box-sizing: border-box;
       max-width: 1200px;
@@ -50,6 +77,14 @@ seo:
 
     .rvn-web-extractor-feature .rvn-feature1-media img {
       object-fit: contain;
+    }
+
+    .rvn-anki-integration .rvn-feature1-media {
+      aspect-ratio: auto;
+    }
+
+    .rvn-anki-integration .rvn-feature1-media img {
+      height: auto;
     }
 
     .rvn-pitch-accent .rvn-feature-gallery {
@@ -141,8 +176,11 @@ seo:
       subtitleHtml: RouteVN Web Extractor is a browser extension that helps you<br>read visual novels in other languages with a pop-up dictionary
       backgroundImageSrc: /public/masshiro/stickers/masshirook.png
       backgroundImageAlt: Chibi Masshiro winking and making an OK hand gesture.
-      videoSrc: /public/masshiro/masshiro-website.mp4
+      videoSrc: /public/reader/web-extractor/routevn-web-extractor-demo-with-music.mp4
       videoLabel: RouteVN Web Extractor demonstration in a Japanese visual novel.
+      videoSoundButton: true
+
+    - $partial: web-extractor-demo
 
     - $partial: feature1
       title: Look up words that you don't know
@@ -154,7 +192,7 @@ seo:
             - Extract text from dialogue choices.
             - Browse the history of extracted lines.
       themeClass: light rvn-web-extractor-feature
-      backgroundColor: var(--muted)
+      backgroundColor: var(--background)
       foregroundColor: var(--foreground)
       images:
         - src: /public/reader/web-extractor/popup.png
@@ -172,11 +210,13 @@ seo:
           bullets:
             - Works with AnkiConnect.
             - Capture full lines and screenshots for richer context.
-            - Configure custom note types and card types.
-      themeClass: light rvn-web-extractor-feature
-      backgroundColor: var(--background)
+            - Choose a card type with the Lapis note type.
+      themeClass: light rvn-web-extractor-feature rvn-anki-integration
+      backgroundColor: var(--muted)
       foregroundColor: var(--foreground)
-      imgSrc: /public/reader/web-extractor/anki.png
+      images:
+        - src: /public/reader/web-extractor/screenshots/anki-masshiro.png
+          alt: Anki card for 真っ白 with pitch accent, sentence context, an English definition, and a Masshiro scene screenshot.
 
     - $partial: feature1
       title: Pitch Accent
@@ -219,3 +259,4 @@ seo:
             newTab: true
 
 - script src="/public/image-lightbox.js" defer:
+- script src="/public/reader/web-extractor/video-sound.js" defer:
