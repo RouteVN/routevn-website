@@ -57,9 +57,11 @@ Follow along with **Make Visual Novels From Your Phone** to get started with the
 
 ## What creators are saying
 
-Thank you to everyone who has tried the mobile app and shared feedback! Here's a five-star review from the **Google Play Store**.
+Thank you to everyone who has tried the mobile app and shared feedback!
 
-<img src="/public/blog/2026/20/creator-review.png" alt="Five-star Google Play Store review, translated from Portuguese: Simply wonderful! In all my years as a visual novel creator, I've never seen such a well-made and functional visual novel app coming to mobile. It deserves more recognition and support from those who enjoy creating visual novels but can't afford a laptop." width="1219" height="366" loading="lazy" decoding="async" style="display: block; width: 100%; height: auto; margin-bottom: 24px; border: 1px solid var(--border); box-sizing: border-box;">
+> Simply wonderful! In all my years as a visual novel creator, I've never seen such a well-made and functional visual novel app coming to mobile. It deserves more recognition and support from those who enjoy creating visual novels but can't afford a laptop.
+
+*★★★★★ Google Play Store review · Translated from Portuguese*
 
 ## Try it out
 

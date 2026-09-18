@@ -4,14 +4,11 @@
 
 The post reuses `static/public/creator/mobile/android-cover.png`, `live-preview.png`, and `branching-choices.png`. These assets were already resized and compressed with `pngquant --quality=95-100`; no new copies or recompression are needed. Originals remain in `../routevn-store-listing/google-play/assets/en-US/2026-09-06/`. The reused images were visually checked for this post.
 
-## Review screenshot
+## Review source
 
 - Source: user-supplied `Screenshot 2026-09-18 at 11.11.41.png`, a five-star Google Play Store review with its Portuguese original and English translation.
 - Unmodified original preserved as `creator-review-original.png` beside this file; retained at original quality as a source asset.
-- Website asset: `static/public/blog/2026/20/creator-review.png`.
-- Original 1219 × 366 dimensions retained for the 624-pixel article column, high-density displays, and fullscreen previews. No upscaling or cropping.
-- Compressed with `pngquant --quality=95-100 --speed 1 --strip`, from 78,105 to 27,043 bytes.
-- Optimized screenshot visually checked for legibility and artifacts.
+- The post reproduces the supplied English translation as an HTML blockquote, attributed to a five-star Google Play Store review and labeled as translated from Portuguese. The screenshot is preserved only as the source record and is not displayed or linked in the post.
 
 ## Tablet orientation screenshots
 
