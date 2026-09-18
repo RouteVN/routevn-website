@@ -24,6 +24,18 @@ Download RouteVN Creator from [Google Play](https://play.google.com/store/apps/d
 
 <img src="/public/creator/mobile/android-cover.png" alt="Create Visual Novels on Your Phone. Makkuro beside the mobile editor and a branching story preview." width="2212" height="1080" decoding="async" fetchpriority="high" style="display: block; width: 100%; height: auto; margin-bottom: 24px; border: 1px solid var(--border); box-sizing: border-box;">
 
+## Why we're bringing RouteVN Creator to mobile
+
+We first released RouteVN Creator on desktop assuming that was where people made visual novels.
+
+But when we quietly started the mobile beta, the interest and enthusiasm surprised us. We now think the number of mobile users may well surpass desktop users.
+
+There are many people who want to make visual novels on their phones, but they've historically had limited tools to choose from.
+
+Seeing people even draw art and illustrations with their fingers on a phone has been especially inspiring. What people can create on these devices goes far beyond what we'd imagined.
+
+We're excited to contribute to this space and help people around the world create visual novels with the devices they already have.
+
 ## Create on your phone or tablet
 
 The mobile app brings **all the features of RouteVN Creator Desktop** to your phone or tablet, with an interface adapted for touch. You can create your visual novel wherever you are, with the same tools available on desktop.
@@ -48,6 +60,12 @@ On **Android tablets and iPad**, you get all the features of RouteVN Creator Des
   <img src="/public/blog/2026/20/tablet-portrait.png" alt="RouteVN Creator on iPad in portrait, with the scene preview above the script and keyboard." width="1080" height="1598" loading="lazy" decoding="async" style="display: block; width: 100%; height: auto; border: 1px solid var(--border); box-sizing: border-box;">
   <figcaption style="margin-top: 8px; font-size: 0.875rem; color: var(--muted-foreground); text-align: center;">Portrait</figcaption>
 </figure>
+
+## Move projects between devices
+
+RouteVN Creator uses the same project data format on desktop and mobile. Projects exported from desktop can be imported on a phone or tablet, and projects exported from mobile can be imported on desktop or another mobile device.
+
+There is currently **no real-time sync between devices**. Moving a project or transferring its latest changes requires a manual export and import.
 
 ## Watch the mobile tutorial
 
