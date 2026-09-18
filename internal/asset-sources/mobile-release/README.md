@@ -8,7 +8,7 @@ The post reuses `static/public/creator/mobile/android-cover.png`, `live-preview.
 
 - Source: user-supplied `Screenshot 2026-09-18 at 11.11.41.png`, a five-star Google Play Store review with its Portuguese original and English translation.
 - Unmodified original preserved as `creator-review-original.png` beside this file; retained at original quality as a source asset.
-- The post reproduces the supplied English translation as an HTML blockquote, attributed to a five-star Google Play Store review and labeled as translated from Portuguese. The screenshot is preserved only as the source record and is not displayed or linked in the post.
+- The post reproduces the supplied English translation and original Portuguese as HTML blockquotes, with language labels and a Play Store attribution in the introduction. The screenshot is preserved only as the source record and is not displayed or linked in the post.
 
 ## Tablet orientation screenshots
 
