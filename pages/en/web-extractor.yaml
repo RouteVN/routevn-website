@@ -1,7 +1,7 @@
 ---
 template: base
 title: Web Extractor
-themeBodyClass: light
+themeBodyClass: light rvn-web-extractor-page
 footerSpacerHeight: 96
 navbarTitle:
   imgSrc: /public/masshiro/logo-horizontal.png
@@ -10,9 +10,11 @@ navbarTitle:
   alt: RouteVN with Masshiro
   href: /
 navbarCta:
-  label: Get Chrome Extension
-  href: https://chromewebstore.google.com/detail/routevn-web-extractor/mmaeimemigaiffcbhaaplmgkoimijcik
-  newTab: true
+  label: Download
+  href: /en/web-extractor/download/
+navbarSecondaryCta:
+  label: Docs
+  href: /en/web-extractor/docs/getting-started/
 footerLogo:
   src: /public/masshiro/logo-horizontal.png
   width: 150
@@ -50,6 +52,14 @@ seo:
 
     .rvn-web-extractor-feature .rvn-feature1-media img {
       object-fit: contain;
+    }
+
+    .rvn-web-extractor-anki .rvn-feature1-media {
+      aspect-ratio: auto;
+    }
+
+    .rvn-web-extractor-anki .rvn-feature1-media img {
+      height: auto;
     }
 
     .rvn-web-extractor-feature .rvn-feature1-title {
@@ -104,6 +114,15 @@ seo:
     }
 
     @media (max-width: 760px) {
+      .rvn-web-extractor-page [data-rvn-autohide-navbar] rtgl-image {
+        width: 90px !important;
+        height: 20px !important;
+      }
+
+      .rvn-web-extractor-main .rvn-creator-hero-chibi {
+        display: none;
+      }
+
       .rvn-web-extractor-feature > rtgl-view[w="1200"] {
         width: calc(100vw - 48px) !important;
       }
@@ -132,8 +151,8 @@ seo:
       subtitleHtml: RouteVN Web Extractor is a browser extension that helps you<br>read visual novels in other languages with a pop-up dictionary
       backgroundImageSrc: /public/masshiro/stickers/masshirook.png
       backgroundImageAlt: Chibi Masshiro winking and making an OK hand gesture.
-      imgSrc: /public/reader/web-extractor/hero.png
-      imgAlt: A pop-up dictionary over visual novel dialogue confirming a word was added to Anki.
+      videoSrc: /public/reader/web-extractor/demo-with-music.mp4
+      videoLabel: RouteVN Web Extractor demo with dictionary lookups and Anki integration
 
     - $partial: feature1
       title: Look up words that you don't know
@@ -164,10 +183,10 @@ seo:
             - Works with AnkiConnect.
             - Capture full lines and screenshots for richer context.
             - Configure custom note types and card types.
-      themeClass: light rvn-web-extractor-feature
+      themeClass: light rvn-web-extractor-feature rvn-web-extractor-anki
       backgroundColor: var(--background)
       foregroundColor: var(--foreground)
-      imgSrc: /public/reader/web-extractor/anki.png
+      imgSrc: /public/reader/web-extractor/screenshots/anki-masshiro.png
 
     - 'section class="rvn-web-extractor-faq-section" aria-labelledby="web-extractor-faq-title"':
         - 'div class="rvn-web-extractor-faq"':
@@ -177,20 +196,24 @@ seo:
                 - 'rtgl-view md-hide w="140" h="140" aria-hidden="true" style="flex: 0 0 140px;"':
                     - 'img src="/public/reader/web-extractor/kindle.png" alt="" loading="lazy" width="257" height="280" style="display: block; height: 100%; object-fit: contain; width: 100%;"':
             - rtgl-view g="lg" d="v" w="f":
-                - 'rtgl-accordion-item w="f" label="How do I get RouteVN Web Extractor?" content="Install RouteVN Web Extractor from the Chrome Web Store using the Get Chrome Extension button on this page."':
+                - 'rtgl-accordion-item w="f" label="How do I get RouteVN Web Extractor?" content="Select Download to choose the Chrome or Firefox extension. Safari support is coming soon."':
                 - 'rtgl-accordion-item w="f" label="Where can I find free visual novels on the web?"':
                     - 'span class="rvn-web-extractor-faq-content" slot="content"':
                         - __html: >-
                             For Japanese visual novels, we recommend <a href="https://novelgame.jp/">novelgame.jp</a>.
                             For English visual novels, browse <a href="https://itch.io/games/free/genre-visual-novel/platform-web">itch.io’s free visual novels that you can play in your browser</a>.
 
-    - 'section class="rvn-web-extractor-cta" aria-label="Download RouteVN Web Extractor"':
+    - 'section id="download" class="rvn-web-extractor-cta" aria-label="Download RouteVN Web Extractor"':
         - $partial: cta1
           title: Download RouteVN Web Extractor
-          subtitle: Get the extension from the Chrome Web Store.
+          subtitle: Get the extension for Chrome or Firefox.
           cta:
-            label: Get Chrome Extension
-            href: https://chromewebstore.google.com/detail/routevn-web-extractor/mmaeimemigaiffcbhaaplmgkoimijcik
-            newTab: true
+            label: Docs
+            href: /en/web-extractor/docs/getting-started/
+            variant: se
+          secondaryCta:
+            label: Download
+            href: /en/web-extractor/download/
+            variant: pr
 
 - script src="/public/image-lightbox.js" defer:

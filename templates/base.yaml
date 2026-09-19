@@ -22,4 +22,5 @@
             - rtgl-view pos="abs" edge="t" ah="c" bgc="bg":
                 - $partial: navbar1
                   title: ${default(navbarTitle, site.navbar.title)}
+                  secondaryCta: ${navbarSecondaryCta}
                   cta: ${default(navbarCta, site.navbar.cta)}

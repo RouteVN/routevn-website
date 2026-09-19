@@ -1,0 +1,99 @@
+---
+template: base
+title: Download RouteVN Web Extractor
+themeBodyClass: light
+footerSpacerHeight: 96
+navbarTitle:
+  imgSrc: /public/masshiro/logo-horizontal.png
+  imgWidth: 150
+  imgHeight: 33
+  alt: RouteVN with Masshiro
+  href: /en/web-extractor/
+navbarCta:
+  variant: se
+  label: Docs
+  href: /en/web-extractor/docs/getting-started/
+footerLogo:
+  src: /public/masshiro/logo-horizontal.png
+  width: 150
+  height: 33
+  alt: RouteVN with Masshiro
+seo:
+  title: Download RouteVN Web Extractor - Chrome and Firefox
+  description: Install RouteVN Web Extractor for Chrome or Firefox to look up words in web visual novels. Safari support is coming soon.
+  ogImage: https://routevn.com/public/reader/web-extractor/masshiro-og.png
+  ogImageWidth: 1200
+  ogImageHeight: 630
+  ogImageAlt: Masshiro
+  ogImageType: image/png
+  twitterCard: summary_large_image
+browsers:
+  - name: Chrome
+    icon: chrome
+    store: Chrome Web Store
+    label: Get Chrome Extension
+    href: https://chromewebstore.google.com/detail/routevn-web-extractor/mmaeimemigaiffcbhaaplmgkoimijcik
+  - name: Firefox
+    icon: firefox
+    store: Firefox Add-ons
+    label: Get Firefox Extension
+    href: https://addons.mozilla.org/en-US/firefox/addon/routevn-web-extractor/
+  - name: Safari
+    icon: safari
+    store: Coming soon
+    label: Coming soon
+    disabled: true
+---
+- style: |
+    .rvn-extension-download {
+      box-sizing: border-box;
+      max-width: 1024px;
+      width: 100%;
+    }
+
+    .rvn-browser-download {
+      display: block;
+      width: 100%;
+      color: inherit;
+      text-decoration: none;
+      border-radius: var(--border-radius-lg);
+    }
+
+    a.rvn-browser-download:hover > rtgl-view {
+      background: var(--muted);
+      border-color: var(--foreground);
+    }
+
+    .rvn-browser-download:focus-visible {
+      outline: 2px solid var(--foreground);
+      outline-offset: 4px;
+    }
+
+    .rvn-browser-download[aria-disabled="true"] {
+      opacity: 0.6;
+      cursor: not-allowed;
+    }
+
+- rtgl-view h="100":
+- 'main class="rvn-extension-download"':
+    - rtgl-view ah="c" g="lg" w="f":
+        - 'rtgl-image wh="128" of="con" src="/public/masshiro/stickers/masshirook.png" alt="Masshiro making an OK hand gesture."':
+        - 'h1 style="font-size: 2rem; text-align: center; margin: 0 0 8px;"': Download RouteVN Web Extractor
+        - rtgl-text s="lg" c="mu" ta="c" mb="xl": Choose your browser to get the extension.
+        - rtgl-grid cols="3" md-cols="1" g="lg" w="f":
+            - $for browser in browsers:
+                - $if browser.disabled:
+                    - 'span class="rvn-browser-download" role="link" aria-disabled="true" aria-label="${browser.name}: ${browser.label}" tabindex="0"':
+                        - rtgl-view w="f" h="240" p="lg" bw="xs" br="lg" bgc="su" ah="c" av="c" g="md":
+                            - 'rtgl-svg svg="${browser.icon}" wh="64" f="pr-fg" aria-hidden="true"':
+                            - 'rtgl-text s="h3" role="heading" aria-level="2" ta="c"': ${browser.name}
+                            - rtgl-text s="md" c="mu" ta="c": ${browser.store}
+                  $else:
+                    - 'a class="rvn-browser-download" href="${browser.href}" aria-label="${browser.label}" target="_blank" rel="noopener noreferrer"':
+                        - rtgl-view w="f" h="240" p="lg" bw="xs" br="lg" bgc="su" ah="c" av="c" g="md":
+                            - 'rtgl-svg svg="${browser.icon}" wh="64" f="pr-fg" aria-hidden="true"':
+                            - 'rtgl-text s="h3" role="heading" aria-level="2" ta="c"': ${browser.name}
+                            - rtgl-text s="md" c="mu" ta="c": ${browser.store}
+        - rtgl-view mt="xl" g="md" ah="c":
+            - rtgl-text s="lg" ta="c": Need help installing the extension or a dictionary?
+            - 'rtgl-button href="/en/web-extractor/docs/getting-started/" v="se"': Installation Guide
